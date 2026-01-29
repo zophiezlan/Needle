@@ -1,0 +1,364 @@
+# Core Operators: The Essentials
+
+> Master these operators first. They cover 90% of harm reduction search needs.
+
+[← Back to Main Guide](../README.md) | [Next: Advanced Operators →](03-advanced-operators.md)
+
+---
+
+## 📊 Essential Operators Reference
+
+| Operator | Purpose | Example |
+|:---------|:--------|:--------|
+| `site:` | Limit to specific domain/TLD | `site:*.gov.au "drug warning"` |
+| `filetype:` | Find specific document types | `filetype:pdf "harm reduction"` |
+| `"exact phrase"` | Match exact words in order | `"take-home naloxone"` |
+| `OR` | Either term (MUST be uppercase) | `naloxone OR narcan` |
+| `-exclude` | Remove unwanted results | `-jobs -careers -news` |
+| `intitle:` | Search within page titles only | `intitle:"drug alert"` |
+| `inurl:` | Search within URL strings | `inurl:publications filetype:pdf` |
+| `after:` | Published after date | `after:2024-01-01` |
+| `before:` | Published before date | `before:2020-01-01` |
+| `..` | Number/date range | `2020..2025` |
+| `*` | Wildcard (any word) | `"drug * service"` |
+| `intext:` | Search body text only | `intext:"peer worker"` |
+
+---
+
+## 🎯 Operator Deep Dives
+
+### `site:` - Domain Targeting
+
+Limit searches to specific websites or domain types.
+
+**Basic usage:**
+```txt
+site:health.nsw.gov.au naloxone
+```
+
+**Wildcard for subdomains:**
+```txt
+site:*.gov.au "harm reduction"
+site:*.health.*.gov.au "drug alert"
+```
+
+**Multiple domains with OR:**
+```txt
+site:nuaa.org.au OR site:aivl.org.au "peer support"
+```
+
+**Exclude a domain:**
+```txt
+site:*.gov.au -site:news.gov.au "drug policy"
+```
+
+**Common domain patterns:**
+
+| Pattern | Catches |
+|---------|---------|
+| `site:*.gov.au` | All Australian government |
+| `site:*.health.*.gov.au` | All state health departments |
+| `site:*.edu.au` | All Australian universities |
+| `site:*.org.au` | All Australian organisations |
+
+---
+
+### `filetype:` - Document Format Filter
+
+Find specific file types instead of web pages.
+
+**Common file types:**
+
+| Type | Use For |
+|------|---------|
+| `filetype:pdf` | Reports, guidelines, policies |
+| `filetype:xlsx` or `filetype:xls` | Spreadsheets, data, directories |
+| `filetype:pptx` or `filetype:ppt` | Presentations, training |
+| `filetype:docx` or `filetype:doc` | Word documents, templates |
+| `filetype:csv` | Raw data files |
+
+**Examples:**
+```txt
+filetype:pdf "needle syringe program" guidelines
+filetype:xlsx "service directory" AOD site:*.gov.au
+filetype:pptx "harm reduction" conference
+```
+
+**Tip:** `ext:` works the same as `filetype:` (alias)
+
+---
+
+### `"exact phrase"` - Precision Matching
+
+Find these exact words in this exact order.
+
+```txt
+"take-home naloxone"
+"needle syringe program"
+"people who use drugs"
+"drug checking trial"
+```
+
+**Without quotes:** Google finds pages with those words anywhere (often not what you want)
+
+**With quotes:** Google finds that exact phrase only
+
+---
+
+### `OR` - Boolean Logic
+
+Search for either term. **Must be UPPERCASE.**
+
+```txt
+naloxone OR narcan OR nyxoid
+"pill testing" OR "drug checking"
+"harm reduction" OR "harm minimisation"
+```
+
+**Group with parentheses:**
+```txt
+site:*.gov.au (naloxone OR narcan) program
+("peer worker" OR "peer support") training filetype:pdf
+```
+
+---
+
+### `-` Exclusions - Remove Noise
+
+Remove unwanted results from your search.
+
+**Common exclusions:**
+```txt
+-jobs -careers -vacancy -employment
+-news -opinion -editorial
+-site:researchgate.net -site:academia.edu
+-pdfviewer -flipbook -scribd
+```
+
+**Progressive noise removal:**
+```txt
+# Level 1: Remove job listings
+"peer worker" training -jobs -careers
+
+# Level 2: Remove aggregators
+"peer worker" training -jobs -site:researchgate.net -site:academia.edu
+
+# Level 3: Add document filter
+"peer worker" training filetype:pdf -jobs
+```
+
+---
+
+### `intitle:` - Title Search
+
+Find terms in the page/document title. High precision for official documents.
+
+```txt
+intitle:"drug alert" site:*.gov.au
+intitle:"annual report" harm reduction
+intitle:"clinical guideline" opioid
+```
+
+**Why use it:** Page titles usually contain the main topic. `intitle:` filters out pages that merely mention a term.
+
+---
+
+### `inurl:` - URL Search
+
+Search within the URL path. Useful for finding publication directories.
+
+```txt
+inurl:publications filetype:pdf harm reduction
+inurl:submissions drug policy
+inurl:alerts site:*.health.*.gov.au
+inurl:aod-services site:*.gov.au
+```
+
+**Directory mining patterns:**
+```txt
+site:*.gov.au inurl:/publications/ filetype:pdf
+site:*.gov.au inurl:/uploads/ filetype:pdf
+site:*.gov.au inurl:/documents/ filetype:pdf
+```
+
+---
+
+### `after:` and `before:` - Date Filtering
+
+Filter by publication/index date.
+
+**Format:** `YYYY-MM-DD` or just `YYYY`
+
+```txt
+"drug alert" site:*.gov.au after:2024-01-01
+"harm reduction" policy before:2020-01-01
+"overdose" report after:2023 before:2025
+```
+
+**Note:** This uses Google's index date, which approximates publication date but isn't always exact.
+
+---
+
+### `..` Number Range
+
+Search within a range of numbers (dates, figures, etc.)
+
+```txt
+"overdose deaths" Australia 2020..2025
+"harm reduction" funding $100000..$500000
+"festival attendance" 10000..50000
+```
+
+---
+
+### `*` Wildcard
+
+Matches any word. Useful when you don't know the exact phrasing.
+
+```txt
+"drug * service"          # drug treatment service, drug checking service
+"* harm reduction"        # festival harm reduction, community harm reduction
+"needle * program"        # needle syringe program, needle exchange program
+```
+
+---
+
+### `intext:` - Body Text Only
+
+Search within the page body, ignoring title and URL.
+
+```txt
+intext:"peer worker" training
+intext:"lived experience" supervision
+```
+
+---
+
+## 🔧 Query Building Formula
+
+Construct searches systematically:
+
+```
+[DOMAIN] + [FORMAT] + [TOPIC] + [SYNONYMS] + [DATE] + [EXCLUSIONS]
+```
+
+### Building Blocks
+
+| Component | Purpose | Example |
+|-----------|---------|---------|
+| **Domain** | Where to search | `site:*.gov.au` |
+| **Format** | Document type | `filetype:pdf` |
+| **Topic** | Core phrase | `"harm reduction"` |
+| **Synonyms** | Variations | `(naloxone OR narcan)` |
+| **Date** | Currency | `after:2024` |
+| **Exclusions** | Remove noise | `-jobs -careers` |
+
+### Example Build
+
+**Goal:** Find recent NSW government guidelines on take-home naloxone
+
+```txt
+# Start with domain
+site:health.nsw.gov.au
+
+# Add format
+site:health.nsw.gov.au filetype:pdf
+
+# Add topic
+site:health.nsw.gov.au filetype:pdf "take-home naloxone"
+
+# Add synonyms
+site:health.nsw.gov.au filetype:pdf ("take-home naloxone" OR THN)
+
+# Add date
+site:health.nsw.gov.au filetype:pdf ("take-home naloxone" OR THN) after:2023
+
+# Add specificity
+site:health.nsw.gov.au filetype:pdf ("take-home naloxone" OR THN) guidelines after:2023
+```
+
+---
+
+## 📝 Operator Combination Templates
+
+### Template 1: Recent Documents from Specific Domain
+
+```txt
+site:[domain] filetype:pdf [topic] after:[YYYY-MM-DD]
+```
+Example: `site:health.nsw.gov.au filetype:pdf naloxone after:2024-01-01`
+
+### Template 2: Multi-Domain Search
+
+```txt
+(site:[domain1] OR site:[domain2]) [topic] filetype:pdf
+```
+Example: `(site:nuaa.org.au OR site:aivl.org.au) "peer support" filetype:pdf`
+
+### Template 3: Clean Results (No Junk)
+
+```txt
+[topic] filetype:pdf -site:researchgate.net -site:academia.edu -news -jobs
+```
+Example: `"drug checking" evaluation filetype:pdf -site:researchgate.net -news`
+
+### Template 4: Regional Service Search
+
+```txt
+site:*.gov.au [service] ([location1] OR [location2])
+```
+Example: `site:*.health.nsw.gov.au "needle syringe program" ("central coast" OR newcastle)`
+
+### Template 5: Title-Focused Alert Search
+
+```txt
+site:*.health.*.gov.au intitle:"[alert type]" after:[date]
+```
+Example: `site:*.health.*.gov.au intitle:"drug warning" after:2024-01-01`
+
+---
+
+## ⚠️ Common Mistakes
+
+| Mistake | Problem | Fix |
+|---------|---------|-----|
+| `or` lowercase | Treated as regular word | Use `OR` uppercase |
+| `site:gov.au` | Misses subdomains | Use `site:*.gov.au` |
+| No quotes | Words found separately | Use `"exact phrase"` |
+| Too many operators | Google ignores some | Build incrementally |
+| Wrong date format | Doesn't filter | Use `YYYY-MM-DD` |
+
+---
+
+## 🎯 Practice Exercises
+
+Try building these searches yourself:
+
+1. **Find** PDF reports about drug checking from Australian universities published after 2022
+
+2. **Find** NSW Health documents with "harm reduction" in the title
+
+3. **Find** peer worker training resources from sector organisations, excluding job listings
+
+<details>
+<summary>Click for answers</summary>
+
+1. `site:*.edu.au filetype:pdf "drug checking" after:2022`
+
+2. `site:health.nsw.gov.au intitle:"harm reduction"`
+
+3. `site:*.org.au "peer worker" training filetype:pdf -jobs -careers`
+
+</details>
+
+---
+
+## 🔗 Related Resources
+
+- [Advanced Operators](03-advanced-operators.md) - Power user techniques
+- [Synonym Blocks](05-synonym-blocks.md) - Reusable term groups
+- [Domain Map](04-domain-map.md) - Where to search
+
+---
+
+[← Quick Start](01-quick-start.md) | [Advanced Operators →](03-advanced-operators.md)
