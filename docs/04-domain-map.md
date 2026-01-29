@@ -65,6 +65,7 @@ This pattern catches all state/territory health department subdomains.
 | Domain | Institution | Focus |
 |--------|-------------|-------|
 | `site:ndarc.med.unsw.edu.au` | National Drug & Alcohol Research Centre | Premier AOD research |
+| `site:ndri.curtin.edu.au` | National Drug Research Institute | National policy research |
 | `site:kirby.unsw.edu.au` | Kirby Institute | BBV, hepatitis, HIV |
 | `site:csrh.arts.unsw.edu.au` | Centre for Social Research in Health | Social research, stigma |
 | `site:burnet.edu.au` | Burnet Institute | Infectious disease, HR |
@@ -100,7 +101,8 @@ site:ndarc.med.unsw.edu.au OR site:burnet.edu.au OR site:turning-point.org.au fi
 | **WASUA** | `site:wasua.com.au` | WA | Peer support, advocacy |
 | **CAHMA** | (search by name) | ACT | ACT peer advocacy |
 | **SAVIVE** | (search by name) | SA | SA peer voice |
-| **TasCAHRD** | (search by name) | TAS | Tasmania peer voice |
+| **TUHSL** | `site:tuhsl.org.au` | TAS | Tasmania peer voice |
+| **NTAHC** | `site:ntahc.org.au` | NT | NT peer programs |
 
 ### Multi-Peer-Org Search
 
@@ -141,6 +143,8 @@ AOD sector peak bodies coordinate services and advocacy in each state.
 | ACT | ATODA | `site:atoda.org.au` |
 | WA | WANADA | `site:wanada.org.au` |
 | SA | SANDAS | `site:sandas.org.au` |
+| TAS | ATDC | `site:atdc.org.au` |
+| NT | AADANT | `site:aadant.org.au` |
 
 ### Multi-Peak Search
 

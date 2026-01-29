@@ -16,6 +16,8 @@
 | **QuIHN** | [quihn.org](https://quihn.org/) | Queensland Injectors Health Network |
 | **WASUA** | [wasua.com.au](https://wasua.com.au/) | WA Substance Users Association |
 | **CAHMA** | [cahma.org.au](https://cahma.org.au/) | Canberra Alliance for Harm Minimisation |
+| **TUHSL** | [tuhsl.org.au](https://www.tuhsl.org.au/) | Tasmanian Users Health & Support League |
+| **NTAHC** | [ntahc.org.au](https://www.ntahc.org.au/) | NT AIDS and Hepatitis Council (Peer Program) |
 
 ---
 
@@ -29,6 +31,8 @@
 | **QNADA** | [qnada.org.au](https://qnada.org.au/) | QLD |
 | **WANADA** | [wanada.org.au](https://wanada.org.au/) | WA |
 | **SANDAS** | [sandas.org.au](https://sandas.org.au/) | SA |
+| **ATDC** | [atdc.org.au](https://atdc.org.au/) | TAS |
+| **AADANT** | [aadant.org.au](https://aadant.org.au/) | NT |
 
 ---
 
@@ -37,6 +41,7 @@
 | Institution | URL | Focus |
 |-------------|-----|-------|
 | **NDARC** | [ndarc.med.unsw.edu.au](https://ndarc.med.unsw.edu.au/) | National Drug & Alcohol Research Centre |
+| **NDRI** | [ndri.curtin.edu.au](https://ndri.curtin.edu.au/) | National Drug Research Institute (WA) |
 | **Burnet Institute** | [burnet.edu.au](https://burnet.edu.au/) | Public health, infectious disease |
 | **Kirby Institute** | [kirby.unsw.edu.au](https://kirby.unsw.edu.au/) | HIV, hepatitis, STIs |
 | **Turning Point** | [turning-point.org.au](https://turning-point.org.au/) | AOD treatment research |
