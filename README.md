@@ -37,6 +37,7 @@
 ## 📚 Documentation Structure
 
 ### Foundation
+
 - [**01 - Quick Start**](docs/01-quick-start.md) - The 90-second workflow
 - [**02 - Core Operators**](docs/02-core-operators.md) - Essential operators everyone should know
 - [**03 - Advanced Operators**](docs/03-advanced-operators.md) - Power user techniques
@@ -44,6 +45,7 @@
 - [**05 - Synonym Blocks**](docs/05-synonym-blocks.md) - Reusable terminology groups
 
 ### Dork Packs by Topic
+
 Ready-to-use search queries organized by harm reduction task:
 
 | Pack | Description |
@@ -72,16 +74,20 @@ Ready-to-use search queries organized by harm reduction task:
 | [Mental Health](docs/dork-packs/mental-health.md) | Dual diagnosis & co-occurring |
 | [Youth](docs/dork-packs/youth.md) | Young people & prevention |
 | [Families & Carers](docs/dork-packs/families-carers.md) | Affected others & family support |
+| [Document Discovery](docs/dork-packs/document-discovery.md) | Spreadsheets, databases, presentations |
+| [Forum & Community](docs/dork-packs/forum-community.md) | Reddit, forums, community discussions |
 
 👉 [**Browse All Dork Packs →**](docs/dork-packs/)
 
 ### Workflows
+
 - [**Research Workflow**](docs/workflows/research-workflow.md) - Four-step funnel & triangulation
 - [**Monitoring**](docs/workflows/monitoring.md) - Alerts, RSS, early warning
 - [**Peer-Centered**](docs/workflows/peer-centered.md) - Values-based searching for peer work
 - [**Verification**](docs/workflows/verification.md) - Source validity & trust
 
 ### Tools
+
 - [**🕵️‍♂️ Dork Explorer**](tools/dork-explorer/index.html) - **NEW!** Interactive search tool for this guide
 - [**Bookmarklets**](docs/tools/bookmarklets.md) - One-click searching
 - [**Google Alerts**](docs/tools/google-alerts.md) - Automated monitoring
@@ -92,12 +98,15 @@ Ready-to-use search queries organized by harm reduction task:
 - [**Privacy & Security**](docs/tools/privacy-security.md) - Protect yourself & clients
 
 ### Resources
+
 - [**Cheat Sheet**](docs/resources/cheat-sheet.md) - One-page reference
 - [**Substance Databases**](docs/resources/substance-databases.md) - Drug information resources
 - [**Academic Access**](docs/resources/academic-access.md) - Access research papers
 - [**Organizations**](docs/resources/organizations.md) - Key harm reduction orgs
+- [**Australian OSINT**](docs/resources/australian-osint.md) - Comprehensive AU data sources & registers
 
 ### Supporting Files
+
 - [**Troubleshooting**](docs/troubleshooting.md) - When searches fail
 - [**Templates**](templates/) - Briefings & evidence logs
 - [**Changelog**](CHANGELOG.md) - Version history
@@ -109,6 +118,7 @@ Ready-to-use search queries organized by harm reduction task:
 Google dorking (advanced search operators) helps AOD workers cut through noise and find the _actual document_, _original dataset_, or _current guidance_—especially when things are buried in PDFs, hidden in "publications" directories, or published without strong SEO.
 
 **Use cases:**
+
 - Find government documents before they are properly indexed
 - Locate hard-to-find service directories
 - Track down research evidence and grey literature
@@ -124,6 +134,7 @@ Google dorking (advanced search operators) helps AOD workers cut through noise a
 This guide is written with deep respect for peer workers and people with lived experience of drug use. **Peer knowledge is expert knowledge.**
 
 This guide helps you find:
+
 - Peer-led research and evaluations that center lived experience
 - Peer workforce development resources and frameworks
 - "Nothing About Us Without Us" - Policy work by and for people who use drugs
@@ -137,16 +148,19 @@ This guide helps you find:
 > **Non-negotiable principles for ethical searching.**
 
 ### Do No Harm
+
 - **Never search for identifiable people** (names + "overdose" / incidents) unless clearly in public interest with organisational approval
 - **Never seek leaked or exposed personal data** - if found accidentally, stop and escalate via your org's security pathway
 - **Prefer de-identified, aggregated sources** (public health alerts, reports, datasets)
 
 ### Trauma-Informed Language
+
 - **Prefer:** `"people who use drugs"` over `"drug addicts"`
 - **Prefer:** `"overdose"` / `"poisoning"` over stigmatizing terms
 - **Legacy searching:** Include older terms only when necessary to locate historical documents
 
 ### Legal & Clinical Currency
+
 - Respect copyright
 - For clinical guidance: always verify publication date, issuing authority, jurisdiction, and currency
 

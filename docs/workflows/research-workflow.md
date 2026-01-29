@@ -82,6 +82,34 @@ What do peers and the sector say? Practice wisdom, advocacy positions, lived exp
 
 ---
 
+## 🧠 Advanced: Synonym Expansion
+
+Don't guess keywords. Use Wikipedia to generate a comprehensive list of synonyms, street names, and chemical names for your target substance.
+
+**Workflow:**
+1. Search `site:wikipedia.org [substance]`
+2. Extract **"Also known as"**, **IUPAC names**, and **Street names**
+3. Build a "Synonym Block" (OR group)
+
+> **💡 Pro Tip:** See [Wikipedia Synonym Expansion](../tools/search-tweaks.md#-wikipedia-synonym-expansion) for the step-by-step recipe.
+
+---
+
+## ⚓ Advanced: Bias Counteraction
+
+Search results often skew towards "recovery" or law enforcement narratives. Use the **"Sinker"** method to force Google to prioritize harm reduction context.
+
+**The Technique:**
+Add weighted terms to "sink" the query into your desired context.
+
+```txt
+"nitazenes" AROUND(15) "harm reduction"
+```
+
+> **💡 Pro Tip:** See [The "Sinker" Method](../tools/search-tweaks.md#-the-sinker-method-bias-counteraction) for more weighting patterns.
+
+---
+
 ## ✅ Quality Control: Junk Removal
 
 Apply these exclusions progressively when results are messy.

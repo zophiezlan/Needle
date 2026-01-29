@@ -71,6 +71,8 @@
 | [Investigative](investigative.md) | Creative & ethical deep searching | 🔍 |
 | [Stigma & Language](stigma-language.md) | Historical research & terminology | 📜 |
 | [Coroners & Deaths](coroners-deaths.md) | Coronial findings & mortality data | ⚠️ |
+| [Document Discovery](document-discovery.md) | Spreadsheets, databases, presentations | 📄 |
+| [Forum & Community](forum-community.md) | Reddit, forums, community discussions | 💬 |
 
 ---
 

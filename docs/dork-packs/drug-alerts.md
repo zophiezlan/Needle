@@ -126,6 +126,29 @@ site:*.gov.au "drug alert" ("high strength" OR "unexpected" OR "contaminated" OR
 
 ---
 
+## 🏘️ Local News Monitoring
+
+Government alerts can be slow. Local news often reports "bad batch" incidents or overdoses first.
+
+### The "Location" Operator
+Find reports specific to a city or town (Google News only).
+
+```txt
+location:Sydney "drug alert"
+location:Melbourne "overdose"
+```
+
+### The "Local Source" Pattern
+Target local news domains specifically to catch community reports.
+
+```txt
+site:.com.au (news OR times OR herald OR daily) ("bad batch" OR "warning") location:Newcastle
+```
+
+> **💡 Pro Tip:** See [Search Tweaks](../tools/search-tweaks.md#local-alert-monitoring) for more local monitoring recipes.
+
+---
+
 ## 🌏 International Alert Systems
 
 For comparison and early warning from other jurisdictions:

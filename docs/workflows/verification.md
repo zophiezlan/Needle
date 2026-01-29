@@ -83,6 +83,21 @@ site:[DOMAIN] "[DOCUMENT TITLE]" (superseded OR replaced OR updated)
 
 ---
 
+## 🆔 Identity Verification (Name Net)
+
+When verifying a researcher, peer worker, or sector expert, names can appear in many formats across journals, conferences, and reports.
+
+**The "Name Net" Pattern:**
+Search for multiple name variations simultaneously to catch all citations.
+
+```txt
+("Jane Doe" OR "Jane M. Doe" OR "J. Doe" OR "Doe, Jane") (harm reduction OR "drug policy")
+```
+
+> **💡 Pro Tip:** See [The "Name Net"](../tools/search-tweaks.md#%EF%B8%8F-the-name-net-identity-verification) in Search Tweaks for the full technique.
+
+---
+
 ## ⚠️ Red Flags
 
 Watch for these warning signs:

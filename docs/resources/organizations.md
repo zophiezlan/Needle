@@ -58,6 +58,38 @@
 | **AIHW** | [aihw.gov.au](https://aihw.gov.au/) | Australian Institute of Health & Welfare |
 | **ABS** | [abs.gov.au](https://abs.gov.au/) | Australian Bureau of Statistics |
 | **Penington Institute** | [penington.org.au](https://penington.org.au/) | Overdose data, advocacy |
+| **Data.gov.au** | [data.gov.au](https://data.gov.au/) | Government open data portal |
+
+---
+
+## 🏛️ Australian Government Registers
+
+| Organisation | URL | Focus |
+|--------------|-----|-------|
+| **ASIC** | [asic.gov.au](https://www.asic.gov.au/) | Companies & business names |
+| **ABR** | [abr.business.gov.au](https://abr.business.gov.au/) | Australian Business Register |
+| **ACNC** | [acnc.gov.au/charity/charities](https://www.acnc.gov.au/charity/charities) | Charities & not-for-profits |
+| **AHPRA** | [ahpra.gov.au/search](https://www.ahpra.gov.au/search) | Health practitioner registration |
+| **AEC Transparency** | [transparency.aec.gov.au](https://transparency.aec.gov.au/) | Political donations & funding |
+
+---
+
+## 📚 Archives & Libraries
+
+| Organisation | URL | Focus |
+|--------------|-----|-------|
+| **Trove** | [trove.nla.gov.au](https://trove.nla.gov.au/) | Digitised newspapers, archives |
+| **National Archives** | [recordsearch.naa.gov.au](https://recordsearch.naa.gov.au/) | Government records |
+| **National Library** | [nla.gov.au](https://www.nla.gov.au/) | National collection |
+
+---
+
+## 📞 Directories
+
+| Organisation | URL | Focus |
+|--------------|-----|-------|
+| **White Pages** | [whitepages.com.au](https://www.whitepages.com.au/) | Residential directory |
+| **Public Records** | [publicrecords.com.au](https://www.publicrecords.com.au/) | People search |
 
 ---
 
@@ -89,6 +121,12 @@
 - **Check peak bodies** for sector guidance
 - **Use research institutions** for academic evidence
 - **Check AIHW** for national statistics
+
+---
+
+## 🔗 Related Resources
+
+- [Australian OSINT Resources](australian-osint.md) - Comprehensive directory of Australian data sources, registers, and investigative tools
 
 ---
 

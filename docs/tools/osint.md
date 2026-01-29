@@ -12,6 +12,24 @@ These tools are powerful. Use only for legitimate harm reduction research, advoc
 
 ---
 
+## 📑 Table of Contents
+
+- [Learning & Frameworks](#-osint-learning--frameworks)
+- [URL & Domain Tools](#-url--domain-tools)
+- [Document Analysis](#-document-analysis)
+- [Search Tools](#-search-tools)
+- [Alternative Search Engines](#-alternative-search-engines)
+- [IoT & Infrastructure Search](#-iot--infrastructure-search)
+- [Automated OSINT Tools](#-automated-osint-tools)
+- [Username & Social Media](#-username--social-media-tools)
+- [Geolocation Tools](#-geolocation-tools)
+- [Data Breach Checking](#-data-breach-checking)
+- [Image Analysis](#-image-analysis)
+- [Archiving](#️-archiving)
+- [Australian-Specific Resources](#-australian-specific-resources)
+
+---
+
 ## 📚 OSINT Learning & Frameworks
 
 ### IntelTechniques
@@ -37,6 +55,12 @@ Visual map of OSINT tools by category.
 **URL:** [github.com/jivoi/awesome-osint](https://github.com/jivoi/awesome-osint)
 
 Curated list of OSINT resources.
+
+### Trace Labs OSINT VM
+
+**URL:** [tracelabs.org/initiatives/osint-vm](https://www.tracelabs.org/initiatives/osint-vm)
+
+Pre-configured Linux VM with OSINT tools installed. Designed for missing persons investigations.
 
 ---
 
@@ -122,6 +146,198 @@ Sometimes finds content Google misses. Use for research only.
 
 ---
 
+## 🌐 IoT & Infrastructure Search
+
+### Shodan
+
+**URL:** [shodan.io](https://www.shodan.io/)
+
+Search engine for internet-connected devices. Useful for understanding infrastructure.
+
+### Censys
+
+**URL:** [censys.io](https://censys.io/)
+
+Internet-wide scanning data. Search hosts, certificates, websites.
+
+### ZoomEye
+
+**URL:** [zoomeye.org](https://www.zoomeye.org/)
+
+Chinese cyberspace search engine. Alternative to Shodan.
+
+### FOFA
+
+**URL:** [fofa.so](https://fofa.so/)
+
+Cyberspace search engine with asset mapping capabilities.
+
+---
+
+## 🤖 Automated OSINT Tools
+
+### Spiderfoot
+
+**URL:** [spiderfoot.net](https://www.spiderfoot.net/)
+
+Open source OSINT automation platform. Correlates data from 100+ sources.
+
+### theHarvester
+
+**URL:** [github.com/laramies/theharvester](https://github.com/laramies/theharvester)
+
+Gather emails, subdomains, hosts, employee names from public sources.
+
+### Recon-ng
+
+**URL:** [github.com/lanmaster53/recon-ng](https://github.com/lanmaster53/recon-ng)
+
+Full-featured web reconnaissance framework. Modular design.
+
+### Photon
+
+**URL:** [github.com/s0md3v/Photon](https://github.com/s0md3v/Photon)
+
+Incredibly fast crawler designed for OSINT. Extracts URLs, emails, files.
+
+### Metagoofil
+
+**URL:** [github.com/laramies/metagoofil](https://github.com/laramies/metagoofil)
+
+Extract metadata from public documents (PDF, DOC, XLS, PPT).
+
+### FOCA
+
+**URL:** [github.com/ElevenPaths/FOCA](https://github.com/ElevenPaths/FOCA)
+
+Find metadata and hidden information in documents from websites.
+
+---
+
+## 👤 Username & Social Media Tools
+
+### Sherlock
+
+**URL:** [github.com/sherlock-project/sherlock](https://github.com/sherlock-project/sherlock)
+
+Hunt down social media accounts by username across 400+ platforms.
+
+### Knowem
+
+**URL:** [knowem.com](http://www.Knowem.com)
+
+Check username availability across 500+ social networks.
+
+### UserSearch
+
+**URL:** [usersearch.org](http://www.usersearch.org)
+
+Search for usernames across social media and forums.
+
+### Namechk
+
+**URL:** [namechk.com](https://namechk.com/)
+
+Check username and domain availability across platforms.
+
+### OSINT Industries
+
+**URL:** [app.osint.industries](https://app.osint.industries)
+
+Professional people search across multiple data sources.
+
+---
+
+## 🗺️ Geolocation Tools
+
+### Google Earth Pro
+
+**URL:** [google.com/earth/versions](https://www.google.com/earth/versions/#download-pro)
+
+Free desktop application with historical imagery and measurement tools.
+
+### Creepy
+
+**URL:** [geocreepy.com](http://www.geocreepy.com/)
+
+Geolocation OSINT tool. Gathers location data from social networking platforms.
+
+### IP Geolocation
+
+**URL:** [tools.keycdn.com/geo](https://tools.keycdn.com/geo)
+
+Look up geographic location of IP addresses.
+
+### EXIF Data Viewer
+
+**URL:** [exifdata.com](http://exifdata.com/)
+
+Extract location and camera metadata from images.
+
+### Building Locator
+
+**URL:** [emporis.com/buildings/map](https://www.emporis.com/buildings/map)
+
+Identify buildings from images. Useful for geolocation verification.
+
+---
+
+## 🔓 Data Breach Checking
+
+### Have I Been Pwned
+
+**URL:** [haveibeenpwned.com](https://haveibeenpwned.com/)
+
+Check if an email has been in known data breaches. Essential security tool.
+
+### Hudson Rock
+
+**URL:** [hudsonrock.com](https://www.hudsonrock.com/threat-intelligence-cybercrime-tools)
+
+Check if credentials were compromised in infostealer malware attacks.
+
+### DeHashed
+
+**URL:** [dehashed.com](https://www.dehashed.com/)
+
+Search breached databases by email, username, IP, name, phone, VIN.
+
+---
+
+## 🖼️ Image Analysis
+
+### TinEye
+
+**URL:** [tineye.com](https://tineye.com/)
+
+Reverse image search. Find where an image appears online.
+
+### Google Reverse Image
+
+**URL:** [images.google.com](https://images.google.com/)
+
+Upload an image to find similar images and source pages.
+
+### FotoForensics
+
+**URL:** [fotoforensics.com](https://fotoforensics.com/)
+
+Analyse images for manipulation. Error level analysis.
+
+### SmartDeblur
+
+**URL:** [smartdeblur.net](http://smartdeblur.net/)
+
+Restore clarity to blurry images.
+
+### Let's Enhance
+
+**URL:** [letsenhance.io](https://letsenhance.io/)
+
+AI-powered image enhancement and upscaling.
+
+---
+
 ## 🗄️ Archiving
 
 ### Wayback Machine
@@ -141,6 +357,45 @@ Alternative archive. Captures some content Wayback misses.
 **URL:** [perma.cc](https://perma.cc/)
 
 Harvard Law Library's permanent archive. Create permanent links.
+
+### NLA Web Archive (Australia)
+
+**URL:** [webarchive.nla.gov.au](https://webarchive.nla.gov.au/)
+
+Australian websites archived since 1996 by National Library of Australia.
+
+### Trove Web Archive
+
+**URL:** [trove.nla.gov.au/website](https://trove.nla.gov.au/website)
+
+Search archived Australian websites via Trove.
+
+---
+
+## 🇦🇺 Australian-Specific Resources
+
+For comprehensive Australian OSINT resources, see our dedicated page:
+
+**[→ Australian OSINT Resources](../resources/australian-osint.md)**
+
+Includes:
+- Government data portals (federal, state, local)
+- Business registers (ABN, ASIC, ACNC)
+- Property and land records
+- Court and legal records
+- Vehicle registration checks
+- Archives and historical records
+- Freedom of Information resources
+
+### Quick Links
+
+| Resource | URL | Description |
+|----------|-----|-------------|
+| **ABN Lookup** | [abr.business.gov.au](https://abr.business.gov.au/) | Australian Business Number search |
+| **ASIC Connect** | [connectonline.asic.gov.au](https://connectonline.asic.gov.au/) | Company register |
+| **Trove** | [trove.nla.gov.au](https://trove.nla.gov.au/) | Digitised newspapers, archives |
+| **Data.gov.au** | [data.gov.au](https://data.gov.au/) | Government open data |
+| **WHOIS AU** | [whois.auda.org.au](https://whois.auda.org.au/) | Australian domain lookup |
 
 ---
 
@@ -165,8 +420,11 @@ Harvard Law Library's permanent archive. Create permanent links.
 
 ## 🔗 Related Resources
 
+- [Australian OSINT Resources](../resources/australian-osint.md) - Comprehensive Australian directory
 - [AI-Powered Research Tools](ai-tools.md)
 - [Investigative Pack](../dork-packs/investigative.md)
+- [Document Discovery Pack](../dork-packs/document-discovery.md)
+- [Forum & Community Research](../dork-packs/forum-community.md)
 - [Advanced Operators](../03-advanced-operators.md)
 - [Privacy & Security](privacy-security.md)
 
