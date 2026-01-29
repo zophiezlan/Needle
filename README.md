@@ -15,6 +15,7 @@
 
 | Level | Start Here |
 |-------|------------|
+| **Interactive Tool** | [**🕵️‍♂️ Launch Dork Explorer**](tools/dork-explorer/index.html) - Search & filter 700+ dorks instantly |
 | **New to dorking?** | [Quick Start Guide](docs/01-quick-start.md) → [Core Operators](docs/02-core-operators.md) |
 | **Know the basics?** | [Advanced Operators](docs/03-advanced-operators.md) → [Dork Packs](docs/dork-packs/) |
 | **Power user?** | [Investigative Searching](docs/dork-packs/investigative.md) → [OSINT Tools](docs/tools/osint.md) |
@@ -81,6 +82,7 @@ Ready-to-use search queries organized by harm reduction task:
 - [**Verification**](docs/workflows/verification.md) - Source validity & trust
 
 ### Tools
+- [**🕵️‍♂️ Dork Explorer**](tools/dork-explorer/index.html) - **NEW!** Interactive search tool for this guide
 - [**Bookmarklets**](docs/tools/bookmarklets.md) - One-click searching
 - [**Google Alerts**](docs/tools/google-alerts.md) - Automated monitoring
 - [**Custom Search**](docs/tools/custom-search.md) - Build team search engines
