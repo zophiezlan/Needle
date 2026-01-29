@@ -1,6 +1,7 @@
 # Forum & Community Research
 
-> Finding harm reduction discussions, peer knowledge, and community insights on forums and social platforms.
+> Finding harm reduction discussions, peer knowledge, and community insights on forums and social
+> platforms.
 
 [← Back to Dork Packs](README.md) | [← Main Guide](../../README.md)
 
@@ -329,7 +330,8 @@ inurl:forum "drug checking" Australia after:2024
 
 ## 🖤💛❤️ First Nations Communities
 
-> **Cultural respect is essential.** These searches help find community-led discussions, not surveillance.
+> **Cultural respect is essential.** These searches help find community-led discussions, not
+> surveillance.
 
 ```txt
 "Aboriginal" OR "Indigenous" forum "harm reduction" Australia

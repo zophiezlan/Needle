@@ -9,6 +9,7 @@
 ## 🔔 Why Monitoring Matters
 
 Don't rely on manual checks. Set up automated monitoring for:
+
 - Drug alerts and health warnings
 - Policy consultations and submissions
 - New research and evaluations
@@ -64,16 +65,17 @@ site:aph.gov.au OR site:parliament.*.gov.au (inquiry OR committee) (drug OR "har
 
 ### RSS Tools
 
-| Tool | URL | Description |
-|------|-----|-------------|
-| **RSS Bridge** | [rss-bridge.org](https://rss-bridge.org/) | Generate feeds from sites without RSS |
-| **Feedly** | [feedly.com](https://feedly.com/) | Modern RSS reader with team features |
-| **Inoreader** | [inoreader.com](https://www.inoreader.com/) | Powerful RSS with automation |
-| **Kill the Newsletter** | [kill-the-newsletter.com](https://kill-the-newsletter.com/) | Convert newsletters to RSS |
+| Tool                    | URL                                                         | Description                           |
+| ----------------------- | ----------------------------------------------------------- | ------------------------------------- |
+| **RSS Bridge**          | [rss-bridge.org](https://rss-bridge.org/)                   | Generate feeds from sites without RSS |
+| **Feedly**              | [feedly.com](https://feedly.com/)                           | Modern RSS reader with team features  |
+| **Inoreader**           | [inoreader.com](https://www.inoreader.com/)                 | Powerful RSS with automation          |
+| **Kill the Newsletter** | [kill-the-newsletter.com](https://kill-the-newsletter.com/) | Convert newsletters to RSS            |
 
 ### Finding Government RSS Feeds
 
 Many government sites have RSS feeds. Check:
+
 - `[site]/rss`
 - `[site]/feed`
 - `[site]/news/feed`
@@ -82,6 +84,7 @@ Many government sites have RSS feeds. Check:
 ### Using RSS Bridge
 
 For sites without native RSS:
+
 1. Go to [rss-bridge.org](https://rss-bridge.org/)
 2. Choose a bridge type (Twitter, Facebook, etc.)
 3. Enter the source URL/account
@@ -94,11 +97,11 @@ For sites without native RSS:
 
 ### Tools
 
-| Tool | URL | Description |
-|------|-----|-------------|
+| Tool                   | URL                                               | Description                   |
+| ---------------------- | ------------------------------------------------- | ----------------------------- |
 | **ChangeDetection.io** | [changedetection.io](https://changedetection.io/) | Open-source change monitoring |
-| **Visualping** | [visualping.io](https://visualping.io/) | Visual change detection |
-| **Distill.io** | [distill.io](https://distill.io/) | Browser extension monitoring |
+| **Visualping**         | [visualping.io](https://visualping.io/)           | Visual change detection       |
+| **Distill.io**         | [distill.io](https://distill.io/)                 | Browser extension monitoring  |
 
 ### What to Monitor
 
@@ -116,16 +119,19 @@ For sites without native RSS:
 Run these 3 searches every Monday, updating the date:
 
 **1. Alerts (Priority):**
+
 ```txt
 site:*.health.*.gov.au intitle:"drug warning" after:[LAST_WEEK_DATE]
 ```
 
 **2. Research (Evidence):**
+
 ```txt
 site:*.edu.au filetype:pdf ("overdose" OR naloxone OR "drug checking") after:[LAST_WEEK_DATE]
 ```
 
 **3. Policy (Legislative/Strategic):**
+
 ```txt
 site:*.gov.au filetype:pdf ("harm reduction" OR "drug policy") after:[LAST_WEEK_DATE]
 ```

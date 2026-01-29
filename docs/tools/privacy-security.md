@@ -8,7 +8,8 @@
 
 ## ⚠️ Why Privacy Matters
 
-Peer workers and harm reduction practitioners often handle sensitive information about criminalised activities. Protecting client confidentiality isn't just ethical—it may be legally required.
+Peer workers and harm reduction practitioners often handle sensitive information about criminalised
+activities. Protecting client confidentiality isn't just ethical—it may be legally required.
 
 ---
 

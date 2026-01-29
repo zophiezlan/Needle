@@ -4,72 +4,97 @@
 
 **Version:** 3.1  
 **Last Updated:** January 2026  
-**Audience:** Peer workers, people with lived/living experience, clinicians, nurses, GPs, health promotion officers, service managers, researchers, policy analysts, advocates, event health coordinators, early warning teams, Aboriginal & Torres Strait Islander health workers, rural/remote practitioners, students, and anyone working to reduce drug-related harm.  
+**Audience:** Peer workers, people with lived/living experience, clinicians, nurses, GPs, health
+promotion officers, service managers, researchers, policy analysts, advocates, event health
+coordinators, early warning teams, Aboriginal & Torres Strait Islander health workers, rural/remote
+practitioners, students, and anyone working to reduce drug-related harm.  
 **Scope:** Australia-focused with key international comparators.  
-**Purpose:** Find _reliable_ evidence, policies, drug alerts, services, datasets, training resources, grey literature, and hidden knowledge—fast and ethically.
+**Purpose:** Find _reliable_ evidence, policies, drug alerts, services, datasets, training
+resources, grey literature, and hidden knowledge—fast and ethically.
 
 ---
 
 ## How to Use This Guide
 
-**🚀 New to dorking?** Start with [Section 3: Quick Start](#3-quick-start-the-90-second-workflow) and [Section 4: Core Operators](#4-core-operators-the-essentials).
+**🚀 New to dorking?** Start with [Section 3: Quick Start](#3-quick-start-the-90-second-workflow)
+and [Section 4: Core Operators](#4-core-operators-the-essentials).
 
-**👀 Looking for something specific?** Jump to [Section 7: Dork Packs by Task](#7-dork-packs-by-harm-reduction-task) and find your area.
+**👀 Looking for something specific?** Jump to
+[Section 7: Dork Packs by Task](#7-dork-packs-by-harm-reduction-task) and find your area.
 
-**🔬 Want to dig deeper?** See [Section 5: Advanced Operators](#5-advanced-operators--techniques) and [Section 7.15: Creative & Investigative Searching](#715-creative--investigative-searching-with-ethical-guardrails).
+**🔬 Want to dig deeper?** See [Section 5: Advanced Operators](#5-advanced-operators--techniques)
+and
+[Section 7.15: Creative & Investigative Searching](#715-creative--investigative-searching-with-ethical-guardrails).
 
-**👥 Peer worker or person with lived experience?** Sections [7.8](#78-peer-workforce-lived-experience--training), [7.13](#713-peer-knowledge-publications--storytelling), and [8.8](#88-peer-centered-search-workflow) are written specifically for you.
+**👥 Peer worker or person with lived experience?** Sections
+[7.8](#78-peer-workforce-lived-experience--training),
+[7.13](#713-peer-knowledge-publications--storytelling), and [8.8](#88-peer-centered-search-workflow)
+are written specifically for you.
 
-**🏥 Working in regional/remote Australia?** See [Section 7.16: Rural, Regional & Remote](#716-rural-regional--remote-australia).
+**🏥 Working in regional/remote Australia?** See
+[Section 7.16: Rural, Regional & Remote](#716-rural-regional--remote-australia).
 
-**🖤💛❤️ First Nations focused?** See [Section 7.17: Aboriginal & Torres Strait Islander](#717-aboriginal--torres-strait-islander-aod--harm-reduction).
+**🖤💛❤️ First Nations focused?** See
+[Section 7.17: Aboriginal & Torres Strait Islander](#717-aboriginal--torres-strait-islander-aod--harm-reduction).
 
 ---
 
 ## Contents
 
-1. **[Introduction](#1-introduction-why-this-guide-exists):** Why this guide exists & the philosophy behind it
-2. **[Safety First](#2-safety-ethics-and-privacy-rules-non-negotiables):** Ethics, Privacy, and Legal Rules
+1. **[Introduction](#1-introduction-why-this-guide-exists):** Why this guide exists & the philosophy
+   behind it
+2. **[Safety First](#2-safety-ethics-and-privacy-rules-non-negotiables):** Ethics, Privacy, and
+   Legal Rules
 3. **[Quick Start](#3-quick-start-the-90-second-workflow):** The 90-Second Workflow
 4. **[Core Operators](#4-core-operators-the-essentials):** The Essentials everyone should know
 5. **[Advanced Operators](#5-advanced-operators--techniques):** Precision techniques for power users
 6. **[Australia-First Domain Map](#6-australia-first-domain-map):** What to search where
-7. **[Dork Packs by Harm Reduction Task](#7-dork-packs-by-harm-reduction-task):** Ready-to-use searches
+7. **[Dork Packs by Harm Reduction Task](#7-dork-packs-by-harm-reduction-task):** Ready-to-use
+   searches
    - 7.1 [Drug Alerts & Early Warning](#71-drug-alerts--early-warning)
    - 7.2 [Take-Home Naloxone (THN)](#72-take-home-naloxone-thn)
    - 7.3 [Needle & Syringe Programs (NSP)](#73-needle--syringe-programs-nsp)
    - 7.4 [Opioid Agonist Treatment (OAT/OST)](#74-opioid-agonist-treatment-oatost)
    - 7.5 [Drug Checking & Pill Testing](#75-drug-checking--pill-testing)
-   - 7.6 [Novel Substances, Pharmacology & Toxicology](#76-novel-substances-pharmacology--toxicology)
+   - 7.6
+     [Novel Substances, Pharmacology & Toxicology](#76-novel-substances-pharmacology--toxicology)
    - 7.7 [Festivals & Event Harm Reduction](#77-festivals--event-harm-reduction)
    - 7.8 [Workforce, Peer Practice & Training](#78-peer-workforce-lived-experience--training)
    - 7.9 [Service Finding & Directories](#79-service-finding--directories)
    - 7.10 [Policy, Inquiries & Advocacy](#710-policy-inquiries--advocacy)
    - 7.11 [Data, Statistics & Surveillance](#711-data-statistics--surveillance)
    - 7.12 [Research & Academic Evidence](#712-research--academic-evidence)
-   - 7.13 [Peer Knowledge, Publications & Storytelling](#713-peer-knowledge-publications--storytelling)
+   - 7.13
+     [Peer Knowledge, Publications & Storytelling](#713-peer-knowledge-publications--storytelling)
    - 7.14 [International Best Practice](#714-international-best-practice)
-   - 7.15 [Creative & Investigative Searching](#715-creative--investigative-searching-with-ethical-guardrails)
+   - 7.15
+     [Creative & Investigative Searching](#715-creative--investigative-searching-with-ethical-guardrails)
    - 7.16 [Rural, Regional & Remote Australia](#716-rural-regional--remote-australia)
-   - 7.17 [Aboriginal & Torres Strait Islander AOD](#717-aboriginal--torres-strait-islander-aod--harm-reduction)
+   - 7.17
+     [Aboriginal & Torres Strait Islander AOD](#717-aboriginal--torres-strait-islander-aod--harm-reduction)
    - 7.18 [Stigma, Language & Historical Research](#718-stigma-language--historical-research)
    - 7.19 [Coroners, Inquests & Death Data](#719-coroners-inquests--death-data)
    - 7.20 [Prisons, Justice & Corrections](#720-prisons-justice--corrections-health)
-   - 7.21 [Housing, Homelessness & Social Determinants](#721-housing-homelessness--social-determinants)
+   - 7.21
+     [Housing, Homelessness & Social Determinants](#721-housing-homelessness--social-determinants)
    - 7.22 [Mental Health & Dual Diagnosis](#722-mental-health--dual-diagnosis)
    - 7.23 [Youth & Young People](#723-youth--young-people)
    - 7.24 [Families, Carers & Affected Others](#724-families-carers--affected-others)
-8. **[Workflows & Pro Tips](#8-workflows--pro-tips):** Research strategy, Monitoring, and Verification
+8. **[Workflows & Pro Tips](#8-workflows--pro-tips):** Research strategy, Monitoring, and
+   Verification
 9. **[Templates](#9-templates-briefings--citations):** Briefings & Citations
 10. **[Troubleshooting](#10-troubleshooting-when-google-fails):** When Google fails
-11. **[Appendix](#11-appendix-tools-cheat-sheets--automation):** Cheat Sheet, Bookmarklets & Automation
+11. **[Appendix](#11-appendix-tools-cheat-sheets--automation):** Cheat Sheet, Bookmarklets &
+    Automation
 12. **[Final Thoughts](#12-final-thoughts--best-practices):** Best Practices & Continuous Learning
 
 ---
 
 ## 1. Introduction: Why this guide exists
 
-Google dorking (advanced search operators) helps AOD workers cut through noise and find the _actual document_, _original dataset_, or _current guidance_—especially when things are buried in PDFs, hidden in “publications” directories, or published without strong SEO.
+Google dorking (advanced search operators) helps AOD workers cut through noise and find the _actual
+document_, _original dataset_, or _current guidance_—especially when things are buried in PDFs,
+hidden in “publications” directories, or published without strong SEO.
 
 **Why use Google Dorks?**
 
@@ -79,11 +104,13 @@ Google dorking (advanced search operators) helps AOD workers cut through noise a
 - **Monitor drug alerts** across jurisdictions in real-time.
 - **Discover unpublished reports**, submissions, and "buried" PDFs.
 
-**This guide is NOT about hacking.**
-We do not use search operators to find vulnerabilities, exposed credentials, private client records, or anything that could harm people or services. This guide is about **legitimate discovery of public information** that supports harm reduction work.
+**This guide is NOT about hacking.** We do not use search operators to find vulnerabilities, exposed
+credentials, private client records, or anything that could harm people or services. This guide is
+about **legitimate discovery of public information** that supports harm reduction work.
 
-**Centering Peer and Lived Experience Perspectives:**
-This guide is written with deep respect for peer workers and people with lived experience of drug use. Peer knowledge is expert knowledge. This guide helps you find:
+**Centering Peer and Lived Experience Perspectives:** This guide is written with deep respect for
+peer workers and people with lived experience of drug use. Peer knowledge is expert knowledge. This
+guide helps you find:
 
 - **Peer-led research and evaluations** that center lived experience
 - **Peer workforce development** resources and frameworks
@@ -99,13 +126,16 @@ This guide is written with deep respect for peer workers and people with lived e
 
 Use these practices when searching sensitive topics:
 
-- **Avoid searching for identifiable people** (names + “overdose” / “positive result” / “incident”) unless it is clearly in the public interest and you have organisational approval.
-- **Do not seek leaked or exposed personal data.** If you accidentally find it, **stop**, record the URL privately per policy, and escalate via your organisation’s information security pathway.
+- **Avoid searching for identifiable people** (names + “overdose” / “positive result” / “incident”)
+  unless it is clearly in the public interest and you have organisational approval.
+- **Do not seek leaked or exposed personal data.** If you accidentally find it, **stop**, record the
+  URL privately per policy, and escalate via your organisation’s information security pathway.
 - **Prefer de-identified, aggregated sources** (public health alerts, reports, published datasets).
 
 ### 2.2 Trauma-informed and stigma-free search terms
 
-Google indexes the language _used at the time_. You may need to use stigmatising terms to find older documents, but always prefer people-first language in your own documentation.
+Google indexes the language _used at the time_. You may need to use stigmatising terms to find older
+documents, but always prefer people-first language in your own documentation.
 
 - **Prefer:** `"people who use drugs"` over `"drug addicts"`
 - **Prefer:** `"overdose"` / `"poisoning"` over `"ODed"`
@@ -114,8 +144,10 @@ Google indexes the language _used at the time_. You may need to use stigmatising
 
 ### 2.3 Legal & Clinical Currency
 
-- **Respect Copyright:** content found via dorks is subject to the same copyright content found via normal search.
-- **Clinical Guidance is Time-Sensitive:** For anything clinical (withdrawal, overdose management, dosing), always check:
+- **Respect Copyright:** content found via dorks is subject to the same copyright content found via
+  normal search.
+- **Clinical Guidance is Time-Sensitive:** For anything clinical (withdrawal, overdose management,
+  dosing), always check:
   - **Publication date**
   - **Issuing authority**
   - **Jurisdiction**
@@ -130,7 +162,8 @@ When you need _anything_ fast:
 1. **Define the task** (alert / policy / service / evidence / training).
 2. **Choose the authority domain** first: `site:*.gov.au` or a known org/university.
 3. **Force document formats**: `filetype:pdf` (or `docx`, `pptx`, `xlsx`).
-4. **Use exact phrases** for program names: `"take-home naloxone"` `"needle syringe program"` `"drug checking"`
+4. **Use exact phrases** for program names: `"take-home naloxone"` `"needle syringe program"`
+   `"drug checking"`
 5. **Add a date constraint**: `after:2023-01-01` (or a range `2020..2024`)
 6. **Exclude junk**: `-jobs -careers -news -opinion -pdfviewer`
 7. **Open 2–3 candidates**, cross-check dates, and capture citations.
@@ -185,7 +218,8 @@ Search for words specifically in the body text (ignoring title/URL).
 ### 5.4 `related:` and `cache:`
 
 - `related:ndarc.med.unsw.edu.au` -> Finds similar research websites.
-- `cache:health.gov.au/drug-checking` -> View Google's cached version if the page is down or changed (note: Google is phasing this feature out, but it still works in some regions/contexts).
+- `cache:health.gov.au/drug-checking` -> View Google's cached version if the page is down or changed
+  (note: Google is phasing this feature out, but it still works in some regions/contexts).
 
 ### 5.5 “Directory Mining” Patterns
 
@@ -320,7 +354,8 @@ site:*.org.au ("needle syringe" OR "naloxone" OR "drug checking") filetype:pdf -
 
 ## 7. Dork Packs by Harm Reduction Task
 
-Copy/paste these directly into Google. Each pack is designed for a specific area of harm reduction work.
+Copy/paste these directly into Google. Each pack is designed for a specific area of harm reduction
+work.
 
 ### 7.1 Drug Alerts & Early Warning
 
@@ -424,14 +459,19 @@ site:*.org.au filetype:pdf ("drug checking" OR "pill testing") (practice OR prot
 
 _Surveillance of NPS, nitazenes, and adulterants._
 
-> **Essential Substance Information Resources:**
-> Before dorking, check these authoritative databases for substance information:
+> **Essential Substance Information Resources:** Before dorking, check these authoritative databases
+> for substance information:
 >
-> - **⭐ [Erowid](https://www.erowid.org/)** - The gold standard for substance information, harm reduction, and experience reports since 1995. Peer-trusted, comprehensive, and non-judgmental.
-> - **⭐ [PsychonautWiki](https://psychonautwiki.org/)** - Collaborative, community-driven substance encyclopedia with dosing, pharmacology, and harm reduction info.
-> - **[TripSit Factsheets](https://drugs.tripsit.me/)** - Quick-reference drug information and interaction checker.
-> - **[DanceSafe Drug Information](https://dancesafe.org/drug-information/)** - Festival and nightlife-focused harm reduction resources.
-> - **[DrugWise UK](https://www.drugwise.org.uk/)** - Evidence-based drug information and education resources.
+> - **⭐ [Erowid](https://www.erowid.org/)** - The gold standard for substance information, harm
+>   reduction, and experience reports since 1995. Peer-trusted, comprehensive, and non-judgmental.
+> - **⭐ [PsychonautWiki](https://psychonautwiki.org/)** - Collaborative, community-driven substance
+>   encyclopedia with dosing, pharmacology, and harm reduction info.
+> - **[TripSit Factsheets](https://drugs.tripsit.me/)** - Quick-reference drug information and
+>   interaction checker.
+> - **[DanceSafe Drug Information](https://dancesafe.org/drug-information/)** - Festival and
+>   nightlife-focused harm reduction resources.
+> - **[DrugWise UK](https://www.drugwise.org.uk/)** - Evidence-based drug information and education
+>   resources.
 
 ```txt
 site:*.gov.au filetype:pdf ("novel psychoactive" OR NPS) (trend OR surveillance OR "drug market")
@@ -638,33 +678,40 @@ site:abs.gov.au "illicit drug use" survey
 
 _Finding high-quality research and systematic reviews._
 
-> **⭐ Academic Access Tools (Bypass Paywalls Ethically):**
-> Research should be accessible. These tools help you access scholarly content:
+> **⭐ Academic Access Tools (Bypass Paywalls Ethically):** Research should be accessible. These
+> tools help you access scholarly content:
 >
 > **Free & Open Access:**
 >
-> - **[Unpaywall](https://unpaywall.org/)** - Browser extension, automatically finds free legal versions of papers
-> - **[Open Access Button](https://openaccessbutton.org/)** - Requests and finds open access versions
+> - **[Unpaywall](https://unpaywall.org/)** - Browser extension, automatically finds free legal
+>   versions of papers
+> - **[Open Access Button](https://openaccessbutton.org/)** - Requests and finds open access
+>   versions
 > - **[CORE](https://core.ac.uk/)** - 270M+ open access research papers aggregated
-> - **[Semantic Scholar](https://www.semanticscholar.org/)** - AI-powered academic search with free PDFs
+> - **[Semantic Scholar](https://www.semanticscholar.org/)** - AI-powered academic search with free
+>   PDFs
 > - **[BASE (Bielefeld Academic Search)](https://www.base-search.net/)** - 400M+ academic documents
 > - **[arXiv](https://arxiv.org/)** - Free preprints in sciences, often ahead of journal publication
-> - **[PubMed Central](https://www.ncbi.nlm.nih.gov/pmc/)** - Free full-text biomedical/health literature
+> - **[PubMed Central](https://www.ncbi.nlm.nih.gov/pmc/)** - Free full-text biomedical/health
+>   literature
 >
 > **⭐ Library Access & Shadow Libraries:**
 >
-> - **[Sci-Hub](https://sci-hub.se/)** - Direct access to millions of research papers (note: legal status varies by jurisdiction)
+> - **[Sci-Hub](https://sci-hub.se/)** - Direct access to millions of research papers (note: legal
+>   status varies by jurisdiction)
 > - **[Anna's Archive](https://annas-archive.org/)** - Search engine for books, papers, and more
 > - **[Z-Library](https://z-lib.io/)** - Massive ebook and article library
 > - **[Library Genesis (LibGen)](https://libgen.is/)** - Academic texts and articles
-> - **[Internet Archive Scholar](https://scholar.archive.org/)** - Full-text search of 25M+ scholarly papers
+> - **[Internet Archive Scholar](https://scholar.archive.org/)** - Full-text search of 25M+
+>   scholarly papers
 >
 > **AI Research Assistants:**
 >
 > - **[SciSpace](https://typeset.io/)** - AI-powered research paper analysis and explanation
 > - **[Elicit](https://elicit.org/)** - AI research assistant for literature review
 > - **[Consensus](https://consensus.app/)** - AI search that extracts findings from papers
-> - **[ResearchRabbit](https://www.researchrabbit.ai/)** - Discover related papers and build collections
+> - **[ResearchRabbit](https://www.researchrabbit.ai/)** - Discover related papers and build
+>   collections
 
 **Australian Research (Comprehensive):**
 
@@ -819,10 +866,11 @@ _Finding buried, niche, obscure, and unusual content through creative dorking. U
 > 4. **Protect:** Never expose personal data or breach privacy
 > 5. **Document:** Keep records of what you searched and why
 >
-> The purpose is always to **help people who use drugs, support advocacy, or hold systems accountable**—never to harm individuals or organisations.
+> The purpose is always to **help people who use drugs, support advocacy, or hold systems
+> accountable**—never to harm individuals or organisations.
 
-**Directory & Index Mining (Finding Unlisted Files):**
-_Sometimes documents exist on servers but aren't linked from any webpage._
+**Directory & Index Mining (Finding Unlisted Files):** _Sometimes documents exist on servers but
+aren't linked from any webpage._
 
 ```txt
 site:*.gov.au inurl:"/publications/" filetype:pdf "harm reduction" -inurl:html
@@ -832,8 +880,8 @@ site:*.gov.au intitle:"index of" "harm reduction"
 site:*.health.*.gov.au inurl:"/assets/" filetype:pdf
 ```
 
-**Finding Draft, Internal, or Unpublished Documents:**
-_Documents sometimes get uploaded before official release or are marked as drafts._
+**Finding Draft, Internal, or Unpublished Documents:** _Documents sometimes get uploaded before
+official release or are marked as drafts._
 
 ```txt
 site:*.gov.au filetype:pdf "draft" "harm reduction" -"final"
@@ -843,8 +891,8 @@ site:*.gov.au filetype:pdf "embargoed" OR "pre-release" drug policy
 "working paper" OR "discussion paper" harm reduction site:*.gov.au
 ```
 
-**Finding Presentations & Conference Materials:**
-_Often contain more candid content than published reports._
+**Finding Presentations & Conference Materials:** _Often contain more candid content than published
+reports._
 
 ```txt
 filetype:pptx OR filetype:ppt "harm reduction" Australia
@@ -854,8 +902,7 @@ filetype:pptx "drug checking" OR "pill testing" conference
 inurl:presentations "alcohol and other drugs" filetype:pdf
 ```
 
-**Spreadsheets & Data Files:**
-_Raw data, service lists, contact directories._
+**Spreadsheets & Data Files:** _Raw data, service lists, contact directories._
 
 ```txt
 filetype:xlsx "harm reduction" OR "AOD" OR "drug" site:*.gov.au
@@ -864,8 +911,7 @@ filetype:xlsx "service directory" OR "contact list" drug alcohol
 filetype:xls "opioid treatment" OR "methadone" clinic
 ```
 
-**Meeting Minutes, Agendas & Internal Communications:**
-_Can reveal policy development processes._
+**Meeting Minutes, Agendas & Internal Communications:** _Can reveal policy development processes._
 
 ```txt
 site:*.gov.au filetype:pdf "meeting minutes" "harm reduction" OR "drug policy"
@@ -874,8 +920,7 @@ site:*.gov.au filetype:pdf "agenda" "alcohol and other drugs" committee
 "terms of reference" "harm reduction" OR "drug checking" committee
 ```
 
-**Tender Documents, Contracts & Funding:**
-_Understanding how services are commissioned._
+**Tender Documents, Contracts & Funding:** _Understanding how services are commissioned._
 
 ```txt
 site:*.gov.au "tender" OR "expression of interest" "harm reduction"
@@ -885,8 +930,7 @@ site:*.gov.au filetype:pdf "funding agreement" OR "service agreement" AOD
 inurl:tenders site:*.gov.au "drug" OR "alcohol" OR "AOD"
 ```
 
-**FOI (Freedom of Information) Documents:**
-_Previously released documents under FOI._
+**FOI (Freedom of Information) Documents:** _Previously released documents under FOI._
 
 ```txt
 site:*.gov.au "freedom of information" OR "FOI" "drug" OR "harm reduction" filetype:pdf
@@ -895,8 +939,7 @@ site:*.gov.au inurl:foi OR inurl:freedom-of-information "alcohol" OR "overdose"
 "FOI release" "harm reduction" OR "drug checking"
 ```
 
-**Legacy & Archived Content:**
-_Historical documents that reveal policy evolution._
+**Legacy & Archived Content:** _Historical documents that reveal policy evolution._
 
 ```txt
 site:*.gov.au "harm reduction" 1990..2005 filetype:pdf
@@ -906,8 +949,7 @@ site:webarchive.nla.gov.au "harm reduction"
 "AIDS" "injecting drug use" Australia 1980s OR 1990s
 ```
 
-**Buried Evaluations & Reviews:**
-_Sometimes evaluations are published quietly._
+**Buried Evaluations & Reviews:** _Sometimes evaluations are published quietly._
 
 ```txt
 site:*.gov.au filetype:pdf "evaluation" "harm reduction" inurl:publications
@@ -917,8 +959,7 @@ site:*.gov.au filetype:pdf "review" "needle syringe program" -news
 "program review" "alcohol and other drugs" site:*.gov.au filetype:pdf
 ```
 
-**Finding Unpopular Opinions & Minority Reports:**
-_Dissenting views that may not be highlighted._
+**Finding Unpopular Opinions & Minority Reports:** _Dissenting views that may not be highlighted._
 
 ```txt
 "minority report" OR "dissenting opinion" drug policy Australia
@@ -940,7 +981,9 @@ filetype:xml "drug" site:*.gov.au (sitemaps can reveal hidden pages)
 
 _Harm reduction services and research specific to non-metropolitan areas._
 
-> **Why This Matters:** Rural and remote Australians face unique challenges—distance, limited services, workforce shortages, stigma in small communities, and different drug markets. The "tyranny of distance" shapes everything.
+> **Why This Matters:** Rural and remote Australians face unique challenges—distance, limited
+> services, workforce shortages, stigma in small communities, and different drug markets. The
+> "tyranny of distance" shapes everything.
 
 **General Rural/Regional AOD:**
 
@@ -1006,12 +1049,15 @@ site:crrmh.com.au OR site:ruralhealth.org.au "alcohol" OR "drug"
 
 _Culturally safe, self-determined approaches to healing._
 
-> **Cultural Safety Note:** This section supports finding resources that are led by, co-designed with, or appropriate for Aboriginal and Torres Strait Islander communities. When searching for or using this information:
+> **Cultural Safety Note:** This section supports finding resources that are led by, co-designed
+> with, or appropriate for Aboriginal and Torres Strait Islander communities. When searching for or
+> using this information:
 >
 > - **Prioritise Aboriginal Community Controlled** organisations and resources
 > - **Respect cultural protocols** around knowledge sharing
 > - **Recognise ongoing impacts** of colonisation, Stolen Generations, and intergenerational trauma
-> - **Centre self-determination** – Aboriginal and Torres Strait Islander peoples leading their own solutions
+> - **Centre self-determination** – Aboriginal and Torres Strait Islander peoples leading their own
+>   solutions
 > - **Use respectful language** – follow each community's preferences
 
 **Aboriginal Community Controlled Health (ACCHOs):**
@@ -1100,7 +1146,9 @@ site:abs.gov.au "Indigenous" "substance use" OR "alcohol"
 
 _Understanding how language has changed and finding historical documents using legacy terminology._
 
-> **Why This Section Exists:** Language matters. The words we use shape how people who use drugs are treated. However, to find historical documents, you sometimes need to search using the language of that era—even when it's stigmatising. Use these searches thoughtfully.
+> **Why This Section Exists:** Language matters. The words we use shape how people who use drugs are
+> treated. However, to find historical documents, you sometimes need to search using the language of
+> that era—even when it's stigmatising. Use these searches thoughtfully.
 
 **Tracking Language Change:**
 
@@ -1113,8 +1161,8 @@ _Understanding how language has changed and finding historical documents using l
 "words matter" drug OR substance use campaign
 ```
 
-**Finding Documents Using Historical/Stigmatising Terms:**
-_(Use when you need to locate older documents)_
+**Finding Documents Using Historical/Stigmatising Terms:** _(Use when you need to locate older
+documents)_
 
 ```txt
 # Older terminology (for historical research):
@@ -1164,7 +1212,9 @@ _(Use when you need to locate older documents)_
 
 _Understanding drug-related deaths through coronial findings._
 
-> **Sensitivity Note:** This section deals with death data and coronial findings. These searches can surface distressing content. Take care of yourself and consider your purpose carefully before searching.
+> **Sensitivity Note:** This section deals with death data and coronial findings. These searches can
+> surface distressing content. Take care of yourself and consider your purpose carefully before
+> searching.
 
 **Coronial Courts & Findings:**
 
@@ -1224,7 +1274,9 @@ site:aihw.gov.au "drug-induced deaths" OR "opioid deaths"
 
 _Harm reduction in closed settings and justice system interactions._
 
-> **Context:** People who use drugs are massively over-represented in prisons. Harm reduction in custody is limited but evolving. Many people's first contact with treatment is through the justice system.
+> **Context:** People who use drugs are massively over-represented in prisons. Harm reduction in
+> custody is limited but evolving. Many people's first contact with treatment is through the justice
+> system.
 
 **Prison Health & AOD:**
 
@@ -1470,7 +1522,8 @@ site:fds.org.au OR site:familydrughelp.org.au
 
 When assessing documents, prefer sources in this order:
 
-1. **Govt Health Authority** (`*.health.*.gov.au`, `aihw.gov.au`) - Official policy, alerts, guidelines
+1. **Govt Health Authority** (`*.health.*.gov.au`, `aihw.gov.au`) - Official policy, alerts,
+   guidelines
 2. **University / Research Institute** (`*.edu.au`, NDARC, Burnet) - Peer-reviewed evidence
 3. **Reputable Sector Org / Peak Body** (`*.org.au`, NUAA, AIVL) - Practice wisdom, lived experience
 4. **Everything else** (blogs, media) = **context only**, not primary evidence
@@ -1582,27 +1635,30 @@ intitle:"methods" OR intitle:"methodology" "harm reduction" filetype:pdf
 
 ### 8.6 Monitoring & Early Warning Systems
 
-> **⭐ RSS & Monitoring Tools:**
-> Don't rely on manual checks. Set up automated monitoring for harm reduction intelligence:
+> **⭐ RSS & Monitoring Tools:** Don't rely on manual checks. Set up automated monitoring for harm
+> reduction intelligence:
 >
 > **RSS Feed Tools:**
 >
-> - **[RSS Bridge](https://rss-bridge.org/)** - Generate RSS feeds from websites that don't have them (Twitter, Facebook, etc.)
-> - **[Feedly](https://feedly.com/)** - Modern RSS reader with team sharing features (free tier available)
+> - **[RSS Bridge](https://rss-bridge.org/)** - Generate RSS feeds from websites that don't have
+>   them (Twitter, Facebook, etc.)
+> - **[Feedly](https://feedly.com/)** - Modern RSS reader with team sharing features (free tier
+>   available)
 > - **[Inoreader](https://www.inoreader.com/)** - Powerful RSS with rules, filters, and automation
 > - **[RSS Guard](https://github.com/martinrotter/rssguard)** - Free, open-source desktop RSS reader
 > - **[FreshRSS](https://freshrss.org/)** - Self-hosted RSS aggregator
-> - **[Kill the Newsletter](https://kill-the-newsletter.com/)** - Convert email newsletters to RSS feeds
+> - **[Kill the Newsletter](https://kill-the-newsletter.com/)** - Convert email newsletters to RSS
+>   feeds
 >
 > **Website Change Monitoring:**
 >
-> - **⭐ [ChangeDetection.io](https://changedetection.io/)** - Open-source website change monitoring (can self-host)
+> - **⭐ [ChangeDetection.io](https://changedetection.io/)** - Open-source website change monitoring
+>   (can self-host)
 > - **[Visualping](https://visualping.io/)** - Visual website change alerts
 > - **[Distill.io](https://distill.io/)** - Monitor websites and get alerts for changes
 > - **[Follow That Page](https://followthatpage.com/)** - Email alerts when webpages change
 >
-> **Government Alert Feeds:**
-> Many Australian government sites have RSS feeds. Check for these URLs:
+> **Government Alert Feeds:** Many Australian government sites have RSS feeds. Check for these URLs:
 >
 > - `[site]/rss` or `[site]/feed`
 > - `[site]/news/feed`
@@ -1733,13 +1789,9 @@ Create a lightweight spreadsheet with these fields:
 
 Use this to summarize findings for your team:
 
-> **Topic:** [e.g. New Nitazene Alert]
-> **What changed / why it matters:**
-> **What we know (source + date):**
-> **What we don’t know yet:**
-> **Practical implications for workers:**
-> **What to tell clients (plain language):**
-> **Referral pathways / services:**
+> **Topic:** [e.g. New Nitazene Alert] **What changed / why it matters:** **What we know (source +
+> date):** **What we don’t know yet:** **Practical implications for workers:** **What to tell
+> clients (plain language):** **Referral pathways / services:**
 
 ### 9.2 Citation Capture Shortcut
 
@@ -1799,27 +1851,35 @@ site:*.edu.au [topic] filetype:pdf
 site:*.org.au "peer-led" [topic] filetype:pdf
 ```
 
-**Note:** Sometimes you need to search using stigmatizing terms to find older documents or understand how language has changed. That's okay—just be aware of the context.
+**Note:** Sometimes you need to search using stigmatizing terms to find older documents or
+understand how language has changed. That's okay—just be aware of the context.
 
 ### 10.4 Broken Link or Deleted Page?
 
-> **⭐ Web Archiving & Recovery Tools:**
-> Government URLs frequently break. These tools help you find cached and archived content:
+> **⭐ Web Archiving & Recovery Tools:** Government URLs frequently break. These tools help you find
+> cached and archived content:
 >
 > **Archive Services:**
 >
-> - **⭐ [Wayback Machine](https://web.archive.org/)** - Internet Archive's 800B+ page archive, paste any URL to find old versions
-> - **[Wayback Machine Extension](https://chrome.google.com/webstore/detail/wayback-machine)** - Browser extension for instant archive access
-> - **[Web Archives Extension](https://github.com/nickshanks/Web-Archives)** - Search multiple archives at once
-> - **[Archive.today](https://archive.today/)** - Alternative archive with newer snapshots, some content Wayback misses
+> - **⭐ [Wayback Machine](https://web.archive.org/)** - Internet Archive's 800B+ page archive,
+>   paste any URL to find old versions
+> - **[Wayback Machine Extension](https://chrome.google.com/webstore/detail/wayback-machine)** -
+>   Browser extension for instant archive access
+> - **[Web Archives Extension](https://github.com/nickshanks/Web-Archives)** - Search multiple
+>   archives at once
+> - **[Archive.today](https://archive.today/)** - Alternative archive with newer snapshots, some
+>   content Wayback misses
 > - **[Ghost Archive](https://ghostarchive.org/)** - Focuses on archiving pages before deletion
-> - **[Perma.cc](https://perma.cc/)** - Created by Harvard Law Library for permanent link preservation
+> - **[Perma.cc](https://perma.cc/)** - Created by Harvard Law Library for permanent link
+>   preservation
 > - **[CachedView](https://cachedview.com/)** - Multi-archive search for cached pages
 >
 > **Saving Pages Now:**
 >
-> - **[SingleFile Extension](https://github.com/nickshanks/SingleFile)** - Save complete webpages as single HTML files
-> - **[MarkDownload](https://github.com/deathau/markdownload)** - Convert webpages to Markdown for easy storage
+> - **[SingleFile Extension](https://github.com/nickshanks/SingleFile)** - Save complete webpages as
+>   single HTML files
+> - **[MarkDownload](https://github.com/deathau/markdownload)** - Convert webpages to Markdown for
+>   easy storage
 > - **[Zotero](https://www.zotero.org/)** - Academic reference manager that saves page snapshots
 >
 > **Finding What Google Cached:**
@@ -1829,7 +1889,8 @@ site:*.org.au "peer-led" [topic] filetype:pdf
 
 - **Google Cache:** `cache:http://example.com/old-policy.pdf`
 - **Internet Archive:** Copy the URL and paste it into [web.archive.org](https://web.archive.org).
-- **Multiple Archives:** Use CachedView or Web Archives Extension to check all major archives simultaneously
+- **Multiple Archives:** Use CachedView or Web Archives Extension to check all major archives
+  simultaneously
 
 ---
 
@@ -2042,7 +2103,8 @@ Example: `"drug checking" evaluation filetype:pdf -site:researchgate.net -news`
 site:*.gov.au [service type] ([location1] OR [location2] OR [location3])
 ```
 
-Example: `site:*.health.nsw.gov.au "needle syringe program" ("central coast" OR newcastle OR wollongong)`
+Example:
+`site:*.health.nsw.gov.au "needle syringe program" ("central coast" OR newcastle OR wollongong)`
 
 #### Template 5: Policy + Jurisdiction + Time
 
@@ -2206,17 +2268,23 @@ These tools enhance and extend your Google dorking capabilities:
 
 **⭐ Dork Search Collections:**
 
-- **[sitedorks](https://github.com/Zarcolio/sitedorks)** - Pre-built dorks for 600+ websites, automate site-specific searches
-- **[Dorks-collections-list](https://github.com/cipher387/Dorks-collections-list)** - Massive curated list of dork databases by category
-- **[OSINT Dorks](https://github.com/IVMachiavelli/OSINT_Team_Links)** - OSINT-focused Google dork collection
-- **[Google Dork List](https://www.boxpiper.com/posts/google-dork-list)** - Comprehensive categorized dork reference
+- **[sitedorks](https://github.com/Zarcolio/sitedorks)** - Pre-built dorks for 600+ websites,
+  automate site-specific searches
+- **[Dorks-collections-list](https://github.com/cipher387/Dorks-collections-list)** - Massive
+  curated list of dork databases by category
+- **[OSINT Dorks](https://github.com/IVMachiavelli/OSINT_Team_Links)** - OSINT-focused Google dork
+  collection
+- **[Google Dork List](https://www.boxpiper.com/posts/google-dork-list)** - Comprehensive
+  categorized dork reference
 - **[DorkSearch](https://dorksearch.com/)** - Web-based dork builder and search assistant
 
 **⭐ Dork Generators & Helpers:**
 
 - **[SearchTweaks](https://searchtweaks.com/)** - Visual Google search modifier tool
-- **[Moz Google Search Operators Guide](https://moz.com/learn/seo/search-operators)** - Definitive operator reference
-- **[Google Hacking Database](https://www.exploit-db.com/google-hacking-database)** - Classic GHDB with searchable dorks
+- **[Moz Google Search Operators Guide](https://moz.com/learn/seo/search-operators)** - Definitive
+  operator reference
+- **[Google Hacking Database](https://www.exploit-db.com/google-hacking-database)** - Classic GHDB
+  with searchable dorks
 
 **Alternative Search Engines Supporting Advanced Operators:**
 
@@ -2269,20 +2337,26 @@ These tools enhance and extend your Google dorking capabilities:
 
 _Open Source Intelligence tools for deeper research. Use responsibly._
 
-> **⚠️ Ethics Reminder:** These tools are powerful. Use only for legitimate harm reduction research, advocacy, and service delivery. Never use to investigate or expose individuals.
+> **⚠️ Ethics Reminder:** These tools are powerful. Use only for legitimate harm reduction research,
+> advocacy, and service delivery. Never use to investigate or expose individuals.
 
 **⭐ OSINT Learning & Frameworks:**
 
-- **[IntelTechniques](https://inteltechniques.com/tools/)** - Michael Bazzell's comprehensive OSINT toolkit and resources
-- **[Bellingcat Online Investigation Toolkit](https://docs.google.com/spreadsheets/d/18rtqh8EG2q1xBo2cLNyhIDuK9jrPGwYr9DI2UncoqJQ/)** - Investigative journalism tools
+- **[IntelTechniques](https://inteltechniques.com/tools/)** - Michael Bazzell's comprehensive OSINT
+  toolkit and resources
+- **[Bellingcat Online Investigation Toolkit](https://docs.google.com/spreadsheets/d/18rtqh8EG2q1xBo2cLNyhIDuK9jrPGwYr9DI2UncoqJQ/)** -
+  Investigative journalism tools
 - **[OSINT Framework](https://osintframework.com/)** - Visual map of OSINT tools by category
-- **[Cyber Detective's OSINT Tools](https://github.com/cipher387/osint_stuff_tool_collection)** - Massive curated collection
-- **[Analyst Research Tools](https://github.com/cipher387/Analyst-Research-Tools)** - Research analyst toolkit
+- **[Cyber Detective's OSINT Tools](https://github.com/cipher387/osint_stuff_tool_collection)** -
+  Massive curated collection
+- **[Analyst Research Tools](https://github.com/cipher387/Analyst-Research-Tools)** - Research
+  analyst toolkit
 - **[awesome-osint](https://github.com/jivoi/awesome-osint)** - Curated OSINT resources list
 
 **Username & Identity Research:**
 
-- **[Sherlock](https://github.com/sherlock-project/sherlock)** - Find usernames across 400+ social networks
+- **[Sherlock](https://github.com/sherlock-project/sherlock)** - Find usernames across 400+ social
+  networks
 - **[WhatsMyName](https://whatsmyname.app/)** - Username enumeration across platforms
 - **[Namechk](https://namechk.com/)** - Username availability checker
 
@@ -2292,7 +2366,8 @@ _Open Source Intelligence tools for deeper research. Use responsibly._
 - **[Flagfox](https://flagfox.wordpress.com/)** - Browser extension showing server location
 - **[HTTPStatus](https://httpstatus.io/)** - Check HTTP status codes
 - **[WhereGoes](https://wheregoes.com/)** - Trace URL redirects
-- **[Down for Everyone or Just Me](https://downforeveryoneorjustme.com/)** - Check if sites are accessible
+- **[Down for Everyone or Just Me](https://downforeveryoneorjustme.com/)** - Check if sites are
+  accessible
 
 **Document & Metadata Analysis:**
 
@@ -2311,19 +2386,23 @@ _Modern AI assistants for research, analysis, and literature review._
 
 **⭐ AI Research Assistants:**
 
-- **[NotebookLM](https://notebooklm.google.com/)** - Google's AI for analyzing your documents, creates summaries and Q&A
+- **[NotebookLM](https://notebooklm.google.com/)** - Google's AI for analyzing your documents,
+  creates summaries and Q&A
 - **[Perplexity AI](https://perplexity.ai/)** - AI search engine with cited sources
 - **[Claude](https://claude.ai/)** - Anthropic's AI assistant, excellent for analysis and writing
 - **[ChatGPT](https://chat.openai.com/)** - OpenAI's conversational AI
 
 **Academic AI Tools:**
 
-- **[SciSpace (Typeset)](https://typeset.io/)** - Explain research papers in simple terms, highlight and ask questions
+- **[SciSpace (Typeset)](https://typeset.io/)** - Explain research papers in simple terms, highlight
+  and ask questions
 - **[Elicit](https://elicit.org/)** - AI research assistant for systematic literature review
 - **[Consensus](https://consensus.app/)** - AI that extracts findings from scientific papers
-- **[ResearchRabbit](https://www.researchrabbit.ai/)** - "Spotify for papers" - discover related research
+- **[ResearchRabbit](https://www.researchrabbit.ai/)** - "Spotify for papers" - discover related
+  research
 - **[Scholarcy](https://www.scholarcy.com/)** - AI summarizes research papers
-- **[Explainpaper](https://www.explainpaper.com/)** - Upload papers and get explanations of complex sections
+- **[Explainpaper](https://www.explainpaper.com/)** - Upload papers and get explanations of complex
+  sections
 
 **Document & PDF Analysis:**
 
@@ -2344,15 +2423,19 @@ _Essential extensions to enhance your research workflow._
 **⭐ Must-Have Extensions:**
 
 - **[Unpaywall](https://unpaywall.org/)** - Automatically finds free legal PDFs of paywalled papers
-- **[Wayback Machine](https://chrome.google.com/webstore/detail/wayback-machine)** - Quick access to archived pages
-- **[SingleFile](https://github.com/gildas-lormeau/SingleFile)** - Save complete webpages as single HTML files
+- **[Wayback Machine](https://chrome.google.com/webstore/detail/wayback-machine)** - Quick access to
+  archived pages
+- **[SingleFile](https://github.com/gildas-lormeau/SingleFile)** - Save complete webpages as single
+  HTML files
 - **[Zotero Connector](https://www.zotero.org/download/connectors)** - One-click citation saving
 
 ### 11.13 Privacy & Security Tools for Sensitive Work
 
 _Harm reduction work often involves sensitive information. Protect yourself and your clients._
 
-> **Why Privacy Matters:** Peer workers and harm reduction practitioners often handle sensitive information about criminalised activities. Protecting client confidentiality isn't just ethical—it may be legally required.
+> **Why Privacy Matters:** Peer workers and harm reduction practitioners often handle sensitive
+> information about criminalised activities. Protecting client confidentiality isn't just ethical—it
+> may be legally required.
 
 **⭐ Encrypted Messaging (Client Communication):**
 
@@ -2385,7 +2468,8 @@ _Harm reduction work often involves sensitive information. Protect yourself and 
 **Privacy Guides & Learning:**
 
 - **[Privacy Guides](https://www.privacyguides.org/)** - Comprehensive privacy recommendations
-- **[The Hitchhiker's Guide to Online Anonymity](https://anonymousplanet.org/)** - Extensive anonymity guide
+- **[The Hitchhiker's Guide to Online Anonymity](https://anonymousplanet.org/)** - Extensive
+  anonymity guide
 - **[EFF Surveillance Self-Defense](https://ssd.eff.org/)** - Protect yourself from surveillance
 
 **Self-Destructing Messages:**
@@ -2413,15 +2497,20 @@ _Harm reduction work often involves sensitive information. Protect yourself and 
 
 **Translation & CALD Support:**
 
-- **[Translate Web Pages](https://github.com/AcerExtension/AcerBrowserAssistant)** - In-browser page translation
-- **[Google Translate Extension](https://chrome.google.com/webstore/detail/google-translate)** - Quick translations
+- **[Translate Web Pages](https://github.com/AcerExtension/AcerBrowserAssistant)** - In-browser page
+  translation
+- **[Google Translate Extension](https://chrome.google.com/webstore/detail/google-translate)** -
+  Quick translations
 - **[DeepL](https://www.deepl.com/)** - High-quality AI translation
 
 ---
 
 ## 12. Final Thoughts & Best Practices
 
-Google Dorks are powerful tools for cutting through information overload and finding exactly what you need for harm reduction work. Whether you're preparing briefings for peer workers, finding evidence for policy submissions, locating service directories, or tracking drug alerts, these techniques will save you time and improve your results.
+Google Dorks are powerful tools for cutting through information overload and finding exactly what
+you need for harm reduction work. Whether you're preparing briefings for peer workers, finding
+evidence for policy submissions, locating service directories, or tracking drug alerts, these
+techniques will save you time and improve your results.
 
 ### 12.1 Getting Started
 
@@ -2477,9 +2566,11 @@ Harm reduction is collaborative work, and that includes sharing the tools we use
 
 - **Your experiential knowledge is expert knowledge** - trust what you know from lived experience
 - **Peer wisdom often isn't in academic databases** - check peer organisation sites first
-- **"Nothing About Us Without Us"** applies to information searching too - prioritise sources that include peer voices
+- **"Nothing About Us Without Us"** applies to information searching too - prioritise sources that
+  include peer voices
 - **Share peer resources** with clinical and research colleagues who may not know where to find them
-- **Challenge documents** that don't include peer perspectives - use these search skills to find better sources
+- **Challenge documents** that don't include peer perspectives - use these search skills to find
+  better sources
 - **Build peer knowledge archives** - save important peer publications that might disappear
 
 **Peer-to-Peer Knowledge Sharing:**
@@ -2487,11 +2578,13 @@ Harm reduction is collaborative work, and that includes sharing the tools we use
 - When you find a great peer resource, share it with other peer workers across the country
 - Consider creating shared folders or databases of peer-led research and resources
 - Support emerging peer workers to develop these search skills
-- Remember: peer knowledge is often oral, informal, and lived - not everything valuable will be in a PDF
+- Remember: peer knowledge is often oral, informal, and lived - not everything valuable will be in a
+  PDF
 
 ### 12.5 A Note on Creative and Investigative Searching
 
-This guide includes techniques for finding obscure, buried, and sensitive content. These are powerful tools that should be used responsibly:
+This guide includes techniques for finding obscure, buried, and sensitive content. These are
+powerful tools that should be used responsibly:
 
 - **Always consider your purpose** - Is this search in the public interest?
 - **Respect privacy** - Never seek to expose personal information
@@ -2499,11 +2592,13 @@ This guide includes techniques for finding obscure, buried, and sensitive conten
 - **Document your searches** - Keep records of what you searched and why
 - **Share carefully** - Some findings may need careful handling before sharing
 
-The goal is always to find information that helps people who use drugs, supports better services, enables advocacy, or holds systems accountable.
+The goal is always to find information that helps people who use drugs, supports better services,
+enables advocacy, or holds systems accountable.
 
 ### 12.6 Acknowledgements
 
-This guide exists because of decades of peer organising and harm reduction practice in Australia. We acknowledge:
+This guide exists because of decades of peer organising and harm reduction practice in Australia. We
+acknowledge:
 
 - **The peer workers** who have always known what their communities need
 - **Drug user organisations** that have fought for evidence-based harm reduction
@@ -2514,22 +2609,27 @@ This guide exists because of decades of peer organising and harm reduction pract
 
 ---
 
-_Created for harm reduction workers, by harm reduction workers._
-_Share freely, adapt as needed, and stay curious._
+_Created for harm reduction workers, by harm reduction workers._ _Share freely, adapt as needed, and
+stay curious._
 
 ---
 
-_This guide supports ethical, public-interest information finding for harm reduction practice. It must not be used to locate private, leaked, or identifiable personal information. Always follow your organisation's privacy, data handling, and clinical governance requirements._
+_This guide supports ethical, public-interest information finding for harm reduction practice. It
+must not be used to locate private, leaked, or identifiable personal information. Always follow your
+organisation's privacy, data handling, and clinical governance requirements._
 
 **License:** Share freely for harm reduction purposes. Attribution appreciated but not required.
 
-**Feedback & Updates:** This guide reflects best practices as of January 2026. Google's search algorithms and operators may change over time. If you find dorks that no longer work or discover new useful patterns, please share with the harm reduction community.
+**Feedback & Updates:** This guide reflects best practices as of January 2026. Google's search
+algorithms and operators may change over time. If you find dorks that no longer work or discover new
+useful patterns, please share with the harm reduction community.
 
 ---
 
 ## Appendix A: Comprehensive Resource Directory
 
-_A curated collection of essential tools, databases, and resources for harm reduction research and practice._
+_A curated collection of essential tools, databases, and resources for harm reduction research and
+practice._
 
 ### A.1 Substance Information Databases
 

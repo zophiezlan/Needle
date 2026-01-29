@@ -114,11 +114,13 @@ site:*.nsw.gov.au "harm reduction" OR "drug policy" OR "drug alert"
 Broad queries generate too many alerts. Be specific.
 
 **Too broad:**
+
 ```txt
 drug Australia
 ```
 
 **Better:**
+
 ```txt
 site:*.gov.au "drug alert" OR "drug warning"
 ```

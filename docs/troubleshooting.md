@@ -37,12 +37,12 @@ site:*.gov.au "drug checking"
 
 Different documents use different terms:
 
-| Try this | Instead of |
-|----------|------------|
-| `"harm minimisation"` | `"harm reduction"` |
-| `"opioid pharmacotherapy"` | `"OAT"` or `"OST"` |
-| `"public health warning"` | `"drug alert"` |
-| `"needle exchange"` | `"needle syringe program"` |
+| Try this                   | Instead of                 |
+| -------------------------- | -------------------------- |
+| `"harm minimisation"`      | `"harm reduction"`         |
+| `"needle exchange"`        | `"needle syringe program"` |
+| `"opioid pharmacotherapy"` | `"OAT"` or `"OST"`         |
+| `"public health warning"`  | `"drug alert"`             |
 
 ### Fix 4: Use `AROUND(n)` for Looser Phrasing
 
@@ -126,7 +126,8 @@ site:*.edu.au [topic] filetype:pdf
 site:*.org.au "peer-led" [topic] filetype:pdf
 ```
 
-**Note:** Sometimes you need stigmatising terms to find older documents. That's okay—just be aware of context.
+**Note:** Sometimes you need stigmatising terms to find older documents. That's okay—just be aware
+of context.
 
 ---
 
@@ -284,11 +285,11 @@ Add one operator at a time to find what's causing issues.
 
 ### Try Alternative Operators
 
-| If this doesn't work | Try this |
-|---------------------|----------|
-| `filetype:pdf` | `ext:pdf` |
-| `"exact phrase"` | `AROUND(1)` for words |
-| `intitle:` | Just search the title |
+| If this doesn't work | Try this              |
+| -------------------- | --------------------- |
+| `"exact phrase"`     | `AROUND(1)` for words |
+| `filetype:pdf`       | `ext:pdf`             |
+| `intitle:`           | Just search the title |
 
 ---
 

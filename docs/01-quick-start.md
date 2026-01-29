@@ -35,6 +35,7 @@ site:*.gov.au filetype:pdf "harm reduction" after:2024
 ```
 
 **What this does:**
+
 - `site:*.gov.au` → Only Australian government domains
 - `filetype:pdf` → Only PDF documents (not web pages)
 - `"harm reduction"` → Exact phrase match
@@ -79,43 +80,49 @@ site:*.gov.au "take-home naloxone" guidelines filetype:pdf
 ## 🔧 Quick Customization
 
 ### Change the Topic
+
 Replace `"harm reduction"` with:
+
 - `"needle syringe program"`
 - `"drug checking"`
 - `"opioid treatment"`
 - `"overdose prevention"`
 
 ### Change the Jurisdiction
+
 Replace `site:*.gov.au` with:
-| Jurisdiction | Domain |
-|--------------|--------|
-| All AU Government | `site:*.gov.au` |
-| NSW Health | `site:health.nsw.gov.au` |
-| VIC Health | `site:health.vic.gov.au` |
-| QLD Health | `site:health.qld.gov.au` |
-| Australian Universities | `site:*.edu.au` |
-| Sector Orgs | `site:*.org.au` |
+
+| Jurisdiction            | Domain                   |
+| ----------------------- | ------------------------ |
+| All AU Government       | `site:*.gov.au`          |
+| Australian Universities | `site:*.edu.au`          |
+| NSW Health              | `site:health.nsw.gov.au` |
+| QLD Health              | `site:health.qld.gov.au` |
+| Sector Orgs             | `site:*.org.au`          |
+| VIC Health              | `site:health.vic.gov.au` |
 
 ### Change the Document Type
+
 Replace `filetype:pdf` with:
-| Type | Use For |
-|------|---------|
-| `filetype:pdf` | Reports, guidelines, policies |
-| `filetype:xlsx` | Data, service directories |
+
+| Type            | Use For                        |
+| --------------- | ------------------------------ |
+| `filetype:docx` | Templates, drafts              |
+| `filetype:pdf`  | Reports, guidelines, policies  |
 | `filetype:pptx` | Presentations, training slides |
-| `filetype:docx` | Templates, drafts |
+| `filetype:xlsx` | Data, service directories      |
 
 ---
 
 ## ❌ Common Mistakes to Avoid
 
-| Mistake | Fix |
-|---------|-----|
-| `site:gov.au` (missing `*`) | Use `site:*.gov.au` to catch subdomains |
-| `or` (lowercase) | Use `OR` (must be uppercase) |
-| Too many operators at once | Start simple, add operators one at a time |
-| No quotes around phrases | Use `"exact phrase"` for multi-word terms |
-| Forgetting exclusions | Add `-jobs -careers` to remove noise |
+| Mistake                     | Fix                                       |
+| --------------------------- | ----------------------------------------- |
+| `or` (lowercase)            | Use `OR` (must be uppercase)              |
+| `site:gov.au` (missing `*`) | Use `site:*.gov.au` to catch subdomains   |
+| Forgetting exclusions       | Add `-jobs -careers` to remove noise      |
+| No quotes around phrases    | Use `"exact phrase"` for multi-word terms |
+| Too many operators at once  | Start simple, add operators one at a time |
 
 ---
 
@@ -160,7 +167,8 @@ Now that you have the basics:
 
 ### Tip 2: Save Your Best Dorks
 
-Create browser bookmarks for searches you use regularly. See [Bookmarklets](tools/bookmarklets.md) for one-click searching.
+Create browser bookmarks for searches you use regularly. See [Bookmarklets](tools/bookmarklets.md)
+for one-click searching.
 
 ### Tip 3: Use Date Ranges for Research
 

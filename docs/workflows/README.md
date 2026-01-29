@@ -8,12 +8,12 @@
 
 ## 📋 Available Workflows
 
-| Workflow | Description | Best For |
-|----------|-------------|----------|
-| [Research Workflow](research-workflow.md) | Four-step funnel & triangulation | Systematic evidence gathering |
-| [Monitoring](monitoring.md) | Alerts, RSS, early warning | Staying current with developments |
-| [Peer-Centered](peer-centered.md) | Values-based searching | Peer workers & lived experience |
-| [Verification](verification.md) | Source validity & trust | Quality assurance |
+| Workflow                                  | Description                      | Best For                          |
+| ----------------------------------------- | -------------------------------- | --------------------------------- |
+| [Research Workflow](research-workflow.md) | Four-step funnel & triangulation | Systematic evidence gathering     |
+| [Monitoring](monitoring.md)               | Alerts, RSS, early warning       | Staying current with developments |
+| [Peer-Centered](peer-centered.md)         | Values-based searching           | Peer workers & lived experience   |
+| [Verification](verification.md)           | Source validity & trust          | Quality assurance                 |
 
 ---
 
@@ -22,21 +22,25 @@
 ### When to Use Each Workflow
 
 **Research Workflow** - Use when:
+
 - Building evidence for a briefing or submission
 - Researching a new topic systematically
 - Need comprehensive coverage of a subject
 
 **Monitoring** - Use when:
+
 - Tracking drug alerts and early warnings
 - Staying current with policy developments
 - Monitoring research in your area
 
 **Peer-Centered** - Use when:
+
 - Searching as/for peer workers
 - Prioritising lived experience perspectives
 - Applying "Nothing About Us Without Us"
 
 **Verification** - Use when:
+
 - Assessing document quality and reliability
 - Cross-checking information
 - Building citation-worthy evidence
@@ -55,6 +59,7 @@
 ### Combine Workflows
 
 Most real searches combine elements from multiple workflows:
+
 - Start with **Research Workflow** to find documents
 - Apply **Verification** to assess quality
 - Use **Monitoring** to stay updated

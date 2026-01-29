@@ -2,7 +2,8 @@
 
 > Know where information lives. Use this to choose `site:` targets quickly.
 
-[← Back to Main Guide](../README.md) | [← Advanced Operators](03-advanced-operators.md) | [Next: Synonym Blocks →](05-synonym-blocks.md)
+[← Back to Main Guide](../README.md) | [← Advanced Operators](03-advanced-operators.md) |
+[Next: Synonym Blocks →](05-synonym-blocks.md)
 
 ---
 
@@ -10,23 +11,24 @@
 
 ### Primary Health & Drug Policy
 
-| Domain | Organisation | Focus |
-|--------|--------------|-------|
-| `site:health.gov.au` | Department of Health | National policies, strategies |
-| `site:aihw.gov.au` | Australian Institute of Health & Welfare | National statistics, data |
-| `site:abs.gov.au` | Australian Bureau of Statistics | Census, surveys |
-| `site:tga.gov.au` | Therapeutic Goods Administration | Medicine scheduling, approvals |
+| Domain               | Organisation                             | Focus                          |
+| -------------------- | ---------------------------------------- | ------------------------------ |
+| `site:abs.gov.au`    | Australian Bureau of Statistics          | Census, surveys                |
+| `site:aihw.gov.au`   | Australian Institute of Health & Welfare | National statistics, data      |
+| `site:health.gov.au` | Department of Health                     | National policies, strategies  |
+| `site:tga.gov.au`    | Therapeutic Goods Administration         | Medicine scheduling, approvals |
 
 ### Policy & Parliamentary
 
-| Domain | Organisation | Focus |
-|--------|--------------|-------|
-| `site:aph.gov.au` | Parliament | Inquiries, submissions, Hansard |
-| `site:pmc.gov.au` | Prime Minister & Cabinet | National coordination |
-| `site:ag.gov.au` | Attorney-General's Department | Drug law, legal frameworks |
-| `site:alrc.gov.au` | Australian Law Reform Commission | Law reform reports |
+| Domain             | Organisation                     | Focus                           |
+| ------------------ | -------------------------------- | ------------------------------- |
+| `site:ag.gov.au`   | Attorney-General's Department    | Drug law, legal frameworks      |
+| `site:alrc.gov.au` | Australian Law Reform Commission | Law reform reports              |
+| `site:aph.gov.au`  | Parliament                       | Inquiries, submissions, Hansard |
+| `site:pmc.gov.au`  | Prime Minister & Cabinet         | National coordination           |
 
 ### Quick Pattern: All Federal Government
+
 ```txt
 site:*.gov.au -site:*.nsw.gov.au -site:*.vic.gov.au -site:*.qld.gov.au -site:*.wa.gov.au -site:*.sa.gov.au -site:*.tas.gov.au -site:*.act.gov.au -site:*.nt.gov.au
 ```
@@ -37,16 +39,16 @@ site:*.gov.au -site:*.nsw.gov.au -site:*.vic.gov.au -site:*.qld.gov.au -site:*.w
 
 Use these for **drug alerts, guidelines, NSP policies, and local health information**.
 
-| State/Territory | Health Department | Broader Government |
-|-----------------|-------------------|-------------------|
-| **ACT** | `site:health.act.gov.au` | `site:*.act.gov.au` |
-| **NSW** | `site:health.nsw.gov.au` | `site:*.nsw.gov.au` |
-| **NT** | `site:health.nt.gov.au` | `site:*.nt.gov.au` |
-| **QLD** | `site:health.qld.gov.au` | `site:*.qld.gov.au` |
-| **SA** | `site:sahealth.sa.gov.au` | `site:*.sa.gov.au` |
-| **TAS** | `site:health.tas.gov.au` | `site:*.tas.gov.au` |
-| **VIC** | `site:health.vic.gov.au` | `site:*.vic.gov.au` |
-| **WA** | `site:health.wa.gov.au` | `site:*.wa.gov.au` |
+| State/Territory | Health Department         | Broader Government  |
+| --------------- | ------------------------- | ------------------- |
+| **ACT**         | `site:health.act.gov.au`  | `site:*.act.gov.au` |
+| **NSW**         | `site:health.nsw.gov.au`  | `site:*.nsw.gov.au` |
+| **NT**          | `site:health.nt.gov.au`   | `site:*.nt.gov.au`  |
+| **QLD**         | `site:health.qld.gov.au`  | `site:*.qld.gov.au` |
+| **SA**          | `site:sahealth.sa.gov.au` | `site:*.sa.gov.au`  |
+| **TAS**         | `site:health.tas.gov.au`  | `site:*.tas.gov.au` |
+| **VIC**         | `site:health.vic.gov.au`  | `site:*.vic.gov.au` |
+| **WA**          | `site:health.wa.gov.au`   | `site:*.wa.gov.au`  |
 
 ### All State Health at Once
 
@@ -62,17 +64,17 @@ This pattern catches all state/territory health department subdomains.
 
 ### Premier AOD Research Institutions
 
-| Domain | Institution | Focus |
-|--------|-------------|-------|
-| `site:ndarc.med.unsw.edu.au` | National Drug & Alcohol Research Centre | Premier AOD research |
-| `site:ndri.curtin.edu.au` | National Drug Research Institute | National policy research |
-| `site:kirby.unsw.edu.au` | Kirby Institute | BBV, hepatitis, HIV |
-| `site:csrh.arts.unsw.edu.au` | Centre for Social Research in Health | Social research, stigma |
-| `site:burnet.edu.au` | Burnet Institute | Infectious disease, HR |
-| `site:turning-point.org.au` | Turning Point | Treatment research |
-| `site:nceta.flinders.edu.au` | NCETA | Workforce development |
-| `site:matildacentre.com.au` | Matilda Centre | Substance use |
-| `site:lowitja.org.au` | Lowitja Institute | Aboriginal health research |
+| Domain                       | Institution                             | Focus                      |
+| ---------------------------- | --------------------------------------- | -------------------------- |
+| `site:burnet.edu.au`         | Burnet Institute                        | Infectious disease, HR     |
+| `site:csrh.arts.unsw.edu.au` | Centre for Social Research in Health    | Social research, stigma    |
+| `site:kirby.unsw.edu.au`     | Kirby Institute                         | BBV, hepatitis, HIV        |
+| `site:lowitja.org.au`        | Lowitja Institute                       | Aboriginal health research |
+| `site:matildacentre.com.au`  | Matilda Centre                          | Substance use              |
+| `site:nceta.flinders.edu.au` | NCETA                                   | Workforce development      |
+| `site:ndarc.med.unsw.edu.au` | National Drug & Alcohol Research Centre | Premier AOD research       |
+| `site:ndri.curtin.edu.au`    | National Drug Research Institute        | National policy research   |
+| `site:turning-point.org.au`  | Turning Point                           | Treatment research         |
 
 ### Generic University Research
 
@@ -92,17 +94,17 @@ site:ndarc.med.unsw.edu.au OR site:burnet.edu.au OR site:turning-point.org.au fi
 
 > **Peer knowledge is expert knowledge.** Start here for lived experience perspectives.
 
-| Organisation | Domain | State | Focus |
-|--------------|--------|-------|-------|
-| **AIVL** | `site:aivl.org.au` | National | Peak body for user organisations |
-| **NUAA** | `site:nuaa.org.au` | NSW | User's News, peer programs |
-| **HRVic** | `site:hrvic.org.au` | VIC | DanceWize, peer programs |
-| **QuIHN** | `site:quihn.org` | QLD | Peer services, NSP |
-| **WASUA** | `site:wasua.com.au` | WA | Peer support, advocacy |
-| **CAHMA** | (search by name) | ACT | ACT peer advocacy |
-| **SAVIVE** | (search by name) | SA | SA peer voice |
-| **TUHSL** | `site:tuhsl.org.au` | TAS | Tasmania peer voice |
-| **NTAHC** | `site:ntahc.org.au` | NT | NT peer programs |
+| Organisation | Domain              | State    | Focus                            |
+| ------------ | ------------------- | -------- | -------------------------------- |
+| **AIVL**     | `site:aivl.org.au`  | National | Peak body for user organisations |
+| **CAHMA**    | (search by name)    | ACT      | ACT peer advocacy                |
+| **HRVic**    | `site:hrvic.org.au` | VIC      | DanceWize, peer programs         |
+| **NTAHC**    | `site:ntahc.org.au` | NT       | NT peer programs                 |
+| **NUAA**     | `site:nuaa.org.au`  | NSW      | User's News, peer programs       |
+| **QuIHN**    | `site:quihn.org`    | QLD      | Peer services, NSP               |
+| **SAVIVE**   | (search by name)    | SA       | SA peer voice                    |
+| **TUHSL**    | `site:tuhsl.org.au` | TAS      | Tasmania peer voice              |
+| **WASUA**    | `site:wasua.com.au` | WA       | Peer support, advocacy           |
 
 ### Multi-Peer-Org Search
 
@@ -122,12 +124,12 @@ site:*.org.au "peer worker" ("by peers" OR "for peers") filetype:pdf
 
 ## 🏢 Harm Reduction & Policy Organisations
 
-| Organisation | Domain | Focus |
-|--------------|--------|-------|
-| **Penington Institute** | `site:penington.org.au` | Overdose data, policy |
-| **Uniting (ReGen, MSIR)** | `site:uniting.org` | Services, MSIR reports |
-| **ACON** | `site:acon.org.au` | LGBTQ+ health, chemsex |
-| **Hepatitis Australia** | `site:hepatitisaustralia.com` | BBV, hep C elimination |
+| Organisation              | Domain                        | Focus                  |
+| ------------------------- | ----------------------------- | ---------------------- |
+| **ACON**                  | `site:acon.org.au`            | LGBTQ+ health, chemsex |
+| **Hepatitis Australia**   | `site:hepatitisaustralia.com` | BBV, hep C elimination |
+| **Penington Institute**   | `site:penington.org.au`       | Overdose data, policy  |
+| **Uniting (ReGen, MSIR)** | `site:uniting.org`            | Services, MSIR reports |
 
 ---
 
@@ -135,16 +137,16 @@ site:*.org.au "peer worker" ("by peers" OR "for peers") filetype:pdf
 
 AOD sector peak bodies coordinate services and advocacy in each state.
 
-| State | Organisation | Domain |
-|-------|--------------|--------|
-| NSW | NADA | `site:nada.org.au` |
-| VIC | VAADA | `site:vaada.org.au` |
-| QLD | QNADA | `site:qnada.org.au` |
-| ACT | ATODA | `site:atoda.org.au` |
-| WA | WANADA | `site:wanada.org.au` |
-| SA | SANDAS | `site:sandas.org.au` |
-| TAS | ATDC | `site:atdc.org.au` |
-| NT | AADANT | `site:aadant.org.au` |
+| State | Organisation | Domain               |
+| ----- | ------------ | -------------------- |
+| ACT   | ATODA        | `site:atoda.org.au`  |
+| NSW   | NADA         | `site:nada.org.au`   |
+| NT    | AADANT       | `site:aadant.org.au` |
+| QLD   | QNADA        | `site:qnada.org.au`  |
+| SA    | SANDAS       | `site:sandas.org.au` |
+| TAS   | ATDC         | `site:atdc.org.au`   |
+| VIC   | VAADA        | `site:vaada.org.au`  |
+| WA    | WANADA       | `site:wanada.org.au` |
 
 ### Multi-Peak Search
 
@@ -156,12 +158,12 @@ AOD sector peak bodies coordinate services and advocacy in each state.
 
 ## 🖤💛❤️ Aboriginal Community Controlled Health
 
-| Organisation | Domain | Focus |
-|--------------|--------|-------|
-| **NACCHO** | `site:naccho.org.au` | National Aboriginal health peak |
-| **AHMRC** | `site:ahmrc.org.au` | NSW Aboriginal health |
-| **VACCHO** | `site:vaccho.org.au` | VIC Aboriginal health |
-| **QAIHC** | `site:qaihc.com.au` | QLD Aboriginal health |
+| Organisation | Domain               | Focus                           |
+| ------------ | -------------------- | ------------------------------- |
+| **AHMRC**    | `site:ahmrc.org.au`  | NSW Aboriginal health           |
+| **NACCHO**   | `site:naccho.org.au` | National Aboriginal health peak |
+| **QAIHC**    | `site:qaihc.com.au`  | QLD Aboriginal health           |
+| **VACCHO**   | `site:vaccho.org.au` | VIC Aboriginal health           |
 
 ### Finding ACCHO Content
 
@@ -176,33 +178,33 @@ AOD sector peak bodies coordinate services and advocacy in each state.
 
 ### Coroners Courts (by State)
 
-| State | Domain |
-|-------|--------|
-| NSW | `site:coroners.nsw.gov.au` |
-| VIC | `site:coronerscourt.vic.gov.au` |
-| QLD | `site:courts.qld.gov.au/courts/coroners-court` |
-| WA | `site:coronerscourt.wa.gov.au` |
-| SA | `site:courts.sa.gov.au/courts/coroners-court` |
-| ACT | `site:coronialservices.act.gov.au` |
-| NT | `site:courts.nt.gov.au/coroner` |
-| TAS | `site:magistratescourt.tas.gov.au/divisions/coronial` |
+| State | Domain                                                |
+| ----- | ----------------------------------------------------- |
+| ACT   | `site:coronialservices.act.gov.au`                    |
+| NSW   | `site:coroners.nsw.gov.au`                            |
+| NT    | `site:courts.nt.gov.au/coroner`                       |
+| QLD   | `site:courts.qld.gov.au/courts/coroners-court`        |
+| SA    | `site:courts.sa.gov.au/courts/coroners-court`         |
+| TAS   | `site:magistratescourt.tas.gov.au/divisions/coronial` |
+| VIC   | `site:coronerscourt.vic.gov.au`                       |
+| WA    | `site:coronerscourt.wa.gov.au`                        |
 
 ### Legal Resources
 
-| Domain | Focus |
-|--------|-------|
-| `site:alrc.gov.au` | Law Reform Commission |
+| Domain                     | Focus                   |
+| -------------------------- | ----------------------- |
+| `site:alrc.gov.au`         | Law Reform Commission   |
 | `site:legalaid.nsw.gov.au` | Legal Aid (NSW example) |
 
 ---
 
 ## 🎓 Professional Bodies & Conferences
 
-| Organisation | Domain | Focus |
-|--------------|--------|-------|
-| **APSAD** | `site:apsad.org.au` | Professional society |
-| **RACGP** | `site:racgp.org.au` | GP guidelines on AOD |
+| Organisation    | Domain                  | Focus                    |
+| --------------- | ----------------------- | ------------------------ |
+| **APSAD**       | `site:apsad.org.au`     | Professional society     |
 | **ATODA (NDC)** | `site:atoda.org.au/ndc` | National Drug Conference |
+| **RACGP**       | `site:racgp.org.au`     | GP guidelines on AOD     |
 
 ### Conference Proceedings
 
@@ -215,17 +217,17 @@ AOD sector peak bodies coordinate services and advocacy in each state.
 
 ## 🌏 International Comparators
 
-| Country/Org | Domain | Focus |
-|-------------|--------|-------|
-| **Canada** | `site:*.gc.ca` | Safe supply, SCS |
-| **EMCDDA** | `site:emcdda.europa.eu` | European data |
-| **INPUD** | `site:inpud.net` | International peer network |
-| **New Zealand** | `site:*.govt.nz` | Similar context |
-| **Portugal** | `site:*.pt` | Decriminalisation |
-| **UK** | `site:*.gov.uk` | DCRs, policy |
-| **WHO** | `site:who.int` | Global guidance |
-| **Switzerland** | `site:*.ch` | Heroin-assisted treatment |
-| **Netherlands** | `site:*.nl` | Drug policy, coffeeshops |
+| Country/Org     | Domain                  | Focus                      |
+| --------------- | ----------------------- | -------------------------- |
+| **Canada**      | `site:*.gc.ca`          | Safe supply, SCS           |
+| **EMCDDA**      | `site:emcdda.europa.eu` | European data              |
+| **INPUD**       | `site:inpud.net`        | International peer network |
+| **Netherlands** | `site:*.nl`             | Drug policy, coffeeshops   |
+| **New Zealand** | `site:*.govt.nz`        | Similar context            |
+| **Portugal**    | `site:*.pt`             | Decriminalisation          |
+| **Switzerland** | `site:*.ch`             | Heroin-assisted treatment  |
+| **UK**          | `site:*.gov.uk`         | DCRs, policy               |
+| **WHO**         | `site:who.int`          | Global guidance            |
 
 ### International Best Practice Pattern
 
@@ -239,13 +241,13 @@ AOD sector peak bodies coordinate services and advocacy in each state.
 
 ### Wildcard Patterns
 
-| Pattern | Catches |
-|---------|---------|
-| `site:*.gov.au` | All Australian government |
-| `site:*.health.*.gov.au` | All state health depts |
-| `site:*.edu.au` | All Australian universities |
-| `site:*.org.au` | All Australian organisations |
-| `site:*.org` | All .org domains globally |
+| Pattern                  | Catches                      |
+| ------------------------ | ---------------------------- |
+| `site:*.edu.au`          | All Australian universities  |
+| `site:*.gov.au`          | All Australian government    |
+| `site:*.health.*.gov.au` | All state health depts       |
+| `site:*.org.au`          | All Australian organisations |
+| `site:*.org`             | All .org domains globally    |
 
 ### Exclusion Patterns
 
@@ -267,18 +269,18 @@ site:*.edu.au -site:researchgate.net -site:academia.edu
 
 ## 📋 Quick Reference: What to Search Where
 
-| I'm looking for... | Search here |
-|--------------------|-------------|
-| Drug alerts | `site:*.health.*.gov.au` |
-| National policy | `site:health.gov.au` |
-| State policy | `site:health.[state].gov.au` |
-| Research evidence | `site:*.edu.au` or specific institution |
-| Peer resources | Peer org domains (NUAA, AIVL, etc.) |
-| Service directories | `site:*.gov.au` + state |
-| Statistics | `site:aihw.gov.au` or `site:abs.gov.au` |
-| Coronial findings | State coroner domain |
-| Parliamentary submissions | `site:aph.gov.au` |
-| International comparison | `site:*.gc.ca` / `site:*.gov.uk` / etc. |
+| I'm looking for...        | Search here                             |
+| ------------------------- | --------------------------------------- |
+| Coronial findings         | State coroner domain                    |
+| Drug alerts               | `site:*.health.*.gov.au`                |
+| International comparison  | `site:*.gc.ca` / `site:*.gov.uk` / etc. |
+| National policy           | `site:health.gov.au`                    |
+| Parliamentary submissions | `site:aph.gov.au`                       |
+| Peer resources            | Peer org domains (NUAA, AIVL, etc.)     |
+| Research evidence         | `site:*.edu.au` or specific institution |
+| Service directories       | `site:*.gov.au` + state                 |
+| State policy              | `site:health.[state].gov.au`            |
+| Statistics                | `site:aihw.gov.au` or `site:abs.gov.au` |
 
 ---
 

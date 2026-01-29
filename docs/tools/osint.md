@@ -8,7 +8,8 @@
 
 ## ⚠️ Ethics Reminder
 
-These tools are powerful. Use only for legitimate harm reduction research, advocacy, and service delivery. **Never use to investigate or expose individuals.**
+These tools are powerful. Use only for legitimate harm reduction research, advocacy, and service
+delivery. **Never use to investigate or expose individuals.**
 
 ---
 
@@ -40,7 +41,8 @@ Michael Bazzell's comprehensive OSINT toolkit and resources. The gold standard.
 
 ### Bellingcat Toolkit
 
-**URL:** [bit.ly/bcattools](https://docs.google.com/spreadsheets/d/18rtqh8EG2q1xBo2cLNyhIDuK9jrPGwYr9DI2UncoqJQ/)
+**URL:**
+[bit.ly/bcattools](https://docs.google.com/spreadsheets/d/18rtqh8EG2q1xBo2cLNyhIDuK9jrPGwYr9DI2UncoqJQ/)
 
 Investigative journalism tools from Bellingcat.
 
@@ -118,7 +120,8 @@ Pre-built dorks for 600+ websites.
 
 ### Dorks-collections-list
 
-**URL:** [github.com/cipher387/Dorks-collections-list](https://github.com/cipher387/Dorks-collections-list)
+**URL:**
+[github.com/cipher387/Dorks-collections-list](https://github.com/cipher387/Dorks-collections-list)
 
 Massive curated list of dork databases.
 
@@ -379,6 +382,7 @@ For comprehensive Australian OSINT resources, see our dedicated page:
 **[→ Australian OSINT Resources](../resources/australian-osint.md)**
 
 Includes:
+
 - Government data portals (federal, state, local)
 - Business registers (ABN, ASIC, ACNC)
 - Property and land records
@@ -389,13 +393,13 @@ Includes:
 
 ### Quick Links
 
-| Resource | URL | Description |
-|----------|-----|-------------|
-| **ABN Lookup** | [abr.business.gov.au](https://abr.business.gov.au/) | Australian Business Number search |
-| **ASIC Connect** | [connectonline.asic.gov.au](https://connectonline.asic.gov.au/) | Company register |
-| **Trove** | [trove.nla.gov.au](https://trove.nla.gov.au/) | Digitised newspapers, archives |
-| **Data.gov.au** | [data.gov.au](https://data.gov.au/) | Government open data |
-| **WHOIS AU** | [whois.auda.org.au](https://whois.auda.org.au/) | Australian domain lookup |
+| Resource         | URL                                                             | Description                       |
+| ---------------- | --------------------------------------------------------------- | --------------------------------- |
+| **ABN Lookup**   | [abr.business.gov.au](https://abr.business.gov.au/)             | Australian Business Number search |
+| **ASIC Connect** | [connectonline.asic.gov.au](https://connectonline.asic.gov.au/) | Company register                  |
+| **Data.gov.au**  | [data.gov.au](https://data.gov.au/)                             | Government open data              |
+| **Trove**        | [trove.nla.gov.au](https://trove.nla.gov.au/)                   | Digitised newspapers, archives    |
+| **WHOIS AU**     | [whois.auda.org.au](https://whois.auda.org.au/)                 | Australian domain lookup          |
 
 ---
 
@@ -420,7 +424,8 @@ Includes:
 
 ## 🔗 Related Resources
 
-- [Australian OSINT Resources](../resources/australian-osint.md) - Comprehensive Australian directory
+- [Australian OSINT Resources](../resources/australian-osint.md) - Comprehensive Australian
+  directory
 - [AI-Powered Research Tools](ai-tools.md)
 - [Investigative Pack](../dork-packs/investigative.md)
 - [Document Discovery Pack](../dork-packs/document-discovery.md)

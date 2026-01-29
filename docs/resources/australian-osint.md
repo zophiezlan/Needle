@@ -1,6 +1,7 @@
 # Australian OSINT Resources
 
-> Comprehensive directory of Australian open-source intelligence resources for harm reduction research, advocacy, and investigations.
+> Comprehensive directory of Australian open-source intelligence resources for harm reduction
+> research, advocacy, and investigations.
 
 [← Back to Resources](README.md) | [← Main Guide](../../README.md)
 
@@ -301,15 +302,15 @@ These resources support legitimate harm reduction work:
 
 ### State Spatial Portals
 
-| State   | Portal       | URL                                                                                                       |
-| ------- | ------------ | --------------------------------------------------------------------------------------------------------- | ------------------ |
-| **ACT** | ACTmapi      | [actmapi.act.gov.au](https://www.actmapi.act.gov.au/)                                                     |
-| **NSW** | NSW Spatial  | [portal.spatial.nsw.gov.au](https://portal.spatial.nsw.gov.au/client)                                     |
-| **NSW** | SEED         | [seed.nsw.gov.au](https://www.seed.nsw.gov.au/)                                                           | Environmental data |
-| **QLD** | QLD Spatial  | [qldspatial.information.qld.gov.au](http://qldspatial.information.qld.gov.au/catalogue/custom/index.page) |
-| **SA**  | LocationSA   | [location.sa.gov.au/viewer](https://location.sa.gov.au/viewer/)                                           |
-| **VIC** | DataVic Maps | [mapshare.vic.gov.au](https://mapshare.vic.gov.au/)                                                       |
-| **WA**  | Main Roads   | [portal-mainroads.opendata.arcgis.com](https://portal-mainroads.opendata.arcgis.com/)                     |
+| State   | Portal               | URL                                                                                                       |
+| ------- | -------------------- | --------------------------------------------------------------------------------------------------------- |
+| **ACT** | ACTmapi              | [actmapi.act.gov.au](https://www.actmapi.act.gov.au/)                                                     |
+| **NSW** | NSW Spatial          | [portal.spatial.nsw.gov.au](https://portal.spatial.nsw.gov.au/client)                                     |
+| **NSW** | SEED (Environmental) | [seed.nsw.gov.au](https://www.seed.nsw.gov.au/)                                                           |
+| **QLD** | QLD Spatial          | [qldspatial.information.qld.gov.au](http://qldspatial.information.qld.gov.au/catalogue/custom/index.page) |
+| **SA**  | LocationSA           | [location.sa.gov.au/viewer](https://location.sa.gov.au/viewer/)                                           |
+| **VIC** | DataVic Maps         | [mapshare.vic.gov.au](https://mapshare.vic.gov.au/)                                                       |
+| **WA**  | Main Roads           | [portal-mainroads.opendata.arcgis.com](https://portal-mainroads.opendata.arcgis.com/)                     |
 
 ---
 

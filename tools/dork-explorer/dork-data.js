@@ -303,7 +303,7 @@ window.DORK_DATA = [
         "title": "AIHW (National)",
         "category": "Key Data Sources",
         "query": "site:aihw.gov.au filetype:pdf (\"alcohol and other drugs\" OR \"drug use\" OR \"substance use\")",
-        "explanation": "**Key AIHW reports:**\n- Alcohol and other drug treatment services data\n- National Drug Strategy Household Survey\n- Drug-induced deaths\n- Alcohol-related deaths"
+        "explanation": "**Key AIHW reports:**\n\n- Alcohol and other drug treatment services data\n- National Drug Strategy Household Survey\n- Drug-induced deaths\n- Alcohol-related deaths"
       },
       {
         "title": "ABS (National)",
@@ -440,15 +440,202 @@ window.DORK_DATA = [
     ]
   },
   {
+    "id": "document-discovery",
+    "title": "Document Discovery",
+    "description": "Finding spreadsheets, databases, presentations, and other document types beyond PDFs.",
+    "dorks": [
+      {
+        "title": "Excel Files (Modern)",
+        "category": "Spreadsheets & Data Files",
+        "query": "filetype:xlsx \"harm reduction\" site:*.gov.au\nfiletype:xlsx \"needle syringe\" OR \"NSP\" statistics\nfiletype:xlsx \"overdose\" data OR statistics Australia\nfiletype:xlsx \"opioid\" OR \"methadone\" treatment\nfiletype:xlsx \"service directory\" drug alcohol",
+        "explanation": "[👉 **Run XLSX Search**](https://www.google.com/search?q=filetype%3Axlsx+%22harm+reduction%22+site%3A*.gov.au)"
+      },
+      {
+        "title": "Excel Files (Legacy)",
+        "category": "Spreadsheets & Data Files",
+        "query": "filetype:xls \"opioid treatment\" OR \"methadone\" clinic\nfiletype:xls \"drug\" OR \"alcohol\" statistics Australia\nfiletype:xls \"hepatitis\" OR \"HIV\" surveillance",
+        "explanation": "[👉 **Run XLS Search**](https://www.google.com/search?q=filetype%3Axls+%22opioid+treatment%22+OR+%22methadone%22+clinic)"
+      },
+      {
+        "title": "CSV Data Files",
+        "category": "Spreadsheets & Data Files",
+        "query": "filetype:csv \"needle syringe\" OR \"NSP\" OR \"overdose\"\nfiletype:csv \"drug\" OR \"alcohol\" site:*.gov.au\nfiletype:csv \"treatment\" episodes Australia\nfiletype:csv \"hospitalisation\" drug OR alcohol",
+        "explanation": "[👉 **Run CSV Search**](https://www.google.com/search?q=filetype%3Acsv+%22needle+syringe%22+OR+%22NSP%22+OR+%22overdose%22)"
+      },
+      {
+        "title": "PowerPoint (Modern)",
+        "category": "🎬 Presentations",
+        "query": "filetype:pptx \"harm reduction\" Australia\nfiletype:pptx \"drug checking\" OR \"pill testing\"\nfiletype:pptx \"naloxone\" training OR program\nfiletype:pptx \"overdose\" prevention OR response\nfiletype:pptx conference \"alcohol and other drugs\"",
+        "explanation": "[👉 **Run PPTX Search**](https://www.google.com/search?q=filetype%3Apptx+%22harm+reduction%22+Australia)"
+      },
+      {
+        "title": "PowerPoint (Legacy)",
+        "category": "🎬 Presentations",
+        "query": "filetype:ppt \"needle exchange\" OR \"NSP\" presentation\nfiletype:ppt \"methadone\" OR \"buprenorphine\" treatment",
+        "explanation": "[👉 **Run PPT Search**](https://www.google.com/search?q=filetype%3Appt+%22needle+exchange%22+OR+%22NSP%22+presentation)"
+      },
+      {
+        "title": "PDF Presentations (Slide Decks)",
+        "category": "🎬 Presentations",
+        "query": "filetype:pdf \"slide\" OR \"presentation\" \"harm reduction\" Australia\ninurl:presentation filetype:pdf \"drug policy\"",
+        "explanation": "[👉 **Run PDF Slides Search**](https://www.google.com/search?q=filetype%3Apdf+%22slide%22+OR+%22presentation%22+%22harm+reduction%22+Australia)"
+      },
+      {
+        "title": "Modern Word Files",
+        "category": "📝 Word Documents",
+        "query": "filetype:docx \"harm reduction\" policy OR procedure\nfiletype:docx \"needle syringe\" guidelines\nfiletype:docx \"overdose\" protocol OR response\nfiletype:docx \"drug checking\" service design",
+        "explanation": "[👉 **Run DOCX Search**](https://www.google.com/search?q=filetype%3Adocx+%22harm+reduction%22+policy+OR+procedure)"
+      },
+      {
+        "title": "Legacy Word Files",
+        "category": "📝 Word Documents",
+        "query": "filetype:doc \"harm minimisation\" Australia\nfiletype:doc \"injecting drug use\" guidelines",
+        "explanation": "[👉 **Run DOC Search**](https://www.google.com/search?q=filetype%3Adoc+%22harm+minimisation%22+Australia)"
+      },
+      {
+        "title": "RTF & ODT (Alternative Formats)",
+        "category": "📝 Word Documents",
+        "query": "filetype:rtf \"harm reduction\" Australia\nfiletype:odt \"drug checking\" OR \"pill testing\"",
+        "explanation": "[👉 **Run RTF Search**](https://www.google.com/search?q=filetype%3Artf+%22harm+reduction%22+Australia)"
+      },
+      {
+        "title": "SQL Dumps (Public Datasets)",
+        "category": "🗃️ Database Files",
+        "query": "filetype:sql \"drug\" OR \"health\" site:*.edu.au\nfiletype:sql \"research\" data export",
+        "explanation": ""
+      },
+      {
+        "title": "Access Databases",
+        "category": "🗃️ Database Files",
+        "query": "filetype:mdb \"health\" OR \"drug\" research\nfiletype:accdb \"service\" directory",
+        "explanation": ""
+      },
+      {
+        "title": "Structured Data",
+        "category": "🗃️ Database Files",
+        "query": "filetype:json \"harm reduction\" OR \"drug\" API\nfiletype:xml \"health\" data Australia",
+        "explanation": ""
+      },
+      {
+        "title": "ZIP Archives",
+        "category": "📁 Archive Files",
+        "query": "filetype:zip \"harm reduction\" resources\nfiletype:zip \"training\" materials drug alcohol\nfiletype:zip \"toolkit\" AOD OR \"alcohol and other drugs\"",
+        "explanation": "[👉 **Run ZIP Search**](https://www.google.com/search?q=filetype%3Azip+%22harm+reduction%22+resources)"
+      },
+      {
+        "title": "EPUB Files",
+        "category": "📖 E-books & Publications",
+        "query": "filetype:epub \"harm reduction\" guide\nfiletype:epub \"drug policy\" reform\nfiletype:epub \"addiction\" OR \"recovery\"",
+        "explanation": "[👉 **Run EPUB Search**](https://www.google.com/search?q=filetype%3Aepub+%22harm+reduction%22+guide)"
+      },
+      {
+        "title": "Sitemaps (Discover Hidden Pages)",
+        "category": "🔧 Configuration & Technical Files",
+        "query": "filetype:xml sitemap \"health\" site:*.gov.au\nfiletype:xml sitemap \"drug\" site:*.org.au",
+        "explanation": "[👉 **Run Sitemap Search**](https://www.google.com/search?q=filetype%3Axml+sitemap+%22health%22+site%3A*.gov.au)"
+      },
+      {
+        "title": "Log Files (Public Health Data)",
+        "category": "🔧 Configuration & Technical Files",
+        "query": "filetype:log \"drug\" OR \"health\" site:*.gov.au",
+        "explanation": ""
+      },
+      {
+        "title": "Google Docs (Public)",
+        "category": "☁️ Cloud Storage & Collaboration",
+        "query": "site:docs.google.com/document \"harm reduction\"\nsite:docs.google.com/spreadsheets \"drug\" OR \"alcohol\" data\nsite:docs.google.com/presentation \"AOD\" OR \"harm reduction\"",
+        "explanation": "[👉 **Run Google Docs Search**](https://www.google.com/search?q=site%3Adocs.google.com%2Fdocument+%22harm+reduction%22)"
+      },
+      {
+        "title": "Cloud Storage (Public Files)",
+        "category": "☁️ Cloud Storage & Collaboration",
+        "query": "site:drive.google.com \"harm reduction\" resources\nsite:dropbox.com \"drug policy\" OR \"harm reduction\"\nsite:onedrive.live.com \"AOD\" training",
+        "explanation": ""
+      },
+      {
+        "title": "Theses & Dissertations",
+        "category": "Academic & Research Documents",
+        "query": "filetype:pdf \"thesis\" OR \"dissertation\" \"harm reduction\" Australia\nfiletype:pdf \"PhD\" \"drug policy\" OR \"drug use\"",
+        "explanation": "[👉 **Run Thesis Search**](https://www.google.com/search?q=filetype%3Apdf+%22thesis%22+OR+%22dissertation%22+%22harm+reduction%22+Australia)"
+      },
+      {
+        "title": "Working Papers",
+        "category": "Academic & Research Documents",
+        "query": "filetype:pdf \"working paper\" \"harm reduction\" OR \"drug policy\"\nfiletype:pdf \"discussion paper\" \"alcohol and other drugs\"",
+        "explanation": "[👉 **Run Working Papers Search**](https://www.google.com/search?q=filetype%3Apdf+%22working+paper%22+%22harm+reduction%22+OR+%22drug+policy%22)"
+      },
+      {
+        "title": "Service Directories",
+        "category": "🏥 Health Service Documents",
+        "query": "filetype:xlsx \"service directory\" drug OR alcohol Australia\nfiletype:pdf \"service directory\" AOD OR \"alcohol and other drugs\"\nfiletype:csv \"treatment services\" drug alcohol",
+        "explanation": "[👉 **Run Service Directory Search**](https://www.google.com/search?q=filetype%3Axlsx+%22service+directory%22+drug+OR+alcohol+Australia)"
+      },
+      {
+        "title": "Clinical Guidelines",
+        "category": "🏥 Health Service Documents",
+        "query": "filetype:pdf \"clinical guideline\" OR \"practice guideline\" opioid\nfiletype:pdf \"protocol\" \"overdose\" OR \"withdrawal\"\nfiletype:docx \"procedure\" naloxone OR \"take-home\"",
+        "explanation": "[👉 **Run Guidelines Search**](https://www.google.com/search?q=filetype%3Apdf+%22clinical+guideline%22+OR+%22practice+guideline%22+opioid)"
+      },
+      {
+        "title": "Meeting Minutes & Agendas",
+        "category": "📋 Government Documents",
+        "query": "filetype:pdf \"meeting minutes\" \"harm reduction\" OR \"drug policy\"\nfiletype:docx \"agenda\" \"alcohol and other drugs\" committee\nfiletype:pdf \"steering committee\" AOD minutes",
+        "explanation": "[👉 **Run Minutes Search**](https://www.google.com/search?q=filetype%3Apdf+%22meeting+minutes%22+%22harm+reduction%22+OR+%22drug+policy%22)"
+      },
+      {
+        "title": "Budget & Funding",
+        "category": "📋 Government Documents",
+        "query": "filetype:xlsx \"budget\" \"harm reduction\" OR \"AOD\" site:*.gov.au\nfiletype:pdf \"funding\" allocation drug OR alcohol\nfiletype:xls \"expenditure\" health drug services",
+        "explanation": "[👉 **Run Budget Search**](https://www.google.com/search?q=filetype%3Axlsx+%22budget%22+%22harm+reduction%22+OR+%22AOD%22+site%3A*.gov.au)"
+      },
+      {
+        "title": "Combine Multiple File Types",
+        "category": "🔍 Multi-Format Searches",
+        "query": "(filetype:xlsx OR filetype:csv) \"overdose\" data Australia\n(filetype:pptx OR filetype:pdf) \"harm reduction\" conference presentation\n(filetype:docx OR filetype:pdf) \"policy\" \"drug checking\"",
+        "explanation": "[👉 **Run Multi-Format Search**](https://www.google.com/search?q=%28filetype%3Axlsx+OR+filetype%3Acsv%29+%22overdose%22+data+Australia)"
+      },
+      {
+        "title": "All Data Files",
+        "category": "🔍 Multi-Format Searches",
+        "query": "(filetype:xlsx OR filetype:xls OR filetype:csv) \"drug\" statistics Australia",
+        "explanation": "[👉 **Run All Data Search**](https://www.google.com/search?q=%28filetype%3Axlsx+OR+filetype%3Axls+OR+filetype%3Acsv%29+%22drug%22+statistics+Australia)"
+      },
+      {
+        "title": "All Presentation Types",
+        "category": "🔍 Multi-Format Searches",
+        "query": "(filetype:pptx OR filetype:ppt OR filetype:pdf) \"harm reduction\" slides conference",
+        "explanation": "[👉 **Run All Presentations Search**](https://www.google.com/search?q=%28filetype%3Apptx+OR+filetype%3Appt+OR+filetype%3Apdf%29+%22harm+reduction%22+slides+conference)"
+      },
+      {
+        "title": "Finding Hidden Directories",
+        "category": "💡 Pro Tips",
+        "query": "intitle:\"index of\" filetype:xlsx site:*.gov.au\nintitle:\"index of\" filetype:pptx site:*.health.*.gov.au",
+        "explanation": ""
+      },
+      {
+        "title": "By Year Range",
+        "category": "💡 Pro Tips",
+        "query": "filetype:xlsx \"harm reduction\" 2020..2026\nfiletype:pptx \"drug policy\" after:2023",
+        "explanation": ""
+      },
+      {
+        "title": "Exclude Duplicates",
+        "category": "💡 Pro Tips",
+        "query": "filetype:xlsx \"harm reduction\" -\"copy\" -\"backup\" -\"old\"",
+        "explanation": ""
+      }
+    ]
+  },
+  {
     "id": "drug-alerts",
     "title": "Drug Alerts & Early Warning",
-    "description": "Real-time monitoring for high-strength, contaminated, or unexpected substances in drug supply. Essential for early warning systems and client safety.",
+    "description": "Real-time monitoring for high-strength, contaminated, or unexpected substances in drug supply.",
     "dorks": [
       {
         "title": "All Recent Government Alerts",
         "category": "Basic Queries",
         "query": "site:*.gov.au intitle:\"drug alert\" after:2025-01-01",
-        "explanation": "**Why this works:**\n- `intitle:` ensures \"drug alert\" is in the page title (official alerts)\n- `after:` filters to recent only\n- `site:*.gov.au` catches all Australian government sources"
+        "explanation": "**Why this works:**\n\n- `intitle:` ensures \"drug alert\" is in the page title (official alerts)\n- `after:` filters to recent only\n- `site:*.gov.au` catches all Australian government sources"
       },
       {
         "title": "NSW Health Alerts Specifically",
@@ -466,7 +653,7 @@ window.DORK_DATA = [
         "title": "Multi-Term Alert Search",
         "category": "Intermediate Queries",
         "query": "site:*.health.*.gov.au (intitle:\"drug alert\" OR intitle:\"drug warning\" OR intitle:\"health alert\") after:2025-01-01",
-        "explanation": "**Why this works:**\n- `site:*.health.*.gov.au` catches all state health departments\n- Parentheses group the OR terms together\n- Multiple title variations catch different naming conventions"
+        "explanation": "**Why this works:**\n\n- `site:*.health.*.gov.au` catches all state health departments\n- Parentheses group the OR terms together\n- Multiple title variations catch different naming conventions"
       },
       {
         "title": "Specific Substance Alerts",
@@ -484,7 +671,7 @@ window.DORK_DATA = [
         "title": "Comprehensive Alert Sweep",
         "category": "Advanced Queries",
         "query": "site:*.health.*.gov.au (intitle:\"drug alert\" OR intitle:\"drug warning\" OR intitle:\"drug notification\" OR intitle:\"clinical safety alert\") (opioid OR stimulant OR \"novel substance\" OR contamina*) after:2025-01-01 filetype:pdf",
-        "explanation": "**Why this works:**\n- Multiple title variations cover all alert naming conventions\n- Substance categories catch relevant alerts\n- PDF filter gets the actual alert documents\n- Wildcard `contamina*` catches contamination, contaminated, contaminant"
+        "explanation": "**Why this works:**\n\n- Multiple title variations cover all alert naming conventions\n- Substance categories catch relevant alerts\n- PDF filter gets the actual alert documents\n- Wildcard `contamina*` catches contamination, contaminated, contaminant"
       },
       {
         "title": "Directory Mining for Unpublished Alerts",
@@ -503,6 +690,18 @@ window.DORK_DATA = [
         "category": "Advanced Queries",
         "query": "site:*.gov.au \"drug alert\" (\"high strength\" OR \"unexpected\" OR \"contaminated\" OR \"adulterated\")",
         "explanation": ""
+      },
+      {
+        "title": "The \"Location\" Operator",
+        "category": "🏘️ Local News Monitoring",
+        "query": "location:Sydney \"drug alert\"\nlocation:Melbourne \"overdose\"",
+        "explanation": ""
+      },
+      {
+        "title": "The \"Local Source\" Pattern",
+        "category": "🏘️ Local News Monitoring",
+        "query": "site:.com.au (news OR times OR herald OR daily) (\"bad batch\" OR \"warning\") location:Newcastle",
+        "explanation": "> **💡 Pro Tip:** See [Search Tweaks](../tools/search-tweaks.md#local-alert-monitoring) for more\n> local monitoring recipes."
       },
       {
         "title": "UK (WEDINOS)",
@@ -539,7 +738,7 @@ window.DORK_DATA = [
         "title": "Government Documents",
         "category": "Basic Queries",
         "query": "(\"drug checking\" OR \"pill testing\") site:*.gov.au filetype:pdf (trial OR evaluation OR report)",
-        "explanation": "**Why this works:**\n- Both terms used interchangeably in Australia\n- Government sources for official reports\n- Focus on trials and evaluations"
+        "explanation": "**Why this works:**\n\n- Both terms used interchangeably in Australia\n- Government sources for official reports\n- Focus on trials and evaluations"
       },
       {
         "title": "Research Evidence",
@@ -1273,6 +1472,187 @@ window.DORK_DATA = [
     ]
   },
   {
+    "id": "forum-community",
+    "title": "Forum & Community Research",
+    "description": "Finding harm reduction discussions, peer knowledge, and community insights on forums and social",
+    "dorks": [
+      {
+        "title": "Harm Reduction Subreddits",
+        "category": "Reddit",
+        "query": "site:reddit.com/r/harmreduction\nsite:reddit.com/r/drugs \"harm reduction\" OR \"safe use\"\nsite:reddit.com/r/opiates naloxone OR \"narcan\"\nsite:reddit.com/r/researchchemicals Australia",
+        "explanation": "[👉 **Run HR Subreddit Search**](https://www.google.com/search?q=site%3Areddit.com%2Fr%2Fharmreduction)"
+      },
+      {
+        "title": "Australian Subreddits",
+        "category": "Reddit",
+        "query": "site:reddit.com/r/australia \"drug\" OR \"overdose\" OR \"pill testing\"\nsite:reddit.com/r/melbourne \"safe injecting\" OR \"MSIR\"\nsite:reddit.com/r/sydney \"drug checking\" OR \"harm reduction\"\nsite:reddit.com/r/brisbane naloxone OR \"needle exchange\"",
+        "explanation": "[👉 **Run Australian Reddit Search**](https://www.google.com/search?q=site%3Areddit.com%2Fr%2Faustralia+%22drug%22+OR+%22overdose%22+OR+%22pill+testing%22)"
+      },
+      {
+        "title": "Specific Topics on Reddit",
+        "category": "Reddit",
+        "query": "site:reddit.com \"fentanyl\" Australia warning OR alert\nsite:reddit.com \"nitazene\" OR \"metonitazene\" Australia\nsite:reddit.com \"drug checking\" \"festival\" Australia\nsite:reddit.com \"naloxone\" \"pharmacy\" Australia access\nsite:reddit.com \"methadone\" OR \"buprenorphine\" Australia experience",
+        "explanation": "[👉 **Run Topic Search**](https://www.google.com/search?q=site%3Areddit.com+%22fentanyl%22+Australia+warning+OR+alert)"
+      },
+      {
+        "title": "Recovery & Support Subreddits",
+        "category": "Reddit",
+        "query": "site:reddit.com/r/OpiatesRecovery Australia\nsite:reddit.com/r/REDDITORSINRECOVERY \"harm reduction\"\nsite:reddit.com/r/addiction Australia support",
+        "explanation": "[👉 **Run Recovery Search**](https://www.google.com/search?q=site%3Areddit.com%2Fr%2FOpiatesRecovery+Australia)"
+      },
+      {
+        "title": "Hashtag Research",
+        "category": "🐦 Twitter/X",
+        "query": "site:twitter.com \"#harmreduction\" Australia\nsite:twitter.com \"#drugchecking\" OR \"#pilltesting\"\nsite:twitter.com \"#overdoseprevention\" Australia\nsite:twitter.com \"#peersupport\" drug OR AOD",
+        "explanation": "[👉 **Run Twitter Hashtag Search**](https://www.google.com/search?q=site%3Atwitter.com+%22%23harmreduction%22+Australia)"
+      },
+      {
+        "title": "Organisation Accounts",
+        "category": "🐦 Twitter/X",
+        "query": "site:twitter.com from:aaborginald harm reduction\nsite:twitter.com from:NUABORGINALTAA naloxone\nsite:twitter.com from:HRVic",
+        "explanation": ""
+      },
+      {
+        "title": "Public Groups & Pages",
+        "category": "📘 Facebook",
+        "query": "site:facebook.com \"harm reduction\" Australia group\nsite:facebook.com \"naloxone\" Australia\nsite:facebook.com \"drug checking\" OR \"pill testing\" Australia",
+        "explanation": "[👉 **Run Facebook Search**](https://www.google.com/search?q=site%3Afacebook.com+%22harm+reduction%22+Australia+group)"
+      },
+      {
+        "title": "Events & Campaigns",
+        "category": "📘 Facebook",
+        "query": "site:facebook.com/events \"harm reduction\" OR \"overdose awareness\"\nsite:facebook.com \"International Overdose Awareness Day\" Australia",
+        "explanation": ""
+      },
+      {
+        "title": "General Forum Discovery",
+        "category": "💬 Forum Platforms",
+        "query": "\"harm reduction\" inurl:forum\n\"drug checking\" inurl:forum OR inurl:community\n\"naloxone\" inurl:forum Australia\n\"peer support\" drug inurl:forum",
+        "explanation": "[👉 **Run Forum Search**](https://www.google.com/search?q=%22harm+reduction%22+inurl%3Aforum)"
+      },
+      {
+        "title": "phpBB Forums",
+        "category": "💬 Forum Platforms",
+        "query": "\"Powered by phpBB\" \"harm reduction\"\n\"Powered by phpBB\" \"drug\" Australia\ninurl:viewtopic.php \"harm reduction\" OR \"drug use\"",
+        "explanation": "[👉 **Run phpBB Search**](https://www.google.com/search?q=%22Powered+by+phpBB%22+%22harm+reduction%22)"
+      },
+      {
+        "title": "vBulletin Forums",
+        "category": "💬 Forum Platforms",
+        "query": "\"Powered by vBulletin\" \"harm reduction\"\n\"Powered by vBulletin\" \"drug\" Australia forum\ninurl:showthread.php \"overdose\" OR \"naloxone\"",
+        "explanation": "[👉 **Run vBulletin Search**](https://www.google.com/search?q=%22Powered+by+vBulletin%22+%22harm+reduction%22)"
+      },
+      {
+        "title": "SMF (Simple Machines Forum)",
+        "category": "💬 Forum Platforms",
+        "query": "\"Powered by SMF\" \"harm reduction\" OR \"drug\"\ninurl:index.php?topic \"harm reduction\"",
+        "explanation": ""
+      },
+      {
+        "title": "Discourse Forums",
+        "category": "💬 Forum Platforms",
+        "query": "\"Powered by Discourse\" \"harm reduction\"\nsite:*.discourse.org \"drug\" OR \"harm reduction\"",
+        "explanation": ""
+      },
+      {
+        "title": "Invision Forums",
+        "category": "💬 Forum Platforms",
+        "query": "\"Powered by Invision\" \"harm reduction\"\n\"IP.Board\" \"drug\" OR \"addiction\" forum",
+        "explanation": ""
+      },
+      {
+        "title": "Mental Health Communities",
+        "category": "🏥 Health & Support Forums",
+        "query": "site:beyondblue.org.au forum \"drug\" OR \"addiction\"\nsite:sane.org forum \"substance\"\n\"mental health forum\" Australia \"drug use\"",
+        "explanation": "[👉 **Run Mental Health Forum Search**](https://www.google.com/search?q=site%3Abeyondblue.org.au+forum+%22drug%22+OR+%22addiction%22)"
+      },
+      {
+        "title": "Chronic Pain Forums",
+        "category": "🏥 Health & Support Forums",
+        "query": "\"chronic pain forum\" Australia opioid\n\"pain management\" forum Australia medication",
+        "explanation": ""
+      },
+      {
+        "title": "Hepatitis Forums",
+        "category": "🏥 Health & Support Forums",
+        "query": "\"hepatitis\" forum Australia \"harm reduction\"\n\"hep C\" forum treatment Australia",
+        "explanation": ""
+      },
+      {
+        "title": "Festival Forums",
+        "category": "🎪 Festival & Music Communities",
+        "query": "\"festival\" forum Australia \"drug\" OR \"harm reduction\"\n\"music festival\" forum \"pill testing\" OR \"drug checking\"\n\"rave\" forum Australia \"harm reduction\"",
+        "explanation": "[👉 **Run Festival Forum Search**](https://www.google.com/search?q=%22festival%22+forum+Australia+%22drug%22+OR+%22harm+reduction%22)"
+      },
+      {
+        "title": "EDM Communities",
+        "category": "🎪 Festival & Music Communities",
+        "query": "site:reddit.com/r/aves Australia \"harm reduction\"\n\"electronic music\" forum Australia \"safe\" drug",
+        "explanation": ""
+      },
+      {
+        "title": "Telegram (Public Groups)",
+        "category": "📱 Messaging & Chat Platforms",
+        "query": "site:t.me \"harm reduction\" OR \"drug checking\"\nsite:t.me Australia \"drug\" alert",
+        "explanation": ""
+      },
+      {
+        "title": "Discord (Server Discovery)",
+        "category": "📱 Messaging & Chat Platforms",
+        "query": "site:discord.com \"harm reduction\"\nsite:discord.gg \"drug\" OR \"harm reduction\"\nsite:disboard.org \"harm reduction\"",
+        "explanation": ""
+      },
+      {
+        "title": "Quora",
+        "category": "🗣️ Q&A Platforms",
+        "query": "site:quora.com \"harm reduction\" Australia\nsite:quora.com \"naloxone\" Australia\nsite:quora.com \"drug policy\" Australia",
+        "explanation": "[👉 **Run Quora Search**](https://www.google.com/search?q=site%3Aquora.com+%22harm+reduction%22+Australia)"
+      },
+      {
+        "title": "Stack Exchange",
+        "category": "🗣️ Q&A Platforms",
+        "query": "site:stackexchange.com \"harm reduction\"\nsite:health.stackexchange.com \"overdose\" OR \"naloxone\"",
+        "explanation": ""
+      },
+      {
+        "title": "Australian News Sites",
+        "category": "📰 News Comment Sections",
+        "query": "site:abc.net.au/news \"pill testing\" comments\nsite:theguardian.com/australia \"drug checking\" comments\nsite:sbs.com.au \"harm reduction\" comments",
+        "explanation": ""
+      },
+      {
+        "title": "Find Forum Discussions About Specific Topics",
+        "category": "🔍 Advanced Forum Searches",
+        "query": "inurl:forum OR inurl:thread \"fentanyl\" Australia alert\ninurl:forum \"drug warning\" OR \"contaminated\" Australia\ninurl:forum \"naloxone\" access Australia",
+        "explanation": ""
+      },
+      {
+        "title": "Find User Experiences",
+        "category": "🔍 Advanced Forum Searches",
+        "query": "inurl:forum \"my experience\" \"harm reduction\" Australia\ninurl:forum \"personal story\" drug OR overdose\ninurl:thread \"what helped me\" addiction OR recovery",
+        "explanation": ""
+      },
+      {
+        "title": "Find Local Discussions",
+        "category": "🔍 Advanced Forum Searches",
+        "query": "inurl:forum \"Sydney\" \"harm reduction\" OR \"drug\"\ninurl:forum \"Melbourne\" \"safe injecting\" OR \"MSIR\"\ninurl:forum \"Brisbane\" naloxone OR \"NSP\"",
+        "explanation": ""
+      },
+      {
+        "title": "Most Active Discussions",
+        "category": "Forum Analytics",
+        "query": "inurl:forum \"harm reduction\" (\"replies\" OR \"views\") Australia\ninurl:viewtopic \"harm reduction\" Australia",
+        "explanation": ""
+      },
+      {
+        "title": "Recent Discussions",
+        "category": "Forum Analytics",
+        "query": "inurl:forum \"harm reduction\" Australia 2024..2026\ninurl:forum \"drug checking\" Australia after:2024",
+        "explanation": ""
+      }
+    ]
+  },
+  {
     "id": "housing-homelessness",
     "title": "Housing, Homelessness & Social Determinants",
     "description": "The intersection of AOD, housing, and social factors.",
@@ -1522,7 +1902,7 @@ window.DORK_DATA = [
         "title": "Canada",
         "category": "🌍 By Country/Region",
         "query": "site:*.gc.ca \"supervised consumption\" OR \"safe injection\" evaluation filetype:pdf\nsite:*.gc.ca \"safe supply\" OR \"safer supply\" (opioid OR prescription) filetype:pdf\nsite:bccsu.ca filetype:pdf (guidelines OR protocol)",
-        "explanation": "**Key Canadian Resources:**\n- BC Centre on Substance Use (BCCSU)\n- Health Canada supervised consumption\n- Safe supply programs"
+        "explanation": "**Key Canadian Resources:**\n\n- BC Centre on Substance Use (BCCSU)\n- Health Canada supervised consumption\n- Safe supply programs"
       },
       {
         "title": "United Kingdom",
@@ -2029,13 +2409,13 @@ window.DORK_DATA = [
   {
     "id": "naloxone",
     "title": "Take-Home Naloxone (THN)",
-    "description": "Guidance, training frameworks, implementation resources, and access information for naloxone programs.",
+    "description": "Guidance, training frameworks, implementation resources, and access information for naloxone",
     "dorks": [
       {
         "title": "Government Programs & Guidelines",
         "category": "Basic Queries",
         "query": "site:*.gov.au filetype:pdf (\"take-home naloxone\" OR THN) (guideline OR program)",
-        "explanation": "**Why this works:**\n- Catches both full term and abbreviation\n- PDF filter gets actual program documents\n- Guideline OR program catches different document types"
+        "explanation": "**Why this works:**\n\n- Catches both full term and abbreviation\n- PDF filter gets actual program documents\n- Guideline OR program catches different document types"
       },
       {
         "title": "State Health Department Resources",
@@ -2053,7 +2433,7 @@ window.DORK_DATA = [
         "title": "All Naloxone Formulations",
         "category": "Intermediate Queries",
         "query": "site:*.gov.au (naloxone OR narcan OR nyxoid) (program OR guideline OR training) filetype:pdf",
-        "explanation": "**Why this works:**\n- Covers brand names and generic\n- Multiple document types captured"
+        "explanation": "**Why this works:**\n\n- Covers brand names and generic\n- Multiple document types captured"
       },
       {
         "title": "Pharmacy Supply & Access",
@@ -2192,7 +2572,7 @@ window.DORK_DATA = [
         "title": "Nitazenes & Benzimidazole Opioids",
         "category": "Intermediate Queries",
         "query": "(\"nitazene\" OR \"isotonitazene\" OR \"protonitazene\" OR \"metonitazene\" OR \"benzimidazole opioid\") Australia filetype:pdf",
-        "explanation": "**Why this matters:** Nitazenes are highly potent synthetic opioids emerging in drug supplies globally."
+        "explanation": "**Why this matters:** Nitazenes are highly potent synthetic opioids emerging in drug supplies\nglobally."
       },
       {
         "title": "Xylazine & Adulterants",
@@ -2361,7 +2741,7 @@ window.DORK_DATA = [
         "title": "Government NSP Policies",
         "category": "Basic Queries",
         "query": "site:*.health.*.gov.au filetype:pdf (\"needle syringe program\" OR NSP) (guideline OR policy OR protocol)",
-        "explanation": "**Why this works:**\n- State health departments host NSP policies\n- PDF filter gets operational documents\n- Multiple document type terms captured"
+        "explanation": "**Why this works:**\n\n- State health departments host NSP policies\n- PDF filter gets operational documents\n- Multiple document type terms captured"
       },
       {
         "title": "NSP Service Directories",

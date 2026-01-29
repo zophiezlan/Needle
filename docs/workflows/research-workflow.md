@@ -84,29 +84,35 @@ What do peers and the sector say? Practice wisdom, advocacy positions, lived exp
 
 ## 🧠 Advanced: Synonym Expansion
 
-Don't guess keywords. Use Wikipedia to generate a comprehensive list of synonyms, street names, and chemical names for your target substance.
+Don't guess keywords. Use Wikipedia to generate a comprehensive list of synonyms, street names, and
+chemical names for your target substance.
 
 **Workflow:**
+
 1. Search `site:wikipedia.org [substance]`
 2. Extract **"Also known as"**, **IUPAC names**, and **Street names**
 3. Build a "Synonym Block" (OR group)
 
-> **💡 Pro Tip:** See [Wikipedia Synonym Expansion](../tools/search-tweaks.md#-wikipedia-synonym-expansion) for the step-by-step recipe.
+> **💡 Pro Tip:** See
+> [Wikipedia Synonym Expansion](../tools/search-tweaks.md#-wikipedia-synonym-expansion) for the
+> step-by-step recipe.
 
 ---
 
 ## ⚓ Advanced: Bias Counteraction
 
-Search results often skew towards "recovery" or law enforcement narratives. Use the **"Sinker"** method to force Google to prioritize harm reduction context.
+Search results often skew towards "recovery" or law enforcement narratives. Use the **"Sinker"**
+method to force Google to prioritize harm reduction context.
 
-**The Technique:**
-Add weighted terms to "sink" the query into your desired context.
+**The Technique:** Add weighted terms to "sink" the query into your desired context.
 
 ```txt
 "nitazenes" AROUND(15) "harm reduction"
 ```
 
-> **💡 Pro Tip:** See [The "Sinker" Method](../tools/search-tweaks.md#-the-sinker-method-bias-counteraction) for more weighting patterns.
+> **💡 Pro Tip:** See
+> [The "Sinker" Method](../tools/search-tweaks.md#-the-sinker-method-bias-counteraction) for more
+> weighting patterns.
 
 ---
 
@@ -191,14 +197,14 @@ site:*.edu.au "harm reduction" (evaluation OR effectiveness OR outcomes) filetyp
 
 When gathering evidence, document:
 
-| Field | Notes |
-|-------|-------|
-| **Topic** | What you're researching |
-| **Search Strategy** | Key dorks used |
-| **Sources Found** | List of documents |
-| **Quality Assessment** | Source reliability |
-| **Key Findings** | Main takeaways |
-| **Gaps** | What's missing |
+| Field                  | Notes                   |
+| ---------------------- | ----------------------- |
+| **Topic**              | What you're researching |
+| **Search Strategy**    | Key dorks used          |
+| **Sources Found**      | List of documents       |
+| **Quality Assessment** | Source reliability      |
+| **Key Findings**       | Main takeaways          |
+| **Gaps**               | What's missing          |
 
 ---
 
@@ -215,6 +221,7 @@ When you find a dork that works well, save it for future use.
 ### Tip 3: Check Multiple Institutions
 
 Don't rely on one source. Check:
+
 - Multiple government departments
 - Different research centres
 - Peer organisations
@@ -222,6 +229,7 @@ Don't rely on one source. Check:
 ### Tip 4: Look for Grey Literature
 
 Much valuable evidence isn't in journals:
+
 - Government reports
 - Evaluations
 - Conference presentations

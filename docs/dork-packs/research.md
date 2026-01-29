@@ -14,7 +14,7 @@ Find Australian harm reduction research:
 site:*.edu.au filetype:pdf "harm reduction" (evaluation OR effectiveness) after:2022
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=site%3A*.edu.au%20filetype%3Apdf%20%22harm%20reduction%22%20(evaluation%20OR%20effectiveness)%20after%3A2022)
+[👉 **Run this Search**](<https://www.google.com/search?q=site%3A*.edu.au%20filetype%3Apdf%20%22harm%20reduction%22%20(evaluation%20OR%20effectiveness)%20after%3A2022>)
 
 ---
 
@@ -22,13 +22,13 @@ site:*.edu.au filetype:pdf "harm reduction" (evaluation OR effectiveness) after:
 
 > Research should be accessible. These tools help you access scholarly content:
 
-| Tool | URL | Description |
-|------|-----|-------------|
-| **Unpaywall** | [unpaywall.org](https://unpaywall.org) | Browser extension, finds free legal papers |
-| **Sci-Hub** | [sci-hub.se](https://sci-hub.se) | Direct access (check legal status) |
-| **PubMed Central** | [ncbi.nlm.nih.gov/pmc](https://www.ncbi.nlm.nih.gov/pmc/) | Free biomedical literature |
-| **CORE** | [core.ac.uk](https://core.ac.uk/) | 270M+ open access papers |
-| **Semantic Scholar** | [semanticscholar.org](https://www.semanticscholar.org/) | AI-powered academic search |
+| Tool                 | URL                                                       | Description                                |
+| -------------------- | --------------------------------------------------------- | ------------------------------------------ |
+| **CORE**             | [core.ac.uk](https://core.ac.uk/)                         | 270M+ open access papers                   |
+| **PubMed Central**   | [ncbi.nlm.nih.gov/pmc](https://www.ncbi.nlm.nih.gov/pmc/) | Free biomedical literature                 |
+| **Sci-Hub**          | [sci-hub.se](https://sci-hub.se)                          | Direct access (check legal status)         |
+| **Semantic Scholar** | [semanticscholar.org](https://www.semanticscholar.org/)   | AI-powered academic search                 |
+| **Unpaywall**        | [unpaywall.org](https://unpaywall.org)                    | Browser extension, finds free legal papers |
 
 See [Academic Access](../resources/academic-access.md) for full list.
 
@@ -44,7 +44,7 @@ site:burnet.edu.au "injecting drug use" OR "needle syringe"
 site:kirby.unsw.edu.au hepatitis drug use
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=site%3Andarc.med.unsw.edu.au%20filetype%3Apdf%20(%22harm%20reduction%22%20OR%20%22drug%20checking%22%20OR%20%22overdose%22)%0Asite%3Aburnet.edu.au%20%22injecting%20drug%20use%22%20OR%20%22needle%20syringe%22%0Asite%3Akirby.unsw.edu.au%20hepatitis%20drug%20use)
+[👉 **Run this Search**](<https://www.google.com/search?q=site%3Andarc.med.unsw.edu.au%20filetype%3Apdf%20(%22harm%20reduction%22%20OR%20%22drug%20checking%22%20OR%20%22overdose%22)%0Asite%3Aburnet.edu.au%20%22injecting%20drug%20use%22%20OR%20%22needle%20syringe%22%0Asite%3Akirby.unsw.edu.au%20hepatitis%20drug%20use>)
 
 ### Generic Australian Academic
 
@@ -52,7 +52,7 @@ site:kirby.unsw.edu.au hepatitis drug use
 site:*.edu.au filetype:pdf "harm reduction" (evaluation OR effectiveness)
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=site%3A*.edu.au%20filetype%3Apdf%20%22harm%20reduction%22%20(evaluation%20OR%20effectiveness))
+[👉 **Run this Search**](<https://www.google.com/search?q=site%3A*.edu.au%20filetype%3Apdf%20%22harm%20reduction%22%20(evaluation%20OR%20effectiveness)>)
 
 ### Quality Filters (Systematic Reviews)
 
@@ -89,7 +89,7 @@ intitle:"randomized controlled trial" OR intitle:"randomised controlled trial" "
 (intitle:"systematic review" OR intitle:"meta-analysis") "harm reduction" after:2020 filetype:pdf
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=(intitle%3A%22systematic%20review%22%20OR%20intitle%3A%22meta-analysis%22)%20%22harm%20reduction%22%20after%3A2020%20filetype%3Apdf)
+[👉 **Run this Search**](<https://www.google.com/search?q=(intitle%3A%22systematic%20review%22%20OR%20intitle%3A%22meta-analysis%22)%20%22harm%20reduction%22%20after%3A2020%20filetype%3Apdf>)
 
 ### Grey Literature (Exclude Aggregators)
 
@@ -109,7 +109,7 @@ intitle:"randomized controlled trial" OR intitle:"randomised controlled trial" "
 site:*.edu.au OR site:*.edu filetype:pdf ("harm reduction" OR "drug checking" OR "needle syringe" OR naloxone) (evaluation OR effectiveness OR outcomes OR "systematic review" OR "meta-analysis") after:2020 -site:researchgate.net -site:academia.edu
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=site%3A*.edu.au%20OR%20site%3A*.edu%20filetype%3Apdf%20(%22harm%20reduction%22%20OR%20%22drug%20checking%22%20OR%20%22needle%20syringe%22%20OR%20naloxone)%20(evaluation%20OR%20effectiveness%20OR%20outcomes%20OR%20%22systematic%20review%22%20OR%20%22meta-analysis%22)%20after%3A2020%20-site%3Aresearchgate.net%20-site%3Aacademia.edu)
+[👉 **Run this Search**](<https://www.google.com/search?q=site%3A*.edu.au%20OR%20site%3A*.edu%20filetype%3Apdf%20(%22harm%20reduction%22%20OR%20%22drug%20checking%22%20OR%20%22needle%20syringe%22%20OR%20naloxone)%20(evaluation%20OR%20effectiveness%20OR%20outcomes%20OR%20%22systematic%20review%22%20OR%20%22meta-analysis%22)%20after%3A2020%20-site%3Aresearchgate.net%20-site%3Aacademia.edu>)
 
 ### Methods-Focused (For Research Design)
 
@@ -125,7 +125,7 @@ intitle:"methods" OR intitle:"methodology" "harm reduction" filetype:pdf
 ("peer-led research" OR "participatory action research" OR "community-based participatory research") drug use Australia filetype:pdf
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=(%22peer-led%20research%22%20OR%20%22participatory%20action%20research%22%20OR%20%22community-based%20participatory%20research%22)%20drug%20use%20Australia%20filetype%3Apdf)
+[👉 **Run this Search**](<https://www.google.com/search?q=(%22peer-led%20research%22%20OR%20%22participatory%20action%20research%22%20OR%20%22community-based%20participatory%20research%22)%20drug%20use%20Australia%20filetype%3Apdf>)
 
 ### Citation-Worthy Evidence
 
@@ -133,7 +133,7 @@ intitle:"methods" OR intitle:"methodology" "harm reduction" filetype:pdf
 site:*.edu.au ("harm reduction" OR "drug checking") (evaluation OR effectiveness OR outcomes) filetype:pdf after:2020
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=site%3A*.edu.au%20(%22harm%20reduction%22%20OR%20%22drug%20checking%22)%20(evaluation%20OR%20effectiveness%20OR%20outcomes)%20filetype%3Apdf%20after%3A2020)
+[👉 **Run this Search**](<https://www.google.com/search?q=site%3A*.edu.au%20(%22harm%20reduction%22%20OR%20%22drug%20checking%22)%20(evaluation%20OR%20effectiveness%20OR%20outcomes)%20filetype%3Apdf%20after%3A2020>)
 
 ---
 
@@ -154,7 +154,7 @@ site:ndarc.med.unsw.edu.au [YOUR TOPIC]
 site:burnet.edu.au filetype:pdf (harm reduction OR "injecting drug use")
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=site%3Aburnet.edu.au%20filetype%3Apdf%20(harm%20reduction%20OR%20%22injecting%20drug%20use%22))
+[👉 **Run this Search**](<https://www.google.com/search?q=site%3Aburnet.edu.au%20filetype%3Apdf%20(harm%20reduction%20OR%20%22injecting%20drug%20use%22)>)
 
 ### Turning Point
 
@@ -170,7 +170,7 @@ site:turning-point.org.au filetype:pdf
 site:kirby.unsw.edu.au filetype:pdf (hepatitis OR HIV OR BBV)
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=site%3Akirby.unsw.edu.au%20filetype%3Apdf%20(hepatitis%20OR%20HIV%20OR%20BBV))
+[👉 **Run this Search**](<https://www.google.com/search?q=site%3Akirby.unsw.edu.au%20filetype%3Apdf%20(hepatitis%20OR%20HIV%20OR%20BBV)>)
 
 ### NCETA (Workforce Development)
 
@@ -206,7 +206,7 @@ site:matildacentre.com.au filetype:pdf
 intitle:"systematic review" ("harm reduction" OR naloxone OR "needle syringe") filetype:pdf
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=intitle%3A%22systematic%20review%22%20(%22harm%20reduction%22%20OR%20naloxone%20OR%20%22needle%20syringe%22)%20filetype%3Apdf)
+[👉 **Run this Search**](<https://www.google.com/search?q=intitle%3A%22systematic%20review%22%20(%22harm%20reduction%22%20OR%20naloxone%20OR%20%22needle%20syringe%22)%20filetype%3Apdf>)
 
 ### Meta-Analyses
 
@@ -214,7 +214,7 @@ intitle:"systematic review" ("harm reduction" OR naloxone OR "needle syringe") f
 intitle:"meta-analysis" ("opioid agonist" OR "harm reduction" OR "drug checking") filetype:pdf
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=intitle%3A%22meta-analysis%22%20(%22opioid%20agonist%22%20OR%20%22harm%20reduction%22%20OR%20%22drug%20checking%22)%20filetype%3Apdf)
+[👉 **Run this Search**](<https://www.google.com/search?q=intitle%3A%22meta-analysis%22%20(%22opioid%20agonist%22%20OR%20%22harm%20reduction%22%20OR%20%22drug%20checking%22)%20filetype%3Apdf>)
 
 ### Randomised Trials
 
@@ -222,7 +222,7 @@ intitle:"meta-analysis" ("opioid agonist" OR "harm reduction" OR "drug checking"
 (intitle:"randomized" OR intitle:"randomised") trial ("harm reduction" OR AOD) filetype:pdf
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=(intitle%3A%22randomized%22%20OR%20intitle%3A%22randomised%22)%20trial%20(%22harm%20reduction%22%20OR%20AOD)%20filetype%3Apdf)
+[👉 **Run this Search**](<https://www.google.com/search?q=(intitle%3A%22randomized%22%20OR%20intitle%3A%22randomised%22)%20trial%20(%22harm%20reduction%22%20OR%20AOD)%20filetype%3Apdf>)
 
 ### Cohort Studies
 
@@ -230,7 +230,7 @@ intitle:"meta-analysis" ("opioid agonist" OR "harm reduction" OR "drug checking"
 intitle:"cohort study" ("drug use" OR "substance use" OR "harm reduction") Australia filetype:pdf
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=intitle%3A%22cohort%20study%22%20(%22drug%20use%22%20OR%20%22substance%20use%22%20OR%20%22harm%20reduction%22)%20Australia%20filetype%3Apdf)
+[👉 **Run this Search**](<https://www.google.com/search?q=intitle%3A%22cohort%20study%22%20(%22drug%20use%22%20OR%20%22substance%20use%22%20OR%20%22harm%20reduction%22)%20Australia%20filetype%3Apdf>)
 
 ### Qualitative Research
 
@@ -238,7 +238,7 @@ intitle:"cohort study" ("drug use" OR "substance use" OR "harm reduction") Austr
 intitle:"qualitative" ("harm reduction" OR "drug use" OR "lived experience") Australia filetype:pdf
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=intitle%3A%22qualitative%22%20(%22harm%20reduction%22%20OR%20%22drug%20use%22%20OR%20%22lived%20experience%22)%20Australia%20filetype%3Apdf)
+[👉 **Run this Search**](<https://www.google.com/search?q=intitle%3A%22qualitative%22%20(%22harm%20reduction%22%20OR%20%22drug%20use%22%20OR%20%22lived%20experience%22)%20Australia%20filetype%3Apdf>)
 
 ### Mixed Methods
 
@@ -246,7 +246,7 @@ intitle:"qualitative" ("harm reduction" OR "drug use" OR "lived experience") Aus
 "mixed methods" ("harm reduction" OR "drug use") Australia filetype:pdf
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22mixed%20methods%22%20(%22harm%20reduction%22%20OR%20%22drug%20use%22)%20Australia%20filetype%3Apdf)
+[👉 **Run this Search**](<https://www.google.com/search?q=%22mixed%20methods%22%20(%22harm%20reduction%22%20OR%20%22drug%20use%22)%20Australia%20filetype%3Apdf>)
 
 ---
 
@@ -258,7 +258,7 @@ intitle:"qualitative" ("harm reduction" OR "drug use" OR "lived experience") Aus
 ("evaluation report" OR "final report" OR "project report") "harm reduction" Australia filetype:pdf -journal -doi
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=(%22evaluation%20report%22%20OR%20%22final%20report%22%20OR%20%22project%20report%22)%20%22harm%20reduction%22%20Australia%20filetype%3Apdf%20-journal%20-doi)
+[👉 **Run this Search**](<https://www.google.com/search?q=(%22evaluation%20report%22%20OR%20%22final%20report%22%20OR%20%22project%20report%22)%20%22harm%20reduction%22%20Australia%20filetype%3Apdf%20-journal%20-doi>)
 
 ### Working Papers
 
@@ -266,7 +266,7 @@ intitle:"qualitative" ("harm reduction" OR "drug use" OR "lived experience") Aus
 "working paper" OR "discussion paper" ("harm reduction" OR "drug policy") Australia filetype:pdf
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22working%20paper%22%20OR%20%22discussion%20paper%22%20(%22harm%20reduction%22%20OR%20%22drug%20policy%22)%20Australia%20filetype%3Apdf)
+[👉 **Run this Search**](<https://www.google.com/search?q=%22working%20paper%22%20OR%20%22discussion%20paper%22%20(%22harm%20reduction%22%20OR%20%22drug%20policy%22)%20Australia%20filetype%3Apdf>)
 
 ### Theses & Dissertations
 
@@ -274,7 +274,7 @@ intitle:"qualitative" ("harm reduction" OR "drug use" OR "lived experience") Aus
 (thesis OR dissertation) ("harm reduction" OR "drug checking" OR "needle syringe") Australia filetype:pdf
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=(thesis%20OR%20dissertation)%20(%22harm%20reduction%22%20OR%20%22drug%20checking%22%20OR%20%22needle%20syringe%22)%20Australia%20filetype%3Apdf)
+[👉 **Run this Search**](<https://www.google.com/search?q=(thesis%20OR%20dissertation)%20(%22harm%20reduction%22%20OR%20%22drug%20checking%22%20OR%20%22needle%20syringe%22)%20Australia%20filetype%3Apdf>)
 
 ### Conference Papers
 
@@ -282,7 +282,7 @@ intitle:"qualitative" ("harm reduction" OR "drug use" OR "lived experience") Aus
 ("conference paper" OR "conference presentation" OR proceedings) "harm reduction" APSAD filetype:pdf
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=(%22conference%20paper%22%20OR%20%22conference%20presentation%22%20OR%20proceedings)%20%22harm%20reduction%22%20APSAD%20filetype%3Apdf)
+[👉 **Run this Search**](<https://www.google.com/search?q=(%22conference%20paper%22%20OR%20%22conference%20presentation%22%20OR%20proceedings)%20%22harm%20reduction%22%20APSAD%20filetype%3Apdf>)
 
 ---
 
@@ -294,7 +294,7 @@ intitle:"qualitative" ("harm reduction" OR "drug use" OR "lived experience") Aus
 site:*.edu.au "drug checking" OR "pill testing" (evaluation OR outcomes) filetype:pdf
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=site%3A*.edu.au%20%22drug%20checking%22%20OR%20%22pill%20testing%22%20(evaluation%20OR%20outcomes)%20filetype%3Apdf)
+[👉 **Run this Search**](<https://www.google.com/search?q=site%3A*.edu.au%20%22drug%20checking%22%20OR%20%22pill%20testing%22%20(evaluation%20OR%20outcomes)%20filetype%3Apdf>)
 
 ### Naloxone Research
 
@@ -302,7 +302,7 @@ site:*.edu.au "drug checking" OR "pill testing" (evaluation OR outcomes) filetyp
 site:*.edu.au "take-home naloxone" OR "community naloxone" (evaluation OR effectiveness) filetype:pdf
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=site%3A*.edu.au%20%22take-home%20naloxone%22%20OR%20%22community%20naloxone%22%20(evaluation%20OR%20effectiveness)%20filetype%3Apdf)
+[👉 **Run this Search**](<https://www.google.com/search?q=site%3A*.edu.au%20%22take-home%20naloxone%22%20OR%20%22community%20naloxone%22%20(evaluation%20OR%20effectiveness)%20filetype%3Apdf>)
 
 ### NSP Research
 
@@ -310,7 +310,7 @@ site:*.edu.au "take-home naloxone" OR "community naloxone" (evaluation OR effect
 site:*.edu.au "needle syringe program" (evaluation OR "cost-effectiveness") filetype:pdf
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=site%3A*.edu.au%20%22needle%20syringe%20program%22%20(evaluation%20OR%20%22cost-effectiveness%22)%20filetype%3Apdf)
+[👉 **Run this Search**](<https://www.google.com/search?q=site%3A*.edu.au%20%22needle%20syringe%20program%22%20(evaluation%20OR%20%22cost-effectiveness%22)%20filetype%3Apdf>)
 
 ### OAT Research
 
@@ -318,7 +318,7 @@ site:*.edu.au "needle syringe program" (evaluation OR "cost-effectiveness") file
 site:*.edu.au ("opioid agonist" OR methadone OR buprenorphine) (outcomes OR retention OR effectiveness) filetype:pdf
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=site%3A*.edu.au%20(%22opioid%20agonist%22%20OR%20methadone%20OR%20buprenorphine)%20(outcomes%20OR%20retention%20OR%20effectiveness)%20filetype%3Apdf)
+[👉 **Run this Search**](<https://www.google.com/search?q=site%3A*.edu.au%20(%22opioid%20agonist%22%20OR%20methadone%20OR%20buprenorphine)%20(outcomes%20OR%20retention%20OR%20effectiveness)%20filetype%3Apdf>)
 
 ### Peer Work Research
 
@@ -326,7 +326,7 @@ site:*.edu.au ("opioid agonist" OR methadone OR buprenorphine) (outcomes OR rete
 site:*.edu.au "peer support" OR "peer worker" (effectiveness OR outcomes) "harm reduction" filetype:pdf
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=site%3A*.edu.au%20%22peer%20support%22%20OR%20%22peer%20worker%22%20(effectiveness%20OR%20outcomes)%20%22harm%20reduction%22%20filetype%3Apdf)
+[👉 **Run this Search**](<https://www.google.com/search?q=site%3A*.edu.au%20%22peer%20support%22%20OR%20%22peer%20worker%22%20(effectiveness%20OR%20outcomes)%20%22harm%20reduction%22%20filetype%3Apdf>)
 
 ---
 
@@ -338,7 +338,7 @@ site:*.edu.au "peer support" OR "peer worker" (effectiveness OR outcomes) "harm 
 site:*.ac.uk "harm reduction" (evaluation OR evidence) filetype:pdf
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=site%3A*.ac.uk%20%22harm%20reduction%22%20(evaluation%20OR%20evidence)%20filetype%3Apdf)
+[👉 **Run this Search**](<https://www.google.com/search?q=site%3A*.ac.uk%20%22harm%20reduction%22%20(evaluation%20OR%20evidence)%20filetype%3Apdf>)
 
 ### Canadian Research
 
@@ -346,7 +346,7 @@ site:*.ac.uk "harm reduction" (evaluation OR evidence) filetype:pdf
 site:*.ca ("safe injection" OR "supervised consumption" OR "safe supply") (evaluation OR outcomes) filetype:pdf
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=site%3A*.ca%20(%22safe%20injection%22%20OR%20%22supervised%20consumption%22%20OR%20%22safe%20supply%22)%20(evaluation%20OR%20outcomes)%20filetype%3Apdf)
+[👉 **Run this Search**](<https://www.google.com/search?q=site%3A*.ca%20(%22safe%20injection%22%20OR%20%22supervised%20consumption%22%20OR%20%22safe%20supply%22)%20(evaluation%20OR%20outcomes)%20filetype%3Apdf>)
 
 ### European Research (EMCDDA)
 
@@ -354,7 +354,7 @@ site:*.ca ("safe injection" OR "supervised consumption" OR "safe supply") (evalu
 site:emcdda.europa.eu filetype:pdf ("harm reduction" OR "drug checking")
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=site%3Aemcdda.europa.eu%20filetype%3Apdf%20(%22harm%20reduction%22%20OR%20%22drug%20checking%22))
+[👉 **Run this Search**](<https://www.google.com/search?q=site%3Aemcdda.europa.eu%20filetype%3Apdf%20(%22harm%20reduction%22%20OR%20%22drug%20checking%22)>)
 
 ### Cochrane Reviews
 
@@ -362,7 +362,7 @@ site:emcdda.europa.eu filetype:pdf ("harm reduction" OR "drug checking")
 site:cochranelibrary.com ("harm reduction" OR naloxone OR "needle syringe")
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=site%3Acochranelibrary.com%20(%22harm%20reduction%22%20OR%20naloxone%20OR%20%22needle%20syringe%22))
+[👉 **Run this Search**](<https://www.google.com/search?q=site%3Acochranelibrary.com%20(%22harm%20reduction%22%20OR%20naloxone%20OR%20%22needle%20syringe%22)>)
 
 ---
 
@@ -391,7 +391,8 @@ related:ndarc.med.unsw.edu.au
 ## 🔗 Related Resources
 
 - **Resource:** [Academic Access](../resources/academic-access.md)
-- **Related Packs:** [Data & Statistics](data-statistics.md), [Policy & Advocacy](policy-advocacy.md)
+- **Related Packs:** [Data & Statistics](data-statistics.md),
+  [Policy & Advocacy](policy-advocacy.md)
 - **Workflow:** [Research Workflow](../workflows/research-workflow.md)
 - **Tools:** [AI Tools](../tools/ai-tools.md)
 

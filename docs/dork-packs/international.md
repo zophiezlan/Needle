@@ -14,7 +14,7 @@ Find international harm reduction evaluations:
 ("drug consumption room" OR "supervised consumption") evaluation (Canada OR Europe) filetype:pdf
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=(%22drug%20consumption%20room%22%20OR%20%22supervised%20consumption%22)%20evaluation%20(Canada%20OR%20Europe)%20filetype%3Apdf)
+[👉 **Run this Search**](<https://www.google.com/search?q=(%22drug%20consumption%20room%22%20OR%20%22supervised%20consumption%22)%20evaluation%20(Canada%20OR%20Europe)%20filetype%3Apdf>)
 
 ---
 
@@ -62,7 +62,7 @@ site:emcdda.europa.eu filetype:pdf "drug checking" OR "harm reduction"
 site:*.pt OR "Portugal" "decriminalization" drugs (evaluation OR outcomes) 2001..2025
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=site%3A*.pt%20OR%20%22Portugal%22%20%22decriminalization%22%20drugs%20(evaluation%20OR%20outcomes)%202001..2025)
+[👉 **Run this Search**](<https://www.google.com/search?q=site%3A*.pt%20OR%20%22Portugal%22%20%22decriminalization%22%20drugs%20(evaluation%20OR%20outcomes)%202001..2025>)
 
 ### Swiss Heroin-Assisted Treatment
 
@@ -70,7 +70,7 @@ site:*.pt OR "Portugal" "decriminalization" drugs (evaluation OR outcomes) 2001.
 (Switzerland OR Swiss) "heroin assisted treatment" OR "heroin prescription" evaluation filetype:pdf
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=(Switzerland%20OR%20Swiss)%20%22heroin%20assisted%20treatment%22%20OR%20%22heroin%20prescription%22%20evaluation%20filetype%3Apdf)
+[👉 **Run this Search**](<https://www.google.com/search?q=(Switzerland%20OR%20Swiss)%20%22heroin%20assisted%20treatment%22%20OR%20%22heroin%20prescription%22%20evaluation%20filetype%3Apdf>)
 
 ### Netherlands Drug Policy
 
@@ -78,7 +78,7 @@ site:*.pt OR "Portugal" "decriminalization" drugs (evaluation OR outcomes) 2001.
 (Netherlands OR Dutch) "drug policy" "harm reduction" (coffeeshop OR cannabis OR "tolerance policy")
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=(Netherlands%20OR%20Dutch)%20%22drug%20policy%22%20%22harm%20reduction%22%20(coffeeshop%20OR%20cannabis%20OR%20%22tolerance%20policy%22))
+[👉 **Run this Search**](<https://www.google.com/search?q=(Netherlands%20OR%20Dutch)%20%22drug%20policy%22%20%22harm%20reduction%22%20(coffeeshop%20OR%20cannabis%20OR%20%22tolerance%20policy%22)>)
 
 ---
 
@@ -90,7 +90,7 @@ site:*.pt OR "Portugal" "decriminalization" drugs (evaluation OR outcomes) 2001.
 ("drug consumption room" OR "supervised consumption" OR "supervised injection" OR "safe injection") (evaluation OR effectiveness OR outcomes) (Canada OR UK OR Europe OR Switzerland) filetype:pdf after:2018
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=(%22drug%20consumption%20room%22%20OR%20%22supervised%20consumption%22%20OR%20%22supervised%20injection%22%20OR%20%22safe%20injection%22)%20(evaluation%20OR%20effectiveness%20OR%20outcomes)%20(Canada%20OR%20UK%20OR%20Europe%20OR%20Switzerland)%20filetype%3Apdf%20after%3A2018)
+[👉 **Run this Search**](<https://www.google.com/search?q=(%22drug%20consumption%20room%22%20OR%20%22supervised%20consumption%22%20OR%20%22supervised%20injection%22%20OR%20%22safe%20injection%22)%20(evaluation%20OR%20effectiveness%20OR%20outcomes)%20(Canada%20OR%20UK%20OR%20Europe%20OR%20Switzerland)%20filetype%3Apdf%20after%3A2018>)
 
 ### International Best Practice Comparison
 
@@ -98,7 +98,7 @@ site:*.pt OR "Portugal" "decriminalization" drugs (evaluation OR outcomes) 2001.
 "harm reduction" ("best practice" OR "gold standard" OR model) international (comparison OR review) filetype:pdf
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22harm%20reduction%22%20(%22best%20practice%22%20OR%20%22gold%20standard%22%20OR%20model)%20international%20(comparison%20OR%20review)%20filetype%3Apdf)
+[👉 **Run this Search**](<https://www.google.com/search?q=%22harm%20reduction%22%20(%22best%20practice%22%20OR%20%22gold%20standard%22%20OR%20model)%20international%20(comparison%20OR%20review)%20filetype%3Apdf>)
 
 ### Drug Checking International
 
@@ -106,7 +106,7 @@ site:*.pt OR "Portugal" "decriminalization" drugs (evaluation OR outcomes) 2001.
 "drug checking" (evaluation OR service OR program) (Europe OR UK OR "New Zealand" OR Canada) filetype:pdf
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22drug%20checking%22%20(evaluation%20OR%20service%20OR%20program)%20(Europe%20OR%20UK%20OR%20%22New%20Zealand%22%20OR%20Canada)%20filetype%3Apdf)
+[👉 **Run this Search**](<https://www.google.com/search?q=%22drug%20checking%22%20(evaluation%20OR%20service%20OR%20program)%20(Europe%20OR%20UK%20OR%20%22New%20Zealand%22%20OR%20Canada)%20filetype%3Apdf>)
 
 ---
 
@@ -120,9 +120,10 @@ site:*.gc.ca "safe supply" OR "safer supply" (opioid OR prescription) filetype:p
 site:bccsu.ca filetype:pdf (guidelines OR protocol)
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=site%3A*.gc.ca%20%22supervised%20consumption%22%20OR%20%22safe%20injection%22%20evaluation%20filetype%3Apdf%0Asite%3A*.gc.ca%20%22safe%20supply%22%20OR%20%22safer%20supply%22%20(opioid%20OR%20prescription)%20filetype%3Apdf%0Asite%3Abccsu.ca%20filetype%3Apdf%20(guidelines%20OR%20protocol))
+[👉 **Run this Search**](<https://www.google.com/search?q=site%3A*.gc.ca%20%22supervised%20consumption%22%20OR%20%22safe%20injection%22%20evaluation%20filetype%3Apdf%0Asite%3A*.gc.ca%20%22safe%20supply%22%20OR%20%22safer%20supply%22%20(opioid%20OR%20prescription)%20filetype%3Apdf%0Asite%3Abccsu.ca%20filetype%3Apdf%20(guidelines%20OR%20protocol)>)
 
 **Key Canadian Resources:**
+
 - BC Centre on Substance Use (BCCSU)
 - Health Canada supervised consumption
 - Safe supply programs
@@ -153,7 +154,7 @@ site:emcdda.europa.eu "drug checking" OR "harm reduction" OR "treatment"
 "Dissuasion Commission" Portugal drug
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22Portugal%22%20%22decriminalization%22%20OR%20%22decriminalisation%22%20(drugs%20OR%20drug%20policy)%20(evaluation%20OR%20model%20OR%20lessons)%20filetype%3Apdf%0A%22Dissuasion%20Commission%22%20Portugal%20drug)
+[👉 **Run this Search**](<https://www.google.com/search?q=%22Portugal%22%20%22decriminalization%22%20OR%20%22decriminalisation%22%20(drugs%20OR%20drug%20policy)%20(evaluation%20OR%20model%20OR%20lessons)%20filetype%3Apdf%0A%22Dissuasion%20Commission%22%20Portugal%20drug>)
 
 ### Switzerland
 
@@ -162,7 +163,7 @@ site:emcdda.europa.eu "drug checking" OR "harm reduction" OR "treatment"
 (Switzerland OR Swiss) "drug consumption room" OR "injection room"
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=(Switzerland%20OR%20Swiss)%20(%22heroin%20assisted%20treatment%22%20OR%20HAT%20OR%20%22heroin%20prescription%22)%20(evaluation%20OR%20outcomes)%20filetype%3Apdf%0A(Switzerland%20OR%20Swiss)%20%22drug%20consumption%20room%22%20OR%20%22injection%20room%22)
+[👉 **Run this Search**](<https://www.google.com/search?q=(Switzerland%20OR%20Swiss)%20(%22heroin%20assisted%20treatment%22%20OR%20HAT%20OR%20%22heroin%20prescription%22)%20(evaluation%20OR%20outcomes)%20filetype%3Apdf%0A(Switzerland%20OR%20Swiss)%20%22drug%20consumption%20room%22%20OR%20%22injection%20room%22>)
 
 ### Netherlands
 
@@ -171,7 +172,7 @@ site:emcdda.europa.eu "drug checking" OR "harm reduction" OR "treatment"
 (Netherlands OR Dutch) "drug checking" OR "pill testing" (evaluation OR service)
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=(Netherlands%20OR%20Dutch)%20%22drug%20policy%22%20(coffeeshop%20OR%20cannabis%20OR%20%22harm%20reduction%22)%20filetype%3Apdf%0A(Netherlands%20OR%20Dutch)%20%22drug%20checking%22%20OR%20%22pill%20testing%22%20(evaluation%20OR%20service))
+[👉 **Run this Search**](<https://www.google.com/search?q=(Netherlands%20OR%20Dutch)%20%22drug%20policy%22%20(coffeeshop%20OR%20cannabis%20OR%20%22harm%20reduction%22)%20filetype%3Apdf%0A(Netherlands%20OR%20Dutch)%20%22drug%20checking%22%20OR%20%22pill%20testing%22%20(evaluation%20OR%20service)>)
 
 ### Germany
 
@@ -179,7 +180,7 @@ site:emcdda.europa.eu "drug checking" OR "harm reduction" OR "treatment"
 (Germany OR German) "drug consumption room" OR "harm reduction" policy filetype:pdf
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=(Germany%20OR%20German)%20%22drug%20consumption%20room%22%20OR%20%22harm%20reduction%22%20policy%20filetype%3Apdf)
+[👉 **Run this Search**](<https://www.google.com/search?q=(Germany%20OR%20German)%20%22drug%20consumption%20room%22%20OR%20%22harm%20reduction%22%20policy%20filetype%3Apdf>)
 
 ### New Zealand
 
@@ -188,7 +189,7 @@ site:*.govt.nz "needle exchange" OR "drug checking" OR "harm reduction"
 "New Zealand" "drug checking" OR "pill testing" (legislation OR implementation)
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=site%3A*.govt.nz%20%22needle%20exchange%22%20OR%20%22drug%20checking%22%20OR%20%22harm%20reduction%22%0A%22New%20Zealand%22%20%22drug%20checking%22%20OR%20%22pill%20testing%22%20(legislation%20OR%20implementation))
+[👉 **Run this Search**](<https://www.google.com/search?q=site%3A*.govt.nz%20%22needle%20exchange%22%20OR%20%22drug%20checking%22%20OR%20%22harm%20reduction%22%0A%22New%20Zealand%22%20%22drug%20checking%22%20OR%20%22pill%20testing%22%20(legislation%20OR%20implementation)>)
 
 ---
 
@@ -216,7 +217,7 @@ site:unodc.org "harm reduction" guidelines OR standards filetype:pdf
 site:emcdda.europa.eu ("best practice" OR guidelines OR standards) filetype:pdf
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=site%3Aemcdda.europa.eu%20(%22best%20practice%22%20OR%20guidelines%20OR%20standards)%20filetype%3Apdf)
+[👉 **Run this Search**](<https://www.google.com/search?q=site%3Aemcdda.europa.eu%20(%22best%20practice%22%20OR%20guidelines%20OR%20standards)%20filetype%3Apdf>)
 
 ### Harm Reduction International
 
@@ -237,7 +238,7 @@ site:inpud.net filetype:pdf
 "International Network of People Who Use Drugs" (statement OR resources)
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=site%3Ainpud.net%20filetype%3Apdf%0A%22International%20Network%20of%20People%20Who%20Use%20Drugs%22%20(statement%20OR%20resources))
+[👉 **Run this Search**](<https://www.google.com/search?q=site%3Ainpud.net%20filetype%3Apdf%0A%22International%20Network%20of%20People%20Who%20Use%20Drugs%22%20(statement%20OR%20resources)>)
 
 ### Regional Networks
 
@@ -247,7 +248,7 @@ site:inpud.net filetype:pdf
 "Asian Network of People Who Use Drugs" (ANPUD)
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22European%20Network%20of%20People%20Who%20Use%20Drugs%22%20(EuroNPUD%20OR%20ENPUD)%0A%22Canadian%20Association%20of%20People%20Who%20Use%20Drugs%22%20(CAPUD)%0A%22Asian%20Network%20of%20People%20Who%20Use%20Drugs%22%20(ANPUD))
+[👉 **Run this Search**](<https://www.google.com/search?q=%22European%20Network%20of%20People%20Who%20Use%20Drugs%22%20(EuroNPUD%20OR%20ENPUD)%0A%22Canadian%20Association%20of%20People%20Who%20Use%20Drugs%22%20(CAPUD)%0A%22Asian%20Network%20of%20People%20Who%20Use%20Drugs%22%20(ANPUD)>)
 
 ---
 
@@ -259,7 +260,7 @@ site:inpud.net filetype:pdf
 ("drug consumption room" OR "supervised injection" OR "supervised consumption" OR "safe injection facility") (evaluation OR review OR comparison) international filetype:pdf
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=(%22drug%20consumption%20room%22%20OR%20%22supervised%20injection%22%20OR%20%22supervised%20consumption%22%20OR%20%22safe%20injection%20facility%22)%20(evaluation%20OR%20review%20OR%20comparison)%20international%20filetype%3Apdf)
+[👉 **Run this Search**](<https://www.google.com/search?q=(%22drug%20consumption%20room%22%20OR%20%22supervised%20injection%22%20OR%20%22supervised%20consumption%22%20OR%20%22safe%20injection%20facility%22)%20(evaluation%20OR%20review%20OR%20comparison)%20international%20filetype%3Apdf>)
 
 ### Heroin-Assisted Treatment
 
@@ -267,7 +268,7 @@ site:inpud.net filetype:pdf
 "heroin assisted treatment" OR "heroin prescription" (evaluation OR outcomes OR comparison) (Switzerland OR UK OR Canada OR Germany)
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22heroin%20assisted%20treatment%22%20OR%20%22heroin%20prescription%22%20(evaluation%20OR%20outcomes%20OR%20comparison)%20(Switzerland%20OR%20UK%20OR%20Canada%20OR%20Germany))
+[👉 **Run this Search**](<https://www.google.com/search?q=%22heroin%20assisted%20treatment%22%20OR%20%22heroin%20prescription%22%20(evaluation%20OR%20outcomes%20OR%20comparison)%20(Switzerland%20OR%20UK%20OR%20Canada%20OR%20Germany)>)
 
 ### Safe Supply Programs
 
@@ -275,7 +276,7 @@ site:inpud.net filetype:pdf
 "safe supply" OR "safer supply" (opioid OR prescription) (Canada OR "British Columbia") evaluation filetype:pdf
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22safe%20supply%22%20OR%20%22safer%20supply%22%20(opioid%20OR%20prescription)%20(Canada%20OR%20%22British%20Columbia%22)%20evaluation%20filetype%3Apdf)
+[👉 **Run this Search**](<https://www.google.com/search?q=%22safe%20supply%22%20OR%20%22safer%20supply%22%20(opioid%20OR%20prescription)%20(Canada%20OR%20%22British%20Columbia%22)%20evaluation%20filetype%3Apdf>)
 
 ### Drug Checking Services
 
@@ -283,7 +284,7 @@ site:inpud.net filetype:pdf
 "drug checking" service (Europe OR UK OR "New Zealand") (evaluation OR model OR implementation) filetype:pdf
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22drug%20checking%22%20service%20(Europe%20OR%20UK%20OR%20%22New%20Zealand%22)%20(evaluation%20OR%20model%20OR%20implementation)%20filetype%3Apdf)
+[👉 **Run this Search**](<https://www.google.com/search?q=%22drug%20checking%22%20service%20(Europe%20OR%20UK%20OR%20%22New%20Zealand%22)%20(evaluation%20OR%20model%20OR%20implementation)%20filetype%3Apdf>)
 
 ---
 
@@ -295,7 +296,7 @@ site:inpud.net filetype:pdf
 site:emcdda.europa.eu (statistics OR data OR "statistical bulletin") filetype:pdf
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=site%3Aemcdda.europa.eu%20(statistics%20OR%20data%20OR%20%22statistical%20bulletin%22)%20filetype%3Apdf)
+[👉 **Run this Search**](<https://www.google.com/search?q=site%3Aemcdda.europa.eu%20(statistics%20OR%20data%20OR%20%22statistical%20bulletin%22)%20filetype%3Apdf>)
 
 ### UN World Drug Report
 
@@ -323,7 +324,7 @@ site:hri.global "global state" filetype:pdf
 ("policy transfer" OR "policy learning" OR "lessons from") (Portugal OR Canada OR Switzerland) "drug policy" Australia
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=(%22policy%20transfer%22%20OR%20%22policy%20learning%22%20OR%20%22lessons%20from%22)%20(Portugal%20OR%20Canada%20OR%20Switzerland)%20%22drug%20policy%22%20Australia)
+[👉 **Run this Search**](<https://www.google.com/search?q=(%22policy%20transfer%22%20OR%20%22policy%20learning%22%20OR%20%22lessons%20from%22)%20(Portugal%20OR%20Canada%20OR%20Switzerland)%20%22drug%20policy%22%20Australia>)
 
 ### International Comparisons (Australian Context)
 
@@ -331,7 +332,7 @@ site:hri.global "global state" filetype:pdf
 Australia ("international comparison" OR "compared to" OR "lessons from") "drug policy" OR "harm reduction" filetype:pdf
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=Australia%20(%22international%20comparison%22%20OR%20%22compared%20to%22%20OR%20%22lessons%20from%22)%20%22drug%20policy%22%20OR%20%22harm%20reduction%22%20filetype%3Apdf)
+[👉 **Run this Search**](<https://www.google.com/search?q=Australia%20(%22international%20comparison%22%20OR%20%22compared%20to%22%20OR%20%22lessons%20from%22)%20%22drug%20policy%22%20OR%20%22harm%20reduction%22%20filetype%3Apdf>)
 
 ### What Works Elsewhere
 
@@ -339,14 +340,16 @@ Australia ("international comparison" OR "compared to" OR "lessons from") "drug 
 ("what works" OR "best practice" OR "evidence-based") "harm reduction" international review filetype:pdf
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=(%22what%20works%22%20OR%20%22best%20practice%22%20OR%20%22evidence-based%22)%20%22harm%20reduction%22%20international%20review%20filetype%3Apdf)
+[👉 **Run this Search**](<https://www.google.com/search?q=(%22what%20works%22%20OR%20%22best%20practice%22%20OR%20%22evidence-based%22)%20%22harm%20reduction%22%20international%20review%20filetype%3Apdf>)
 
 ---
 
 ## 🔗 Related Resources
 
-- **Related Packs:** [Policy & Advocacy](policy-advocacy.md), [Drug Checking](drug-checking.md), [Research](research.md)
-- **Key Sites:** [EMCDDA](https://emcdda.europa.eu), [HRI](https://hri.global), [INPUD](https://inpud.net)
+- **Related Packs:** [Policy & Advocacy](policy-advocacy.md), [Drug Checking](drug-checking.md),
+  [Research](research.md)
+- **Key Sites:** [EMCDDA](https://emcdda.europa.eu), [HRI](https://hri.global),
+  [INPUD](https://inpud.net)
 
 ---
 

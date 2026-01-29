@@ -19,20 +19,24 @@
 Add trusted harm reduction domains to "Sites to search":
 
 **Government:**
+
 - `*.gov.au`
 
 **Universities:**
+
 - `*.edu.au`
 - `ndarc.med.unsw.edu.au`
 - `burnet.edu.au`
 
 **Peer Organisations:**
+
 - `nuaa.org.au`
 - `aivl.org.au`
 - `hrvic.org.au`
 - `quihn.org`
 
 **Sector Orgs:**
+
 - `penington.org.au`
 - `atoda.org.au`
 - `nada.org.au`
@@ -119,6 +123,7 @@ inpud.net
 ### Tip 1: Create Multiple Engines
 
 Create separate search engines for different purposes:
+
 - General harm reduction
 - Research only
 - Policy/government

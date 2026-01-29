@@ -142,7 +142,8 @@ AI can make mistakes or "hallucinate" information. Always verify important facts
 
 ### Tip 2: Use Multiple Tools
 
-Different tools have different strengths. Use Elicit for finding papers, SciSpace for understanding them.
+Different tools have different strengths. Use Elicit for finding papers, SciSpace for understanding
+them.
 
 ### Tip 3: Provide Context
 

@@ -9,6 +9,7 @@
 ## 🌏 Why This Matters
 
 Rural and remote Australians face unique challenges:
+
 - Distance from services
 - Limited workforce and specialist availability
 - Stigma in small communities
@@ -25,7 +26,7 @@ Find rural/regional AOD resources:
 ("rural" OR "regional" OR "remote") "harm reduction" Australia filetype:pdf
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=(%22rural%22%20OR%20%22regional%22%20OR%20%22remote%22)%20%22harm%20reduction%22%20Australia%20filetype%3Apdf)
+[👉 **Run this Search**](<https://www.google.com/search?q=(%22rural%22%20OR%20%22regional%22%20OR%20%22remote%22)%20%22harm%20reduction%22%20Australia%20filetype%3Apdf>)
 
 ---
 
@@ -37,7 +38,7 @@ Find rural/regional AOD resources:
 ("rural" OR "regional" OR "remote") "alcohol and other drugs" (service OR access) site:*.gov.au
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=(%22rural%22%20OR%20%22regional%22%20OR%20%22remote%22)%20%22alcohol%20and%20other%20drugs%22%20(service%20OR%20access)%20site%3A*.gov.au)
+[👉 **Run this Search**](<https://www.google.com/search?q=(%22rural%22%20OR%20%22regional%22%20OR%20%22remote%22)%20%22alcohol%20and%20other%20drugs%22%20(service%20OR%20access)%20site%3A*.gov.au>)
 
 ### Rural Harm Reduction
 
@@ -45,7 +46,7 @@ Find rural/regional AOD resources:
 ("rural" OR "regional") "harm reduction" Australia filetype:pdf
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=(%22rural%22%20OR%20%22regional%22)%20%22harm%20reduction%22%20Australia%20filetype%3Apdf)
+[👉 **Run this Search**](<https://www.google.com/search?q=(%22rural%22%20OR%20%22regional%22)%20%22harm%20reduction%22%20Australia%20filetype%3Apdf>)
 
 ### Tyranny of Distance
 
@@ -65,7 +66,7 @@ Find rural/regional AOD resources:
 "non-metropolitan" ("harm reduction" OR AOD OR "alcohol and other drugs") Australia filetype:pdf
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22non-metropolitan%22%20(%22harm%20reduction%22%20OR%20AOD%20OR%20%22alcohol%20and%20other%20drugs%22)%20Australia%20filetype%3Apdf)
+[👉 **Run this Search**](<https://www.google.com/search?q=%22non-metropolitan%22%20(%22harm%20reduction%22%20OR%20AOD%20OR%20%22alcohol%20and%20other%20drugs%22)%20Australia%20filetype%3Apdf>)
 
 ### Country/Bush Context
 
@@ -73,7 +74,7 @@ Find rural/regional AOD resources:
 ("country" OR "bush") ("drug use" OR "alcohol") Australia -USA -UK
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=(%22country%22%20OR%20%22bush%22)%20(%22drug%20use%22%20OR%20%22alcohol%22)%20Australia%20-USA%20-UK)
+[👉 **Run this Search**](<https://www.google.com/search?q=(%22country%22%20OR%20%22bush%22)%20(%22drug%20use%22%20OR%20%22alcohol%22)%20Australia%20-USA%20-UK>)
 
 ### Telehealth AOD
 
@@ -81,7 +82,7 @@ Find rural/regional AOD resources:
 "telehealth" OR "telemedicine" (AOD OR "alcohol and other drugs" OR "drug and alcohol") Australia
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22telehealth%22%20OR%20%22telemedicine%22%20(AOD%20OR%20%22alcohol%20and%20other%20drugs%22%20OR%20%22drug%20and%20alcohol%22)%20Australia)
+[👉 **Run this Search**](<https://www.google.com/search?q=%22telehealth%22%20OR%20%22telemedicine%22%20(AOD%20OR%20%22alcohol%20and%20other%20drugs%22%20OR%20%22drug%20and%20alcohol%22)%20Australia>)
 
 ### Remote Health Services
 
@@ -102,7 +103,7 @@ site:rfds.org.au "alcohol" OR "drug" OR "AOD"
 ("rural" OR "regional" OR "remote" OR "non-metropolitan" OR "country") ("harm reduction" OR "alcohol and other drugs" OR AOD OR "drug and alcohol") Australia (service OR access OR workforce OR research) filetype:pdf -USA -UK after:2020
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=(%22rural%22%20OR%20%22regional%22%20OR%20%22remote%22%20OR%20%22non-metropolitan%22%20OR%20%22country%22)%20(%22harm%20reduction%22%20OR%20%22alcohol%20and%20other%20drugs%22%20OR%20AOD%20OR%20%22drug%20and%20alcohol%22)%20Australia%20(service%20OR%20access%20OR%20workforce%20OR%20research)%20filetype%3Apdf%20-USA%20-UK%20after%3A2020)
+[👉 **Run this Search**](<https://www.google.com/search?q=(%22rural%22%20OR%20%22regional%22%20OR%20%22remote%22%20OR%20%22non-metropolitan%22%20OR%20%22country%22)%20(%22harm%20reduction%22%20OR%20%22alcohol%20and%20other%20drugs%22%20OR%20AOD%20OR%20%22drug%20and%20alcohol%22)%20Australia%20(service%20OR%20access%20OR%20workforce%20OR%20research)%20filetype%3Apdf%20-USA%20-UK%20after%3A2020>)
 
 ### FIFO/DIDO Contexts
 
@@ -111,7 +112,7 @@ site:rfds.org.au "alcohol" OR "drug" OR "AOD"
 "mining" OR "resources sector" (drug OR alcohol) (testing OR policy OR health)
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22fly-in%20fly-out%22%20OR%20%22FIFO%22%20OR%20%22drive-in%20drive-out%22%20(drug%20OR%20alcohol)%20health%0A%22mining%22%20OR%20%22resources%20sector%22%20(drug%20OR%20alcohol)%20(testing%20OR%20policy%20OR%20health))
+[👉 **Run this Search**](<https://www.google.com/search?q=%22fly-in%20fly-out%22%20OR%20%22FIFO%22%20OR%20%22drive-in%20drive-out%22%20(drug%20OR%20alcohol)%20health%0A%22mining%22%20OR%20%22resources%20sector%22%20(drug%20OR%20alcohol)%20(testing%20OR%20policy%20OR%20health)>)
 
 ### Farming Communities
 
@@ -120,7 +121,7 @@ site:rfds.org.au "alcohol" OR "drug" OR "AOD"
 "drought" OR "natural disaster" "alcohol" OR "drug" rural Australia
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22farming%22%20OR%20%22agriculture%22%20(%22alcohol%22%20OR%20%22drug%20use%22)%20mental%20health%20Australia%0A%22drought%22%20OR%20%22natural%20disaster%22%20%22alcohol%22%20OR%20%22drug%22%20rural%20Australia)
+[👉 **Run this Search**](<https://www.google.com/search?q=%22farming%22%20OR%20%22agriculture%22%20(%22alcohol%22%20OR%20%22drug%20use%22)%20mental%20health%20Australia%0A%22drought%22%20OR%20%22natural%20disaster%22%20%22alcohol%22%20OR%20%22drug%22%20rural%20Australia>)
 
 ---
 
@@ -180,7 +181,7 @@ site:rfds.org.au "alcohol" OR "drug" OR "AOD"
 "Tasmania" ("rural" OR "regional") harm reduction OR AOD
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22Tasmania%22%20(%22rural%22%20OR%20%22regional%22)%20harm%20reduction%20OR%20AOD)
+[👉 **Run this Search**](<https://www.google.com/search?q=%22Tasmania%22%20(%22rural%22%20OR%20%22regional%22)%20harm%20reduction%20OR%20AOD>)
 
 ### South Australia
 
@@ -210,7 +211,7 @@ site:rfds.org.au "alcohol" OR "drug" OR "AOD"
 "remote area nurse" OR "RAN" (drug OR alcohol OR AOD) Australia
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22remote%20area%20nurse%22%20OR%20%22RAN%22%20(drug%20OR%20alcohol%20OR%20AOD)%20Australia)
+[👉 **Run this Search**](<https://www.google.com/search?q=%22remote%20area%20nurse%22%20OR%20%22RAN%22%20(drug%20OR%20alcohol%20OR%20AOD)%20Australia>)
 
 ### Aboriginal Health Services (Remote)
 
@@ -219,7 +220,7 @@ site:rfds.org.au "alcohol" OR "drug" OR "AOD"
 "Aboriginal Community Controlled" remote (drug OR alcohol)
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22remote%22%20%22Aboriginal%22%20(AOD%20OR%20%22alcohol%20and%20other%20drugs%22)%20health%0A%22Aboriginal%20Community%20Controlled%22%20remote%20(drug%20OR%20alcohol))
+[👉 **Run this Search**](<https://www.google.com/search?q=%22remote%22%20%22Aboriginal%22%20(AOD%20OR%20%22alcohol%20and%20other%20drugs%22)%20health%0A%22Aboriginal%20Community%20Controlled%22%20remote%20(drug%20OR%20alcohol)>)
 
 ---
 
@@ -232,7 +233,7 @@ site:rfds.org.au "alcohol" OR "drug" OR "AOD"
 "rural health" (peer worker OR AOD worker) training
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22rural%20workforce%22%20(AOD%20OR%20%22alcohol%20and%20other%20drugs%22)%20filetype%3Apdf%0A%22rural%20health%22%20(peer%20worker%20OR%20AOD%20worker)%20training)
+[👉 **Run this Search**](<https://www.google.com/search?q=%22rural%20workforce%22%20(AOD%20OR%20%22alcohol%20and%20other%20drugs%22)%20filetype%3Apdf%0A%22rural%20health%22%20(peer%20worker%20OR%20AOD%20worker)%20training>)
 
 ### Generalist Practice
 
@@ -241,7 +242,7 @@ site:rfds.org.au "alcohol" OR "drug" OR "AOD"
 "upskilling" OR "professional development" rural AOD worker
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22generalist%22%20(AOD%20OR%20%22alcohol%20drug%22)%20rural%20practitioner%0A%22upskilling%22%20OR%20%22professional%20development%22%20rural%20AOD%20worker)
+[👉 **Run this Search**](<https://www.google.com/search?q=%22generalist%22%20(AOD%20OR%20%22alcohol%20drug%22)%20rural%20practitioner%0A%22upskilling%22%20OR%20%22professional%20development%22%20rural%20AOD%20worker>)
 
 ### Retention & Support
 
@@ -249,7 +250,7 @@ site:rfds.org.au "alcohol" OR "drug" OR "AOD"
 (retention OR support OR "professional isolation") rural (AOD OR "drug and alcohol") worker
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=(retention%20OR%20support%20OR%20%22professional%20isolation%22)%20rural%20(AOD%20OR%20%22drug%20and%20alcohol%22)%20worker)
+[👉 **Run this Search**](<https://www.google.com/search?q=(retention%20OR%20support%20OR%20%22professional%20isolation%22)%20rural%20(AOD%20OR%20%22drug%20and%20alcohol%22)%20worker>)
 
 ---
 
@@ -300,7 +301,7 @@ site:crrmh.com.au OR site:ruralhealth.org.au "alcohol" OR "drug"
 "natural disaster" substance use OR alcohol rural
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22drought%22%20OR%20%22bushfire%22%20OR%20%22flood%22%20(alcohol%20OR%20drug)%20rural%20Australia%0A%22natural%20disaster%22%20substance%20use%20OR%20alcohol%20rural)
+[👉 **Run this Search**](<https://www.google.com/search?q=%22drought%22%20OR%20%22bushfire%22%20OR%20%22flood%22%20(alcohol%20OR%20drug)%20rural%20Australia%0A%22natural%20disaster%22%20substance%20use%20OR%20alcohol%20rural>)
 
 ### Seasonal Workers
 
@@ -314,7 +315,8 @@ site:crrmh.com.au OR site:ruralhealth.org.au "alcohol" OR "drug"
 
 ## 🔗 Related Resources
 
-- **Related Packs:** [Service Directories](service-directories.md), [First Nations](first-nations.md)
+- **Related Packs:** [Service Directories](service-directories.md),
+  [First Nations](first-nations.md)
 - **Key Orgs:** [NRHA](https://ruralhealth.org.au), [CRRMH](https://crrmh.com.au)
 
 ---

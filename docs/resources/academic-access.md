@@ -93,6 +93,7 @@ Academic texts, textbooks, and articles.
 ## 🎓 Institutional Access
 
 If you're affiliated with a university or large health organisation:
+
 - Check if you have library access
 - Use VPN to access institutional subscriptions
 - Ask a librarian for help

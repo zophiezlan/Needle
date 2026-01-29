@@ -8,7 +8,8 @@
 
 ## 📋 Context
 
-People who use drugs are massively over-represented in prisons. Harm reduction in custody is limited but evolving. Many people's first contact with treatment is through the justice system.
+People who use drugs are massively over-represented in prisons. Harm reduction in custody is limited
+but evolving. Many people's first contact with treatment is through the justice system.
 
 ---
 
@@ -96,7 +97,7 @@ site:*.gov.au "custody" "drug" OR "overdose" OR "withdrawal"
 ("prison" OR "custody" OR "correctional" OR "incarceration") ("alcohol and other drugs" OR AOD OR "harm reduction" OR "drug treatment" OR "opioid treatment") Australia (policy OR guideline OR program OR research) filetype:pdf after:2020
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=(%22prison%22%20OR%20%22custody%22%20OR%20%22correctional%22%20OR%20%22incarceration%22)%20(%22alcohol%20and%20other%20drugs%22%20OR%20AOD%20OR%20%22harm%20reduction%22%20OR%20%22drug%20treatment%22%20OR%20%22opioid%20treatment%22)%20Australia%20(policy%20OR%20guideline%20OR%20program%20OR%20research)%20filetype%3Apdf%20after%3A2020)
+[👉 **Run this Search**](<https://www.google.com/search?q=(%22prison%22%20OR%20%22custody%22%20OR%20%22correctional%22%20OR%20%22incarceration%22)%20(%22alcohol%20and%20other%20drugs%22%20OR%20AOD%20OR%20%22harm%20reduction%22%20OR%20%22drug%20treatment%22%20OR%20%22opioid%20treatment%22)%20Australia%20(policy%20OR%20guideline%20OR%20program%20OR%20research)%20filetype%3Apdf%20after%3A2020>)
 
 ### Post-Release Overdose Risk
 
@@ -105,7 +106,7 @@ site:*.gov.au "custody" "drug" OR "overdose" OR "withdrawal"
 "prison release" overdose (prevention OR harm reduction)
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22post-release%22%20%22overdose%22%20OR%20%22drug%20death%22%20risk%20Australia%0A%22prison%20release%22%20overdose%20(prevention%20OR%20harm%20reduction))
+[👉 **Run this Search**](<https://www.google.com/search?q=%22post-release%22%20%22overdose%22%20OR%20%22drug%20death%22%20risk%20Australia%0A%22prison%20release%22%20overdose%20(prevention%20OR%20harm%20reduction)>)
 
 ### Withdrawal Management
 
@@ -113,7 +114,7 @@ site:*.gov.au "custody" "drug" OR "overdose" OR "withdrawal"
 "prison" OR "custody" "withdrawal" (management OR protocol OR guideline) Australia
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22prison%22%20OR%20%22custody%22%20%22withdrawal%22%20(management%20OR%20protocol%20OR%20guideline)%20Australia)
+[👉 **Run this Search**](<https://www.google.com/search?q=%22prison%22%20OR%20%22custody%22%20%22withdrawal%22%20(management%20OR%20protocol%20OR%20guideline)%20Australia>)
 
 ---
 
@@ -134,7 +135,7 @@ site:justicehealth.nsw.gov.au filetype:pdf
 "prison health" OR "prisoner health" (guideline OR standard) AOD Australia
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22prison%20health%22%20OR%20%22prisoner%20health%22%20(guideline%20OR%20standard)%20AOD%20Australia)
+[👉 **Run this Search**](<https://www.google.com/search?q=%22prison%20health%22%20OR%20%22prisoner%20health%22%20(guideline%20OR%20standard)%20AOD%20Australia>)
 
 ### Forensic AOD
 
@@ -154,7 +155,7 @@ site:justicehealth.nsw.gov.au filetype:pdf
 "drug court" Australia (evaluation OR outcomes) filetype:pdf
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22drug%20court%22%20Australia%20(evaluation%20OR%20outcomes)%20filetype%3Apdf)
+[👉 **Run this Search**](<https://www.google.com/search?q=%22drug%20court%22%20Australia%20(evaluation%20OR%20outcomes)%20filetype%3Apdf>)
 
 ### State Drug Courts
 
@@ -162,7 +163,7 @@ site:justicehealth.nsw.gov.au filetype:pdf
 "drug court" (NSW OR VIC OR QLD OR WA OR SA) evaluation
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22drug%20court%22%20(NSW%20OR%20VIC%20OR%20QLD%20OR%20WA%20OR%20SA)%20evaluation)
+[👉 **Run this Search**](<https://www.google.com/search?q=%22drug%20court%22%20(NSW%20OR%20VIC%20OR%20QLD%20OR%20WA%20OR%20SA)%20evaluation>)
 
 ### MERIT (NSW)
 
@@ -216,7 +217,7 @@ site:justicehealth.nsw.gov.au filetype:pdf
 "post-release" (AOD OR "alcohol and other drugs") (service OR support) Australia
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22post-release%22%20(AOD%20OR%20%22alcohol%20and%20other%20drugs%22)%20(service%20OR%20support)%20Australia)
+[👉 **Run this Search**](<https://www.google.com/search?q=%22post-release%22%20(AOD%20OR%20%22alcohol%20and%20other%20drugs%22)%20(service%20OR%20support)%20Australia>)
 
 ### Housing & Re-entry
 
@@ -267,7 +268,7 @@ site:aihw.gov.au "prisoner health" drug OR alcohol
 site:*.edu.au "prison" OR "incarceration" (AOD OR "drug treatment") Australia filetype:pdf
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=site%3A*.edu.au%20%22prison%22%20OR%20%22incarceration%22%20(AOD%20OR%20%22drug%20treatment%22)%20Australia%20filetype%3Apdf)
+[👉 **Run this Search**](<https://www.google.com/search?q=site%3A*.edu.au%20%22prison%22%20OR%20%22incarceration%22%20(AOD%20OR%20%22drug%20treatment%22)%20Australia%20filetype%3Apdf>)
 
 ### Post-Release Mortality Studies
 
@@ -275,7 +276,7 @@ site:*.edu.au "prison" OR "incarceration" (AOD OR "drug treatment") Australia fi
 "post-release" OR "release from prison" (mortality OR death OR overdose) research Australia
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22post-release%22%20OR%20%22release%20from%20prison%22%20(mortality%20OR%20death%20OR%20overdose)%20research%20Australia)
+[👉 **Run this Search**](<https://www.google.com/search?q=%22post-release%22%20OR%20%22release%20from%20prison%22%20(mortality%20OR%20death%20OR%20overdose)%20research%20Australia>)
 
 ---
 
@@ -311,7 +312,8 @@ site:*.edu.au "prison" OR "incarceration" (AOD OR "drug treatment") Australia fi
 
 ## 🔗 Related Resources
 
-- **Related Packs:** [First Nations](first-nations.md), [OAT/OST](oat-ost.md), [Naloxone](naloxone.md)
+- **Related Packs:** [First Nations](first-nations.md), [OAT/OST](oat-ost.md),
+  [Naloxone](naloxone.md)
 - **Key Sources:** [Justice Health NSW](https://justicehealth.nsw.gov.au)
 
 ---

@@ -20,43 +20,50 @@
 ### NSW Health Alerts
 
 ```javascript
-javascript:void(location.href="https://www.google.com/search?q=site:health.nsw.gov.au+(intitle:%22drug+alert%22+OR+intitle:%22health+alert%22)")
+javascript: void (location.href =
+  "https://www.google.com/search?q=site:health.nsw.gov.au+(intitle:%22drug+alert%22+OR+intitle:%22health+alert%22)");
 ```
 
 ### Recent Australian Harm Reduction PDFs
 
 ```javascript
-javascript:void(location.href="https://www.google.com/search?q=site:*.gov.au+filetype:pdf+(%22harm+reduction%22+OR+%22harm+minimisation%22)+after:2024-01-01")
+javascript: void (location.href =
+  "https://www.google.com/search?q=site:*.gov.au+filetype:pdf+(%22harm+reduction%22+OR+%22harm+minimisation%22)+after:2024-01-01");
 ```
 
 ### Australian Drug Checking Research
 
 ```javascript
-javascript:void(location.href="https://www.google.com/search?q=site:*.edu.au+%22drug+checking%22+OR+%22pill+testing%22+filetype:pdf+after:2020")
+javascript: void (location.href =
+  "https://www.google.com/search?q=site:*.edu.au+%22drug+checking%22+OR+%22pill+testing%22+filetype:pdf+after:2020");
 ```
 
 ### Peer Worker Training Resources
 
 ```javascript
-javascript:void(location.href="https://www.google.com/search?q=%22peer+worker%22+(%22training%22+OR+%22supervision%22)+filetype:pdf+-jobs+-careers")
+javascript: void (location.href =
+  "https://www.google.com/search?q=%22peer+worker%22+(%22training%22+OR+%22supervision%22)+filetype:pdf+-jobs+-careers");
 ```
 
 ### Parliamentary Drug Policy Submissions
 
 ```javascript
-javascript:void(location.href="https://www.google.com/search?q=site:*.gov.au+inurl:submissions+(%22drug+policy%22+OR+%22harm+reduction%22)+filetype:pdf")
+javascript: void (location.href =
+  "https://www.google.com/search?q=site:*.gov.au+inurl:submissions+(%22drug+policy%22+OR+%22harm+reduction%22)+filetype:pdf");
 ```
 
 ### NDARC Research
 
 ```javascript
-javascript:void(location.href="https://www.google.com/search?q=site:ndarc.med.unsw.edu.au+filetype:pdf")
+javascript: void (location.href =
+  "https://www.google.com/search?q=site:ndarc.med.unsw.edu.au+filetype:pdf");
 ```
 
 ### Peer Organisation Resources
 
 ```javascript
-javascript:void(location.href="https://www.google.com/search?q=(site:nuaa.org.au+OR+site:aivl.org.au+OR+site:hrvic.org.au)+filetype:pdf")
+javascript: void (location.href =
+  "https://www.google.com/search?q=(site:nuaa.org.au+OR+site:aivl.org.au+OR+site:hrvic.org.au)+filetype:pdf");
 ```
 
 ---
@@ -66,31 +73,34 @@ javascript:void(location.href="https://www.google.com/search?q=(site:nuaa.org.au
 ### Template
 
 ```javascript
-javascript:void(location.href="https://www.google.com/search?q=[YOUR_ENCODED_QUERY]")
+javascript: void (location.href = "https://www.google.com/search?q=[YOUR_ENCODED_QUERY]");
 ```
 
 ### URL Encoding Reference
 
-| Character | Encoded |
-|-----------|---------|
-| Space | `+` or `%20` |
-| `"` | `%22` |
-| `:` | `%3A` |
-| `/` | `%2F` |
-| `*` | `*` (no encoding) |
-| `(` | `%28` |
-| `)` | `%29` |
+| Character | Encoded           |
+| --------- | ----------------- |
+| `:`       | `%3A`             |
+| `"`       | `%22`             |
+| `(`       | `%28`             |
+| `)`       | `%29`             |
+| `*`       | `*` (no encoding) |
+| `/`       | `%2F`             |
+| Space     | `+` or `%20`      |
 
 ### Example: Building Your Own
 
 Original dork:
+
 ```txt
 site:health.nsw.gov.au "naloxone" filetype:pdf
 ```
 
 Encoded:
+
 ```javascript
-javascript:void(location.href="https://www.google.com/search?q=site:health.nsw.gov.au+%22naloxone%22+filetype:pdf")
+javascript: void (location.href =
+  "https://www.google.com/search?q=site:health.nsw.gov.au+%22naloxone%22+filetype:pdf");
 ```
 
 ---
@@ -98,6 +108,7 @@ javascript:void(location.href="https://www.google.com/search?q=site:health.nsw.g
 ## 📂 Organising Bookmarklets
 
 Create a bookmark folder called "Harm Reduction Dorks" with sub-folders:
+
 - Alerts
 - Research
 - Policy

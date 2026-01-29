@@ -8,15 +8,15 @@
 
 ## 📋 Available Tools Guides
 
-| Guide | Description |
-|-------|-------------|
-| [Bookmarklets](bookmarklets.md) | One-click browser searches |
-| [Google Alerts](google-alerts.md) | Automated monitoring |
-| [Custom Search](custom-search.md) | Build team search engines |
-| [Browser Extensions](browser-extensions.md) | Research workflow tools |
-| [AI Tools](ai-tools.md) | AI-powered research assistants |
-| [OSINT](osint.md) | Open source intelligence tools |
-| [Privacy & Security](privacy-security.md) | Protect yourself & clients |
+| Guide                                       | Description                    |
+| ------------------------------------------- | ------------------------------ |
+| [AI Tools](ai-tools.md)                     | AI-powered research assistants |
+| [Bookmarklets](bookmarklets.md)             | One-click browser searches     |
+| [Browser Extensions](browser-extensions.md) | Research workflow tools        |
+| [Custom Search](custom-search.md)           | Build team search engines      |
+| [Google Alerts](google-alerts.md)           | Automated monitoring           |
+| [OSINT](osint.md)                           | Open source intelligence tools |
+| [Privacy & Security](privacy-security.md)   | Protect yourself & clients     |
 
 ---
 

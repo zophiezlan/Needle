@@ -2,7 +2,8 @@
 
 > Power user techniques for precision searching and creative discovery.
 
-[← Back to Main Guide](../README.md) | [← Core Operators](02-core-operators.md) | [Next: Domain Map →](04-domain-map.md)
+[← Back to Main Guide](../README.md) | [← Core Operators](02-core-operators.md) |
+[Next: Domain Map →](04-domain-map.md)
 
 ---
 
@@ -10,11 +11,13 @@
 
 ### `AROUND(n)` - Proximity Search
 
-Find words that appear within n words of each other. Useful when documents don't use your exact phrase.
+Find words that appear within n words of each other. Useful when documents don't use your exact
+phrase.
 
 ```txt
 "naloxone" AROUND(5) "program"
 ```
+
 Finds: "program for the distribution of naloxone", "naloxone distribution program", etc.
 
 ```txt
@@ -23,7 +26,8 @@ Finds: "program for the distribution of naloxone", "naloxone distribution progra
 "harm reduction" AROUND(5) festival
 ```
 
-**When to use:** When exact phrase matching returns zero results but you know the concepts should appear together.
+**When to use:** When exact phrase matching returns zero results but you know the concepts should
+appear together.
 
 ---
 
@@ -75,7 +79,8 @@ View Google's cached version of a page.
 cache:health.gov.au/some-policy-page
 ```
 
-**Note:** Google is phasing out this feature, but it still works in some regions. For more reliable archiving, use [Wayback Machine](https://web.archive.org).
+**Note:** Google is phasing out this feature, but it still works in some regions. For more reliable
+archiving, use [Wayback Machine](https://web.archive.org).
 
 ---
 
@@ -205,7 +210,8 @@ site:*.gov.au inurl:"/assets/" filetype:pdf "overdose"
 
 ## 🕵️ Investigative Techniques
 
-> ⚠️ Use these responsibly and ethically. See [Investigative Searching](dork-packs/investigative.md) for full ethical framework.
+> ⚠️ Use these responsibly and ethically. See [Investigative Searching](dork-packs/investigative.md)
+> for full ethical framework.
 
 ### Finding Draft Documents
 
@@ -284,27 +290,30 @@ filetype:xls "service directory" (finds old Excel files)
 
 ## 🔄 Operator Aliases
 
-| Primary | Alias | Notes |
-|---------|-------|-------|
+| Primary     | Alias  | Notes              |
+| ----------- | ------ | ------------------ |
 | `filetype:` | `ext:` | Identical function |
-| `site:` | (none) | |
-| `intitle:` | (none) | |
-| `inurl:` | (none) | |
+| `intitle:`  | (none) |                    |
+| `inurl:`    | (none) |                    |
+| `site:`     | (none) |                    |
 
 ---
 
 ## ⚠️ Operator Limitations
 
 ### Operators Google Ignores
+
 - More than ~32 words in a query
 - Some operators in combination with others
 - Case variations (operators are case-insensitive)
 
 ### Operators That Don't Stack Well
+
 - Multiple `allintitle:` or `allinurl:` in one query
 - More than 2-3 `site:` OR combinations
 
 ### Deprecated/Unreliable Operators
+
 - `cache:` - Being phased out
 - `link:` - No longer works
 - `+` (force inclusion) - Deprecated
@@ -333,6 +342,7 @@ filetype:xls "service directory" (finds old Excel files)
 ```
 
 ### If No Results
+
 1. Remove `filetype:` first
 2. Loosen `site:` restriction
 3. Try `AROUND(n)` instead of exact phrase
@@ -340,6 +350,7 @@ filetype:xls "service directory" (finds old Excel files)
 5. Remove date filter
 
 ### If Too Many Results
+
 1. Add `filetype:pdf`
 2. Add `intitle:`
 3. Add date filter

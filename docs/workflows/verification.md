@@ -10,12 +10,12 @@
 
 When assessing documents, prefer sources in this order:
 
-| Priority | Source Type | Examples | Trust Level |
-|----------|-------------|----------|-------------|
-| **1** | Government Health Authority | `*.health.*.gov.au`, `aihw.gov.au` | Official policy, alerts, guidelines |
-| **2** | University / Research Institute | `*.edu.au`, NDARC, Burnet | Peer-reviewed evidence |
-| **3** | Sector Org / Peak Body | `*.org.au`, NUAA, AIVL | Practice wisdom, lived experience |
-| **4** | Everything Else | Blogs, media, social | Context only, not primary evidence |
+| Priority | Source Type                     | Examples                           | Trust Level                         |
+| -------- | ------------------------------- | ---------------------------------- | ----------------------------------- |
+| **1**    | Government Health Authority     | `*.health.*.gov.au`, `aihw.gov.au` | Official policy, alerts, guidelines |
+| **2**    | University / Research Institute | `*.edu.au`, NDARC, Burnet          | Peer-reviewed evidence              |
+| **3**    | Sector Org / Peak Body          | `*.org.au`, NUAA, AIVL             | Practice wisdom, lived experience   |
+| **4**    | Everything Else                 | Blogs, media, social               | Context only, not primary evidence  |
 
 ---
 
@@ -85,16 +85,19 @@ site:[DOMAIN] "[DOCUMENT TITLE]" (superseded OR replaced OR updated)
 
 ## 🆔 Identity Verification (Name Net)
 
-When verifying a researcher, peer worker, or sector expert, names can appear in many formats across journals, conferences, and reports.
+When verifying a researcher, peer worker, or sector expert, names can appear in many formats across
+journals, conferences, and reports.
 
-**The "Name Net" Pattern:**
-Search for multiple name variations simultaneously to catch all citations.
+**The "Name Net" Pattern:** Search for multiple name variations simultaneously to catch all
+citations.
 
 ```txt
 ("Jane Doe" OR "Jane M. Doe" OR "J. Doe" OR "Doe, Jane") (harm reduction OR "drug policy")
 ```
 
-> **💡 Pro Tip:** See [The "Name Net"](../tools/search-tweaks.md#%EF%B8%8F-the-name-net-identity-verification) in Search Tweaks for the full technique.
+> **💡 Pro Tip:** See
+> [The "Name Net"](../tools/search-tweaks.md#%EF%B8%8F-the-name-net-identity-verification) in Search
+> Tweaks for the full technique.
 
 ---
 
@@ -102,14 +105,14 @@ Search for multiple name variations simultaneously to catch all citations.
 
 Watch for these warning signs:
 
-| Red Flag | What It Means |
-|----------|---------------|
-| No publication date | May be outdated |
-| Unknown author/org | May not be authoritative |
-| Not on official domain | May be unofficial version |
-| "Draft" watermark | May not be final |
-| Pre-2020 clinical guidance | May be outdated |
-| US/UK guidance for AU context | May not apply |
+| Red Flag                      | What It Means             |
+| ----------------------------- | ------------------------- |
+| No publication date           | May be outdated           |
+| Unknown author/org            | May not be authoritative  |
+| Not on official domain        | May be unofficial version |
+| "Draft" watermark             | May not be final          |
+| Pre-2020 clinical guidance    | May be outdated           |
+| US/UK guidance for AU context | May not apply             |
 
 ---
 
@@ -117,14 +120,14 @@ Watch for these warning signs:
 
 Signs of reliable sources:
 
-| Green Flag | What It Means |
-|------------|---------------|
-| Government domain (`.gov.au`) | Official source |
-| University domain (`.edu.au`) | Academic rigour |
-| Clear publication date | Currency verifiable |
-| Version control visible | Document is maintained |
-| PDF on official site | Direct from source |
-| Peer-reviewed | Quality controlled |
+| Green Flag                    | What It Means          |
+| ----------------------------- | ---------------------- |
+| Government domain (`.gov.au`) | Official source        |
+| University domain (`.edu.au`) | Academic rigour        |
+| Clear publication date        | Currency verifiable    |
+| Version control visible       | Document is maintained |
+| PDF on official site          | Direct from source     |
+| Peer-reviewed                 | Quality controlled     |
 
 ---
 
@@ -150,16 +153,19 @@ site:*.health.*.gov.au "[TOPIC]" (guideline OR protocol) filetype:pdf after:2022
 Don't rely on a single source. Cross-check with:
 
 ### Government Position
+
 ```txt
 site:*.gov.au "[TOPIC]" (position OR statement OR policy)
 ```
 
 ### Research Evidence
+
 ```txt
 site:*.edu.au "[TOPIC]" (evaluation OR evidence OR effectiveness) filetype:pdf
 ```
 
 ### Sector/Peer Perspective
+
 ```txt
 site:*.org.au "[TOPIC]" (position OR practice OR perspective)
 ```
@@ -172,7 +178,8 @@ Government URLs frequently break. When you find a verified document:
 
 1. **Save the PDF locally** - URLs can change
 2. **Note the access date** - For citations
-3. **Archive with Wayback Machine** - Go to [web.archive.org](https://web.archive.org) and save the URL
+3. **Archive with Wayback Machine** - Go to [web.archive.org](https://web.archive.org) and save the
+   URL
 
 ---
 
@@ -221,6 +228,7 @@ intitle:"randomized controlled trial" [TOPIC] filetype:pdf
 ### Quality Indicators
 
 Look for:
+
 - Published in peer-reviewed journal
 - Clear methodology described
 - Sample size reported

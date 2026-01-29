@@ -16,7 +16,8 @@
 4. **Protect:** Never expose personal data or breach privacy
 5. **Document:** Keep records of what you searched and why
 
-**The purpose is always to help people who use drugs, support advocacy, or hold systems accountable—never to harm individuals or organisations.**
+**The purpose is always to help people who use drugs, support advocacy, or hold systems
+accountable—never to harm individuals or organisations.**
 
 ---
 
@@ -101,7 +102,7 @@ site:*.gov.au filetype:pdf "embargoed" OR "pre-release" drug policy
 site:*.gov.au (inurl:"/publications/" OR inurl:"/uploads/" OR inurl:"/documents/" OR inurl:"/assets/" OR inurl:"/files/") filetype:pdf ("harm reduction" OR "drug policy" OR "alcohol and other drugs") -inurl:html
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=site%3A*.gov.au%20(inurl%3A%22%2Fpublications%2F%22%20OR%20inurl%3A%22%2Fuploads%2F%22%20OR%20inurl%3A%22%2Fdocuments%2F%22%20OR%20inurl%3A%22%2Fassets%2F%22%20OR%20inurl%3A%22%2Ffiles%2F%22)%20filetype%3Apdf%20(%22harm%20reduction%22%20OR%20%22drug%20policy%22%20OR%20%22alcohol%20and%20other%20drugs%22)%20-inurl%3Ahtml)
+[👉 **Run this Search**](<https://www.google.com/search?q=site%3A*.gov.au%20(inurl%3A%22%2Fpublications%2F%22%20OR%20inurl%3A%22%2Fuploads%2F%22%20OR%20inurl%3A%22%2Fdocuments%2F%22%20OR%20inurl%3A%22%2Fassets%2F%22%20OR%20inurl%3A%22%2Ffiles%2F%22)%20filetype%3Apdf%20(%22harm%20reduction%22%20OR%20%22drug%20policy%22%20OR%20%22alcohol%20and%20other%20drugs%22)%20-inurl%3Ahtml>)
 
 ### Meeting Minutes & Agendas
 
@@ -111,7 +112,7 @@ site:*.gov.au filetype:pdf "agenda" "alcohol and other drugs" committee
 "steering committee" OR "working group" minutes harm reduction filetype:pdf
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=site%3A*.gov.au%20filetype%3Apdf%20%22meeting%20minutes%22%20(%22harm%20reduction%22%20OR%20%22drug%20policy%22)%0Asite%3A*.gov.au%20filetype%3Apdf%20%22agenda%22%20%22alcohol%20and%20other%20drugs%22%20committee%0A%22steering%20committee%22%20OR%20%22working%20group%22%20minutes%20harm%20reduction%20filetype%3Apdf)
+[👉 **Run this Search**](<https://www.google.com/search?q=site%3A*.gov.au%20filetype%3Apdf%20%22meeting%20minutes%22%20(%22harm%20reduction%22%20OR%20%22drug%20policy%22)%0Asite%3A*.gov.au%20filetype%3Apdf%20%22agenda%22%20%22alcohol%20and%20other%20drugs%22%20committee%0A%22steering%20committee%22%20OR%20%22working%20group%22%20minutes%20harm%20reduction%20filetype%3Apdf>)
 
 ### Tender Documents & Funding
 
@@ -235,7 +236,7 @@ site:*.gov.au filetype:pdf "review" "needle syringe program" -news
 site:*.gov.au "economic evaluation" ("harm reduction" OR "needle syringe" OR naloxone)
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22cost-effectiveness%22%20OR%20%22cost-benefit%22%20harm%20reduction%20Australia%20filetype%3Apdf%0Asite%3A*.gov.au%20%22economic%20evaluation%22%20(%22harm%20reduction%22%20OR%20%22needle%20syringe%22%20OR%20naloxone))
+[👉 **Run this Search**](<https://www.google.com/search?q=%22cost-effectiveness%22%20OR%20%22cost-benefit%22%20harm%20reduction%20Australia%20filetype%3Apdf%0Asite%3A*.gov.au%20%22economic%20evaluation%22%20(%22harm%20reduction%22%20OR%20%22needle%20syringe%22%20OR%20naloxone)>)
 
 ---
 
@@ -316,6 +317,7 @@ inurl:/assets/ OR inurl:/uploads/ OR inurl:/files/ site:*.gov.au filetype:pdf "d
 ## ⚖️ When to Use These Techniques
 
 **Appropriate uses:**
+
 - Finding official documents that should be public but aren't linked
 - Locating historical policy documents for research
 - Finding evaluation reports that weren't publicised
@@ -323,6 +325,7 @@ inurl:/assets/ OR inurl:/uploads/ OR inurl:/files/ site:*.gov.au filetype:pdf "d
 - Researching funding and tender processes for advocacy
 
 **Inappropriate uses:**
+
 - Finding personal information about individuals
 - Accessing content that's clearly private/confidential
 - Circumventing legitimate access controls

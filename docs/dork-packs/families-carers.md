@@ -83,7 +83,7 @@ site:fds.org.au OR site:familydrughelp.org.au
 ("family" OR "families" OR "carer" OR "carers" OR "affected other") ("alcohol and other drugs" OR AOD OR "drug use" OR "substance use") Australia (support OR service OR resource OR research) filetype:pdf after:2020
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=(%22family%22%20OR%20%22families%22%20OR%20%22carer%22%20OR%20%22carers%22%20OR%20%22affected%20other%22)%20(%22alcohol%20and%20other%20drugs%22%20OR%20AOD%20OR%20%22drug%20use%22%20OR%20%22substance%20use%22)%20Australia%20(support%20OR%20service%20OR%20resource%20OR%20research)%20filetype%3Apdf%20after%3A2020)
+[👉 **Run this Search**](<https://www.google.com/search?q=(%22family%22%20OR%20%22families%22%20OR%20%22carer%22%20OR%20%22carers%22%20OR%20%22affected%20other%22)%20(%22alcohol%20and%20other%20drugs%22%20OR%20AOD%20OR%20%22drug%20use%22%20OR%20%22substance%20use%22)%20Australia%20(support%20OR%20service%20OR%20resource%20OR%20research)%20filetype%3Apdf%20after%3A2020>)
 
 ### Family Involvement in Treatment
 
@@ -129,7 +129,7 @@ site:familydrughelp.org.au
 "family support" AOD [YOUR STATE] (service OR program)
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22family%20support%22%20AOD%20%5BYOUR%20STATE%5D%20(service%20OR%20program))
+[👉 **Run this Search**](<https://www.google.com/search?q=%22family%20support%22%20AOD%20%5BYOUR%20STATE%5D%20(service%20OR%20program)>)
 
 ---
 
@@ -235,7 +235,7 @@ site:familydrughelp.org.au
 "family inclusive practice" AOD (framework OR guideline) Australia filetype:pdf
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22family%20inclusive%20practice%22%20AOD%20(framework%20OR%20guideline)%20Australia%20filetype%3Apdf)
+[👉 **Run this Search**](<https://www.google.com/search?q=%22family%20inclusive%20practice%22%20AOD%20(framework%20OR%20guideline)%20Australia%20filetype%3Apdf>)
 
 ### Family-Sensitive Practice
 
@@ -263,7 +263,7 @@ site:familydrughelp.org.au
 site:*.edu.au family ("substance use" OR AOD) Australia filetype:pdf
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=site%3A*.edu.au%20family%20(%22substance%20use%22%20OR%20AOD)%20Australia%20filetype%3Apdf)
+[👉 **Run this Search**](<https://www.google.com/search?q=site%3A*.edu.au%20family%20(%22substance%20use%22%20OR%20AOD)%20Australia%20filetype%3Apdf>)
 
 ### Impact on Families
 
@@ -279,7 +279,7 @@ site:*.edu.au family ("substance use" OR AOD) Australia filetype:pdf
 "family intervention" OR "family therapy" (substance use OR drug use) effectiveness Australia
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22family%20intervention%22%20OR%20%22family%20therapy%22%20(substance%20use%20OR%20drug%20use)%20effectiveness%20Australia)
+[👉 **Run this Search**](<https://www.google.com/search?q=%22family%20intervention%22%20OR%20%22family%20therapy%22%20(substance%20use%20OR%20drug%20use)%20effectiveness%20Australia>)
 
 ---
 
@@ -287,7 +287,8 @@ site:*.edu.au family ("substance use" OR AOD) Australia filetype:pdf
 
 - **Synonym Block:** [Family Terms](../05-synonym-blocks.md#-family-terms)
 - **Related Packs:** [Youth](youth.md), [Mental Health](mental-health.md)
-- **Key Orgs:** [Family Drug Support](https://fds.org.au), [Family Drug Help](https://familydrughelp.org.au)
+- **Key Orgs:** [Family Drug Support](https://fds.org.au),
+  [Family Drug Help](https://familydrughelp.org.au)
 
 ---
 

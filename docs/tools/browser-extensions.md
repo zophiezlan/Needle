@@ -12,13 +12,15 @@
 
 **URL:** [unpaywall.org](https://unpaywall.org)
 
-Automatically finds free legal PDFs of paywalled academic papers. When you're on a journal page, the extension shows a green padlock if a free version exists.
+Automatically finds free legal PDFs of paywalled academic papers. When you're on a journal page, the
+extension shows a green padlock if a free version exists.
 
 **Why essential:** Access research without paywalls.
 
 ### Wayback Machine
 
-**URL:** [Chrome](https://chrome.google.com/webstore/detail/wayback-machine) | [Firefox](https://addons.mozilla.org/en-US/firefox/addon/wayback-machine_new/)
+**URL:** [Chrome](https://chrome.google.com/webstore/detail/wayback-machine) |
+[Firefox](https://addons.mozilla.org/en-US/firefox/addon/wayback-machine_new/)
 
 Quick access to archived versions of any webpage. Essential for recovering broken government links.
 
@@ -28,7 +30,8 @@ Quick access to archived versions of any webpage. Essential for recovering broke
 
 **URL:** [github.com/gildas-lormeau/SingleFile](https://github.com/gildas-lormeau/SingleFile)
 
-Save complete webpages as single HTML files. Perfect for archiving important content before it disappears.
+Save complete webpages as single HTML files. Perfect for archiving important content before it
+disappears.
 
 **Why essential:** Preserve important content locally.
 

@@ -2,20 +2,24 @@
 
 > Copy these pre-built term groups to expand your searches and catch all relevant documents.
 
-[← Back to Main Guide](../README.md) | [← Domain Map](04-domain-map.md) | [Next: Dork Packs →](dork-packs/)
+[← Back to Main Guide](../README.md) | [← Domain Map](04-domain-map.md) |
+[Next: Dork Packs →](dork-packs/)
 
 ---
 
 ## 📝 How to Use Synonym Blocks
 
-Synonym blocks are pre-built OR groups that catch terminology variations. Copy and paste them into your searches.
+Synonym blocks are pre-built OR groups that catch terminology variations. Copy and paste them into
+your searches.
 
 **Example:**
+
 ```txt
 site:*.gov.au [ALERT_TERMS] after:2024
 ```
 
 Becomes:
+
 ```txt
 site:*.gov.au ("drug alert" OR "drug warning" OR "public health alert" OR "health warning") after:2024
 ```
@@ -24,20 +28,22 @@ site:*.gov.au ("drug alert" OR "drug warning" OR "public health alert" OR "healt
 
 ## 🌏 Spelling Variations (AU/UK vs US)
 
-Australian documents use British spelling, but you may need US spelling to find international content.
+Australian documents use British spelling, but you may need US spelling to find international
+content.
 
-| Pattern | Catches |
-|---------|---------|
+| Pattern                      | Catches                                                |
+| ---------------------------- | ------------------------------------------------------ |
+| `(behavio*)`                 | behaviour, behavior, behavioural, behavioral           |
+| `(centrali*)`                | centralise, centralize, centralisation                 |
+| `(harmoni*)`                 | harmonise, harmonize, harmonisation                    |
+| `(minimis* OR minimiz*)`     | minimise, minimize, minimisation, minimization         |
+| `(organi*)`                  | organisation, organization, organised, organized       |
+| `(program*)`                 | programme, program, programmes, programs               |
+| `(recogni*)`                 | recognise, recognize, recognition                      |
 | `(stigmatis* OR stigmatiz*)` | stigmatise, stigmatize, stigmatisation, stigmatization |
-| `(minimis* OR minimiz*)` | minimise, minimize, minimisation, minimization |
-| `(behavio*)` | behaviour, behavior, behavioural, behavioral |
-| `(organi*)` | organisation, organization, organised, organized |
-| `(program*)` | programme, program, programmes, programs |
-| `(recogni*)` | recognise, recognize, recognition |
-| `(harmoni*)` | harmonise, harmonize, harmonisation |
-| `(centrali*)` | centralise, centralize, centralisation |
 
 **Combined spelling block:**
+
 ```txt
 ("harm minimisation" OR "harm minimization" OR "harm reduction")
 ```
@@ -53,6 +59,7 @@ For drug alert and early warning searches:
 ```
 
 **Compact version:**
+
 ```txt
 (intitle:"drug alert" OR intitle:"drug warning" OR intitle:"health alert")
 ```
@@ -66,6 +73,7 @@ For drug alert and early warning searches:
 ```
 
 **Extended with programs:**
+
 ```txt
 (naloxone OR narcan OR nyxoid) (program OR scheme OR initiative OR distribution OR "take-home" OR THN)
 ```
@@ -79,11 +87,13 @@ For drug alert and early warning searches:
 ```
 
 **For peer workforce development:**
+
 ```txt
 ("peer worker" OR "peer support worker" OR "lived experience worker" OR "consumer consultant" OR "peer educator" OR "peer mentor" OR "peer navigator")
 ```
 
 **For peer-led initiatives:**
+
 ```txt
 ("peer-led" OR "user-led" OR "consumer-led" OR "peer-driven" OR "peer-based" OR "by peers for peers")
 ```
@@ -97,6 +107,7 @@ For drug alert and early warning searches:
 ```
 
 **For opioid types:**
+
 ```txt
 (heroin OR morphine OR oxycodone OR fentanyl OR "pharmaceutical opioid" OR "prescription opioid" OR codeine OR tramadol)
 ```
@@ -110,6 +121,7 @@ For drug alert and early warning searches:
 ```
 
 **With services:**
+
 ```txt
 ("drug checking" OR "pill testing") (service OR trial OR program OR evaluation)
 ```
@@ -127,21 +139,25 @@ For drug alert and early warning searches:
 ## 🧪 Novel/Emerging Substances
 
 ### Synthetic Opioids
+
 ```txt
 (nitazene OR isotonitazene OR protonitazene OR metonitazene OR "benzimidazole opioid" OR "novel opioid")
 ```
 
 ### Adulterants
+
 ```txt
 (xylazine OR medetomidine OR "novel adulterant" OR "cutting agent" OR "contaminant")
 ```
 
 ### Novel Benzodiazepines
+
 ```txt
 ("novel benzodiazepine" OR "designer benzodiazepine" OR flualprazolam OR etizolam OR clonazolam)
 ```
 
 ### General NPS
+
 ```txt
 ("novel psychoactive" OR NPS OR "new psychoactive" OR "emerging substance" OR "designer drug")
 ```
@@ -151,16 +167,19 @@ For drug alert and early warning searches:
 ## 🏥 Treatment & Service Terms
 
 ### AOD Services
+
 ```txt
 (AOD OR "alcohol and other drugs" OR "alcohol and drug" OR "drug and alcohol" OR "substance use" OR "substance abuse")
 ```
 
 ### Treatment Types
+
 ```txt
 (treatment OR rehabilitation OR detox OR withdrawal OR counselling OR therapy)
 ```
 
 ### Service Models
+
 ```txt
 ("harm reduction" OR "low threshold" OR "drop-in" OR outreach OR "mobile service" OR "assertive outreach")
 ```
@@ -174,6 +193,7 @@ For drug alert and early warning searches:
 ```
 
 **With harm reduction:**
+
 ```txt
 (festival OR "music event") ("harm reduction" OR "drug checking" OR "medical" OR "peer support" OR DanceWize)
 ```
@@ -183,16 +203,19 @@ For drug alert and early warning searches:
 ## 👩‍⚕️ Workforce Terms
 
 ### Clinical Workforce
+
 ```txt
 (clinician OR nurse OR GP OR "general practitioner" OR doctor OR prescriber OR pharmacist)
 ```
 
 ### AOD Workforce
+
 ```txt
 ("AOD worker" OR "drug and alcohol worker" OR counsellor OR "case manager" OR "support worker")
 ```
 
 ### Workforce Development
+
 ```txt
 (training OR supervision OR competencies OR standards OR qualification OR "professional development" OR workforce)
 ```
@@ -202,16 +225,19 @@ For drug alert and early warning searches:
 ## 📊 Research Terms
 
 ### Study Types
+
 ```txt
 ("systematic review" OR "meta-analysis" OR "randomized controlled trial" OR RCT OR "cohort study" OR "qualitative study")
 ```
 
 ### Evidence Quality
+
 ```txt
 (evaluation OR effectiveness OR outcomes OR evidence OR "best practice" OR "evidence-based")
 ```
 
 ### Grey Literature
+
 ```txt
 (report OR "working paper" OR "discussion paper" OR submission OR brief OR "white paper")
 ```
@@ -221,11 +247,13 @@ For drug alert and early warning searches:
 ## 🏠 Social Determinants Terms
 
 ### Housing
+
 ```txt
 (housing OR homelessness OR "rough sleeping" OR "housing first" OR "supportive housing" OR "transitional housing" OR accommodation)
 ```
 
 ### Social Factors
+
 ```txt
 ("social determinants" OR poverty OR unemployment OR disadvantage OR "social exclusion" OR marginali*)
 ```
@@ -235,11 +263,13 @@ For drug alert and early warning searches:
 ## 🧠 Mental Health Terms
 
 ### Co-occurring Conditions
+
 ```txt
 ("dual diagnosis" OR "co-occurring" OR comorbid* OR "co-existing" OR "mental health and substance")
 ```
 
 ### Conditions
+
 ```txt
 (anxiety OR depression OR PTSD OR trauma OR psychosis OR "mental illness" OR "mental health")
 ```
@@ -253,6 +283,7 @@ For drug alert and early warning searches:
 ```
 
 **With services:**
+
 ```txt
 (youth OR "young people") ("early intervention" OR prevention OR education OR service)
 ```
@@ -266,6 +297,7 @@ For drug alert and early warning searches:
 ```
 
 **For support services:**
+
 ```txt
 ("family support" OR "family inclusive" OR "family therapy" OR "carer support" OR "affected family")
 ```
@@ -281,11 +313,13 @@ For drug alert and early warning searches:
 ```
 
 **For cultural approaches:**
+
 ```txt
 ("cultural healing" OR "connection to country" OR "cultural safety" OR "self-determination" OR "community controlled")
 ```
 
 **Regional identifiers (examples):**
+
 ```txt
 (Koori OR Murri OR Nunga OR Nyoongar OR Palawa)
 ```
@@ -299,6 +333,7 @@ For drug alert and early warning searches:
 ```
 
 **For diversion:**
+
 ```txt
 ("drug court" OR diversion OR "drug diversion" OR MERIT OR "court referral")
 ```
@@ -312,6 +347,7 @@ For drug alert and early warning searches:
 ```
 
 **For consultations:**
+
 ```txt
 (consultation OR "call for submissions" OR submission OR inquiry OR "public comment")
 ```
@@ -329,11 +365,13 @@ For drug alert and early warning searches:
 ## 📅 Time/Currency Terms
 
 **Recent (last 2 years):**
+
 ```txt
 after:2024-01-01
 ```
 
 **Historical research:**
+
 ```txt
 1980..2010
 before:2015

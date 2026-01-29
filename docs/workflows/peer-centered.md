@@ -52,6 +52,7 @@ Ensure the voices of people with lived experience are included.
 ### Step 4: Apply "Nothing About Us Without Us" Filter
 
 Before using any resource, ask:
+
 - Were people with lived experience involved in design and delivery?
 - Are peer voices quoted and centered?
 - Does this respect the expertise of people who use drugs?
@@ -87,21 +88,25 @@ Look for documents that:
 ### Replace [TOPIC] with Your Search Term
 
 **Peer Organisation Resources:**
+
 ```txt
 (site:nuaa.org.au OR site:aivl.org.au OR site:hrvic.org.au) [TOPIC] filetype:pdf
 ```
 
 **Peer-Led Work:**
+
 ```txt
 [TOPIC] "peer-led" OR "user-led" Australia filetype:pdf
 ```
 
 **Lived Experience Perspectives:**
+
 ```txt
 [TOPIC] "lived experience" OR "peer perspective" filetype:pdf
 ```
 
 **Co-Design & Participation:**
+
 ```txt
 [TOPIC] "co-design" OR "co-production" "people who use drugs" filetype:pdf
 ```
@@ -112,13 +117,13 @@ Look for documents that:
 
 ### Always Check These First
 
-| Organisation | Domain | Focus |
-|--------------|--------|-------|
-| **AIVL** | `site:aivl.org.au` | National peak, advocacy |
-| **NUAA** | `site:nuaa.org.au` | User's News, peer resources |
-| **HRVic** | `site:hrvic.org.au` | DanceWize, peer practice |
-| **QuIHN** | `site:quihn.org` | Peer services |
-| **INPUD** | `site:inpud.net` | International peer network |
+| Organisation | Domain              | Focus                       |
+| ------------ | ------------------- | --------------------------- |
+| **AIVL**     | `site:aivl.org.au`  | National peak, advocacy     |
+| **NUAA**     | `site:nuaa.org.au`  | User's News, peer resources |
+| **HRVic**    | `site:hrvic.org.au` | DanceWize, peer practice    |
+| **QuIHN**    | `site:quihn.org`    | Peer services               |
+| **INPUD**    | `site:inpud.net`    | International peer network  |
 
 ### Multi-Organisation Search
 
@@ -198,7 +203,8 @@ site:*.org.au "peer-led" (advocacy OR campaign) drug policy
 
 ### Tip 1: Peer First, Academic Second
 
-Start with peer organisations, then look at academic research. Often the best knowledge isn't in journals.
+Start with peer organisations, then look at academic research. Often the best knowledge isn't in
+journals.
 
 ### Tip 2: Check Authorship
 
@@ -210,7 +216,8 @@ Search using terms peers actually use, not just clinical terminology.
 
 ### Tip 4: Share Peer Resources
 
-When you find good peer resources, share them with clinical and research colleagues who may not know where to find them.
+When you find good peer resources, share them with clinical and research colleagues who may not know
+where to find them.
 
 ### Tip 5: Build Peer Archives
 

@@ -2,10 +2,9 @@
 
 **A comprehensive search guide for the AOD & harm reduction workforce.**
 
-**Version:** 4.0
-**Last Updated:** January 2026
-**Audience:** Peer workers, clinicians, researchers, policy analysts, advocates, and anyone working to reduce drug-related harm.
-**Scope:** Australia-focused with international comparators.
+**Version:** 4.0 **Last Updated:** January 2026 **Audience:** Peer workers, clinicians, researchers,
+policy analysts, advocates, and anyone working to reduce drug-related harm. **Scope:**
+Australia-focused with international comparators.
 
 ---
 
@@ -13,24 +12,24 @@
 
 ### By Experience Level
 
-| Level | Start Here |
-|-------|------------|
+| Level                | Start Here                                                                                           |
+| -------------------- | ---------------------------------------------------------------------------------------------------- |
 | **Interactive Tool** | [**🕵️‍♂️ Launch Dork Explorer**](tools/dork-explorer/index.html) - Search & filter 700+ dorks instantly |
-| **New to dorking?** | [Quick Start Guide](docs/01-quick-start.md) → [Core Operators](docs/02-core-operators.md) |
-| **Know the basics?** | [Advanced Operators](docs/03-advanced-operators.md) → [Dork Packs](docs/dork-packs/) |
-| **Power user?** | [Investigative Searching](docs/dork-packs/investigative.md) → [OSINT Tools](docs/tools/osint.md) |
+| **Know the basics?** | [Advanced Operators](docs/03-advanced-operators.md) → [Dork Packs](docs/dork-packs/)                 |
+| **New to dorking?**  | [Quick Start Guide](docs/01-quick-start.md) → [Core Operators](docs/02-core-operators.md)            |
+| **Power user?**      | [Investigative Searching](docs/dork-packs/investigative.md) → [OSINT Tools](docs/tools/osint.md)     |
 
 ### By Role
 
-| Role | Recommended Path |
-|------|------------------|
-| 👥 **Peer Worker** | [Peer Workflow](docs/workflows/peer-centered.md) → [Peer Workforce Pack](docs/dork-packs/peer-workforce.md) → [Peer Knowledge](docs/dork-packs/peer-knowledge.md) |
-| 🏥 **Clinician/Service Provider** | [Quick Start](docs/01-quick-start.md) → [Drug Alerts](docs/dork-packs/drug-alerts.md) → [Service Directories](docs/dork-packs/service-directories.md) |
-| 🔬 **Researcher** | [Research Workflow](docs/workflows/research-workflow.md) → [Research Pack](docs/dork-packs/research.md) → [Data & Statistics](docs/dork-packs/data-statistics.md) |
-| 📋 **Policy/Advocacy** | [Policy Pack](docs/dork-packs/policy-advocacy.md) → [Verification Workflow](docs/workflows/verification.md) |
-| 🏕️ **Festival/Event Health** | [Festivals Pack](docs/dork-packs/festivals.md) → [Drug Checking](docs/dork-packs/drug-checking.md) |
-| 🌏 **Rural/Remote** | [Rural & Remote Pack](docs/dork-packs/rural-remote.md) |
-| 🖤💛❤️ **First Nations Focus** | [First Nations Pack](docs/dork-packs/first-nations.md) |
+| Role                              | Recommended Path                                                                                                                                                  |
+| --------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 🌏 **Rural/Remote**               | [Rural & Remote Pack](docs/dork-packs/rural-remote.md)                                                                                                            |
+| 🏕️ **Festival/Event Health**      | [Festivals Pack](docs/dork-packs/festivals.md) → [Drug Checking](docs/dork-packs/drug-checking.md)                                                                |
+| 🏥 **Clinician/Service Provider** | [Quick Start](docs/01-quick-start.md) → [Drug Alerts](docs/dork-packs/drug-alerts.md) → [Service Directories](docs/dork-packs/service-directories.md)             |
+| 📋 **Policy/Advocacy**            | [Policy Pack](docs/dork-packs/policy-advocacy.md) → [Verification Workflow](docs/workflows/verification.md)                                                       |
+| 🔬 **Researcher**                 | [Research Workflow](docs/workflows/research-workflow.md) → [Research Pack](docs/dork-packs/research.md) → [Data & Statistics](docs/dork-packs/data-statistics.md) |
+| 🖤💛❤️ **First Nations Focus**    | [First Nations Pack](docs/dork-packs/first-nations.md)                                                                                                            |
+| � **Peer Worker**                 | [Peer Workflow](docs/workflows/peer-centered.md) → [Peer Workforce Pack](docs/dork-packs/peer-workforce.md) → [Peer Knowledge](docs/dork-packs/peer-knowledge.md) |
 
 ---
 
@@ -48,34 +47,34 @@
 
 Ready-to-use search queries organized by harm reduction task:
 
-| Pack | Description |
-|------|-------------|
-| [Drug Alerts](docs/dork-packs/drug-alerts.md) | Early warning & contaminated supply monitoring |
-| [Naloxone](docs/dork-packs/naloxone.md) | Take-home naloxone programs & training |
-| [NSP](docs/dork-packs/nsp.md) | Needle & syringe programs |
-| [OAT/OST](docs/dork-packs/oat-ost.md) | Opioid agonist treatment |
-| [Drug Checking](docs/dork-packs/drug-checking.md) | Pill testing & substance analysis |
-| [Novel Substances](docs/dork-packs/novel-substances.md) | NPS, nitazenes, adulterants |
-| [Festivals](docs/dork-packs/festivals.md) | Event harm reduction |
-| [Peer Workforce](docs/dork-packs/peer-workforce.md) | Training, supervision, frameworks |
-| [Service Directories](docs/dork-packs/service-directories.md) | Finding AOD services |
-| [Policy & Advocacy](docs/dork-packs/policy-advocacy.md) | Inquiries, submissions, policy |
-| [Data & Statistics](docs/dork-packs/data-statistics.md) | Datasets, prevalence, surveillance |
-| [Research](docs/dork-packs/research.md) | Academic evidence & grey literature |
-| [Peer Knowledge](docs/dork-packs/peer-knowledge.md) | Peer publications & storytelling |
-| [International](docs/dork-packs/international.md) | Global best practice |
-| [Investigative](docs/dork-packs/investigative.md) | Creative & ethical deep searching |
-| [Rural & Remote](docs/dork-packs/rural-remote.md) | Non-metropolitan Australia |
-| [First Nations](docs/dork-packs/first-nations.md) | Aboriginal & Torres Strait Islander |
-| [Stigma & Language](docs/dork-packs/stigma-language.md) | Historical research & terminology |
-| [Coroners & Deaths](docs/dork-packs/coroners-deaths.md) | Coronial findings & mortality data |
-| [Prisons & Justice](docs/dork-packs/prisons-justice.md) | Corrections health & diversion |
-| [Housing & Homelessness](docs/dork-packs/housing-homelessness.md) | Social determinants |
-| [Mental Health](docs/dork-packs/mental-health.md) | Dual diagnosis & co-occurring |
-| [Youth](docs/dork-packs/youth.md) | Young people & prevention |
-| [Families & Carers](docs/dork-packs/families-carers.md) | Affected others & family support |
-| [Document Discovery](docs/dork-packs/document-discovery.md) | Spreadsheets, databases, presentations |
-| [Forum & Community](docs/dork-packs/forum-community.md) | Reddit, forums, community discussions |
+| Pack                                                              | Description                                    |
+| ----------------------------------------------------------------- | ---------------------------------------------- |
+| [Coroners & Deaths](docs/dork-packs/coroners-deaths.md)           | Coronial findings & mortality data             |
+| [Data & Statistics](docs/dork-packs/data-statistics.md)           | Datasets, prevalence, surveillance             |
+| [Document Discovery](docs/dork-packs/document-discovery.md)       | Spreadsheets, databases, presentations         |
+| [Drug Alerts](docs/dork-packs/drug-alerts.md)                     | Early warning & contaminated supply monitoring |
+| [Drug Checking](docs/dork-packs/drug-checking.md)                 | Pill testing & substance analysis              |
+| [Families & Carers](docs/dork-packs/families-carers.md)           | Affected others & family support               |
+| [Festivals](docs/dork-packs/festivals.md)                         | Event harm reduction                           |
+| [First Nations](docs/dork-packs/first-nations.md)                 | Aboriginal & Torres Strait Islander            |
+| [Forum & Community](docs/dork-packs/forum-community.md)           | Reddit, forums, community discussions          |
+| [Housing & Homelessness](docs/dork-packs/housing-homelessness.md) | Social determinants                            |
+| [International](docs/dork-packs/international.md)                 | Global best practice                           |
+| [Investigative](docs/dork-packs/investigative.md)                 | Creative & ethical deep searching              |
+| [Mental Health](docs/dork-packs/mental-health.md)                 | Dual diagnosis & co-occurring                  |
+| [Naloxone](docs/dork-packs/naloxone.md)                           | Take-home naloxone programs & training         |
+| [Novel Substances](docs/dork-packs/novel-substances.md)           | NPS, nitazenes, adulterants                    |
+| [NSP](docs/dork-packs/nsp.md)                                     | Needle & syringe programs                      |
+| [OAT/OST](docs/dork-packs/oat-ost.md)                             | Opioid agonist treatment                       |
+| [Peer Knowledge](docs/dork-packs/peer-knowledge.md)               | Peer publications & storytelling               |
+| [Peer Workforce](docs/dork-packs/peer-workforce.md)               | Training, supervision, frameworks              |
+| [Policy & Advocacy](docs/dork-packs/policy-advocacy.md)           | Inquiries, submissions, policy                 |
+| [Prisons & Justice](docs/dork-packs/prisons-justice.md)           | Corrections health & diversion                 |
+| [Research](docs/dork-packs/research.md)                           | Academic evidence & grey literature            |
+| [Rural & Remote](docs/dork-packs/rural-remote.md)                 | Non-metropolitan Australia                     |
+| [Service Directories](docs/dork-packs/service-directories.md)     | Finding AOD services                           |
+| [Stigma & Language](docs/dork-packs/stigma-language.md)           | Historical research & terminology              |
+| [Youth](docs/dork-packs/youth.md)                                 | Young people & prevention                      |
 
 👉 [**Browse All Dork Packs →**](docs/dork-packs/)
 
@@ -88,7 +87,8 @@ Ready-to-use search queries organized by harm reduction task:
 
 ### Tools
 
-- [**🕵️‍♂️ Dork Explorer**](tools/dork-explorer/index.html) - **NEW!** Interactive search tool for this guide
+- [**🕵️‍♂️ Dork Explorer**](tools/dork-explorer/index.html) - **NEW!** Interactive search tool for this
+  guide
 - [**Bookmarklets**](docs/tools/bookmarklets.md) - One-click searching
 - [**Google Alerts**](docs/tools/google-alerts.md) - Automated monitoring
 - [**Custom Search**](docs/tools/custom-search.md) - Build team search engines
@@ -103,7 +103,8 @@ Ready-to-use search queries organized by harm reduction task:
 - [**Substance Databases**](docs/resources/substance-databases.md) - Drug information resources
 - [**Academic Access**](docs/resources/academic-access.md) - Access research papers
 - [**Organizations**](docs/resources/organizations.md) - Key harm reduction orgs
-- [**Australian OSINT**](docs/resources/australian-osint.md) - Comprehensive AU data sources & registers
+- [**Australian OSINT**](docs/resources/australian-osint.md) - Comprehensive AU data sources &
+  registers
 
 ### Supporting Files
 
@@ -115,7 +116,9 @@ Ready-to-use search queries organized by harm reduction task:
 
 ## 🎯 Why This Guide Exists
 
-Google dorking (advanced search operators) helps AOD workers cut through noise and find the _actual document_, _original dataset_, or _current guidance_—especially when things are buried in PDFs, hidden in "publications" directories, or published without strong SEO.
+Google dorking (advanced search operators) helps AOD workers cut through noise and find the _actual
+document_, _original dataset_, or _current guidance_—especially when things are buried in PDFs,
+hidden in "publications" directories, or published without strong SEO.
 
 **Use cases:**
 
@@ -125,13 +128,15 @@ Google dorking (advanced search operators) helps AOD workers cut through noise a
 - Monitor drug alerts across jurisdictions in real-time
 - Discover unpublished reports, submissions, and "buried" PDFs
 
-**This guide is NOT about hacking.** We use search operators for **legitimate discovery of public information** that supports harm reduction work.
+**This guide is NOT about hacking.** We use search operators for **legitimate discovery of public
+information** that supports harm reduction work.
 
 ---
 
 ## 👥 Centering Peer & Lived Experience
 
-This guide is written with deep respect for peer workers and people with lived experience of drug use. **Peer knowledge is expert knowledge.**
+This guide is written with deep respect for peer workers and people with lived experience of drug
+use. **Peer knowledge is expert knowledge.**
 
 This guide helps you find:
 
@@ -149,8 +154,10 @@ This guide helps you find:
 
 ### Do No Harm
 
-- **Never search for identifiable people** (names + "overdose" / incidents) unless clearly in public interest with organisational approval
-- **Never seek leaked or exposed personal data** - if found accidentally, stop and escalate via your org's security pathway
+- **Never search for identifiable people** (names + "overdose" / incidents) unless clearly in public
+  interest with organisational approval
+- **Never seek leaked or exposed personal data** - if found accidentally, stop and escalate via your
+  org's security pathway
 - **Prefer de-identified, aggregated sources** (public health alerts, reports, datasets)
 
 ### Trauma-Informed Language
@@ -162,19 +169,20 @@ This guide helps you find:
 ### Legal & Clinical Currency
 
 - Respect copyright
-- For clinical guidance: always verify publication date, issuing authority, jurisdiction, and currency
+- For clinical guidance: always verify publication date, issuing authority, jurisdiction, and
+  currency
 
 ---
 
 ## 🔗 Quick Links
 
-| Need | Go To |
-|------|-------|
-| Copy-paste a dork right now | [Cheat Sheet](docs/resources/cheat-sheet.md) |
-| Set up monitoring alerts | [Google Alerts Guide](docs/tools/google-alerts.md) |
-| Find NSW drug warnings | [Drug Alerts Pack](docs/dork-packs/drug-alerts.md) |
-| Research a topic thoroughly | [Research Workflow](docs/workflows/research-workflow.md) |
-| Archive a page that might disappear | [Browser Extensions](docs/tools/browser-extensions.md) |
+| Need                                | Go To                                                    |
+| ----------------------------------- | -------------------------------------------------------- |
+| Archive a page that might disappear | [Browser Extensions](docs/tools/browser-extensions.md)   |
+| Copy-paste a dork right now         | [Cheat Sheet](docs/resources/cheat-sheet.md)             |
+| Find NSW drug warnings              | [Drug Alerts Pack](docs/dork-packs/drug-alerts.md)       |
+| Research a topic thoroughly         | [Research Workflow](docs/workflows/research-workflow.md) |
+| Set up monitoring alerts            | [Google Alerts Guide](docs/tools/google-alerts.md)       |
 
 ---
 
@@ -205,7 +213,9 @@ _Created for harm reduction workers, by harm reduction workers._
 
 ## ⚠️ Disclaimer
 
-This guide supports ethical, public-interest information finding for harm reduction practice. It must not be used to locate private, leaked, or identifiable personal information. Always follow your organisation's privacy, data handling, and clinical governance requirements.
+This guide supports ethical, public-interest information finding for harm reduction practice. It
+must not be used to locate private, leaked, or identifiable personal information. Always follow your
+organisation's privacy, data handling, and clinical governance requirements.
 
 ---
 

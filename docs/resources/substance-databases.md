@@ -12,7 +12,8 @@
 
 **URL:** [erowid.org](https://www.erowid.org/)
 
-The gold standard for substance information since 1995. Comprehensive, peer-trusted, and non-judgmental.
+The gold standard for substance information since 1995. Comprehensive, peer-trusted, and
+non-judgmental.
 
 **Best for:** Detailed substance information, experience reports, harm reduction.
 
@@ -36,32 +37,32 @@ Real-time harm reduction chat support, factsheets, and drug interaction checker.
 
 ## 📚 Additional Databases
 
-| Resource | URL | Focus |
-|----------|-----|-------|
-| **DanceSafe** | [dancesafe.org](https://dancesafe.org/) | Festival/nightlife harm reduction |
-| **DrugBank** | [go.drugbank.com](https://go.drugbank.com/) | Pharmaceutical database |
-| **Drugs.com** | [drugs.com](https://www.drugs.com/) | Pharma info, interactions, pill ID |
-| **DrugWise** | [drugwise.org.uk](https://www.drugwise.org.uk/) | UK evidence-based drug info |
-| **Global Drug Survey** | [globaldrugsurvey.com](https://www.globaldrugsurvey.com/) | Annual drug use survey data |
+| Resource               | URL                                                       | Focus                              |
+| ---------------------- | --------------------------------------------------------- | ---------------------------------- |
+| **DanceSafe**          | [dancesafe.org](https://dancesafe.org/)                   | Festival/nightlife harm reduction  |
+| **DrugBank**           | [go.drugbank.com](https://go.drugbank.com/)               | Pharmaceutical database            |
+| **Drugs.com**          | [drugs.com](https://www.drugs.com/)                       | Pharma info, interactions, pill ID |
+| **DrugWise**           | [drugwise.org.uk](https://www.drugwise.org.uk/)           | UK evidence-based drug info        |
+| **Global Drug Survey** | [globaldrugsurvey.com](https://www.globaldrugsurvey.com/) | Annual drug use survey data        |
 
 ---
 
 ## 🔬 Scientific/Clinical
 
-| Resource | URL | Focus |
-|----------|-----|-------|
+| Resource    | URL                                                           | Focus                           |
+| ----------- | ------------------------------------------------------------- | ------------------------------- |
+| **ChEMBL**  | [ebi.ac.uk/chembl](https://www.ebi.ac.uk/chembl/)             | Bioactivity data                |
 | **PubChem** | [pubchem.ncbi.nlm.nih.gov](https://pubchem.ncbi.nlm.nih.gov/) | Chemical structures, properties |
-| **ChEMBL** | [ebi.ac.uk/chembl](https://www.ebi.ac.uk/chembl/) | Bioactivity data |
-| **TOXNET** | [toxnet.nlm.nih.gov](https://toxnet.nlm.nih.gov/) | Toxicology data |
+| **TOXNET**  | [toxnet.nlm.nih.gov](https://toxnet.nlm.nih.gov/)             | Toxicology data                 |
 
 ---
 
 ## 🌏 International Monitoring
 
-| Resource | URL | Focus |
-|----------|-----|-------|
+| Resource   | URL                                               | Focus                    |
+| ---------- | ------------------------------------------------- | ------------------------ |
 | **EMCDDA** | [emcdda.europa.eu](https://www.emcdda.europa.eu/) | European drug monitoring |
-| **UNODC** | [unodc.org](https://www.unodc.org/) | UN drug data |
+| **UNODC**  | [unodc.org](https://www.unodc.org/)               | UN drug data             |
 
 ---
 
