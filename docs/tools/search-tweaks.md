@@ -166,9 +166,9 @@ synonyms, street names, and brand names in the first paragraph or infobox.
 
 **Workflow:**
 
-1.  Search Wikipedia for the substance (e.g., `site:wikipedia.org nitazenes`).
-2.  Look for **"also known as"**, **IUPAC names**, or **street names**.
-3.  Build a huge OR block with these terms.
+1. Search Wikipedia for the substance (e.g., `site:wikipedia.org nitazenes`).
+2. Look for **"also known as"**, **IUPAC names**, or **street names**.
+3. Build a huge OR block with these terms.
 
 **Resulting Dork:**
 

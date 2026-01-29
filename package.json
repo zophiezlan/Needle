@@ -14,7 +14,12 @@
     "sort-tables": "node scripts/sort-tables.js --write",
     "sort-tables:check": "node scripts/sort-tables.js --check",
     "lint": "npm run format:check && npm run md:check && npm run sort-tables:check",
-    "lint:fix": "npm run format && npm run md:fix && npm run sort-tables"
+    "lint:fix": "npm run format && npm run md:fix && npm run sort-tables",
+    "lint:check": "npm run format:check",
+    "build": "node scripts/build-dorkbase.js",
+    "inject-links": "node scripts/inject-live-links.js",
+    "check-links": "find . -name '*.md' -not -path './node_modules/*' -not -path './archive/*' | xargs markdown-link-check --quiet",
+    "validate": "npm run lint && npm run check-links"
   },
   "devDependencies": {
     "fast-glob": "^3.3.2",

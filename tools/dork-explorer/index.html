@@ -393,6 +393,59 @@
       ::-webkit-scrollbar-thumb:hover {
         background: #52525b;
       }
+
+      /* Export button specific styling */
+      #export-btn {
+        border: 1px solid var(--border-subtle);
+        background: var(--bg-card);
+      }
+
+      #export-btn:hover {
+        border-color: var(--success);
+        color: var(--success);
+      }
+
+      /* Keyboard shortcuts hint */
+      .keyboard-hint {
+        position: fixed;
+        bottom: 16px;
+        right: 16px;
+        background: var(--bg-card);
+        border: 1px solid var(--border-subtle);
+        border-radius: var(--radius-md);
+        padding: 8px 12px;
+        font-size: 0.75rem;
+        color: var(--text-muted);
+        z-index: 100;
+      }
+
+      .keyboard-hint kbd {
+        background: var(--bg-input);
+        padding: 2px 6px;
+        border-radius: 3px;
+        font-family: var(--font-mono);
+        font-size: 0.7rem;
+        margin: 0 2px;
+      }
+
+      /* Accessibility: Focus visible */
+      *:focus-visible {
+        outline: 2px solid var(--accent-primary);
+        outline-offset: 2px;
+      }
+
+      /* Screen reader only */
+      .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+      }
     </style>
   </head>
   <body>
@@ -402,7 +455,7 @@
         <div class="brand"><span>⚡</span> Dork Explorer</div>
 
         <div class="nav-scroller">
-          <div class="nav-item active" onclick="Router.go('all')">
+          <div class="nav-item active" onclick="App.goToAll()" role="button" aria-label="Show all dorks">
             <span style="display: flex; gap: 10px; align-items: center">
               <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path
@@ -446,28 +499,32 @@
             <input
               type="text"
               id="search-input"
-              placeholder="Search for 'PDF', 'Nitazenes', 'Alerts'..."
+              placeholder="Search for 'PDF', 'Nitazenes', 'Alerts'... (Press / to focus, Esc to clear)"
               autocomplete="off"
+              aria-label="Search dorks"
             />
           </div>
 
           <div class="modifiers">
-            <label class="toggle-chip">
-              <input type="checkbox" id="mod-au" onchange="App.render()" />
+            <label class="toggle-chip" aria-label="Filter to Australian sites only">
+              <input type="checkbox" id="mod-au" onchange="App.onModifierChange()" />
               <span>🇦🇺 Australia Only (site:.au)</span>
             </label>
-            <label class="toggle-chip">
-              <input type="checkbox" id="mod-gov" onchange="App.render()" />
+            <label class="toggle-chip" aria-label="Filter to government sites only">
+              <input type="checkbox" id="mod-gov" onchange="App.onModifierChange()" />
               <span>🏛️ Gov Only (site:.gov.au)</span>
             </label>
-            <label class="toggle-chip">
-              <input type="checkbox" id="mod-pdf" onchange="App.render()" />
+            <label class="toggle-chip" aria-label="Filter to PDF files only">
+              <input type="checkbox" id="mod-pdf" onchange="App.onModifierChange()" />
               <span>📄 PDF Only (filetype:pdf)</span>
             </label>
-            <label class="toggle-chip">
-              <input type="checkbox" id="mod-recent" onchange="App.render()" />
+            <label class="toggle-chip" aria-label="Filter to recent results">
+              <input type="checkbox" id="mod-recent" onchange="App.onModifierChange()" />
               <span>📅 Recent (after:2024)</span>
             </label>
+            <button class="toggle-chip" id="export-btn" onclick="App.exportDorks()" aria-label="Export filtered dorks">
+              <span>📥 Export</span>
+            </button>
           </div>
         </header>
 
@@ -476,6 +533,11 @@
           <div id="dork-grid" class="grid"></div>
         </div>
       </main>
+    </div>
+
+    <!-- Keyboard shortcuts hint -->
+    <div class="keyboard-hint" aria-hidden="true">
+      <kbd>/</kbd> Search &nbsp;·&nbsp; <kbd>Esc</kbd> Clear &nbsp;·&nbsp; <kbd>?</kbd> Help
     </div>
 
     <!-- Load Data Variable (window.DORK_DATA) -->
@@ -510,19 +572,182 @@
 
           this.renderNav();
           this.bindEvents();
+          this.loadStateFromURL();
           this.render();
 
           // Stats
           document.getElementById("total-count").innerText = this.state.dorks.length;
         },
 
+        // URL State Persistence
+        loadStateFromURL() {
+          const params = new URLSearchParams(window.location.search);
+
+          // Load pack
+          const pack = params.get('pack');
+          if (pack && (pack === 'all' || window.DORK_DATA.some(p => p.id === pack))) {
+            this.state.currentPackId = pack;
+          }
+
+          // Load search query
+          const q = params.get('q');
+          if (q) {
+            this.state.searchQuery = q.toLowerCase();
+            document.getElementById('search-input').value = q;
+          }
+
+          // Load modifiers
+          if (params.get('au') === '1') document.getElementById('mod-au').checked = true;
+          if (params.get('gov') === '1') document.getElementById('mod-gov').checked = true;
+          if (params.get('pdf') === '1') document.getElementById('mod-pdf').checked = true;
+          if (params.get('recent') === '1') document.getElementById('mod-recent').checked = true;
+
+          this.updateNavSelection();
+        },
+
+        saveStateToURL() {
+          const params = new URLSearchParams();
+
+          if (this.state.currentPackId !== 'all') params.set('pack', this.state.currentPackId);
+          if (this.state.searchQuery) params.set('q', this.state.searchQuery);
+
+          const mods = this.getModifiers();
+          if (mods.au) params.set('au', '1');
+          if (mods.gov) params.set('gov', '1');
+          if (mods.pdf) params.set('pdf', '1');
+          if (mods.recent) params.set('recent', '1');
+
+          const newURL = params.toString()
+            ? `${window.location.pathname}?${params.toString()}`
+            : window.location.pathname;
+
+          window.history.replaceState({}, '', newURL);
+        },
+
+        onModifierChange() {
+          this.saveStateToURL();
+          this.render();
+        },
+
         bindEvents() {
-          document.getElementById("search-input").addEventListener("input", (e) => {
+          const searchInput = document.getElementById("search-input");
+
+          searchInput.addEventListener("input", (e) => {
             this.state.searchQuery = e.target.value.toLowerCase();
             this.state.currentPackId = "all"; // Reset pack selection on search
             this.updateNavSelection();
+            this.saveStateToURL();
             this.render();
           });
+
+          // Keyboard shortcuts
+          document.addEventListener("keydown", (e) => {
+            // Ignore if typing in an input/textarea
+            const isTyping = ['INPUT', 'TEXTAREA'].includes(document.activeElement.tagName);
+
+            // "/" to focus search (when not typing)
+            if (e.key === "/" && !isTyping) {
+              e.preventDefault();
+              searchInput.focus();
+              searchInput.select();
+            }
+
+            // "Escape" to clear search and blur
+            if (e.key === "Escape") {
+              if (document.activeElement === searchInput) {
+                if (searchInput.value) {
+                  searchInput.value = "";
+                  this.state.searchQuery = "";
+                  this.saveStateToURL();
+                  this.render();
+                } else {
+                  searchInput.blur();
+                }
+              }
+            }
+
+            // "?" to show keyboard shortcuts help
+            if (e.key === "?" && !isTyping) {
+              this.showKeyboardHelp();
+            }
+          });
+        },
+
+        showKeyboardHelp() {
+          const help = document.createElement('div');
+          help.id = 'keyboard-help';
+          help.innerHTML = `
+            <div style="position:fixed;inset:0;background:rgba(0,0,0,0.8);display:flex;align-items:center;justify-content:center;z-index:1000;" onclick="this.remove()">
+              <div style="background:var(--bg-card);border:1px solid var(--border-subtle);border-radius:12px;padding:24px;max-width:400px;" onclick="event.stopPropagation()">
+                <h3 style="margin:0 0 16px;color:var(--text-primary);">Keyboard Shortcuts</h3>
+                <table style="width:100%;border-collapse:collapse;">
+                  <tr><td style="padding:8px 0;color:var(--text-muted);"><kbd style="background:var(--bg-input);padding:2px 8px;border-radius:4px;font-family:var(--font-mono);">/</kbd></td><td style="padding:8px 0;color:var(--text-secondary);">Focus search</td></tr>
+                  <tr><td style="padding:8px 0;color:var(--text-muted);"><kbd style="background:var(--bg-input);padding:2px 8px;border-radius:4px;font-family:var(--font-mono);">Esc</kbd></td><td style="padding:8px 0;color:var(--text-secondary);">Clear search / unfocus</td></tr>
+                  <tr><td style="padding:8px 0;color:var(--text-muted);"><kbd style="background:var(--bg-input);padding:2px 8px;border-radius:4px;font-family:var(--font-mono);">?</kbd></td><td style="padding:8px 0;color:var(--text-secondary);">Show this help</td></tr>
+                </table>
+                <button onclick="this.parentElement.parentElement.remove()" style="margin-top:16px;padding:8px 16px;background:var(--accent-primary);color:white;border:none;border-radius:6px;cursor:pointer;">Close</button>
+              </div>
+            </div>
+          `;
+          document.body.appendChild(help);
+        },
+
+        // Export functionality
+        exportDorks() {
+          const filtered = this.getFilteredDorks();
+
+          if (filtered.length === 0) {
+            alert('No dorks to export. Adjust your filters first.');
+            return;
+          }
+
+          // Create CSV content
+          const csvRows = [
+            ['Title', 'Pack', 'Category', 'Query', 'Explanation'].join(',')
+          ];
+
+          filtered.forEach(dork => {
+            const row = [
+              `"${(dork.title || '').replace(/"/g, '""')}"`,
+              `"${(dork.packTitle || '').replace(/"/g, '""')}"`,
+              `"${(dork.category || 'General').replace(/"/g, '""')}"`,
+              `"${this.applyModifiers(dork.query).replace(/"/g, '""')}"`,
+              `"${(dork.explanation || '').replace(/"/g, '""').replace(/\n/g, ' ')}"`
+            ];
+            csvRows.push(row.join(','));
+          });
+
+          const csvContent = csvRows.join('\n');
+          const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+          const url = URL.createObjectURL(blob);
+
+          const link = document.createElement('a');
+          link.href = url;
+          link.download = `dork-export-${this.state.currentPackId}-${new Date().toISOString().split('T')[0]}.csv`;
+          link.click();
+
+          URL.revokeObjectURL(url);
+        },
+
+        getFilteredDorks() {
+          let filtered = this.state.dorks;
+
+          if (this.state.currentPackId !== "all") {
+            filtered = filtered.filter((d) => d.packId === this.state.currentPackId);
+          }
+
+          if (this.state.searchQuery) {
+            const q = this.state.searchQuery;
+            filtered = filtered.filter(
+              (d) =>
+                d.title.toLowerCase().includes(q) ||
+                d.query.toLowerCase().includes(q) ||
+                d.explanation?.toLowerCase().includes(q) ||
+                d.packTitle.toLowerCase().includes(q)
+            );
+          }
+
+          return filtered;
         },
 
         updateNavSelection() {
@@ -549,6 +774,7 @@
               this.state.searchQuery = "";
               document.getElementById("search-input").value = "";
               this.updateNavSelection();
+              this.saveStateToURL();
               this.render();
             };
             navPacks.appendChild(el);
@@ -581,23 +807,8 @@
           const grid = document.getElementById("dork-grid");
           grid.innerHTML = "";
 
-          // Filter
-          let filtered = this.state.dorks;
-
-          if (this.state.currentPackId !== "all") {
-            filtered = filtered.filter((d) => d.packId === this.state.currentPackId);
-          }
-
-          if (this.state.searchQuery) {
-            const q = this.state.searchQuery;
-            filtered = filtered.filter(
-              (d) =>
-                d.title.toLowerCase().includes(q) ||
-                d.query.toLowerCase().includes(q) ||
-                d.explanation?.toLowerCase().includes(q) ||
-                d.packTitle.toLowerCase().includes(q)
-            );
-          }
+          // Filter using helper
+          const filtered = this.getFilteredDorks();
 
           // Empty State
           if (filtered.length === 0) {
@@ -673,6 +884,15 @@
               btn.style.color = "";
             }, 2000);
           });
+        },
+
+        goToAll() {
+          this.state.currentPackId = "all";
+          this.state.searchQuery = "";
+          document.getElementById("search-input").value = "";
+          this.updateNavSelection();
+          this.saveStateToURL();
+          this.render();
         },
       };
 

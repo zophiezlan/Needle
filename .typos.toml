@@ -1,0 +1,37 @@
+# Typos configuration
+# https://github.com/crate-ci/typos
+
+[default.extend-words]
+# Allow these words that might be flagged as typos
+AOD = "AOD"           # Alcohol and Other Drugs
+NSP = "NSP"           # Needle and Syringe Program
+OAT = "OAT"           # Opioid Agonist Treatment
+OST = "OST"           # Opioid Substitution Treatment
+NPS = "NPS"           # Novel Psychoactive Substances
+AIHW = "AIHW"         # Australian Institute of Health and Welfare
+AIVL = "AIVL"         # Australian Injecting & Illicit Drug Users League
+NUAA = "NUAA"         # NSW Users and AIDS Association
+ACSC = "ACSC"         # Australian Cyber Security Centre
+OAIC = "OAIC"         # Office of the Australian Information Commissioner
+NHMRC = "NHMRC"       # National Health and Medical Research Council
+OSINT = "OSINT"       # Open Source Intelligence
+filetype = "filetype" # Google operator
+intitle = "intitle"   # Google operator
+inurl = "inurl"       # Google operator
+intext = "intext"     # Google operator
+
+[default.extend-identifiers]
+# Allow these identifiers
+dorks = "dorks"
+dorking = "dorking"
+dork = "dork"
+
+[files]
+extend-exclude = [
+  "archive/",
+  "node_modules/",
+  "*.json",
+  "*.js",
+  "*.css",
+  "*.html"
+]

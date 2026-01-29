@@ -1,0 +1,51 @@
+name: Lint
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  markdown-lint:
+    name: Markdown Lint
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run Prettier check
+        run: npm run lint:check
+        continue-on-error: false
+
+      - name: Run markdownlint
+        uses: DavidAnson/markdownlint-cli2-action@v18
+        with:
+          globs: |
+            **/*.md
+            !archive/**
+            !node_modules/**
+
+  spell-check:
+    name: Spell Check
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Check spelling
+        uses: crate-ci/typos@master
+        with:
+          config: .typos.toml
+        continue-on-error: true

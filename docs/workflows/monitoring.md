@@ -8,6 +8,9 @@
 
 ## 🔔 Why Monitoring Matters
 
+> [!TIP] Automated monitoring ensures you don't miss critical information. A well-configured system
+> can alert you to drug warnings within hours of publication, rather than days or weeks.
+
 Don't rely on manual checks. Set up automated monitoring for:
 
 - Drug alerts and health warnings
@@ -94,6 +97,11 @@ For sites without native RSS:
 ---
 
 ## 🔄 Website Change Monitoring
+
+> [!WARNING] **Data Exposure Risk.** When monitoring websites for changes, be careful about what
+> information you capture and store. Avoid monitoring pages that might inadvertently expose personal
+> information, and ensure your monitoring tools comply with your organisation's data handling
+> policies.
 
 ### Tools
 

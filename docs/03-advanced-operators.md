@@ -14,6 +14,9 @@
 Find words that appear within n words of each other. Useful when documents don't use your exact
 phrase.
 
+> [!TIP] `AROUND(n)` is particularly powerful for harm reduction searching because official
+> documents often use different word orders than you might expect.
+
 ```txt
 "naloxone" AROUND(5) "program"
 ```
@@ -210,8 +213,10 @@ site:*.gov.au inurl:"/assets/" filetype:pdf "overdose"
 
 ## 🕵️ Investigative Techniques
 
-> ⚠️ Use these responsibly and ethically. See [Investigative Searching](dork-packs/investigative.md)
-> for full ethical framework.
+> [!CAUTION] **Ethical Framework Required.** These techniques can find sensitive information. Always
+> ensure your search serves a legitimate harm reduction purpose and does not target personal or
+> identifiable information. See [Investigative Searching](dork-packs/investigative.md) and
+> [Security Guidelines](../SECURITY.md) for the full ethical framework.
 
 ### Finding Draft Documents
 
@@ -313,6 +318,8 @@ filetype:xls "service directory" (finds old Excel files)
 - More than 2-3 `site:` OR combinations
 
 ### Deprecated/Unreliable Operators
+
+> [!WARNING] These operators may not work reliably or at all.
 
 - `cache:` - Being phased out
 - `link:` - No longer works

@@ -27,13 +27,15 @@
 
 ### Settings & Populations
 
-| Pack                                    | Description                         | Quick Link |
-| --------------------------------------- | ----------------------------------- | ---------- |
-| [Festivals](festivals.md)               | Event harm reduction                | 🎪         |
-| [First Nations](first-nations.md)       | Aboriginal & Torres Strait Islander | 🖤💛❤️     |
-| [Prisons & Justice](prisons-justice.md) | Corrections health & diversion      | ⚖️         |
-| [Rural & Remote](rural-remote.md)       | Non-metropolitan Australia          | 🌏         |
-| [Youth](youth.md)                       | Young people & prevention           | 👶         |
+| Pack                                      | Description                         | Quick Link |
+| ----------------------------------------- | ----------------------------------- | ---------- |
+| [Festivals](festivals.md)                 | Event harm reduction                | 🎪         |
+| [First Nations](first-nations.md)         | Aboriginal & Torres Strait Islander | 🖤💛❤️     |
+| [LGBTQ+ Health](lgbtq-health.md)          | LGBTQ+ inclusive services, chemsex  | 🏳️‍🌈         |
+| [Prisons & Justice](prisons-justice.md)   | Corrections health & diversion      | ⚖️         |
+| [Rural & Remote](rural-remote.md)         | Non-metropolitan Australia          | 🌏         |
+| [Sex Worker Health](sex-worker-health.md) | Sex worker safety & wellbeing       | 🛡️         |
+| [Youth](youth.md)                         | Young people & prevention           | 👶         |
 
 ### Workforce & Peer Practice
 

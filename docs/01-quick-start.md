@@ -10,19 +10,21 @@
 
 When you need _anything_ fast, follow this pattern:
 
-```
+```txt
 [DOMAIN] + [FORMAT] + [TOPIC] + [DATE] + [EXCLUSIONS]
 ```
 
 ### Step-by-Step
 
-1. **Define what you need** (alert / policy / service / evidence / training)
-2. **Choose the authority domain** first: `site:*.gov.au` or a known org/university
-3. **Force document formats**: `filetype:pdf` (or `docx`, `pptx`, `xlsx`)
-4. **Use exact phrases** for program names: `"take-home naloxone"` `"needle syringe program"`
-5. **Add a date constraint**: `after:2024-01-01` (or a range `2020..2025`)
-6. **Exclude junk**: `-jobs -careers -news`
-7. **Open 2-3 candidates**, cross-check dates, and capture citations
+| Step | Action                      | Example                                           |
+| :--: | :-------------------------- | :------------------------------------------------ |
+|  1   | Define what you need        | alert / policy / service / evidence / training    |
+|  2   | Choose the authority domain | `site:*.gov.au` or a known org/university         |
+|  3   | Force document formats      | `filetype:pdf` (or `docx`, `pptx`, `xlsx`)        |
+|  4   | Use exact phrases           | `"take-home naloxone"` `"needle syringe program"` |
+|  5   | Add a date constraint       | `after:2024-01-01` (or a range `2020..2025`)      |
+|  6   | Exclude junk                | `-jobs -careers -news`                            |
+|  7   | Open 2-3 candidates         | Cross-check dates, capture citations              |
 
 ---
 
@@ -34,12 +36,19 @@ Copy and paste this into Google right now:
 site:*.gov.au filetype:pdf "harm reduction" after:2024
 ```
 
-**What this does:**
+[👉 **Run this Search**](https://www.google.com/search?q=site%3A*.gov.au+filetype%3Apdf+%22harm+reduction%22+after%3A2024)
 
-- `site:*.gov.au` → Only Australian government domains
-- `filetype:pdf` → Only PDF documents (not web pages)
-- `"harm reduction"` → Exact phrase match
-- `after:2024` → Published in 2024 or later
+<details>
+<summary><strong>What this does</strong></summary>
+
+| Component          | Purpose                            |
+| :----------------- | :--------------------------------- |
+| `site:*.gov.au`    | Only Australian government domains |
+| `filetype:pdf`     | Only PDF documents (not web pages) |
+| `"harm reduction"` | Exact phrase match                 |
+| `after:2024`       | Published in 2024 or later         |
+
+</details>
 
 ---
 
@@ -51,11 +60,15 @@ site:*.gov.au filetype:pdf "harm reduction" after:2024
 site:*.gov.au filetype:pdf "harm reduction" after:2024
 ```
 
+[👉 **Run this Search**](https://www.google.com/search?q=site%3A*.gov.au+filetype%3Apdf+%22harm+reduction%22+after%3A2024)
+
 ### 2. Drug Alerts from NSW Health
 
 ```txt
 site:health.nsw.gov.au intitle:"drug warning" OR intitle:"drug alert"
 ```
+
+[👉 **Run this Search**](https://www.google.com/search?q=site%3Ahealth.nsw.gov.au+intitle%3A%22drug+warning%22+OR+intitle%3A%22drug+alert%22)
 
 ### 3. Peer Worker Training Resources
 
@@ -63,11 +76,15 @@ site:health.nsw.gov.au intitle:"drug warning" OR intitle:"drug alert"
 "peer worker" training filetype:pdf site:*.org.au -jobs -careers
 ```
 
+[👉 **Run this Search**](https://www.google.com/search?q=%22peer+worker%22+training+filetype%3Apdf+site%3A*.org.au+-jobs+-careers)
+
 ### 4. Research from Australian Universities
 
 ```txt
 site:*.edu.au filetype:pdf "drug checking" OR "pill testing"
 ```
+
+[👉 **Run this Search**](https://www.google.com/search?q=site%3A*.edu.au+filetype%3Apdf+%22drug+checking%22+OR+%22pill+testing%22)
 
 ### 5. Naloxone Guidelines
 
@@ -75,49 +92,60 @@ site:*.edu.au filetype:pdf "drug checking" OR "pill testing"
 site:*.gov.au "take-home naloxone" guidelines filetype:pdf
 ```
 
+[👉 **Run this Search**](https://www.google.com/search?q=site%3A*.gov.au+%22take-home+naloxone%22+guidelines+filetype%3Apdf)
+
 ---
 
 ## 🔧 Quick Customization
 
-### Change the Topic
+<details open>
+<summary><strong>Change the Topic</strong></summary>
 
 Replace `"harm reduction"` with:
 
-- `"needle syringe program"`
-- `"drug checking"`
-- `"opioid treatment"`
-- `"overdose prevention"`
+| Topic               | Query Term                 |
+| :------------------ | :------------------------- |
+| Needle programs     | `"needle syringe program"` |
+| Pill testing        | `"drug checking"`          |
+| Opioid treatment    | `"opioid treatment"`       |
+| Overdose prevention | `"overdose prevention"`    |
 
-### Change the Jurisdiction
+</details>
 
-Replace `site:*.gov.au` with:
+<details>
+<summary><strong>Change the Jurisdiction</strong></summary>
 
-| Jurisdiction            | Domain                   |
-| ----------------------- | ------------------------ |
+| Jurisdiction            | Domain Pattern           |
+| :---------------------- | :----------------------- |
 | All AU Government       | `site:*.gov.au`          |
 | Australian Universities | `site:*.edu.au`          |
 | NSW Health              | `site:health.nsw.gov.au` |
 | QLD Health              | `site:health.qld.gov.au` |
-| Sector Orgs             | `site:*.org.au`          |
 | VIC Health              | `site:health.vic.gov.au` |
+| Sector Orgs             | `site:*.org.au`          |
 
-### Change the Document Type
+</details>
 
-Replace `filetype:pdf` with:
+<details>
+<summary><strong>Change the Document Type</strong></summary>
 
-| Type            | Use For                        |
-| --------------- | ------------------------------ |
+| Filetype        | Use For                        |
+| :-------------- | :----------------------------- |
 | `filetype:docx` | Templates, drafts              |
 | `filetype:pdf`  | Reports, guidelines, policies  |
 | `filetype:pptx` | Presentations, training slides |
 | `filetype:xlsx` | Data, service directories      |
 
+</details>
+
 ---
 
 ## ❌ Common Mistakes to Avoid
 
+> [!WARNING] These are the most common issues that break searches.
+
 | Mistake                     | Fix                                       |
-| --------------------------- | ----------------------------------------- |
+| :-------------------------- | :---------------------------------------- |
 | `or` (lowercase)            | Use `OR` (must be uppercase)              |
 | `site:gov.au` (missing `*`) | Use `site:*.gov.au` to catch subdomains   |
 | Forgetting exclusions       | Add `-jobs -careers` to remove noise      |
@@ -141,15 +169,18 @@ Before using any document you find:
 
 Now that you have the basics:
 
-1. **Learn the operators** → [Core Operators](02-core-operators.md)
-2. **Find topic-specific dorks** → [Dork Packs](dork-packs/)
-3. **Set up monitoring** → [Google Alerts](tools/google-alerts.md)
+| Next                      | Link                                    |
+| :------------------------ | :-------------------------------------- |
+| Learn the operators       | [Core Operators](02-core-operators.md)  |
+| Find topic-specific dorks | [Dork Packs](dork-packs/)               |
+| Set up monitoring         | [Google Alerts](tools/google-alerts.md) |
 
 ---
 
 ## 💡 Pro Tips
 
-### Tip 1: Start Broad, Then Narrow
+<details>
+<summary><strong>Tip 1: Start Broad, Then Narrow</strong></summary>
 
 ```txt
 # Start here (broad)
@@ -165,12 +196,18 @@ Now that you have the basics:
 "drug checking" site:*.gov.au filetype:pdf after:2024
 ```
 
-### Tip 2: Save Your Best Dorks
+</details>
+
+<details>
+<summary><strong>Tip 2: Save Your Best Dorks</strong></summary>
 
 Create browser bookmarks for searches you use regularly. See [Bookmarklets](tools/bookmarklets.md)
 for one-click searching.
 
-### Tip 3: Use Date Ranges for Research
+</details>
+
+<details>
+<summary><strong>Tip 3: Use Date Ranges for Research</strong></summary>
 
 ```txt
 "harm reduction" Australia 2020..2025
@@ -178,6 +215,11 @@ for one-click searching.
 
 This finds documents mentioning dates in that range.
 
+</details>
+
+> [!TIP] **Keyboard shortcut:** Press <kbd>Ctrl</kbd>+<kbd>L</kbd> (or <kbd>Cmd</kbd>+<kbd>L</kbd>
+> on Mac) to jump straight to your browser's address bar and start searching.
+
 ---
 
-[→ Next: Core Operators](02-core-operators.md)
+[← Back to Main Guide](../README.md) | [Next: Core Operators →](02-core-operators.md)

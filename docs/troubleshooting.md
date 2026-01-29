@@ -8,7 +8,8 @@
 
 ## 🔴 Zero Results?
 
-### Fix 1: Remove `filetype:` First
+<details open>
+<summary><strong>Fix 1: Remove <code>filetype:</code> First</strong></summary>
 
 The information might be on a webpage, not a PDF.
 
@@ -20,7 +21,10 @@ site:*.gov.au "harm reduction" filetype:pdf
 site:*.gov.au "harm reduction"
 ```
 
-### Fix 2: Loosen `site:` Restrictions
+</details>
+
+<details>
+<summary><strong>Fix 2: Loosen <code>site:</code> Restrictions</strong></summary>
 
 ```txt
 # Instead of:
@@ -33,18 +37,24 @@ site:*.nsw.gov.au "drug checking"
 site:*.gov.au "drug checking"
 ```
 
-### Fix 3: Swap Terminology
+</details>
+
+<details>
+<summary><strong>Fix 3: Swap Terminology</strong></summary>
 
 Different documents use different terms:
 
 | Try this                   | Instead of                 |
-| -------------------------- | -------------------------- |
+| :------------------------- | :------------------------- |
 | `"harm minimisation"`      | `"harm reduction"`         |
 | `"needle exchange"`        | `"needle syringe program"` |
 | `"opioid pharmacotherapy"` | `"OAT"` or `"OST"`         |
 | `"public health warning"`  | `"drug alert"`             |
 
-### Fix 4: Use `AROUND(n)` for Looser Phrasing
+</details>
+
+<details>
+<summary><strong>Fix 4: Use <code>AROUND(n)</code> for Looser Phrasing</strong></summary>
 
 ```txt
 # Instead of exact phrase:
@@ -54,7 +64,10 @@ Different documents use different terms:
 naloxone AROUND(5) program
 ```
 
-### Fix 5: Remove Date Filter
+</details>
+
+<details>
+<summary><strong>Fix 5: Remove Date Filter</strong></summary>
 
 Date filtering can be imprecise.
 
@@ -66,57 +79,48 @@ Date filtering can be imprecise.
 "drug checking" 2024
 ```
 
+</details>
+
+> [!TIP] **Debug technique:** Remove operators one at a time to find which one is too restrictive.
+
 ---
 
 ## 🟡 Too Many Results?
 
-### Step 1: Add Exact Phrases
+Progressive narrowing steps:
 
-```txt
-"exact phrase" instead of just words
-```
-
-### Step 2: Add `filetype:pdf`
-
-```txt
-"harm reduction" filetype:pdf
-```
-
-### Step 3: Add `site:*.gov.au`
-
-```txt
-"harm reduction" site:*.gov.au filetype:pdf
-```
-
-### Step 4: Add Date Filter
-
-```txt
-"harm reduction" site:*.gov.au filetype:pdf after:2023
-```
-
-### Step 5: Add Exclusions
-
-```txt
-"harm reduction" -news -opinion -jobs
-```
+| Step | Action              | Example                                       |
+| :--: | :------------------ | :-------------------------------------------- |
+|  1   | Add exact phrases   | `"exact phrase"` instead of just words        |
+|  2   | Add `filetype:pdf`  | `"harm reduction" filetype:pdf`               |
+|  3   | Add `site:*.gov.au` | `"harm reduction" site:*.gov.au filetype:pdf` |
+|  4   | Add date filter     | Add `after:2023`                              |
+|  5   | Add exclusions      | Add `-news -opinion -jobs`                    |
 
 ---
 
 ## 🚫 Filtering Out Stigmatising Content
 
-### Exclude Stigmatising Terms
+<details>
+<summary><strong>Exclude Stigmatising Terms</strong></summary>
 
 ```txt
 [your search] -"drug addict" -"drug abuse" -"substance abuse" -junkie
 ```
 
-### Prioritise People-First Language
+</details>
+
+<details>
+<summary><strong>Prioritise People-First Language</strong></summary>
 
 ```txt
 "people who use drugs" OR "people who inject drugs" [your topic]
 ```
 
-### Find Peer-Led Content (Not Just Peer-Reviewed)
+</details>
+
+<details>
+<summary><strong>Find Peer-Led Content (Not Just Peer-Reviewed)</strong></summary>
 
 ```txt
 # Peer-reviewed (academic)
@@ -126,38 +130,34 @@ site:*.edu.au [topic] filetype:pdf
 site:*.org.au "peer-led" [topic] filetype:pdf
 ```
 
-**Note:** Sometimes you need stigmatising terms to find older documents. That's okay—just be aware
-of context.
+</details>
+
+> [!NOTE] Sometimes you need stigmatising terms to find older documents. That's okay—just be aware
+> of context.
 
 ---
 
 ## 🔗 Broken Link or Deleted Page?
 
-### Option 1: Google Cache
+<details open>
+<summary><strong>Quick Reference: Archive Options</strong></summary>
 
-```txt
-cache:http://example.com/old-policy.pdf
-```
+| Option                                     | Best For                           |
+| :----------------------------------------- | :--------------------------------- |
+| [Wayback Machine](https://web.archive.org) | Most comprehensive, historical     |
+| [CachedView](https://cachedview.com/)      | Searches multiple archives at once |
+| [archive.today](https://archive.today/)    | Alternative, sometimes has more    |
+| `cache:URL` in Google                      | Recent pages (being phased out)    |
 
-**Note:** Google is phasing this out, but it sometimes still works.
+</details>
 
-### Option 2: Wayback Machine
+### Using Wayback Machine
 
 1. Go to [web.archive.org](https://web.archive.org)
 2. Paste the broken URL
-3. Browse archived versions
+3. Browse archived versions by date
 
-### Option 3: CachedView
-
-**URL:** [cachedview.com](https://cachedview.com/)
-
-Searches multiple archive services at once.
-
-### Option 4: Archive.today
-
-**URL:** [archive.today](https://archive.today/)
-
-Alternative archive that sometimes has content Wayback doesn't.
+> [!WARNING] Google Cache (`cache:URL`) is being phased out and may not work reliably.
 
 ---
 
@@ -165,9 +165,11 @@ Alternative archive that sometimes has content Wayback doesn't.
 
 ### CAPTCHA Appearing?
 
-- Slow down your searching
-- Use a different network
-- Try again later
+| Issue             | Solution                 |
+| :---------------- | :----------------------- |
+| Too many searches | Slow down your searching |
+| Network flagged   | Try a different network  |
+| Temporary block   | Wait and try again later |
 
 ### Results Seem Filtered?
 
@@ -179,25 +181,28 @@ Alternative archive that sometimes has content Wayback doesn't.
 
 ## 📋 Query Too Complex?
 
-Google may ignore operators if the query is too complex.
+> [!IMPORTANT] Google may silently ignore operators if the query is too complex.
 
-### Simplify Your Query
+<details>
+<summary><strong>Example: Simplifying a Complex Query</strong></summary>
 
 ```txt
-# Too complex:
+# Too complex (Google may ignore parts):
 site:*.health.*.gov.au (intitle:"drug alert" OR intitle:"drug warning" OR intitle:"drug notification") (opioid OR stimulant OR "novel substance") after:2024 filetype:pdf -news
 
-# Simpler:
+# Better - split into focused queries:
 site:*.health.*.gov.au intitle:"drug alert" opioid after:2024 filetype:pdf
+site:*.health.*.gov.au intitle:"drug warning" stimulant after:2024 filetype:pdf
 ```
 
-### Run Multiple Simpler Searches
-
-Instead of one complex query, run 2-3 focused queries.
+</details>
 
 ---
 
 ## 🔍 Can't Find What You Know Exists?
+
+<details>
+<summary><strong>Search Strategies</strong></summary>
 
 ### Try Title Search
 
@@ -219,7 +224,9 @@ intitle:"[document title]" filetype:pdf
 
 ### Check Web Archive
 
-The document may have been removed. Try Wayback Machine.
+The document may have been removed. Try [Wayback Machine](https://web.archive.org).
+
+</details>
 
 ---
 
@@ -233,60 +240,39 @@ Add exclusions for PDF viewer sites:
 -pdfviewer -flipbook -issuu -docplayer -scribd
 ```
 
-### Wrong Format
+### Syntax Check
 
-Verify you're using correct filetype syntax:
-
-```txt
-filetype:pdf   ✓
-filetype:.pdf  ✗
-file:pdf       ✗
-```
+| Correct         | Wrong           |
+| :-------------- | :-------------- |
+| `filetype:pdf`  | `filetype:.pdf` |
+| `filetype:xlsx` | `file:xlsx`     |
+| `ext:pdf`       | `extension:pdf` |
 
 ---
 
 ## 🌐 International Results When You Want Australian?
 
-### Add Australia Explicitly
-
-```txt
-[topic] Australia
-```
-
-### Exclude Other Countries
-
-```txt
-[topic] -USA -UK -Canada
-```
-
-### Use Australian Domains
-
-```txt
-site:*.au [topic]
-```
+| Strategy                | Query Addition             |
+| :---------------------- | :------------------------- |
+| Add Australia           | `[topic] Australia`        |
+| Exclude other countries | `[topic] -USA -UK -Canada` |
+| Use AU domains          | `site:*.au [topic]`        |
+| Government only         | `site:*.gov.au [topic]`    |
 
 ---
 
-## 💡 General Tips
+## 💡 General Debugging Checklist
 
-### Start Simple
+- [ ] `OR` is uppercase (not `or`)
+- [ ] Exact phrases have quotes (`"like this"`)
+- [ ] No space after `site:` or `filetype:`
+- [ ] Domain has wildcard for subdomains (`site:*.gov.au`)
+- [ ] Date format is correct (`after:2024-01-01`)
 
-Begin with basic search, add operators one at a time.
-
-### Test Incrementally
-
-Add one operator at a time to find what's causing issues.
-
-### Check Operator Syntax
-
-- `OR` must be uppercase
-- Exact phrases need quotes
-- No space after `site:` or `filetype:`
-
-### Try Alternative Operators
+### Alternative Operators
 
 | If this doesn't work | Try this              |
-| -------------------- | --------------------- |
+| :------------------- | :-------------------- |
 | `"exact phrase"`     | `AROUND(1)` for words |
 | `filetype:pdf`       | `ext:pdf`             |
 | `intitle:`           | Just search the title |
@@ -295,9 +281,11 @@ Add one operator at a time to find what's causing issues.
 
 ## 🔗 Related Resources
 
-- [Core Operators](02-core-operators.md)
-- [Advanced Operators](03-advanced-operators.md)
-- [Browser Extensions](tools/browser-extensions.md) - Archiving tools
+| Resource                                          | Description           |
+| :------------------------------------------------ | :-------------------- |
+| [Core Operators](02-core-operators.md)            | Operator reference    |
+| [Advanced Operators](03-advanced-operators.md)    | Power user techniques |
+| [Browser Extensions](tools/browser-extensions.md) | Archiving tools       |
 
 ---
 
