@@ -156,7 +156,7 @@ These are the operators you will use daily. Master these first.
 | **`intitle:`**  | Search only within the page title.                            | `intitle:"drug alert" site:*.gov.au`; `intitle:"health warning" opioid`; `intitle:"annual report" harm reduction`                                        |
 | **`inurl:`**    | Search within the URL string itself.                          | `inurl:publications filetype:pdf`; `inurl:submissions harm reduction`; `inurl:aod-services`                                                              |
 | **`OR`**        | Boolean logic. Search for _either_ term. Must be UPPERCASE.   | `("pill testing" OR "drug checking")`; `naloxone OR narcan OR Nyxoid`; `festival OR "music event"`                                                       |
-| **`site:`**     | Limit to a specific domain or TLD.                            | `site:*.gov.au "drug alert"`; `site:health.nsw.gov.au naloxone`; `site:*.edu.au harm reduction`                                                          |
+| **`site:`**     | Limit to a specific domain or TLD.                            | `site:*.gov.au "drug warning"`; `site:health.nsw.gov.au naloxone`; `site:*.edu.au harm reduction`                                                          |
 
 ---
 
@@ -329,9 +329,9 @@ _Monitor for high-strength or contaminated supply alerts._
 **Australian Government Alerts:**
 
 ```txt
-site:*.health.*.gov.au (intitle:"drug alert" OR intitle:"health alert" OR intitle:"public health alert") after:2025-01-01
-site:*.gov.au filetype:pdf ("drug alert" OR "public health warning" OR "urgent health alert")
-site:health.nsw.gov.au (intitle:"drug alert" OR inurl:alerts) (opioid OR stimulant OR ketamine OR "novel substance")
+site:*.health.*.gov.au (intitle:"drug alert" OR intitle:"drug warning" OR intitle:"drug notification") after:2025-01-01
+site:*.gov.au filetype:pdf ("drug alert" OR "drug warning" OR "drug notification")
+site:health.nsw.gov.au (intitle:"drug warning" OR inurl:alert) (opioid OR stimulant OR ketamine OR "novel substance")
 site:health.nsw.gov.au inurl:alerts "high strength" OR "unexpected substance"
 ("unexpected substance" AROUND(8) "detected") site:*.health.*.gov.au
 site:*.gov.au "urgent health alert" overdose
@@ -1625,7 +1625,7 @@ Run these 3 searches every Monday, updating the date:
 **1. Alerts (Priority):**
 
 ```txt
-site:*.health.*.gov.au intitle:"drug alert" after:2026-01-22
+site:*.health.*.gov.au intitle:"drug warning" after:2026-01-22
 ```
 
 **2. Research (Evidence Updates):**
@@ -1846,7 +1846,7 @@ site:*.org.au "peer-led" [topic] filetype:pdf
 | `after:2024`           | **The Now.** Ensures you aren't reading 2012 guidelines.   | Finding current, not outdated, information.         |
 | `AROUND(5)`            | **Proximity.** Words near each other but not exact phrase. | When exact phrase doesn't exist in documents.       |
 | `filetype:pdf`         | **The Document.** Skips news to find the actual report.    | Getting the source document, not media coverage.    |
-| `intitle:"drug alert"` | **The Warning.** Finds official health alerts instantly.   | Monitoring contaminated supply, overdose alerts.    |
+| `intitle:"drug warning"` | **The Warning.** Finds official health alerts instantly.   | Monitoring contaminated supply, overdose alerts.    |
 | `OR`                   | **Options.** Finds either term (must be UPPERCASE).        | Covering terminology variations.                    |
 | `site:*.edu.au`        | **The Evidence.** Research trials, papers, analysis.       | Finding peer-reviewed research, evaluations.        |
 | `site:*.gov.au`        | **The Truth Source.** Official policy, data, and alerts.   | Finding authoritative guidance, policy, alerts.     |
@@ -1865,7 +1865,7 @@ site:*.org.au "peer-led" [topic] filetype:pdf
 1. **NSW Drug Alerts:**
 
    ```txt
-   site:health.nsw.gov.au intitle:"drug alert" OR intitle:"health alert"
+   site:health.nsw.gov.au intitle:"drug warning" OR intitle:"clinical safety alert"
    ```
 
 1. **Drug Checking Research:**
@@ -2143,7 +2143,7 @@ Create a **Google Custom Search Engine** that only searches trusted harm reducti
 #### Alert 1: Drug Alerts (Priority - As-it-happens)
 
 ```txt
-site:*.health.*.gov.au ("drug alert" OR "public health alert" OR "urgent health alert")
+site:*.health.*.gov.au ("drug alert" OR "drug warning" OR "drug notification")
 ```
 
 #### Alert 2: Drug Checking News (Daily)
