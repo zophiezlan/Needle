@@ -301,7 +301,8 @@ site:*.edu.au "sex worker" OR "sex work" health OR "harm reduction" Australia fi
 
 ## 🔗 Related Resources
 
-- **Related Packs:** [LGBTQ+ Health](lgbtq-health.md), [Housing & Homelessness](housing-homelessness.md)
+- **Related Packs:** [LGBTQ+ Health](lgbtq-health.md),
+  [Housing & Homelessness](housing-homelessness.md)
 - **Key Organizations:**
   - [Scarlet Alliance](https://scarletalliance.org.au)
   - [SWOP NSW](https://swop.org.au)

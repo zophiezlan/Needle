@@ -253,7 +253,7 @@ intext:"lived experience" supervision
 
 Construct searches systematically:
 
-```
+```txt
 [DOMAIN] + [FORMAT] + [TOPIC] + [SYNONYMS] + [DATE] + [EXCLUSIONS]
 ```
 

@@ -1,9 +1,9 @@
 ---
 name: New Dork Pack Proposal
 about: Propose a new topic area or dork pack
-title: '[NEW PACK] '
+title: "[NEW PACK] "
 labels: enhancement, new-content
-assignees: ''
+assignees: ""
 ---
 
 ## Proposed Topic
@@ -11,6 +11,7 @@ assignees: ''
 **Pack Name:** (e.g., `lgbtq-health.md`)
 
 **Topic Area:**
+
 <!-- What harm reduction topic does this cover? -->
 
 ## Why This Is Needed

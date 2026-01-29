@@ -69,7 +69,7 @@ Add trusted harm reduction domains to "Sites to search":
 
 ### Core Harm Reduction
 
-```
+```txt
 *.gov.au
 *.edu.au
 nuaa.org.au
@@ -83,7 +83,7 @@ ndarc.med.unsw.edu.au
 
 ### Research Focus
 
-```
+```txt
 *.edu.au
 ndarc.med.unsw.edu.au
 burnet.edu.au
@@ -95,7 +95,7 @@ matildacentre.com.au
 
 ### Policy Focus
 
-```
+```txt
 *.gov.au
 aph.gov.au
 health.gov.au
@@ -107,7 +107,7 @@ vaada.org.au
 
 ### Peer Organisations
 
-```
+```txt
 nuaa.org.au
 aivl.org.au
 hrvic.org.au

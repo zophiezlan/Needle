@@ -234,7 +234,7 @@ site:lowitja.org.au "alcohol" OR "drug" OR "substance" filetype:pdf
 
 [👉 **Run this Search**](https://www.google.com/search?q=%22National%20Aboriginal%20and%20Torres%20Strait%20Islander%22%20drug%20OR%20alcohol%20strategy%0A%22Aboriginal%20and%20Torres%20Strait%20Islander%22%20health%20plan%20AOD)
 
-### AIHW Aboriginal Data
+### AIHW Aboriginal Data (Statistics)
 
 ```txt
 site:aihw.gov.au ("Aboriginal" OR "Indigenous") ("alcohol and other drugs" OR substance)

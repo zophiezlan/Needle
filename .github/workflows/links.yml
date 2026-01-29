@@ -7,7 +7,7 @@ on:
     branches: [main]
   schedule:
     # Run weekly on Sundays at midnight UTC
-    - cron: '0 0 * * 0'
+    - cron: "0 0 * * 0"
   workflow_dispatch:
 
 jobs:
@@ -22,7 +22,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: "20"
 
       - name: Install markdown-link-check
         run: npm install -g markdown-link-check
@@ -41,9 +41,9 @@ jobs:
       - name: Check internal links
         uses: gaurav-nelson/github-action-markdown-link-check@v1
         with:
-          use-quiet-mode: 'yes'
-          use-verbose-mode: 'no'
-          config-file: '.markdown-link-check.json'
-          folder-path: 'docs/'
-          file-extension: '.md'
-          check-modified-files-only: 'no'
+          use-quiet-mode: "yes"
+          use-verbose-mode: "no"
+          config-file: ".markdown-link-check.json"
+          folder-path: "docs/"
+          file-extension: ".md"
+          check-modified-files-only: "no"

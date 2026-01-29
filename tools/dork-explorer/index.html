@@ -455,7 +455,12 @@
         <div class="brand"><span>⚡</span> Dork Explorer</div>
 
         <div class="nav-scroller">
-          <div class="nav-item active" onclick="App.goToAll()" role="button" aria-label="Show all dorks">
+          <div
+            class="nav-item active"
+            onclick="App.goToAll()"
+            role="button"
+            aria-label="Show all dorks"
+          >
             <span style="display: flex; gap: 10px; align-items: center">
               <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path
@@ -522,7 +527,12 @@
               <input type="checkbox" id="mod-recent" onchange="App.onModifierChange()" />
               <span>📅 Recent (after:2024)</span>
             </label>
-            <button class="toggle-chip" id="export-btn" onclick="App.exportDorks()" aria-label="Export filtered dorks">
+            <button
+              class="toggle-chip"
+              id="export-btn"
+              onclick="App.exportDorks()"
+              aria-label="Export filtered dorks"
+            >
               <span>📥 Export</span>
             </button>
           </div>
@@ -584,23 +594,23 @@
           const params = new URLSearchParams(window.location.search);
 
           // Load pack
-          const pack = params.get('pack');
-          if (pack && (pack === 'all' || window.DORK_DATA.some(p => p.id === pack))) {
+          const pack = params.get("pack");
+          if (pack && (pack === "all" || window.DORK_DATA.some((p) => p.id === pack))) {
             this.state.currentPackId = pack;
           }
 
           // Load search query
-          const q = params.get('q');
+          const q = params.get("q");
           if (q) {
             this.state.searchQuery = q.toLowerCase();
-            document.getElementById('search-input').value = q;
+            document.getElementById("search-input").value = q;
           }
 
           // Load modifiers
-          if (params.get('au') === '1') document.getElementById('mod-au').checked = true;
-          if (params.get('gov') === '1') document.getElementById('mod-gov').checked = true;
-          if (params.get('pdf') === '1') document.getElementById('mod-pdf').checked = true;
-          if (params.get('recent') === '1') document.getElementById('mod-recent').checked = true;
+          if (params.get("au") === "1") document.getElementById("mod-au").checked = true;
+          if (params.get("gov") === "1") document.getElementById("mod-gov").checked = true;
+          if (params.get("pdf") === "1") document.getElementById("mod-pdf").checked = true;
+          if (params.get("recent") === "1") document.getElementById("mod-recent").checked = true;
 
           this.updateNavSelection();
         },
@@ -608,20 +618,20 @@
         saveStateToURL() {
           const params = new URLSearchParams();
 
-          if (this.state.currentPackId !== 'all') params.set('pack', this.state.currentPackId);
-          if (this.state.searchQuery) params.set('q', this.state.searchQuery);
+          if (this.state.currentPackId !== "all") params.set("pack", this.state.currentPackId);
+          if (this.state.searchQuery) params.set("q", this.state.searchQuery);
 
           const mods = this.getModifiers();
-          if (mods.au) params.set('au', '1');
-          if (mods.gov) params.set('gov', '1');
-          if (mods.pdf) params.set('pdf', '1');
-          if (mods.recent) params.set('recent', '1');
+          if (mods.au) params.set("au", "1");
+          if (mods.gov) params.set("gov", "1");
+          if (mods.pdf) params.set("pdf", "1");
+          if (mods.recent) params.set("recent", "1");
 
           const newURL = params.toString()
             ? `${window.location.pathname}?${params.toString()}`
             : window.location.pathname;
 
-          window.history.replaceState({}, '', newURL);
+          window.history.replaceState({}, "", newURL);
         },
 
         onModifierChange() {
@@ -643,7 +653,7 @@
           // Keyboard shortcuts
           document.addEventListener("keydown", (e) => {
             // Ignore if typing in an input/textarea
-            const isTyping = ['INPUT', 'TEXTAREA'].includes(document.activeElement.tagName);
+            const isTyping = ["INPUT", "TEXTAREA"].includes(document.activeElement.tagName);
 
             // "/" to focus search (when not typing)
             if (e.key === "/" && !isTyping) {
@@ -674,8 +684,8 @@
         },
 
         showKeyboardHelp() {
-          const help = document.createElement('div');
-          help.id = 'keyboard-help';
+          const help = document.createElement("div");
+          help.id = "keyboard-help";
           help.innerHTML = `
             <div style="position:fixed;inset:0;background:rgba(0,0,0,0.8);display:flex;align-items:center;justify-content:center;z-index:1000;" onclick="this.remove()">
               <div style="background:var(--bg-card);border:1px solid var(--border-subtle);border-radius:12px;padding:24px;max-width:400px;" onclick="event.stopPropagation()">
@@ -697,33 +707,31 @@
           const filtered = this.getFilteredDorks();
 
           if (filtered.length === 0) {
-            alert('No dorks to export. Adjust your filters first.');
+            alert("No dorks to export. Adjust your filters first.");
             return;
           }
 
           // Create CSV content
-          const csvRows = [
-            ['Title', 'Pack', 'Category', 'Query', 'Explanation'].join(',')
-          ];
+          const csvRows = [["Title", "Pack", "Category", "Query", "Explanation"].join(",")];
 
-          filtered.forEach(dork => {
+          filtered.forEach((dork) => {
             const row = [
-              `"${(dork.title || '').replace(/"/g, '""')}"`,
-              `"${(dork.packTitle || '').replace(/"/g, '""')}"`,
-              `"${(dork.category || 'General').replace(/"/g, '""')}"`,
+              `"${(dork.title || "").replace(/"/g, '""')}"`,
+              `"${(dork.packTitle || "").replace(/"/g, '""')}"`,
+              `"${(dork.category || "General").replace(/"/g, '""')}"`,
               `"${this.applyModifiers(dork.query).replace(/"/g, '""')}"`,
-              `"${(dork.explanation || '').replace(/"/g, '""').replace(/\n/g, ' ')}"`
+              `"${(dork.explanation || "").replace(/"/g, '""').replace(/\n/g, " ")}"`,
             ];
-            csvRows.push(row.join(','));
+            csvRows.push(row.join(","));
           });
 
-          const csvContent = csvRows.join('\n');
-          const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+          const csvContent = csvRows.join("\n");
+          const blob = new Blob([csvContent], { type: "text/csv;charset=utf-8;" });
           const url = URL.createObjectURL(blob);
 
-          const link = document.createElement('a');
+          const link = document.createElement("a");
           link.href = url;
-          link.download = `dork-export-${this.state.currentPackId}-${new Date().toISOString().split('T')[0]}.csv`;
+          link.download = `dork-export-${this.state.currentPackId}-${new Date().toISOString().split("T")[0]}.csv`;
           link.click();
 
           URL.revokeObjectURL(url);

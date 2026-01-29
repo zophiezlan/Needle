@@ -1,6 +1,7 @@
 # Archive
 
-This directory contains historical versions and source materials for the Harm Reduction Google Dork Guide.
+This directory contains historical versions and source materials for the Harm Reduction Google Dork
+Guide.
 
 ---
 
@@ -8,8 +9,8 @@ This directory contains historical versions and source materials for the Harm Re
 
 ### Original Guide Versions
 
-| File | Description |
-|:-----|:------------|
+| File                                               | Description                                              |
+| :------------------------------------------------- | :------------------------------------------------------- |
 | [README-v3.1-original.md](README-v3.1-original.md) | The original v3.1 single-file guide before restructuring |
 
 ### Raw Imports
@@ -35,10 +36,12 @@ We maintain this archive for:
 
 ## Note on Linting
 
-Files in this archive are **excluded from linting** to preserve their original formatting. See `.prettierignore` and `.markdownlintignore` for configuration.
+Files in this archive are **excluded from linting** to preserve their original formatting. See
+`.prettierignore` and `.markdownlint-cli2.jsonc` for configuration.
 
 ---
 
 ## Contributing
 
-If you have historical harm reduction search resources that should be preserved here, please [open an issue](../../issues/new) with details about the source and its provenance.
+If you have historical harm reduction search resources that should be preserved here, please
+[open an issue](../../issues/new) with details about the source and its provenance.

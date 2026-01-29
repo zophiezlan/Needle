@@ -53,7 +53,7 @@ Content goes here. **Markdown works inside.**
 </details>
 ```
 
-### Common Patterns
+### Common Collapsible Patterns
 
 #### FAQ Section
 
@@ -159,27 +159,24 @@ Use `txt` for dorks/queries, not `bash` or `shell`.
 ```txt
 site:*.gov.au filetype:pdf "harm reduction"
 ```
-````
 
 **What this does:**
 
 - `site:*.gov.au` → Limits to Australian government
 - `filetype:pdf` → Only PDF documents
 - `"harm reduction"` → Exact phrase match
-
 ````
 
 ### Live Search Links
 
 Include clickable search links after queries:
 
-```markdown
+````markdown
 ```txt
 site:*.gov.au "drug alert" after:2025-01-01
-````
+```
 
 [👉 **Run this Search**](https://www.google.com/search?q=site%3A*.gov.au%20%22drug%20alert%22%20after%3A2025-01-01)
-
 ````
 
 ---
@@ -196,7 +193,7 @@ site:*.gov.au "drug alert" after:2025-01-01
 [← Back to Section](../README.md) | [← Main Guide](../../README.md)
 
 ---
-````
+```
 
 ### Section Progression Emojis
 
@@ -350,4 +347,4 @@ Always provide descriptive alt text:
 
 ---
 
-_Last updated: January 2026_
+Last updated: January 2026.

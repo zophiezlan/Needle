@@ -26,7 +26,7 @@
 
 ---
 
-#### Evidence Log
+#### Example Evidence Log
 
 | Date         | Category   | Finding         | Source / URL | Dork Used      | Confidence | Notes              |
 | :----------- | :--------- | :-------------- | :----------- | :------------- | :--------: | :----------------- |
@@ -62,7 +62,7 @@
 
 ---
 
-#### Successful Dorks Library
+#### Example Successful Dorks Library
 
 Save queries that worked well for reuse:
 
@@ -78,7 +78,7 @@ Save queries that worked well for reuse:
 
 ---
 
-#### Gaps Identified
+#### Example Gaps Identified
 
 > [!NOTE] Document what you couldn't find or what questions remain unanswered.
 

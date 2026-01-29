@@ -1,6 +1,7 @@
 # Contributing to the Harm Reduction Google Dork Guide
 
-Thank you for your interest in improving this resource! Contributions from the harm reduction community help keep this guide relevant, accurate, and useful.
+Thank you for your interest in improving this resource! Contributions from the harm reduction
+community help keep this guide relevant, accurate, and useful.
 
 ---
 
@@ -92,19 +93,19 @@ When you submit a PR, please confirm:
 
 When contributing new dorks, use this structure:
 
-```markdown
+````markdown
 ### Descriptive Name
 
 ```txt
 site:example.com "search terms" filetype:pdf
 ```
+````
 
 [👉 **Run this Search**](https://www.google.com/search?q=...)
 
 **What this finds:** Brief explanation of what results to expect.
 
 **Why it's useful:** Context for harm reduction workers.
-```
 
 ---
 
@@ -144,7 +145,8 @@ All contributors are appreciated! Significant contributions will be acknowledged
 
 ## Code of Conduct
 
-All contributors must follow our [Code of Conduct](CODE_OF_CONDUCT.md). We're committed to maintaining a respectful, inclusive community centered on harm reduction values.
+All contributors must follow our [Code of Conduct](CODE_OF_CONDUCT.md). We're committed to
+maintaining a respectful, inclusive community centered on harm reduction values.
 
 ---
 

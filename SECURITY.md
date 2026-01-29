@@ -1,6 +1,8 @@
 # Security & Responsible Use Guidelines
 
-This document outlines ethical guidelines for using Google dorks in harm reduction work. These are not just suggestions—they are foundational principles that protect individuals, communities, and the integrity of harm reduction practice.
+This document outlines ethical guidelines for using Google dorks in harm reduction work. These are
+not just suggestions—they are foundational principles that protect individuals, communities, and the
+integrity of harm reduction practice.
 
 ---
 
@@ -10,22 +12,24 @@ This document outlines ethical guidelines for using Google dorks in harm reducti
 
 The fundamental principle of harm reduction applies to information searching:
 
-- **Never search for identifiable individuals** in connection with drug use, overdose, or health status
+- **Never search for identifiable individuals** in connection with drug use, overdose, or health
+  status
 - **Never seek leaked or exposed personal data** - if found accidentally, stop immediately
-- **Prefer de-identified, aggregated sources** - public health data, not personal stories without consent
+- **Prefer de-identified, aggregated sources** - public health data, not personal stories without
+  consent
 - **Consider downstream impacts** - how could this information be misused?
 
 ### 2. Public Interest, Not Personal Interest
 
 Google dorking should serve legitimate harm reduction purposes:
 
-| Appropriate Uses | Inappropriate Uses |
-|:-----------------|:-------------------|
+| Appropriate Uses                 | Inappropriate Uses                          |
+| :------------------------------- | :------------------------------------------ |
 | Finding government health alerts | Searching for individuals' drug use history |
-| Locating service directories | Harvesting personal contact information |
-| Accessing research and evidence | Finding leaked medical records |
-| Monitoring policy developments | Exposing private communications |
-| Discovering workforce resources | Circumventing access controls |
+| Locating service directories     | Harvesting personal contact information     |
+| Accessing research and evidence  | Finding leaked medical records              |
+| Monitoring policy developments   | Exposing private communications             |
+| Discovering workforce resources  | Circumventing access controls               |
 
 ### 3. Respect Privacy Boundaries
 
@@ -42,7 +46,7 @@ Even public information has privacy implications:
 
 Before running a search, ask yourself:
 
-```
+```txt
 ┌─────────────────────────────────────────────────────────────┐
 │  1. PURPOSE: Does this serve legitimate harm reduction?     │
 │  2. NECESSITY: Is this search needed, or is there a        │
@@ -76,7 +80,9 @@ Before running a search, ask yourself:
 3. **Report responsibly**:
    - Contact the data owner if identifiable
    - Report to [ACSC](https://www.cyber.gov.au/report) (Australia) or equivalent
-   - Consider [responsible disclosure](https://www.cyber.gov.au/resources-business-and-government/governance-and-user-education/governance/vulnerability-disclosure) pathways
+   - Consider
+     [responsible disclosure](https://www.cyber.gov.au/resources-business-and-government/governance-and-user-education/governance/vulnerability-disclosure)
+     pathways
 4. **Do not publicize** until the issue is resolved
 
 ---
@@ -115,7 +121,8 @@ Before running a search, ask yourself:
 - Using searches to **harass or stalk** individuals
 - **Republishing** copyrighted material without permission
 
-> [!WARNING] This is general guidance, not legal advice. Laws vary by jurisdiction. When in doubt, consult your organization's legal or compliance team.
+> [!WARNING] This is general guidance, not legal advice. Laws vary by jurisdiction. When in doubt,
+> consult your organization's legal or compliance team.
 
 ---
 
@@ -157,6 +164,7 @@ If you find content in this guide that could facilitate harm:
 ### General Security Concerns
 
 For general cybersecurity issues in Australia:
+
 - **Australian Cyber Security Centre:** [cyber.gov.au/report](https://www.cyber.gov.au/report)
 - **OAIC (Privacy Complaints):** [oaic.gov.au](https://www.oaic.gov.au/)
 
@@ -164,14 +172,14 @@ For general cybersecurity issues in Australia:
 
 ## Summary
 
-| Do | Don't |
-|:---|:------|
-| Search for public health information | Search for identifiable individuals |
-| Find official documents and data | Access restricted or leaked data |
-| Use de-identified, aggregate sources | Expose private communications |
-| Verify and cite your sources | Circumvent access controls |
-| Report accidental data exposure | Share or exploit found vulnerabilities |
-| Follow organizational policies | Ignore ethical boundaries |
+| Do                                   | Don't                                  |
+| :----------------------------------- | :------------------------------------- |
+| Search for public health information | Search for identifiable individuals    |
+| Find official documents and data     | Access restricted or leaked data       |
+| Use de-identified, aggregate sources | Expose private communications          |
+| Verify and cite your sources         | Circumvent access controls             |
+| Report accidental data exposure      | Share or exploit found vulnerabilities |
+| Follow organizational policies       | Ignore ethical boundaries              |
 
 ---
 
@@ -183,4 +191,5 @@ For general cybersecurity issues in Australia:
 
 ---
 
-_Ethical searching is harm reduction. The same principles that guide our work with people guide how we find and use information._
+_Ethical searching is harm reduction. The same principles that guide our work with people guide how
+we find and use information._

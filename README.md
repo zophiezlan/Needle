@@ -4,9 +4,9 @@
 
 **A comprehensive search guide for the AOD & harm reduction workforce.**
 
-[![Version](https://img.shields.io/badge/version-4.0-blue.svg)](#changelog)
-[![Updated](https://img.shields.io/badge/updated-January%202026-green.svg)](#changelog)
-[![License](https://img.shields.io/badge/license-Share%20Freely-orange.svg)](#-license--attribution)
+[![Version](https://img.shields.io/badge/version-4.0-blue.svg)](CHANGELOG.md)
+[![Updated](https://img.shields.io/badge/updated-January%202026-green.svg)](CHANGELOG.md)
+[![License](https://img.shields.io/badge/license-Share%20Freely-orange.svg)](#license--attribution)
 
 </div>
 
@@ -64,7 +64,7 @@
 
 Ready-to-use search queries organized by harm reduction task:
 
-#### Core Services & Programs
+### Core Services & Programs
 
 | Pack                                              | Description                                    |
 | :------------------------------------------------ | :--------------------------------------------- |
@@ -74,7 +74,7 @@ Ready-to-use search queries organized by harm reduction task:
 | [NSP](docs/dork-packs/nsp.md)                     | Needle & syringe programs                      |
 | [OAT/OST](docs/dork-packs/oat-ost.md)             | Opioid agonist treatment                       |
 
-#### Settings & Populations
+### Settings & Populations
 
 | Pack                                                    | Description                         |
 | :------------------------------------------------------ | :---------------------------------- |
@@ -84,14 +84,14 @@ Ready-to-use search queries organized by harm reduction task:
 | [Rural & Remote](docs/dork-packs/rural-remote.md)       | Non-metropolitan Australia          |
 | [Youth](docs/dork-packs/youth.md)                       | Young people & prevention           |
 
-#### Workforce & Peer Practice
+### Workforce & Peer Practice
 
 | Pack                                                | Description                       |
 | :-------------------------------------------------- | :-------------------------------- |
 | [Peer Knowledge](docs/dork-packs/peer-knowledge.md) | Peer publications & storytelling  |
 | [Peer Workforce](docs/dork-packs/peer-workforce.md) | Training, supervision, frameworks |
 
-#### Research & Evidence
+### Research & Evidence
 
 | Pack                                                          | Description                         |
 | :------------------------------------------------------------ | :---------------------------------- |
@@ -99,14 +99,14 @@ Ready-to-use search queries organized by harm reduction task:
 | [Research](docs/dork-packs/research.md)                       | Academic evidence & grey literature |
 | [Service Directories](docs/dork-packs/service-directories.md) | Finding AOD services                |
 
-#### Policy & Advocacy
+### Policy & Advocacy
 
 | Pack                                                    | Description                    |
 | :------------------------------------------------------ | :----------------------------- |
 | [International](docs/dork-packs/international.md)       | Global best practice           |
 | [Policy & Advocacy](docs/dork-packs/policy-advocacy.md) | Inquiries, submissions, policy |
 
-#### Intersections
+### Intersections
 
 | Pack                                                              | Description                      |
 | :---------------------------------------------------------------- | :------------------------------- |
@@ -114,7 +114,7 @@ Ready-to-use search queries organized by harm reduction task:
 | [Housing & Homelessness](docs/dork-packs/housing-homelessness.md) | Social determinants              |
 | [Mental Health](docs/dork-packs/mental-health.md)                 | Dual diagnosis & co-occurring    |
 
-#### Specialized
+### Specialized
 
 | Pack                                                        | Description                            |
 | :---------------------------------------------------------- | :------------------------------------- |
@@ -144,7 +144,7 @@ Ready-to-use search queries organized by harm reduction task:
 <details>
 <summary><strong>🛠️ Tools & Resources</strong></summary>
 
-#### Interactive Tools
+### Interactive Tools
 
 | Tool                                               | Description                      |
 | :------------------------------------------------- | :------------------------------- |
@@ -153,7 +153,7 @@ Ready-to-use search queries organized by harm reduction task:
 | [Google Alerts](docs/tools/google-alerts.md)       | Automated monitoring             |
 | [Custom Search](docs/tools/custom-search.md)       | Build team search engines        |
 
-#### Research Aids
+### Research Aids
 
 | Resource                                               | Description                    |
 | :----------------------------------------------------- | :----------------------------- |
@@ -162,7 +162,7 @@ Ready-to-use search queries organized by harm reduction task:
 | [OSINT](docs/tools/osint.md)                           | Open source intelligence tools |
 | [Privacy & Security](docs/tools/privacy-security.md)   | Protect yourself & clients     |
 
-#### Quick References
+### Quick References
 
 | Resource                                                     | Description                   |
 | :----------------------------------------------------------- | :---------------------------- |
@@ -278,6 +278,8 @@ use. **Peer knowledge is expert knowledge.**
 - **Community standards:** [Code of Conduct](CODE_OF_CONDUCT.md)
 
 ---
+
+<a id="license--attribution"></a>
 
 ## 📜 License & Attribution
 

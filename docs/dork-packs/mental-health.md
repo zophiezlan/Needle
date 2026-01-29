@@ -64,7 +64,7 @@ Find dual diagnosis resources:
 
 [👉 **Run this Search**](<https://www.google.com/search?q=(%22trauma%22%20OR%20%22PTSD%22)%20%22substance%20use%22%20OR%20%22drug%20use%22%20treatment%20Australia>)
 
-### Integrated Treatment
+### Integrated Treatment Models
 
 ```txt
 "integrated treatment" mental health substance use Australia

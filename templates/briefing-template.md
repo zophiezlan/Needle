@@ -25,7 +25,7 @@
 
 ---
 
-#### Key Findings
+#### Example Key Findings
 
 |  #  | Finding                          | Source             |  Confidence  |
 | :-: | :------------------------------- | :----------------- | :----------: |
@@ -35,7 +35,7 @@
 
 ---
 
-#### Source Verification
+#### Example Source Verification
 
 - [ ] Sources triangulated (Gov + Research + Peer perspectives)
 - [ ] Currency verified (Published within acceptable timeframe)
@@ -44,13 +44,13 @@
 
 ---
 
-#### Implications
+#### Example Implications
 
 > [!IMPORTANT] [One sentence: What does this mean for our work?]
 
 ---
 
-#### Recommended Actions
+#### Example Recommended Actions
 
 | Priority | Action                | Owner  | Due    |
 | :------: | :-------------------- | :----- | :----- |

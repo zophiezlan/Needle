@@ -15,21 +15,23 @@ delivery. **Never use to investigate or expose individuals.**
 
 ## 📑 Table of Contents
 
-- [Learning & Frameworks](#-osint-learning--frameworks)
-- [URL & Domain Tools](#-url--domain-tools)
-- [Document Analysis](#-document-analysis)
-- [Search Tools](#-search-tools)
-- [Alternative Search Engines](#-alternative-search-engines)
-- [IoT & Infrastructure Search](#-iot--infrastructure-search)
-- [Automated OSINT Tools](#-automated-osint-tools)
-- [Username & Social Media](#-username--social-media-tools)
-- [Geolocation Tools](#-geolocation-tools)
-- [Data Breach Checking](#-data-breach-checking)
-- [Image Analysis](#-image-analysis)
-- [Archiving](#️-archiving)
-- [Australian-Specific Resources](#-australian-specific-resources)
+- [Learning & Frameworks](#osint-learning--frameworks)
+- [URL & Domain Tools](#url--domain-tools)
+- [Document Analysis](#document-analysis)
+- [Search Tools](#search-tools)
+- [Alternative Search Engines](#alternative-search-engines)
+- [IoT & Infrastructure Search](#iot--infrastructure-search)
+- [Automated OSINT Tools](#automated-osint-tools)
+- [Username & Social Media](#username--social-media-tools)
+- [Geolocation Tools](#geolocation-tools)
+- [Data Breach Checking](#data-breach-checking)
+- [Image Analysis](#image-analysis)
+- [Archiving](#archiving)
+- [Australian-Specific Resources](#australian-specific-resources)
 
 ---
+
+<a id="osint-learning--frameworks"></a>
 
 ## 📚 OSINT Learning & Frameworks
 
@@ -66,6 +68,8 @@ Pre-configured Linux VM with OSINT tools installed. Designed for missing persons
 
 ---
 
+<a id="url--domain-tools"></a>
+
 ## 🔗 URL & Domain Tools
 
 ### URLScan.io
@@ -88,6 +92,8 @@ Check if a site is actually down or just blocked for you.
 
 ---
 
+<a id="document-analysis"></a>
+
 ## 📄 Document Analysis
 
 ### PDF Examiner
@@ -103,6 +109,8 @@ Analyse PDF files for metadata. See when documents were created, by whom.
 Read metadata from images and documents. Desktop application.
 
 ---
+
+<a id="search-tools"></a>
 
 ## 🔍 Search Tools
 
@@ -127,6 +135,8 @@ Massive curated list of dork databases.
 
 ---
 
+<a id="alternative-search-engines"></a>
+
 ## 🌐 Alternative Search Engines
 
 ### SearXNG
@@ -148,6 +158,8 @@ Independent index with good operator support.
 Sometimes finds content Google misses. Use for research only.
 
 ---
+
+<a id="iot--infrastructure-search"></a>
 
 ## 🌐 IoT & Infrastructure Search
 
@@ -176,6 +188,8 @@ Chinese cyberspace search engine. Alternative to Shodan.
 Cyberspace search engine with asset mapping capabilities.
 
 ---
+
+<a id="automated-osint-tools"></a>
 
 ## 🤖 Automated OSINT Tools
 
@@ -217,6 +231,8 @@ Find metadata and hidden information in documents from websites.
 
 ---
 
+<a id="username--social-media-tools"></a>
+
 ## 👤 Username & Social Media Tools
 
 ### Sherlock
@@ -250,6 +266,8 @@ Check username and domain availability across platforms.
 Professional people search across multiple data sources.
 
 ---
+
+<a id="geolocation-tools"></a>
 
 ## 🗺️ Geolocation Tools
 
@@ -285,6 +303,8 @@ Identify buildings from images. Useful for geolocation verification.
 
 ---
 
+<a id="data-breach-checking"></a>
+
 ## 🔓 Data Breach Checking
 
 ### Have I Been Pwned
@@ -306,6 +326,8 @@ Check if credentials were compromised in infostealer malware attacks.
 Search breached databases by email, username, IP, name, phone, VIN.
 
 ---
+
+<a id="image-analysis"></a>
 
 ## 🖼️ Image Analysis
 
@@ -341,6 +363,8 @@ AI-powered image enhancement and upscaling.
 
 ---
 
+<a id="archiving"></a>
+
 ## 🗄️ Archiving
 
 ### Wayback Machine
@@ -374,6 +398,8 @@ Australian websites archived since 1996 by National Library of Australia.
 Search archived Australian websites via Trove.
 
 ---
+
+<a id="australian-specific-resources"></a>
 
 ## 🇦🇺 Australian-Specific Resources
 

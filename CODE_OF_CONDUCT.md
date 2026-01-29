@@ -2,7 +2,9 @@
 
 ## Our Commitment
 
-The Harm Reduction Google Dork Guide is a community resource built on harm reduction principles. We are committed to providing a welcoming, respectful, and supportive environment for all contributors, regardless of their background, identity, or experience with drug use.
+The Harm Reduction Google Dork Guide is a community resource built on harm reduction principles. We
+are committed to providing a welcoming, respectful, and supportive environment for all contributors,
+regardless of their background, identity, or experience with drug use.
 
 ---
 
@@ -65,16 +67,17 @@ This project is grounded in core harm reduction principles:
 
 We use language that respects the dignity of people who use drugs:
 
-| Preferred | Avoid |
-|:----------|:------|
-| Person who uses drugs | Addict, junkie, user |
-| Substance use | Substance abuse |
-| Positive/negative (test results) | Clean/dirty |
-| In recovery, not currently using | Clean |
-| Overdose, poisoning | OD'd (casually) |
-| Medication for opioid use disorder | Replacement therapy |
+| Preferred                          | Avoid                |
+| :--------------------------------- | :------------------- |
+| Person who uses drugs              | Addict, junkie, user |
+| Substance use                      | Substance abuse      |
+| Positive/negative (test results)   | Clean/dirty          |
+| In recovery, not currently using   | Clean                |
+| Overdose, poisoning                | OD'd (casually)      |
+| Medication for opioid use disorder | Replacement therapy  |
 
-> [!NOTE] When researching historical documents, you may need to use older terminology in search queries. This is acceptable for research purposes—context matters.
+> [!NOTE] When researching historical documents, you may need to use older terminology in search
+> queries. This is acceptable for research purposes—context matters.
 
 ---
 
@@ -109,7 +112,8 @@ If you experience or witness behavior that violates this Code of Conduct:
 
 ## Enforcement
 
-Project maintainers are responsible for clarifying and enforcing standards of acceptable behavior. They have the right and responsibility to:
+Project maintainers are responsible for clarifying and enforcing standards of acceptable behavior.
+They have the right and responsibility to:
 
 - Remove, edit, or reject contributions that violate this Code of Conduct
 - Temporarily or permanently ban contributors for inappropriate behavior
@@ -119,7 +123,9 @@ Project maintainers are responsible for clarifying and enforcing standards of ac
 
 ## Attribution
 
-This Code of Conduct is adapted from the [Contributor Covenant](https://www.contributor-covenant.org/) and informed by harm reduction principles from organizations including:
+This Code of Conduct is adapted from the
+[Contributor Covenant](https://www.contributor-covenant.org/) and informed by harm reduction
+principles from organizations including:
 
 - [Harm Reduction International](https://hri.global/)
 - [National Harm Reduction Coalition](https://harmreduction.org/)
@@ -129,8 +135,10 @@ This Code of Conduct is adapted from the [Contributor Covenant](https://www.cont
 
 ## Questions?
 
-If you have questions about this Code of Conduct or need clarification on expected behavior, please open an issue or contact project maintainers.
+If you have questions about this Code of Conduct or need clarification on expected behavior, please
+open an issue or contact project maintainers.
 
 ---
 
-_This Code of Conduct reflects our commitment to harm reduction values and creating a supportive community for everyone working to reduce drug-related harm._
+_This Code of Conduct reflects our commitment to harm reduction values and creating a supportive
+community for everyone working to reduce drug-related harm._

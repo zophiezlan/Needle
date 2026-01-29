@@ -1,9 +1,9 @@
 ---
 name: Bug Report / Broken Dork
 about: Report a dork that no longer works or documentation issue
-title: '[BUG] '
+title: "[BUG] "
 labels: bug
-assignees: ''
+assignees: ""
 ---
 
 ## Description
@@ -13,6 +13,7 @@ A clear description of the issue.
 ## Broken Dork (if applicable)
 
 **Location in documentation:**
+
 <!-- e.g., docs/dork-packs/drug-alerts.md -->
 
 **The dork that doesn't work:**
