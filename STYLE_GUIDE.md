@@ -12,12 +12,16 @@ Use GitHub's built-in alert syntax for consistent, visually distinctive callouts
 
 > [!NOTE]
 > Supplementary information users should know.
+
 > [!TIP]
 > Helpful advice for better results.
+
 > [!IMPORTANT]
 > Essential information for success.
+
 > [!WARNING]
 > Potential issues requiring attention.
+
 > [!CAUTION]
 > Risks or negative consequences.
 
