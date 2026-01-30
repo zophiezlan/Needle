@@ -295,10 +295,8 @@ Press <kbd>Ctrl</kbd>+<kbd>F</kbd> to search the page.
 
 ### Version/Compatibility Badges
 
-```markdown
 > [!NOTE]
 > This operator requires Google Search. It may not work on other search engines.
-```
 
 ### Deprecated Content
 
