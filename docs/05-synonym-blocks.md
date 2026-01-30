@@ -2,7 +2,7 @@
 
 > Copy these pre-built term groups to expand your searches and catch all relevant documents.
 
-[← Back to Main Guide](../README.md) | [← Domain Map](04-domain-map.md) |
+[← Back to Main Guide](README.md) | [← Domain Map](04-domain-map.md) |
 [Next: Dork Packs →](dork-packs/)
 
 ---

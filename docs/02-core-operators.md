@@ -2,7 +2,7 @@
 
 > Master these operators first. They cover 90% of harm reduction search needs.
 
-[← Back to Main Guide](../README.md) | [Next: Advanced Operators →](03-advanced-operators.md)
+[← Back to Main Guide](README.md) | [Next: Advanced Operators →](03-advanced-operators.md)
 
 ---
 

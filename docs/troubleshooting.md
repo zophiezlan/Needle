@@ -2,7 +2,7 @@
 
 > Solutions for common search problems.
 
-[← Back to Main Guide](../README.md)
+[← Back to Main Guide](README.md)
 
 ---
 
@@ -292,4 +292,4 @@ Add exclusions for PDF viewer sites:
 
 ---
 
-[← Back to Main Guide](../README.md)
+[← Back to Main Guide](README.md)

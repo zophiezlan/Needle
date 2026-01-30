@@ -4,7 +4,7 @@
 > block uses a different lens: **alerts**, **harms**, **markets**, **culture/setting**,
 > **treatment/response**.
 
-[← Back to Main Guide](../README.md)
+[← Back to Main Guide](README.md)
 
 ---
 
@@ -244,4 +244,4 @@
 
 ---
 
-[← Back to Main Guide](../README.md)
+[← Back to Main Guide](README.md)

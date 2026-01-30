@@ -2,7 +2,7 @@
 
 > Get useful search results in under 2 minutes. No prior knowledge required.
 
-[← Back to Main Guide](../README.md)
+[← Back to Main Guide](README.md)
 
 ---
 
@@ -223,4 +223,4 @@ This finds documents mentioning dates in that range.
 
 ---
 
-[← Back to Main Guide](../README.md) | [Next: Core Operators →](02-core-operators.md)
+[← Back to Main Guide](README.md) | [Next: Core Operators →](02-core-operators.md)

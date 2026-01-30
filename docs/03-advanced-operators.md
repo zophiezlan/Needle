@@ -2,7 +2,7 @@
 
 > Power user techniques for precision searching and creative discovery.
 
-[← Back to Main Guide](../README.md) | [← Core Operators](02-core-operators.md) |
+[← Back to Main Guide](README.md) | [← Core Operators](02-core-operators.md) |
 [Next: Domain Map →](04-domain-map.md)
 
 ---
@@ -216,7 +216,7 @@ site:*.gov.au inurl:"/assets/" filetype:pdf "overdose"
 ## 🕵️ Investigative Techniques
 
 > [!CAUTION]
-> **Ethical Framework Required.** These techniques can find sensitive information. Always ensure your search serves a legitimate harm reduction purpose and does not target personal or identifiable information. See [Investigative Searching](dork-packs/investigative.md) and [Security Guidelines](../SECURITY.md) for the full ethical framework.
+> **Ethical Framework Required.** These techniques can find sensitive information. Always ensure your search serves a legitimate harm reduction purpose and does not target personal or identifiable information. See [Investigative Searching](dork-packs/investigative.md) and [Security Guidelines](https://github.com/zophiezlan/harm-reduction-google-dork-guide/blob/main/SECURITY.md) for the full ethical framework.
 
 ### Finding Draft Documents
 

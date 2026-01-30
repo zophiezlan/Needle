@@ -2,7 +2,7 @@
 
 > Know where information lives. Use this to choose `site:` targets quickly.
 
-[← Back to Main Guide](../README.md) | [← Advanced Operators](03-advanced-operators.md) |
+[← Back to Main Guide](README.md) | [← Advanced Operators](03-advanced-operators.md) |
 [Next: Synonym Blocks →](05-synonym-blocks.md)
 
 ---

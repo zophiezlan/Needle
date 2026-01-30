@@ -8,6 +8,9 @@
     },
     {
       "pattern": "^mailto:"
+    },
+    {
+      "pattern": "^/"
     }
   ],
   "replacementPatterns": [],
