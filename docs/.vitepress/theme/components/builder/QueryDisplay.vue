@@ -37,6 +37,7 @@ const blockColors: Record<string, string> = {
   or: "var(--block-or)",
   exact: "var(--block-exact)",
   wildcard: "var(--block-wildcard)",
+};
 
 function copyQuery() {
   navigator.clipboard.writeText(queryString.value);
