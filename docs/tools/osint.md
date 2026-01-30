@@ -243,13 +243,13 @@ Hunt down social media accounts by username across 400+ platforms.
 
 ### Knowem
 
-**URL:** [knowem.com](http://www.Knowem.com)
+**URL:** [knowem.com](https://knowem.com/)
 
 Check username availability across 500+ social networks.
 
 ### UserSearch
 
-**URL:** [usersearch.org](http://www.usersearch.org)
+**URL:** [usersearch.org](https://www.usersearch.org/)
 
 Search for usernames across social media and forums.
 
@@ -279,7 +279,7 @@ Free desktop application with historical imagery and measurement tools.
 
 ### Creepy
 
-**URL:** [geocreepy.com](http://www.geocreepy.com/)
+**URL:** [geocreepy.com](https://www.geocreepy.com/)
 
 Geolocation OSINT tool. Gathers location data from social networking platforms.
 
@@ -291,7 +291,7 @@ Look up geographic location of IP addresses.
 
 ### EXIF Data Viewer
 
-**URL:** [exifdata.com](http://exifdata.com/)
+**URL:** [exifdata.com](https://exifdata.com/)
 
 Extract location and camera metadata from images.
 
@@ -351,7 +351,7 @@ Analyse images for manipulation. Error level analysis.
 
 ### SmartDeblur
 
-**URL:** [smartdeblur.net](http://smartdeblur.net/)
+**URL:** [smartdeblur.net](https://smartdeblur.net/)
 
 Restore clarity to blurry images.
 

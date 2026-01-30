@@ -66,12 +66,12 @@ These resources support legitimate harm reduction work:
 
 ### City-Level Data
 
-| City          | Portal                | URL                                                                        |
-| ------------- | --------------------- | -------------------------------------------------------------------------- |
-| **Brisbane**  | Brisbane City Council | [data.brisbane.qld.gov.au](https://www.data.brisbane.qld.gov.au/)          |
-| **Darwin**    | City of Darwin        | [open-darwin.opendata.arcgis.com](http://open-darwin.opendata.arcgis.com/) |
-| **Melbourne** | City of Melbourne     | [data.melbourne.vic.gov.au](https://data.melbourne.vic.gov.au/)            |
-| **Sydney**    | City of Sydney        | [data.cityofsydney.nsw.gov.au](http://data.cityofsydney.nsw.gov.au/)       |
+| City          | Portal                | URL                                                                         |
+| ------------- | --------------------- | --------------------------------------------------------------------------- |
+| **Brisbane**  | Brisbane City Council | [data.brisbane.qld.gov.au](https://www.data.brisbane.qld.gov.au/)           |
+| **Darwin**    | City of Darwin        | [open-darwin.opendata.arcgis.com](https://open-darwin.opendata.arcgis.com/) |
+| **Melbourne** | City of Melbourne     | [data.melbourne.vic.gov.au](https://data.melbourne.vic.gov.au/)             |
+| **Sydney**    | City of Sydney        | [data.cityofsydney.nsw.gov.au](https://data.cityofsydney.nsw.gov.au/)       |
 
 ---
 
@@ -113,7 +113,7 @@ These resources support legitimate harm reduction work:
 
 | State   | Registry          | URL                                                                   |
 | ------- | ----------------- | --------------------------------------------------------------------- |
-| **ACT** | ACTmapi           | [actmapi.act.gov.au](http://www.actmapi.act.gov.au/)                  |
+| **ACT** | ACTmapi           | [actmapi.act.gov.au](https://www.actmapi.act.gov.au/)                 |
 | **NSW** | NSW Land Registry | [nswlrs.com.au](https://www.nswlrs.com.au/)                           |
 | **QLD** | Titles Queensland | [titlesqld.com.au](https://www.titlesqld.com.au/title-searches/)      |
 | **SA**  | Land Services SA  | [landservices.com.au](https://www.landservices.com.au/)               |
@@ -188,7 +188,7 @@ These resources support legitimate harm reduction work:
 | Resource              | URL                                                       | Description                  |
 | --------------------- | --------------------------------------------------------- | ---------------------------- |
 | **Aussiefinder**      | [aussiefinder.com.au](https://aussiefinder.com.au/)       | Multi-platform social search |
-| **People Search**     | [peoplesearch.com.au](http://www.peoplesearch.com.au/)    | Free people finder           |
+| **People Search**     | [peoplesearch.com.au](https://www.peoplesearch.com.au/)   | Free people finder           |
 | **Person Lookup**     | [personlookup.com.au](https://personlookup.com.au/)       | 9M+ Australian records       |
 | **Reverse Australia** | [reverseaustralia.com](https://www.reverseaustralia.com/) | Phone number lookup          |
 | **White Pages**       | [whitepages.com.au](https://www.whitepages.com.au/)       | Residential phone/address    |
@@ -201,7 +201,7 @@ These resources support legitimate harm reduction work:
 | **Australian Cemeteries** | [austcemindex.com](https://www.austcemindex.com/)                             | Cemetery records                    |
 | **Early Census Records**  | [guides.slv.vic.gov.au](https://guides.slv.vic.gov.au/earlycensus/findpeople) | Historical census                   |
 | **Family Search**         | [familysearch.org](https://familysearch.org)                                  | Free genealogy                      |
-| **Ryerson Index**         | [ryersonindex.org](http://ryersonindex.org/search.php)                        | Death notices, obituaries           |
+| **Ryerson Index**         | [ryersonindex.org](https://ryersonindex.org/search.php)                       | Death notices, obituaries           |
 | **Trove**                 | [trove.nla.gov.au](https://trove.nla.gov.au/)                                 | Digitised newspapers, records       |
 
 ### Military Records
@@ -265,7 +265,7 @@ These resources support legitimate harm reduction work:
 
 | Jurisdiction     | Act                                                                                                                             | Description        |
 | ---------------- | ------------------------------------------------------------------------------------------------------------------------------- | ------------------ |
-| **ACT**          | [Freedom of Information Act 2016](http://www.legislation.act.gov.au/a/2016-55/default.asp)                                      | ACT FOI            |
+| **ACT**          | [Freedom of Information Act 2016](https://www.legislation.act.gov.au/a/2016-55/default.asp)                                     | ACT FOI            |
 | **Commonwealth** | [Freedom of Information Act 1982](https://www.oaic.gov.au/freedom-of-information)                                               | Federal FOI        |
 | **NSW**          | [Freedom of Information Act 1989](https://legislation.nsw.gov.au/view/whole/html/inforce/2009-01-01/act-1989-005)               | NSW FOI            |
 | **NT**           | [Information Act 2002](https://legislation.nt.gov.au/Legislation/INFORMATION-ACT-2002)                                          | NT Information Act |
@@ -302,15 +302,15 @@ These resources support legitimate harm reduction work:
 
 ### State Spatial Portals
 
-| State   | Portal               | URL                                                                                                       |
-| ------- | -------------------- | --------------------------------------------------------------------------------------------------------- |
-| **ACT** | ACTmapi              | [actmapi.act.gov.au](https://www.actmapi.act.gov.au/)                                                     |
-| **NSW** | NSW Spatial          | [portal.spatial.nsw.gov.au](https://portal.spatial.nsw.gov.au/client)                                     |
-| **NSW** | SEED (Environmental) | [seed.nsw.gov.au](https://www.seed.nsw.gov.au/)                                                           |
-| **QLD** | QLD Spatial          | [qldspatial.information.qld.gov.au](http://qldspatial.information.qld.gov.au/catalogue/custom/index.page) |
-| **SA**  | LocationSA           | [location.sa.gov.au/viewer](https://location.sa.gov.au/viewer/)                                           |
-| **VIC** | DataVic Maps         | [mapshare.vic.gov.au](https://mapshare.vic.gov.au/)                                                       |
-| **WA**  | Main Roads           | [portal-mainroads.opendata.arcgis.com](https://portal-mainroads.opendata.arcgis.com/)                     |
+| State   | Portal               | URL                                                                                                        |
+| ------- | -------------------- | ---------------------------------------------------------------------------------------------------------- |
+| **ACT** | ACTmapi              | [actmapi.act.gov.au](https://www.actmapi.act.gov.au/)                                                      |
+| **NSW** | NSW Spatial          | [portal.spatial.nsw.gov.au](https://portal.spatial.nsw.gov.au/client)                                      |
+| **NSW** | SEED (Environmental) | [seed.nsw.gov.au](https://www.seed.nsw.gov.au/)                                                            |
+| **QLD** | QLD Spatial          | [qldspatial.information.qld.gov.au](https://qldspatial.information.qld.gov.au/catalogue/custom/index.page) |
+| **SA**  | LocationSA           | [location.sa.gov.au/viewer](https://location.sa.gov.au/viewer/)                                            |
+| **VIC** | DataVic Maps         | [mapshare.vic.gov.au](https://mapshare.vic.gov.au/)                                                        |
+| **WA**  | Main Roads           | [portal-mainroads.opendata.arcgis.com](https://portal-mainroads.opendata.arcgis.com/)                      |
 
 ---
 
@@ -335,11 +335,11 @@ These resources support legitimate harm reduction work:
 
 ### Public Transport Data
 
-| State   | Resource            | URL                                                                                                            |
-| ------- | ------------------- | -------------------------------------------------------------------------------------------------------------- |
-| **ACT** | Transport ACT       | [transport.act.gov.au](https://www.transport.act.gov.au/contact-us/information-for-developers)                 |
-| **NSW** | Transport Open Data | [opendata.transport.nsw.gov.au](https://opendata.transport.nsw.gov.au/)                                        |
-| **VIC** | DoT Open Data       | [vicroadsopendata-vicroadsmaps.opendata.arcgis.com](http://vicroadsopendata-vicroadsmaps.opendata.arcgis.com/) |
+| State   | Resource            | URL                                                                                                             |
+| ------- | ------------------- | --------------------------------------------------------------------------------------------------------------- |
+| **ACT** | Transport ACT       | [transport.act.gov.au](https://www.transport.act.gov.au/contact-us/information-for-developers)                  |
+| **NSW** | Transport Open Data | [opendata.transport.nsw.gov.au](https://opendata.transport.nsw.gov.au/)                                         |
+| **VIC** | DoT Open Data       | [vicroadsopendata-vicroadsmaps.opendata.arcgis.com](https://vicroadsopendata-vicroadsmaps.opendata.arcgis.com/) |
 
 ### Emergency Services Radio
 
@@ -377,7 +377,7 @@ These resources support legitimate harm reduction work:
 | State   | Resource         | URL                                                                                                     |
 | ------- | ---------------- | ------------------------------------------------------------------------------------------------------- |
 | **ACT** | ACT Crime Stats  | [policenews.act.gov.au](https://policenews.act.gov.au/crime-statistics-and-data/crime-statistics)       |
-| **NSW** | BOCSAR           | [crimetool.bocsar.nsw.gov.au](http://crimetool.bocsar.nsw.gov.au/bocsar/)                               |
+| **NSW** | BOCSAR           | [crimetool.bocsar.nsw.gov.au](https://crimetool.bocsar.nsw.gov.au/bocsar/)                              |
 | **NT**  | NT Crime Stats   | [nt.gov.au/law/crime/crime-statistics](https://nt.gov.au/law/crime/crime-statistics)                    |
 | **QLD** | QPS Statistics   | [police.qld.gov.au/maps-and-statistics](https://www.police.qld.gov.au/maps-and-statistics)              |
 | **SA**  | SA Police Map    | [police.sa.gov.au](https://www.police.sa.gov.au/about-us/crime-statistics-map)                          |

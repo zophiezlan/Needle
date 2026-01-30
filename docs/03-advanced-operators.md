@@ -44,7 +44,7 @@ allintitle: harm reduction guideline 2024
 allintitle: peer worker training
 ```
 
-**Note:** No colon after `allintitle`, uses spaces between terms.
+> [!NOTE] No colon after `allintitle`, uses spaces between terms.
 
 ---
 
@@ -82,8 +82,8 @@ View Google's cached version of a page.
 cache:health.gov.au/some-policy-page
 ```
 
-**Note:** Google is phasing out this feature, but it still works in some regions. For more reliable
-archiving, use [Wayback Machine](https://web.archive.org).
+> [!NOTE] Google is phasing out this feature, but it still works in some regions. For more reliable
+> archiving, use [Wayback Machine](https://web.archive.org).
 
 ---
 
@@ -122,7 +122,7 @@ source:abc.net.au "drug policy"
 source:theguardian.com "harm reduction" australia
 ```
 
-**Note:** Only works in Google News.
+> [!NOTE] Only works in Google News.
 
 ---
 
