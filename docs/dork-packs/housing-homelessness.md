@@ -79,7 +79,6 @@ Find housing and AOD resources:
 ("housing" OR "homelessness" OR "accommodation") ("alcohol and other drugs" OR AOD OR "drug use" OR "substance use") Australia (service OR program OR research OR policy) filetype:pdf after:2020
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=(%22housing%22%20OR%20%22homelessness%22%20OR%20%22accommodation%22)%20(%22alcohol%20and%20other%20drugs%22%20OR%20AOD%20OR%20%22drug%20use%22%20OR%20%22substance%20use%22)%20Australia%20(service%20OR%20program%20OR%20research%20OR%20policy)%20filetype%3Apdf%20after%3A2020>)
 
 ### Social Determinants
 
@@ -105,7 +104,6 @@ Find housing and AOD resources:
 "supportive housing" (model OR program) AOD Australia filetype:pdf
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=%22supportive%20housing%22%20(model%20OR%20program)%20AOD%20Australia%20filetype%3Apdf>)
 
 ### Housing and Treatment
 
@@ -113,7 +111,6 @@ Find housing and AOD resources:
 "housing" ("treatment" OR "recovery") AOD OR "alcohol and other drugs" Australia
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=%22housing%22%20(%22treatment%22%20OR%20%22recovery%22)%20AOD%20OR%20%22alcohol%20and%20other%20drugs%22%20Australia>)
 
 ### Tenancy & Drug Use
 
@@ -121,7 +118,6 @@ Find housing and AOD resources:
 "tenancy" OR "rental" drug use (discrimination OR support OR policy)
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=%22tenancy%22%20OR%20%22rental%22%20drug%20use%20(discrimination%20OR%20support%20OR%20policy)>)
 
 ### Eviction Prevention
 
@@ -148,7 +144,6 @@ site:aihw.gov.au "homelessness" "alcohol and other drugs"
 "crisis accommodation" drug OR alcohol (policy OR service) Australia
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=%22crisis%20accommodation%22%20drug%20OR%20alcohol%20(policy%20OR%20service)%20Australia>)
 
 ### Youth Homelessness
 
@@ -250,7 +245,6 @@ site:aihw.gov.au "homelessness" "alcohol and other drugs"
 "housing first" policy OR program Australia (evaluation OR implementation)
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=%22housing%20first%22%20policy%20OR%20program%20Australia%20(evaluation%20OR%20implementation)>)
 
 ### Integrated Services
 

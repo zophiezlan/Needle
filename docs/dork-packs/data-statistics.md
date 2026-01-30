@@ -50,7 +50,6 @@ site:abs.gov.au "illicit drug use" OR "drug use" survey
 "National Drug Strategy Household Survey" OR NDSHS (latest OR 2022 OR 2023) filetype:pdf
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=%22National%20Drug%20Strategy%20Household%20Survey%22%20OR%20NDSHS%20(latest%20OR%202022%20OR%202023)%20filetype%3Apdf>)
 
 ### IDRS (Illicit Drug Reporting System)
 
@@ -73,7 +72,6 @@ site:ndarc.med.unsw.edu.au IDRS
 "ambulance attendance" OR "ambulance callouts" drug related (NSW OR VIC OR QLD) data
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=%22ambulance%20attendance%22%20OR%20%22ambulance%20callouts%22%20drug%20related%20(NSW%20OR%20VIC%20OR%20QLD)%20data>)
 
 ---
 
@@ -85,7 +83,6 @@ site:ndarc.med.unsw.edu.au IDRS
 site:aihw.gov.au OR site:abs.gov.au OR site:ndarc.med.unsw.edu.au ("alcohol and other drugs" OR "drug use" OR "substance use") (statistics OR data OR survey OR report) filetype:pdf after:2022
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=site%3Aaihw.gov.au%20OR%20site%3Aabs.gov.au%20OR%20site%3Andarc.med.unsw.edu.au%20(%22alcohol%20and%20other%20drugs%22%20OR%20%22drug%20use%22%20OR%20%22substance%20use%22)%20(statistics%20OR%20data%20OR%20survey%20OR%20report)%20filetype%3Apdf%20after%3A2022>)
 
 ### State-Level Data
 
@@ -93,7 +90,6 @@ site:aihw.gov.au OR site:abs.gov.au OR site:ndarc.med.unsw.edu.au ("alcohol and 
 site:*.gov.au ("drug-related" OR "alcohol-related") (hospitalisation OR hospitalization OR "emergency department" OR ambulance) data [YOUR STATE]
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=site%3A*.gov.au%20(%22drug-related%22%20OR%20%22alcohol-related%22)%20(hospitalisation%20OR%20hospitalization%20OR%20%22emergency%20department%22%20OR%20ambulance)%20data%20%5BYOUR%20STATE%5D>)
 
 ### Treatment Episode Data
 
@@ -108,7 +104,6 @@ site:aihw.gov.au "Alcohol and other drug treatment services" OR "AODTS-NMDS" fil
 "wastewater analysis" OR "wastewater epidemiology" (drug OR substance) Australia (data OR report)
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=%22wastewater%20analysis%22%20OR%20%22wastewater%20epidemiology%22%20(drug%20OR%20substance)%20Australia%20(data%20OR%20report)>)
 
 ---
 
@@ -120,7 +115,6 @@ site:aihw.gov.au "Alcohol and other drug treatment services" OR "AODTS-NMDS" fil
 site:aihw.gov.au filetype:pdf ("alcohol and other drugs" OR "drug use" OR "substance use")
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=site%3Aaihw.gov.au%20filetype%3Apdf%20(%22alcohol%20and%20other%20drugs%22%20OR%20%22drug%20use%22%20OR%20%22substance%20use%22)>)
 
 **Key AIHW reports:**
 
@@ -135,7 +129,6 @@ site:aihw.gov.au filetype:pdf ("alcohol and other drugs" OR "drug use" OR "subst
 site:abs.gov.au ("drug use" OR "substance use" OR "alcohol consumption") survey OR data
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=site%3Aabs.gov.au%20(%22drug%20use%22%20OR%20%22substance%20use%22%20OR%20%22alcohol%20consumption%22)%20survey%20OR%20data>)
 
 ### NDARC Drug Trends
 
@@ -143,7 +136,6 @@ site:abs.gov.au ("drug use" OR "substance use" OR "alcohol consumption") survey 
 site:ndarc.med.unsw.edu.au ("drug trends" OR IDRS OR EDRS) filetype:pdf
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=site%3Andarc.med.unsw.edu.au%20(%22drug%20trends%22%20OR%20IDRS%20OR%20EDRS)%20filetype%3Apdf>)
 
 ### Penington Institute (Overdose)
 
@@ -163,7 +155,6 @@ site:penington.org.au "overdose" OR "Australia's Annual Overdose Report"
 site:aihw.gov.au "needle syringe program" data
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=%22needle%20syringe%22%20(%22distribution%20data%22%20OR%20%22equipment%20distributed%22%20OR%20statistics)%20Australia%0Asite%3Aaihw.gov.au%20%22needle%20syringe%20program%22%20data>)
 
 ### BBV & NSP Data
 
@@ -171,7 +162,6 @@ site:aihw.gov.au "needle syringe program" data
 site:kirby.unsw.edu.au ("hepatitis C" OR HCV) ("injecting drug use" OR NSP) data
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=site%3Akirby.unsw.edu.au%20(%22hepatitis%20C%22%20OR%20HCV)%20(%22injecting%20drug%20use%22%20OR%20NSP)%20data>)
 
 ---
 
@@ -190,7 +180,6 @@ site:aihw.gov.au "treatment episode" AOD OR "alcohol and other drugs" filetype:p
 site:aihw.gov.au (methadone OR buprenorphine OR "opioid pharmacotherapy") data OR statistics
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=site%3Aaihw.gov.au%20(methadone%20OR%20buprenorphine%20OR%20%22opioid%20pharmacotherapy%22)%20data%20OR%20statistics>)
 
 ### Waiting Lists/Access Data
 
@@ -198,7 +187,6 @@ site:aihw.gov.au (methadone OR buprenorphine OR "opioid pharmacotherapy") data O
 "waiting list" OR "wait times" (treatment OR detox OR rehabilitation) AOD [YOUR STATE]
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=%22waiting%20list%22%20OR%20%22wait%20times%22%20(treatment%20OR%20detox%20OR%20rehabilitation)%20AOD%20%5BYOUR%20STATE%5D>)
 
 ---
 
@@ -232,7 +220,6 @@ site:aihw.gov.au "alcohol-related deaths" OR "alcohol-attributable deaths"
 site:aihw.gov.au ("drug-related" OR "alcohol-related") (hospitalisation OR hospitalization) data
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=site%3Aaihw.gov.au%20(%22drug-related%22%20OR%20%22alcohol-related%22)%20(hospitalisation%20OR%20hospitalization)%20data>)
 
 ---
 
@@ -252,7 +239,6 @@ site:ndarc.med.unsw.edu.au "drug trends" OR "market" filetype:pdf
 ("novel psychoactive" OR NPS) (surveillance OR monitoring OR detection) Australia data
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=(%22novel%20psychoactive%22%20OR%20NPS)%20(surveillance%20OR%20monitoring%20OR%20detection)%20Australia%20data>)
 
 ### Drug Checking Results Data
 
@@ -260,7 +246,6 @@ site:ndarc.med.unsw.edu.au "drug trends" OR "market" filetype:pdf
 "drug checking" (results OR data OR "substances detected") Australia
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=%22drug%20checking%22%20(results%20OR%20data%20OR%20%22substances%20detected%22)%20Australia>)
 
 ---
 
@@ -272,7 +257,6 @@ site:ndarc.med.unsw.edu.au "drug trends" OR "market" filetype:pdf
 site:health.nsw.gov.au OR site:nsw.gov.au (drug OR alcohol) statistics OR data
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=site%3Ahealth.nsw.gov.au%20OR%20site%3Answ.gov.au%20(drug%20OR%20alcohol)%20statistics%20OR%20data>)
 
 ### Victoria
 
@@ -281,7 +265,6 @@ site:health.vic.gov.au OR site:vic.gov.au ("drug related" OR "alcohol related") 
 site:turning-point.org.au data OR statistics
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=site%3Ahealth.vic.gov.au%20OR%20site%3Avic.gov.au%20(%22drug%20related%22%20OR%20%22alcohol%20related%22)%20data%0Asite%3Aturning-point.org.au%20data%20OR%20statistics>)
 
 ### Queensland
 
@@ -289,7 +272,6 @@ site:turning-point.org.au data OR statistics
 site:health.qld.gov.au (drug OR alcohol) statistics
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=site%3Ahealth.qld.gov.au%20(drug%20OR%20alcohol)%20statistics>)
 
 ### Other States
 
@@ -297,7 +279,6 @@ site:health.qld.gov.au (drug OR alcohol) statistics
 site:*.gov.au [STATE] ("drug-related" OR "alcohol-related") (statistics OR data OR report)
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=site%3A*.gov.au%20%5BSTATE%5D%20(%22drug-related%22%20OR%20%22alcohol-related%22)%20(statistics%20OR%20data%20OR%20report)>)
 
 ---
 
@@ -309,7 +290,6 @@ site:*.gov.au [STATE] ("drug-related" OR "alcohol-related") (statistics OR data 
 filetype:xlsx OR filetype:csv (drug OR alcohol OR AOD) (data OR dataset) Australia site:*.gov.au
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=filetype%3Axlsx%20OR%20filetype%3Acsv%20(drug%20OR%20alcohol%20OR%20AOD)%20(data%20OR%20dataset)%20Australia%20site%3A*.gov.au>)
 
 ### Open Data Portals
 
@@ -317,7 +297,6 @@ filetype:xlsx OR filetype:csv (drug OR alcohol OR AOD) (data OR dataset) Austral
 site:data.gov.au (drug OR alcohol OR "harm reduction" OR overdose)
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=site%3Adata.gov.au%20(drug%20OR%20alcohol%20OR%20%22harm%20reduction%22%20OR%20overdose)>)
 
 ### Research Data Repositories
 
@@ -325,7 +304,6 @@ site:data.gov.au (drug OR alcohol OR "harm reduction" OR overdose)
 site:ada.edu.au OR site:ands.org.au (drug OR alcohol OR AOD) data
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=site%3Aada.edu.au%20OR%20site%3Aands.org.au%20(drug%20OR%20alcohol%20OR%20AOD)%20data>)
 
 ---
 
@@ -336,7 +314,6 @@ site:aihw.gov.au ("Aboriginal" OR "Indigenous") ("alcohol" OR "drug" OR "substan
 "Closing the Gap" (alcohol OR drug OR substance) data
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=site%3Aaihw.gov.au%20(%22Aboriginal%22%20OR%20%22Indigenous%22)%20(%22alcohol%22%20OR%20%22drug%22%20OR%20%22substance%22)%20statistics%0A%22Closing%20the%20Gap%22%20(alcohol%20OR%20drug%20OR%20substance)%20data>)
 
 ---
 

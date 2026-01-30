@@ -14,7 +14,6 @@ Find dual diagnosis resources:
 "dual diagnosis" OR "co-occurring" (mental health AND substance) Australia filetype:pdf
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=%22dual%20diagnosis%22%20OR%20%22co-occurring%22%20(mental%20health%20AND%20substance)%20Australia%20filetype%3Apdf>)
 
 ---
 
@@ -26,7 +25,6 @@ Find dual diagnosis resources:
 "dual diagnosis" OR "co-occurring" (mental health AND substance) Australia filetype:pdf
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=%22dual%20diagnosis%22%20OR%20%22co-occurring%22%20(mental%20health%20AND%20substance)%20Australia%20filetype%3Apdf>)
 
 ### Comorbidity
 
@@ -52,7 +50,6 @@ Find dual diagnosis resources:
 "dual diagnosis" (treatment OR service OR framework) Australia filetype:pdf
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=%22dual%20diagnosis%22%20(treatment%20OR%20service%20OR%20framework)%20Australia%20filetype%3Apdf>)
 
 ### Trauma & Substance Use
 
@@ -60,7 +57,6 @@ Find dual diagnosis resources:
 ("trauma" OR "PTSD") "substance use" OR "drug use" treatment Australia
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=(%22trauma%22%20OR%20%22PTSD%22)%20%22substance%20use%22%20OR%20%22drug%20use%22%20treatment%20Australia>)
 
 ### Integrated Treatment Models
 
@@ -79,7 +75,6 @@ Find dual diagnosis resources:
 ("dual diagnosis" OR "co-occurring" OR "comorbid" OR "co-existing") ("mental health" AND ("substance use" OR "drug use" OR "alcohol" OR AOD)) Australia (treatment OR service OR guideline OR research) filetype:pdf after:2020
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=(%22dual%20diagnosis%22%20OR%20%22co-occurring%22%20OR%20%22comorbid%22%20OR%20%22co-existing%22)%20(%22mental%20health%22%20AND%20(%22substance%20use%22%20OR%20%22drug%20use%22%20OR%20%22alcohol%22%20OR%20AOD))%20Australia%20(treatment%20OR%20service%20OR%20guideline%20OR%20research)%20filetype%3Apdf%20after%3A2020>)
 
 ### No Wrong Door
 
@@ -106,7 +101,6 @@ Find dual diagnosis resources:
 "trauma-informed" AOD OR "alcohol and other drugs" Australia
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=(%22trauma%22%20OR%20%22PTSD%22%20OR%20%22post-traumatic%22)%20%22substance%20use%22%20treatment%20Australia%20filetype%3Apdf%0A%22trauma-informed%22%20AOD%20OR%20%22alcohol%20and%20other%20drugs%22%20Australia>)
 
 ### Anxiety & Depression
 
@@ -114,7 +108,6 @@ Find dual diagnosis resources:
 ("anxiety" OR "depression") "substance use" dual treatment Australia
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=(%22anxiety%22%20OR%20%22depression%22)%20%22substance%20use%22%20dual%20treatment%20Australia>)
 
 ### Psychosis
 
@@ -123,7 +116,6 @@ Find dual diagnosis resources:
 "drug-induced psychosis" treatment OR management Australia
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=(%22psychosis%22%20OR%20%22schizophrenia%22)%20%22substance%20use%22%20OR%20%22drug%20use%22%20Australia%20filetype%3Apdf%0A%22drug-induced%20psychosis%22%20treatment%20OR%20management%20Australia>)
 
 ### Personality Disorders
 
@@ -179,7 +171,6 @@ Find dual diagnosis resources:
 "suicidal ideation" substance use treatment
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=%22suicide%22%20%22substance%20use%22%20OR%20%22drug%20use%22%20(risk%20OR%20prevention)%20Australia%0A%22suicidal%20ideation%22%20substance%20use%20treatment>)
 
 ### Self-Harm
 
@@ -194,7 +185,6 @@ Find dual diagnosis resources:
 "overdose" (intentional OR "self-harm" OR suicide) Australia
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=%22overdose%22%20(intentional%20OR%20%22self-harm%22%20OR%20suicide)%20Australia>)
 
 ---
 
@@ -207,7 +197,6 @@ Find dual diagnosis resources:
 site:*.gov.au "dual diagnosis" OR "co-occurring" guideline
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=%22dual%20diagnosis%22%20(guideline%20OR%20%22clinical%20guideline%22%20OR%20protocol)%20Australia%20filetype%3Apdf%0Asite%3A*.gov.au%20%22dual%20diagnosis%22%20OR%20%22co-occurring%22%20guideline>)
 
 ### Screening Tools
 
@@ -215,7 +204,6 @@ site:*.gov.au "dual diagnosis" OR "co-occurring" guideline
 "screening" "dual diagnosis" OR "co-occurring" (tool OR instrument) Australia
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=%22screening%22%20%22dual%20diagnosis%22%20OR%20%22co-occurring%22%20(tool%20OR%20instrument)%20Australia>)
 
 ### Assessment
 
@@ -223,7 +211,6 @@ site:*.gov.au "dual diagnosis" OR "co-occurring" guideline
 "assessment" "dual diagnosis" Australia (framework OR guideline)
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=%22assessment%22%20%22dual%20diagnosis%22%20Australia%20(framework%20OR%20guideline)>)
 
 ---
 
@@ -235,7 +222,6 @@ site:*.gov.au "dual diagnosis" OR "co-occurring" guideline
 "dual diagnosis capability" OR "co-occurring capability" (training OR framework) Australia
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=%22dual%20diagnosis%20capability%22%20OR%20%22co-occurring%20capability%22%20(training%20OR%20framework)%20Australia>)
 
 ### Workforce Development
 
@@ -243,7 +229,6 @@ site:*.gov.au "dual diagnosis" OR "co-occurring" guideline
 "dual diagnosis" workforce (training OR development OR competencies) Australia
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=%22dual%20diagnosis%22%20workforce%20(training%20OR%20development%20OR%20competencies)%20Australia>)
 
 ---
 
@@ -262,7 +247,6 @@ site:*.edu.au "dual diagnosis" OR "co-occurring" Australia filetype:pdf
 "dual diagnosis" OR "comorbidity" prevalence (mental health AND substance) Australia
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=%22dual%20diagnosis%22%20OR%20%22comorbidity%22%20prevalence%20(mental%20health%20AND%20substance)%20Australia>)
 
 ### Treatment Outcomes
 
@@ -270,7 +254,6 @@ site:*.edu.au "dual diagnosis" OR "co-occurring" Australia filetype:pdf
 "dual diagnosis" treatment (outcomes OR effectiveness) Australia research
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=%22dual%20diagnosis%22%20treatment%20(outcomes%20OR%20effectiveness)%20Australia%20research>)
 
 ---
 

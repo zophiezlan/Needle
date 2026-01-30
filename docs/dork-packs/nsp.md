@@ -25,7 +25,6 @@ site:*.health.*.gov.au filetype:pdf "needle syringe program" guideline
 site:*.health.*.gov.au filetype:pdf ("needle syringe program" OR NSP) (guideline OR policy OR protocol)
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=site%3A*.health.*.gov.au%20filetype%3Apdf%20(%22needle%20syringe%20program%22%20OR%20NSP)%20(guideline%20OR%20policy%20OR%20protocol)>)
 
 **Why this works:**
 
@@ -39,7 +38,6 @@ site:*.health.*.gov.au filetype:pdf ("needle syringe program" OR NSP) (guideline
 filetype:xlsx OR filetype:pdf (NSP OR "needle syringe") ("service list" OR directory) site:*.gov.au
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=filetype%3Axlsx%20OR%20filetype%3Apdf%20(NSP%20OR%20%22needle%20syringe%22)%20(%22service%20list%22%20OR%20directory)%20site%3A*.gov.au>)
 
 ### Sector Organisation Resources
 
@@ -47,7 +45,6 @@ filetype:xlsx OR filetype:pdf (NSP OR "needle syringe") ("service list" OR direc
 site:*.org.au filetype:pdf ("needle syringe program" OR NSP) (evaluation OR outcomes OR access)
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=site%3A*.org.au%20filetype%3Apdf%20(%22needle%20syringe%20program%22%20OR%20NSP)%20(evaluation%20OR%20outcomes%20OR%20access)>)
 
 ---
 
@@ -59,7 +56,6 @@ site:*.org.au filetype:pdf ("needle syringe program" OR NSP) (evaluation OR outc
 site:*.edu.au filetype:pdf "needle syringe program" (evaluation OR effectiveness OR "cost-effectiveness")
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=site%3A*.edu.au%20filetype%3Apdf%20%22needle%20syringe%20program%22%20(evaluation%20OR%20effectiveness%20OR%20%22cost-effectiveness%22)>)
 
 ### Peer-Based NSP Resources
 
@@ -67,7 +63,6 @@ site:*.edu.au filetype:pdf "needle syringe program" (evaluation OR effectiveness
 site:*.org.au "peer-based" OR "peer-led" ("needle syringe" OR NSP) filetype:pdf
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=site%3A*.org.au%20%22peer-based%22%20OR%20%22peer-led%22%20(%22needle%20syringe%22%20OR%20NSP)%20filetype%3Apdf>)
 
 ### Equipment & Supply Guidelines
 
@@ -75,7 +70,6 @@ site:*.org.au "peer-based" OR "peer-led" ("needle syringe" OR NSP) filetype:pdf
 site:*.gov.au "injecting equipment" (guideline OR policy OR "safe disposal") filetype:pdf
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=site%3A*.gov.au%20%22injecting%20equipment%22%20(guideline%20OR%20policy%20OR%20%22safe%20disposal%22)%20filetype%3Apdf>)
 
 ### Pharmacy-Based NSP
 
@@ -83,7 +77,6 @@ site:*.gov.au "injecting equipment" (guideline OR policy OR "safe disposal") fil
 "pharmacy" ("needle syringe" OR NSP OR "injecting equipment") Australia (program OR scheme)
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=%22pharmacy%22%20(%22needle%20syringe%22%20OR%20NSP%20OR%20%22injecting%20equipment%22)%20Australia%20(program%20OR%20scheme)>)
 
 ---
 
@@ -95,7 +88,6 @@ site:*.gov.au "injecting equipment" (guideline OR policy OR "safe disposal") fil
 site:*.gov.au filetype:pdf ("needle syringe program" OR "needle exchange" OR "syringe service" OR NSP) (guideline OR policy OR framework OR manual) after:2020
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=site%3A*.gov.au%20filetype%3Apdf%20(%22needle%20syringe%20program%22%20OR%20%22needle%20exchange%22%20OR%20%22syringe%20service%22%20OR%20NSP)%20(guideline%20OR%20policy%20OR%20framework%20OR%20manual)%20after%3A2020>)
 
 ### NSP Location/Access Information
 
@@ -110,7 +102,6 @@ site:*.gov.au filetype:pdf ("needle syringe program" OR "needle exchange" OR "sy
 ("mobile NSP" OR "mobile needle" OR "outreach NSP" OR "van" OR "bus") ("needle syringe" OR "injecting equipment") Australia
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=(%22mobile%20NSP%22%20OR%20%22mobile%20needle%22%20OR%20%22outreach%20NSP%22%20OR%20%22van%22%20OR%20%22bus%22)%20(%22needle%20syringe%22%20OR%20%22injecting%20equipment%22)%20Australia>)
 
 ### Vending Machine Programs
 
@@ -118,7 +109,6 @@ site:*.gov.au filetype:pdf ("needle syringe program" OR "needle exchange" OR "sy
 "vending machine" OR "dispensing machine" ("needle" OR "syringe" OR "injecting equipment") Australia
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=%22vending%20machine%22%20OR%20%22dispensing%20machine%22%20(%22needle%22%20OR%20%22syringe%22%20OR%20%22injecting%20equipment%22)%20Australia>)
 
 ### Secondary Distribution
 
@@ -126,7 +116,6 @@ site:*.gov.au filetype:pdf ("needle syringe program" OR "needle exchange" OR "sy
 "secondary distribution" OR "peer distribution" ("needle syringe" OR "injecting equipment") Australia filetype:pdf
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=%22secondary%20distribution%22%20OR%20%22peer%20distribution%22%20(%22needle%20syringe%22%20OR%20%22injecting%20equipment%22)%20Australia%20filetype%3Apdf>)
 
 ---
 
@@ -150,7 +139,6 @@ site:*.gov.au filetype:pdf ("needle syringe program" OR "needle exchange" OR "sy
 "NSP" OR "needle syringe" (training OR induction OR "capacity building") Australia filetype:pdf
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=%22NSP%22%20OR%20%22needle%20syringe%22%20(training%20OR%20induction%20OR%20%22capacity%20building%22)%20Australia%20filetype%3Apdf>)
 
 ### Peer Worker NSP Training
 
@@ -158,7 +146,6 @@ site:*.gov.au filetype:pdf ("needle syringe program" OR "needle exchange" OR "sy
 "peer worker" ("needle syringe" OR NSP) training filetype:pdf -jobs
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=%22peer%20worker%22%20(%22needle%20syringe%22%20OR%20NSP)%20training%20filetype%3Apdf%20-jobs>)
 
 ### Clinical Considerations
 
@@ -166,7 +153,6 @@ site:*.gov.au filetype:pdf ("needle syringe program" OR "needle exchange" OR "sy
 "injecting" (vein care OR "safer injecting" OR technique) training filetype:pdf
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=%22injecting%22%20(vein%20care%20OR%20%22safer%20injecting%22%20OR%20technique)%20training%20filetype%3Apdf>)
 
 ---
 
@@ -185,7 +171,6 @@ site:aihw.gov.au "needle syringe program" OR NSP statistics
 "needle syringe" ("distribution data" OR "equipment distribution" OR statistics) Australia
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=%22needle%20syringe%22%20(%22distribution%20data%22%20OR%20%22equipment%20distribution%22%20OR%20statistics)%20Australia>)
 
 ### BBV Data Related to NSP
 
@@ -193,7 +178,6 @@ site:aihw.gov.au "needle syringe program" OR NSP statistics
 site:aihw.gov.au ("hepatitis C" OR HCV OR "blood borne virus") "injecting drug use"
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=site%3Aaihw.gov.au%20(%22hepatitis%20C%22%20OR%20HCV%20OR%20%22blood%20borne%20virus%22)%20%22injecting%20drug%20use%22>)
 
 ---
 
@@ -226,7 +210,6 @@ intitle:"systematic review" "needle syringe program" OR "needle exchange" effect
 "needle syringe program" ("cost-effectiveness" OR "cost-benefit" OR "economic evaluation") filetype:pdf
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=%22needle%20syringe%20program%22%20(%22cost-effectiveness%22%20OR%20%22cost-benefit%22%20OR%20%22economic%20evaluation%22)%20filetype%3Apdf>)
 
 ---
 
@@ -238,7 +221,6 @@ intitle:"systematic review" "needle syringe program" OR "needle exchange" effect
 "fitpack" OR "injecting equipment" (contents OR standards OR "what's included") Australia
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=%22fitpack%22%20OR%20%22injecting%20equipment%22%20(contents%20OR%20standards%20OR%20%22what's%20included%22)%20Australia>)
 
 ### Safe Disposal
 
@@ -246,7 +228,6 @@ intitle:"systematic review" "needle syringe program" OR "needle exchange" effect
 "safe disposal" OR "sharps disposal" ("needle" OR "syringe") (guideline OR information) Australia
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=%22safe%20disposal%22%20OR%20%22sharps%20disposal%22%20(%22needle%22%20OR%20%22syringe%22)%20(guideline%20OR%20information)%20Australia>)
 
 ### Specialised Equipment
 

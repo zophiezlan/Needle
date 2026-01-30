@@ -26,7 +26,6 @@ site:*.gov.au filetype:pdf "take-home naloxone" guidelines
 site:*.gov.au filetype:pdf ("take-home naloxone" OR THN) (guideline OR program)
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=site%3A*.gov.au%20filetype%3Apdf%20(%22take-home%20naloxone%22%20OR%20THN)%20(guideline%20OR%20program)>)
 
 **Why this works:**
 
@@ -40,7 +39,6 @@ site:*.gov.au filetype:pdf ("take-home naloxone" OR THN) (guideline OR program)
 site:*.health.*.gov.au filetype:pdf naloxone (community OR peer OR training)
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=site%3A*.health.*.gov.au%20filetype%3Apdf%20naloxone%20(community%20OR%20peer%20OR%20training)>)
 
 ### Naloxone Training Materials
 
@@ -59,7 +57,6 @@ site:*.health.*.gov.au filetype:pdf naloxone (community OR peer OR training)
 site:*.gov.au (naloxone OR narcan OR nyxoid) (program OR guideline OR training) filetype:pdf
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=site%3A*.gov.au%20(naloxone%20OR%20narcan%20OR%20nyxoid)%20(program%20OR%20guideline%20OR%20training)%20filetype%3Apdf>)
 
 **Why this works:**
 
@@ -72,7 +69,6 @@ site:*.gov.au (naloxone OR narcan OR nyxoid) (program OR guideline OR training) 
 "naloxone" (pharmacy OR pharmacist) (supply OR access OR "S3" OR "schedule 3") Australia
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=%22naloxone%22%20(pharmacy%20OR%20pharmacist)%20(supply%20OR%20access%20OR%20%22S3%22%20OR%20%22schedule%203%22)%20Australia>)
 
 ### Peer Distribution Programs
 
@@ -80,7 +76,6 @@ site:*.gov.au (naloxone OR narcan OR nyxoid) (program OR guideline OR training) 
 site:*.org.au "naloxone" ("peer distribution" OR "peer-led" OR "community distribution") filetype:pdf
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=site%3A*.org.au%20%22naloxone%22%20(%22peer%20distribution%22%20OR%20%22peer-led%22%20OR%20%22community%20distribution%22)%20filetype%3Apdf>)
 
 ### Training Resources from Sector
 
@@ -88,7 +83,6 @@ site:*.org.au "naloxone" ("peer distribution" OR "peer-led" OR "community distri
 (site:nuaa.org.au OR site:aivl.org.au OR site:penington.org.au) naloxone training filetype:pdf
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=(site%3Anuaa.org.au%20OR%20site%3Aaivl.org.au%20OR%20site%3Apenington.org.au)%20naloxone%20training%20filetype%3Apdf>)
 
 ---
 
@@ -100,7 +94,6 @@ site:*.org.au "naloxone" ("peer distribution" OR "peer-led" OR "community distri
 site:*.gov.au filetype:pdf ("take-home naloxone" OR "take home naloxone" OR THN OR "naloxone program") (guideline OR framework OR program OR implementation) after:2023
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=site%3A*.gov.au%20filetype%3Apdf%20(%22take-home%20naloxone%22%20OR%20%22take%20home%20naloxone%22%20OR%20THN%20OR%20%22naloxone%20program%22)%20(guideline%20OR%20framework%20OR%20program%20OR%20implementation)%20after%3A2023>)
 
 ### Intranasal/Nasal Spray Resources
 
@@ -108,7 +101,6 @@ site:*.gov.au filetype:pdf ("take-home naloxone" OR "take home naloxone" OR THN 
 (nyxoid OR "intranasal naloxone" OR "nasal spray" OR "nasal naloxone") (training OR "how to use" OR administration) Australia filetype:pdf
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=(nyxoid%20OR%20%22intranasal%20naloxone%22%20OR%20%22nasal%20spray%22%20OR%20%22nasal%20naloxone%22)%20(training%20OR%20%22how%20to%20use%22%20OR%20administration)%20Australia%20filetype%3Apdf>)
 
 ### Rescheduling & Policy Changes
 
@@ -116,7 +108,6 @@ site:*.gov.au filetype:pdf ("take-home naloxone" OR "take home naloxone" OR THN 
 "naloxone" ("S3" OR "schedule 3" OR "rescheduling" OR "down-scheduling") Australia policy
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=%22naloxone%22%20(%22S3%22%20OR%20%22schedule%203%22%20OR%20%22rescheduling%22%20OR%20%22down-scheduling%22)%20Australia%20policy>)
 
 ### Community Access Models
 
@@ -124,7 +115,6 @@ site:*.gov.au filetype:pdf ("take-home naloxone" OR "take home naloxone" OR THN 
 "naloxone" ("vending" OR "free distribution" OR "public access" OR "community naloxone") Australia
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=%22naloxone%22%20(%22vending%22%20OR%20%22free%20distribution%22%20OR%20%22public%20access%22%20OR%20%22community%20naloxone%22)%20Australia>)
 
 ### Standing Order Programs
 
@@ -163,7 +153,6 @@ site:*.gov.au "naloxone" "standing order" OR "standing authority" filetype:pdf
 "naloxone" ("peer education" OR "peer trainer" OR "peer-led training") filetype:pdf
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=%22naloxone%22%20(%22peer%20education%22%20OR%20%22peer%20trainer%22%20OR%20%22peer-led%20training%22)%20filetype%3Apdf>)
 
 ### Clinical Training
 
@@ -189,7 +178,6 @@ site:*.gov.au "naloxone" "clinical guideline" OR "prescribing" OR "administratio
 site:*.edu.au "naloxone" (evaluation OR effectiveness OR outcomes) Australia filetype:pdf
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=site%3A*.edu.au%20%22naloxone%22%20(evaluation%20OR%20effectiveness%20OR%20outcomes)%20Australia%20filetype%3Apdf>)
 
 ### Cochrane/Systematic Reviews
 
@@ -215,7 +203,6 @@ site:ndarc.med.unsw.edu.au naloxone filetype:pdf
 "nyxoid" (training OR "how to use" OR guide) Australia
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=%22nyxoid%22%20(training%20OR%20%22how%20to%20use%22%20OR%20guide)%20Australia>)
 
 ### Injectable
 
@@ -223,7 +210,6 @@ site:ndarc.med.unsw.edu.au naloxone filetype:pdf
 "naloxone" (injectable OR intramuscular OR IM) (training OR guide) Australia
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=%22naloxone%22%20(injectable%20OR%20intramuscular%20OR%20IM)%20(training%20OR%20guide)%20Australia>)
 
 ### Comparison of Formulations
 
@@ -231,7 +217,6 @@ site:ndarc.med.unsw.edu.au naloxone filetype:pdf
 "naloxone" (intranasal OR intramuscular OR injectable) comparison OR review filetype:pdf
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=%22naloxone%22%20(intranasal%20OR%20intramuscular%20OR%20injectable)%20comparison%20OR%20review%20filetype%3Apdf>)
 
 ---
 

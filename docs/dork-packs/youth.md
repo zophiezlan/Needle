@@ -75,7 +75,6 @@ Find youth AOD resources:
 ("youth" OR "young people" OR "adolescent" OR "teen" OR "young adult") ("alcohol and other drugs" OR AOD OR "drug use" OR "harm reduction") Australia (service OR program OR prevention OR research) filetype:pdf after:2020
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=(%22youth%22%20OR%20%22young%20people%22%20OR%20%22adolescent%22%20OR%20%22teen%22%20OR%20%22young%20adult%22)%20(%22alcohol%20and%20other%20drugs%22%20OR%20AOD%20OR%20%22drug%20use%22%20OR%20%22harm%20reduction%22)%20Australia%20(service%20OR%20program%20OR%20prevention%20OR%20research)%20filetype%3Apdf%20after%3A2020>)
 
 ### Life Skills Programs
 
@@ -101,7 +100,6 @@ Find youth AOD resources:
 "drug education" schools Australia (effectiveness OR evaluation) filetype:pdf
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=%22drug%20education%22%20schools%20Australia%20(effectiveness%20OR%20evaluation)%20filetype%3Apdf>)
 
 ### Prevention Programs
 
@@ -109,7 +107,6 @@ Find youth AOD resources:
 "prevention" "young people" OR youth (drug OR alcohol) Australia evaluation
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=%22prevention%22%20%22young%20people%22%20OR%20youth%20(drug%20OR%20alcohol)%20Australia%20evaluation>)
 
 ### Evidence-Based Prevention
 
@@ -117,7 +114,6 @@ Find youth AOD resources:
 "evidence-based" prevention youth (drug OR alcohol) Australia
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=%22evidence-based%22%20prevention%20youth%20(drug%20OR%20alcohol)%20Australia>)
 
 ### Harm Reduction Education
 
@@ -137,7 +133,6 @@ Find youth AOD resources:
 site:ysas.org.au filetype:pdf
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=%22youth%22%20AOD%20service%20OR%20%22alcohol%20and%20other%20drugs%22%20(directory%20OR%20list)%20%5BYOUR%20STATE%5D%0Asite%3Aysas.org.au%20filetype%3Apdf>)
 
 ### Youth Withdrawal
 
@@ -145,7 +140,6 @@ site:ysas.org.au filetype:pdf
 "youth" OR "adolescent" withdrawal OR detox (service OR program) Australia
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=%22youth%22%20OR%20%22adolescent%22%20withdrawal%20OR%20detox%20(service%20OR%20program)%20Australia>)
 
 ### Youth Residential
 
@@ -153,7 +147,6 @@ site:ysas.org.au filetype:pdf
 "youth residential" OR "adolescent residential" (treatment OR rehabilitation) drug alcohol Australia
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=%22youth%20residential%22%20OR%20%22adolescent%20residential%22%20(treatment%20OR%20rehabilitation)%20drug%20alcohol%20Australia>)
 
 ---
 
@@ -230,7 +223,6 @@ site:ysas.org.au filetype:pdf
 site:headspace.org.au drug OR alcohol
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=%22youth%22%20OR%20%22young%20people%22%20%22mental%20health%22%20(%22substance%20use%22%20OR%20AOD)%20Australia%0Asite%3Aheadspace.org.au%20drug%20OR%20alcohol>)
 
 ### Early Psychosis
 
@@ -268,7 +260,6 @@ site:headspace.org.au drug OR alcohol
 site:aihw.gov.au youth "alcohol and other drugs"
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=%22young%20people%22%20OR%20%22youth%22%20drug%20use%20(survey%20OR%20statistics)%20Australia%0Asite%3Aaihw.gov.au%20youth%20%22alcohol%20and%20other%20drugs%22>)
 
 ### Research
 
@@ -276,7 +267,6 @@ site:aihw.gov.au youth "alcohol and other drugs"
 site:*.edu.au "youth" OR "young people" (AOD OR "alcohol and other drugs") Australia filetype:pdf
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=site%3A*.edu.au%20%22youth%22%20OR%20%22young%20people%22%20(AOD%20OR%20%22alcohol%20and%20other%20drugs%22)%20Australia%20filetype%3Apdf>)
 
 ---
 
@@ -288,7 +278,6 @@ site:*.edu.au "youth" OR "young people" (AOD OR "alcohol and other drugs") Austr
 "online" OR "digital" (intervention OR program) youth drug OR alcohol Australia
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=%22online%22%20OR%20%22digital%22%20(intervention%20OR%20program)%20youth%20drug%20OR%20alcohol%20Australia>)
 
 ### Apps for Youth
 
@@ -296,7 +285,6 @@ site:*.edu.au "youth" OR "young people" (AOD OR "alcohol and other drugs") Austr
 (app OR application) youth drug OR alcohol Australia
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=(app%20OR%20application)%20youth%20drug%20OR%20alcohol%20Australia>)
 
 ---
 

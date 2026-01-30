@@ -57,7 +57,6 @@ site:health.vic.gov.au "drug alert" OR "health alert"
 site:*.health.*.gov.au (intitle:"drug alert" OR intitle:"drug warning" OR intitle:"health alert") after:2025-01-01
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=site%3A*.health.*.gov.au%20(intitle%3A%22drug%20alert%22%20OR%20intitle%3A%22drug%20warning%22%20OR%20intitle%3A%22health%20alert%22)%20after%3A2025-01-01>)
 
 **Why this works:**
 
@@ -71,7 +70,6 @@ site:*.health.*.gov.au (intitle:"drug alert" OR intitle:"drug warning" OR intitl
 site:*.gov.au ("nitazene" OR "xylazine" OR "fentanyl") (alert OR warning)
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=site%3A*.gov.au%20(%22nitazene%22%20OR%20%22xylazine%22%20OR%20%22fentanyl%22)%20(alert%20OR%20warning)>)
 
 ### Alerts with PDFs (Official Documents)
 
@@ -79,7 +77,6 @@ site:*.gov.au ("nitazene" OR "xylazine" OR "fentanyl") (alert OR warning)
 site:*.gov.au filetype:pdf ("drug alert" OR "drug warning" OR "drug notification")
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=site%3A*.gov.au%20filetype%3Apdf%20(%22drug%20alert%22%20OR%20%22drug%20warning%22%20OR%20%22drug%20notification%22)>)
 
 ---
 
@@ -91,7 +88,6 @@ site:*.gov.au filetype:pdf ("drug alert" OR "drug warning" OR "drug notification
 site:*.health.*.gov.au (intitle:"drug alert" OR intitle:"drug warning" OR intitle:"drug notification" OR intitle:"clinical safety alert") (opioid OR stimulant OR "novel substance" OR contamina*) after:2025-01-01 filetype:pdf
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=site%3A*.health.*.gov.au%20(intitle%3A%22drug%20alert%22%20OR%20intitle%3A%22drug%20warning%22%20OR%20intitle%3A%22drug%20notification%22%20OR%20intitle%3A%22clinical%20safety%20alert%22)%20(opioid%20OR%20stimulant%20OR%20%22novel%20substance%22%20OR%20contamina*)%20after%3A2025-01-01%20filetype%3Apdf>)
 
 **Why this works:**
 
@@ -113,7 +109,6 @@ site:*.gov.au inurl:"/alerts/" OR inurl:"/warnings/" filetype:pdf "drug"
 site:*.gov.au filetype:pdf ("nitazene" OR "benzimidazole opioid" OR "xylazine" OR "medetomidine") after:2024
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=site%3A*.gov.au%20filetype%3Apdf%20(%22nitazene%22%20OR%20%22benzimidazole%20opioid%22%20OR%20%22xylazine%22%20OR%20%22medetomidine%22)%20after%3A2024>)
 
 ### Alerts Mentioning Specific Formulations
 
@@ -121,7 +116,6 @@ site:*.gov.au filetype:pdf ("nitazene" OR "benzimidazole opioid" OR "xylazine" O
 site:*.gov.au "drug alert" ("high strength" OR "unexpected" OR "contaminated" OR "adulterated")
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=site%3A*.gov.au%20%22drug%20alert%22%20(%22high%20strength%22%20OR%20%22unexpected%22%20OR%20%22contaminated%22%20OR%20%22adulterated%22)>)
 
 ---
 
@@ -147,7 +141,6 @@ Target local news domains specifically to catch community reports.
 site:.com.au (news OR times OR herald OR daily) ("bad batch" OR "warning") location:Newcastle
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=site%3A.com.au%20(news%20OR%20times%20OR%20herald%20OR%20daily)%20(%22bad%20batch%22%20OR%20%22warning%22)%20location%3ANewcastle>)
 
 > **💡 Pro Tip:** See [Search Tweaks](../tools/search-tweaks.md#local-alert-monitoring) for more
 > local monitoring recipes.
@@ -186,7 +179,6 @@ site:saferparty.ch OR site:checkit.wien analysis
 "drug alert" (UK OR Canada OR Europe) [substance] 2025
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=%22drug%20alert%22%20(UK%20OR%20Canada%20OR%20Europe)%20%5Bsubstance%5D%202025>)
 
 ---
 
@@ -220,13 +212,11 @@ Use these dorks as Google Alerts for automatic notifications:
 site:*.health.*.gov.au ("drug alert" OR "drug warning")
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=site%3A*.health.*.gov.au%20(%22drug%20alert%22%20OR%20%22drug%20warning%22)>)
 
 ```txt
 ("nitazene" OR "benzimidazole opioid") site:*.gov.au
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=(%22nitazene%22%20OR%20%22benzimidazole%20opioid%22)%20site%3A*.gov.au>)
 
 See [Google Alerts Guide](../tools/google-alerts.md) for detailed setup.
 

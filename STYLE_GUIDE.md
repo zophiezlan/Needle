@@ -167,15 +167,15 @@ site:*.gov.au filetype:pdf "harm reduction"
 
 ### Live Search Links
 
-Include clickable search links after queries:
+Code blocks with dork queries automatically get an "Instant Dork" button (search icon) that opens Google in a new tab:
 
 ````markdown
 ```txt
 site:*.gov.au "drug alert" after:2025-01-01
 ```
-
-[👉 **Run this Search**](https://www.google.com/search?q=site%3A*.gov.au%20%22drug%20alert%22%20after%3A2025-01-01)
 ````
+
+The search button appears on hover next to the copy button.
 
 ---
 

@@ -62,7 +62,6 @@ site:aihw.gov.au "drug-induced deaths"
 inquest finding "drug" OR "overdose" "recommendation" Australia
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=%22coroner%22%20%22recommendation%22%20(%22harm%20reduction%22%20OR%20naloxone%20OR%20prevention)%0Ainquest%20finding%20%22drug%22%20OR%20%22overdose%22%20%22recommendation%22%20Australia>)
 
 ### Systemic Issues
 
@@ -90,7 +89,6 @@ inquest finding "drug" OR "overdose" "recommendation" Australia
 (coroner OR coronial OR inquest) ("drug" OR "overdose" OR "substance" OR "opioid") (finding OR recommendation OR inquest) Australia filetype:pdf after:2020
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=(coroner%20OR%20coronial%20OR%20inquest)%20(%22drug%22%20OR%20%22overdose%22%20OR%20%22substance%22%20OR%20%22opioid%22)%20(finding%20OR%20recommendation%20OR%20inquest)%20Australia%20filetype%3Apdf%20after%3A2020>)
 
 ### Enhanced Surveillance
 
@@ -105,7 +103,6 @@ inquest finding "drug" OR "overdose" "recommendation" Australia
 "coroner" (prevention OR "preventable death" OR recommendation) ("drug" OR "overdose") Australia
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=%22coroner%22%20(prevention%20OR%20%22preventable%20death%22%20OR%20recommendation)%20(%22drug%22%20OR%20%22overdose%22)%20Australia>)
 
 ---
 
@@ -211,7 +208,6 @@ site:penington.org.au "overdose" OR "Australia's Annual Overdose Report"
 "opioid" death OR overdose Australia (coroner OR statistics)
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=%22opioid%22%20death%20OR%20overdose%20Australia%20(coroner%20OR%20statistics)>)
 
 ### Heroin
 
@@ -219,7 +215,6 @@ site:penington.org.au "overdose" OR "Australia's Annual Overdose Report"
 "heroin" death OR overdose Australia (coroner OR statistics)
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=%22heroin%22%20death%20OR%20overdose%20Australia%20(coroner%20OR%20statistics)>)
 
 ### Pharmaceutical Opioids
 
@@ -228,7 +223,6 @@ site:penington.org.au "overdose" OR "Australia's Annual Overdose Report"
 (oxycodone OR fentanyl OR codeine) overdose death Australia
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=(%22pharmaceutical%20opioid%22%20OR%20%22prescription%20opioid%22)%20death%20Australia%0A(oxycodone%20OR%20fentanyl%20OR%20codeine)%20overdose%20death%20Australia>)
 
 ### Methamphetamine
 
@@ -236,7 +230,6 @@ site:penington.org.au "overdose" OR "Australia's Annual Overdose Report"
 "methamphetamine" OR "ice" death Australia (coroner OR data)
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=%22methamphetamine%22%20OR%20%22ice%22%20death%20Australia%20(coroner%20OR%20data)>)
 
 ### Emerging Substances
 
@@ -245,7 +238,6 @@ site:penington.org.au "overdose" OR "Australia's Annual Overdose Report"
 "nitazene" death Australia
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=%22fentanyl%22%20death%20OR%20overdose%20Australia%20(emerging)%0A%22nitazene%22%20death%20Australia>)
 
 ### Polydrug/Combination
 
@@ -272,7 +264,6 @@ site:penington.org.au "overdose" OR "Australia's Annual Overdose Report"
 ("prison death" OR "correctional") drug OR overdose OR withdrawal Australia
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=(%22prison%20death%22%20OR%20%22correctional%22)%20drug%20OR%20overdose%20OR%20withdrawal%20Australia>)
 
 ### Hospital/Healthcare Deaths
 
@@ -298,7 +289,6 @@ site:penington.org.au "overdose" OR "Australia's Annual Overdose Report"
 coroner recommendation ("harm reduction" OR naloxone OR "overdose prevention")
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=coroner%20recommendation%20(%22harm%20reduction%22%20OR%20naloxone%20OR%20%22overdose%20prevention%22)>)
 
 ### Implementation of Recommendations
 
@@ -306,7 +296,6 @@ coroner recommendation ("harm reduction" OR naloxone OR "overdose prevention")
 coronial recommendation (implementation OR response OR "government response") drug
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=coronial%20recommendation%20(implementation%20OR%20response%20OR%20%22government%20response%22)%20drug>)
 
 ### Systemic Change
 
@@ -314,7 +303,6 @@ coronial recommendation (implementation OR response OR "government response") dr
 coroner ("systemic change" OR "systemic recommendation") drug OR overdose
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=coroner%20(%22systemic%20change%22%20OR%20%22systemic%20recommendation%22)%20drug%20OR%20overdose>)
 
 ---
 
@@ -333,7 +321,6 @@ coroner ("systemic change" OR "systemic recommendation") drug OR overdose
 ("drug death" OR "overdose") trend Australia 2020..2026
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=(%22drug%20death%22%20OR%20%22overdose%22)%20trend%20Australia%202020..2026>)
 
 ### Geographic Patterns
 
@@ -341,7 +328,6 @@ coroner ("systemic change" OR "systemic recommendation") drug OR overdose
 ("drug death" OR "overdose") (rural OR regional OR metropolitan) Australia comparison
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=(%22drug%20death%22%20OR%20%22overdose%22)%20(rural%20OR%20regional%20OR%20metropolitan)%20Australia%20comparison>)
 
 ---
 

@@ -99,13 +99,13 @@ When contributing new dorks, use this structure:
 ```txt
 site:example.com "search terms" filetype:pdf
 ```
-````
-
-[👉 **Run this Search**](https://www.google.com/search?q=...)
 
 **What this finds:** Brief explanation of what results to expect.
 
 **Why it's useful:** Context for harm reduction workers.
+````
+
+Note: Code blocks with dork queries automatically get an "Instant Dork" button that opens Google search in a new tab.
 
 ---
 

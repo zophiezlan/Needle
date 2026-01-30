@@ -14,7 +14,6 @@ Find peer worker training and framework resources:
 ("peer worker" OR "lived experience") (training OR framework) filetype:pdf site:*.org.au -jobs
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=(%22peer%20worker%22%20OR%20%22lived%20experience%22)%20(training%20OR%20framework)%20filetype%3Apdf%20site%3A*.org.au%20-jobs>)
 
 ---
 
@@ -39,7 +38,6 @@ experiential knowledge is expert knowledge. These searches help you find:
 ("peer worker" OR "peer support" OR "lived experience") (supervision OR framework OR competencies) filetype:pdf site:*.org.au
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=(%22peer%20worker%22%20OR%20%22peer%20support%22%20OR%20%22lived%20experience%22)%20(supervision%20OR%20framework%20OR%20competencies)%20filetype%3Apdf%20site%3A*.org.au>)
 
 ### Peer Worker Training
 
@@ -54,7 +52,6 @@ experiential knowledge is expert knowledge. These searches help you find:
 ("lived experience" AROUND(6) workforce) (guideline OR framework OR standard) filetype:pdf Australia
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=(%22lived%20experience%22%20AROUND(6)%20workforce)%20(guideline%20OR%20framework%20OR%20standard)%20filetype%3Apdf%20Australia>)
 
 ---
 
@@ -66,7 +63,6 @@ experiential knowledge is expert knowledge. These searches help you find:
 "peer supervision" (model OR framework OR guidelines) AOD filetype:pdf
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=%22peer%20supervision%22%20(model%20OR%20framework%20OR%20guidelines)%20AOD%20filetype%3Apdf>)
 
 ### Competency Frameworks
 
@@ -74,7 +70,6 @@ experiential knowledge is expert knowledge. These searches help you find:
 "peer worker" (competencies OR standards OR qualification) Australia filetype:pdf
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=%22peer%20worker%22%20(competencies%20OR%20standards%20OR%20qualification)%20Australia%20filetype%3Apdf>)
 
 ### Peer-Led Research
 
@@ -89,7 +84,6 @@ experiential knowledge is expert knowledge. These searches help you find:
 (site:nuaa.org.au OR site:aivl.org.au OR site:hrvic.org.au OR site:quihn.org) filetype:pdf
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=(site%3Anuaa.org.au%20OR%20site%3Aaivl.org.au%20OR%20site%3Ahrvic.org.au%20OR%20site%3Aquihn.org)%20filetype%3Apdf>)
 
 ---
 
@@ -101,7 +95,6 @@ experiential knowledge is expert knowledge. These searches help you find:
 ("peer worker" OR "peer support worker" OR "lived experience worker" OR "consumer consultant") (supervision OR training OR competencies OR framework OR "professional development") filetype:pdf (Australia OR NSW OR VIC OR QLD) -jobs -careers after:2020
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=(%22peer%20worker%22%20OR%20%22peer%20support%20worker%22%20OR%20%22lived%20experience%20worker%22%20OR%20%22consumer%20consultant%22)%20(supervision%20OR%20training%20OR%20competencies%20OR%20framework%20OR%20%22professional%20development%22)%20filetype%3Apdf%20(Australia%20OR%20NSW%20OR%20VIC%20OR%20QLD)%20-jobs%20-careers%20after%3A2020>)
 
 ### Reflective Practice & Supervision
 
@@ -109,7 +102,6 @@ experiential knowledge is expert knowledge. These searches help you find:
 ("reflective practice" AROUND(5) supervision) (AOD OR "alcohol and other drugs") filetype:pdf
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=(%22reflective%20practice%22%20AROUND(5)%20supervision)%20(AOD%20OR%20%22alcohol%20and%20other%20drugs%22)%20filetype%3Apdf>)
 
 ### Peer Wellbeing & Self-Care
 
@@ -117,7 +109,6 @@ experiential knowledge is expert knowledge. These searches help you find:
 ("vicarious trauma" OR "self-care" OR wellbeing) "peer worker" harm reduction filetype:pdf
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=(%22vicarious%20trauma%22%20OR%20%22self-care%22%20OR%20wellbeing)%20%22peer%20worker%22%20harm%20reduction%20filetype%3Apdf>)
 
 ### Pay Equity & Conditions
 
@@ -125,7 +116,6 @@ experiential knowledge is expert knowledge. These searches help you find:
 "peer worker" (remuneration OR "pay equity" OR conditions OR "award") filetype:pdf
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=%22peer%20worker%22%20(remuneration%20OR%20%22pay%20equity%22%20OR%20conditions%20OR%20%22award%22)%20filetype%3Apdf>)
 
 ### Career Pathways
 
@@ -133,7 +123,6 @@ experiential knowledge is expert knowledge. These searches help you find:
 "peer workforce" ("career pathway" OR "professional development" OR progression) filetype:pdf
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=%22peer%20workforce%22%20(%22career%20pathway%22%20OR%20%22professional%20development%22%20OR%20progression)%20filetype%3Apdf>)
 
 ---
 
@@ -145,7 +134,6 @@ experiential knowledge is expert knowledge. These searches help you find:
 "peer worker" training (package OR curriculum OR module) AOD filetype:pdf
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=%22peer%20worker%22%20training%20(package%20OR%20curriculum%20OR%20module)%20AOD%20filetype%3Apdf>)
 
 ### Train the Trainer
 
@@ -153,7 +141,6 @@ experiential knowledge is expert knowledge. These searches help you find:
 "peer" "train the trainer" (harm reduction OR AOD) filetype:pdf
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=%22peer%22%20%22train%20the%20trainer%22%20(harm%20reduction%20OR%20AOD)%20filetype%3Apdf>)
 
 ### Induction Resources
 
@@ -161,7 +148,6 @@ experiential knowledge is expert knowledge. These searches help you find:
 "peer worker" (induction OR orientation OR onboarding) filetype:pdf
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=%22peer%20worker%22%20(induction%20OR%20orientation%20OR%20onboarding)%20filetype%3Apdf>)
 
 ### Supervision Training
 
@@ -169,7 +155,6 @@ experiential knowledge is expert knowledge. These searches help you find:
 (supervising OR supervision) "peer worker" training filetype:pdf
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=(supervising%20OR%20supervision)%20%22peer%20worker%22%20training%20filetype%3Apdf>)
 
 ---
 
@@ -181,7 +166,6 @@ experiential knowledge is expert knowledge. These searches help you find:
 "lived experience workforce" (strategy OR framework OR policy) Australia filetype:pdf
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=%22lived%20experience%20workforce%22%20(strategy%20OR%20framework%20OR%20policy)%20Australia%20filetype%3Apdf>)
 
 ### Competency Standards
 
@@ -189,7 +173,6 @@ experiential knowledge is expert knowledge. These searches help you find:
 "peer worker" ("competency framework" OR "capability framework" OR "practice standards") filetype:pdf
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=%22peer%20worker%22%20(%22competency%20framework%22%20OR%20%22capability%20framework%22%20OR%20%22practice%20standards%22)%20filetype%3Apdf>)
 
 ### Role Descriptions
 
@@ -197,7 +180,6 @@ experiential knowledge is expert knowledge. These searches help you find:
 "peer worker" OR "peer support worker" ("role description" OR "position description" OR "job description") AOD filetype:pdf
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=%22peer%20worker%22%20OR%20%22peer%20support%20worker%22%20(%22role%20description%22%20OR%20%22position%20description%22%20OR%20%22job%20description%22)%20AOD%20filetype%3Apdf>)
 
 ---
 
@@ -223,7 +205,6 @@ experiential knowledge is expert knowledge. These searches help you find:
 (debriefing OR "critical incident") "peer worker" support filetype:pdf
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=(debriefing%20OR%20%22critical%20incident%22)%20%22peer%20worker%22%20support%20filetype%3Apdf>)
 
 ---
 
@@ -242,7 +223,6 @@ experiential knowledge is expert knowledge. These searches help you find:
 "lived experience" representation (committee OR advisory OR consultation) drug
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=%22lived%20experience%22%20representation%20(committee%20OR%20advisory%20OR%20consultation)%20drug>)
 
 ### Peer Voice in Policy
 
@@ -268,7 +248,6 @@ experiential knowledge is expert knowledge. These searches help you find:
 "peer-led" (service OR program OR initiative) harm reduction filetype:pdf
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=%22peer-led%22%20(service%20OR%20program%20OR%20initiative)%20harm%20reduction%20filetype%3Apdf>)
 
 ### Peer Navigation
 
@@ -276,7 +255,6 @@ experiential knowledge is expert knowledge. These searches help you find:
 "peer navigation" OR "peer navigator" (drug OR AOD OR "harm reduction") filetype:pdf
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=%22peer%20navigation%22%20OR%20%22peer%20navigator%22%20(drug%20OR%20AOD%20OR%20%22harm%20reduction%22)%20filetype%3Apdf>)
 
 ### Peer Outreach
 
@@ -284,7 +262,6 @@ experiential knowledge is expert knowledge. These searches help you find:
 "peer outreach" (drug OR "harm reduction" OR "needle syringe") filetype:pdf
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=%22peer%20outreach%22%20(drug%20OR%20%22harm%20reduction%22%20OR%20%22needle%20syringe%22)%20filetype%3Apdf>)
 
 ### Peer Distribution Programs
 
@@ -292,7 +269,6 @@ experiential knowledge is expert knowledge. These searches help you find:
 "peer distribution" (naloxone OR "needle syringe" OR NSP) Australia filetype:pdf
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=%22peer%20distribution%22%20(naloxone%20OR%20%22needle%20syringe%22%20OR%20NSP)%20Australia%20filetype%3Apdf>)
 
 ---
 
@@ -304,7 +280,6 @@ experiential knowledge is expert knowledge. These searches help you find:
 "peer support" OR "peer worker" (effectiveness OR outcomes OR evaluation) "harm reduction" filetype:pdf
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=%22peer%20support%22%20OR%20%22peer%20worker%22%20(effectiveness%20OR%20outcomes%20OR%20evaluation)%20%22harm%20reduction%22%20filetype%3Apdf>)
 
 ### Peer Work Evidence Base
 
@@ -312,7 +287,6 @@ experiential knowledge is expert knowledge. These searches help you find:
 site:*.edu.au "peer worker" OR "peer support" (evidence OR research OR evaluation) AOD filetype:pdf
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=site%3A*.edu.au%20%22peer%20worker%22%20OR%20%22peer%20support%22%20(evidence%20OR%20research%20OR%20evaluation)%20AOD%20filetype%3Apdf>)
 
 ### Co-Design & Participatory Research
 
@@ -320,7 +294,6 @@ site:*.edu.au "peer worker" OR "peer support" (evidence OR research OR evaluatio
 "co-design" OR "co-production" ("people who use drugs" OR peer) filetype:pdf
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=%22co-design%22%20OR%20%22co-production%22%20(%22people%20who%20use%20drugs%22%20OR%20peer)%20filetype%3Apdf>)
 
 ---
 
@@ -332,7 +305,6 @@ site:*.edu.au "peer worker" OR "peer support" (evidence OR research OR evaluatio
 "vicarious trauma" OR "secondary trauma" "peer worker" (prevention OR support OR management)
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=%22vicarious%20trauma%22%20OR%20%22secondary%20trauma%22%20%22peer%20worker%22%20(prevention%20OR%20support%20OR%20management)>)
 
 ### Self-Care Resources
 
@@ -340,7 +312,6 @@ site:*.edu.au "peer worker" OR "peer support" (evidence OR research OR evaluatio
 "self-care" "peer worker" (drug OR AOD OR "harm reduction") (resource OR guide OR toolkit) filetype:pdf
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=%22self-care%22%20%22peer%20worker%22%20(drug%20OR%20AOD%20OR%20%22harm%20reduction%22)%20(resource%20OR%20guide%20OR%20toolkit)%20filetype%3Apdf>)
 
 ### Burnout Prevention
 
@@ -348,7 +319,6 @@ site:*.edu.au "peer worker" OR "peer support" (evidence OR research OR evaluatio
 burnout "peer worker" OR "lived experience worker" (prevention OR support) filetype:pdf
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=burnout%20%22peer%20worker%22%20OR%20%22lived%20experience%20worker%22%20(prevention%20OR%20support)%20filetype%3Apdf>)
 
 ---
 

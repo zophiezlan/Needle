@@ -15,7 +15,6 @@ Find Australian harm reduction factsheets (PDFs):
 site:*.org.au (factsheet OR brochure OR "information sheet") ("harm reduction" OR "safer use") filetype:pdf
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=site%3A*.org.au%20(factsheet%20OR%20brochure%20OR%20%22information%20sheet%22)%20(%22harm%20reduction%22%20OR%20%22safer%20use%22)%20filetype%3Apdf>)
 
 ---
 
@@ -27,7 +26,6 @@ site:*.org.au (factsheet OR brochure OR "information sheet") ("harm reduction" O
 ("safer injecting" OR "safer injection") (factsheet OR brochure OR "information sheet") site:*.org.au filetype:pdf
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=(%22safer%20injecting%22%20OR%20%22safer%20injection%22)%20(factsheet%20OR%20brochure%20OR%20%22information%20sheet%22)%20site%3A*.org.au%20filetype%3Apdf>)
 
 ### Safer Smoking or Snorting Materials
 
@@ -35,7 +33,6 @@ site:*.org.au (factsheet OR brochure OR "information sheet") ("harm reduction" O
 ("safer smoking" OR "safer snorting" OR "safer use") (factsheet OR brochure OR leaflet) site:*.org.au filetype:pdf
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=(%22safer%20smoking%22%20OR%20%22safer%20snorting%22%20OR%20%22safer%20use%22)%20(factsheet%20OR%20brochure%20OR%20leaflet)%20site%3A*.org.au%20filetype%3Apdf>)
 
 ### Overdose Prevention Education
 
@@ -43,7 +40,6 @@ site:*.org.au (factsheet OR brochure OR "information sheet") ("harm reduction" O
 ("overdose prevention" OR "overdose education") (factsheet OR "information sheet") site:*.org.au
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=(%22overdose%20prevention%22%20OR%20%22overdose%20education%22)%20(factsheet%20OR%20%22information%20sheet%22)%20site%3A*.org.au>)
 
 ---
 
@@ -55,7 +51,6 @@ site:*.org.au (factsheet OR brochure OR "information sheet") ("harm reduction" O
 ("harm reduction" OR "safer use") ("health promotion" OR toolkit OR resources) site:*.org.au filetype:pdf
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=(%22harm%20reduction%22%20OR%20%22safer%20use%22)%20(%22health%20promotion%22%20OR%20toolkit%20OR%20resources)%20site%3A*.org.au%20filetype%3Apdf>)
 
 ### Peer Education Resources
 
@@ -63,7 +58,6 @@ site:*.org.au (factsheet OR brochure OR "information sheet") ("harm reduction" O
 ("peer education" OR "peer-led") ("harm reduction" OR "safer use") site:*.org.au filetype:pdf
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=(%22peer%20education%22%20OR%20%22peer-led%22)%20(%22harm%20reduction%22%20OR%20%22safer%20use%22)%20site%3A*.org.au%20filetype%3Apdf>)
 
 ### Government Factsheets and Brochures
 
@@ -71,7 +65,6 @@ site:*.org.au (factsheet OR brochure OR "information sheet") ("harm reduction" O
 site:*.gov.au ("harm reduction" OR "safer use") (factsheet OR brochure OR leaflet) filetype:pdf
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=site%3A*.gov.au%20(%22harm%20reduction%22%20OR%20%22safer%20use%22)%20(factsheet%20OR%20brochure%20OR%20leaflet)%20filetype%3Apdf>)
 
 ---
 
@@ -83,7 +76,6 @@ site:*.gov.au ("harm reduction" OR "safer use") (factsheet OR brochure OR leafle
 ("harm reduction" OR "safer use") (translated OR multilingual OR "easy read" OR "plain language") site:*.org.au filetype:pdf
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=(%22harm%20reduction%22%20OR%20%22safer%20use%22)%20(translated%20OR%20multilingual%20OR%20%22easy%20read%22%20OR%20%22plain%20language%22)%20site%3A*.org.au%20filetype%3Apdf>)
 
 ### Substance-Specific Harm Reduction Sheets
 
@@ -91,7 +83,6 @@ site:*.gov.au ("harm reduction" OR "safer use") (factsheet OR brochure OR leafle
 ("harm reduction" OR "safer use") (opioid OR stimulant OR benzodiazepine OR alcohol) "information sheet" site:*.org.au filetype:pdf
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=(%22harm%20reduction%22%20OR%20%22safer%20use%22)%20(opioid%20OR%20stimulant%20OR%20benzodiazepine%20OR%20alcohol)%20%22information%20sheet%22%20site%3A*.org.au%20filetype%3Apdf>)
 
 ### Campaigns, Posters, and Communications
 
@@ -99,7 +90,6 @@ site:*.gov.au ("harm reduction" OR "safer use") (factsheet OR brochure OR leafle
 ("harm reduction" OR "safer use") (campaign OR "social marketing" OR poster OR "communication plan") Australia filetype:pdf
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=(%22harm%20reduction%22%20OR%20%22safer%20use%22)%20(campaign%20OR%20%22social%20marketing%22%20OR%20poster%20OR%20%22communication%20plan%22)%20Australia%20filetype%3Apdf>)
 
 ---
 
