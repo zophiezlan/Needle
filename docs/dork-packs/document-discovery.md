@@ -39,8 +39,6 @@ filetype:xlsx "opioid" OR "methadone" treatment
 filetype:xlsx "service directory" drug alcohol
 ```
 
-[👉 **Run XLSX Search**](https://www.google.com/search?q=filetype%3Axlsx+%22harm+reduction%22+site%3A*.gov.au)
-
 ### Excel Files (Legacy)
 
 ```txt
@@ -48,8 +46,6 @@ filetype:xls "opioid treatment" OR "methadone" clinic
 filetype:xls "drug" OR "alcohol" statistics Australia
 filetype:xls "hepatitis" OR "HIV" surveillance
 ```
-
-[👉 **Run XLS Search**](https://www.google.com/search?q=filetype%3Axls+%22opioid+treatment%22+OR+%22methadone%22+clinic)
 
 ### CSV Data Files
 
@@ -59,8 +55,6 @@ filetype:csv "drug" OR "alcohol" site:*.gov.au
 filetype:csv "treatment" episodes Australia
 filetype:csv "hospitalisation" drug OR alcohol
 ```
-
-[👉 **Run CSV Search**](https://www.google.com/search?q=filetype%3Acsv+%22needle+syringe%22+OR+%22NSP%22+OR+%22overdose%22)
 
 ---
 
@@ -76,8 +70,6 @@ filetype:pptx "overdose" prevention OR response
 filetype:pptx conference "alcohol and other drugs"
 ```
 
-[👉 **Run PPTX Search**](https://www.google.com/search?q=filetype%3Apptx+%22harm+reduction%22+Australia)
-
 ### PowerPoint (Legacy)
 
 ```txt
@@ -85,16 +77,12 @@ filetype:ppt "needle exchange" OR "NSP" presentation
 filetype:ppt "methadone" OR "buprenorphine" treatment
 ```
 
-[👉 **Run PPT Search**](https://www.google.com/search?q=filetype%3Appt+%22needle+exchange%22+OR+%22NSP%22+presentation)
-
 ### PDF Presentations (Slide Decks)
 
 ```txt
 filetype:pdf "slide" OR "presentation" "harm reduction" Australia
 inurl:presentation filetype:pdf "drug policy"
 ```
-
-[👉 **Run PDF Slides Search**](https://www.google.com/search?q=filetype%3Apdf+%22slide%22+OR+%22presentation%22+%22harm+reduction%22+Australia)
 
 ---
 
@@ -109,8 +97,6 @@ filetype:docx "overdose" protocol OR response
 filetype:docx "drug checking" service design
 ```
 
-[👉 **Run DOCX Search**](https://www.google.com/search?q=filetype%3Adocx+%22harm+reduction%22+policy+OR+procedure)
-
 ### Legacy Word Files
 
 ```txt
@@ -118,16 +104,12 @@ filetype:doc "harm minimisation" Australia
 filetype:doc "injecting drug use" guidelines
 ```
 
-[👉 **Run DOC Search**](https://www.google.com/search?q=filetype%3Adoc+%22harm+minimisation%22+Australia)
-
 ### RTF & ODT (Alternative Formats)
 
 ```txt
 filetype:rtf "harm reduction" Australia
 filetype:odt "drug checking" OR "pill testing"
 ```
-
-[👉 **Run RTF Search**](https://www.google.com/search?q=filetype%3Artf+%22harm+reduction%22+Australia)
 
 ---
 
@@ -169,8 +151,6 @@ filetype:zip "training" materials drug alcohol
 filetype:zip "toolkit" AOD OR "alcohol and other drugs"
 ```
 
-[👉 **Run ZIP Search**](https://www.google.com/search?q=filetype%3Azip+%22harm+reduction%22+resources)
-
 ---
 
 ## 📖 E-books & Publications
@@ -183,8 +163,6 @@ filetype:epub "drug policy" reform
 filetype:epub "addiction" OR "recovery"
 ```
 
-[👉 **Run EPUB Search**](https://www.google.com/search?q=filetype%3Aepub+%22harm+reduction%22+guide)
-
 ---
 
 ## 🔧 Configuration & Technical Files
@@ -195,8 +173,6 @@ filetype:epub "addiction" OR "recovery"
 filetype:xml sitemap "health" site:*.gov.au
 filetype:xml sitemap "drug" site:*.org.au
 ```
-
-[👉 **Run Sitemap Search**](https://www.google.com/search?q=filetype%3Axml+sitemap+%22health%22+site%3A*.gov.au)
 
 ### Log Files (Public Health Data)
 
@@ -215,8 +191,6 @@ site:docs.google.com/document "harm reduction"
 site:docs.google.com/spreadsheets "drug" OR "alcohol" data
 site:docs.google.com/presentation "AOD" OR "harm reduction"
 ```
-
-[👉 **Run Google Docs Search**](https://www.google.com/search?q=site%3Adocs.google.com%2Fdocument+%22harm+reduction%22)
 
 ### Cloud Storage (Public Files)
 
@@ -237,16 +211,12 @@ filetype:pdf "thesis" OR "dissertation" "harm reduction" Australia
 filetype:pdf "PhD" "drug policy" OR "drug use"
 ```
 
-[👉 **Run Thesis Search**](https://www.google.com/search?q=filetype%3Apdf+%22thesis%22+OR+%22dissertation%22+%22harm+reduction%22+Australia)
-
 ### Working Papers
 
 ```txt
 filetype:pdf "working paper" "harm reduction" OR "drug policy"
 filetype:pdf "discussion paper" "alcohol and other drugs"
 ```
-
-[👉 **Run Working Papers Search**](https://www.google.com/search?q=filetype%3Apdf+%22working+paper%22+%22harm+reduction%22+OR+%22drug+policy%22)
 
 ---
 
@@ -260,8 +230,6 @@ filetype:pdf "service directory" AOD OR "alcohol and other drugs"
 filetype:csv "treatment services" drug alcohol
 ```
 
-[👉 **Run Service Directory Search**](https://www.google.com/search?q=filetype%3Axlsx+%22service+directory%22+drug+OR+alcohol+Australia)
-
 ### Clinical Guidelines
 
 ```txt
@@ -269,8 +237,6 @@ filetype:pdf "clinical guideline" OR "practice guideline" opioid
 filetype:pdf "protocol" "overdose" OR "withdrawal"
 filetype:docx "procedure" naloxone OR "take-home"
 ```
-
-[👉 **Run Guidelines Search**](https://www.google.com/search?q=filetype%3Apdf+%22clinical+guideline%22+OR+%22practice+guideline%22+opioid)
 
 ---
 
@@ -284,8 +250,6 @@ filetype:docx "agenda" "alcohol and other drugs" committee
 filetype:pdf "steering committee" AOD minutes
 ```
 
-[👉 **Run Minutes Search**](https://www.google.com/search?q=filetype%3Apdf+%22meeting+minutes%22+%22harm+reduction%22+OR+%22drug+policy%22)
-
 ### Budget & Funding
 
 ```txt
@@ -293,8 +257,6 @@ filetype:xlsx "budget" "harm reduction" OR "AOD" site:*.gov.au
 filetype:pdf "funding" allocation drug OR alcohol
 filetype:xls "expenditure" health drug services
 ```
-
-[👉 **Run Budget Search**](https://www.google.com/search?q=filetype%3Axlsx+%22budget%22+%22harm+reduction%22+OR+%22AOD%22+site%3A*.gov.au)
 
 ---
 
@@ -308,23 +270,17 @@ filetype:xls "expenditure" health drug services
 (filetype:docx OR filetype:pdf) "policy" "drug checking"
 ```
 
-[👉 **Run Multi-Format Search**](https://www.google.com/search?q=%28filetype%3Axlsx+OR+filetype%3Acsv%29+%22overdose%22+data+Australia)
-
 ### All Data Files
 
 ```txt
 (filetype:xlsx OR filetype:xls OR filetype:csv) "drug" statistics Australia
 ```
 
-[👉 **Run All Data Search**](https://www.google.com/search?q=%28filetype%3Axlsx+OR+filetype%3Axls+OR+filetype%3Acsv%29+%22drug%22+statistics+Australia)
-
 ### All Presentation Types
 
 ```txt
 (filetype:pptx OR filetype:ppt OR filetype:pdf) "harm reduction" slides conference
 ```
-
-[👉 **Run All Presentations Search**](https://www.google.com/search?q=%28filetype%3Apptx+OR+filetype%3Appt+OR+filetype%3Apdf%29+%22harm+reduction%22+slides+conference)
 
 ---
 

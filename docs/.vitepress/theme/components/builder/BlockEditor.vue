@@ -14,7 +14,14 @@ const sitePresets = [
 
 const filetypePresets = ["pdf", "doc", "docx", "xlsx", "ppt", "pptx"];
 
-const keywordPresets = [{ label: "Peer", value: "peer" }];
+const keywordPresets = [
+  { label: "Peer", value: "peer" },
+  { label: "X", value: "x" },
+  { label: "Harm reduction", value: '"harm reduction"' },
+  { label: "Drug checking", value: '"drug checking"' },
+  { label: "Naloxone", value: "naloxone" },
+  { label: "Needle & syringe", value: '"needle syringe"' },
+];
 
 const datePresets = [
   { label: "Last year", value: new Date().getFullYear() - 1 },

@@ -1,44 +1,7 @@
 <!-- docs/.vitepress/theme/components/DorkSyntaxHighlighter.vue -->
 <script setup lang="ts">
 import { onMounted, onUnmounted } from "vue";
-
-// DorkScript syntax patterns
-const PATTERNS = [
-  // Operators with colons - match operator: and capture the value
-  {
-    regex:
-      /\b(site|filetype|ext|intitle|allintitle|inurl|allinurl|intext|allintext|after|before|daterange|cache|related|info|link|inanchor|allinanchor|define|weather|stocks|map):/gi,
-    class: "dork-operator",
-  },
-  // Boolean operators
-  { regex: /\b(OR|AND)\b/g, class: "dork-boolean" },
-  // Exclusion operator (must be at start of word)
-  { regex: /(?<=^|\s)-(?=\S)/g, class: "dork-exclusion" },
-  // Wildcards
-  { regex: /\*/g, class: "dork-wildcard" },
-  // Quoted strings - must be done carefully to not break HTML
-  { regex: /"([^"]*?)"/g, class: "dork-string", replace: '<span class="dork-string">"$1"</span>' },
-  // Parentheses
-  { regex: /[()]/g, class: "dork-paren" },
-];
-
-// Check if code looks like a dork query
-function isDorkQuery(text: string): boolean {
-  const indicators = [
-    "site:",
-    "filetype:",
-    "intitle:",
-    "inurl:",
-    "intext:",
-    "after:",
-    "before:",
-    "cache:",
-    "related:",
-    "ext:",
-    " OR ",
-  ];
-  return indicators.some((ind) => text.includes(ind));
-}
+import { highlightDorkText, isDorkQuery } from "../utils/dorkscript";
 
 // Highlight dork syntax in a code element
 function highlightDork(codeEl: HTMLElement) {
@@ -52,44 +15,13 @@ function highlightDork(codeEl: HTMLElement) {
     parent.classList.add("language-dork");
   }
 
-  let html = escapeHtml(text);
-
-  // Apply highlighting patterns
-  // Strings first (special handling)
-  html = html.replace(/"([^"]*?)"/g, '<span class="dork-string">"$1"</span>');
-
-  // Operators
-  html = html.replace(
-    /\b(site|filetype|ext|intitle|allintitle|inurl|allinurl|intext|allintext|after|before|daterange|cache|related|info|link|inanchor|allinanchor|define|weather|stocks|map):/gi,
-    '<span class="dork-operator">$1:</span>'
-  );
-
-  // Boolean operators
-  html = html.replace(/\b(OR|AND)\b/g, '<span class="dork-boolean">$1</span>');
-
-  // Exclusion (negative) operator
-  html = html.replace(/(^|\s)-(?=\S)/g, '$1<span class="dork-exclusion">-</span>');
-
-  // Wildcards
-  html = html.replace(/\*/g, '<span class="dork-wildcard">*</span>');
-
-  // Parentheses
-  html = html.replace(/\(/g, '<span class="dork-paren">(</span>');
-  html = html.replace(/\)/g, '<span class="dork-paren">)</span>');
-
-  codeEl.innerHTML = html;
-}
-
-function escapeHtml(text: string): string {
-  const div = document.createElement("div");
-  div.textContent = text;
-  return div.innerHTML;
+  codeEl.innerHTML = highlightDorkText(text);
 }
 
 function highlightAllDorks() {
-  // Find all txt/text code blocks
+  // Find all txt/text/dork code blocks
   const codeBlocks = document.querySelectorAll(
-    'div[class*="language-txt"] code, div[class*="language-text"] code'
+    'div[class*="language-txt"] code, div[class*="language-text"] code, div[class*="language-dork"] code'
   );
 
   codeBlocks.forEach((code) => {

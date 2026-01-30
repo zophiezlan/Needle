@@ -35,18 +35,17 @@ function processFile(filePath) {
   // Patterns to match the "Run this Search" links
   // Match lines that contain the run search link pattern
   const patterns = [
-    // With angle brackets: [👉 **Run this Search**](<url>)
-    /^\[👉 \*\*Run this Search\*\*\]\(<[^>]+>\)\s*$/gm,
-    // Standard format: [👉 **Run this Search**](url)
-    /^\[👉 \*\*Run this Search\*\*\]\([^\)]+\)\s*$/gm,
-    // Alternative format with 🔍 and angle brackets
-    /^\[🔍 \*\*Run this search\*\*\]\(<[^>]+>\)\s*$/gm,
-    // Alternative format with 🔍
-    /^\[🔍 \*\*Run this search\*\*\]\([^\)]+\)\s*$/gm,
+    // Generic "Run ... Search" links with 👉 or 🔍 (angle brackets)
+    /^\[(👉|🔍) \*\*Run[^\]]*Search\*\*\]\(<[^>]+>\)\s*$/gm,
+    // Generic "Run ... Search" links with 👉 or 🔍
+    /^\[(👉|🔍) \*\*Run[^\]]*Search\*\*\]\([^\)]+\)\s*$/gm,
     // Catch any remaining run search links with angle brackets
-    /^\[[^\]]*[Rr]un this [Ss]earch[^\]]*\]\(<[^>]+>\)\s*$/gm,
+    /^\[[^\]]*[Rr]un[^\]]*[Ss]earch[^\]]*\]\(<[^>]+>\)\s*$/gm,
     // Catch any remaining run search links
-    /^\[[^\]]*[Rr]un this [Ss]earch[^\]]*\]\([^\)]+\)\s*$/gm,
+    /^\[[^\]]*[Rr]un[^\]]*[Ss]earch[^\]]*\]\([^\)]+\)\s*$/gm,
+    // Generic "Run" links (e.g., [👉 **Run**](...))
+    /^\[(👉|🔍) \*\*Run[^\]]*\*\*\]\([^\)]+\)\s*$/gm,
+    /^\[(👉|🔍) \*\*Run[^\]]*\*\*\]\(<[^>]+>\)\s*$/gm,
   ];
 
   let removedCount = 0;

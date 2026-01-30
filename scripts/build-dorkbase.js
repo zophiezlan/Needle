@@ -132,7 +132,7 @@ const processFiles = () => {
 
         // Stop if we hit a "Back to" link or similar footer noise
         if (line.includes("[← Back to")) continue;
-        if (line.includes("[👉 **Run this Search**]")) continue; // Skip the links I injected earlier
+        if (/\[[^\]]*Run[^\]]*Search[^\]]*\]\([^\)]+\)/i.test(line)) continue;
 
         explanationBuffer.push(line);
       }

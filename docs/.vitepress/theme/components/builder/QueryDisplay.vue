@@ -1,6 +1,8 @@
 <script setup lang="ts">
+import { computed } from "vue";
 import { useQueryBuilder } from "../../composables/useQueryBuilder";
 import { useToast } from "../../composables/useToast";
+import { highlightDorkWithLint, lintDorkScript } from "../../utils/dorkscript";
 
 const { blocks, queryString, selectBlock, selectedBlockId, removeBlock } = useQueryBuilder();
 const { success } = useToast();
@@ -22,6 +24,11 @@ function searchGoogle() {
   const url = `https://www.google.com/search?q=${encodeURIComponent(queryString.value)}`;
   window.open(url, "_blank");
 }
+
+const lintIssues = computed(() => lintDorkScript(queryString.value));
+const highlightedQuery = computed(() =>
+  queryString.value ? highlightDorkWithLint(queryString.value, lintIssues.value) : ""
+);
 </script>
 
 <template>
@@ -47,7 +54,16 @@ function searchGoogle() {
     </div>
 
     <div v-if="queryString" class="query-raw">
-      <code>{{ queryString }}</code>
+      <code v-html="highlightedQuery"></code>
+    </div>
+
+    <div v-if="lintIssues.length" class="query-lint">
+      <div class="lint-title">DorkScript checks</div>
+      <ul>
+        <li v-for="(issue, index) in lintIssues" :key="index" :class="issue.severity">
+          {{ issue.message }}
+        </li>
+      </ul>
     </div>
 
     <div class="query-actions">
@@ -152,6 +168,46 @@ function searchGoogle() {
   font-size: 13px;
   color: var(--accent);
   word-break: break-all;
+}
+
+.query-lint {
+  margin-top: 12px;
+  padding: 12px;
+  border-radius: var(--radius-md);
+  background: color-mix(in srgb, var(--danger) 8%, transparent);
+  border: 1px solid color-mix(in srgb, var(--danger) 30%, transparent);
+}
+
+.lint-title {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.query-lint ul {
+  margin: 0;
+  padding-left: 18px;
+  display: grid;
+  gap: 4px;
+  color: var(--text-secondary);
+  font-size: 12px;
+}
+
+.query-lint li.error {
+  color: var(--danger);
+}
+
+.query-lint li.warning {
+  color: #f59e0b;
+}
+
+.query-raw :global(.dork-error) {
+  box-shadow: inset 0 -2px 0 var(--danger);
+  background: color-mix(in srgb, var(--danger) 15%, transparent);
+  border-radius: 3px;
 }
 
 .query-actions {

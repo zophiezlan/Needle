@@ -1,6 +1,7 @@
 <!-- docs/.vitepress/theme/components/DorkCodeEnhancer.vue -->
 <script setup lang="ts">
 import { onMounted, onUnmounted } from "vue";
+import { isDorkQuery } from "../utils/dorkscript";
 
 function runDork(code: string) {
   const query = code.trim();
@@ -24,16 +25,7 @@ function enhanceCodeBlocks() {
     const code = codeElement.textContent || "";
 
     // Only enhance if it looks like a dork (contains operators)
-    const isDork =
-      code.includes("site:") ||
-      code.includes("filetype:") ||
-      code.includes("intitle:") ||
-      code.includes("inurl:") ||
-      code.includes("intext:") ||
-      code.includes("OR") ||
-      code.includes('"');
-
-    if (!isDork) return;
+    if (!isDorkQuery(code)) return;
 
     // Find the copy button container or create button area
     let copyBtnContainer = block.querySelector(".copy");
@@ -41,7 +33,8 @@ function enhanceCodeBlocks() {
     // Create run button
     const runBtn = document.createElement("button");
     runBtn.className = "run-dork-btn";
-    runBtn.title = "Run this search in Google";
+    runBtn.title = "Instant Dork";
+    runBtn.setAttribute("aria-label", "Instant Dork");
     runBtn.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></svg>`;
 
     runBtn.addEventListener("click", (e) => {
@@ -96,7 +89,7 @@ onUnmounted(() => {
 .run-dork-btn {
   position: absolute;
   top: 12px;
-  right: 44px;
+  right: 52px;
   z-index: 3;
   display: flex;
   align-items: center;

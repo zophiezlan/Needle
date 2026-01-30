@@ -36,15 +36,11 @@
 site:*.gov.au filetype:pdf "harm reduction" after:2024
 ```
 
-[👉 **Run**](https://www.google.com/search?q=site%3A*.gov.au+filetype%3Apdf+%22harm+reduction%22+after%3A2024)
-
 ### 2. NSW Drug Alerts
 
 ```txt
 site:health.nsw.gov.au intitle:"drug warning" OR intitle:"drug alert"
 ```
-
-[👉 **Run**](https://www.google.com/search?q=site%3Ahealth.nsw.gov.au+intitle%3A%22drug+warning%22+OR+intitle%3A%22drug+alert%22)
 
 ### 3. Drug Checking Research
 
@@ -52,15 +48,11 @@ site:health.nsw.gov.au intitle:"drug warning" OR intitle:"drug alert"
 site:*.edu.au "drug checking" OR "pill testing" filetype:pdf
 ```
 
-[👉 **Run**](https://www.google.com/search?q=site%3A*.edu.au+%22drug+checking%22+OR+%22pill+testing%22+filetype%3Apdf)
-
 ### 4. Peer Worker Training (No Jobs)
 
 ```txt
 "peer worker" training filetype:pdf -jobs -careers
 ```
-
-[👉 **Run**](https://www.google.com/search?q=%22peer+worker%22+training+filetype%3Apdf+-jobs+-careers)
 
 ### 5. Naloxone Guidelines
 
@@ -68,15 +60,11 @@ site:*.edu.au "drug checking" OR "pill testing" filetype:pdf
 site:*.gov.au "take-home naloxone" guidelines filetype:pdf
 ```
 
-[👉 **Run**](https://www.google.com/search?q=site%3A*.gov.au+%22take-home+naloxone%22+guidelines+filetype%3Apdf)
-
 ### 6. Parliamentary Submissions
 
 ```txt
 site:*.gov.au inurl:submissions "drug policy" filetype:pdf
 ```
-
-[👉 **Run**](https://www.google.com/search?q=site%3A*.gov.au+inurl%3Asubmissions+%22drug+policy%22+filetype%3Apdf)
 
 ### 7. Peer Organisation Resources
 
@@ -84,15 +72,11 @@ site:*.gov.au inurl:submissions "drug policy" filetype:pdf
 (site:nuaa.org.au OR site:aivl.org.au OR site:hrvic.org.au) filetype:pdf
 ```
 
-[👉 **Run**](https://www.google.com/search?q=%28site%3Anuaa.org.au+OR+site%3Aaivl.org.au+OR+site%3Ahrvic.org.au%29+filetype%3Apdf)
-
 ### 8. Service Directories
 
 ```txt
 site:*.gov.au filetype:xlsx "service directory" AOD
 ```
-
-[👉 **Run**](https://www.google.com/search?q=site%3A*.gov.au+filetype%3Axlsx+%22service+directory%22+AOD)
 
 ### 9. Novel Substance Surveillance
 
@@ -100,15 +84,11 @@ site:*.gov.au filetype:xlsx "service directory" AOD
 site:*.gov.au ("nitazene" OR "novel psychoactive") filetype:pdf after:2023
 ```
 
-[👉 **Run**](https://www.google.com/search?q=site%3A*.gov.au+%28%22nitazene%22+OR+%22novel+psychoactive%22%29+filetype%3Apdf+after%3A2023)
-
 ### 10. Lived Experience Frameworks
 
 ```txt
 ("lived experience" OR "peer worker") framework filetype:pdf Australia
 ```
-
-[👉 **Run**](https://www.google.com/search?q=%28%22lived+experience%22+OR+%22peer+worker%22%29+framework+filetype%3Apdf+Australia)
 
 </details>
 
