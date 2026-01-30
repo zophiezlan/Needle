@@ -21,7 +21,8 @@
 | `AROUND(n)` | Words nearby    | `naloxone AROUND(5) program` |
 | `*`         | Wildcard        | `"drug * service"`           |
 
-> [!IMPORTANT] `OR` must be **UPPERCASE**. Lowercase `or` is ignored.
+> [!IMPORTANT]
+> `OR` must be **UPPERCASE**. Lowercase `or` is ignored.
 
 ---
 
@@ -184,7 +185,8 @@ site:*.gov.au ("nitazene" OR "novel psychoactive") filetype:pdf after:2023
 | Zero results       | Remove `filetype:pdf`                 |
 | Missing subdomains | Use `site:*.gov.au` not `site:gov.au` |
 
-> [!TIP] **Zero results?** Remove operators one at a time to find which one is too restrictive.
+> [!TIP]
+> **Zero results?** Remove operators one at a time to find which one is too restrictive.
 
 ---
 

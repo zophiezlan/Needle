@@ -14,8 +14,8 @@
 Find words that appear within n words of each other. Useful when documents don't use your exact
 phrase.
 
-> [!TIP] `AROUND(n)` is particularly powerful for harm reduction searching because official
-> documents often use different word orders than you might expect.
+> [!TIP]
+> `AROUND(n)` is particularly powerful for harm reduction searching because official documents often use different word orders than you might expect.
 
 ```txt
 "naloxone" AROUND(5) "program"
@@ -44,7 +44,8 @@ allintitle: harm reduction guideline 2024
 allintitle: peer worker training
 ```
 
-> [!NOTE] No colon after `allintitle`, uses spaces between terms.
+> [!NOTE]
+> No colon after `allintitle`, uses spaces between terms.
 
 ---
 
@@ -82,8 +83,8 @@ View Google's cached version of a page.
 cache:health.gov.au/some-policy-page
 ```
 
-> [!NOTE] Google is phasing out this feature, but it still works in some regions. For more reliable
-> archiving, use [Wayback Machine](https://web.archive.org).
+> [!NOTE]
+> Google is phasing out this feature, but it still works in some regions. For more reliable archiving, use [Wayback Machine](https://web.archive.org).
 
 ---
 
@@ -122,7 +123,8 @@ source:abc.net.au "drug policy"
 source:theguardian.com "harm reduction" australia
 ```
 
-> [!NOTE] Only works in Google News.
+> [!NOTE]
+> Only works in Google News.
 
 ---
 
@@ -213,10 +215,8 @@ site:*.gov.au inurl:"/assets/" filetype:pdf "overdose"
 
 ## 🕵️ Investigative Techniques
 
-> [!CAUTION] **Ethical Framework Required.** These techniques can find sensitive information. Always
-> ensure your search serves a legitimate harm reduction purpose and does not target personal or
-> identifiable information. See [Investigative Searching](dork-packs/investigative.md) and
-> [Security Guidelines](../SECURITY.md) for the full ethical framework.
+> [!CAUTION]
+> **Ethical Framework Required.** These techniques can find sensitive information. Always ensure your search serves a legitimate harm reduction purpose and does not target personal or identifiable information. See [Investigative Searching](dork-packs/investigative.md) and [Security Guidelines](../SECURITY.md) for the full ethical framework.
 
 ### Finding Draft Documents
 
@@ -319,7 +319,8 @@ filetype:xls "service directory" (finds old Excel files)
 
 ### Deprecated/Unreliable Operators
 
-> [!WARNING] These operators may not work reliably or at all.
+> [!WARNING]
+> These operators may not work reliably or at all.
 
 - `cache:` - Being phased out
 - `link:` - No longer works

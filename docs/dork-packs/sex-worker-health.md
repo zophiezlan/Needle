@@ -6,8 +6,8 @@
 
 ---
 
-> [!IMPORTANT] **Rights-Based Approach.** Sex work is work. This pack supports harm reduction
-> resources created by and for sex workers, respecting autonomy and centering worker-led knowledge.
+> [!IMPORTANT]
+> **Rights-Based Approach.** Sex work is work. This pack supports harm reduction resources created by and for sex workers, respecting autonomy and centering worker-led knowledge.
 
 ---
 
@@ -311,9 +311,8 @@ site:*.edu.au "sex worker" OR "sex work" health OR "harm reduction" Australia fi
 
 ---
 
-> [!CAUTION] **Ethical Searching.** Never use these searches to identify individual sex workers or
-> expose personal information. Focus on health resources, policies, and worker-led information that
-> supports safety and wellbeing.
+> [!CAUTION]
+> **Ethical Searching.** Never use these searches to identify individual sex workers or expose personal information. Focus on health resources, policies, and worker-led information that supports safety and wellbeing.
 
 ---
 

@@ -62,7 +62,8 @@ Full-text search of 25M+ scholarly papers.
 
 ## ⭐ Shadow Libraries
 
-> [!CAUTION] Legal status varies by jurisdiction. Use at your own discretion.
+> [!CAUTION]
+> Legal status varies by jurisdiction. Use at your own discretion.
 
 ### Sci-Hub
 

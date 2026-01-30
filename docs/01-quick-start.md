@@ -142,7 +142,8 @@ Replace `"harm reduction"` with:
 
 ## ❌ Common Mistakes to Avoid
 
-> [!WARNING] These are the most common issues that break searches.
+> [!WARNING]
+> These are the most common issues that break searches.
 
 | Mistake                     | Fix                                       |
 | :-------------------------- | :---------------------------------------- |
@@ -217,8 +218,8 @@ This finds documents mentioning dates in that range.
 
 </details>
 
-> [!TIP] **Keyboard shortcut:** Press <kbd>Ctrl</kbd>+<kbd>L</kbd> (or <kbd>Cmd</kbd>+<kbd>L</kbd>
-> on Mac) to jump straight to your browser's address bar and start searching.
+> [!TIP]
+> **Keyboard shortcut:** Press <kbd>Ctrl</kbd>+<kbd>L</kbd> (or <kbd>Cmd</kbd>+<kbd>L</kbd> on Mac) to jump straight to your browser's address bar and start searching.
 
 ---
 
