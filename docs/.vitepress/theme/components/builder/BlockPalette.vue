@@ -3,44 +3,39 @@ import { useQueryBuilder, type BlockType } from "../../composables/useQueryBuild
 
 const { addBlock } = useQueryBuilder();
 
-const blockTypes: { type: BlockType; icon: string; label: string; color: string }[] = [
+const coreBlocks: { type: BlockType; icon: string; label: string; color: string }[] = [
   { type: "site", icon: "🌐", label: "Site", color: "var(--block-site)" },
   { type: "filetype", icon: "📄", label: "File", color: "var(--block-filetype)" },
   { type: "keyword", icon: "💬", label: "Keywords", color: "var(--block-keyword)" },
   { type: "date", icon: "📅", label: "Date", color: "var(--block-date)" },
-  { type: "trick", icon: "⚡", label: "Tricks", color: "var(--block-trick)" },
 ];
 
-const quickOperators = [
-  { label: "intitle:", value: "intitle:" },
-  { label: "inurl:", value: "inurl:" },
-  { label: "intext:", value: "intext:" },
-  { label: "related:", value: "related:" },
-  { label: "cache:", value: "cache:" },
-  { label: "source:", value: "source:" },
-  { label: "imagesize:", value: "imagesize:" },
-  { label: "AROUND(5)", value: "AROUND(5)" },
-  { label: "OR group", value: "(term1 OR term2)" },
-  { label: "Exclude (-)", value: "-" },
-  { label: "Wildcard *", value: "*" },
-  { label: "Exact phrase", value: '"exact phrase"' },
+const operatorBlocks: { type: BlockType; icon: string; label: string; color: string }[] = [
+  { type: "intitle", icon: "🧷", label: "In Title", color: "var(--block-intitle)" },
+  { type: "inurl", icon: "🔗", label: "In URL", color: "var(--block-inurl)" },
+  { type: "intext", icon: "📝", label: "In Text", color: "var(--block-intext)" },
+  { type: "related", icon: "🧭", label: "Related", color: "var(--block-related)" },
+  { type: "cache", icon: "🗂️", label: "Cache", color: "var(--block-cache)" },
+  { type: "source", icon: "📰", label: "Source", color: "var(--block-source)" },
+  { type: "imagesize", icon: "🖼️", label: "Image Size", color: "var(--block-imagesize)" },
+  { type: "around", icon: "📏", label: "Around", color: "var(--block-around)" },
+  { type: "exclude", icon: "🚫", label: "Exclude", color: "var(--block-exclude)" },
+  { type: "or", icon: "➕", label: "OR Group", color: "var(--block-or)" },
+  { type: "exact", icon: "🎯", label: "Exact", color: "var(--block-exact)" },
+  { type: "wildcard", icon: "✳️", label: "Wildcard", color: "var(--block-wildcard)" },
 ];
 
 function handleAdd(type: BlockType) {
   addBlock(type);
 }
-
-function handleQuickOperator(value: string) {
-  addBlock("trick", value);
-}
 </script>
 
 <template>
   <div class="block-palette">
-    <span class="palette-label">+ Add Block</span>
+    <span class="palette-label">+ Core Operators</span>
     <div class="palette-buttons">
       <button
-        v-for="bt in blockTypes"
+        v-for="bt in coreBlocks"
         :key="bt.type"
         class="palette-btn"
         :style="{ '--block-color': bt.color }"
@@ -52,15 +47,17 @@ function handleQuickOperator(value: string) {
     </div>
 
     <div class="palette-section">
-      <span class="palette-label">Quick Operators</span>
-      <div class="palette-quick">
+      <span class="palette-label">+ Advanced Operators</span>
+      <div class="palette-buttons">
         <button
-          v-for="op in quickOperators"
-          :key="op.label"
-          class="quick-btn"
-          @click="handleQuickOperator(op.value)"
+          v-for="bt in operatorBlocks"
+          :key="bt.type"
+          class="palette-btn"
+          :style="{ '--block-color': bt.color }"
+          @click="handleAdd(bt.type)"
         >
-          {{ op.label }}
+          <span class="btn-icon">{{ bt.icon }}</span>
+          <span class="btn-label">{{ bt.label }}</span>
         </button>
       </div>
     </div>
@@ -86,17 +83,6 @@ function handleQuickOperator(value: string) {
   gap: 8px;
   margin-top: 12px;
   flex-wrap: wrap;
-}
-
-.palette-section {
-  margin-top: 16px;
-}
-
-.palette-quick {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-top: 12px;
 }
 
 .palette-btn {
@@ -127,19 +113,7 @@ function handleQuickOperator(value: string) {
   color: var(--text-secondary);
 }
 
-.quick-btn {
-  padding: 6px 10px;
-  border-radius: var(--radius-md);
-  border: 1px dashed var(--border-subtle);
-  background: var(--bg-surface);
-  color: var(--text-secondary);
-  font-size: 12px;
-  cursor: pointer;
-  transition: all var(--transition-fast);
-}
-
-.quick-btn:hover {
-  border-color: var(--accent);
-  color: var(--text-primary);
+.palette-section {
+  margin-top: 16px;
 }
 </style>

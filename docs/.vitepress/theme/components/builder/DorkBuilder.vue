@@ -55,7 +55,7 @@ function handleShare() {
         <li><strong>File</strong>: Find specific file types (PDF, DOCX)</li>
         <li><strong>Keywords</strong>: Add search terms with optional synonym expansion</li>
         <li><strong>Date</strong>: Filter by publication date</li>
-        <li><strong>Tricks</strong>: Advanced operators like intitle:, inurl:</li>
+        <li><strong>Advanced</strong>: Operators like intitle:, inurl:, imagesize:</li>
       </ul>
       <p class="help-note">
         Click a block in the query to edit it. Use the palette below to add new blocks.

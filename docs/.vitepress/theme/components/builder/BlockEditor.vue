@@ -29,15 +29,7 @@ const datePresets = [
   { label: "Last 5 years", value: new Date().getFullYear() - 5 },
 ];
 
-const trickPresets = [
-  { label: "In title", value: "intitle:" },
-  { label: "In URL", value: "inurl:" },
-  { label: "Related", value: "related:" },
-  { label: "Exclude", value: "-" },
-  { label: "OR group", value: "(term1 OR term2)" },
-  { label: "Exact phrase", value: '"exact phrase"' },
-  { label: "Wildcard", value: "*" },
-];
+const aroundPresets = [5, 10, 15];
 
 const synonymSuggestion = computed(() => {
   if (selectedBlock.value?.type !== "keyword") return null;
@@ -216,22 +208,223 @@ const synonymSuggestion = computed(() => {
       />
     </div>
 
-    <!-- Trick Block -->
-    <div v-if="selectedBlock.type === 'trick'" class="editor-content">
-      <div class="preset-group">
-        <button
-          v-for="trick in trickPresets"
-          :key="trick.value"
-          class="preset-btn"
-          @click="updateBlock(selectedBlock.id, { value: trick.value })"
-        >
-          {{ trick.label }}
-        </button>
+    <!-- In Title -->
+    <div v-if="selectedBlock.type === 'intitle'" class="editor-content">
+      <input
+        :value="selectedBlock.value"
+        class="input"
+        placeholder="Title keywords..."
+        @input="updateBlock(selectedBlock.id, { value: ($event.target as HTMLInputElement).value })"
+      />
+    </div>
+
+    <!-- In URL -->
+    <div v-if="selectedBlock.type === 'inurl'" class="editor-content">
+      <input
+        :value="selectedBlock.value"
+        class="input"
+        placeholder="URL keywords..."
+        @input="updateBlock(selectedBlock.id, { value: ($event.target as HTMLInputElement).value })"
+      />
+    </div>
+
+    <!-- In Text -->
+    <div v-if="selectedBlock.type === 'intext'" class="editor-content">
+      <input
+        :value="selectedBlock.value"
+        class="input"
+        placeholder="Body text keywords..."
+        @input="updateBlock(selectedBlock.id, { value: ($event.target as HTMLInputElement).value })"
+      />
+    </div>
+
+    <!-- Related -->
+    <div v-if="selectedBlock.type === 'related'" class="editor-content">
+      <input
+        :value="selectedBlock.value"
+        class="input"
+        placeholder="related:example.com"
+        @input="updateBlock(selectedBlock.id, { value: ($event.target as HTMLInputElement).value })"
+      />
+    </div>
+
+    <!-- Cache -->
+    <div v-if="selectedBlock.type === 'cache'" class="editor-content">
+      <input
+        :value="selectedBlock.value"
+        class="input"
+        placeholder="cache:example.com/page"
+        @input="updateBlock(selectedBlock.id, { value: ($event.target as HTMLInputElement).value })"
+      />
+    </div>
+
+    <!-- Source (News) -->
+    <div v-if="selectedBlock.type === 'source'" class="editor-content">
+      <input
+        :value="selectedBlock.value"
+        class="input"
+        placeholder="source:bbc.com"
+        @input="updateBlock(selectedBlock.id, { value: ($event.target as HTMLInputElement).value })"
+      />
+    </div>
+
+    <!-- Image Size -->
+    <div v-if="selectedBlock.type === 'imagesize'" class="editor-content">
+      <div class="input-row">
+        <input
+          :value="selectedBlock.options.width"
+          class="input"
+          placeholder="Width"
+          @input="
+            updateBlock(selectedBlock.id, {
+              options: {
+                ...selectedBlock.options,
+                width: ($event.target as HTMLInputElement).value,
+              },
+            })
+          "
+        />
+        <input
+          :value="selectedBlock.options.height"
+          class="input"
+          placeholder="Height"
+          @input="
+            updateBlock(selectedBlock.id, {
+              options: {
+                ...selectedBlock.options,
+                height: ($event.target as HTMLInputElement).value,
+              },
+            })
+          "
+        />
       </div>
       <input
         :value="selectedBlock.value"
         class="input"
-        placeholder="Custom operator..."
+        placeholder="Or enter WIDTHxHEIGHT"
+        @input="updateBlock(selectedBlock.id, { value: ($event.target as HTMLInputElement).value })"
+      />
+    </div>
+
+    <!-- Around -->
+    <div v-if="selectedBlock.type === 'around'" class="editor-content">
+      <div class="input-row">
+        <input
+          :value="selectedBlock.options.termA"
+          class="input"
+          placeholder="Term A"
+          @input="
+            updateBlock(selectedBlock.id, {
+              options: {
+                ...selectedBlock.options,
+                termA: ($event.target as HTMLInputElement).value,
+              },
+            })
+          "
+        />
+        <input
+          :value="selectedBlock.options.termB"
+          class="input"
+          placeholder="Term B"
+          @input="
+            updateBlock(selectedBlock.id, {
+              options: {
+                ...selectedBlock.options,
+                termB: ($event.target as HTMLInputElement).value,
+              },
+            })
+          "
+        />
+      </div>
+      <div class="preset-group">
+        <button
+          v-for="preset in aroundPresets"
+          :key="preset"
+          :class="['preset-btn', { active: selectedBlock.options.distance === preset }]"
+          @click="
+            updateBlock(selectedBlock.id, {
+              options: { ...selectedBlock.options, distance: preset },
+            })
+          "
+        >
+          AROUND({{ preset }})
+        </button>
+      </div>
+    </div>
+
+    <!-- Exclude -->
+    <div v-if="selectedBlock.type === 'exclude'" class="editor-content">
+      <input
+        :value="selectedBlock.value"
+        class="input"
+        placeholder="Exclude term or site"
+        @input="updateBlock(selectedBlock.id, { value: ($event.target as HTMLInputElement).value })"
+      />
+      <label class="checkbox-label">
+        <input
+          type="checkbox"
+          :checked="selectedBlock.options.exact"
+          @change="
+            updateBlock(selectedBlock.id, {
+              options: {
+                ...selectedBlock.options,
+                exact: ($event.target as HTMLInputElement).checked,
+              },
+            })
+          "
+        />
+        Exact phrase
+      </label>
+    </div>
+
+    <!-- OR Group -->
+    <div v-if="selectedBlock.type === 'or'" class="editor-content">
+      <div class="input-row">
+        <input
+          :value="selectedBlock.options.termA"
+          class="input"
+          placeholder="Term A"
+          @input="
+            updateBlock(selectedBlock.id, {
+              options: {
+                ...selectedBlock.options,
+                termA: ($event.target as HTMLInputElement).value,
+              },
+            })
+          "
+        />
+        <input
+          :value="selectedBlock.options.termB"
+          class="input"
+          placeholder="Term B"
+          @input="
+            updateBlock(selectedBlock.id, {
+              options: {
+                ...selectedBlock.options,
+                termB: ($event.target as HTMLInputElement).value,
+              },
+            })
+          "
+        />
+      </div>
+    </div>
+
+    <!-- Exact Phrase -->
+    <div v-if="selectedBlock.type === 'exact'" class="editor-content">
+      <input
+        :value="selectedBlock.value"
+        class="input"
+        placeholder="Exact phrase"
+        @input="updateBlock(selectedBlock.id, { value: ($event.target as HTMLInputElement).value })"
+      />
+    </div>
+
+    <!-- Wildcard -->
+    <div v-if="selectedBlock.type === 'wildcard'" class="editor-content">
+      <input
+        :value="selectedBlock.value"
+        class="input"
+        placeholder="Keyword with *"
         @input="updateBlock(selectedBlock.id, { value: ($event.target as HTMLInputElement).value })"
       />
     </div>
@@ -355,5 +548,12 @@ const synonymSuggestion = computed(() => {
   font-size: 12px;
   color: var(--text-secondary);
   word-break: break-all;
+}
+
+.input-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 8px;
+  margin-bottom: 12px;
 }
 </style>

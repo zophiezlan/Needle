@@ -42,7 +42,18 @@
   --block-filetype: #ec4899;
   --block-keyword: #8b5cf6;
   --block-date: #14b8a6;
-  --block-trick: #f59e0b;
+  --block-intitle: #22c55e;
+  --block-inurl: #0ea5e9;
+  --block-intext: #f97316;
+  --block-related: #a855f7;
+  --block-cache: #64748b;
+  --block-source: #eab308;
+  --block-imagesize: #f472b6;
+  --block-around: #38bdf8;
+  --block-exclude: #ef4444;
+  --block-or: #f59e0b;
+  --block-exact: #84cc16;
+  --block-wildcard: #fb7185;
 
   /* Typography */
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;

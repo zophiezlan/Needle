@@ -12,8 +12,18 @@ const blockColors: Record<string, string> = {
   filetype: "var(--block-filetype)",
   keyword: "var(--block-keyword)",
   date: "var(--block-date)",
-  trick: "var(--block-trick)",
-};
+  intitle: "var(--block-intitle)",
+  inurl: "var(--block-inurl)",
+  intext: "var(--block-intext)",
+  related: "var(--block-related)",
+  cache: "var(--block-cache)",
+  source: "var(--block-source)",
+  imagesize: "var(--block-imagesize)",
+  around: "var(--block-around)",
+  exclude: "var(--block-exclude)",
+  or: "var(--block-or)",
+  exact: "var(--block-exact)",
+  wildcard: "var(--block-wildcard)",
 
 function copyQuery() {
   navigator.clipboard.writeText(queryString.value);

@@ -1,7 +1,23 @@
 import { reactive, computed } from "vue";
 import { SYNONYM_GROUPS, findSynonyms } from "../data/synonyms";
 
-export type BlockType = "site" | "filetype" | "keyword" | "date" | "trick";
+export type BlockType =
+  | "site"
+  | "filetype"
+  | "keyword"
+  | "date"
+  | "intitle"
+  | "inurl"
+  | "intext"
+  | "related"
+  | "cache"
+  | "source"
+  | "imagesize"
+  | "around"
+  | "exclude"
+  | "or"
+  | "exact"
+  | "wildcard";
 
 export interface QueryBlock {
   id: string;
@@ -49,8 +65,46 @@ export function useQueryBuilder() {
             if (block.options.type === "after") return `after:${block.value}`;
             if (block.options.type === "before") return `before:${block.value}`;
             return "";
-          case "trick":
-            return block.value;
+          case "intitle":
+            return block.value ? `intitle:${block.value}` : "";
+          case "inurl":
+            return block.value ? `inurl:${block.value}` : "";
+          case "intext":
+            return block.value ? `intext:${block.value}` : "";
+          case "related":
+            return block.value ? `related:${block.value}` : "";
+          case "cache":
+            return block.value ? `cache:${block.value}` : "";
+          case "source":
+            return block.value ? `source:${block.value}` : "";
+          case "imagesize":
+            if (block.options.width && block.options.height) {
+              return `imagesize:${block.options.width}x${block.options.height}`;
+            }
+            return block.value ? `imagesize:${block.value}` : "";
+          case "around": {
+            const termA = block.options.termA || "";
+            const termB = block.options.termB || "";
+            const distance = block.options.distance || 5;
+            if (termA && termB) {
+              return `"${termA}" AROUND(${distance}) "${termB}"`;
+            }
+            return block.value || "";
+          }
+          case "exclude":
+            if (!block.value) return "";
+            if (block.options.exact) return `-"${block.value}"`;
+            return `-${block.value}`;
+          case "or": {
+            const termA = block.options.termA || "";
+            const termB = block.options.termB || "";
+            if (termA && termB) return `(${termA} OR ${termB})`;
+            return block.value || "";
+          }
+          case "exact":
+            return block.value ? `"${block.value}"` : "";
+          case "wildcard":
+            return block.value || "*";
           default:
             return block.value;
         }
@@ -117,12 +171,58 @@ export function useQueryBuilder() {
       addBlock("date", beforeMatch[1], { type: "before" });
     }
 
+    // Parse intitle/inurl/intext/related/cache/source/imagesize
+    const intitleMatch = query.match(/intitle:([^\s]+)/i);
+    if (intitleMatch) addBlock("intitle", intitleMatch[1]);
+    const inurlMatch = query.match(/inurl:([^\s]+)/i);
+    if (inurlMatch) addBlock("inurl", inurlMatch[1]);
+    const intextMatch = query.match(/intext:([^\s]+)/i);
+    if (intextMatch) addBlock("intext", intextMatch[1]);
+    const relatedMatch = query.match(/related:([^\s]+)/i);
+    if (relatedMatch) addBlock("related", relatedMatch[1]);
+    const cacheMatch = query.match(/cache:([^\s]+)/i);
+    if (cacheMatch) addBlock("cache", cacheMatch[1]);
+    const sourceMatch = query.match(/source:([^\s]+)/i);
+    if (sourceMatch) addBlock("source", sourceMatch[1]);
+    const imageMatch = query.match(/imagesize:([^\s]+)/i);
+    if (imageMatch) addBlock("imagesize", imageMatch[1]);
+
+    // Parse AROUND
+    const aroundMatch = query.match(/"([^"]+)"\s+AROUND\((\d+)\)\s+"([^"]+)"/i);
+    if (aroundMatch) {
+      addBlock("around", "", {
+        termA: aroundMatch[1],
+        termB: aroundMatch[3],
+        distance: Number(aroundMatch[2]),
+      });
+    }
+
+    // Parse exclusion (first)
+    const excludeMatch = query.match(/(^|\s)-("[^"]+"|[^\s]+)/);
+    if (excludeMatch) {
+      const raw = excludeMatch[2];
+      if (raw.startsWith('"')) {
+        addBlock("exclude", raw.replace(/(^"|"$)/g, ""), { exact: true });
+      } else {
+        addBlock("exclude", raw);
+      }
+    }
+
     // Extract remaining keywords (rough extraction)
     let keywords = query
       .replace(/site:[^\s]+/gi, "")
       .replace(/filetype:[^\s]+/gi, "")
       .replace(/after:[^\s]+/gi, "")
       .replace(/before:[^\s]+/gi, "")
+      .replace(/intitle:[^\s]+/gi, "")
+      .replace(/inurl:[^\s]+/gi, "")
+      .replace(/intext:[^\s]+/gi, "")
+      .replace(/related:[^\s]+/gi, "")
+      .replace(/cache:[^\s]+/gi, "")
+      .replace(/source:[^\s]+/gi, "")
+      .replace(/imagesize:[^\s]+/gi, "")
+      .replace(/"[^"]+"\s+AROUND\(\d+\)\s+"[^"]+"/gi, "")
+      .replace(/(^|\s)-("[^"]+"|[^\s]+)/g, "")
       .trim();
 
     if (keywords) {
