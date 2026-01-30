@@ -5,7 +5,9 @@ import type { Theme } from 'vitepress'
 import './styles/vars.css'
 import './styles/base.css'
 import './styles/components.css'
+import Layout from './Layout.vue'
 import ThemeSwitcher from './components/ThemeSwitcher.vue'
+import NavThemeSwitcher from './components/NavThemeSwitcher.vue'
 import Toast from './components/Toast.vue'
 import DorkExplorer from './components/explorer/DorkExplorer.vue'
 import DorkCard from './components/explorer/DorkCard.vue'
@@ -16,8 +18,10 @@ import { useFavorites } from './composables/useFavorites'
 
 export default {
   extends: DefaultTheme,
+  Layout,
   enhanceApp({ app }: { app: any }) {
     app.component('ThemeSwitcher', ThemeSwitcher)
+    app.component('NavThemeSwitcher', NavThemeSwitcher)
     app.component('Toast', Toast)
     app.component('DorkExplorer', DorkExplorer)
     app.component('DorkCard', DorkCard)
@@ -25,8 +29,6 @@ export default {
     app.component('SettingsPanel', SettingsPanel)
   },
   setup() {
-
-
     onMounted(() => {
       const { initialize: initSettings } = useSettings();
       const { initialize: initFavorites } = useFavorites();

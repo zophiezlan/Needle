@@ -70,7 +70,6 @@ site:*.gov.au "authorised prescriber" OR "prescriber training" (methadone OR bup
 "opioid treatment" clinic OR service directory [YOUR STATE] site:*.gov.au
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22opioid%20treatment%22%20clinic%20OR%20service%20directory%20%5BYOUR%20STATE%5D%20site%3A*.gov.au)
 
 ### Dosing Guidelines
 

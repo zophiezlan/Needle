@@ -15,7 +15,6 @@ Find Australian government naloxone program guidelines:
 site:*.gov.au filetype:pdf "take-home naloxone" guidelines
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=site%3A*.gov.au%20filetype%3Apdf%20%22take-home%20naloxone%22%20guidelines)
 
 ---
 
@@ -49,7 +48,6 @@ site:*.health.*.gov.au filetype:pdf naloxone (community OR peer OR training)
 "naloxone training" filetype:pdf site:*.org.au
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22naloxone%20training%22%20filetype%3Apdf%20site%3A*.org.au)
 
 ---
 
@@ -134,7 +132,6 @@ site:*.gov.au filetype:pdf ("take-home naloxone" OR "take home naloxone" OR THN 
 site:*.gov.au "naloxone" "standing order" OR "standing authority" filetype:pdf
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=site%3A*.gov.au%20%22naloxone%22%20%22standing%20order%22%20OR%20%22standing%20authority%22%20filetype%3Apdf)
 
 ---
 
@@ -159,7 +156,6 @@ site:*.gov.au "naloxone" "standing order" OR "standing authority" filetype:pdf
 "naloxone" "train the trainer" OR "training package" Australia filetype:pdf
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22naloxone%22%20%22train%20the%20trainer%22%20OR%20%22training%20package%22%20Australia%20filetype%3Apdf)
 
 ### Peer Education Resources
 
@@ -175,7 +171,6 @@ site:*.gov.au "naloxone" "standing order" OR "standing authority" filetype:pdf
 site:*.gov.au "naloxone" "clinical guideline" OR "prescribing" OR "administration" filetype:pdf
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=site%3A*.gov.au%20%22naloxone%22%20%22clinical%20guideline%22%20OR%20%22prescribing%22%20OR%20%22administration%22%20filetype%3Apdf)
 
 ### Video/Multimedia Resources
 
@@ -183,7 +178,6 @@ site:*.gov.au "naloxone" "clinical guideline" OR "prescribing" OR "administratio
 "naloxone" "how to use" OR "administration" training video Australia
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22naloxone%22%20%22how%20to%20use%22%20OR%20%22administration%22%20training%20video%20Australia)
 
 ---
 
@@ -203,7 +197,6 @@ site:*.edu.au "naloxone" (evaluation OR effectiveness OR outcomes) Australia fil
 intitle:"systematic review" OR intitle:"meta-analysis" "take-home naloxone" OR "community naloxone"
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=intitle%3A%22systematic%20review%22%20OR%20intitle%3A%22meta-analysis%22%20%22take-home%20naloxone%22%20OR%20%22community%20naloxone%22)
 
 ### NDARC Research
 
@@ -211,7 +204,6 @@ intitle:"systematic review" OR intitle:"meta-analysis" "take-home naloxone" OR "
 site:ndarc.med.unsw.edu.au naloxone filetype:pdf
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=site%3Andarc.med.unsw.edu.au%20naloxone%20filetype%3Apdf)
 
 ---
 

@@ -21,7 +21,6 @@ Find prison health AOD resources:
 site:*.gov.au "prison health" OR "correctional health" "alcohol and other drugs" filetype:pdf
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=site%3A*.gov.au%20%22prison%20health%22%20OR%20%22correctional%20health%22%20%22alcohol%20and%20other%20drugs%22%20filetype%3Apdf)
 
 ---
 
@@ -33,7 +32,6 @@ site:*.gov.au "prison health" OR "correctional health" "alcohol and other drugs"
 site:*.gov.au "prison health" OR "correctional health" "alcohol and other drugs"
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=site%3A*.gov.au%20%22prison%20health%22%20OR%20%22correctional%20health%22%20%22alcohol%20and%20other%20drugs%22)
 
 ### Custody Drug/Overdose
 
@@ -41,7 +39,6 @@ site:*.gov.au "prison health" OR "correctional health" "alcohol and other drugs"
 site:*.gov.au "custody" "drug" OR "overdose" OR "withdrawal"
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=site%3A*.gov.au%20%22custody%22%20%22drug%22%20OR%20%22overdose%22%20OR%20%22withdrawal%22)
 
 ### Corrections Harm Reduction
 
@@ -49,7 +46,6 @@ site:*.gov.au "custody" "drug" OR "overdose" OR "withdrawal"
 "corrections" OR "correctional" "harm reduction" Australia filetype:pdf
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22corrections%22%20OR%20%22correctional%22%20%22harm%20reduction%22%20Australia%20filetype%3Apdf)
 
 ---
 
@@ -61,7 +57,6 @@ site:*.gov.au "custody" "drug" OR "overdose" OR "withdrawal"
 "prison" OR "custody" "opioid treatment" OR "methadone" OR "buprenorphine" Australia
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22prison%22%20OR%20%22custody%22%20%22opioid%20treatment%22%20OR%20%22methadone%22%20OR%20%22buprenorphine%22%20Australia)
 
 ### Correctional Pharmacotherapy
 
@@ -69,7 +64,6 @@ site:*.gov.au "custody" "drug" OR "overdose" OR "withdrawal"
 "correctional" "pharmacotherapy" OR "OAT" policy guidelines filetype:pdf
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22correctional%22%20%22pharmacotherapy%22%20OR%20%22OAT%22%20policy%20guidelines%20filetype%3Apdf)
 
 ### Prison Naloxone
 
@@ -77,7 +71,6 @@ site:*.gov.au "custody" "drug" OR "overdose" OR "withdrawal"
 "prison naloxone" OR "custody naloxone" OR "release naloxone" Australia
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22prison%20naloxone%22%20OR%20%22custody%20naloxone%22%20OR%20%22release%20naloxone%22%20Australia)
 
 ### Throughcare/Continuity
 
@@ -85,7 +78,6 @@ site:*.gov.au "custody" "drug" OR "overdose" OR "withdrawal"
 "throughcare" OR "continuity of care" "opioid treatment" prison release
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22throughcare%22%20OR%20%22continuity%20of%20care%22%20%22opioid%20treatment%22%20prison%20release)
 
 ---
 
@@ -127,7 +119,6 @@ site:justicehealth.nsw.gov.au filetype:pdf
 "justice health" drug OR alcohol OR AOD
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=site%3Ajusticehealth.nsw.gov.au%20filetype%3Apdf%0A%22justice%20health%22%20drug%20OR%20alcohol%20OR%20AOD)
 
 ### Prison Health Guidelines
 
@@ -143,7 +134,6 @@ site:justicehealth.nsw.gov.au filetype:pdf
 "forensic" AOD OR "alcohol and other drugs" service Australia
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22forensic%22%20AOD%20OR%20%22alcohol%20and%20other%20drugs%22%20service%20Australia)
 
 ---
 
@@ -171,7 +161,6 @@ site:justicehealth.nsw.gov.au filetype:pdf
 "MERIT" OR "Magistrates Early Referral Into Treatment" NSW
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22MERIT%22%20OR%20%22Magistrates%20Early%20Referral%20Into%20Treatment%22%20NSW)
 
 ### CISP (Victoria)
 
@@ -179,7 +168,6 @@ site:justicehealth.nsw.gov.au filetype:pdf
 "CISP" OR "Court Integrated Services Program" Victoria
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22CISP%22%20OR%20%22Court%20Integrated%20Services%20Program%22%20Victoria)
 
 ### Diversion Programs
 
@@ -188,7 +176,6 @@ site:justicehealth.nsw.gov.au filetype:pdf
 "drug diversion" program Australia effectiveness
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22diversion%22%20drug%20OR%20substance%20offence%20Australia%20evaluation%0A%22drug%20diversion%22%20program%20Australia%20effectiveness)
 
 ---
 
@@ -201,7 +188,6 @@ site:justicehealth.nsw.gov.au filetype:pdf
 "transition" custody community drug OR alcohol support
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22re-entry%22%20OR%20%22reintegration%22%20AOD%20support%20Australia%0A%22transition%22%20custody%20community%20drug%20OR%20alcohol%20support)
 
 ### Throughcare Programs
 
@@ -209,7 +195,6 @@ site:justicehealth.nsw.gov.au filetype:pdf
 "throughcare" drug OR alcohol prison release Australia
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22throughcare%22%20drug%20OR%20alcohol%20prison%20release%20Australia)
 
 ### Post-Release Services
 
@@ -225,7 +210,6 @@ site:justicehealth.nsw.gov.au filetype:pdf
 "housing" "prison release" OR "post-release" drug OR alcohol Australia
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22housing%22%20%22prison%20release%22%20OR%20%22post-release%22%20drug%20OR%20alcohol%20Australia)
 
 ---
 
@@ -237,7 +221,6 @@ site:justicehealth.nsw.gov.au filetype:pdf
 "youth justice" OR "juvenile justice" drug OR alcohol Australia
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22youth%20justice%22%20OR%20%22juvenile%20justice%22%20drug%20OR%20alcohol%20Australia)
 
 ### Youth Diversion
 
@@ -247,7 +230,6 @@ site:justicehealth.nsw.gov.au filetype:pdf
 "children's court" drug OR alcohol diversion
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22young%20offenders%22%20drug%20OR%20alcohol%20diversion%20Australia%0A%22youth%20detention%22%20drug%20OR%20alcohol%20program%0A%22children's%20court%22%20drug%20OR%20alcohol%20diversion)
 
 ---
 
@@ -260,7 +242,6 @@ site:justicehealth.nsw.gov.au filetype:pdf
 site:aihw.gov.au "prisoner health" drug OR alcohol
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22prisoner%22%20%22drug%20use%22%20OR%20%22alcohol%22%20statistics%20Australia%0Asite%3Aaihw.gov.au%20%22prisoner%20health%22%20drug%20OR%20alcohol)
 
 ### Research on Prison AOD
 
@@ -289,7 +270,6 @@ site:*.edu.au "prison" OR "incarceration" (AOD OR "drug treatment") Australia fi
 "Aboriginal" "incarceration" drug OR alcohol Australia
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22Aboriginal%22%20%22over-representation%22%20prison%20drug%20OR%20alcohol%0A%22Aboriginal%22%20%22incarceration%22%20drug%20OR%20alcohol%20Australia)
 
 ### Aboriginal Courts
 
@@ -297,7 +277,6 @@ site:*.edu.au "prison" OR "incarceration" (AOD OR "drug treatment") Australia fi
 "Koori Court" OR "Murri Court" OR "circle sentencing" drug OR alcohol
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22Koori%20Court%22%20OR%20%22Murri%20Court%22%20OR%20%22circle%20sentencing%22%20drug%20OR%20alcohol)
 
 ### Aboriginal Diversion
 
@@ -306,7 +285,6 @@ site:*.edu.au "prison" OR "incarceration" (AOD OR "drug treatment") Australia fi
 "Aboriginal Legal Service" drug OR alcohol
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22Aboriginal%22%20diversion%20drug%20OR%20alcohol%20Australia%0A%22Aboriginal%20Legal%20Service%22%20drug%20OR%20alcohol)
 
 ---
 

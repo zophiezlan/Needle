@@ -54,7 +54,6 @@ Find rural/regional AOD resources:
 "tyranny of distance" drug OR alcohol OR AOD Australia
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22tyranny%20of%20distance%22%20drug%20OR%20alcohol%20OR%20AOD%20Australia)
 
 ---
 
@@ -91,7 +90,6 @@ Find rural/regional AOD resources:
 site:rfds.org.au "alcohol" OR "drug" OR "AOD"
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22remote%20health%22%20%22alcohol%20and%20other%20drugs%22%20Australia%0Asite%3Arfds.org.au%20%22alcohol%22%20OR%20%22drug%22%20OR%20%22AOD%22)
 
 ---
 
@@ -136,7 +134,6 @@ site:rfds.org.au "alcohol" OR "drug" OR "AOD"
 "Riverina" OR "Murray" harm reduction OR "needle syringe"
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22Central%20West%22%20OR%20%22Far%20West%22%20NSW%20AOD%20OR%20%22alcohol%20drug%22%0A%22North%20Coast%22%20OR%20%22Northern%20Rivers%22%20NSW%20harm%20reduction%20OR%20AOD%0A%22Hunter%22%20OR%20%22New%20England%22%20AOD%20services%20NSW%0A%22Riverina%22%20OR%20%22Murray%22%20harm%20reduction%20OR%20%22needle%20syringe%22)
 
 ### Queensland Regions
 
@@ -146,7 +143,6 @@ site:rfds.org.au "alcohol" OR "drug" OR "AOD"
 "Outback Queensland" drug OR alcohol health
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22North%20Queensland%22%20OR%20%22Far%20North%20Queensland%22%20harm%20reduction%0A%22Central%20Queensland%22%20OR%20%22Wide%20Bay%22%20AOD%20services%0A%22Outback%20Queensland%22%20drug%20OR%20alcohol%20health)
 
 ### Western Australia Regions
 
@@ -155,7 +151,6 @@ site:rfds.org.au "alcohol" OR "drug" OR "AOD"
 "Wheatbelt" OR "Great Southern" WA AOD
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22Kimberley%22%20OR%20%22Pilbara%22%20OR%20%22Goldfields%22%20drug%20OR%20alcohol%20health%0A%22Wheatbelt%22%20OR%20%22Great%20Southern%22%20WA%20AOD)
 
 ### Victoria Regions
 
@@ -164,7 +159,6 @@ site:rfds.org.au "alcohol" OR "drug" OR "AOD"
 "Murray" OR "Hume" VIC harm reduction
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22Gippsland%22%20OR%20%22Mallee%22%20OR%20%22Wimmera%22%20AOD%20services%0A%22Murray%22%20OR%20%22Hume%22%20VIC%20harm%20reduction)
 
 ### Northern Territory
 
@@ -173,7 +167,6 @@ site:rfds.org.au "alcohol" OR "drug" OR "AOD"
 "Central Australia" AOD OR "alcohol and other drugs"
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22Top%20End%22%20OR%20%22Katherine%22%20OR%20%22Alice%20Springs%22%20alcohol%20drug%0A%22Central%20Australia%22%20AOD%20OR%20%22alcohol%20and%20other%20drugs%22)
 
 ### Tasmania
 
@@ -190,7 +183,6 @@ site:rfds.org.au "alcohol" OR "drug" OR "AOD"
 "outback" SA AOD health
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22Eyre%20Peninsula%22%20OR%20%22Riverland%22%20SA%20drug%20OR%20alcohol%0A%22outback%22%20SA%20AOD%20health)
 
 ---
 
@@ -203,7 +195,6 @@ site:rfds.org.au "alcohol" OR "drug" OR "AOD"
 "Royal Flying Doctor Service" harm reduction OR overdose OR AOD
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=site%3Arfds.org.au%20%22alcohol%22%20OR%20%22drug%22%20OR%20%22AOD%22%0A%22Royal%20Flying%20Doctor%20Service%22%20harm%20reduction%20OR%20overdose%20OR%20AOD)
 
 ### Remote Area Nurses
 
@@ -263,7 +254,6 @@ site:*.edu.au filetype:pdf "rural" harm reduction Australia
 site:crrmh.com.au OR site:ruralhealth.org.au "alcohol" OR "drug"
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=site%3A*.edu.au%20filetype%3Apdf%20%22rural%22%20harm%20reduction%20Australia%0Asite%3Acrrmh.com.au%20OR%20site%3Aruralhealth.org.au%20%22alcohol%22%20OR%20%22drug%22)
 
 ### National Rural Health Alliance
 
@@ -271,7 +261,6 @@ site:crrmh.com.au OR site:ruralhealth.org.au "alcohol" OR "drug"
 "National Rural Health Alliance" alcohol OR drug OR AOD
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22National%20Rural%20Health%20Alliance%22%20alcohol%20OR%20drug%20OR%20AOD)
 
 ### Centre for Rural and Remote Mental Health
 
@@ -279,7 +268,6 @@ site:crrmh.com.au OR site:ruralhealth.org.au "alcohol" OR "drug"
 "Centre for Rural and Remote Mental Health" AOD OR "alcohol and other drugs"
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22Centre%20for%20Rural%20and%20Remote%20Mental%20Health%22%20AOD%20OR%20%22alcohol%20and%20other%20drugs%22)
 
 ---
 
@@ -292,7 +280,6 @@ site:crrmh.com.au OR site:ruralhealth.org.au "alcohol" OR "drug"
 "rural men" alcohol OR drug use help-seeking
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22farming%20families%22%20substance%20use%20OR%20alcohol%0A%22rural%20men%22%20alcohol%20OR%20drug%20use%20help-seeking)
 
 ### Drought & Disasters
 
@@ -309,7 +296,6 @@ site:crrmh.com.au OR site:ruralhealth.org.au "alcohol" OR "drug"
 "seasonal workers" OR "harvest workers" drug OR alcohol health Australia
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22seasonal%20workers%22%20OR%20%22harvest%20workers%22%20drug%20OR%20alcohol%20health%20Australia)
 
 ---
 

@@ -14,7 +14,6 @@ Find Australian drug checking research and evaluations:
 site:*.edu.au filetype:pdf "drug checking" OR "pill testing" evaluation
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=site%3A*.edu.au%20filetype%3Apdf%20%22drug%20checking%22%20OR%20%22pill%20testing%22%20evaluation)
 
 ---
 

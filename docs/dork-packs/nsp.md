@@ -14,7 +14,6 @@ Find NSP guidelines from Australian health departments:
 site:*.health.*.gov.au filetype:pdf "needle syringe program" guideline
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=site%3A*.health.*.gov.au%20filetype%3Apdf%20%22needle%20syringe%20program%22%20guideline)
 
 ---
 
@@ -104,7 +103,6 @@ site:*.gov.au filetype:pdf ("needle syringe program" OR "needle exchange" OR "sy
 "needle syringe program" location OR address OR "opening hours" [YOUR STATE] -site:facebook.com -site:twitter.com
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22needle%20syringe%20program%22%20location%20OR%20address%20OR%20%22opening%20hours%22%20%5BYOUR%20STATE%5D%20-site%3Afacebook.com%20-site%3Atwitter.com)
 
 ### Mobile/Outreach NSP
 
@@ -180,7 +178,6 @@ site:*.gov.au filetype:pdf ("needle syringe program" OR "needle exchange" OR "sy
 site:aihw.gov.au "needle syringe program" OR NSP statistics
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=site%3Aaihw.gov.au%20%22needle%20syringe%20program%22%20OR%20NSP%20statistics)
 
 ### Distribution Data
 
@@ -208,7 +205,6 @@ site:aihw.gov.au ("hepatitis C" OR HCV OR "blood borne virus") "injecting drug u
 site:ndarc.med.unsw.edu.au "needle syringe" OR NSP OR "injecting drug use" filetype:pdf
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=site%3Andarc.med.unsw.edu.au%20%22needle%20syringe%22%20OR%20NSP%20OR%20%22injecting%20drug%20use%22%20filetype%3Apdf)
 
 ### Kirby Institute (BBV Research)
 
@@ -216,7 +212,6 @@ site:ndarc.med.unsw.edu.au "needle syringe" OR NSP OR "injecting drug use" filet
 site:kirby.unsw.edu.au "injecting drug use" OR "needle syringe"
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=site%3Akirby.unsw.edu.au%20%22injecting%20drug%20use%22%20OR%20%22needle%20syringe%22)
 
 ### Systematic Reviews
 
@@ -224,7 +219,6 @@ site:kirby.unsw.edu.au "injecting drug use" OR "needle syringe"
 intitle:"systematic review" "needle syringe program" OR "needle exchange" effectiveness
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=intitle%3A%22systematic%20review%22%20%22needle%20syringe%20program%22%20OR%20%22needle%20exchange%22%20effectiveness)
 
 ### Cost-Effectiveness Studies
 
@@ -260,7 +254,6 @@ intitle:"systematic review" "needle syringe program" OR "needle exchange" effect
 "low dead space" OR "detachable needle" OR "butterfly" OR "insulin syringe" NSP Australia
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22low%20dead%20space%22%20OR%20%22detachable%20needle%22%20OR%20%22butterfly%22%20OR%20%22insulin%20syringe%22%20NSP%20Australia)
 
 ---
 

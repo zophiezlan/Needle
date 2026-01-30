@@ -34,7 +34,6 @@ Find dual diagnosis resources:
 "comorbidity" OR "comorbid" mental health drug OR alcohol Australia
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22comorbidity%22%20OR%20%22comorbid%22%20mental%20health%20drug%20OR%20alcohol%20Australia)
 
 ### Co-existing Conditions
 
@@ -42,7 +41,6 @@ Find dual diagnosis resources:
 "co-existing" mental health AOD OR "alcohol and other drugs"
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22co-existing%22%20mental%20health%20AOD%20OR%20%22alcohol%20and%20other%20drugs%22)
 
 ---
 
@@ -70,7 +68,6 @@ Find dual diagnosis resources:
 "integrated treatment" mental health substance use Australia
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22integrated%20treatment%22%20mental%20health%20substance%20use%20Australia)
 
 ---
 
@@ -90,7 +87,6 @@ Find dual diagnosis resources:
 "no wrong door" mental health AOD OR "alcohol and other drugs"
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22no%20wrong%20door%22%20mental%20health%20AOD%20OR%20%22alcohol%20and%20other%20drugs%22)
 
 ### Service Models
 
@@ -98,7 +94,6 @@ Find dual diagnosis resources:
 "integrated service" OR "integrated care" dual diagnosis Australia
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22integrated%20service%22%20OR%20%22integrated%20care%22%20dual%20diagnosis%20Australia)
 
 ---
 
@@ -137,7 +132,6 @@ Find dual diagnosis resources:
 "personality disorder" AOD treatment Australia
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22borderline%20personality%22%20substance%20use%20treatment%20Australia%0A%22personality%20disorder%22%20AOD%20treatment%20Australia)
 
 ### ADHD
 
@@ -146,7 +140,6 @@ Find dual diagnosis resources:
 "attention deficit" AOD Australia
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22ADHD%22%20substance%20use%20OR%20drug%20use%20relationship%20treatment%20Australia%0A%22attention%20deficit%22%20AOD%20Australia)
 
 ---
 
@@ -159,7 +152,6 @@ Find dual diagnosis resources:
 "treating together" mental health substance use
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22integrated%20treatment%22%20mental%20health%20substance%20use%20Australia%20filetype%3Apdf%0A%22treating%20together%22%20mental%20health%20substance%20use)
 
 ### Parallel vs Sequential
 
@@ -168,7 +160,6 @@ Find dual diagnosis resources:
 "sequential treatment" dual diagnosis
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22parallel%20treatment%22%20vs%20%22integrated%22%20dual%20diagnosis%0A%22sequential%20treatment%22%20dual%20diagnosis)
 
 ### Stepped Care
 
@@ -176,7 +167,6 @@ Find dual diagnosis resources:
 "stepped care" mental health AOD OR substance use Australia
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22stepped%20care%22%20mental%20health%20AOD%20OR%20substance%20use%20Australia)
 
 ---
 
@@ -197,7 +187,6 @@ Find dual diagnosis resources:
 "self-harm" drug OR alcohol intoxication
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22self-harm%22%20drug%20OR%20alcohol%20intoxication)
 
 ### Intentional Overdose
 
@@ -266,7 +255,6 @@ site:*.gov.au "dual diagnosis" OR "co-occurring" guideline
 site:*.edu.au "dual diagnosis" OR "co-occurring" Australia filetype:pdf
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=site%3A*.edu.au%20%22dual%20diagnosis%22%20OR%20%22co-occurring%22%20Australia%20filetype%3Apdf)
 
 ### Prevalence Data
 
@@ -294,7 +282,6 @@ site:*.edu.au "dual diagnosis" OR "co-occurring" Australia filetype:pdf
 "system navigation" mental health AOD OR "alcohol and other drugs"
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22system%20navigation%22%20mental%20health%20AOD%20OR%20%22alcohol%20and%20other%20drugs%22)
 
 ### Service Integration
 
@@ -302,7 +289,6 @@ site:*.edu.au "dual diagnosis" OR "co-occurring" Australia filetype:pdf
 "service integration" OR "integrated services" mental health AOD Australia
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22service%20integration%22%20OR%20%22integrated%20services%22%20mental%20health%20AOD%20Australia)
 
 ### Referral Pathways
 
@@ -310,7 +296,6 @@ site:*.edu.au "dual diagnosis" OR "co-occurring" Australia filetype:pdf
 "referral pathway" dual diagnosis OR "co-occurring" Australia
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22referral%20pathway%22%20dual%20diagnosis%20OR%20%22co-occurring%22%20Australia)
 
 ---
 

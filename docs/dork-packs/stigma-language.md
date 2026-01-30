@@ -23,7 +23,6 @@ Find resources on drug-related stigma:
 "stigma" "people who use drugs" Australia research filetype:pdf
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22stigma%22%20%22people%20who%20use%20drugs%22%20Australia%20research%20filetype%3Apdf)
 
 ---
 
@@ -45,7 +44,6 @@ Find resources on drug-related stigma:
 "from 'addict' to 'person'" language change
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22people-first%20language%22%20drug%20OR%20substance%20use%0A%22from%20'addict'%20to%20'person'%22%20language%20change)
 
 ### Language Guides
 
@@ -70,7 +68,6 @@ Find resources on drug-related stigma:
 "substance abuser" policy OR program Australia before:2015
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22drug%20addict%22%20OR%20%22drug%20abuser%22%20Australia%201980..2010%20filetype%3Apdf%0A%22intravenous%20drug%20user%22%20OR%20%22IVDU%22%20Australia%20harm%20reduction%0A%22substance%20abuser%22%20policy%20OR%20program%20Australia%20before%3A2015)
 
 ### Compare Language Across Eras
 
@@ -79,7 +76,6 @@ Find resources on drug-related stigma:
 "people who inject drugs" OR "PWID" 2010..2026 Australia
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22injecting%20drug%20user%22%20OR%20%22IDU%22%201990..2010%20Australia%0A%22people%20who%20inject%20drugs%22%20OR%20%22PWID%22%202010..2026%20Australia)
 
 ### Media Analysis
 
@@ -116,7 +112,6 @@ Find resources on drug-related stigma:
 "self-stigma" OR "internalised stigma" OR "internalized stigma" drug use
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22self-stigma%22%20OR%20%22internalised%20stigma%22%20OR%20%22internalized%20stigma%22%20drug%20use)
 
 ### Stigma Reduction Interventions
 
@@ -124,7 +119,6 @@ Find resources on drug-related stigma:
 "stigma reduction" intervention drug use effectiveness filetype:pdf
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22stigma%20reduction%22%20intervention%20drug%20use%20effectiveness%20filetype%3Apdf)
 
 ---
 
@@ -137,7 +131,6 @@ Find resources on drug-related stigma:
 "needle exchange" Australia first OR "pilot program" history
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22harm%20minimisation%22%20Australia%20history%20OR%20origins%201980s%20OR%201990s%0A%22needle%20exchange%22%20Australia%20first%20OR%20%22pilot%20program%22%20history)
 
 ### Methadone History
 
@@ -145,7 +138,6 @@ Find resources on drug-related stigma:
 "methadone program" Australia history OR establishment
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22methadone%20program%22%20Australia%20history%20OR%20establishment)
 
 ### AIDS Response
 
@@ -153,7 +145,6 @@ Find resources on drug-related stigma:
 "AIDS response" Australia "injecting drug use" 1980s
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22AIDS%20response%22%20Australia%20%22injecting%20drug%20use%22%201980s)
 
 ### Supervised Injecting History
 
@@ -162,7 +153,6 @@ Find resources on drug-related stigma:
 "Kings Cross" "injecting room" history OR campaign
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22supervised%20injecting%22%20OR%20%22medically%20supervised%20injecting%22%20Sydney%20history%20OR%20origins%0A%22Kings%20Cross%22%20%22injecting%20room%22%20history%20OR%20campaign)
 
 ---
 
@@ -184,7 +174,6 @@ Find resources on drug-related stigma:
 "civil society" drug users Australia 1980s OR 1990s
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22drug%20user%20activism%22%20OR%20%22drug%20user%20movement%22%20Australia%0A%22civil%20society%22%20drug%20users%20Australia%201980s%20OR%201990s)
 
 ### Peer Movement
 
@@ -192,7 +181,6 @@ Find resources on drug-related stigma:
 "peer movement" drug use Australia history
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22peer%20movement%22%20drug%20use%20Australia%20history)
 
 ---
 
@@ -205,7 +193,6 @@ Find resources on drug-related stigma:
 site:*.edu.au "stigma" "drug use" OR "substance use" Australia
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22stigma%22%20%22people%20who%20use%20drugs%22%20Australia%20research%20filetype%3Apdf%0Asite%3A*.edu.au%20%22stigma%22%20%22drug%20use%22%20OR%20%22substance%20use%22%20Australia)
 
 ### Healthcare Stigma
 
@@ -242,7 +229,6 @@ site:*.edu.au "stigma" "drug use" OR "substance use" Australia
 "terminology" change OR evolution "drug use" OR "substance use" filetype:pdf
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22terminology%22%20change%20OR%20evolution%20%22drug%20use%22%20OR%20%22substance%20use%22%20filetype%3Apdf)
 
 ### Style Guides
 
@@ -258,7 +244,6 @@ site:*.edu.au "stigma" "drug use" OR "substance use" Australia
 "people-first language" OR "person-centred language" drug international guidelines
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22people-first%20language%22%20OR%20%22person-centred%20language%22%20drug%20international%20guidelines)
 
 ---
 
@@ -294,7 +279,6 @@ Use date ranges to compare eras:
 "anti-stigma" OR "stigma campaign" drug OR substance Australia
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22anti-stigma%22%20OR%20%22stigma%20campaign%22%20drug%20OR%20substance%20Australia)
 
 ### Changing the Narrative
 
@@ -302,7 +286,6 @@ Use date ranges to compare eras:
 "changing the narrative" OR "reframing" drug use OR "drug policy"
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22changing%20the%20narrative%22%20OR%20%22reframing%22%20drug%20use%20OR%20%22drug%20policy%22)
 
 ### Peer-Led Stigma Work
 

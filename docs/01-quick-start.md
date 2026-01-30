@@ -36,7 +36,6 @@ Copy and paste this into Google right now:
 site:*.gov.au filetype:pdf "harm reduction" after:2024
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=site%3A*.gov.au+filetype%3Apdf+%22harm+reduction%22+after%3A2024)
 
 <details>
 <summary><strong>What this does</strong></summary>
@@ -60,7 +59,6 @@ site:*.gov.au filetype:pdf "harm reduction" after:2024
 site:*.gov.au filetype:pdf "harm reduction" after:2024
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=site%3A*.gov.au+filetype%3Apdf+%22harm+reduction%22+after%3A2024)
 
 ### 2. Drug Alerts from NSW Health
 
@@ -68,7 +66,6 @@ site:*.gov.au filetype:pdf "harm reduction" after:2024
 site:health.nsw.gov.au intitle:"drug warning" OR intitle:"drug alert"
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=site%3Ahealth.nsw.gov.au+intitle%3A%22drug+warning%22+OR+intitle%3A%22drug+alert%22)
 
 ### 3. Peer Worker Training Resources
 
@@ -76,7 +73,6 @@ site:health.nsw.gov.au intitle:"drug warning" OR intitle:"drug alert"
 "peer worker" training filetype:pdf site:*.org.au -jobs -careers
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22peer+worker%22+training+filetype%3Apdf+site%3A*.org.au+-jobs+-careers)
 
 ### 4. Research from Australian Universities
 
@@ -84,7 +80,6 @@ site:health.nsw.gov.au intitle:"drug warning" OR intitle:"drug alert"
 site:*.edu.au filetype:pdf "drug checking" OR "pill testing"
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=site%3A*.edu.au+filetype%3Apdf+%22drug+checking%22+OR+%22pill+testing%22)
 
 ### 5. Naloxone Guidelines
 
@@ -92,7 +87,6 @@ site:*.edu.au filetype:pdf "drug checking" OR "pill testing"
 site:*.gov.au "take-home naloxone" guidelines filetype:pdf
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=site%3A*.gov.au+%22take-home+naloxone%22+guidelines+filetype%3Apdf)
 
 ---
 

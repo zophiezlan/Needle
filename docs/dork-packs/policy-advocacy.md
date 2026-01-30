@@ -26,7 +26,6 @@ site:aph.gov.au inurl:submissions ("drug policy" OR "harm reduction") filetype:p
 site:health.gov.au filetype:pdf "national drug strategy"
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=site%3Ahealth.gov.au%20filetype%3Apdf%20%22national%20drug%20strategy%22)
 
 ### Parliamentary Inquiries
 
@@ -42,7 +41,6 @@ site:aph.gov.au (committee OR committees) (drug OR "alcohol and other drugs") (i
 site:aihw.gov.au "alcohol and other drugs" policy
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=site%3Aaihw.gov.au%20%22alcohol%20and%20other%20drugs%22%20policy)
 
 ---
 
@@ -64,7 +62,6 @@ site:parliament.*.gov.au ("drug law reform" OR "decriminalisation" OR "inquiry")
 "call for submissions" AOD policy 2025..2026
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22public%20consultation%22%20%22harm%20reduction%22%20%22closing%20date%22%202025..2026%0A%22call%20for%20submissions%22%20AOD%20policy%202025..2026)
 
 ### Draft Policies
 
@@ -148,7 +145,6 @@ site:aph.gov.au "inquiry" ("illicit drugs" OR "harm reduction" OR "drug policy")
 site:aph.gov.au "submission" "harm reduction" OR "drug policy" filetype:pdf
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=site%3Aaph.gov.au%20%22submission%22%20%22harm%20reduction%22%20OR%20%22drug%20policy%22%20filetype%3Apdf)
 
 ### Hansard (Parliamentary Debate)
 
@@ -169,7 +165,6 @@ site:health.gov.au "National Drug Strategy" filetype:pdf
 "National Drug Strategy" 2017..2026 Australia
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=site%3Ahealth.gov.au%20%22National%20Drug%20Strategy%22%20filetype%3Apdf%0A%22National%20Drug%20Strategy%22%202017..2026%20Australia)
 
 ### State Strategies
 
@@ -242,7 +237,6 @@ site:*.gov.au "action plan" ("harm reduction" OR "alcohol and other drugs") file
 site:*.gov.au OR site:*.edu.au "drug policy" evaluation OR review Australia filetype:pdf
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=site%3A*.gov.au%20OR%20site%3A*.edu.au%20%22drug%20policy%22%20evaluation%20OR%20review%20Australia%20filetype%3Apdf)
 
 ### Economic Analysis
 
@@ -271,7 +265,6 @@ site:*.gov.au OR site:*.edu.au "drug policy" evaluation OR review Australia file
 site:who.int OR site:unodc.org "drug policy" OR "harm reduction" guidelines
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=site%3Awho.int%20OR%20site%3Aunodc.org%20%22drug%20policy%22%20OR%20%22harm%20reduction%22%20guidelines)
 
 ### International Best Practice
 

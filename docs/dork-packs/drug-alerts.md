@@ -15,7 +15,6 @@ Get Australian government drug alerts from the last month:
 site:*.gov.au "drug alert" after:2025-12-01
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=site%3A*.gov.au%20%22drug%20alert%22%20after%3A2025-12-01)
 
 ---
 
@@ -27,7 +26,6 @@ site:*.gov.au "drug alert" after:2025-12-01
 site:*.gov.au intitle:"drug alert" after:2025-01-01
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=site%3A*.gov.au%20intitle%3A%22drug%20alert%22%20after%3A2025-01-01)
 
 **Why this works:**
 
@@ -41,7 +39,6 @@ site:*.gov.au intitle:"drug alert" after:2025-01-01
 site:health.nsw.gov.au "drug warning"
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=site%3Ahealth.nsw.gov.au%20%22drug%20warning%22)
 
 ### Victorian Health Alerts
 
@@ -49,7 +46,6 @@ site:health.nsw.gov.au "drug warning"
 site:health.vic.gov.au "drug alert" OR "health alert"
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=site%3Ahealth.vic.gov.au%20%22drug%20alert%22%20OR%20%22health%20alert%22)
 
 ---
 
@@ -110,7 +106,6 @@ site:*.health.*.gov.au (intitle:"drug alert" OR intitle:"drug warning" OR intitl
 site:*.gov.au inurl:"/alerts/" OR inurl:"/warnings/" filetype:pdf "drug"
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=site%3A*.gov.au%20inurl%3A%22%2Falerts%2F%22%20OR%20inurl%3A%22%2Fwarnings%2F%22%20filetype%3Apdf%20%22drug%22)
 
 ### High-Priority Emerging Substances
 
@@ -143,7 +138,6 @@ location:Sydney "drug alert"
 location:Melbourne "overdose"
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=location%3ASydney%20%22drug%20alert%22%0D%0Alocation%3AMelbourne%20%22overdose%22)
 
 ### The "Local Source" Pattern
 
@@ -170,7 +164,6 @@ For comparison and early warning from other jurisdictions:
 site:wedinos.org [substance name]
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=site%3Awedinos.org%20%5Bsubstance%20name%5D)
 
 ### Canada
 
@@ -179,7 +172,6 @@ site:drugschecking.ca results
 site:tripproject.ca alerts
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=site%3Adrugschecking.ca%20results%0Asite%3Atripproject.ca%20alerts)
 
 ### Europe
 
@@ -187,7 +179,6 @@ site:tripproject.ca alerts
 site:saferparty.ch OR site:checkit.wien analysis
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=site%3Asaferparty.ch%20OR%20site%3Acheckit.wien%20analysis)
 
 ### General International
 

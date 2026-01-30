@@ -14,7 +14,6 @@ Find AIHW alcohol and drug statistics:
 site:aihw.gov.au "alcohol and other drugs" statistics filetype:pdf
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=site%3Aaihw.gov.au%20%22alcohol%20and%20other%20drugs%22%20statistics%20filetype%3Apdf)
 
 ---
 
@@ -26,7 +25,6 @@ site:aihw.gov.au "alcohol and other drugs" statistics filetype:pdf
 site:aihw.gov.au "alcohol and other drugs" statistics
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=site%3Aaihw.gov.au%20%22alcohol%20and%20other%20drugs%22%20statistics)
 
 ### ABS Drug Use Data
 
@@ -34,7 +32,6 @@ site:aihw.gov.au "alcohol and other drugs" statistics
 site:abs.gov.au "illicit drug use" OR "drug use" survey
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=site%3Aabs.gov.au%20%22illicit%20drug%20use%22%20OR%20%22drug%20use%22%20survey)
 
 ### Overdose Death Data
 
@@ -42,7 +39,6 @@ site:abs.gov.au "illicit drug use" OR "drug use" survey
 "overdose deaths" OR "drug-induced deaths" statistics Australia 2023..2026
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22overdose%20deaths%22%20OR%20%22drug-induced%20deaths%22%20statistics%20Australia%202023..2026)
 
 ---
 
@@ -63,7 +59,6 @@ site:abs.gov.au "illicit drug use" OR "drug use" survey
 site:ndarc.med.unsw.edu.au IDRS
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22Illicit%20Drug%20Reporting%20System%22%20OR%20IDRS%20filetype%3Apdf%0Asite%3Andarc.med.unsw.edu.au%20IDRS)
 
 ### EDRS (Ecstasy Reporting System)
 
@@ -71,7 +66,6 @@ site:ndarc.med.unsw.edu.au IDRS
 "Ecstasy and Related Drugs Reporting System" OR EDRS filetype:pdf
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22Ecstasy%20and%20Related%20Drugs%20Reporting%20System%22%20OR%20EDRS%20filetype%3Apdf)
 
 ### Ambulance Data
 
@@ -107,7 +101,6 @@ site:*.gov.au ("drug-related" OR "alcohol-related") (hospitalisation OR hospital
 site:aihw.gov.au "Alcohol and other drug treatment services" OR "AODTS-NMDS" filetype:pdf
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=site%3Aaihw.gov.au%20%22Alcohol%20and%20other%20drug%20treatment%20services%22%20OR%20%22AODTS-NMDS%22%20filetype%3Apdf)
 
 ### Wastewater Drug Monitoring
 
@@ -158,7 +151,6 @@ site:ndarc.med.unsw.edu.au ("drug trends" OR IDRS OR EDRS) filetype:pdf
 site:penington.org.au "overdose" OR "Australia's Annual Overdose Report"
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=site%3Apenington.org.au%20%22overdose%22%20OR%20%22Australia's%20Annual%20Overdose%20Report%22)
 
 ---
 
@@ -191,7 +183,6 @@ site:kirby.unsw.edu.au ("hepatitis C" OR HCV) ("injecting drug use" OR NSP) data
 site:aihw.gov.au "treatment episode" AOD OR "alcohol and other drugs" filetype:pdf
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=site%3Aaihw.gov.au%20%22treatment%20episode%22%20AOD%20OR%20%22alcohol%20and%20other%20drugs%22%20filetype%3Apdf)
 
 ### OAT/Pharmacotherapy Data
 
@@ -220,7 +211,6 @@ site:aihw.gov.au "drug-induced deaths" filetype:pdf
 "drug-related mortality" OR "drug deaths" statistics Australia
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=site%3Aaihw.gov.au%20%22drug-induced%20deaths%22%20filetype%3Apdf%0A%22drug-related%20mortality%22%20OR%20%22drug%20deaths%22%20statistics%20Australia)
 
 ### Opioid Deaths Specifically
 
@@ -228,7 +218,6 @@ site:aihw.gov.au "drug-induced deaths" filetype:pdf
 "opioid deaths" OR "opioid mortality" OR "opioid overdose deaths" Australia statistics
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22opioid%20deaths%22%20OR%20%22opioid%20mortality%22%20OR%20%22opioid%20overdose%20deaths%22%20Australia%20statistics)
 
 ### Alcohol-Related Deaths
 
@@ -236,7 +225,6 @@ site:aihw.gov.au "drug-induced deaths" filetype:pdf
 site:aihw.gov.au "alcohol-related deaths" OR "alcohol-attributable deaths"
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=site%3Aaihw.gov.au%20%22alcohol-related%20deaths%22%20OR%20%22alcohol-attributable%20deaths%22)
 
 ### Hospitalisations
 
@@ -257,7 +245,6 @@ site:aihw.gov.au ("drug-related" OR "alcohol-related") (hospitalisation OR hospi
 site:ndarc.med.unsw.edu.au "drug trends" OR "market" filetype:pdf
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22drug%20market%22%20trend%20OR%20surveillance%20Australia%20filetype%3Apdf%0Asite%3Andarc.med.unsw.edu.au%20%22drug%20trends%22%20OR%20%22market%22%20filetype%3Apdf)
 
 ### Novel Substance Monitoring
 

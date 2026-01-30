@@ -19,7 +19,6 @@ Find sex worker health resources:
 "sex worker" OR "sex work" health OR "harm reduction" Australia filetype:pdf
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22sex%20worker%22%20OR%20%22sex%20work%22%20health%20OR%20%22harm%20reduction%22%20Australia%20filetype%3Apdf)
 
 ---
 
@@ -31,7 +30,6 @@ Find sex worker health resources:
 "sex worker" health service OR clinic Australia
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22sex%20worker%22%20health%20service%20OR%20clinic%20Australia)
 
 ### Peer Organizations
 
@@ -39,7 +37,6 @@ Find sex worker health resources:
 "sex worker" "peer organisation" OR "peer organization" Australia
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22sex%20worker%22%20%22peer%20organisation%22%20OR%20%22peer%20organization%22%20Australia)
 
 ### Harm Reduction Resources
 
@@ -47,7 +44,6 @@ Find sex worker health resources:
 "sex work" "harm reduction" Australia (resource OR guideline OR information)
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22sex%20work%22%20%22harm%20reduction%22%20Australia%20%28resource%20OR%20guideline%20OR%20information%29)
 
 ---
 
@@ -59,7 +55,6 @@ Find sex worker health resources:
 "sex worker" OR "sex work" "drug use" OR "alcohol and other drugs" Australia
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22sex%20worker%22%20OR%20%22sex%20work%22%20%22drug%20use%22%20OR%20%22alcohol%20and%20other%20drugs%22%20Australia)
 
 ### Overdose Prevention
 
@@ -67,7 +62,6 @@ Find sex worker health resources:
 "sex worker" OR "sex work" (overdose OR naloxone) prevention Australia
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22sex%20worker%22%20OR%20%22sex%20work%22%20%28overdose%20OR%20naloxone%29%20prevention%20Australia)
 
 ### Stimulant Use
 
@@ -75,7 +69,6 @@ Find sex worker health resources:
 "sex work" OR "sex worker" (methamphetamine OR "crystal meth" OR stimulant) harm reduction
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22sex%20work%22%20OR%20%22sex%20worker%22%20%28methamphetamine%20OR%20%22crystal%20meth%22%20OR%20stimulant%29%20harm%20reduction)
 
 ---
 
@@ -87,7 +80,6 @@ Find sex worker health resources:
 ("sex worker" OR "sex work" OR "people in the sex industry") ("harm reduction" OR "health service" OR "peer support" OR safety) Australia (resource OR guideline OR service OR program) filetype:pdf after:2020
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%28%22sex%20worker%22%20OR%20%22sex%20work%22%20OR%20%22people%20in%20the%20sex%20industry%22%29%20%28%22harm%20reduction%22%20OR%20%22health%20service%22%20OR%20%22peer%20support%22%20OR%20safety%29%20Australia%20%28resource%20OR%20guideline%20OR%20service%20OR%20program%29%20filetype%3Apdf%20after%3A2020)
 
 ### Intersectional Resources
 
@@ -95,7 +87,6 @@ Find sex worker health resources:
 "sex worker" ("Aboriginal" OR "First Nations" OR "migrant" OR "trans" OR "CALD") Australia
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22sex%20worker%22%20%28%22Aboriginal%22%20OR%20%22First%20Nations%22%20OR%20%22migrant%22%20OR%20%22trans%22%20OR%20%22CALD%22%29%20Australia)
 
 ---
 
@@ -107,7 +98,6 @@ Find sex worker health resources:
 site:scarletalliance.org.au (drug OR alcohol OR "harm reduction" OR health)
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=site%3Ascarletalliance.org.au%20%28drug%20OR%20alcohol%20OR%20%22harm%20reduction%22%20OR%20health%29)
 
 ### RhED (Resourcing Health & Education)
 
@@ -115,7 +105,6 @@ site:scarletalliance.org.au (drug OR alcohol OR "harm reduction" OR health)
 site:sexworker.org.au (drug OR alcohol OR "harm reduction" OR overdose)
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=site%3Asexworker.org.au%20%28drug%20OR%20alcohol%20OR%20%22harm%20reduction%22%20OR%20overdose%29)
 
 ### SWOP NSW
 
@@ -123,7 +112,6 @@ site:sexworker.org.au (drug OR alcohol OR "harm reduction" OR overdose)
 site:swop.org.au (drug OR alcohol OR health OR safety)
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=site%3Aswop.org.au%20%28drug%20OR%20alcohol%20OR%20health%20OR%20safety%29)
 
 ### Respect Inc (QLD)
 
@@ -131,7 +119,6 @@ site:swop.org.au (drug OR alcohol OR health OR safety)
 site:respectqld.org.au (drug OR alcohol OR health OR "harm reduction")
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=site%3Arespectqld.org.au%20%28drug%20OR%20alcohol%20OR%20health%20OR%20%22harm%20reduction%22%29)
 
 ---
 
@@ -143,7 +130,6 @@ site:respectqld.org.au (drug OR alcohol OR health OR "harm reduction")
 "sex worker" "sexual health" service OR clinic Australia
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22sex%20worker%22%20%22sexual%20health%22%20service%20OR%20clinic%20Australia)
 
 ### BBV Prevention
 
@@ -151,7 +137,6 @@ site:respectqld.org.au (drug OR alcohol OR health OR "harm reduction")
 "sex worker" ("HIV" OR "hepatitis" OR "BBV") prevention Australia
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22sex%20worker%22%20%28%22HIV%22%20OR%20%22hepatitis%22%20OR%20%22BBV%22%29%20prevention%20Australia)
 
 ### Outreach Services
 
@@ -159,7 +144,6 @@ site:respectqld.org.au (drug OR alcohol OR health OR "harm reduction")
 "sex worker" outreach (health OR "harm reduction") Australia
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22sex%20worker%22%20outreach%20%28health%20OR%20%22harm%20reduction%22%29%20Australia)
 
 ---
 
@@ -171,7 +155,6 @@ site:respectqld.org.au (drug OR alcohol OR health OR "harm reduction")
 "sex worker" OR "sex work" (safety OR "occupational health") Australia guideline
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22sex%20worker%22%20OR%20%22sex%20work%22%20%28safety%20OR%20%22occupational%20health%22%29%20Australia%20guideline)
 
 ### Violence Prevention
 
@@ -179,7 +162,6 @@ site:respectqld.org.au (drug OR alcohol OR health OR "harm reduction")
 "sex worker" violence prevention OR safety resource Australia
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22sex%20worker%22%20violence%20prevention%20OR%20safety%20resource%20Australia)
 
 ### Legal Information
 
@@ -187,7 +169,6 @@ site:respectqld.org.au (drug OR alcohol OR health OR "harm reduction")
 "sex work" law OR legal rights (NSW OR VIC OR QLD) Australia
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22sex%20work%22%20law%20OR%20legal%20rights%20%28NSW%20OR%20VIC%20OR%20QLD%29%20Australia)
 
 ---
 
@@ -199,7 +180,6 @@ site:respectqld.org.au (drug OR alcohol OR health OR "harm reduction")
 "trans" OR "transgender" "sex worker" (health OR safety OR resource) Australia
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22trans%22%20OR%20%22transgender%22%20%22sex%20worker%22%20%28health%20OR%20safety%20OR%20resource%29%20Australia)
 
 ### Trans Health & Sex Work
 
@@ -207,7 +187,6 @@ site:respectqld.org.au (drug OR alcohol OR health OR "harm reduction")
 "trans sex worker" OR "transgender sex worker" harm reduction Australia
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22trans%20sex%20worker%22%20OR%20%22transgender%20sex%20worker%22%20harm%20reduction%20Australia)
 
 ---
 
@@ -219,7 +198,6 @@ site:respectqld.org.au (drug OR alcohol OR health OR "harm reduction")
 "migrant" "sex worker" (health OR support OR service) Australia
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22migrant%22%20%22sex%20worker%22%20%28health%20OR%20support%20OR%20service%29%20Australia)
 
 ### Multilingual Resources
 
@@ -227,7 +205,6 @@ site:respectqld.org.au (drug OR alcohol OR health OR "harm reduction")
 "sex worker" (Chinese OR Thai OR Korean OR Vietnamese) resource Australia
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22sex%20worker%22%20%28Chinese%20OR%20Thai%20OR%20Korean%20OR%20Vietnamese%29%20resource%20Australia)
 
 ---
 
@@ -239,7 +216,6 @@ site:respectqld.org.au (drug OR alcohol OR health OR "harm reduction")
 "sex worker" "mental health" support OR service Australia
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22sex%20worker%22%20%22mental%20health%22%20support%20OR%20service%20Australia)
 
 ### Peer Support
 
@@ -247,7 +223,6 @@ site:respectqld.org.au (drug OR alcohol OR health OR "harm reduction")
 "sex worker" "peer support" OR "peer counselling" Australia
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22sex%20worker%22%20%22peer%20support%22%20OR%20%22peer%20counselling%22%20Australia)
 
 ---
 
@@ -259,7 +234,6 @@ site:respectqld.org.au (drug OR alcohol OR health OR "harm reduction")
 site:*.edu.au "sex worker" OR "sex work" health OR "harm reduction" Australia filetype:pdf
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=site%3A*.edu.au%20%22sex%20worker%22%20OR%20%22sex%20work%22%20health%20OR%20%22harm%20reduction%22%20Australia%20filetype%3Apdf)
 
 ### Health Data
 
@@ -267,7 +241,6 @@ site:*.edu.au "sex worker" OR "sex work" health OR "harm reduction" Australia fi
 "sex worker" (survey OR study OR data) health Australia filetype:pdf
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22sex%20worker%22%20%28survey%20OR%20study%20OR%20data%29%20health%20Australia%20filetype%3Apdf)
 
 ---
 
@@ -279,7 +252,6 @@ site:*.edu.au "sex worker" OR "sex work" health OR "harm reduction" Australia fi
 "sex work" decriminalisation OR decriminalization (Australia OR NSW OR VIC) policy
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22sex%20work%22%20decriminalisation%20OR%20decriminalization%20%28Australia%20OR%20NSW%20OR%20VIC%29%20policy)
 
 ### Rights-Based Approaches
 
@@ -287,7 +259,6 @@ site:*.edu.au "sex worker" OR "sex work" health OR "harm reduction" Australia fi
 "sex worker rights" OR "rights-based" "sex work" policy Australia
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22sex%20worker%20rights%22%20OR%20%22rights-based%22%20%22sex%20work%22%20policy%20Australia)
 
 ### Submissions & Inquiries
 
@@ -295,7 +266,6 @@ site:*.edu.au "sex worker" OR "sex work" health OR "harm reduction" Australia fi
 "sex work" OR "sex worker" (submission OR inquiry) parliament Australia filetype:pdf
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22sex%20work%22%20OR%20%22sex%20worker%22%20%28submission%20OR%20inquiry%29%20parliament%20Australia%20filetype%3Apdf)
 
 ---
 

@@ -14,7 +14,6 @@ Find youth AOD resources:
 "youth" OR "young people" "alcohol and other drugs" service Australia filetype:pdf
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22youth%22%20OR%20%22young%20people%22%20%22alcohol%20and%20other%20drugs%22%20service%20Australia%20filetype%3Apdf)
 
 ---
 
@@ -26,7 +25,6 @@ Find youth AOD resources:
 "youth" OR "young people" "alcohol and other drugs" service Australia
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22youth%22%20OR%20%22young%20people%22%20%22alcohol%20and%20other%20drugs%22%20service%20Australia)
 
 ### Adolescent Programs
 
@@ -34,7 +32,6 @@ Find youth AOD resources:
 "adolescent" drug OR alcohol treatment program Australia
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22adolescent%22%20drug%20OR%20alcohol%20treatment%20program%20Australia)
 
 ### Early Intervention
 
@@ -42,7 +39,6 @@ Find youth AOD resources:
 "early intervention" youth drug OR alcohol Australia
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22early%20intervention%22%20youth%20drug%20OR%20alcohol%20Australia)
 
 ---
 
@@ -54,7 +50,6 @@ Find youth AOD resources:
 "youth outreach" drug OR alcohol harm reduction Australia
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22youth%20outreach%22%20drug%20OR%20alcohol%20harm%20reduction%20Australia)
 
 ### School-Based Programs
 
@@ -62,7 +57,6 @@ Find youth AOD resources:
 "school-based" OR "school" drug OR alcohol prevention Australia evaluation
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22school-based%22%20OR%20%22school%22%20drug%20OR%20alcohol%20prevention%20Australia%20evaluation)
 
 ### Peer Education (Youth)
 
@@ -70,7 +64,6 @@ Find youth AOD resources:
 "peer education" youth drug OR alcohol Australia
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22peer%20education%22%20youth%20drug%20OR%20alcohol%20Australia)
 
 ---
 
@@ -90,7 +83,6 @@ Find youth AOD resources:
 "life skills" OR "resilience" drug prevention young people Australia
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22life%20skills%22%20OR%20%22resilience%22%20drug%20prevention%20young%20people%20Australia)
 
 ### Youth-Specific Harm Reduction
 
@@ -98,7 +90,6 @@ Find youth AOD resources:
 "youth" OR "young people" "harm reduction" approach Australia filetype:pdf
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22youth%22%20OR%20%22young%20people%22%20%22harm%20reduction%22%20approach%20Australia%20filetype%3Apdf)
 
 ---
 
@@ -134,7 +125,6 @@ Find youth AOD resources:
 "harm reduction education" young people Australia
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22harm%20reduction%20education%22%20young%20people%20Australia)
 
 ---
 
@@ -175,7 +165,6 @@ site:ysas.org.au filetype:pdf
 "festival" young people drug OR alcohol safety Australia
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22festival%22%20young%20people%20drug%20OR%20alcohol%20safety%20Australia)
 
 ### Party/Nightlife
 
@@ -183,7 +172,6 @@ site:ysas.org.au filetype:pdf
 "party" OR "nightlife" young people harm reduction Australia
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22party%22%20OR%20%22nightlife%22%20young%20people%20harm%20reduction%20Australia)
 
 ### Drink Spiking
 
@@ -191,7 +179,6 @@ site:ysas.org.au filetype:pdf
 "drink spiking" prevention young people Australia
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22drink%20spiking%22%20prevention%20young%20people%20Australia)
 
 ### Safer Partying
 
@@ -199,7 +186,6 @@ site:ysas.org.au filetype:pdf
 "safer partying" OR "safer clubbing" young people Australia
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22safer%20partying%22%20OR%20%22safer%20clubbing%22%20young%20people%20Australia)
 
 ---
 
@@ -211,7 +197,6 @@ site:ysas.org.au filetype:pdf
 "youth justice" OR "juvenile justice" drug OR alcohol Australia filetype:pdf
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22youth%20justice%22%20OR%20%22juvenile%20justice%22%20drug%20OR%20alcohol%20Australia%20filetype%3Apdf)
 
 ### Youth Diversion
 
@@ -219,7 +204,6 @@ site:ysas.org.au filetype:pdf
 "young offenders" drug OR alcohol diversion Australia
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22young%20offenders%22%20drug%20OR%20alcohol%20diversion%20Australia)
 
 ### Youth Detention
 
@@ -227,7 +211,6 @@ site:ysas.org.au filetype:pdf
 "youth detention" drug OR alcohol program Australia
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22youth%20detention%22%20drug%20OR%20alcohol%20program%20Australia)
 
 ### Children's Court
 
@@ -235,7 +218,6 @@ site:ysas.org.au filetype:pdf
 "children's court" drug OR alcohol diversion Australia
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22children's%20court%22%20drug%20OR%20alcohol%20diversion%20Australia)
 
 ---
 
@@ -256,7 +238,6 @@ site:headspace.org.au drug OR alcohol
 "early psychosis" substance use youth Australia
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22early%20psychosis%22%20substance%20use%20youth%20Australia)
 
 ---
 
@@ -268,7 +249,6 @@ site:headspace.org.au drug OR alcohol
 "family" "youth" OR "adolescent" AOD treatment Australia
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22family%22%20%22youth%22%20OR%20%22adolescent%22%20AOD%20treatment%20Australia)
 
 ### Parent Programs
 
@@ -276,7 +256,6 @@ site:headspace.org.au drug OR alcohol
 "parent" program youth drug OR alcohol prevention Australia
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22parent%22%20program%20youth%20drug%20OR%20alcohol%20prevention%20Australia)
 
 ---
 

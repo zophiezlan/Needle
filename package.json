@@ -22,7 +22,7 @@
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
     "docs:preview": "vitepress preview docs",
-    "inject-links": "node scripts/inject-live-links.js",
+    "clean-run-links": "node scripts/remove-run-links.js",
     "check-links": "find . -name '*.md' -not -path './node_modules/*' -not -path './archive/*' | xargs markdown-link-check --quiet",
     "validate": "npm run lint && npm run check-links"
   },

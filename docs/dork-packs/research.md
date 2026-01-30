@@ -61,7 +61,6 @@ intitle:"systematic review" "needle syringe program" OR "harm reduction"
 intitle:"meta-analysis" "opioid substitution therapy" OR "naloxone"
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=intitle%3A%22systematic%20review%22%20%22needle%20syringe%20program%22%20OR%20%22harm%20reduction%22%0Aintitle%3A%22meta-analysis%22%20%22opioid%20substitution%20therapy%22%20OR%20%22naloxone%22)
 
 ---
 
@@ -73,7 +72,6 @@ intitle:"meta-analysis" "opioid substitution therapy" OR "naloxone"
 site:ndarc.med.unsw.edu.au OR site:burnet.edu.au OR site:turning-point.org.au OR site:nceta.flinders.edu.au filetype:pdf
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=site%3Andarc.med.unsw.edu.au%20OR%20site%3Aburnet.edu.au%20OR%20site%3Aturning-point.org.au%20OR%20site%3Anceta.flinders.edu.au%20filetype%3Apdf)
 
 ### Randomised Controlled Trials
 
@@ -81,7 +79,6 @@ site:ndarc.med.unsw.edu.au OR site:burnet.edu.au OR site:turning-point.org.au OR
 intitle:"randomized controlled trial" OR intitle:"randomised controlled trial" "harm reduction" substance use
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=intitle%3A%22randomized%20controlled%20trial%22%20OR%20intitle%3A%22randomised%20controlled%20trial%22%20%22harm%20reduction%22%20substance%20use)
 
 ### Recent High-Quality Evidence
 
@@ -97,7 +94,6 @@ intitle:"randomized controlled trial" OR intitle:"randomised controlled trial" "
 "harm reduction" filetype:pdf -site:researchgate.net -site:academia.edu -site:arxiv.org
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22harm%20reduction%22%20filetype%3Apdf%20-site%3Aresearchgate.net%20-site%3Aacademia.edu%20-site%3Aarxiv.org)
 
 ---
 
@@ -117,7 +113,6 @@ site:*.edu.au OR site:*.edu filetype:pdf ("harm reduction" OR "drug checking" OR
 intitle:"methods" OR intitle:"methodology" "harm reduction" filetype:pdf
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=intitle%3A%22methods%22%20OR%20intitle%3A%22methodology%22%20%22harm%20reduction%22%20filetype%3Apdf)
 
 ### Peer-Led Research
 
@@ -146,7 +141,6 @@ site:ndarc.med.unsw.edu.au filetype:pdf
 site:ndarc.med.unsw.edu.au [YOUR TOPIC]
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=site%3Andarc.med.unsw.edu.au%20filetype%3Apdf%0Asite%3Andarc.med.unsw.edu.au%20%5BYOUR%20TOPIC%5D)
 
 ### Burnet Institute
 
@@ -162,7 +156,6 @@ site:burnet.edu.au filetype:pdf (harm reduction OR "injecting drug use")
 site:turning-point.org.au filetype:pdf
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=site%3Aturning-point.org.au%20filetype%3Apdf)
 
 ### Kirby Institute
 
@@ -178,7 +171,6 @@ site:kirby.unsw.edu.au filetype:pdf (hepatitis OR HIV OR BBV)
 site:nceta.flinders.edu.au filetype:pdf
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=site%3Anceta.flinders.edu.au%20filetype%3Apdf)
 
 ### CSRH (Social Research)
 
@@ -186,7 +178,6 @@ site:nceta.flinders.edu.au filetype:pdf
 site:csrh.arts.unsw.edu.au filetype:pdf
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=site%3Acsrh.arts.unsw.edu.au%20filetype%3Apdf)
 
 ### Matilda Centre
 
@@ -194,7 +185,6 @@ site:csrh.arts.unsw.edu.au filetype:pdf
 site:matildacentre.com.au filetype:pdf
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=site%3Amatildacentre.com.au%20filetype%3Apdf)
 
 ---
 
@@ -374,7 +364,6 @@ site:cochranelibrary.com ("harm reduction" OR naloxone OR "needle syringe")
 "harm reduction" research [Use with: Elicit, SciSpace, Consensus]
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22harm%20reduction%22%20research%20%5BUse%20with%3A%20Elicit%2C%20SciSpace%2C%20Consensus%5D)
 
 See [AI Tools](../tools/ai-tools.md) for research assistants.
 
@@ -384,7 +373,6 @@ See [AI Tools](../tools/ai-tools.md) for research assistants.
 related:ndarc.med.unsw.edu.au
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=related%3Andarc.med.unsw.edu.au)
 
 ---
 

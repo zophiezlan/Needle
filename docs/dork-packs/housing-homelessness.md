@@ -14,7 +14,6 @@ Find housing and AOD resources:
 "homelessness" "alcohol and other drugs" OR AOD Australia filetype:pdf
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22homelessness%22%20%22alcohol%20and%20other%20drugs%22%20OR%20AOD%20Australia%20filetype%3Apdf)
 
 ---
 
@@ -27,7 +26,6 @@ Find housing and AOD resources:
 "rough sleeping" drug OR alcohol Australia
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22homelessness%22%20%22alcohol%20and%20other%20drugs%22%20OR%20AOD%20Australia%20filetype%3Apdf%0A%22rough%20sleeping%22%20drug%20OR%20alcohol%20Australia)
 
 ### Housing First
 
@@ -35,7 +33,6 @@ Find housing and AOD resources:
 "housing first" alcohol OR drug Australia evaluation
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22housing%20first%22%20alcohol%20OR%20drug%20Australia%20evaluation)
 
 ### Street-Based Outreach
 
@@ -44,7 +41,6 @@ Find housing and AOD resources:
 "homeless" "harm reduction" outreach Australia
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22street%20present%22%20drug%20OR%20substance%20use%20outreach%0A%22homeless%22%20%22harm%20reduction%22%20outreach%20Australia)
 
 ---
 
@@ -57,7 +53,6 @@ Find housing and AOD resources:
 "supported accommodation" drug OR alcohol Australia
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22supportive%20housing%22%20AOD%20OR%20%22alcohol%20and%20other%20drugs%22%20Australia%0A%22supported%20accommodation%22%20drug%20OR%20alcohol%20Australia)
 
 ### Housing Instability
 
@@ -66,7 +61,6 @@ Find housing and AOD resources:
 "eviction" OR "tenancy" drug use OR substance use
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22housing%20instability%22%20drug%20use%20OR%20substance%20use%20Australia%0A%22eviction%22%20OR%20%22tenancy%22%20drug%20use%20OR%20substance%20use)
 
 ### Transitional Housing
 
@@ -74,7 +68,6 @@ Find housing and AOD resources:
 "transitional housing" AOD OR substance use Australia
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22transitional%20housing%22%20AOD%20OR%20substance%20use%20Australia)
 
 ---
 
@@ -94,7 +87,6 @@ Find housing and AOD resources:
 "social determinants" "drug use" OR "substance use" Australia filetype:pdf
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22social%20determinants%22%20%22drug%20use%22%20OR%20%22substance%20use%22%20Australia%20filetype%3Apdf)
 
 ### Poverty & Drug Use
 
@@ -102,7 +94,6 @@ Find housing and AOD resources:
 "poverty" AND "drug use" Australia research filetype:pdf
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22poverty%22%20AND%20%22drug%20use%22%20Australia%20research%20filetype%3Apdf)
 
 ---
 
@@ -138,7 +129,6 @@ Find housing and AOD resources:
 "eviction prevention" drug OR alcohol OR AOD Australia
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22eviction%20prevention%22%20drug%20OR%20alcohol%20OR%20AOD%20Australia)
 
 ---
 
@@ -151,7 +141,6 @@ Find housing and AOD resources:
 site:aihw.gov.au "homelessness" "alcohol and other drugs"
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22specialist%20homelessness%20services%22%20AOD%20OR%20%22alcohol%20and%20other%20drugs%22%20Australia%0Asite%3Aaihw.gov.au%20%22homelessness%22%20%22alcohol%20and%20other%20drugs%22)
 
 ### Crisis Accommodation
 
@@ -167,7 +156,6 @@ site:aihw.gov.au "homelessness" "alcohol and other drugs"
 "youth homelessness" drug OR alcohol Australia
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22youth%20homelessness%22%20drug%20OR%20alcohol%20Australia)
 
 ---
 
@@ -180,7 +168,6 @@ site:aihw.gov.au "homelessness" "alcohol and other drugs"
 "mobile service" needle syringe OR harm reduction
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22outreach%22%20OR%20%22street-based%22%20harm%20reduction%20Australia%0A%22mobile%20service%22%20needle%20syringe%20OR%20harm%20reduction)
 
 ### Assertive Outreach
 
@@ -188,7 +175,6 @@ site:aihw.gov.au "homelessness" "alcohol and other drugs"
 "assertive outreach" drug OR alcohol homeless
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22assertive%20outreach%22%20drug%20OR%20alcohol%20homeless)
 
 ### Drop-In Services
 
@@ -196,7 +182,6 @@ site:aihw.gov.au "homelessness" "alcohol and other drugs"
 "drop-in" OR "low threshold" drug OR AOD service Australia
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22drop-in%22%20OR%20%22low%20threshold%22%20drug%20OR%20AOD%20service%20Australia)
 
 ---
 
@@ -208,7 +193,6 @@ site:aihw.gov.au "homelessness" "alcohol and other drugs"
 "social exclusion" "people who use drugs" OR "drug use" Australia
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22social%20exclusion%22%20%22people%20who%20use%20drugs%22%20OR%20%22drug%20use%22%20Australia)
 
 ### Unemployment
 
@@ -216,7 +200,6 @@ site:aihw.gov.au "homelessness" "alcohol and other drugs"
 "unemployment" drug use OR alcohol use Australia research
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22unemployment%22%20drug%20use%20OR%20alcohol%20use%20Australia%20research)
 
 ### Education
 
@@ -224,7 +207,6 @@ site:aihw.gov.au "homelessness" "alcohol and other drugs"
 "education" protective factor drug use OR substance use
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22education%22%20protective%20factor%20drug%20use%20OR%20substance%20use)
 
 ### Poverty
 
@@ -232,7 +214,6 @@ site:aihw.gov.au "homelessness" "alcohol and other drugs"
 "poverty" "substance use" OR "drug use" Australia research filetype:pdf
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22poverty%22%20%22substance%20use%22%20OR%20%22drug%20use%22%20Australia%20research%20filetype%3Apdf)
 
 ---
 
@@ -244,7 +225,6 @@ site:aihw.gov.au "homelessness" "alcohol and other drugs"
 "mental health" "homelessness" "substance use" OR AOD Australia
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22mental%20health%22%20%22homelessness%22%20%22substance%20use%22%20OR%20AOD%20Australia)
 
 ### Justice & Homelessness
 
@@ -252,7 +232,6 @@ site:aihw.gov.au "homelessness" "alcohol and other drugs"
 "prison release" OR "post-release" "homelessness" drug OR alcohol
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22prison%20release%22%20OR%20%22post-release%22%20%22homelessness%22%20drug%20OR%20alcohol)
 
 ### Family Violence & AOD
 
@@ -260,7 +239,6 @@ site:aihw.gov.au "homelessness" "alcohol and other drugs"
 "family violence" OR "domestic violence" AOD OR "alcohol and other drugs" homelessness
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22family%20violence%22%20OR%20%22domestic%20violence%22%20AOD%20OR%20%22alcohol%20and%20other%20drugs%22%20homelessness)
 
 ---
 
@@ -280,7 +258,6 @@ site:aihw.gov.au "homelessness" "alcohol and other drugs"
 "integrated service" housing AOD OR "mental health" Australia
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22integrated%20service%22%20housing%20AOD%20OR%20%22mental%20health%22%20Australia)
 
 ### No Wrong Door
 
@@ -288,7 +265,6 @@ site:aihw.gov.au "homelessness" "alcohol and other drugs"
 "no wrong door" housing OR homelessness AOD
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22no%20wrong%20door%22%20housing%20OR%20homelessness%20AOD)
 
 ---
 

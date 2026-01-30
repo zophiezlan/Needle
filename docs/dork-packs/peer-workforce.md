@@ -47,7 +47,6 @@ experiential knowledge is expert knowledge. These searches help you find:
 "peer worker" "training manual" OR "training package" filetype:pdf
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22peer%20worker%22%20%22training%20manual%22%20OR%20%22training%20package%22%20filetype%3Apdf)
 
 ### Lived Experience Workforce Frameworks
 
@@ -83,7 +82,6 @@ experiential knowledge is expert knowledge. These searches help you find:
 "peer-led research" OR "participatory action research" drug use Australia filetype:pdf
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22peer-led%20research%22%20OR%20%22participatory%20action%20research%22%20drug%20use%20Australia%20filetype%3Apdf)
 
 ### Peer Organisation Resources
 
@@ -211,7 +209,6 @@ experiential knowledge is expert knowledge. These searches help you find:
 "group supervision" "peer worker" harm reduction filetype:pdf
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22group%20supervision%22%20%22peer%20worker%22%20harm%20reduction%20filetype%3Apdf)
 
 ### External Supervision
 
@@ -219,7 +216,6 @@ experiential knowledge is expert knowledge. These searches help you find:
 "external supervision" "peer worker" OR "lived experience" filetype:pdf
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22external%20supervision%22%20%22peer%20worker%22%20OR%20%22lived%20experience%22%20filetype%3Apdf)
 
 ### Debriefing
 
@@ -239,7 +235,6 @@ experiential knowledge is expert knowledge. These searches help you find:
 "nothing about us without us" drug policy Australia filetype:pdf
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22nothing%20about%20us%20without%20us%22%20drug%20policy%20Australia%20filetype%3Apdf)
 
 ### Lived Experience Representation
 
@@ -255,7 +250,6 @@ experiential knowledge is expert knowledge. These searches help you find:
 "peer advocate" OR "peer advocacy" drug policy reform filetype:pdf
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22peer%20advocate%22%20OR%20%22peer%20advocacy%22%20drug%20policy%20reform%20filetype%3Apdf)
 
 ### Meaningful Participation
 
@@ -263,7 +257,6 @@ experiential knowledge is expert knowledge. These searches help you find:
 "meaningful participation" OR "authentic engagement" "people who use drugs" policy filetype:pdf
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22meaningful%20participation%22%20OR%20%22authentic%20engagement%22%20%22people%20who%20use%20drugs%22%20policy%20filetype%3Apdf)
 
 ---
 

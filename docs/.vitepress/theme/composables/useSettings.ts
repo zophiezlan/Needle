@@ -55,12 +55,21 @@ export function useSettings() {
     document.documentElement.style.setProperty("--accent", `var(--color-${color})`);
   }
 
-  // Apply theme mode
+  // Apply theme mode (syncs with VitePress's .dark class)
   function applyThemeMode(mode: ThemeMode) {
     if (typeof document === "undefined") return;
     const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
     const isDark = mode === "dark" || (mode === "system" && prefersDark);
+
+    // Set our data-theme attribute
     document.documentElement.setAttribute("data-theme", isDark ? "dark" : "light");
+
+    // Sync with VitePress's dark mode class
+    if (isDark) {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
   }
 
   // Initialize on mount

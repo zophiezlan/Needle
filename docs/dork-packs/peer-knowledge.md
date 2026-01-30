@@ -34,7 +34,6 @@ site:nuaa.org.au "User's News" filetype:pdf
 site:aivl.org.au "The Advocate" OR newsletter filetype:pdf
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=site%3Anuaa.org.au%20%22User's%20News%22%20filetype%3Apdf%0Asite%3Aaivl.org.au%20%22The%20Advocate%22%20OR%20newsletter%20filetype%3Apdf)
 
 ### Peer Organisation Publications
 
@@ -50,7 +49,6 @@ site:*.org.au ("by peers" OR "peer written" OR "peer voices") filetype:pdf
 "peer newsletter" OR "peer magazine" harm reduction Australia filetype:pdf
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22peer%20newsletter%22%20OR%20%22peer%20magazine%22%20harm%20reduction%20Australia%20filetype%3Apdf)
 
 ---
 
@@ -70,7 +68,6 @@ site:*.org.au ("by peers" OR "peer written" OR "peer voices") filetype:pdf
 "first person" OR "personal account" drug use harm reduction
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22first%20person%22%20OR%20%22personal%20account%22%20drug%20use%20harm%20reduction)
 
 ### Peer Stories in Resources
 
@@ -86,7 +83,6 @@ site:*.org.au ("in their own words" OR "peer perspectives" OR "peer stories") fi
 "photovoice" OR "digital storytelling" "people who use drugs" OR "drug use"
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22photovoice%22%20OR%20%22digital%20storytelling%22%20%22people%20who%20use%20drugs%22%20OR%20%22drug%20use%22)
 
 ---
 
@@ -114,7 +110,6 @@ site:*.org.au ("peer-developed" OR "peer-produced" OR "peer-created") (materials
 "peer expertise" OR "experiential knowledge" OR "peer wisdom" drug use filetype:pdf
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22peer%20expertise%22%20OR%20%22experiential%20knowledge%22%20OR%20%22peer%20wisdom%22%20drug%20use%20filetype%3Apdf)
 
 ### Peer Representation Guidelines
 
@@ -135,7 +130,6 @@ site:nuaa.org.au "User's News" filetype:pdf
 "User's News" NUAA [TOPIC]
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=site%3Anuaa.org.au%20%22User's%20News%22%20filetype%3Apdf%0A%22User's%20News%22%20NUAA%20%5BTOPIC%5D)
 
 ### AIVL Publications
 
@@ -143,7 +137,6 @@ site:nuaa.org.au "User's News" filetype:pdf
 site:aivl.org.au filetype:pdf
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=site%3Aaivl.org.au%20filetype%3Apdf)
 
 ### HRVic Publications
 
@@ -151,7 +144,6 @@ site:aivl.org.au filetype:pdf
 site:hrvic.org.au filetype:pdf
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=site%3Ahrvic.org.au%20filetype%3Apdf)
 
 ### State Organisation Publications
 
@@ -168,7 +160,6 @@ site:hrvic.org.au filetype:pdf
 "peer newsletter" [TOPIC] Australia
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22User's%20News%22%20%5BTOPIC%5D%20filetype%3Apdf%0A%22peer%20newsletter%22%20%5BTOPIC%5D%20Australia)
 
 ---
 
@@ -188,7 +179,6 @@ site:hrvic.org.au filetype:pdf
 "peer stories" OR "peer testimonies" OR "peer voices" drug policy OR harm reduction
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22peer%20stories%22%20OR%20%22peer%20testimonies%22%20OR%20%22peer%20voices%22%20drug%20policy%20OR%20harm%20reduction)
 
 ### Oral Histories
 
@@ -225,7 +215,6 @@ site:nuaa.org.au OR site:aivl.org.au (factsheet OR "fact sheet" OR guide) filety
 "by peers for peers" harm reduction
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22peer%20education%22%20resources%20harm%20reduction%20Australia%20filetype%3Apdf%0A%22by%20peers%20for%20peers%22%20harm%20reduction)
 
 ### Peer-Developed Campaigns
 
@@ -290,7 +279,6 @@ site:*.org.au "peer-led" (advocacy OR campaign) drug policy filetype:pdf
 "nothing about us without us" drug policy OR harm reduction filetype:pdf
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22nothing%20about%20us%20without%20us%22%20drug%20policy%20OR%20harm%20reduction%20filetype%3Apdf)
 
 ### Peer Advocacy History
 
@@ -319,7 +307,6 @@ site:*.org.au "peer-led" (advocacy OR campaign) drug policy filetype:pdf
 "participatory action research" OR "community-based participatory research" drug use filetype:pdf
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22participatory%20action%20research%22%20OR%20%22community-based%20participatory%20research%22%20drug%20use%20filetype%3Apdf)
 
 ### Co-Design
 
@@ -327,7 +314,6 @@ site:*.org.au "peer-led" (advocacy OR campaign) drug policy filetype:pdf
 "co-design" OR "co-production" "people who use drugs" OR peer filetype:pdf
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22co-design%22%20OR%20%22co-production%22%20%22people%20who%20use%20drugs%22%20OR%20peer%20filetype%3Apdf)
 
 ---
 
@@ -340,7 +326,6 @@ site:inpud.net filetype:pdf
 "International Network of People Who Use Drugs" resources
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=site%3Ainpud.net%20filetype%3Apdf%0A%22International%20Network%20of%20People%20Who%20Use%20Drugs%22%20resources)
 
 ### European Networks
 
@@ -378,7 +363,6 @@ site:web.archive.org (nuaa.org.au OR aivl.org.au)
 "peer newsletter" harm reduction Australia 1990..2015
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22User's%20News%22%201990..2010%0A%22peer%20newsletter%22%20harm%20reduction%20Australia%201990..2015)
 
 ---
 

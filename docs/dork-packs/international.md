@@ -26,7 +26,6 @@ Find international harm reduction evaluations:
 site:*.govt.nz "harm reduction" OR "needle exchange"
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=site%3A*.govt.nz%20%22harm%20reduction%22%20OR%20%22needle%20exchange%22)
 
 ### UK Policy & Research
 
@@ -34,7 +33,6 @@ site:*.govt.nz "harm reduction" OR "needle exchange"
 site:*.gov.uk "drug consumption room" OR "drug policy" reform
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=site%3A*.gov.uk%20%22drug%20consumption%20room%22%20OR%20%22drug%20policy%22%20reform)
 
 ### Canadian Safe Supply
 
@@ -42,7 +40,6 @@ site:*.gov.uk "drug consumption room" OR "drug policy" reform
 site:*.gc.ca "supervised consumption" OR "safe supply" evaluation
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=site%3A*.gc.ca%20%22supervised%20consumption%22%20OR%20%22safe%20supply%22%20evaluation)
 
 ---
 
@@ -54,7 +51,6 @@ site:*.gc.ca "supervised consumption" OR "safe supply" evaluation
 site:emcdda.europa.eu filetype:pdf "drug checking" OR "harm reduction"
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=site%3Aemcdda.europa.eu%20filetype%3Apdf%20%22drug%20checking%22%20OR%20%22harm%20reduction%22)
 
 ### Portugal Decriminalisation
 
@@ -136,7 +132,6 @@ site:*.gov.uk "naloxone" OR "take-home naloxone" program
 site:release.org.uk filetype:pdf
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=site%3A*.gov.uk%20%22drug%20consumption%20room%22%20OR%20%22drug%20policy%22%20filetype%3Apdf%0Asite%3A*.gov.uk%20%22naloxone%22%20OR%20%22take-home%20naloxone%22%20program%0Asite%3Arelease.org.uk%20filetype%3Apdf)
 
 ### Europe (EMCDDA)
 
@@ -145,7 +140,6 @@ site:emcdda.europa.eu filetype:pdf
 site:emcdda.europa.eu "drug checking" OR "harm reduction" OR "treatment"
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=site%3Aemcdda.europa.eu%20filetype%3Apdf%0Asite%3Aemcdda.europa.eu%20%22drug%20checking%22%20OR%20%22harm%20reduction%22%20OR%20%22treatment%22)
 
 ### Portugal
 
@@ -201,7 +195,6 @@ site:*.govt.nz "needle exchange" OR "drug checking" OR "harm reduction"
 site:who.int "harm reduction" OR "needle syringe" OR "opioid agonist" guidelines filetype:pdf
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=site%3Awho.int%20%22harm%20reduction%22%20OR%20%22needle%20syringe%22%20OR%20%22opioid%20agonist%22%20guidelines%20filetype%3Apdf)
 
 ### UNODC
 
@@ -209,7 +202,6 @@ site:who.int "harm reduction" OR "needle syringe" OR "opioid agonist" guidelines
 site:unodc.org "harm reduction" guidelines OR standards filetype:pdf
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=site%3Aunodc.org%20%22harm%20reduction%22%20guidelines%20OR%20standards%20filetype%3Apdf)
 
 ### EMCDDA (European Monitoring)
 
@@ -225,7 +217,6 @@ site:emcdda.europa.eu ("best practice" OR guidelines OR standards) filetype:pdf
 site:hri.global "global state of harm reduction" OR report filetype:pdf
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=site%3Ahri.global%20%22global%20state%20of%20harm%20reduction%22%20OR%20report%20filetype%3Apdf)
 
 ---
 
@@ -304,7 +295,6 @@ site:emcdda.europa.eu (statistics OR data OR "statistical bulletin") filetype:pd
 site:unodc.org "World Drug Report" filetype:pdf
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=site%3Aunodc.org%20%22World%20Drug%20Report%22%20filetype%3Apdf)
 
 ### Global State of Harm Reduction
 
@@ -312,7 +302,6 @@ site:unodc.org "World Drug Report" filetype:pdf
 site:hri.global "global state" filetype:pdf
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=site%3Ahri.global%20%22global%20state%22%20filetype%3Apdf)
 
 ---
 

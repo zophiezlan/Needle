@@ -42,7 +42,6 @@ site:*.health.nsw.gov.au "service directory" ("central coast" OR newcastle OR "h
 inurl:aod-services OR inurl:directory site:*.gov.au
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=inurl%3Aaod-services%20OR%20inurl%3Adirectory%20site%3A*.gov.au)
 
 ---
 
@@ -127,7 +126,6 @@ site:health.nsw.gov.au OR site:nsw.gov.au "service directory" AOD OR "alcohol dr
 site:*.nsw.gov.au filetype:xlsx service directory
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=site%3Ahealth.nsw.gov.au%20OR%20site%3Answ.gov.au%20%22service%20directory%22%20AOD%20OR%20%22alcohol%20drug%22%0Asite%3A*.nsw.gov.au%20filetype%3Axlsx%20service%20directory)
 
 ### Victoria
 
@@ -136,7 +134,6 @@ site:health.vic.gov.au "service directory" OR "service finder" AOD
 site:*.vic.gov.au "alcohol and drug" services directory
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=site%3Ahealth.vic.gov.au%20%22service%20directory%22%20OR%20%22service%20finder%22%20AOD%0Asite%3A*.vic.gov.au%20%22alcohol%20and%20drug%22%20services%20directory)
 
 ### Queensland
 
@@ -144,7 +141,6 @@ site:*.vic.gov.au "alcohol and drug" services directory
 site:health.qld.gov.au "service directory" AOD OR "alcohol and other drugs"
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=site%3Ahealth.qld.gov.au%20%22service%20directory%22%20AOD%20OR%20%22alcohol%20and%20other%20drugs%22)
 
 ### Western Australia
 
@@ -153,7 +149,6 @@ site:health.wa.gov.au "service directory" AOD OR "alcohol and other drugs"
 site:mhc.wa.gov.au services directory
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=site%3Ahealth.wa.gov.au%20%22service%20directory%22%20AOD%20OR%20%22alcohol%20and%20other%20drugs%22%0Asite%3Amhc.wa.gov.au%20services%20directory)
 
 ### South Australia
 
@@ -162,7 +157,6 @@ site:sahealth.sa.gov.au service directory drug OR alcohol
 site:dassa.sa.gov.au services
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=site%3Asahealth.sa.gov.au%20service%20directory%20drug%20OR%20alcohol%0Asite%3Adassa.sa.gov.au%20services)
 
 ### Tasmania
 
@@ -170,7 +164,6 @@ site:dassa.sa.gov.au services
 site:health.tas.gov.au "service directory" alcohol drug
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=site%3Ahealth.tas.gov.au%20%22service%20directory%22%20alcohol%20drug)
 
 ### ACT
 
@@ -179,7 +172,6 @@ site:health.act.gov.au service directory AOD
 site:*.act.gov.au "alcohol and drug" services
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=site%3Ahealth.act.gov.au%20service%20directory%20AOD%0Asite%3A*.act.gov.au%20%22alcohol%20and%20drug%22%20services)
 
 ### NT
 
@@ -187,7 +179,6 @@ site:*.act.gov.au "alcohol and drug" services
 site:health.nt.gov.au service directory AOD
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=site%3Ahealth.nt.gov.au%20service%20directory%20AOD)
 
 ---
 
@@ -262,7 +253,6 @@ site:health.nt.gov.au service directory AOD
 "mental health" service directory [YOUR STATE] site:*.gov.au
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22mental%20health%22%20service%20directory%20%5BYOUR%20STATE%5D%20site%3A*.gov.au)
 
 ### Family Support
 
@@ -283,7 +273,6 @@ site:*.gov.au inurl:services OR inurl:directory filetype:pdf AOD
 site:*.gov.au inurl:contacts OR inurl:providers filetype:xlsx
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=site%3A*.gov.au%20inurl%3Aservices%20OR%20inurl%3Adirectory%20filetype%3Apdf%20AOD%0Asite%3A*.gov.au%20inurl%3Acontacts%20OR%20inurl%3Aproviders%20filetype%3Axlsx)
 
 ### Spreadsheet Mining
 
@@ -304,7 +293,6 @@ site:*.gov.au filetype:xlsx "service" ("contact" OR "phone" OR "address") drug O
 "treatment locator" "drug and alcohol" Australia
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22service%20finder%22%20AOD%20Australia%20online%0A%22treatment%20locator%22%20%22drug%20and%20alcohol%22%20Australia)
 
 ### App/Digital Services
 

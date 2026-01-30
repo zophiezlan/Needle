@@ -150,7 +150,6 @@ site:*.gov.au OR site:*.edu.au filetype:pdf ("novel psychoactive" OR NPS OR "eme
 site:*.gov.au "nitazene" OR "benzimidazole opioid" after:2023
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=site%3A*.gov.au%20%22nitazene%22%20OR%20%22benzimidazole%20opioid%22%20after%3A2023)
 
 ```txt
 "isotonitazene" OR "protonitazene" (detection OR death OR toxicology OR case) Australia
@@ -208,7 +207,6 @@ site:*.gov.au "nitazene" OR "benzimidazole opioid" after:2023
 "Ecstasy and Related Drugs Reporting System" OR EDRS filetype:pdf
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22Ecstasy%20and%20Related%20Drugs%20Reporting%20System%22%20OR%20EDRS%20filetype%3Apdf)
 
 ### Drug Trends Reports
 
@@ -216,7 +214,6 @@ site:*.gov.au "nitazene" OR "benzimidazole opioid" after:2023
 site:ndarc.med.unsw.edu.au "drug trends" OR "market" filetype:pdf
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=site%3Andarc.med.unsw.edu.au%20%22drug%20trends%22%20OR%20%22market%22%20filetype%3Apdf)
 
 ### Wastewater Analysis
 

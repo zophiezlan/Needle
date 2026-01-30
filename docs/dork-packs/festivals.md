@@ -282,7 +282,6 @@ site:hrvic.org.au DanceWize filetype:pdf
 site:*.gov.uk OR site:*.org.uk "festival" "harm reduction" OR "drug safety"
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=site%3A*.gov.uk%20OR%20site%3A*.org.uk%20%22festival%22%20%22harm%20reduction%22%20OR%20%22drug%20safety%22)
 
 ### European Models
 
@@ -298,7 +297,6 @@ site:*.gov.uk OR site:*.org.uk "festival" "harm reduction" OR "drug safety"
 "The Loop" "drug checking" festival evaluation OR results
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22The%20Loop%22%20%22drug%20checking%22%20festival%20evaluation%20OR%20results)
 
 ---
 
