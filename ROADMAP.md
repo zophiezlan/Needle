@@ -18,3 +18,13 @@ functional.
     - Create a syntax highlighting solution for DorkScript that can be used across the site, including in code blocks in the docs and in the dork builder interface.
     - This could be a custom solution or an extension of an existing syntax highlighter like Prism.js or Highlight.js.
     - Implement linting and error highlighting for DorkScript in the dork builder interface to help users identify and fix syntax errors as they write their dorks.
+
+**5. Remove Unused Theme Toggle in Navbar:**
+
+    - Remove the unused theme toggle in the navbar menu since the theme selector and dark/light switcher has been moved to its own place on the navbar.
+    - This leaves just the github link in the navbar menu, perhaps we can add more useful links and features here in the future.
+
+**6. Improve Dork Builder Interface:**
+
+    - Move the blocks from 'tricks' to the main dork builder interface to make them more accessible.
+    - Improve the usability and design of the dork builder interface to make it easier for users to create and customize their dorks.
