@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { ref, computed, onMounted, watch } from "vue";
+import { useData, withBase } from "vitepress";
 import { useDorkData } from "../../composables/useDorkData";
 import { useFavorites } from "../../composables/useFavorites";
 import DorkCard from "./DorkCard.vue";
@@ -20,7 +21,7 @@ onMounted(async () => {
   // Load dork-data.js script
   if (typeof window !== "undefined" && !(window as any).DORK_DATA) {
     const script = document.createElement("script");
-    script.src = "/dork-explorer/dork-data.js";
+    script.src = withBase("/dork-explorer/dork-data.js");
     script.onload = () => loadDorks();
     document.head.appendChild(script);
   } else {

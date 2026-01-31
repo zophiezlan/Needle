@@ -35,6 +35,40 @@ const synonymSuggestion = computed(() => {
   if (selectedBlock.value?.type !== "keyword") return null;
   return findSynonyms(selectedBlock.value.value);
 });
+
+const validationError = computed(() => {
+  if (!selectedBlock.value) return null;
+  const b = selectedBlock.value;
+
+  // Required fields
+  if (["site", "filetype", "ext", "define", "weather", "stocks", "map", "keyword", "exact", "wildcard"].includes(b.type)) {
+    if (!b.value || String(b.value).trim().length === 0) {
+      return "This field is required";
+    }
+  }
+
+  // Operator fields
+  if (["intitle", "allintitle", "inurl", "allinurl", "intext", "allintext", "inanchor", "allinanchor"].includes(b.type)) {
+    if (!b.value || String(b.value).trim().length === 0) {
+      return "Search term is required";
+    }
+  }
+
+  // Complex fields
+  if (b.type === "daterange") {
+    if (!b.options.start && !b.options.end && !b.value) {
+      return "Start date, end date, or range value required";
+    }
+  }
+
+  if (b.type === "imagesize") {
+    if ((!b.options.width || !b.options.height) && !b.value) {
+      return "Dimensions required";
+    }
+  }
+
+  return null;
+});
 </script>
 
 <template>
@@ -42,6 +76,10 @@ const synonymSuggestion = computed(() => {
     <div class="editor-header">
       <span class="editor-type">{{ selectedBlock.type.toUpperCase() }}</span>
       <button class="editor-remove" @click="removeBlock(selectedBlock.id)">Remove</button>
+    </div>
+
+    <div v-if="validationError" class="validation-alert">
+      ⚠️ {{ validationError }}
     </div>
 
     <!-- Site Block -->
@@ -736,5 +774,18 @@ const synonymSuggestion = computed(() => {
   grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
   gap: 8px;
   margin-bottom: 12px;
+}
+
+.validation-alert {
+  padding: 10px 12px;
+  margin-bottom: 16px;
+  background-color: var(--warning-subtle);
+  border: 1px solid var(--warning);
+  border-radius: var(--radius-md);
+  color: var(--warning-text);
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 </style>
