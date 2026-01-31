@@ -30,7 +30,7 @@ const defaultSettings: Settings = {
   experienceMode: "practitioner",
   theme: {
     color: "violet",
-    mode: "dark",
+    mode: "system",
   },
   defaults: {
     synonyms: true,

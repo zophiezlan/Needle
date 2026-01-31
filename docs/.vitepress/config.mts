@@ -9,6 +9,7 @@ export default defineConfig({
   description: "Advanced search operators, workflows, and dork packs for harm reduction work.",
   cleanUrls: true,
   lastUpdated: true,
+  appearance: false,
   srcExclude: [
     "_sidebar.md",
     "_navbar.md",
@@ -18,7 +19,6 @@ export default defineConfig({
     "dork-explorer.md",
   ],
   themeConfig: {
-    appearance: false,
     nav: [
       { text: "Home", link: "/" },
       { text: "Guide", link: "/README" },
