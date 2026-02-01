@@ -1,6 +1,8 @@
 # Organizational Intelligence & Infrastructure
 
-> Find the "behind the scenes" of how harm reduction works — strategic plans, governance documents, funding applications, annual reports, tender documents, and operational infrastructure. Power-user searching for understanding how organizations operate.
+> Find the "behind the scenes" of how harm reduction works — strategic plans, governance documents,
+> funding applications, annual reports, tender documents, and operational infrastructure. Power-user
+> searching for understanding how organizations operate.
 
 [← Back to Dork Packs](README.md) | [← Main Guide](../README.md)
 
@@ -322,32 +324,32 @@ site:*.gov.au ("funding recipients" OR "successful applicants" OR "grants awarde
 
 ### Organizational Documents
 
-| Document Type | Search Pattern |
-| ------------- | -------------- |
-| Annual Report | `"annual report" "harm reduction" filetype:pdf` |
-| Strategic Plan | `"strategic plan" "harm reduction" filetype:pdf` |
-| Constitution | `constitution "harm reduction" site:*.org.au` |
-| Board Minutes | `"board minutes" OR "meeting minutes" "harm reduction"` |
-| Policies | `policy OR procedure site:*.org.au "harm reduction"` |
+| Document Type  | Search Pattern                                          |
+| -------------- | ------------------------------------------------------- |
+| Annual Report  | `"annual report" "harm reduction" filetype:pdf`         |
+| Strategic Plan | `"strategic plan" "harm reduction" filetype:pdf`        |
+| Constitution   | `constitution "harm reduction" site:*.org.au`           |
+| Board Minutes  | `"board minutes" OR "meeting minutes" "harm reduction"` |
+| Policies       | `policy OR procedure site:*.org.au "harm reduction"`    |
 
 ### Government Documents
 
-| Document Type | Search Pattern |
-| ------------- | -------------- |
-| Tender | `tender site:*.gov.au "harm reduction"` |
-| Service Spec | `"service specification" site:*.gov.au AOD` |
-| Budget | `budget "harm reduction" site:*.gov.au` |
-| Evaluation | `evaluation "harm reduction" site:*.gov.au` |
-| FOI Release | `FOI site:*.gov.au "harm reduction"` |
+| Document Type | Search Pattern                              |
+| ------------- | ------------------------------------------- |
+| Tender        | `tender site:*.gov.au "harm reduction"`     |
+| Service Spec  | `"service specification" site:*.gov.au AOD` |
+| Budget        | `budget "harm reduction" site:*.gov.au`     |
+| Evaluation    | `evaluation "harm reduction" site:*.gov.au` |
+| FOI Release   | `FOI site:*.gov.au "harm reduction"`        |
 
 ### Workforce Documents
 
-| Document Type | Search Pattern |
-| ------------- | -------------- |
-| Position Description | `"position description" "harm reduction" filetype:pdf` |
-| Competency Framework | `"competency framework" "harm reduction"` |
-| Workforce Strategy | `"workforce strategy" OR "workforce plan" "harm reduction"` |
-| Training Curriculum | `curriculum OR syllabus "harm reduction" training` |
+| Document Type        | Search Pattern                                              |
+| -------------------- | ----------------------------------------------------------- |
+| Position Description | `"position description" "harm reduction" filetype:pdf`      |
+| Competency Framework | `"competency framework" "harm reduction"`                   |
+| Workforce Strategy   | `"workforce strategy" OR "workforce plan" "harm reduction"` |
+| Training Curriculum  | `curriculum OR syllabus "harm reduction" training`          |
 
 ---
 
@@ -492,7 +494,8 @@ site:*.health.*.gov.au ("harm reduction" OR AOD) ("annual report" OR strategy OR
 
 ## 🔗 Related Resources
 
-- **Related Packs:** [Policy & Advocacy](policy-advocacy.md), [Research](research.md), [Data & Statistics](data-statistics.md)
+- **Related Packs:** [Policy & Advocacy](policy-advocacy.md), [Research](research.md),
+  [Data & Statistics](data-statistics.md)
 - **Temporal:** [Temporal Intelligence](temporal-intelligence.md) for finding old versions
 - **Domain Map:** [Government Domains](../04-domain-map.md)
 

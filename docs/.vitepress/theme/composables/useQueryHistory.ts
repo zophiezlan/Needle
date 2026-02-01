@@ -264,8 +264,7 @@ export const DORK_TEMPLATES: DorkTemplate[] = [
     name: "Blogs & Newsletters",
     description: "Find harm reduction content on blogs and newsletter platforms",
     category: "User Content",
-    query:
-      '(site:*.wordpress.com OR site:medium.com OR site:*.substack.com) "harm reduction"',
+    query: '(site:*.wordpress.com OR site:medium.com OR site:*.substack.com) "harm reduction"',
     icon: "✍️",
   },
   {
@@ -282,8 +281,7 @@ export const DORK_TEMPLATES: DorkTemplate[] = [
     name: "Reddit Discussions",
     description: "Find community discussions and lived experience on Reddit",
     category: "User Content",
-    query:
-      'site:reddit.com ("harm reduction" OR "naloxone" OR "drug checking") -r/politics',
+    query: 'site:reddit.com ("harm reduction" OR "naloxone" OR "drug checking") -r/politics',
     icon: "💬",
   },
   {
