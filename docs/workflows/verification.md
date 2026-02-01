@@ -107,11 +107,11 @@ Watch for these warning signs:
 
 | Red Flag                      | What It Means             |
 | ----------------------------- | ------------------------- |
-| No publication date           | May be outdated           |
-| Unknown author/org            | May not be authoritative  |
-| Not on official domain        | May be unofficial version |
 | "Draft" watermark             | May not be final          |
+| No publication date           | May be outdated           |
+| Not on official domain        | May be unofficial version |
 | Pre-2020 clinical guidance    | May be outdated           |
+| Unknown author/org            | May not be authoritative  |
 | US/UK guidance for AU context | May not apply             |
 
 ---
@@ -122,12 +122,12 @@ Signs of reliable sources:
 
 | Green Flag                    | What It Means          |
 | ----------------------------- | ---------------------- |
-| Government domain (`.gov.au`) | Official source        |
-| University domain (`.edu.au`) | Academic rigour        |
 | Clear publication date        | Currency verifiable    |
-| Version control visible       | Document is maintained |
+| Government domain (`.gov.au`) | Official source        |
 | PDF on official site          | Direct from source     |
 | Peer-reviewed                 | Quality controlled     |
+| University domain (`.edu.au`) | Academic rigour        |
+| Version control visible       | Document is maintained |
 
 ---
 

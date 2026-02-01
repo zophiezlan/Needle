@@ -120,10 +120,10 @@ Look for documents that:
 | Organisation | Domain              | Focus                       |
 | ------------ | ------------------- | --------------------------- |
 | **AIVL**     | `site:aivl.org.au`  | National peak, advocacy     |
-| **NUAA**     | `site:nuaa.org.au`  | User's News, peer resources |
 | **HRVic**    | `site:hrvic.org.au` | DanceWize, peer practice    |
-| **QuIHN**    | `site:quihn.org`    | Peer services               |
 | **INPUD**    | `site:inpud.net`    | International peer network  |
+| **NUAA**     | `site:nuaa.org.au`  | User's News, peer resources |
+| **QuIHN**    | `site:quihn.org`    | Peer services               |
 
 ### Multi-Organisation Search
 

@@ -274,19 +274,20 @@ site:web.archive.org/web/*/nuaa.org.au "about" OR "history" OR "mission"
 
 | Pattern                                  | Purpose                                |
 | ---------------------------------------- | -------------------------------------- |
-| `site:web.archive.org`                   | General Wayback Machine search         |
+| `site:archive.org/details/`              | Archive.org collections (books, media) |
 | `site:web.archive.org/web/*/example.com` | All snapshots of specific site         |
 | `site:web.archive.org/web/2020*/`        | Snapshots from specific year           |
-| `site:archive.org/details/`              | Archive.org collections (books, media) |
+| `site:web.archive.org`                   | General Wayback Machine search         |
 
 ### Other Archive Sources
 
 | Pattern                   | Purpose                                |
 | ------------------------- | -------------------------------------- |
-| `site:trove.nla.gov.au`   | National Library of Australia archives |
 | `site:pandora.nla.gov.au` | Australian web archive (PANDORA)       |
-| `site:webarchive.org.uk`  | UK Web Archive                         |
-| `site:webarchive.loc.gov
+| `site:trove.nla.gov.au`   | National Library of Australia archives |
+
+| `site:webarchive.loc.gov |`site:webarchive.org.uk` | UK Web Archive |
+undefined
 Library of Congress web archive        |
 
 ---

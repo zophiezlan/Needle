@@ -41,10 +41,10 @@ site:*.gov.au filetype:pdf "harm reduction" after:2024
 
 | Component          | Purpose                            |
 | :----------------- | :--------------------------------- |
-| `site:*.gov.au`    | Only Australian government domains |
-| `filetype:pdf`     | Only PDF documents (not web pages) |
 | `"harm reduction"` | Exact phrase match                 |
 | `after:2024`       | Published in 2024 or later         |
+| `filetype:pdf`     | Only PDF documents (not web pages) |
+| `site:*.gov.au`    | Only Australian government domains |
 
 </details>
 
@@ -94,9 +94,9 @@ Replace `"harm reduction"` with:
 | Topic               | Query Term                 |
 | :------------------ | :------------------------- |
 | Needle programs     | `"needle syringe program"` |
-| Pill testing        | `"drug checking"`          |
 | Opioid treatment    | `"opioid treatment"`       |
 | Overdose prevention | `"overdose prevention"`    |
+| Pill testing        | `"drug checking"`          |
 
 </details>
 
@@ -109,8 +109,8 @@ Replace `"harm reduction"` with:
 | Australian Universities | `site:*.edu.au`          |
 | NSW Health              | `site:health.nsw.gov.au` |
 | QLD Health              | `site:health.qld.gov.au` |
-| VIC Health              | `site:health.vic.gov.au` |
 | Sector Orgs             | `site:*.org.au`          |
+| VIC Health              | `site:health.vic.gov.au` |
 
 </details>
 
@@ -159,8 +159,8 @@ Now that you have the basics:
 
 | Next                      | Link                                    |
 | :------------------------ | :-------------------------------------- |
-| Learn the operators       | [Core Operators](02-core-operators.md)  |
 | Find topic-specific dorks | [Dork Packs](dork-packs/README.md)      |
+| Learn the operators       | [Core Operators](02-core-operators.md)  |
 | Set up monitoring         | [Google Alerts](tools/google-alerts.md) |
 
 ---

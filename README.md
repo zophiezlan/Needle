@@ -26,21 +26,21 @@
 | Level                | Start Here                                                                                           |
 | :------------------- | :--------------------------------------------------------------------------------------------------- |
 | **Interactive Tool** | [**🕵️‍♂️ Launch Dork Explorer**](tools/dork-explorer/index.html) - Search & filter 700+ dorks instantly |
-| **New to dorking?**  | [Quick Start Guide](docs/01-quick-start.md) → [Core Operators](docs/02-core-operators.md)            |
 | **Know the basics?** | [Advanced Operators](docs/03-advanced-operators.md) → [Dork Packs](docs/dork-packs/)                 |
+| **New to dorking?**  | [Quick Start Guide](docs/01-quick-start.md) → [Core Operators](docs/02-core-operators.md)            |
 | **Power user?**      | [Investigative Searching](docs/dork-packs/investigative.md) → [OSINT Tools](docs/tools/osint.md)     |
 
 ### By Role
 
 | Role                              | Recommended Path                                                                                                                                                  |
 | :-------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 👥 **Peer Worker**                | [Peer Workflow](docs/workflows/peer-centered.md) → [Peer Workforce Pack](docs/dork-packs/peer-workforce.md) → [Peer Knowledge](docs/dork-packs/peer-knowledge.md) |
-| 🏥 **Clinician/Service Provider** | [Quick Start](docs/01-quick-start.md) → [Drug Alerts](docs/dork-packs/drug-alerts.md) → [Service Directories](docs/dork-packs/service-directories.md)             |
-| 🔬 **Researcher**                 | [Research Workflow](docs/workflows/research-workflow.md) → [Research Pack](docs/dork-packs/research.md) → [Data & Statistics](docs/dork-packs/data-statistics.md) |
-| 📋 **Policy/Advocacy**            | [Policy Pack](docs/dork-packs/policy-advocacy.md) → [Verification Workflow](docs/workflows/verification.md)                                                       |
-| 🏕️ **Festival/Event Health**      | [Festivals Pack](docs/dork-packs/festivals.md) → [Drug Checking](docs/dork-packs/drug-checking.md)                                                                |
 | 🌏 **Rural/Remote**               | [Rural & Remote Pack](docs/dork-packs/rural-remote.md)                                                                                                            |
+| 🏕️ **Festival/Event Health**      | [Festivals Pack](docs/dork-packs/festivals.md) → [Drug Checking](docs/dork-packs/drug-checking.md)                                                                |
+| 🏥 **Clinician/Service Provider** | [Quick Start](docs/01-quick-start.md) → [Drug Alerts](docs/dork-packs/drug-alerts.md) → [Service Directories](docs/dork-packs/service-directories.md)             |
+| 📋 **Policy/Advocacy**            | [Policy Pack](docs/dork-packs/policy-advocacy.md) → [Verification Workflow](docs/workflows/verification.md)                                                       |
+| 🔬 **Researcher**                 | [Research Workflow](docs/workflows/research-workflow.md) → [Research Pack](docs/dork-packs/research.md) → [Data & Statistics](docs/dork-packs/data-statistics.md) |
 | 🖤💛❤️ **First Nations Focus**    | [First Nations Pack](docs/dork-packs/first-nations.md)                                                                                                            |
+| � **Peer Worker**                 | [Peer Workflow](docs/workflows/peer-centered.md) → [Peer Workforce Pack](docs/dork-packs/peer-workforce.md) → [Peer Knowledge](docs/dork-packs/peer-knowledge.md) |
 
 ---
 
@@ -137,9 +137,9 @@ Ready-to-use search queries organized by harm reduction task:
 
 | Workflow                                                 | Description                          |
 | :------------------------------------------------------- | :----------------------------------- |
-| [Research Workflow](docs/workflows/research-workflow.md) | Four-step funnel & triangulation     |
 | [Monitoring](docs/workflows/monitoring.md)               | Alerts, RSS, early warning           |
 | [Peer-Centered](docs/workflows/peer-centered.md)         | Values-based searching for peer work |
+| [Research Workflow](docs/workflows/research-workflow.md) | Four-step funnel & triangulation     |
 | [Verification](docs/workflows/verification.md)           | Source validity & trust              |
 
 </details>
@@ -153,15 +153,15 @@ Ready-to-use search queries organized by harm reduction task:
 | :------------------------------------------------- | :------------------------------- |
 | [🕵️‍♂️ Dork Explorer](tools/dork-explorer/index.html) | **NEW!** Interactive search tool |
 | [Bookmarklets](docs/tools/bookmarklets.md)         | One-click searching              |
-| [Google Alerts](docs/tools/google-alerts.md)       | Automated monitoring             |
 | [Custom Search](docs/tools/custom-search.md)       | Build team search engines        |
+| [Google Alerts](docs/tools/google-alerts.md)       | Automated monitoring             |
 
 ### Research Aids
 
 | Resource                                               | Description                    |
 | :----------------------------------------------------- | :----------------------------- |
-| [Browser Extensions](docs/tools/browser-extensions.md) | Research workflow tools        |
 | [AI Tools](docs/tools/ai-tools.md)                     | AI-powered research assistants |
+| [Browser Extensions](docs/tools/browser-extensions.md) | Research workflow tools        |
 | [OSINT](docs/tools/osint.md)                           | Open source intelligence tools |
 | [Privacy & Security](docs/tools/privacy-security.md)   | Protect yourself & clients     |
 
@@ -169,12 +169,12 @@ Ready-to-use search queries organized by harm reduction task:
 
 | Resource                                                     | Description                    |
 | :----------------------------------------------------------- | :----------------------------- |
+| [Academic Access](docs/resources/academic-access.md)         | Access research papers         |
+| [Australian OSINT](docs/resources/australian-osint.md)       | Comprehensive AU data sources  |
 | [Cheat Sheet](docs/resources/cheat-sheet.md)                 | One-page reference             |
+| [Organizations](docs/resources/organizations.md)             | Key harm reduction orgs        |
 | [Substance Categories](docs/substance-categories.md)         | Category-based substance dorks |
 | [Substance Databases](docs/resources/substance-databases.md) | Drug information resources     |
-| [Academic Access](docs/resources/academic-access.md)         | Access research papers         |
-| [Organizations](docs/resources/organizations.md)             | Key harm reduction orgs        |
-| [Australian OSINT](docs/resources/australian-osint.md)       | Comprehensive AU data sources  |
 
 </details>
 
@@ -236,8 +236,8 @@ use. **Peer knowledge is expert knowledge.**
 
 | Prefer                       | Instead Of         |
 | :--------------------------- | :----------------- |
-| `"people who use drugs"`     | `"drug addicts"`   |
 | `"overdose"` / `"poisoning"` | Stigmatizing terms |
+| `"people who use drugs"`     | `"drug addicts"`   |
 
 > [!TIP] **Legacy searching:** Include older terms only when necessary to locate historical
 > documents.

@@ -25,11 +25,11 @@ Google dorking should serve legitimate harm reduction purposes:
 
 | Appropriate Uses                 | Inappropriate Uses                          |
 | :------------------------------- | :------------------------------------------ |
+| Accessing research and evidence  | Finding leaked medical records              |
+| Discovering workforce resources  | Circumventing access controls               |
 | Finding government health alerts | Searching for individuals' drug use history |
 | Locating service directories     | Harvesting personal contact information     |
-| Accessing research and evidence  | Finding leaked medical records              |
 | Monitoring policy developments   | Exposing private communications             |
-| Discovering workforce resources  | Circumventing access controls               |
 
 ### 3. Respect Privacy Boundaries
 
@@ -174,12 +174,12 @@ For general cybersecurity issues in Australia:
 
 | Do                                   | Don't                                  |
 | :----------------------------------- | :------------------------------------- |
-| Search for public health information | Search for identifiable individuals    |
 | Find official documents and data     | Access restricted or leaked data       |
+| Follow organizational policies       | Ignore ethical boundaries              |
+| Report accidental data exposure      | Share or exploit found vulnerabilities |
+| Search for public health information | Search for identifiable individuals    |
 | Use de-identified, aggregate sources | Expose private communications          |
 | Verify and cite your sources         | Circumvent access controls             |
-| Report accidental data exposure      | Share or exploit found vulnerabilities |
-| Follow organizational policies       | Ignore ethical boundaries              |
 
 ---
 

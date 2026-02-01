@@ -225,11 +225,11 @@ Find online course previews and educational content.
 | Platform        | Search Pattern                              |
 | --------------- | ------------------------------------------- |
 | Apple Podcasts  | `site:podcasts.apple.com "harm reduction"`  |
-| Spotify         | `site:open.spotify.com "harm reduction"`    |
-| SoundCloud      | `site:soundcloud.com "harm reduction"`      |
-| Stitcher        | `site:stitcher.com "harm reduction"`        |
 | Google Podcasts | `site:podcasts.google.com "harm reduction"` |
 | Pocket Casts    | `site:pocketcasts.com "harm reduction"`     |
+| SoundCloud      | `site:soundcloud.com "harm reduction"`      |
+| Spotify         | `site:open.spotify.com "harm reduction"`    |
+| Stitcher        | `site:stitcher.com "harm reduction"`        |
 
 ### Combined Podcast Search
 
@@ -259,11 +259,11 @@ site:podcasts.apple.com (naloxone OR fentanyl OR "safe supply")
 
 | Platform      | Search Pattern                                       |
 | ------------- | ---------------------------------------------------- |
+| Canva         | `site:canva.com "harm reduction"`                    |
+| Google Slides | `site:docs.google.com/presentation "harm reduction"` |
+| Prezi         | `site:prezi.com "harm reduction"`                    |
 | SlideShare    | `site:slideshare.net "harm reduction"`               |
 | Speaker Deck  | `site:speakerdeck.com "harm reduction"`              |
-| Prezi         | `site:prezi.com "harm reduction"`                    |
-| Google Slides | `site:docs.google.com/presentation "harm reduction"` |
-| Canva         | `site:canva.com "harm reduction"`                    |
 
 ### Conference Presentations
 

@@ -249,17 +249,17 @@ Public notes, wikis, SOPs, zines, workshop notes, and community how-tos.
 
 | Domain Pattern             | Platform      | Best For                              |
 | -------------------------- | ------------- | ------------------------------------- |
-| `site:*.notion.site`       | Notion        | Guides, directories, resource hubs    |
+| `site:*.document360.io`    | Document360   | Knowledge management                  |
+| `site:*.freshdesk.com`     | Freshdesk     | Help documentation                    |
 | `site:*.gitbook.io`        | GitBook       | Technical docs, project documentation |
+| `site:*.helpscoutdocs.com` | Help Scout    | Community support docs                |
+| `site:*.intercom.help`     | Intercom      | Help centers, FAQs                    |
+| `site:*.notion.site`       | Notion        | Guides, directories, resource hubs    |
+| `site:*.nuclino.com`       | Nuclino       | Collaborative wikis                   |
 | `site:*.readme.io`         | ReadMe        | API docs, developer resources         |
 | `site:*.readthedocs.io`    | Read the Docs | Open source project documentation     |
 | `site:*.slite.page`        | Slite         | Team knowledge bases                  |
-| `site:*.helpscoutdocs.com` | Help Scout    | Community support docs                |
-| `site:*.intercom.help`     | Intercom      | Help centers, FAQs                    |
 | `site:*.zendesk.com`       | Zendesk       | Support centers, knowledge bases      |
-| `site:*.freshdesk.com`     | Freshdesk     | Help documentation                    |
-| `site:*.document360.io`    | Document360   | Knowledge management                  |
-| `site:*.nuclino.com`       | Nuclino       | Collaborative wikis                   |
 
 **Quick Docs Search:**
 
@@ -275,25 +275,25 @@ Personal sites, project pages, micro-sites — massive volume of "real person" c
 
 | Domain Pattern           | Platform           | Best For                        |
 | ------------------------ | ------------------ | ------------------------------- |
+| `site:*.codeberg.page`   | Codeberg           | FOSS community projects         |
+| `site:*.deno.dev`        | Deno Deploy        | Edge deployments                |
+| `site:*.firebaseapp.com` | Firebase (legacy)  | Older Firebase projects         |
+| `site:*.fly.dev`         | Fly.io             | Distributed apps                |
 | `site:*.github.io`       | GitHub Pages       | Developer projects, open source |
 | `site:*.gitlab.io`       | GitLab Pages       | Open source projects            |
-| `site:*.pages.dev`       | Cloudflare Pages   | Modern static sites             |
-| `site:*.netlify.app`     | Netlify            | JAMstack sites, apps            |
-| `site:*.vercel.app`      | Vercel             | Next.js apps, modern frontends  |
-| `site:*.surge.sh`        | Surge              | Quick static deployments        |
-| `site:*.web.app`         | Firebase Hosting   | Web apps, PWAs                  |
-| `site:*.firebaseapp.com` | Firebase (legacy)  | Older Firebase projects         |
-| `site:*.herokuapp.com`   | Heroku             | Web apps (large legacy base)    |
-| `site:*.onrender.com`    | Render             | Full-stack apps                 |
-| `site:*.railway.app`     | Railway            | Modern app hosting              |
-| `site:*.fly.dev`         | Fly.io             | Distributed apps                |
-| `site:*.deno.dev`        | Deno Deploy        | Edge deployments                |
-| `site:*.workers.dev`     | Cloudflare Workers | Serverless functions            |
 | `site:*.glitch.me`       | Glitch             | Creative coding, prototypes     |
-| `site:*.replit.app`      | Replit             | Educational projects            |
-| `site:*.repl.co`         | Replit (legacy)    | Older Replit projects           |
-| `site:*.codeberg.page`   | Codeberg           | FOSS community projects         |
+| `site:*.herokuapp.com`   | Heroku             | Web apps (large legacy base)    |
 | `site:*.neocities.org`   | Neocities          | Personal websites, indie web    |
+| `site:*.netlify.app`     | Netlify            | JAMstack sites, apps            |
+| `site:*.onrender.com`    | Render             | Full-stack apps                 |
+| `site:*.pages.dev`       | Cloudflare Pages   | Modern static sites             |
+| `site:*.railway.app`     | Railway            | Modern app hosting              |
+| `site:*.repl.co`         | Replit (legacy)    | Older Replit projects           |
+| `site:*.replit.app`      | Replit             | Educational projects            |
+| `site:*.surge.sh`        | Surge              | Quick static deployments        |
+| `site:*.vercel.app`      | Vercel             | Next.js apps, modern frontends  |
+| `site:*.web.app`         | Firebase Hosting   | Web apps, PWAs                  |
+| `site:*.workers.dev`     | Cloudflare Workers | Serverless functions            |
 
 **Jamstack/Apps Search:**
 
@@ -309,15 +309,15 @@ No-code personal sites, landing pages, small community pages.
 
 | Domain Pattern           | Platform    | Best For                      |
 | ------------------------ | ----------- | ----------------------------- |
-| `site:*.weebly.com`      | Weebly      | Small business, personal      |
-| `site:*.wixsite.com`     | Wix         | Personal sites, portfolios    |
-| `site:*.webflow.io`      | Webflow     | Designer portfolios, agencies |
-| `site:*.squarespace.com` | Squarespace | Creative sites, portfolios    |
-| `site:*.square.site`     | Square      | Small business sites          |
 | `site:*.carrd.co`        | Carrd       | Single-page sites, link hubs  |
+| `site:*.jimdosite.com`   | Jimdo       | Small business sites          |
+| `site:*.square.site`     | Square      | Small business sites          |
+| `site:*.squarespace.com` | Squarespace | Creative sites, portfolios    |
 | `site:*.strikingly.com`  | Strikingly  | Landing pages                 |
 | `site:*.tilda.ws`        | Tilda       | Magazine-style sites          |
-| `site:*.jimdosite.com`   | Jimdo       | Small business sites          |
+| `site:*.webflow.io`      | Webflow     | Designer portfolios, agencies |
+| `site:*.weebly.com`      | Weebly      | Small business, personal      |
+| `site:*.wixsite.com`     | Wix         | Personal sites, portfolios    |
 
 **Website Builder Search:**
 
@@ -333,17 +333,17 @@ Essays, explainers, trip reports, narrative content, community commentary.
 
 | Domain Pattern         | Platform      | Best For                          |
 | ---------------------- | ------------- | --------------------------------- |
-| `site:*.wordpress.com` | WordPress.com | Blogs, news sites, community orgs |
 | `site:*.blogspot.com`  | Blogger       | Personal blogs, legacy content    |
-| `site:medium.com`      | Medium        | Longform articles, essays         |
-| `site:*.substack.com`  | Substack      | Newsletters, independent writers  |
-| `site:*.tumblr.com`    | Tumblr        | Community content, visual blogs   |
 | `site:*.ghost.io`      | Ghost         | Independent publications          |
 | `site:*.hashnode.dev`  | Hashnode      | Developer blogs                   |
-| `site:dev.to`          | DEV Community | Developer articles                |
-| `site:write.as`        | Write.as      | Anonymous/minimal publishing      |
-| `site:telegra.ph`      | Telegraph     | Quick posts, instant publishing   |
+| `site:*.substack.com`  | Substack      | Newsletters, independent writers  |
+| `site:*.tumblr.com`    | Tumblr        | Community content, visual blogs   |
+| `site:*.wordpress.com` | WordPress.com | Blogs, news sites, community orgs |
 | `site:bearblog.dev`    | Bear Blog     | Minimal personal blogs            |
+| `site:dev.to`          | DEV Community | Developer articles                |
+| `site:medium.com`      | Medium        | Longform articles, essays         |
+| `site:telegra.ph`      | Telegraph     | Quick posts, instant publishing   |
+| `site:write.as`        | Write.as      | Anonymous/minimal publishing      |
 
 **Blogs/Writing Search:**
 
@@ -359,16 +359,16 @@ Pivot points — not content itself, but great for finding where someone's docs/
 
 | Domain                  | Platform        | Best For                 |
 | ----------------------- | --------------- | ------------------------ |
-| `site:linktr.ee`        | Linktree        | Creator link collections |
-| `site:*.campsite.bio`   | Campsite        | Creator portfolios       |
-| `site:beacons.ai`       | Beacons         | Creator landing pages    |
 | `site:*.bio.site`       | Bio.site        | Link in bio pages        |
-| `site:lnk.bio`          | Lnk.Bio         | Link aggregators         |
-| `site:solo.to`          | Solo.to         | Personal link pages      |
+| `site:*.campsite.bio`   | Campsite        | Creator portfolios       |
 | `site:about.me`         | About.me        | Personal profiles        |
-| `site:ko-fi.com`        | Ko-fi           | Creator support pages    |
-| `site:patreon.com`      | Patreon         | Creator communities      |
+| `site:beacons.ai`       | Beacons         | Creator landing pages    |
 | `site:buymeacoffee.com` | Buy Me a Coffee | Creator support          |
+| `site:ko-fi.com`        | Ko-fi           | Creator support pages    |
+| `site:linktr.ee`        | Linktree        | Creator link collections |
+| `site:lnk.bio`          | Lnk.Bio         | Link aggregators         |
+| `site:patreon.com`      | Patreon         | Creator communities      |
+| `site:solo.to`          | Solo.to         | Personal link pages      |
 | `site:stan.store`       | Stan Store      | Creator storefronts      |
 
 **Find Harm Reduction Creators:**
@@ -385,14 +385,14 @@ Resource intake, community sign-ups, program registrations.
 
 | Domain Pattern          | Platform     | Best For                    |
 | ----------------------- | ------------ | --------------------------- |
+| `site:airtable.com`     | Airtable     | Shared databases, bases     |
 | `site:docs.google.com`  | Google Forms | Community surveys, sign-ups |
 | `site:forms.gle`        | Google Forms | Short-form links            |
 | `site:forms.office.com` | Microsoft    | Organisation forms          |
-| `site:typeform.com`     | Typeform     | Interactive surveys         |
-| `site:tally.so`         | Tally        | No-code forms               |
-| `site:airtable.com`     | Airtable     | Shared databases, bases     |
-| `site:surveymonkey.com` | SurveyMonkey | Research surveys            |
 | `site:jotform.com`      | JotForm      | Community forms             |
+| `site:surveymonkey.com` | SurveyMonkey | Research surveys            |
+| `site:tally.so`         | Tally        | No-code forms               |
+| `site:typeform.com`     | Typeform     | Interactive surveys         |
 
 **Community Program Forms:**
 
@@ -408,19 +408,19 @@ PDFs, slide decks, training packs, flyers, alerts, reports.
 
 | Domain Pattern                   | Platform         | Best For                       |
 | -------------------------------- | ---------------- | ------------------------------ |
-| `site:drive.google.com`          | Google Drive     | Shared documents, folders      |
-| `site:docs.google.com`           | Google Docs      | Public documents, spreadsheets |
-| `site:dropbox.com`               | Dropbox          | Shared files                   |
-| `site:dl.dropboxusercontent.com` | Dropbox          | Direct file links              |
-| `site:onedrive.live.com`         | OneDrive         | Microsoft shared files         |
-| `site:sharepoint.com`            | SharePoint       | Organisation file shares       |
-| `site:box.com`                   | Box              | Enterprise file sharing        |
-| `site:mega.nz`                   | MEGA             | Large file shares              |
 | `site:archive.org`               | Internet Archive | Historical documents, backups  |
+| `site:box.com`                   | Box              | Enterprise file sharing        |
+| `site:dl.dropboxusercontent.com` | Dropbox          | Direct file links              |
+| `site:docs.google.com`           | Google Docs      | Public documents, spreadsheets |
+| `site:drive.google.com`          | Google Drive     | Shared documents, folders      |
+| `site:dropbox.com`               | Dropbox          | Shared files                   |
+| `site:mega.nz`                   | MEGA             | Large file shares              |
+| `site:onedrive.live.com`         | OneDrive         | Microsoft shared files         |
+| `site:prezi.com`                 | Prezi            | Visual presentations           |
 | `site:scribd.com`                | Scribd           | Document library (paywalled)   |
+| `site:sharepoint.com`            | SharePoint       | Organisation file shares       |
 | `site:slideshare.net`            | SlideShare       | Presentations, training decks  |
 | `site:speakerdeck.com`           | Speaker Deck     | Conference presentations       |
-| `site:prezi.com`                 | Prezi            | Visual presentations           |
 
 **Training & Resource Files:**
 
@@ -436,15 +436,15 @@ Field notes, drafts, raw guides — often messy but extremely high signal for ni
 
 | Domain Pattern                   | Platform     | Best For                   |
 | -------------------------------- | ------------ | -------------------------- |
-| `site:gist.github.com`           | GitHub Gist  | Code snippets, quick notes |
-| `site:raw.githubusercontent.com` | GitHub Raw   | Direct file access         |
-| `site:pastebin.com`              | Pastebin     | Text dumps, quick shares   |
-| `site:rentry.co`                 | Rentry       | Markdown pastes            |
-| `site:justpaste.it`              | JustPaste.it | Quick text publishing      |
 | `site:controlc.com`              | ControlC     | Text pastes                |
 | `site:dpaste.org`                | dpaste       | Developer pastes           |
+| `site:gist.github.com`           | GitHub Gist  | Code snippets, quick notes |
+| `site:justpaste.it`              | JustPaste.it | Quick text publishing      |
 | `site:paste.ee`                  | Paste.ee     | Text sharing               |
+| `site:pastebin.com`              | Pastebin     | Text dumps, quick shares   |
 | `site:privatebin.net`            | PrivateBin   | Encrypted pastes           |
+| `site:raw.githubusercontent.com` | GitHub Raw   | Direct file access         |
+| `site:rentry.co`                 | Rentry       | Markdown pastes            |
 
 **Raw Community Content:**
 
@@ -460,11 +460,11 @@ Discussion, lived experience, emerging issues — high signal but also noise.
 
 | Domain Pattern           | Platform       | Best For                       |
 | ------------------------ | -------------- | ------------------------------ |
-| `site:reddit.com`        | Reddit         | Community discussions          |
+| `site:groups.google.com` | Google Groups  | Mailing lists, old communities |
 | `site:old.reddit.com`    | Reddit (old)   | Same content, different UI     |
 | `site:quora.com`         | Quora          | Q&A, lived experience          |
+| `site:reddit.com`        | Reddit         | Community discussions          |
 | `site:stackexchange.com` | Stack Exchange | Topic-specific Q&A             |
-| `site:groups.google.com` | Google Groups  | Mailing lists, old communities |
 
 **Harm Reduction Subreddits:**
 
@@ -481,13 +481,13 @@ domains.
 
 | Footprint                                | Platform   | Best For                |
 | ---------------------------------------- | ---------- | ----------------------- |
-| `"Powered by Discourse"`                 | Discourse  | Community forums        |
-| `"MediaWiki" OR "Special:RecentChanges"` | MediaWiki  | Community wikis         |
-| `"DokuWiki"`                             | DokuWiki   | Lightweight wikis       |
-| `"Wiki.js"`                              | Wiki.js    | Modern wikis            |
-| `"TiddlyWiki"`                           | TiddlyWiki | Personal wikis          |
 | `"BookStack"`                            | BookStack  | Documentation platforms |
+| `"DokuWiki"`                             | DokuWiki   | Lightweight wikis       |
+| `"MediaWiki" OR "Special:RecentChanges"` | MediaWiki  | Community wikis         |
 | `"Outline" "Knowledge base"`             | Outline    | Team knowledge bases    |
+| `"Powered by Discourse"`                 | Discourse  | Community forums        |
+| `"TiddlyWiki"`                           | TiddlyWiki | Personal wikis          |
+| `"Wiki.js"`                              | Wiki.js    | Modern wikis            |
 | `inurl:"/p/" "Etherpad"`                 | Etherpad   | Collaborative documents |
 | `inurl:"/s/" nextcloud`                  | Nextcloud  | File sharing            |
 
@@ -506,14 +506,14 @@ When people publish harm reduction tools, calculators, datasets, or scripts.
 
 | Domain Pattern        | Platform     | Best For                     |
 | --------------------- | ------------ | ---------------------------- |
-| `site:npmjs.com`      | npm          | JavaScript packages, READMEs |
-| `site:pypi.org`       | PyPI         | Python packages              |
 | `site:crates.io`      | Crates.io    | Rust packages                |
+| `site:figshare.com`   | Figshare     | Research outputs             |
 | `site:huggingface.co` | Hugging Face | AI models, datasets, spaces  |
 | `site:kaggle.com`     | Kaggle       | Datasets, notebooks          |
-| `site:zenodo.org`     | Zenodo       | Research outputs, datasets   |
+| `site:npmjs.com`      | npm          | JavaScript packages, READMEs |
 | `site:osf.io`         | OSF          | Research project pages       |
-| `site:figshare.com`   | Figshare     | Research outputs             |
+| `site:pypi.org`       | PyPI         | Python packages              |
+| `site:zenodo.org`     | Zenodo       | Research outputs, datasets   |
 
 **Harm Reduction Data & Tools:**
 
@@ -549,8 +549,8 @@ Older content still lives here — archived outreach resources, historical harm 
 
 | Domain Pattern          | Platform     | Best For               |
 | ----------------------- | ------------ | ---------------------- |
-| `site:sites.google.com` | Google Sites | Organisation pages     |
 | `site:angelfire.com`    | Angelfire    | 90s/00s personal sites |
+| `site:sites.google.com` | Google Sites | Organisation pages     |
 | `site:tripod.com`       | Tripod       | Legacy personal sites  |
 
 **Archived Harm Reduction Content:**

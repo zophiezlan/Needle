@@ -146,7 +146,7 @@ These resources support legitimate harm reduction work:
 ### State Courts
 
 | State   | Courts               | URL                                                                                                                  |
-| ------- | -------------------- | -------------------------------------------------------------------------------------------------------------------- | ------------------------ |
+| ------- | -------------------- | -------------------------------------------------------------------------------------------------------------------- |
 | **ACT** | Courts ACT           | [courts.act.gov.au/coming-to-court/lists](https://www.courts.act.gov.au/coming-to-court/lists)                       |
 | **NSW** | District Court Lists | [districtcourt.nsw.gov.au](https://districtcourt.nsw.gov.au/court-lists-and-sitting-dates/types-of-court-lists.html) |
 | **NSW** | Supreme Court Online | [supremecourt.nsw.gov.au/online-registry](https://supremecourt.nsw.gov.au/online-registry.html)                      |

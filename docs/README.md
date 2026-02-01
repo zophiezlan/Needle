@@ -26,20 +26,20 @@
 | Level                | Start Here                                                                             |
 | :------------------- | :------------------------------------------------------------------------------------- |
 | **Interactive Tool** | [**🕵️‍♂️ Launch Dork Explorer**](/explorer) - Search & filter 700+ dorks instantly        |
-| **New to dorking?**  | [Quick Start Guide](01-quick-start.md) → [Core Operators](02-core-operators.md)        |
 | **Know the basics?** | [Advanced Operators](03-advanced-operators.md) → [Dork Packs](dork-packs/README.md)    |
+| **New to dorking?**  | [Quick Start Guide](01-quick-start.md) → [Core Operators](02-core-operators.md)        |
 | **Power user?**      | [Investigative Searching](dork-packs/investigative.md) → [OSINT Tools](tools/osint.md) |
 
 ### By Role
 
 | Role                              | Recommended Path                                                                                                                                   |
 | :-------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 👥 **Peer Worker**                | [Peer Workflow](workflows/peer-centered.md) → [Peer Workforce Pack](dork-packs/peer-workforce.md) → [Peer Knowledge](dork-packs/peer-knowledge.md) |
-| 🏥 **Clinician/Service Provider** | [Quick Start](01-quick-start.md) → [Drug Alerts](dork-packs/drug-alerts.md) → [Service Directories](dork-packs/service-directories.md)             |
-| 🔬 **Researcher**                 | [Research Workflow](workflows/research-workflow.md) → [Research Pack](dork-packs/research.md) → [Data & Statistics](dork-packs/data-statistics.md) |
-| 📋 **Policy/Advocacy**            | [Policy Pack](dork-packs/policy-advocacy.md) → [Verification Workflow](workflows/verification.md)                                                  |
-| 🏕️ **Festival/Event Health**      | [Festivals Pack](dork-packs/festivals.md) → [Drug Checking](dork-packs/drug-checking.md)                                                           |
 | 🌏 **Rural/Remote**               | [Rural & Remote Pack](dork-packs/rural-remote.md)                                                                                                  |
+| 🏕️ **Festival/Event Health**      | [Festivals Pack](dork-packs/festivals.md) → [Drug Checking](dork-packs/drug-checking.md)                                                           |
+| 🏥 **Clinician/Service Provider** | [Quick Start](01-quick-start.md) → [Drug Alerts](dork-packs/drug-alerts.md) → [Service Directories](dork-packs/service-directories.md)             |
+| � **Peer Worker**                 | [Peer Workflow](workflows/peer-centered.md) → [Peer Workforce Pack](dork-packs/peer-workforce.md) → [Peer Knowledge](dork-packs/peer-knowledge.md) |
+| 📋 **Policy/Advocacy**            | [Policy Pack](dork-packs/policy-advocacy.md) → [Verification Workflow](workflows/verification.md)                                                  |
+| 🔬 **Researcher**                 | [Research Workflow](workflows/research-workflow.md) → [Research Pack](dork-packs/research.md) → [Data & Statistics](dork-packs/data-statistics.md) |
 | 🖤💛❤️ **First Nations Focus**    | [First Nations Pack](dork-packs/first-nations.md)                                                                                                  |
 
 ---
@@ -137,9 +137,9 @@ Ready-to-use search queries organized by harm reduction task:
 
 | Workflow                                            | Description                          |
 | :-------------------------------------------------- | :----------------------------------- |
-| [Research Workflow](workflows/research-workflow.md) | Four-step funnel & triangulation     |
 | [Monitoring](workflows/monitoring.md)               | Alerts, RSS, early warning           |
 | [Peer-Centered](workflows/peer-centered.md)         | Values-based searching for peer work |
+| [Research Workflow](workflows/research-workflow.md) | Four-step funnel & triangulation     |
 | [Verification](workflows/verification.md)           | Source validity & trust              |
 
 </details>
@@ -153,15 +153,15 @@ Ready-to-use search queries organized by harm reduction task:
 | :-------------------------------------- | :------------------------------- |
 | [🕵️‍♂️ Dork Explorer](/explorer)           | **NEW!** Interactive search tool |
 | [Bookmarklets](tools/bookmarklets.md)   | One-click searching              |
-| [Google Alerts](tools/google-alerts.md) | Automated monitoring             |
 | [Custom Search](tools/custom-search.md) | Build team search engines        |
+| [Google Alerts](tools/google-alerts.md) | Automated monitoring             |
 
 ### Research Aids
 
 | Resource                                          | Description                    |
 | :------------------------------------------------ | :----------------------------- |
-| [Browser Extensions](tools/browser-extensions.md) | Research workflow tools        |
 | [AI Tools](tools/ai-tools.md)                     | AI-powered research assistants |
+| [Browser Extensions](tools/browser-extensions.md) | Research workflow tools        |
 | [OSINT](tools/osint.md)                           | Open source intelligence tools |
 | [Privacy & Security](tools/privacy-security.md)   | Protect yourself & clients     |
 
@@ -169,12 +169,12 @@ Ready-to-use search queries organized by harm reduction task:
 
 | Resource                                                | Description                    |
 | :------------------------------------------------------ | :----------------------------- |
+| [Academic Access](resources/academic-access.md)         | Access research papers         |
+| [Australian OSINT](resources/australian-osint.md)       | Comprehensive AU data sources  |
 | [Cheat Sheet](resources/cheat-sheet.md)                 | One-page reference             |
+| [Organizations](resources/organizations.md)             | Key harm reduction orgs        |
 | [Substance Categories](substance-categories.md)         | Category-based substance dorks |
 | [Substance Databases](resources/substance-databases.md) | Drug information resources     |
-| [Academic Access](resources/academic-access.md)         | Access research papers         |
-| [Organizations](resources/organizations.md)             | Key harm reduction orgs        |
-| [Australian OSINT](resources/australian-osint.md)       | Comprehensive AU data sources  |
 
 </details>
 
@@ -236,8 +236,8 @@ use. **Peer knowledge is expert knowledge.**
 
 | Prefer                   | Instead Of         |
 | :----------------------- | :----------------- |
-| "people who use drugs"   | "drug addicts"     |
 | "overdose" / "poisoning" | Stigmatizing terms |
+| "people who use drugs"   | "drug addicts"     |
 
 > [!TIP] **Legacy searching:** Include older terms only when necessary to locate historical
 > documents.

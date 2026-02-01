@@ -10,16 +10,16 @@
 
 | Operator    | What It Does    | Example                      |
 | :---------- | :-------------- | :--------------------------- |
-| `site:`     | Limit to domain | `site:*.gov.au`              |
-| `filetype:` | Document type   | `filetype:pdf`               |
+| `-exclude`  | Remove results  | `-jobs -careers`             |
 | `"phrase"`  | Exact match     | `"harm reduction"`           |
+| `*`         | Wildcard        | `"drug * service"`           |
+| `after:`    | After date      | `after:2024-01-01`           |
+| `AROUND(n)` | Words nearby    | `naloxone AROUND(5) program` |
+| `filetype:` | Document type   | `filetype:pdf`               |
 | `intitle:`  | In page title   | `intitle:"drug alert"`       |
 | `inurl:`    | In URL          | `inurl:publications`         |
 | `OR`        | Either term     | `naloxone OR narcan`         |
-| `-exclude`  | Remove results  | `-jobs -careers`             |
-| `after:`    | After date      | `after:2024-01-01`           |
-| `AROUND(n)` | Words nearby    | `naloxone AROUND(5) program` |
-| `*`         | Wildcard        | `"drug * service"`           |
+| `site:`     | Limit to domain | `site:*.gov.au`              |
 
 > [!IMPORTANT] `OR` must be **UPPERCASE**. Lowercase `or` is ignored.
 
@@ -104,11 +104,11 @@ site:*.gov.au ("nitazene" OR "novel psychoactive") filetype:pdf after:2023
 
 | Component          | Purpose                    |
 | :----------------- | :------------------------- |
-| `site:*.gov.au`    | Australian government only |
-| `filetype:pdf`     | PDF documents              |
+| `-jobs`            | Exclude job listings       |
 | `"harm reduction"` | Exact phrase               |
 | `after:2024`       | Recent only                |
-| `-jobs`            | Exclude job listings       |
+| `filetype:pdf`     | PDF documents              |
+| `site:*.gov.au`    | Australian government only |
 
 ---
 
@@ -119,9 +119,9 @@ site:*.gov.au ("nitazene" OR "novel psychoactive") filetype:pdf after:2023
 
 | Organization      | Domain Pattern           |
 | :---------------- | :----------------------- |
+| AIHW              | `site:aihw.gov.au`       |
 | All AU Government | `site:*.gov.au`          |
 | All State Health  | `site:*.health.*.gov.au` |
-| AIHW              | `site:aihw.gov.au`       |
 | TGA               | `site:tga.gov.au`        |
 
 </details>
@@ -132,8 +132,8 @@ site:*.gov.au ("nitazene" OR "novel psychoactive") filetype:pdf after:2023
 | Organization        | Domain Pattern               |
 | :------------------ | :--------------------------- |
 | All AU Universities | `site:*.edu.au`              |
-| NDARC               | `site:ndarc.med.unsw.edu.au` |
 | Burnet Institute    | `site:burnet.edu.au`         |
+| NDARC               | `site:ndarc.med.unsw.edu.au` |
 | NDRI                | `site:ndri.curtin.edu.au`    |
 
 </details>
@@ -143,11 +143,11 @@ site:*.gov.au ("nitazene" OR "novel psychoactive") filetype:pdf after:2023
 
 | Organization       | Domain Pattern       |
 | :----------------- | :------------------- |
-| NUAA (NSW)         | `site:nuaa.org.au`   |
 | AIVL (National)    | `site:aivl.org.au`   |
 | Harm Reduction Vic | `site:hrvic.org.au`  |
-| QuIVAA (QLD)       | `site:quivaa.org.au` |
+| NUAA (NSW)         | `site:nuaa.org.au`   |
 | QuIHN (QLD)        | `site:quihn.org`     |
+| QuIVAA (QLD)       | `site:quivaa.org.au` |
 
 </details>
 
@@ -158,11 +158,11 @@ site:*.gov.au ("nitazene" OR "novel psychoactive") filetype:pdf after:2023
 | Problem            | Solution                              |
 | :----------------- | :------------------------------------ |
 | Job listings       | Add `-jobs -careers`                  |
+| Missing subdomains | Use `site:*.gov.au` not `site:gov.au` |
 | Old content        | Add `after:2024`                      |
 | Too many results   | Add `filetype:pdf`                    |
 | Wrong jurisdiction | Add `site:*.gov.au`                   |
 | Zero results       | Remove `filetype:pdf`                 |
-| Missing subdomains | Use `site:*.gov.au` not `site:gov.au` |
 
 > [!TIP] **Zero results?** Remove operators one at a time to find which one is too restrictive.
 
@@ -196,11 +196,11 @@ site:*.gov.au ("nitazene" OR "novel psychoactive") filetype:pdf after:2023
 
 | Extension | Typical Content                         |
 | :-------- | :-------------------------------------- |
-| `.pdf`    | Reports, guidelines, official documents |
-| `.docx`   | Templates, drafts, working documents    |
-| `.xlsx`   | Data, directories, contact lists        |
-| `.pptx`   | Presentations, training materials       |
 | `.csv`    | Raw data exports                        |
+| `.docx`   | Templates, drafts, working documents    |
+| `.pdf`    | Reports, guidelines, official documents |
+| `.pptx`   | Presentations, training materials       |
+| `.xlsx`   | Data, directories, contact lists        |
 
 ---
 

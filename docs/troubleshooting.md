@@ -144,9 +144,9 @@ site:*.org.au "peer-led" [topic] filetype:pdf
 
 | Option                                     | Best For                           |
 | :----------------------------------------- | :--------------------------------- |
-| [Wayback Machine](https://web.archive.org) | Most comprehensive, historical     |
-| [CachedView](https://cachedview.com/)      | Searches multiple archives at once |
 | [archive.today](https://archive.today/)    | Alternative, sometimes has more    |
+| [CachedView](https://cachedview.com/)      | Searches multiple archives at once |
+| [Wayback Machine](https://web.archive.org) | Most comprehensive, historical     |
 | `cache:URL` in Google                      | Recent pages (being phased out)    |
 
 </details>
@@ -167,9 +167,9 @@ site:*.org.au "peer-led" [topic] filetype:pdf
 
 | Issue             | Solution                 |
 | :---------------- | :----------------------- |
-| Too many searches | Slow down your searching |
 | Network flagged   | Try a different network  |
 | Temporary block   | Wait and try again later |
+| Too many searches | Slow down your searching |
 
 ### Results Seem Filtered?
 
@@ -244,9 +244,9 @@ Add exclusions for PDF viewer sites:
 
 | Correct         | Wrong           |
 | :-------------- | :-------------- |
+| `ext:pdf`       | `extension:pdf` |
 | `filetype:pdf`  | `filetype:.pdf` |
 | `filetype:xlsx` | `file:xlsx`     |
-| `ext:pdf`       | `extension:pdf` |
 
 ---
 
@@ -256,8 +256,8 @@ Add exclusions for PDF viewer sites:
 | :---------------------- | :------------------------- |
 | Add Australia           | `[topic] Australia`        |
 | Exclude other countries | `[topic] -USA -UK -Canada` |
-| Use AU domains          | `site:*.au [topic]`        |
 | Government only         | `site:*.gov.au [topic]`    |
+| Use AU domains          | `site:*.au [topic]`        |
 
 ---
 
@@ -283,9 +283,9 @@ Add exclusions for PDF viewer sites:
 
 | Resource                                          | Description           |
 | :------------------------------------------------ | :-------------------- |
-| [Core Operators](02-core-operators.md)            | Operator reference    |
 | [Advanced Operators](03-advanced-operators.md)    | Power user techniques |
 | [Browser Extensions](tools/browser-extensions.md) | Archiving tools       |
+| [Core Operators](02-core-operators.md)            | Operator reference    |
 
 ---
 

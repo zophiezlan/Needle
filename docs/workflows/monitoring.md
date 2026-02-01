@@ -70,10 +70,10 @@ site:aph.gov.au OR site:parliament.*.gov.au (inquiry OR committee) (drug OR "har
 
 | Tool                    | URL                                                         | Description                           |
 | ----------------------- | ----------------------------------------------------------- | ------------------------------------- |
-| **RSS Bridge**          | [rss-bridge.org](https://rss-bridge.org/)                   | Generate feeds from sites without RSS |
 | **Feedly**              | [feedly.com](https://feedly.com/)                           | Modern RSS reader with team features  |
 | **Inoreader**           | [inoreader.com](https://www.inoreader.com/)                 | Powerful RSS with automation          |
 | **Kill the Newsletter** | [kill-the-newsletter.com](https://kill-the-newsletter.com/) | Convert newsletters to RSS            |
+| **RSS Bridge**          | [rss-bridge.org](https://rss-bridge.org/)                   | Generate feeds from sites without RSS |
 
 ### Finding Government RSS Feeds
 
@@ -108,8 +108,8 @@ For sites without native RSS:
 | Tool                   | URL                                               | Description                   |
 | ---------------------- | ------------------------------------------------- | ----------------------------- |
 | **ChangeDetection.io** | [changedetection.io](https://changedetection.io/) | Open-source change monitoring |
-| **Visualping**         | [visualping.io](https://visualping.io/)           | Visual change detection       |
 | **Distill.io**         | [distill.io](https://distill.io/)                 | Browser extension monitoring  |
+| **Visualping**         | [visualping.io](https://visualping.io/)           | Visual change detection       |
 
 ### What to Monitor
 

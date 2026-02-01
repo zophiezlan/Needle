@@ -24,11 +24,11 @@ Use GitHub's built-in alert syntax for consistent, visually distinctive callouts
 
 | Alert Type     | Use For                            | Example Context                    |
 | :------------- | :--------------------------------- | :--------------------------------- |
+| `[!CAUTION]`   | Ethical/safety considerations      | "Never search for identifiable..." |
+| `[!IMPORTANT]` | Critical success factors           | "Use `OR` in uppercase only"       |
 | `[!NOTE]`      | Background context, clarifications | "Google may change this operator"  |
 | `[!TIP]`       | Optional enhancements, pro tips    | "Combine with `filetype:pdf`"      |
-| `[!IMPORTANT]` | Critical success factors           | "Use `OR` in uppercase only"       |
 | `[!WARNING]`   | Things that could cause problems   | "May expose personal information"  |
-| `[!CAUTION]`   | Ethical/safety considerations      | "Never search for identifiable..." |
 
 ---
 
@@ -100,9 +100,9 @@ These queries require understanding of boolean logic...
 
 | Pattern           | Alignment      | Use For                |
 | :---------------- | :------------- | :--------------------- |
-| `:---` (or `---`) | Left (default) | Text, descriptions     |
-| `:---:`           | Center         | Status badges, icons   |
 | `---:`            | Right          | Numbers, dates, counts |
+| `:---:`           | Center         | Status badges, icons   |
+| `:---` (or `---`) | Left (default) | Text, descriptions     |
 
 ### Standard Table Types
 
@@ -111,8 +111,8 @@ These queries require understanding of boolean logic...
 ```markdown
 | Destination                      | Description         |
 | :------------------------------- | :------------------ |
-| [Quick Start](01-quick-start.md) | Get started fast    |
 | [Core Operators](02-core.md)     | Essential operators |
+| [Quick Start](01-quick-start.md) | Get started fast    |
 ```
 
 #### Quick Reference Tables
@@ -120,8 +120,8 @@ These queries require understanding of boolean logic...
 ```markdown
 | Operator    | Purpose       | Example         |
 | :---------- | :------------ | :-------------- |
-| `site:`     | Limit domain  | `site:*.gov.au` |
 | `filetype:` | Document type | `filetype:pdf`  |
+| `site:`     | Limit domain  | `site:*.gov.au` |
 ```
 
 #### State/Jurisdiction Tables
@@ -201,10 +201,10 @@ Use these consistently to indicate difficulty/progression:
 | Emoji | Meaning      | Use For                          |
 | :---: | :----------- | :------------------------------- |
 |  ⚡   | Quick Start  | Fastest path to results          |
-|  🟢   | Basic        | Simple, no prerequisites         |
-|  🟡   | Intermediate | Requires understanding of basics |
 |  🔴   | Advanced     | Complex, power user content      |
-|  💡   | Pro Tips     | Optional enhancements            |
+|   🟡   | Intermediate | Requires understanding of basics |
+|   �   | Pro Tips     | Optional enhancements            |
+|   �   | Basic        | Simple, no prerequisites         |
 
 ### Footer Navigation
 
@@ -262,8 +262,8 @@ Use task lists for verification workflows:
 
 | Format     | Use For                   | Example                        |
 | :--------- | :------------------------ | :----------------------------- |
-| **Bold**   | Key terms, important info | **Always** use uppercase `OR`  |
 | _Italic_   | Emphasis, new terms       | the _actual_ document          |
+| **Bold**   | Key terms, important info | **Always** use uppercase `OR`  |
 | `code`     | Operators, commands, URLs | Use `site:*.gov.au`            |
 | ~~Strike~~ | Deprecated/wrong approach | ~~`site:gov.au`~~ (won't work) |
 
@@ -304,10 +304,10 @@ Press <kbd>Ctrl</kbd>+<kbd>F</kbd> to search the page.
 
 | Type            | Pattern                  | Example                     |
 | :-------------- | :----------------------- | :-------------------------- |
-| Sequential docs | `NN-descriptive-name.md` | `01-quick-start.md`         |
-| Topic packs     | `topic-name.md`          | `drug-alerts.md`            |
 | Index/Overview  | `README.md`              | `docs/dork-packs/README.md` |
+| Sequential docs | `NN-descriptive-name.md` | `01-quick-start.md`         |
 | Style/Config    | `SCREAMING_CASE.md`      | `STYLE_GUIDE.md`            |
+| Topic packs     | `topic-name.md`          | `drug-alerts.md`            |
 
 ---
 
@@ -334,11 +334,11 @@ Always provide descriptive alt text:
 | Don't Do This                     | Do This Instead                  |
 | :-------------------------------- | :------------------------------- |
 | `> **Note:**` manual styling      | `> [!NOTE]`                      |
-| Inline HTML for simple formatting | Native markdown                  |
 | `bash` for search queries         | `txt` language hint              |
 | Generic "click here" links        | Descriptive link text            |
-| Skip heading levels               | Proper H1 → H2 → H3 hierarchy    |
 | Huge unbroken tables              | Collapsible `<details>` sections |
+| Inline HTML for simple formatting | Native markdown                  |
+| Skip heading levels               | Proper H1 → H2 → H3 hierarchy    |
 
 ---
 

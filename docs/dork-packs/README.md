@@ -14,11 +14,11 @@
 | Pack                                                | Description                                          | Quick Link |
 | --------------------------------------------------- | ---------------------------------------------------- | ---------- |
 | [Drug Alerts](drug-alerts.md)                       | Early warning & contaminated supply monitoring       | 🚨         |
-| [Drug Checking](drug-checking.md)                   | Pill testing & substance analysis                    | 🧪         |
+| [Drug Checking](drug-checking.md)                   | Pill testing & substance analysis                    | 🧪          |
 | [Naloxone](naloxone.md)                             | Take-home naloxone programs & training               | 💉         |
 | [NSP](nsp.md)                                       | Needle & syringe programs                            | 🔬         |
 | [OAT/OST](oat-ost.md)                               | Opioid agonist treatment                             | 💊         |
-| [Supervised Consumption](supervised-consumption.md) | Medically supervised injecting & overdose prevention | 🛟         |
+| [Supervised Consumption](supervised-consumption.md) | Medically supervised injecting & overdose prevention | 🛟          |
 
 ### Substances & Pharmacology
 
@@ -84,7 +84,7 @@
 | [Document Discovery](document-discovery.md)   | Spreadsheets, databases, presentations  | 📄         |
 | [Forum & Community](forum-community.md)       | Reddit, forums, community discussions   | 💬         |
 | [Investigative](investigative.md)             | Creative & ethical deep searching       | 🔍         |
-| [Safer Use Education](safer-use-education.md) | Factsheets, brochures, health promotion | 🧰         |
+| [Safer Use Education](safer-use-education.md) | Factsheets, brochures, health promotion | 🧰          |
 | [Stigma & Language](stigma-language.md)       | Historical research & terminology       | 📜         |
 | [User-Hosted Domains](user-hosted-domains.md) | Grassroots content on user platforms    | 🌐         |
 

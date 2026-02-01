@@ -199,12 +199,12 @@ When gathering evidence, document:
 
 | Field                  | Notes                   |
 | ---------------------- | ----------------------- |
-| **Topic**              | What you're researching |
+| **Gaps**               | What's missing          |
+| **Key Findings**       | Main takeaways          |
+| **Quality Assessment** | Source reliability      |
 | **Search Strategy**    | Key dorks used          |
 | **Sources Found**      | List of documents       |
-| **Quality Assessment** | Source reliability      |
-| **Key Findings**       | Main takeaways          |
-| **Gaps**               | What's missing          |
+| **Topic**              | What you're researching |
 
 ---
 

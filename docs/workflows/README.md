@@ -10,9 +10,9 @@
 
 | Workflow                                  | Description                      | Best For                          |
 | ----------------------------------------- | -------------------------------- | --------------------------------- |
-| [Research Workflow](research-workflow.md) | Four-step funnel & triangulation | Systematic evidence gathering     |
 | [Monitoring](monitoring.md)               | Alerts, RSS, early warning       | Staying current with developments |
 | [Peer-Centered](peer-centered.md)         | Values-based searching           | Peer workers & lived experience   |
+| [Research Workflow](research-workflow.md) | Four-step funnel & triangulation | Systematic evidence gathering     |
 | [Verification](verification.md)           | Source validity & trust          | Quality assurance                 |
 
 ---

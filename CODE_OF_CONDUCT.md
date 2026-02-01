@@ -69,12 +69,12 @@ We use language that respects the dignity of people who use drugs:
 
 | Preferred                          | Avoid                |
 | :--------------------------------- | :------------------- |
-| Person who uses drugs              | Addict, junkie, user |
-| Substance use                      | Substance abuse      |
-| Positive/negative (test results)   | Clean/dirty          |
 | In recovery, not currently using   | Clean                |
-| Overdose, poisoning                | OD'd (casually)      |
 | Medication for opioid use disorder | Replacement therapy  |
+| Overdose, poisoning                | OD'd (casually)      |
+| Person who uses drugs              | Addict, junkie, user |
+| Positive/negative (test results)   | Clean/dirty          |
+| Substance use                      | Substance abuse      |
 
 > [!NOTE] When researching historical documents, you may need to use older terminology in search
 > queries. This is acceptable for research purposes—context matters.
