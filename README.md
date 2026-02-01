@@ -12,10 +12,10 @@
 
 ---
 
-> [!NOTE] **Audience:** Peer workers, clinicians, researchers, policy analysts, advocates, and
+> [!NOTE] - **Audience:** Peer workers, clinicians, researchers, policy analysts, advocates, and
 > anyone working to reduce drug-related harm.
 >
-> **Scope:** Australia-focused with international comparators.
+> - **Scope:** Australia-focused with international comparators.
 
 ---
 
