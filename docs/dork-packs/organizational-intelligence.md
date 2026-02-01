@@ -345,7 +345,7 @@ constitution "harm reduction" site:*.org.au
 #### Board Minutes
 
 ```txt
-"board minutes" OR "meeting minutes" "harm reduction" 
+"board minutes" OR "meeting minutes" "harm reduction"
 ```
 
 #### Policies

@@ -41,6 +41,9 @@ site:health.nsw.gov.au naloxone
 
 ```txt
 site:*.gov.au "harm reduction"
+```
+
+```txt
 site:*.health.*.gov.au "drug alert"
 ```
 
@@ -85,8 +88,14 @@ Find specific file types instead of web pages.
 
 ```txt
 filetype:pdf "needle syringe program" guidelines
+```
+
+```txt
 filetype:xlsx "service directory" AOD site:*.gov.au
-filetype:pptx "harm reduction" conference
+```
+
+```txt
+filetype:pptx "harm reduction" conference presentation
 ```
 
 > [!TIP] `ext:` works the same as `filetype:` (they are aliases). Use whichever you find easier to
@@ -100,8 +109,17 @@ Find these exact words in this exact order.
 
 ```txt
 "take-home naloxone"
+```
+
+```txt
 "needle syringe program"
+```
+
+```txt
 "people who use drugs"
+```
+
+```txt
 "drug checking trial"
 ```
 
@@ -120,14 +138,23 @@ Search for either term.
 
 ```txt
 naloxone OR narcan OR nyxoid
-"pill testing" OR "drug checking"
+```
+
+```txt
 "harm reduction" OR "harm minimisation"
+```
+
+```txt
+"pill testing" OR "drug checking"
 ```
 
 **Group with parentheses:**
 
 ```txt
 site:*.gov.au (naloxone OR narcan) program
+```
+
+```txt
 ("peer worker" OR "peer support") training filetype:pdf
 ```
 
@@ -140,22 +167,38 @@ Remove unwanted results from your search.
 **Common exclusions:**
 
 ```txt
--jobs -careers -vacancy -employment
--news -opinion -editorial
--site:researchgate.net -site:academia.edu
--pdfviewer -flipbook -scribd
+peer worker -jobs -careers -vacancy -employment
 ```
 
-**Progressive noise removal:**
+```txt
+pill testing -news -opinion -editorial
+```
 
 ```txt
-# Level 1: Remove job listings
+[ARTICLE] -site:researchgate.net -site:academia.edu
+```
+
+```txt
+[PAPER] -pdfviewer -flipbook -scribd
+```
+
+## **Progressive noise removal:**
+
+### Level 1: Remove job listings
+
+```txt
 "peer worker" training -jobs -careers
+```
 
-# Level 2: Remove aggregators
+### Level 2: Remove aggregators
+
+```txt
 "peer worker" training -jobs -site:researchgate.net -site:academia.edu
+```
 
-# Level 3: Add document filter
+### Level 3: Add document filter
+
+```txt
 "peer worker" training filetype:pdf -jobs
 ```
 
@@ -167,7 +210,13 @@ Find terms in the page/document title. High precision for official documents.
 
 ```txt
 intitle:"drug alert" site:*.gov.au
+```
+
+```txt
 intitle:"annual report" harm reduction
+```
+
+```txt
 intitle:"clinical guideline" opioid
 ```
 
@@ -182,8 +231,17 @@ Search within the URL path. Useful for finding publication directories.
 
 ```txt
 inurl:publications filetype:pdf harm reduction
+```
+
+```txt
 inurl:submissions drug policy
+```
+
+```txt
 inurl:alerts site:*.health.*.gov.au
+```
+
+```txt
 inurl:aod-services site:*.gov.au
 ```
 
@@ -191,7 +249,13 @@ inurl:aod-services site:*.gov.au
 
 ```txt
 site:*.gov.au inurl:/publications/ filetype:pdf
+```
+
+```txt
 site:*.gov.au inurl:/uploads/ filetype:pdf
+```
+
+```txt
 site:*.gov.au inurl:/documents/ filetype:pdf
 ```
 
@@ -205,7 +269,13 @@ Filter by publication/index date.
 
 ```txt
 "drug alert" site:*.gov.au after:2024-01-01
+```
+
+```txt
 "harm reduction" policy before:2020-01-01
+```
+
+```txt
 "overdose" report after:2023 before:2025
 ```
 
@@ -220,7 +290,13 @@ Search within a range of numbers (dates, figures, etc.)
 
 ```txt
 "overdose deaths" Australia 2020..2025
+```
+
+```txt
 "harm reduction" funding $100000..$500000
+```
+
+```txt
 "festival attendance" 10000..50000
 ```
 
@@ -230,10 +306,22 @@ Search within a range of numbers (dates, figures, etc.)
 
 Matches any word. Useful when you don't know the exact phrasing.
 
+#### drug treatment service, drug checking service
+
 ```txt
-"drug * service"          # drug treatment service, drug checking service
-"* harm reduction"        # festival harm reduction, community harm reduction
-"needle * program"        # needle syringe program, needle exchange program
+"drug * service"
+```
+
+#### festival harm reduction, community harm reduction
+
+```txt
+"* harm reduction"
+```
+
+#### needle syringe program, needle exchange program
+
+```txt
+"needle * program"
 ```
 
 ---
@@ -244,6 +332,9 @@ Search within the page body, ignoring title and URL.
 
 ```txt
 intext:"peer worker" training
+```
+
+```txt
 intext:"lived experience" supervision
 ```
 
@@ -272,23 +363,39 @@ Construct searches systematically:
 
 **Goal:** Find recent NSW government guidelines on take-home naloxone
 
+#### Start with domain
+
 ```txt
-# Start with domain
 site:health.nsw.gov.au
+```
 
-# Add format
+#### Add format
+
+```txt
 site:health.nsw.gov.au filetype:pdf
+```
 
-# Add topic
+#### Add topic
+
+```txt
 site:health.nsw.gov.au filetype:pdf "take-home naloxone"
+```
 
-# Add synonyms
+#### Add synonyms
+
+```txt
 site:health.nsw.gov.au filetype:pdf ("take-home naloxone" OR THN)
+```
 
-# Add date
+#### Add date
+
+```txt
 site:health.nsw.gov.au filetype:pdf ("take-home naloxone" OR THN) after:2023
+```
 
-# Add specificity
+#### Add specificity
+
+```txt
 site:health.nsw.gov.au filetype:pdf ("take-home naloxone" OR THN) guidelines after:2023
 ```
 
@@ -365,11 +472,23 @@ Try building these searches yourself:
 <details>
 <summary>Click for answers</summary>
 
-1. `site:*.edu.au filetype:pdf "drug checking" after:2022`
+1.
 
-2. `site:health.nsw.gov.au intitle:"harm reduction"`
+```txt
+site:*.edu.au filetype:pdf "drug checking" after:2022
+```
 
-3. `site:*.org.au "peer worker" training filetype:pdf -jobs -careers`
+2.
+
+```txt
+site:health.nsw.gov.au intitle:"harm reduction"
+```
+
+3.
+
+```txt
+site:*.org.au "peer worker" training filetype:pdf -jobs -careers
+```
 
 </details>
 

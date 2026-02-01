@@ -13,7 +13,8 @@
 3. Use the confidence scale consistently
 4. Save your dorks for future reference
 
-> [!TIP] Keep your evidence log alongside your briefing documents for audit trails and
+> [!TIP]
+> Keep your evidence log alongside your briefing documents for audit trails and
 > reproducibility.
 
 ---
@@ -80,7 +81,8 @@ Save queries that worked well for reuse:
 
 #### Example Gaps Identified
 
-> [!NOTE] Document what you couldn't find or what questions remain unanswered.
+> [!NOTE]
+> Document what you couldn't find or what questions remain unanswered.
 
 | Gap              | Searched For     | Status      |
 | :--------------- | :--------------- | :---------- |
@@ -137,3 +139,4 @@ site:emcdda.europa.eu OR site:drugschecking.ca "drug checking" filetype:pdf
 ---
 
 _Template from the [Harm Reduction Dorking Guide](/README)_
+

@@ -441,7 +441,13 @@ before:2015
 
 ```txt
 (site:*.notion.site OR site:*.gitbook.io OR site:*.wordpress.com) ("harm reduction") (guide OR resources)
+```
+
+```txt
 (site:reddit.com OR site:quora.com) "naloxone" OR "drug checking" -advertisement
+```
+
+```txt
 (site:drive.google.com OR site:speakerdeck.com) "harm reduction" training filetype:pdf
 ```
 

@@ -94,9 +94,9 @@ onUnmounted(() => {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 32px;
-  height: 32px;
-  border-radius: 6px;
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
   background: var(--vp-c-bg-soft);
   border: 1px solid var(--vp-c-divider);
   cursor: pointer;

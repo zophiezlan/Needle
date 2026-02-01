@@ -47,7 +47,9 @@ const buildDate = computed(() => {
     </div>
     <div class="meta-pill">
       <span class="meta-label">Version</span>
-      <span class="meta-value">{{ typeof __APP_VERSION__ === "undefined" ? "—" : __APP_VERSION__ }}</span>
+      <span class="meta-value">{{
+        typeof __APP_VERSION__ === "undefined" ? "—" : __APP_VERSION__
+      }}</span>
     </div>
     <div class="meta-pill" v-if="lastUpdated || buildDate">
       <span class="meta-label">{{ lastUpdated ? "Updated" : "Built" }}</span>

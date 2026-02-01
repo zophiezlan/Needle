@@ -1,14 +1,14 @@
 <script setup lang="ts">
-import { useRouter } from 'vitepress';
+import { useRouter } from "vitepress";
 
 const router = useRouter();
 
 const links = [
-  { text: '📖 Guide', link: '/README', theme: 'primary' },
-  { text: '🔍 Explorer', link: '/explorer', theme: 'brand' },
-  { text: '📦 Packs', link: '/dork-packs/README', theme: 'alt' },
-  { text: '🎓 Modes', link: '/modes/beginner', theme: 'alt' },
-  { text: '📝 Templates', link: '/templates/README', theme: 'alt' },
+  { text: "📖 Guide", link: "/README", theme: "primary" },
+  { text: "🔍 Explorer", link: "/explorer", theme: "brand" },
+  { text: "📦 Packs", link: "/dork-packs/README", theme: "alt" },
+  { text: "🎓 Modes", link: "/modes/beginner", theme: "alt" },
+  { text: "📝 Templates", link: "/templates/README", theme: "alt" },
 ];
 
 function navigate(link: string) {
@@ -59,17 +59,21 @@ function navigate(link: string) {
   cursor: pointer;
   transition: all 0.2s ease;
   backdrop-filter: blur(10px);
-  background-color: rgba(var(--vp-c-bg-soft-rgb), 0.6); 
+  background-color: rgba(var(--vp-c-bg-soft-rgb), 0.6);
   color: var(--vp-c-text-1);
   text-align: center;
   min-width: 100px;
-  box-shadow: 0 0 0 1px transparent, 0 0 0 transparent;
+  box-shadow:
+    0 0 0 1px transparent,
+    0 0 0 transparent;
 }
 
 .quick-link-btn:hover {
   transform: translateY(-2px);
   border-color: var(--accent);
-  box-shadow: 0 0 0 1px var(--accent-border), 0 0 18px var(--accent-subtle);
+  box-shadow:
+    0 0 0 1px var(--accent-border),
+    0 0 18px var(--accent-subtle);
   background-color: var(--vp-c-bg-soft);
 }
 
@@ -77,7 +81,9 @@ function navigate(link: string) {
   border-color: var(--accent);
   background-color: color-mix(in srgb, var(--accent) 12%, transparent);
   color: var(--accent);
-  box-shadow: 0 0 0 1px var(--accent-border), 0 0 16px var(--accent-subtle);
+  box-shadow:
+    0 0 0 1px var(--accent-border),
+    0 0 16px var(--accent-subtle);
 }
 
 .quick-link-btn.primary {

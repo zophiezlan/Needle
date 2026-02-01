@@ -29,8 +29,6 @@ Find harm reduction discussions on Reddit:
 site:reddit.com "harm reduction" Australia
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=site%3Areddit.com+%22harm+reduction%22+Australia)
-
 ---
 
 ## 🔴 Reddit
@@ -39,45 +37,73 @@ site:reddit.com "harm reduction" Australia
 
 ```txt
 site:reddit.com/r/harmreduction
-site:reddit.com/r/drugs "harm reduction" OR "safe use"
-site:reddit.com/r/opiates naloxone OR "narcan"
-site:reddit.com/r/researchchemicals Australia
 ```
 
-[👉 **Run HR Subreddit Search**](https://www.google.com/search?q=site%3Areddit.com%2Fr%2Fharmreduction)
+```txt
+site:reddit.com/r/drugs "harm reduction" OR "safe use"
+```
+
+```txt
+site:reddit.com/r/opiates naloxone OR "narcan"
+```
+
+```txt
+site:reddit.com/r/researchchemicals Australia
+```
 
 ### Australian Subreddits
 
 ```txt
 site:reddit.com/r/australia "drug" OR "overdose" OR "pill testing"
-site:reddit.com/r/melbourne "safe injecting" OR "MSIR"
-site:reddit.com/r/sydney "drug checking" OR "harm reduction"
-site:reddit.com/r/brisbane naloxone OR "needle exchange"
 ```
 
-[👉 **Run Australian Reddit Search**](https://www.google.com/search?q=site%3Areddit.com%2Fr%2Faustralia+%22drug%22+OR+%22overdose%22+OR+%22pill+testing%22)
+```txt
+site:reddit.com/r/melbourne "safe injecting" OR "MSIR"
+```
+
+```txt
+site:reddit.com/r/sydney "drug checking" OR "harm reduction"
+```
+
+```txt
+site:reddit.com/r/brisbane naloxone OR "needle exchange"
+```
 
 ### Specific Topics on Reddit
 
 ```txt
 site:reddit.com "fentanyl" Australia warning OR alert
-site:reddit.com "nitazene" OR "metonitazene" Australia
-site:reddit.com "drug checking" "festival" Australia
-site:reddit.com "naloxone" "pharmacy" Australia access
-site:reddit.com "methadone" OR "buprenorphine" Australia experience
 ```
 
-[👉 **Run Topic Search**](https://www.google.com/search?q=site%3Areddit.com+%22fentanyl%22+Australia+warning+OR+alert)
+```txt
+site:reddit.com "nitazene" OR "metonitazene" Australia
+```
+
+```txt
+site:reddit.com "drug checking" "festival" Australia
+```
+
+```txt
+site:reddit.com "naloxone" "pharmacy" Australia access
+```
+
+```txt
+site:reddit.com "methadone" OR "buprenorphine" Australia experience
+```
 
 ### Recovery & Support Subreddits
 
 ```txt
 site:reddit.com/r/OpiatesRecovery Australia
-site:reddit.com/r/REDDITORSINRECOVERY "harm reduction"
-site:reddit.com/r/addiction Australia support
 ```
 
-[👉 **Run Recovery Search**](https://www.google.com/search?q=site%3Areddit.com%2Fr%2FOpiatesRecovery+Australia)
+```txt
+site:reddit.com/r/REDDITORSINRECOVERY "harm reduction"
+```
+
+```txt
+site:reddit.com/r/addiction Australia support
+```
 
 ---
 
@@ -87,278 +113,427 @@ site:reddit.com/r/addiction Australia support
 
 ```txt
 site:twitter.com "#harmreduction" Australia
+```
+
+```txt
 site:twitter.com "#drugchecking" OR "#pilltesting"
+```
+
+```txt
 site:twitter.com "#overdoseprevention" Australia
+```
+
+```txt
 site:twitter.com "#peersupport" drug OR AOD
 ```
 
-[👉 **Run Twitter Hashtag Search**](https://www.google.com/search?q=site%3Atwitter.com+%22%23harmreduction%22+Australia)
-
-### Organisation Accounts
+### Organisation Accounts - 1
 
 ```txt
 site:twitter.com from:aaborginald harm reduction
-site:twitter.com from:NUABORGINALTAA naloxone
-site:twitter.com from:HRVic
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=site%3Atwitter.com%20from%3Aaaborginald%20harm%20reduction%0D%0Asite%3Atwitter.com%20from%3ANUABORGINALTAA%20naloxone%0D%0Asite%3Atwitter.com%20from%3AHRVic)
+### Organisation Accounts - 2
+
+```txt
+site:twitter.com from:NUABORGINALTAA naloxone
+```
+
+### Organisation Accounts - 3
+
+```txt
+site:twitter.com from:HRVic
+```
 
 ---
 
 ## 📘 Facebook
 
-### Public Groups & Pages
+### Public Groups & Pages - 1
 
 ```txt
 site:facebook.com "harm reduction" Australia group
+```
+
+### Public Groups & Pages - 2
+
+```txt
 site:facebook.com "naloxone" Australia
+```
+
+### Public Groups & Pages - 3
+
+```txt
 site:facebook.com "drug checking" OR "pill testing" Australia
 ```
 
-[👉 **Run Facebook Search**](https://www.google.com/search?q=site%3Afacebook.com+%22harm+reduction%22+Australia+group)
-
-### Events & Campaigns
+### Events & Campaigns - 1
 
 ```txt
 site:facebook.com/events "harm reduction" OR "overdose awareness"
-site:facebook.com "International Overdose Awareness Day" Australia
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=site%3Afacebook.com%2Fevents%20%22harm%20reduction%22%20OR%20%22overdose%20awareness%22%0D%0Asite%3Afacebook.com%20%22International%20Overdose%20Awareness%20Day%22%20Australia)
+### Events & Campaigns - 2
+
+```txt
+site:facebook.com "International Overdose Awareness Day" Australia
+```
 
 ---
 
 ## 💬 Forum Platforms
 
-### General Forum Discovery
+### General Forum Discovery - Harm reduction
 
 ```txt
 "harm reduction" inurl:forum
+```
+
+### General Forum Discovery - Drug checking
+
+```txt
 "drug checking" inurl:forum OR inurl:community
+```
+
+### General Forum Discovery - Naloxone
+
+```txt
 "naloxone" inurl:forum Australia
+```
+
+### General Forum Discovery - Peer support
+
+```txt
 "peer support" drug inurl:forum
 ```
 
-[👉 **Run Forum Search**](https://www.google.com/search?q=%22harm+reduction%22+inurl%3Aforum)
-
-### phpBB Forums
+### phpBB Forums - 1
 
 ```txt
 "Powered by phpBB" "harm reduction"
+```
+
+### phpBB Forums - 2
+
+```txt
 "Powered by phpBB" "drug" Australia
+```
+
+### phpBB Forums - 3
+
+```txt
 inurl:viewtopic.php "harm reduction" OR "drug use"
 ```
 
-[👉 **Run phpBB Search**](https://www.google.com/search?q=%22Powered+by+phpBB%22+%22harm+reduction%22)
-
-### vBulletin Forums
+### vBulletin Forums - 1
 
 ```txt
 "Powered by vBulletin" "harm reduction"
+```
+
+### vBulletin Forums - 2
+
+```txt
 "Powered by vBulletin" "drug" Australia forum
+```
+
+### vBulletin Forums - 3
+
+```txt
 inurl:showthread.php "overdose" OR "naloxone"
 ```
 
-[👉 **Run vBulletin Search**](https://www.google.com/search?q=%22Powered+by+vBulletin%22+%22harm+reduction%22)
-
-### SMF (Simple Machines Forum)
+### SMF (Simple Machines Forum) - 1
 
 ```txt
 "Powered by SMF" "harm reduction" OR "drug"
+```
+
+### SMF (Simple Machines Forum) - 2
+
+```txt
 inurl:index.php?topic "harm reduction"
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22Powered%20by%20SMF%22%20%22harm%20reduction%22%20OR%20%22drug%22%0D%0Ainurl%3Aindex.php%3Ftopic%20%22harm%20reduction%22)
-
-### Discourse Forums
+### Discourse Forums - 1
 
 ```txt
 "Powered by Discourse" "harm reduction"
+```
+
+### Discourse Forums - 2
+
+```txt
 site:*.discourse.org "drug" OR "harm reduction"
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22Powered%20by%20Discourse%22%20%22harm%20reduction%22%0D%0Asite%3A*.discourse.org%20%22drug%22%20OR%20%22harm%20reduction%22)
-
-### Invision Forums
+### Invision Forums - 1
 
 ```txt
 "Powered by Invision" "harm reduction"
-"IP.Board" "drug" OR "addiction" forum
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22Powered%20by%20Invision%22%20%22harm%20reduction%22%0D%0A%22IP.Board%22%20%22drug%22%20OR%20%22addiction%22%20forum)
+### Invision Forums - 2
+
+```txt
+"IP.Board" "drug" OR "addiction" forum
+```
 
 ---
 
 ## 🏥 Health & Support Forums
 
-### Mental Health Communities
+### Mental Health Communities - 1
 
 ```txt
 site:beyondblue.org.au forum "drug" OR "addiction"
+```
+
+### Mental Health Communities - 2
+
+```txt
 site:sane.org forum "substance"
+```
+
+### Mental Health Communities - 3
+
+```txt
 "mental health forum" Australia "drug use"
 ```
 
-[👉 **Run Mental Health Forum Search**](https://www.google.com/search?q=site%3Abeyondblue.org.au+forum+%22drug%22+OR+%22addiction%22)
-
-### Chronic Pain Forums
+### Chronic Pain Forums - 1
 
 ```txt
 "chronic pain forum" Australia opioid
+```
+
+### Chronic Pain Forums - 2
+
+```txt
 "pain management" forum Australia medication
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22chronic%20pain%20forum%22%20Australia%20opioid%0D%0A%22pain%20management%22%20forum%20Australia%20medication)
-
-### Hepatitis Forums
+### Hepatitis Forums - 1
 
 ```txt
 "hepatitis" forum Australia "harm reduction"
-"hep C" forum treatment Australia
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22hepatitis%22%20forum%20Australia%20%22harm%20reduction%22%0D%0A%22hep%20C%22%20forum%20treatment%20Australia)
+### Hepatitis Forums - 2
+
+```txt
+"hep C" forum treatment Australia
+```
 
 ---
 
 ## 🎪 Festival & Music Communities
 
-### Festival Forums
+### Festival Forums - 1
 
 ```txt
 "festival" forum Australia "drug" OR "harm reduction"
+```
+
+### Festival Forums - 2
+
+```txt
 "music festival" forum "pill testing" OR "drug checking"
+```
+
+### Festival Forums - 3
+
+```txt
 "rave" forum Australia "harm reduction"
 ```
 
-[👉 **Run Festival Forum Search**](https://www.google.com/search?q=%22festival%22+forum+Australia+%22drug%22+OR+%22harm+reduction%22)
-
-### EDM Communities
+### EDM Communities - 1
 
 ```txt
 site:reddit.com/r/aves Australia "harm reduction"
-"electronic music" forum Australia "safe" drug
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=site%3Areddit.com%2Fr%2Faves%20Australia%20%22harm%20reduction%22%0D%0A%22electronic%20music%22%20forum%20Australia%20%22safe%22%20drug)
+### EDM Communities - 2
+
+```txt
+"electronic music" forum Australia "safe" drug
+```
 
 ---
 
 ## 📱 Messaging & Chat Platforms
 
-### Telegram (Public Groups)
+### Telegram (Public Groups) - 1
 
 ```txt
 site:t.me "harm reduction" OR "drug checking"
+```
+
+### Telegram (Public Groups) - 2
+
+```txt
 site:t.me Australia "drug" alert
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=site%3At.me%20%22harm%20reduction%22%20OR%20%22drug%20checking%22%0D%0Asite%3At.me%20Australia%20%22drug%22%20alert)
-
-### Discord (Server Discovery)
+### Discord (Server Discovery) - 1
 
 ```txt
 site:discord.com "harm reduction"
-site:discord.gg "drug" OR "harm reduction"
-site:disboard.org "harm reduction"
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=site%3Adiscord.com%20%22harm%20reduction%22%0D%0Asite%3Adiscord.gg%20%22drug%22%20OR%20%22harm%20reduction%22%0D%0Asite%3Adisboard.org%20%22harm%20reduction%22)
+### Discord (Server Discovery) - 2
+
+```txt
+site:discord.gg "drug" OR "harm reduction"
+```
+
+### Discord (Server Discovery) - 3
+
+```txt
+site:disboard.org "harm reduction"
+```
 
 ---
 
 ## 🗣️ Q&A Platforms
 
-### Quora
+### Quora - 1
 
 ```txt
 site:quora.com "harm reduction" Australia
+```
+
+### Quora - 2
+
+```txt
 site:quora.com "naloxone" Australia
+```
+
+### Quora - 3
+
+```txt
 site:quora.com "drug policy" Australia
 ```
 
-[👉 **Run Quora Search**](https://www.google.com/search?q=site%3Aquora.com+%22harm+reduction%22+Australia)
-
-### Stack Exchange
+### Stack Exchange - 1
 
 ```txt
 site:stackexchange.com "harm reduction"
-site:health.stackexchange.com "overdose" OR "naloxone"
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=site%3Astackexchange.com%20%22harm%20reduction%22%0D%0Asite%3Ahealth.stackexchange.com%20%22overdose%22%20OR%20%22naloxone%22)
+### Stack Exchange - 2
+
+```txt
+site:health.stackexchange.com "overdose" OR "naloxone"
+```
 
 ---
 
 ## 📰 News Comment Sections
 
-### Australian News Sites
+### Australian News Sites - 1
 
 ```txt
 site:abc.net.au/news "pill testing" comments
-site:theguardian.com/australia "drug checking" comments
-site:sbs.com.au "harm reduction" comments
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=site%3Aabc.net.au%2Fnews%20%22pill%20testing%22%20comments%0D%0Asite%3Atheguardian.com%2Faustralia%20%22drug%20checking%22%20comments%0D%0Asite%3Asbs.com.au%20%22harm%20reduction%22%20comments)
+### Australian News Sites - 2
+
+```txt
+site:theguardian.com/australia "drug checking" comments
+```
+
+### Australian News Sites - 3
+
+```txt
+site:sbs.com.au "harm reduction" comments
+```
 
 ---
 
 ## 🔍 Advanced Forum Searches
 
-### Find Forum Discussions About Specific Topics
+### Find Forum Discussions About Specific Topics - 1
 
 ```txt
 inurl:forum OR inurl:thread "fentanyl" Australia alert
+```
+
+### Find Forum Discussions About Specific Topics - 2
+
+```txt
 inurl:forum "drug warning" OR "contaminated" Australia
+```
+
+### Find Forum Discussions About Specific Topics - 3
+
+```txt
 inurl:forum "naloxone" access Australia
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=inurl%3Aforum%20OR%20inurl%3Athread%20%22fentanyl%22%20Australia%20alert%0D%0Ainurl%3Aforum%20%22drug%20warning%22%20OR%20%22contaminated%22%20Australia%0D%0Ainurl%3Aforum%20%22naloxone%22%20access%20Australia)
-
-### Find User Experiences
+### Find User Experiences - 1
 
 ```txt
 inurl:forum "my experience" "harm reduction" Australia
+```
+
+### Find User Experiences - 2
+
+```txt
 inurl:forum "personal story" drug OR overdose
+```
+
+### Find User Experiences - 3
+
+```txt
 inurl:thread "what helped me" addiction OR recovery
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=inurl%3Aforum%20%22my%20experience%22%20%22harm%20reduction%22%20Australia%0D%0Ainurl%3Aforum%20%22personal%20story%22%20drug%20OR%20overdose%0D%0Ainurl%3Athread%20%22what%20helped%20me%22%20addiction%20OR%20recovery)
-
-### Find Local Discussions
+### Find Local Discussions - 1
 
 ```txt
 inurl:forum "Sydney" "harm reduction" OR "drug"
-inurl:forum "Melbourne" "safe injecting" OR "MSIR"
-inurl:forum "Brisbane" naloxone OR "NSP"
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=inurl%3Aforum%20%22Sydney%22%20%22harm%20reduction%22%20OR%20%22drug%22%0D%0Ainurl%3Aforum%20%22Melbourne%22%20%22safe%20injecting%22%20OR%20%22MSIR%22%0D%0Ainurl%3Aforum%20%22Brisbane%22%20naloxone%20OR%20%22NSP%22)
+### Find Local Discussions - 2
+
+```txt
+inurl:forum "Melbourne" "safe injecting" OR "MSIR"
+```
+
+### Find Local Discussions - 3
+
+```txt
+inurl:forum "Brisbane" naloxone OR "NSP"
+```
 
 ---
 
 ## 📊 Forum Analytics
 
-### Most Active Discussions
+### Most Active Discussions - 1
 
 ```txt
 inurl:forum "harm reduction" ("replies" OR "views") Australia
+```
+
+### Most Active Discussions - 2
+
+```txt
 inurl:viewtopic "harm reduction" Australia
 ```
 
-[👉 **Run this Search**](<https://www.google.com/search?q=inurl%3Aforum%20%22harm%20reduction%22%20(%22replies%22%20OR%20%22views%22)%20Australia%0D%0Ainurl%3Aviewtopic%20%22harm%20reduction%22%20Australia>)
-
-### Recent Discussions
+### Recent Discussions - 1
 
 ```txt
 inurl:forum "harm reduction" Australia 2024..2026
-inurl:forum "drug checking" Australia after:2024
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=inurl%3Aforum%20%22harm%20reduction%22%20Australia%202024..2026%0D%0Ainurl%3Aforum%20%22drug%20checking%22%20Australia%20after%3A2024)
+### Recent Discussions - 2
+
+```txt
+inurl:forum "drug checking" Australia after:2024
+```
 
 ---
 
@@ -367,25 +542,45 @@ inurl:forum "drug checking" Australia after:2024
 > **Cultural respect is essential.** These searches help find community-led discussions, not
 > surveillance.
 
+### 🖤💛❤️ First Nations Communities - 1
+
 ```txt
 "Aboriginal" OR "Indigenous" forum "harm reduction" Australia
-"First Nations" "drug" OR "alcohol" community discussion
-site:reddit.com "Aboriginal" "harm reduction" OR "healing"
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=%22Aboriginal%22%20OR%20%22Indigenous%22%20forum%20%22harm%20reduction%22%20Australia%0D%0A%22First%20Nations%22%20%22drug%22%20OR%20%22alcohol%22%20community%20discussion%0D%0Asite%3Areddit.com%20%22Aboriginal%22%20%22harm%20reduction%22%20OR%20%22healing%22)
+### 🖤💛❤️ First Nations Communities - 2
+
+```txt
+"First Nations" "drug" OR "alcohol" community discussion
+```
+
+### 🖤💛❤️ First Nations Communities - 3
+
+```txt
+site:reddit.com "Aboriginal" "harm reduction" OR "healing"
+```
 
 ---
 
 ## 🏳️‍🌈 LGBTIQ+ Communities
 
+### 🏳️‍🌈 LGBTIQ+ Communities - 1
+
 ```txt
 site:reddit.com/r/LGBTAustralia "drug" OR "harm reduction"
-"LGBTIQ" OR "queer" forum "harm reduction" Australia
-"chemsex" forum Australia "harm reduction" OR "safe"
 ```
 
-[👉 **Run this Search**](https://www.google.com/search?q=site%3Areddit.com%2Fr%2FLGBTAustralia%20%22drug%22%20OR%20%22harm%20reduction%22%0D%0A%22LGBTIQ%22%20OR%20%22queer%22%20forum%20%22harm%20reduction%22%20Australia%0D%0A%22chemsex%22%20forum%20Australia%20%22harm%20reduction%22%20OR%20%22safe%22)
+### 🏳️‍🌈 LGBTIQ+ Communities - 2
+
+```txt
+"LGBTIQ" OR "queer" forum "harm reduction" Australia
+```
+
+### 🏳️‍🌈 LGBTIQ+ Communities - 3
+
+```txt
+"chemsex" forum Australia "harm reduction" OR "safe"
+```
 
 ---
 

@@ -202,7 +202,7 @@ Use these consistently to indicate difficulty/progression:
 | :---: | :----------- | :------------------------------- |
 |  ⚡   | Quick Start  | Fastest path to results          |
 |  🔴   | Advanced     | Complex, power user content      |
-|   🟡   | Intermediate | Requires understanding of basics |
+|  🟡   | Intermediate | Requires understanding of basics |
 |   �   | Pro Tips     | Optional enhancements            |
 |   �   | Basic        | Simple, no prerequisites         |
 

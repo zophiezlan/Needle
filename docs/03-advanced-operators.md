@@ -25,7 +25,13 @@ Finds: "program for the distribution of naloxone", "naloxone distribution progra
 
 ```txt
 "drug checking" AROUND(8) evaluation
+```
+
+```txt
 "peer worker" AROUND(10) supervision
+```
+
+```txt
 "harm reduction" AROUND(5) festival
 ```
 
@@ -40,7 +46,13 @@ Force multiple words into the page title. Very restrictive but high precision.
 
 ```txt
 allintitle: drug alert opioid NSW
+```
+
+```txt
 allintitle: harm reduction guideline 2024
+```
+
+```txt
 allintitle: peer worker training
 ```
 
@@ -54,7 +66,13 @@ Force multiple words into the URL path.
 
 ```txt
 allinurl: publications naloxone pdf
+```
+
+```txt
 allinurl: alerts drug health
+```
+
+```txt
 allinurl: submissions harm reduction
 ```
 
@@ -66,7 +84,13 @@ Find websites similar to a known good source.
 
 ```txt
 related:ndarc.med.unsw.edu.au
+```
+
+```txt
 related:aivl.org.au
+```
+
+```txt
 related:penington.org.au
 ```
 
@@ -93,7 +117,13 @@ Get dictionary definitions quickly.
 
 ```txt
 define:naloxone
+```
+
+```txt
 define:pharmacotherapy
+```
+
+```txt
 define:buprenorphine
 ```
 
@@ -119,6 +149,9 @@ Filter news results by publication source.
 
 ```txt
 source:abc.net.au "drug policy"
+```
+
+```txt
 source:theguardian.com "harm reduction" australia
 ```
 
@@ -132,6 +165,9 @@ Search within social platforms.
 
 ```txt
 @twitter "harm reduction" australia
+```
+
+```txt
 @reddit "drug checking"
 ```
 
@@ -143,7 +179,13 @@ Find hashtag mentions.
 
 ```txt
 #harmreduction australia
+```
+
+```txt
 #pilltest festival
+```
+
+```txt
 #naloxone
 ```
 
@@ -155,6 +197,9 @@ Find images of specific sizes. Useful for infographics.
 
 ```txt
 imagesize:1920x1080 "harm reduction" infographic
+```
+
+```txt
 imagesize:800x600 "overdose prevention"
 ```
 
@@ -196,7 +241,13 @@ Find unlisted files in publication directories:
 
 ```txt
 site:*.gov.au inurl:"/publications/" filetype:pdf "harm reduction" -inurl:html
+```
+
+```txt
 site:*.gov.au inurl:"/uploads/" filetype:pdf "drug"
+```
+
+```txt
 site:*.gov.au inurl:"/assets/" filetype:pdf "overdose"
 ```
 
@@ -204,8 +255,17 @@ site:*.gov.au inurl:"/assets/" filetype:pdf "overdose"
 
 ```txt
 "drug * service" site:*.gov.au
+```
+
+```txt
 "* harm reduction" festival
+```
+
+```txt
 "needle * program" guidelines
+```
+
+```txt
 "peer * worker" training
 ```
 
@@ -223,7 +283,13 @@ site:*.gov.au inurl:"/assets/" filetype:pdf "overdose"
 
 ```txt
 site:*.gov.au filetype:pdf "draft" "harm reduction" -"final"
+```
+
+```txt
 site:*.gov.au filetype:pdf "internal use only" "drug"
+```
+
+```txt
 "working paper" OR "discussion paper" harm reduction site:*.gov.au
 ```
 
@@ -231,7 +297,13 @@ site:*.gov.au filetype:pdf "internal use only" "drug"
 
 ```txt
 site:*.gov.au filetype:pdf "meeting minutes" "harm reduction"
+```
+
+```txt
 site:*.gov.au filetype:pdf "agenda" "alcohol and other drugs" committee
+```
+
+```txt
 "steering committee" minutes harm reduction filetype:pdf
 ```
 
@@ -239,7 +311,13 @@ site:*.gov.au filetype:pdf "agenda" "alcohol and other drugs" committee
 
 ```txt
 filetype:pptx OR filetype:ppt "harm reduction" Australia
+```
+
+```txt
 filetype:pptx "drug checking" conference
+```
+
+```txt
 inurl:presentations "alcohol and other drugs" filetype:pdf
 ```
 
@@ -247,7 +325,13 @@ inurl:presentations "alcohol and other drugs" filetype:pdf
 
 ```txt
 filetype:xlsx "harm reduction" site:*.gov.au
+```
+
+```txt
 filetype:csv "needle syringe" OR "NSP"
+```
+
+```txt
 filetype:xlsx "service directory" AOD
 ```
 
@@ -255,7 +339,13 @@ filetype:xlsx "service directory" AOD
 
 ```txt
 site:*.gov.au "freedom of information" OR "FOI" "drug" filetype:pdf
+```
+
+```txt
 site:*.gov.au inurl:foi OR inurl:freedom-of-information "harm reduction"
+```
+
+```txt
 "disclosure log" site:*.gov.au "drug policy"
 ```
 
@@ -263,7 +353,13 @@ site:*.gov.au inurl:foi OR inurl:freedom-of-information "harm reduction"
 
 ```txt
 site:*.gov.au "tender" OR "expression of interest" "harm reduction"
+```
+
+```txt
 site:*.gov.au filetype:pdf "funding agreement" AOD
+```
+
+```txt
 "request for tender" "alcohol and other drugs" site:*.gov.au
 ```
 
@@ -275,7 +371,13 @@ site:*.gov.au filetype:pdf "funding agreement" AOD
 
 ```txt
 filetype:rtf "harm reduction" Australia
+```
+
+```txt
 filetype:odt "drug checking"
+```
+
+```txt
 filetype:epub "harm reduction" guide
 ```
 
@@ -289,6 +391,9 @@ filetype:xml site:*.gov.au sitemap
 
 ```txt
 filetype:doc "harm reduction" (finds old Word documents)
+```
+
+```txt
 filetype:xls "service directory" (finds old Excel files)
 ```
 

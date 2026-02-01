@@ -171,9 +171,4 @@ div[class*="language-txt"].language-dork code {
   transform: translateY(0);
 }
 
-/* Add a subtle indicator that this is a dork query */
-.language-dork::before {
-  content: "dork" !important;
-  color: var(--accent) !important;
-}
 </style>

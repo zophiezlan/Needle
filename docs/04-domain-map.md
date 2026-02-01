@@ -116,7 +116,13 @@ site:ndarc.med.unsw.edu.au OR site:burnet.edu.au OR site:turning-point.org.au fi
 
 ```txt
 site:*.org.au ("peer-led" OR "user-led" OR "lived experience") filetype:pdf -jobs
+```
+
+```txt
 site:*.org.au "nothing about us without us" harm reduction
+```
+
+```txt
 site:*.org.au "peer worker" ("by peers" OR "for peers") filetype:pdf
 ```
 
@@ -210,6 +216,9 @@ AOD sector peak bodies coordinate services and advocacy in each state.
 
 ```txt
 "APSAD conference" proceedings filetype:pdf
+```
+
+```txt
 "National Drug Conference" OR "NDC" presentation filetype:pdf
 ```
 
@@ -495,6 +504,9 @@ domains.
 
 ```txt
 "Powered by Discourse" "harm reduction" OR "drug policy"
+```
+
+```txt
 "MediaWiki" "harm reduction" site:*.org
 ```
 
@@ -617,11 +629,15 @@ site:reddit.com OR site:quora.com OR site:groups.google.com
 
 ### Exclusion Patterns
 
-```txt
-# Government without news sites
-site:*.gov.au -site:news.* -site:media.*
+#### Government without news sites
 
-# Research without aggregators
+```txt
+site:*.gov.au -site:news.* -site:media.*
+```
+
+#### Research without aggregators
+
+```txt
 site:*.edu.au -site:researchgate.net -site:academia.edu
 ```
 

@@ -4,7 +4,7 @@ import { useRouter } from "vitepress";
 const router = useRouter();
 
 function goToSettings() {
-  router.go('/settings');
+  router.go("/settings");
 }
 </script>
 
@@ -54,5 +54,4 @@ function goToSettings() {
   font-size: 16px;
   line-height: 1;
 }
-
 </style>

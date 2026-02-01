@@ -11,7 +11,8 @@
 
 ---
 
-> [!NOTE] **Audience:** Peer workers, clinicians, researchers, policy analysts, advocates, and
+> [!NOTE]
+> **Audience:** Peer workers, clinicians, researchers, policy analysts, advocates, and
 > anyone working to reduce drug-related harm.
 >
 > **Scope:** Australia-focused with international comparators.
@@ -22,12 +23,12 @@
 
 ### By Experience Level
 
-| Level                | Start Here                                                                             |
-| :------------------- | :------------------------------------------------------------------------------------- |
+| Level                | Start Here                                                                               |
+| :------------------- | :--------------------------------------------------------------------------------------- |
 | **Interactive Tool** | [**🕵️‍♂️ Launch Dork Explorer**](/explorer) - Search & filter <DorkCount /> dorks instantly |
-| **Know the basics?** | [Advanced Operators](03-advanced-operators.md) → [Dork Packs](dork-packs/README.md)    |
-| **New to dorking?**  | [Quick Start Guide](01-quick-start.md) → [Core Operators](02-core-operators.md)        |
-| **Power user?**      | [Investigative Searching](dork-packs/investigative.md) → [OSINT Tools](tools/osint.md) |
+| **Know the basics?** | [Advanced Operators](03-advanced-operators.md) → [Dork Packs](dork-packs/README.md)      |
+| **New to dorking?**  | [Quick Start Guide](01-quick-start.md) → [Core Operators](02-core-operators.md)          |
+| **Power user?**      | [Investigative Searching](dork-packs/investigative.md) → [OSINT Tools](tools/osint.md)   |
 
 ### By Role
 
@@ -196,7 +197,8 @@ hidden in "publications" directories, or published without strong SEO.
 
 </details>
 
-> [!IMPORTANT] **This guide is NOT about hacking.** We use search operators for **legitimate
+> [!IMPORTANT]
+> **This guide is NOT about hacking.** We use search operators for **legitimate
 > discovery of public information** that supports harm reduction work.
 
 ---
@@ -221,7 +223,8 @@ use. **Peer knowledge is expert knowledge.**
 
 ## ⚖️ Safety, Ethics & Privacy
 
-> [!CAUTION] **Non-negotiable principles for ethical searching.**
+> [!CAUTION]
+> **Non-negotiable principles for ethical searching.**
 
 ### Do No Harm
 
@@ -238,7 +241,8 @@ use. **Peer knowledge is expert knowledge.**
 | "overdose" / "poisoning" | Stigmatizing terms |
 | "people who use drugs"   | "drug addicts"     |
 
-> [!TIP] **Legacy searching:** Include older terms only when necessary to locate historical
+> [!TIP]
+> **Legacy searching:** Include older terms only when necessary to locate historical
 > documents.
 
 ### Legal & Clinical Currency
@@ -272,7 +276,8 @@ use. **Peer knowledge is expert knowledge.**
 
 ## 🤝 Contributing & Feedback
 
-> [!NOTE] This guide reflects best practices as of January 2026. Google's algorithms and operators
+> [!NOTE]
+> This guide reflects best practices as of January 2026. Google's algorithms and operators
 > may change.
 
 - **Found a dork that no longer works?**
@@ -298,7 +303,8 @@ _Created for harm reduction workers, by harm reduction workers._
 
 ## ⚠️ Disclaimer
 
-> [!WARNING] This guide supports ethical, public-interest information finding for harm reduction
+> [!WARNING]
+> This guide supports ethical, public-interest information finding for harm reduction
 > practice. It must not be used to locate private, leaked, or identifiable personal information.
 > Always follow your organisation's privacy, data handling, and clinical governance requirements.
 
@@ -309,3 +315,4 @@ _Created for harm reduction workers, by harm reduction workers._
 **[→ Get Started with the Quick Start Guide](01-quick-start.md)**
 
 </div>
+

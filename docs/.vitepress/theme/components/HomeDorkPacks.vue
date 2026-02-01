@@ -1,15 +1,45 @@
 <script setup lang="ts">
-import { useRouter } from 'vitepress';
+import { useRouter } from "vitepress";
 
 const router = useRouter();
 
 const packs = [
-  { title: 'Novel Substances', desc: 'Nitazenes, xylazine, and emerging trends.', link: '/dork-packs/novel-substances', icon: '🧪' },
-  { title: 'Drug Alerts', desc: 'Government warnings & public health alerts.', link: '/dork-packs/drug-alerts', icon: '🚨' },
-  { title: 'Community', desc: 'Reddit, forums, and peer discussions.', link: '/dork-packs/forum-community', icon: '💬' },
-  { title: 'Coroners Reports', desc: 'Death data & inquest findings.', link: '/dork-packs/coroners-deaths', icon: '⚖️' },
-  { title: 'User Domains', desc: 'Grassroots content on Notion, Medium, etc.', link: '/dork-packs/user-hosted-domains', icon: '🌐' },
-  { title: 'Peer Knowledge', desc: 'Lived experience stories & resources.', link: '/dork-packs/peer-knowledge', icon: '👥' },
+  {
+    title: "Novel Substances",
+    desc: "Nitazenes, xylazine, and emerging trends.",
+    link: "/dork-packs/novel-substances",
+    icon: "🧪",
+  },
+  {
+    title: "Drug Alerts",
+    desc: "Government warnings & public health alerts.",
+    link: "/dork-packs/drug-alerts",
+    icon: "🚨",
+  },
+  {
+    title: "Community",
+    desc: "Reddit, forums, and peer discussions.",
+    link: "/dork-packs/forum-community",
+    icon: "💬",
+  },
+  {
+    title: "Coroners Reports",
+    desc: "Death data & inquest findings.",
+    link: "/dork-packs/coroners-deaths",
+    icon: "⚖️",
+  },
+  {
+    title: "User Domains",
+    desc: "Grassroots content on Notion, Medium, etc.",
+    link: "/dork-packs/user-hosted-domains",
+    icon: "🌐",
+  },
+  {
+    title: "Peer Knowledge",
+    desc: "Lived experience stories & resources.",
+    link: "/dork-packs/peer-knowledge",
+    icon: "👥",
+  },
 ];
 
 function navigate(link: string) {
@@ -21,12 +51,7 @@ function navigate(link: string) {
   <div class="dork-packs-showcase">
     <h2>Featured Dork Packs</h2>
     <div class="packs-grid">
-      <div
-        v-for="pack in packs"
-        :key="pack.link"
-        class="pack-card"
-        @click="navigate(pack.link)"
-      >
+      <div v-for="pack in packs" :key="pack.link" class="pack-card" @click="navigate(pack.link)">
         <div class="pack-icon">{{ pack.icon }}</div>
         <div class="pack-content">
           <h3>{{ pack.title }}</h3>
@@ -35,7 +60,7 @@ function navigate(link: string) {
       </div>
     </div>
     <div class="view-all">
-        <a href="/dork-packs/README">View All Dork Packs →</a>
+      <a href="/dork-packs/README">View All Dork Packs →</a>
     </div>
   </div>
 </template>
@@ -102,16 +127,16 @@ function navigate(link: string) {
 }
 
 .view-all {
-    margin-top: 2rem;
+  margin-top: 2rem;
 }
 
 .view-all a {
-    color: var(--vp-c-brand);
-    font-weight: 600;
-    text-decoration: none;
+  color: var(--vp-c-brand);
+  font-weight: 600;
+  text-decoration: none;
 }
 
 .view-all a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 </style>

@@ -16,9 +16,7 @@ const isDark = computed(() => {
 
 function syncAccent() {
   if (typeof window === "undefined") return;
-  const value = getComputedStyle(document.documentElement)
-    .getPropertyValue("--accent")
-    .trim();
+  const value = getComputedStyle(document.documentElement).getPropertyValue("--accent").trim();
   if (value) accent.value = value;
 }
 
@@ -50,27 +48,27 @@ const particleColor = computed(() => (isDark.value ? "#ffffff" : accent.value));
 const particlesOptions = computed(() => ({
   fullScreen: {
     enable: true,
-    zIndex: -1
+    zIndex: -1,
   },
   background: {
     color: {
-      value: "transparent"
-    }
+      value: "transparent",
+    },
   },
   particles: {
     color: {
-      value: particleColor.value
+      value: particleColor.value,
     },
     stroke: {
       width: 1,
-      color: particleColor.value
+      color: particleColor.value,
     },
     links: {
       color: particleColor.value,
       distance: 150,
       enable: true,
       opacity: 0.5,
-      width: 1
+      width: 1,
     },
     move: {
       enable: true,
@@ -79,26 +77,26 @@ const particlesOptions = computed(() => ({
       random: false,
       straight: false,
       outModes: {
-        default: "bounce"
-      }
+        default: "bounce",
+      },
     },
     number: {
       density: {
         enable: true,
       },
-      value: 60
+      value: 60,
     },
     opacity: {
-      value: 0.5
+      value: 0.5,
     },
     shape: {
-      type: "circle"
+      type: "circle",
     },
     size: {
-      value: { min: 1, max: 3 }
-    }
+      value: { min: 1, max: 3 },
+    },
   },
-  detectRetina: true
+  detectRetina: true,
 }));
 </script>
 

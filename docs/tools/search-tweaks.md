@@ -59,7 +59,13 @@ Force Google to find your term _only_ when it appears near specific HR language.
 
 ```txt
 "nitazenes" AROUND(15) "harm reduction"
+```
+
+```txt
 "xylazine" AROUND(10) "supply"
+```
+
+```txt
 "methamphetamine" AROUND(20) "safe smoking"
 ```
 
@@ -146,6 +152,9 @@ Google News supports a `location:` operator that is often overlooked.
 
 ```txt
 location:Sydney "drug alert"
+```
+
+```txt
 location:Melbourne "overdose"
 ```
 

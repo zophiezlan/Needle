@@ -170,17 +170,27 @@ Now that you have the basics:
 <details>
 <summary><strong>Tip 1: Start Broad, Then Narrow</strong></summary>
 
+### Start here (broad)
+
 ```txt
-# Start here (broad)
 "drug checking" Australia
+```
 
-# Then narrow by domain
+### Then narrow by domain
+
+```txt
 "drug checking" site:*.gov.au
+```
 
-# Then narrow by document type
+### Then narrow by document type
+
+```txt
 "drug checking" site:*.gov.au filetype:pdf
+```
 
-# Then narrow by date
+### Then narrow by date
+
+```txt
 "drug checking" site:*.gov.au filetype:pdf after:2024
 ```
 
