@@ -286,7 +286,8 @@ site:web.archive.org/web/*/nuaa.org.au "about" OR "history" OR "mission"
 | `site:trove.nla.gov.au`   | National Library of Australia archives |
 | `site:pandora.nla.gov.au` | Australian web archive (PANDORA)       |
 | `site:webarchive.org.uk`  | UK Web Archive                         |
-| `site:webarchive.loc.gov` | Library of Congress web archive        |
+| `site:webarchive.loc.gov
+Library of Congress web archive        |
 
 ---
 
@@ -300,6 +301,9 @@ site:web.archive.org/web/*/nuaa.org.au "about" OR "history" OR "mission"
 
 ```txt
 "National Drug Strategy" site:web.archive.org
+```
+
+```txt
 "National Drug Strategy" site:*.gov.au
 ```
 
@@ -311,6 +315,9 @@ site:web.archive.org/web/*/nuaa.org.au "about" OR "history" OR "mission"
 
 ```txt
 site:web.archive.org/web/*/aivl.org.au "annual report"
+```
+
+```txt
 site:web.archive.org/web/*/aivl.org.au "about us"
 ```
 
@@ -322,6 +329,9 @@ site:web.archive.org/web/*/aivl.org.au "about us"
 
 ```txt
 site:web.archive.org "[exact document title]"
+```
+
+```txt
 site:web.archive.org/web/*/[broken-url-domain]
 ```
 
@@ -333,6 +343,9 @@ site:web.archive.org/web/*/[broken-url-domain]
 
 ```txt
 "pill testing" Australia before:2019
+```
+
+```txt
 "pill testing" Australia after:2019
 ```
 
