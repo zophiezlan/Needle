@@ -324,32 +324,93 @@ site:*.gov.au ("funding recipients" OR "successful applicants" OR "grants awarde
 
 ### Organizational Documents
 
-| Document Type  | Search Pattern                                          |
-| -------------- | ------------------------------------------------------- |
-| Annual Report  | `"annual report" "harm reduction" filetype:pdf`         |
-| Strategic Plan | `"strategic plan" "harm reduction" filetype:pdf`        |
-| Constitution   | `constitution "harm reduction" site:*.org.au`           |
-| Board Minutes  | `"board minutes" OR "meeting minutes" "harm reduction"` |
-| Policies       | `policy OR procedure site:*.org.au "harm reduction"`    |
+#### Annual Report
+
+```txt
+"annual report" "harm reduction" filetype:pdf
+```
+
+#### Strategic Plan
+
+```txt
+"strategic plan" "harm reduction" filetype:pdf
+```
+
+#### Constitution
+
+```txt
+constitution "harm reduction" site:*.org.au
+```
+
+#### Board Minutes
+
+```txt
+"board minutes" OR "meeting minutes" "harm reduction" 
+```
+
+#### Policies
+
+```txt
+policy OR procedure site:*.org.au "harm reduction"
+```
 
 ### Government Documents
 
-| Document Type | Search Pattern                              |
-| ------------- | ------------------------------------------- |
-| Tender        | `tender site:*.gov.au "harm reduction"`     |
-| Service Spec  | `"service specification" site:*.gov.au AOD` |
-| Budget        | `budget "harm reduction" site:*.gov.au`     |
-| Evaluation    | `evaluation "harm reduction" site:*.gov.au` |
-| FOI Release   | `FOI site:*.gov.au "harm reduction"`        |
+#### Tender
+
+```txt
+tender site:*.gov.au "harm reduction"
+```
+
+#### Service Spec
+
+```txt
+"service specification" site:*.gov.au AOD
+```
+
+#### Budget
+
+```txt
+budget "harm reduction" site:*.gov.au
+```
+
+#### Evaluation
+
+```txt
+evaluation "harm reduction" site:*.gov.au
+```
+
+#### FOI Release
+
+```txt
+FOI site:*.gov.au "harm reduction"
+```
 
 ### Workforce Documents
 
-| Document Type        | Search Pattern                                              |
-| -------------------- | ----------------------------------------------------------- |
-| Position Description | `"position description" "harm reduction" filetype:pdf`      |
-| Competency Framework | `"competency framework" "harm reduction"`                   |
-| Workforce Strategy   | `"workforce strategy" OR "workforce plan" "harm reduction"` |
-| Training Curriculum  | `curriculum OR syllabus "harm reduction" training`          |
+#### Position Description
+
+```txt
+"position description" "harm reduction" filetype:pdf
+```
+
+#### Competency Framework
+
+```txt
+"competency framework" "harm reduction"
+```
+
+#### Workforce Strategy
+
+```txt
+"workforce strategy" OR "workforce plan" "harm reduction"
+```
+
+#### Training Curriculum
+
+```txt
+curriculum OR syllabus "harm reduction" training
+```
 
 ---
 
@@ -359,6 +420,9 @@ site:*.gov.au ("funding recipients" OR "successful applicants" OR "grants awarde
 
 ```txt
 site:aivl.org.au filetype:pdf
+```
+
+```txt
 site:nuaa.org.au ("annual report" OR "strategic plan" OR policy)
 ```
 
@@ -372,6 +436,9 @@ site:nuaa.org.au ("annual report" OR "strategic plan" OR policy)
 
 ```txt
 site:web.archive.org/web/*/aivl.org.au "strategic plan"
+```
+
+```txt
 "strategic plan" aivl (2020 OR 2021 OR 2022 OR 2023)
 ```
 
@@ -419,6 +486,9 @@ Compare different versions of the same document:
 
 ```txt
 "[document title]" (2021 OR 2022 OR 2023 OR 2024) filetype:pdf
+```
+
+```txt
 site:web.archive.org "[document title]"
 ```
 
