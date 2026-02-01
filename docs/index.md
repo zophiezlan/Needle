@@ -10,7 +10,7 @@ hero:
       link: /README
     - theme: alt
       text: Open Dork Explorer
-      link: /dork-explorer/
+      link: /explorer/
     - theme: alt
       text: Choose a Mode
       link: /modes/beginner
@@ -32,7 +32,7 @@ features:
 ## Quick Links
 
 - [Jump into the Guide](/README)
-- [Open Dork Explorer](/dork-explorer/)
+- [Open Dork Explorer](/explorer/)
 - [Browse Dork Packs](/dork-packs/README)
 - [Start a Mode](/modes/beginner)
 - [Templates](/templates/README)
