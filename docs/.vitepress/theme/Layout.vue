@@ -2,15 +2,21 @@
 <script setup lang="ts">
 import DefaultTheme from "vitepress/theme";
 import { useData } from "vitepress";
+import { onMounted } from "vue";
 import NavThemeSwitcher from "./components/NavThemeSwitcher.vue";
 import DorkCodeEnhancer from "./components/DorkCodeEnhancer.vue";
 import DorkSyntaxHighlighter from "./components/DorkSyntaxHighlighter.vue";
 import OnboardingTutorial from "./components/OnboardingTutorial.vue";
 import HomeParticles from "./components/HomeParticles.vue";
 import HomeActionGrid from "./components/HomeActionGrid.vue";
+import NavBarControls from "./components/NavBarControls.vue";
+import { useSidebar } from "./composables/useSidebar";
 
 const { Layout } = DefaultTheme;
 const { frontmatter } = useData();
+
+// Initialize sidebar state (handles class injection)
+useSidebar();
 </script>
 
 <template>
@@ -22,7 +28,10 @@ const { frontmatter } = useData();
       <HomeActionGrid />
     </template>
     <template #nav-bar-content-after>
-      <NavThemeSwitcher />
+      <div class="nav-extra-controls">
+        <NavBarControls />
+        <NavThemeSwitcher />
+      </div>
     </template>
     <template #doc-after>
       <DorkCodeEnhancer />
@@ -33,3 +42,12 @@ const { frontmatter } = useData();
     </template>
   </Layout>
 </template>
+
+<style scoped>
+.nav-extra-controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-left: 12px;
+}
+</style>

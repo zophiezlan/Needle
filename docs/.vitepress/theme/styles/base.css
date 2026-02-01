@@ -85,3 +85,34 @@
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-lg);
 }
+
+/* Sidebar Collapsed State (Desktop) */
+@media (min-width: 960px) {
+  html.sidebar-collapsed {
+    --vp-sidebar-width: 0px !important;
+  }
+  
+  html.sidebar-collapsed .VPSidebar {
+    transform: translateX(-100%);
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  html.sidebar-collapsed .VPContent {
+    padding-left: 0 !important;
+  }
+
+  html.sidebar-collapsed .VPDoc {
+    padding-left: 32px !important;
+    padding-right: 32px !important;
+  }
+}
+
+/* Transition for smoother sidebar experience */
+.VPSidebar {
+  transition: transform var(--transition-normal), opacity var(--transition-normal), width var(--transition-normal) !important;
+}
+
+.VPContent {
+  transition: padding var(--transition-normal) !important;
+}
