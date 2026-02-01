@@ -18,7 +18,7 @@
     "lint:check": "npm run format:check",
     "build": "node scripts/build-dorkbase.js",
     "build:synonyms": "node scripts/build-synonyms.js",
-    "build:all": "npm run clean:links && npm run build && npm run build:synonyms",
+    "build:all": "npm run build && npm run build:synonyms",
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
     "docs:preview": "vitepress preview docs",
