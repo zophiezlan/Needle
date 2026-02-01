@@ -52,7 +52,7 @@ const processFile = (filename) => {
     // Check if this is a dork title (### or ##)
     const isH3 = line.trim().startsWith("### ");
     const isH2 = !isH3 && line.trim().startsWith("## ");
-    
+
     if (isH3 || isH2) {
       const titlePrefix = isH3 ? "### " : "## ";
       const title = line.replace(titlePrefix, "").trim();
@@ -105,21 +105,21 @@ const processFile = (filename) => {
             if (idx > 0 || isH2) {
               newLines.push(""); // Add blank line between dorks
             }
-            
+
             // If this is the first item of an H2 split, add the H2 header first
             if (isH2 && idx === 0) {
               newLines.push(titleLine);
               intermediateLines.forEach((l) => newLines.push(l));
               newLines.push("");
             }
-            
+
             newLines.push(newTitle);
-            
+
             // For H3 splits, preserve intermediate text (description, warnings) with first dork only
             if (isH3 && idx === 0) {
               intermediateLines.forEach((l) => newLines.push(l));
             }
-            
+
             newLines.push("");
             newLines.push(lines[codeBlockStart]); // Opening ```
             newLines.push(item.line); // The query
