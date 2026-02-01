@@ -112,12 +112,15 @@ site:*.gov.au "drug alert" ("high strength" OR "unexpected" OR "contaminated" OR
 
 Government alerts can be slow. Local news often reports "bad batch" incidents or overdoses first.
 
-### The "Location" Operator
-
-Find reports specific to a city or town (Google News only).
+### The "Location" Operator - 1
 
 ```txt
 location:Sydney "drug alert"
+```
+
+### The "Location" Operator - 2
+
+```txt
 location:Melbourne "overdose"
 ```
 

@@ -67,13 +67,21 @@ Find resources on drug-related stigma:
 
 ## 🟡 Intermediate Queries
 
-### Historical/Stigmatising Terms (For Research Only)
-
-> ⚠️ Use when you need to locate older documents
+### Historical/Stigmatising Terms (For Research Only) - 1
 
 ```txt
 "drug addict" OR "drug abuser" Australia 1980..2010 filetype:pdf
+```
+
+### Historical/Stigmatising Terms (For Research Only) - 2
+
+```txt
 "intravenous drug user" OR "IVDU" Australia harm reduction
+```
+
+### Historical/Stigmatising Terms (For Research Only) - 3
+
+```txt
 "substance abuser" policy OR program Australia before:2015
 ```
 
