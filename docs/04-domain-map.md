@@ -320,7 +320,7 @@ No-code personal sites, landing pages, small community pages.
 **Website Builder Search:**
 
 ```txt
-(site:*.carrd.co OR site:*.wixsite.com OR site:*.weebly.com) "harm reduction" OR "drug checking"
+(site:*.carrd.co OR site:*.wixsite.com OR site:*.weebly.com) ("harm reduction" OR "drug checking")
 ```
 
 ---

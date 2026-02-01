@@ -274,7 +274,7 @@ export const DORK_TEMPLATES: DorkTemplate[] = [
     description: "Find guides and resource directories on documentation platforms",
     category: "User Content",
     query:
-      '(site:*.notion.site OR site:*.gitbook.io) "harm reduction" OR "drug checking" guide OR resources',
+      '(site:*.notion.site OR site:*.gitbook.io) ("harm reduction" OR "drug checking") (guide OR resources)',
     icon: "📚",
   },
   {
@@ -292,7 +292,7 @@ export const DORK_TEMPLATES: DorkTemplate[] = [
     description: "Find training materials and resources on file hosting platforms",
     category: "User Content",
     query:
-      '(site:drive.google.com OR site:dropbox.com OR site:speakerdeck.com) "harm reduction" training OR guide',
+      '(site:drive.google.com OR site:dropbox.com OR site:speakerdeck.com) "harm reduction" (training OR guide)',
     icon: "📁",
   },
   {
@@ -301,7 +301,7 @@ export const DORK_TEMPLATES: DorkTemplate[] = [
     description: "Find datasets and research outputs on academic repositories",
     category: "User Content",
     query:
-      '(site:zenodo.org OR site:osf.io OR site:kaggle.com) "harm reduction" OR "drug policy" data',
+      '(site:zenodo.org OR site:osf.io OR site:kaggle.com) ("harm reduction" OR "drug policy") data',
     icon: "🔬",
   },
   {

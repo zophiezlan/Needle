@@ -37,7 +37,7 @@ Find community commentary, essays, and longform harm reduction content.
 Find guides, resource directories, and knowledge bases.
 
 ```txt
-(site:*.notion.site OR site:*.gitbook.io) "harm reduction" OR "drug checking" OR "safer use"
+(site:*.notion.site OR site:*.gitbook.io) ("harm reduction" OR "drug checking" OR "safer use")
 ```
 
 **Why this works:**
@@ -67,7 +67,7 @@ site:reddit.com ("harm reduction" OR "drug checking" OR "naloxone") -r/politics
 ### Multi-Platform Documentation Search
 
 ```txt
-(site:*.notion.site OR site:*.gitbook.io OR site:*.readthedocs.io OR site:*.readme.io) ("harm reduction" OR "drug policy" OR "safer use") guide OR resources
+(site:*.notion.site OR site:*.gitbook.io OR site:*.readthedocs.io OR site:*.readme.io) ("harm reduction" OR "drug policy" OR "safer use") (guide OR resources)
 ```
 
 **Why this works:**
@@ -157,7 +157,7 @@ Find tools, datasets, and technical harm reduction projects.
 ### Research Data Repositories
 
 ```txt
-(site:zenodo.org OR site:osf.io OR site:figshare.com) "harm reduction" OR "drug policy" (dataset OR data OR report)
+(site:zenodo.org OR site:osf.io OR site:figshare.com) ("harm reduction" OR "drug policy") (dataset OR data OR report)
 ```
 
 **Why this works:**

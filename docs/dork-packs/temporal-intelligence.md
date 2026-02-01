@@ -195,7 +195,7 @@ site:web.archive.org filetype:pdf "harm reduction" "annual report"
 Find historical media coverage of harm reduction.
 
 ```txt
-site:web.archive.org (site:abc.net.au OR site:smh.com.au OR site:theage.com.au) "safe injecting" OR "pill testing"
+site:web.archive.org (site:abc.net.au OR site:smh.com.au OR site:theage.com.au) ("safe injecting" OR "pill testing")
 ```
 
 **Why this works:**
@@ -209,7 +209,7 @@ site:web.archive.org (site:abc.net.au OR site:smh.com.au OR site:theage.com.au) 
 Find early harm reduction web content (1990s-2000s).
 
 ```txt
-site:web.archive.org/web/199*/  OR site:web.archive.org/web/200*/ "harm reduction" Australia
+(site:web.archive.org/web/199*/ OR site:web.archive.org/web/200*/) ("harm reduction" Australia)
 ```
 
 **Why this works:**

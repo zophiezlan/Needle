@@ -37,7 +37,7 @@ site:youtube.com "harm reduction" (training OR workshop OR tutorial)
 Find professional and organizational videos.
 
 ```txt
-site:vimeo.com "harm reduction" OR "drug checking" OR "naloxone"
+site:vimeo.com ("harm reduction" OR "drug checking" OR "naloxone")
 ```
 
 **Why this works:**

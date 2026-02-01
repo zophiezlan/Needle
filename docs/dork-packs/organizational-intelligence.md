@@ -199,7 +199,7 @@ Find program evaluations and reviews.
 Find internal organizational policies.
 
 ```txt
-("policy" OR "procedure" OR "guideline" OR "protocol") "harm reduction" (site:*.org.au) inurl:policy OR inurl:policies filetype:pdf
+site:*.org.au ("policy" OR "procedure" OR "guideline" OR "protocol") "harm reduction" (inurl:policy OR inurl:policies) filetype:pdf
 ```
 
 **Why this works:**
@@ -289,7 +289,7 @@ site:*.gov.au ("freedom of information" OR FOI OR "released under FOI") "harm re
 Find Primary Health Network documents.
 
 ```txt
-site:*.com.au OR site:*.org.au (PHN OR "Primary Health Network") ("harm reduction" OR AOD OR "alcohol and other drugs") (tender OR commission OR "needs assessment")
+(site:*.com.au OR site:*.org.au) (PHN OR "Primary Health Network") ("harm reduction" OR AOD OR "alcohol and other drugs") (tender OR commission OR "needs assessment")
 ```
 
 ### State Health Procurement

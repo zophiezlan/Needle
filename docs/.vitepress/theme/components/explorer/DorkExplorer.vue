@@ -88,7 +88,7 @@ const results = computed(() => {
   }
   if (quickFilters.value.userHosted) {
     filtered = filtered.filter((d) =>
-      /site:\*?\.?(?:notion\.site|gitbook\.io|wordpress\.com|blogspot\.com|medium\.com|substack\.com|tumblr\.com|reddit\.com|github\.io|vercel\.app|netlify\.app|pages\.dev|glitch\.me|drive\.google\.com|dropbox\.com)/i.test(d.query)
+      /(site:\*?\.?(?:notion\.site|gitbook\.io|wordpress\.com|blogspot\.com|medium\.com|substack\.com|tumblr\.com|reddit\.com|github\.io|github\.com|speakerdeck\.com|slideshare\.net|vercel\.app|netlify\.app|pages\.dev|glitch\.me|drive\.google\.com|docs\.google\.com|dropbox\.com)|"Powered by Discourse"|Powered by Discourse)/i.test(d.query)
     );
   }
 
