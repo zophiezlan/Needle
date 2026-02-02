@@ -51,16 +51,24 @@ function navigate(link: string) {
   <div class="dork-packs-showcase">
     <h2>Featured Dork Packs</h2>
     <div class="packs-grid">
-      <div v-for="pack in packs" :key="pack.link" class="pack-card" @click="navigate(pack.link)">
+      <button
+        v-for="pack in packs"
+        :key="pack.link"
+        class="pack-card"
+        type="button"
+        @click="navigate(pack.link)"
+      >
         <div class="pack-icon">{{ pack.icon }}</div>
         <div class="pack-content">
           <h3>{{ pack.title }}</h3>
           <p>{{ pack.desc }}</p>
         </div>
-      </div>
+      </button>
     </div>
     <div class="view-all">
-      <a href="/dork-packs/README">View All Dork Packs →</a>
+      <button class="view-all-link" type="button" @click="navigate('/dork-packs/README')">
+        View All Dork Packs →
+      </button>
     </div>
   </div>
 </template>
@@ -88,6 +96,7 @@ function navigate(link: string) {
 .pack-card {
   display: flex;
   align-items: flex-start;
+  width: 100%;
   padding: 1.5rem;
   border-radius: 12px;
   background: var(--vp-c-bg-soft);
@@ -95,6 +104,7 @@ function navigate(link: string) {
   cursor: pointer;
   transition: all 0.3s ease;
   text-align: left;
+  appearance: none;
   /* Glass effect */
   background-color: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(5px);
@@ -130,13 +140,17 @@ function navigate(link: string) {
   margin-top: 2rem;
 }
 
-.view-all a {
+.view-all-link {
+  background: none;
+  border: none;
+  padding: 0;
   color: var(--vp-c-brand);
   font-weight: 600;
   text-decoration: none;
+  cursor: pointer;
 }
 
-.view-all a:hover {
+.view-all-link:hover {
   text-decoration: underline;
 }
 </style>

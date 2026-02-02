@@ -5,8 +5,11 @@ import { useSettings } from "../composables/useSettings";
 const { settings } = useSettings();
 
 const systemDark = ref(false);
+const reduceMotion = ref(false);
 let mediaQuery: MediaQueryList | null = null;
 let mediaListener: ((e: MediaQueryListEvent) => void) | null = null;
+let motionQuery: MediaQueryList | null = null;
+let motionListener: ((e: MediaQueryListEvent) => void) | null = null;
 const accent = ref("#3eaf7c");
 
 const isDark = computed(() => {
@@ -28,12 +31,21 @@ onMounted(() => {
     systemDark.value = e.matches;
   };
   mediaQuery.addEventListener("change", mediaListener);
+  motionQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
+  reduceMotion.value = motionQuery.matches;
+  motionListener = (e) => {
+    reduceMotion.value = e.matches;
+  };
+  motionQuery.addEventListener("change", motionListener);
   syncAccent();
 });
 
 onUnmounted(() => {
   if (!mediaQuery || !mediaListener) return;
   mediaQuery.removeEventListener("change", mediaListener);
+  if (motionQuery && motionListener) {
+    motionQuery.removeEventListener("change", motionListener);
+  }
 });
 
 watch(
@@ -103,6 +115,7 @@ const particlesOptions = computed(() => ({
 <template>
   <ClientOnly>
     <vue-particles
+      v-if="!reduceMotion"
       id="tsparticles"
       :key="`${isDark ? 'dark' : 'light'}-${accent}`"
       :options="particlesOptions"

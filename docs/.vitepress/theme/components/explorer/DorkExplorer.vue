@@ -502,14 +502,15 @@ watch(
             placeholder="Search dorks... (press / to focus)"
             aria-label="Search dorks"
           />
-          <span
+          <button
             v-if="searchQuery"
             class="search-clear"
+            type="button"
             @click="searchQuery = ''"
-            role="button"
             aria-label="Clear search"
-            >✕</span
           >
+            ✕
+          </button>
         </div>
 
         <div class="header-tools">
@@ -743,9 +744,15 @@ watch(
                 placeholder="Search packs..."
                 aria-label="Filter packs"
               />
-              <span v-if="packSearchQuery" class="search-clear-small" @click="packSearchQuery = ''"
-                >✕</span
+              <button
+                v-if="packSearchQuery"
+                class="search-clear-small"
+                type="button"
+                @click="packSearchQuery = ''"
+                aria-label="Clear pack search"
               >
+                ✕
+              </button>
             </div>
 
             <div class="filter-list" role="listbox" aria-label="Available packs">
@@ -868,12 +875,15 @@ watch(
                 placeholder="Search categories..."
                 aria-label="Filter categories"
               />
-              <span
+              <button
                 v-if="categorySearchQuery"
                 class="search-clear-small"
+                type="button"
                 @click="categorySearchQuery = ''"
-                >✕</span
+                aria-label="Clear category search"
               >
+                ✕
+              </button>
             </div>
 
             <div class="filter-chips" role="listbox" aria-label="Available categories">
@@ -1121,6 +1131,7 @@ watch(
   font-size: 18px;
   background: none;
   border: none;
+  padding: 0;
 }
 
 .search-clear:hover {
@@ -1444,6 +1455,7 @@ watch(
   font-size: 14px;
   background: none;
   border: none;
+  padding: 0;
 }
 
 .filter-list {

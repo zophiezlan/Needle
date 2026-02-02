@@ -282,18 +282,24 @@ onUnmounted(() => {
           </div>
           <div v-else class="history-list">
             <div v-for="item in history" :key="item.id" class="history-item">
-              <div class="history-main" @click="loadFromHistoryItem(item.query)">
+              <button
+                class="history-main"
+                type="button"
+                @click="loadFromHistoryItem(item.query)"
+                :aria-label="`Load query from ${formatDate(item.timestamp)}`"
+              >
                 <div class="history-label-row">
                   <span v-if="item.label" class="history-label">{{ item.label }}</span>
                   <span class="history-time">{{ formatDate(item.timestamp) }}</span>
                 </div>
                 <code class="history-query">{{ truncateQuery(item.query) }}</code>
-              </div>
+              </button>
               <div class="history-actions">
                 <button
                   class="history-action"
                   @click.stop="startEditLabel(item.id, item.label)"
                   title="Add label"
+                  aria-label="Add label"
                 >
                   🏷️
                 </button>
@@ -301,6 +307,7 @@ onUnmounted(() => {
                   class="history-action"
                   @click.stop="copyQuery(item.query)"
                   title="Copy query"
+                  aria-label="Copy query"
                 >
                   📋
                 </button>
@@ -308,6 +315,7 @@ onUnmounted(() => {
                   class="history-action danger"
                   @click.stop="removeFromHistory(item.id)"
                   title="Remove"
+                  aria-label="Remove from history"
                 >
                   🗑️
                 </button>
@@ -723,6 +731,11 @@ onUnmounted(() => {
 .history-main {
   cursor: pointer;
   margin-bottom: 8px;
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  padding: 0;
 }
 
 .history-label-row {

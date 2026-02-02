@@ -36,6 +36,8 @@
   --warning: #f59e0b;
   --danger: #ef4444;
   --info: #3b82f6;
+  --warning-subtle: color-mix(in srgb, var(--warning) 18%, transparent);
+  --warning-text: #fbbf24;
 
   /* Block Colors (Builder) */
   --block-site: #6366f1;
@@ -109,4 +111,6 @@
   --text-muted: #9ca3af;
   --border-subtle: #e5e7eb;
   --border-active: #d1d5db;
+  --warning-subtle: color-mix(in srgb, var(--warning) 12%, white);
+  --warning-text: #92400e;
 }

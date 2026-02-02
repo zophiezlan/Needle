@@ -15,7 +15,8 @@ const packCount = computed(() => dorkPacks.value.length);
 const lastUpdated = computed(() => {
   const ts = page.value.lastUpdated;
   if (!ts) return "";
-  const date = new Date(ts * 1000);
+  const isMs = ts > 1_000_000_000_000;
+  const date = new Date(isMs ? ts : ts * 1000);
   return new Intl.DateTimeFormat(undefined, {
     year: "numeric",
     month: "short",
@@ -24,14 +25,23 @@ const lastUpdated = computed(() => {
 });
 
 const buildDate = computed(() => {
-  if (typeof __BUILD_DATE__ === "undefined") return "";
-  const date = new Date(__BUILD_DATE__);
+  const metaDate =
+    typeof window !== "undefined" ? window.DORK_META?.buildDate || "" : "";
+  const rawDate = typeof __BUILD_DATE__ === "undefined" ? metaDate : __BUILD_DATE__;
+  if (!rawDate) return "";
+  const date = new Date(rawDate);
   if (Number.isNaN(date.getTime())) return "";
   return new Intl.DateTimeFormat(undefined, {
     year: "numeric",
     month: "short",
     day: "2-digit",
   }).format(date);
+});
+
+const appVersion = computed(() => {
+  if (typeof __APP_VERSION__ !== "undefined") return __APP_VERSION__;
+  if (typeof window !== "undefined" && window.DORK_META?.version) return window.DORK_META.version;
+  return "";
 });
 </script>
 
@@ -47,9 +57,7 @@ const buildDate = computed(() => {
     </div>
     <div class="meta-pill">
       <span class="meta-label">Version</span>
-      <span class="meta-value">{{
-        typeof __APP_VERSION__ === "undefined" ? "—" : __APP_VERSION__
-      }}</span>
+      <span class="meta-value">{{ appVersion || "—" }}</span>
     </div>
     <div class="meta-pill" v-if="lastUpdated || buildDate">
       <span class="meta-label">{{ lastUpdated ? "Updated" : "Built" }}</span>

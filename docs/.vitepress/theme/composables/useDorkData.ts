@@ -1,4 +1,5 @@
 import { ref, computed } from "vue";
+import { withBase } from "vitepress";
 import type {
   DorkPack,
   Dork,
@@ -13,6 +14,7 @@ const dorkPacks = ref<DorkPack[]>([]);
 const documentationDorks = ref<Dork[]>([]);
 const isLoaded = ref(false);
 const isLoading = ref(false);
+let dataScriptPromise: Promise<void> | null = null;
 
 // Extended window interface for type safety
 declare global {
@@ -39,12 +41,39 @@ export interface DorkFilters {
 }
 
 export function useDorkData() {
+  async function ensureDorkScriptLoaded() {
+    if (typeof window === "undefined") return;
+    if (window.DORK_DATA || window.DORK_DOCUMENTATION) return;
+    if (dataScriptPromise) {
+      await dataScriptPromise;
+      return;
+    }
+
+    dataScriptPromise = new Promise<void>((resolve, reject) => {
+      const existing = document.getElementById("dork-data-script");
+      if (existing) {
+        resolve();
+        return;
+      }
+
+      const script = document.createElement("script");
+      script.id = "dork-data-script";
+      script.src = withBase("/dork-explorer/dork-data.js");
+      script.onload = () => resolve();
+      script.onerror = () => reject(new Error("Failed to load dork data script"));
+      document.head.appendChild(script);
+    });
+
+    await dataScriptPromise;
+  }
+
   async function loadDorks() {
     if (isLoaded.value || isLoading.value) return;
     isLoading.value = true;
 
     try {
       if (typeof window !== "undefined") {
+        await ensureDorkScriptLoaded();
         // Load pack data
         if (window.DORK_DATA) {
           dorkPacks.value = window.DORK_DATA;

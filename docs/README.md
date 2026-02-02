@@ -36,7 +36,7 @@
 | 🌏 **Rural/Remote**               | [Rural & Remote Pack](dork-packs/rural-remote.md)                                                                                                  |
 | 🏕️ **Festival/Event Health**      | [Festivals Pack](dork-packs/festivals.md) → [Drug Checking](dork-packs/drug-checking.md)                                                           |
 | 🏥 **Clinician/Service Provider** | [Quick Start](01-quick-start.md) → [Drug Alerts](dork-packs/drug-alerts.md) → [Service Directories](dork-packs/service-directories.md)             |
-| � **Peer Worker**                 | [Peer Workflow](workflows/peer-centered.md) → [Peer Workforce Pack](dork-packs/peer-workforce.md) → [Peer Knowledge](dork-packs/peer-knowledge.md) |
+| 👥 **Peer Worker**                | [Peer Workflow](workflows/peer-centered.md) → [Peer Workforce Pack](dork-packs/peer-workforce.md) → [Peer Knowledge](dork-packs/peer-knowledge.md) |
 | 📋 **Policy/Advocacy**            | [Policy Pack](dork-packs/policy-advocacy.md) → [Verification Workflow](workflows/verification.md)                                                  |
 | 🔬 **Researcher**                 | [Research Workflow](workflows/research-workflow.md) → [Research Pack](dork-packs/research.md) → [Data & Statistics](dork-packs/data-statistics.md) |
 | 🖤💛❤️ **First Nations Focus**    | [First Nations Pack](dork-packs/first-nations.md)                                                                                                  |

@@ -104,6 +104,7 @@ function goToStep(index: number) {
 
 function handleAction() {
   if (currentStepData.value.link) {
+    completeTutorial();
     window.location.href = currentStepData.value.link;
   }
 }
