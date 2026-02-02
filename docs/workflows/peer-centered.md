@@ -64,7 +64,7 @@ Before using any resource, ask:
 Watch out for documents that:
 
 - Talk **about** people who use drugs without peer authorship
-- Research done **on** communities without **with** communities
+- Research done **on** communities **without** communities
 - Policy developed **for** peers without peer input
 - Use stigmatising language without critique
 - Don't acknowledge peer expertise
