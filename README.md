@@ -1,12 +1,12 @@
 <!-- markdownlint-disable MD041 -->
 <div align="center">
 
-# Google Dorking Guide for AOD Harm-Reduction in Australia
+# Needle
 
-**A comprehensive search guide for the AOD & harm reduction workforce.**
+**A search discovery platform for the AOD & harm reduction workforce.**
 
-[![Version](https://img.shields.io/github/package-json/v/zophiezlan/harm-reduction-google-dork-guide?color=2563eb)](CHANGELOG.md)
-[![Updated](https://img.shields.io/github/last-commit/zophiezlan/harm-reduction-google-dork-guide?color=16a34a)](CHANGELOG.md)
+[![Version](https://img.shields.io/github/package-json/v/zophiezlan/Needle?color=2563eb)](CHANGELOG.md)
+[![Updated](https://img.shields.io/github/last-commit/zophiezlan/Needle?color=16a34a)](CHANGELOG.md)
 [![License](https://img.shields.io/badge/license-Share%20Freely-orange.svg)](#license--attribution)
 
 </div>
@@ -184,7 +184,7 @@ Ready-to-use search queries organized by harm reduction task:
 
 ## 🎯 Why This Guide Exists
 
-Google dorking (advanced search operators) helps AOD workers cut through noise and find the _actual
+Dorking (advanced search operators) helps AOD workers cut through noise and find the _actual
 document_, _original dataset_, or _current guidance_—especially when things are buried in PDFs,
 hidden in "publications" directories, or published without strong SEO.
 

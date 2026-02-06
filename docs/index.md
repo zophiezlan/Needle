@@ -1,9 +1,9 @@
 ---
 layout: home
 hero:
-  name: Harm Reduction Google Dork Guide
-  text: A professional, interactive search and discovery platform
-  tagline: Built for peer workers, clinicians, researchers, advocates, and anyone reducing harm.
+  name: Needle
+  text: Find what matters in the haystack
+  tagline: A search discovery platform for peer workers, clinicians, researchers, advocates, and anyone reducing harm.
 features:
   - title: Dork Explorer Pro
     details: Search and filter <DorkCount /> dorks with instant copy, presets, and smart grouping.

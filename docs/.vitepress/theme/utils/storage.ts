@@ -1,4 +1,4 @@
-const STORAGE_PREFIX = "hr-dork-";
+const STORAGE_PREFIX = "needle-";
 
 export type Validator<T> = (value: unknown) => value is T;
 

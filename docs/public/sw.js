@@ -1,5 +1,5 @@
-// Harm Reduction Dork Guide Service Worker
-const CACHE_NAME = "harm-reduction-dork-guide-v1";
+// Needle Service Worker
+const CACHE_NAME = "needle-v1";
 const BASE_URL = new URL(self.registration.scope).pathname;
 
 function withBase(path) {

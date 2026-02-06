@@ -2,7 +2,7 @@
 
 ## Our Commitment
 
-The Harm Reduction Google Dork Guide is a community resource built on harm reduction principles. We
+Needle is a community resource built on harm reduction principles. We
 are committed to providing a welcoming, respectful, and supportive environment for all contributors,
 regardless of their background, identity, or experience with drug use.
 

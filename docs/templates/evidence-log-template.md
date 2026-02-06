@@ -136,4 +136,4 @@ site:emcdda.europa.eu OR site:drugschecking.ca "drug checking" filetype:pdf
 
 ---
 
-_Template from the [Harm Reduction Dorking Guide](/README)_
+_Template from [Needle](/README)_

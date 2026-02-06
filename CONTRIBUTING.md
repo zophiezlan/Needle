@@ -1,4 +1,4 @@
-# Contributing to the Harm Reduction Google Dork Guide
+# Contributing to Needle
 
 Thank you for your interest in improving this resource! Contributions from the harm reduction
 community help keep this guide relevant, accurate, and useful.

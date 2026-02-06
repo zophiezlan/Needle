@@ -1,6 +1,6 @@
 # Security & Responsible Use Guidelines
 
-This document outlines ethical guidelines for using Google dorks in harm reduction work. These are
+This document outlines ethical guidelines for using dorks (advanced search operators) in harm reduction work. These are
 not just suggestions—they are foundational principles that protect individuals, communities, and the
 integrity of harm reduction practice.
 
@@ -21,7 +21,7 @@ The fundamental principle of harm reduction applies to information searching:
 
 ### 2. Public Interest, Not Personal Interest
 
-Google dorking should serve legitimate harm reduction purposes:
+Dorking should serve legitimate harm reduction purposes:
 
 | Appropriate Uses                 | Inappropriate Uses                          |
 | :------------------------------- | :------------------------------------------ |

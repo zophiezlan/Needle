@@ -1,9 +1,9 @@
 <!-- markdownlint-disable MD041 -->
 <div align="center">
 
-# Google Dorking Guide for AOD Harm-Reduction in Australia
+# Needle
 
-**A comprehensive search guide for the AOD & harm reduction workforce.**
+**A search discovery platform for the AOD & harm reduction workforce.**
 
 <SiteMetaStrip />
 [![License](https://img.shields.io/badge/license-Share%20Freely-orange.svg)](#license--attribution)
@@ -182,7 +182,7 @@ Ready-to-use search queries organized by harm reduction task:
 
 ## 🎯 Why This Guide Exists
 
-Google dorking (advanced search operators) helps AOD workers cut through noise and find the _actual
+Dorking (advanced search operators) helps AOD workers cut through noise and find the _actual
 document_, _original dataset_, or _current guidance_—especially when things are buried in PDFs,
 hidden in "publications" directories, or published without strong SEO.
 
@@ -277,13 +277,13 @@ use. **Peer knowledge is expert knowledge.**
 > may change.
 
 - **Found a dork that no longer works?**
-  [Report it](https://github.com/zophiezlan/harm-reduction-google-dork-guide/issues/new?template=bug_report.md)
+  [Report it](https://github.com/zophiezlan/Needle/issues/new?template=bug_report.md)
 - **Discovered a useful new pattern?**
-  [Contribute back](https://github.com/zophiezlan/harm-reduction-google-dork-guide/blob/main/CONTRIBUTING.md)
+  [Contribute back](https://github.com/zophiezlan/Needle/blob/main/CONTRIBUTING.md)
 - **Questions about ethics?** See
-  [Security Guidelines](https://github.com/zophiezlan/harm-reduction-google-dork-guide/blob/main/SECURITY.md)
+  [Security Guidelines](https://github.com/zophiezlan/Needle/blob/main/SECURITY.md)
 - **Community standards:**
-  [Code of Conduct](https://github.com/zophiezlan/harm-reduction-google-dork-guide/blob/main/CODE_OF_CONDUCT.md)
+  [Code of Conduct](https://github.com/zophiezlan/Needle/blob/main/CODE_OF_CONDUCT.md)
 
 ---
 
