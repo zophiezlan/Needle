@@ -1,11 +1,11 @@
 /**
- * Service Worker for Harm Reduction Google Dork Guide
+ * Service Worker for Needle
  * Provides offline support for the application
  */
 
-const CACHE_NAME = "hr-dork-guide-v1";
-const STATIC_CACHE = "hr-dork-static-v1";
-const DATA_CACHE = "hr-dork-data-v1";
+const CACHE_NAME = "needle-guide-v1";
+const STATIC_CACHE = "needle-static-v1";
+const DATA_CACHE = "needle-data-v1";
 
 // Core assets to cache on install
 const PRECACHE_ASSETS = [
@@ -36,7 +36,7 @@ self.addEventListener("activate", (event) => {
       return Promise.all(
         cacheNames
           .filter((name) => {
-            return name.startsWith("hr-dork-") && name !== STATIC_CACHE && name !== DATA_CACHE;
+            return name.startsWith("needle-") && name !== STATIC_CACHE && name !== DATA_CACHE;
           })
           .map((name) => {
             console.log("[SW] Deleting old cache:", name);
@@ -120,7 +120,7 @@ async function networkFirst(request, cacheName) {
         `<!DOCTYPE html>
         <html>
         <head>
-          <title>Offline - Dork Guide</title>
+          <title>Offline - Needle</title>
           <style>
             body { font-family: system-ui; text-align: center; padding: 40px; }
             h1 { color: #10b981; }
@@ -128,7 +128,7 @@ async function networkFirst(request, cacheName) {
         </head>
         <body>
           <h1>You're Offline</h1>
-          <p>The Harm Reduction Dork Guide is not available offline for this page.</p>
+          <p>Needle is not available offline for this page.</p>
           <p>Please check your internet connection and try again.</p>
         </body>
         </html>`,

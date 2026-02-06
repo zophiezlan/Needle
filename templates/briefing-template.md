@@ -83,7 +83,7 @@
 
 ---
 
-_Prepared using the [Harm Reduction Dorking Guide](../README.md)_
+_Prepared using [Needle](../README.md)_
 
 ---
 

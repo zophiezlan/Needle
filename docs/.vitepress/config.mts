@@ -15,8 +15,8 @@ const base = rawBase.startsWith("/") ? rawBase : `/${rawBase}`;
 const normalizedBase = base.endsWith("/") ? base : `${base}/`;
 
 export default defineConfig({
-  title: "Harm Reduction Google Dork Guide",
-  description: "Advanced search operators, workflows, and dork packs for harm reduction work.",
+  title: "Needle",
+  description: "Search discovery platform for harm reduction professionals.",
   base: normalizedBase,
   cleanUrls: true,
   lastUpdated: true,
@@ -27,7 +27,7 @@ export default defineConfig({
     ["meta", { name: "theme-color", content: "#10b981" }],
     ["meta", { name: "apple-mobile-web-app-capable", content: "yes" }],
     ["meta", { name: "apple-mobile-web-app-status-bar-style", content: "black-translucent" }],
-    ["meta", { name: "apple-mobile-web-app-title", content: "Dork Guide" }],
+    ["meta", { name: "apple-mobile-web-app-title", content: "Needle" }],
     ["link", { rel: "apple-touch-icon", href: `${normalizedBase}icons/icon-192.png` }],
     ["meta", { name: "app-base", content: normalizedBase }],
     // SEO
@@ -36,16 +36,16 @@ export default defineConfig({
       "meta",
       {
         name: "keywords",
-        content: "harm reduction, google dorks, advanced search, AOD, drug policy, peer support",
+        content: "harm reduction, dorks, advanced search, AOD, drug policy, peer support, needle",
       },
     ],
     ["meta", { property: "og:type", content: "website" }],
-    ["meta", { property: "og:title", content: "Harm Reduction Google Dork Guide" }],
+    ["meta", { property: "og:title", content: "Needle — Harm Reduction Search" }],
     [
       "meta",
       {
         property: "og:description",
-        content: "700+ pre-built search queries for harm reduction professionals",
+        content: "Search discovery platform with 700+ pre-built queries for harm reduction professionals",
       },
     ],
     ["meta", { property: "og:locale", content: "en_AU" }],
@@ -131,7 +131,7 @@ export default defineConfig({
     socialLinks: [
       {
         icon: "github",
-        link: "https://github.com/zophiezlan/harm-reduction-google-dork-guide",
+        link: "https://github.com/zophiezlan/Needle",
       },
     ],
     search: {

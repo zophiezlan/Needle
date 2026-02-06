@@ -107,7 +107,7 @@ javascript: void (location.href =
 
 ## 📂 Organising Bookmarklets
 
-Create a bookmark folder called "Harm Reduction Dorks" with sub-folders:
+Create a bookmark folder called "Needle Dorks" with sub-folders:
 
 - Alerts
 - Research

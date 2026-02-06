@@ -1,7 +1,7 @@
 {
-  "name": "Harm Reduction Dork Guide",
-  "short_name": "Dork Guide",
-  "description": "Advanced search operators for harm reduction professionals, peer workers, clinicians, researchers, and advocates.",
+  "name": "Needle",
+  "short_name": "Needle",
+  "description": "Search discovery platform for harm reduction professionals, peer workers, clinicians, researchers, and advocates.",
   "start_url": "./",
   "display": "standalone",
   "background_color": "#0a0a0a",

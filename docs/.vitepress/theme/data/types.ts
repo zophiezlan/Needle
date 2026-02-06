@@ -1,6 +1,6 @@
 // =============================================================================
 // DORK DATA TYPES
-// Comprehensive type definitions for the harm reduction dork system
+// Comprehensive type definitions for the Needle dork system
 // =============================================================================
 
 // -----------------------------------------------------------------------------
@@ -47,7 +47,7 @@ export type DomainCategory =
   | "user-hosted"
   | "any";
 
-/** Google search operators */
+/** Search operators */
 export type DorkOperator =
   | "site"
   | "filetype"
@@ -99,7 +99,7 @@ export interface Dork {
   /** Category within the pack (e.g., "Basic Queries", "Advanced Queries") */
   category: string;
 
-  /** The actual Google dork query */
+  /** The actual dork query */
   query: string;
 
   /** Explanation of why/how the dork works */

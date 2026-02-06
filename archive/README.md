@@ -1,6 +1,6 @@
 # Archive
 
-This directory contains historical versions and source materials for the Harm Reduction Google Dork Guide.
+This directory contains historical versions and source materials for Needle (formerly Harm Reduction Google Dork Guide).
 
 ---
 

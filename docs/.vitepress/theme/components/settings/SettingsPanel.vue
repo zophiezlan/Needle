@@ -27,7 +27,7 @@ function exportData() {
   const url = URL.createObjectURL(blob);
   const a = document.createElement("a");
   a.href = url;
-  a.download = `harm-reduction-dork-guide-backup-${new Date().toISOString().split("T")[0]}.json`;
+  a.download = `needle-backup-${new Date().toISOString().split("T")[0]}.json`;
   a.click();
   URL.revokeObjectURL(url);
   success("Data exported successfully");

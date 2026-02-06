@@ -21,7 +21,7 @@ describe("storage utilities", () => {
 
     it("returns stored value when item exists and is valid", () => {
       const stored = { theme: { color: "green", mode: "light" } };
-      localStorage.setItem("hr-dork-test", JSON.stringify(stored));
+      localStorage.setItem("needle-test", JSON.stringify(stored));
 
       const defaultValue = { theme: { color: "blue", mode: "dark" } };
       const result = getStorageItem("test", defaultValue);
@@ -31,7 +31,7 @@ describe("storage utilities", () => {
     it("merges stored value with defaults for schema migration", () => {
       // Stored value is missing a new property
       const stored = { theme: { color: "green" } };
-      localStorage.setItem("hr-dork-test", JSON.stringify(stored));
+      localStorage.setItem("needle-test", JSON.stringify(stored));
 
       const defaultValue = { theme: { color: "blue", mode: "dark" }, newProp: true };
       const result = getStorageItem("test", defaultValue);
@@ -42,21 +42,21 @@ describe("storage utilities", () => {
     });
 
     it("returns default value for invalid JSON", () => {
-      localStorage.setItem("hr-dork-test", "not valid json");
+      localStorage.setItem("needle-test", "not valid json");
       const defaultValue = { theme: { color: "blue" } };
       const result = getStorageItem("test", defaultValue);
       expect(result).toEqual(defaultValue);
     });
 
     it("returns default value for wrong type (array instead of object)", () => {
-      localStorage.setItem("hr-dork-test", JSON.stringify([1, 2, 3]));
+      localStorage.setItem("needle-test", JSON.stringify([1, 2, 3]));
       const defaultValue = { theme: { color: "blue" } };
       const result = getStorageItem("test", defaultValue);
       expect(result).toEqual(defaultValue);
     });
 
     it("returns default value for wrong nested type", () => {
-      localStorage.setItem("hr-dork-test", JSON.stringify({ theme: "not an object" }));
+      localStorage.setItem("needle-test", JSON.stringify({ theme: "not an object" }));
       const defaultValue = { theme: { color: "blue" } };
       const result = getStorageItem("test", defaultValue);
       expect(result).toEqual(defaultValue);
@@ -71,19 +71,19 @@ describe("storage utilities", () => {
 
     it("returns stored array when valid", () => {
       const stored = [{ id: "1" }, { id: "2" }];
-      localStorage.setItem("hr-dork-test", JSON.stringify(stored));
+      localStorage.setItem("needle-test", JSON.stringify(stored));
       const result = getStorageItemSimple("test", []);
       expect(result).toEqual(stored);
     });
 
     it("returns default for wrong type", () => {
-      localStorage.setItem("hr-dork-test", JSON.stringify({ not: "array" }));
+      localStorage.setItem("needle-test", JSON.stringify({ not: "array" }));
       const result = getStorageItemSimple("test", []);
       expect(result).toEqual([]);
     });
 
     it("returns stored string", () => {
-      localStorage.setItem("hr-dork-test", JSON.stringify("stored string"));
+      localStorage.setItem("needle-test", JSON.stringify("stored string"));
       const result = getStorageItemSimple("test", "default");
       expect(result).toBe("stored string");
     });
@@ -92,7 +92,7 @@ describe("storage utilities", () => {
   describe("setStorageItem", () => {
     it("stores value with prefix and returns success", () => {
       const result = setStorageItem("test", { value: 123 });
-      const stored = localStorage.getItem("hr-dork-test");
+      const stored = localStorage.getItem("needle-test");
       expect(stored).toBe(JSON.stringify({ value: 123 }));
       expect(result.success).toBe(true);
     });
@@ -147,9 +147,9 @@ describe("storage utilities", () => {
 
   describe("removeStorageItem", () => {
     it("removes item with prefix", () => {
-      localStorage.setItem("hr-dork-test", "value");
+      localStorage.setItem("needle-test", "value");
       removeStorageItem("test");
-      expect(localStorage.getItem("hr-dork-test")).toBeNull();
+      expect(localStorage.getItem("needle-test")).toBeNull();
     });
   });
 });

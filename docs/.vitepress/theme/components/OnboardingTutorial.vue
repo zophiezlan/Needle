@@ -17,9 +17,9 @@ interface TutorialStep {
 
 const steps: TutorialStep[] = [
   {
-    title: "Welcome to the Harm Reduction Dork Guide",
+    title: "Welcome to Needle",
     description:
-      "This guide helps you find harm reduction resources, research, and evidence using advanced Google search operators (dorks). Whether you're a peer worker, clinician, researcher, or advocate, we've got you covered.",
+      "Needle helps you find harm reduction resources, research, and evidence using advanced search operators (dorks). Whether you're a peer worker, clinician, researcher, or advocate, we've got you covered.",
     icon: "👋",
   },
   {
