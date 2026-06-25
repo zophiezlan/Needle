@@ -45,7 +45,8 @@ export default defineConfig({
       "meta",
       {
         property: "og:description",
-        content: "Search discovery platform with 700+ pre-built queries for harm reduction professionals",
+        content:
+          "Search discovery platform with 700+ pre-built queries for harm reduction professionals",
       },
     ],
     ["meta", { property: "og:locale", content: "en_AU" }],
@@ -124,6 +125,9 @@ export default defineConfig({
             { text: "Google Alerts", link: "/tools/google-alerts" },
             { text: "OSINT Tools", link: "/tools/osint" },
             { text: "Cheat Sheet", link: "/resources/cheat-sheet" },
+            { text: "Source Intelligence", link: "/resources/source-intelligence" },
+            { text: "Organisations Directory", link: "/resources/organizations" },
+            { text: "Australian OSINT", link: "/resources/australian-osint" },
           ],
         },
       ],
