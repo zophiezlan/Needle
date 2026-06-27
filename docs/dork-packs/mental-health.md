@@ -16,7 +16,7 @@ Point's **Hamilton Centre** and Victoria's **VDDI** (with NEXUS at St Vincent's)
 Blue**, **Orygen**) all carry AOD-relevant material.
 
 > **Entity reference:** every guideline and service below is catalogued in
-> [Source Intelligence → Populations & Intersections](../resources/source-intelligence.md#-populations--intersections).
+> [Source Intelligence → Populations & Intersections](../resources/source-intelligence.md#populations-intersections).
 
 ---
 
@@ -224,9 +224,9 @@ The lived-experience of co-occurring conditions is its own expertise.
 ## 🔗 Related Resources
 
 - **Source Intelligence:**
-  [Populations & Intersections](../resources/source-intelligence.md#-populations--intersections) —
-  the guidelines and services every dork above is built on
-- **Synonym Block:** [Mental Health Terms](../05-synonym-blocks.md#-mental-health-terms)
+  [Populations & Intersections](../resources/source-intelligence.md#populations-intersections) — the
+  guidelines and services every dork above is built on
+- **Synonym Block:** [Mental Health Terms](../05-synonym-blocks.md#mental-health-terms)
 - **Related Packs:** [Housing & Homelessness](housing-homelessness.md), [Youth](youth.md),
   [Research](research.md)
 - **Key Sources:** [Comorbidity Guidelines](https://comorbidityguidelines.org.au),

@@ -16,7 +16,7 @@ audio. Platform currency matters here as much as in temporal search: **Google Po
 and **Stitcher** (shut 2023) are dead — use Apple Podcasts and Spotify's `open.spotify.com`.
 
 > **Entity reference:** every platform and named show below is catalogued in
-> [Source Intelligence → Discovery Platforms & File Types](../resources/source-intelligence.md#-discovery-platforms--file-types).
+> [Source Intelligence → Discovery Platforms & File Types](../resources/source-intelligence.md#discovery-platforms-file-types).
 
 ---
 
@@ -238,7 +238,7 @@ site:*.org.au ("youtube.com/watch" OR "youtube.com/embed" OR "player.vimeo.com")
 ## 🔗 Related Resources
 
 - **Source Intelligence:**
-  [Discovery Platforms & File Types](../resources/source-intelligence.md#-discovery-platforms--file-types)
+  [Discovery Platforms & File Types](../resources/source-intelligence.md#discovery-platforms-file-types)
   — the live platforms and named shows every dork above is built on
 - **Related Packs:** [Peer Knowledge](peer-knowledge.md),
   [Safer Use Education](safer-use-education.md), [User-Hosted Domains](user-hosted-domains.md)

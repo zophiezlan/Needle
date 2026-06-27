@@ -20,7 +20,7 @@ Peers are often first: **NUAA** and community forums relay batch warnings before
 updates. Lead with them, then cross-check against the official systems.
 
 > **Entity reference:** every alert system, term, and domain below is catalogued in
-> [Source Intelligence → Drug Alerts & EWS](../resources/source-intelligence.md#-drug-alerts--early-warning-systems-ews).
+> [Source Intelligence → Drug Alerts & EWS](../resources/source-intelligence.md#drug-alerts-early-warning-systems-ews).
 
 ---
 
@@ -284,9 +284,9 @@ site:.com.au (news OR herald OR times OR daily) ("bad batch" OR "drug warning" O
 ## 🔗 Related Resources
 
 - **Source Intelligence:**
-  [Drug Alerts & EWS entities](../resources/source-intelligence.md#-drug-alerts--early-warning-systems-ews)
+  [Drug Alerts & EWS entities](../resources/source-intelligence.md#drug-alerts-early-warning-systems-ews)
   — the systems, terms, and domains every dork above is built on
-- **Synonym Block:** [Alert Terms](../05-synonym-blocks.md#-alert-terms)
+- **Synonym Block:** [Alert Terms](../05-synonym-blocks.md#alert-terms)
 - **Related Packs:** [Novel Substances](novel-substances.md), [Drug Checking](drug-checking.md),
   [Coroners & Deaths](coroners-deaths.md)
 - **Tool:** [Google Alerts](../tools/google-alerts.md)

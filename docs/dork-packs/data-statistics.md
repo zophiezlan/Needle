@@ -18,7 +18,7 @@ deaths"), aggregated by **Penington Institute**. Raw data lives on **data.gov.au
 Data Archive**, and **ARDC/Research Data Australia**.
 
 > **Entity reference:** every dataset, code, and repository below is catalogued in
-> [Source Intelligence → Datasets & Data Repositories](../resources/source-intelligence.md#-datasets-surveillance-feeds--data-repositories).
+> [Source Intelligence → Datasets & Data Repositories](../resources/source-intelligence.md#datasets-surveillance-feeds-data-repositories).
 
 ---
 
@@ -240,7 +240,7 @@ site:aihw.gov.au ("Aboriginal and Torres Strait Islander" OR Indigenous) (alcoho
 ## 🔗 Related Resources
 
 - **Source Intelligence:**
-  [Datasets & Data Repositories entities](../resources/source-intelligence.md#-datasets-surveillance-feeds--data-repositories)
+  [Datasets & Data Repositories entities](../resources/source-intelligence.md#datasets-surveillance-feeds-data-repositories)
   — the collections, codes, and repositories every dork above is built on
 - **Related Packs:** [Research](research.md), [Coroners & Deaths](coroners-deaths.md),
   [Novel Substances](novel-substances.md)

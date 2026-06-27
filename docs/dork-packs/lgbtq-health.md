@@ -22,7 +22,7 @@
 > men".
 >
 > **Entity reference:** every org and resource below is catalogued in
-> [Source Intelligence → LGBTQ+ Health (Peer & Community)](../resources/source-intelligence.md#-lgbtq-health-peer--community).
+> [Source Intelligence → LGBTQ+ Health (Peer & Community)](../resources/source-intelligence.md#lgbtq-health-peer-community).
 
 ---
 
@@ -197,7 +197,7 @@ site:*.edu.au ("LGBTQ" OR "gay" OR "bi+" OR "MSM" OR "gender diverse") ("drug us
 ## 🔗 Related Resources
 
 - **Source Intelligence:**
-  [LGBTQ+ Health (Peer & Community)](../resources/source-intelligence.md#-lgbtq-health-peer--community)
+  [LGBTQ+ Health (Peer & Community)](../resources/source-intelligence.md#lgbtq-health-peer-community)
   — the orgs and resources every dork above is built on
 - **Related Packs:** [Sex Worker Health](sex-worker-health.md), [Mental Health](mental-health.md),
   [Festivals](festivals.md)

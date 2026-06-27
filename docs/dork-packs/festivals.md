@@ -17,7 +17,7 @@ NSW **Inquest into the death of six patrons of NSW music festivals**, the **Musi
 (several festivals are defunct or renamed).
 
 > **Entity reference:** every program, trial, and finding below is catalogued in
-> [Source Intelligence → Festivals & Events](../resources/source-intelligence.md#-festivals--events).
+> [Source Intelligence → Festivals & Events](../resources/source-intelligence.md#festivals-events).
 >
 > **Sensitivity:** this pack touches festival deaths and coronial findings. Handle results — and
 > anything naming an individual — with care and respect.
@@ -250,9 +250,9 @@ site:wearetheloop.org ("drug checking" OR "TEST & KNOW" OR festival)
 ## 🔗 Related Resources
 
 - **Source Intelligence:**
-  [Festivals & Events](../resources/source-intelligence.md#-festivals--events) — the programs,
-  trials, and findings every dork above is built on
-- **Synonym Block:** [Festival/Event Terms](../05-synonym-blocks.md#-festivalevent-terms)
+  [Festivals & Events](../resources/source-intelligence.md#festivals-events) — the programs, trials,
+  and findings every dork above is built on
+- **Synonym Block:** [Festival/Event Terms](../05-synonym-blocks.md#festivalevent-terms)
 - **Related Packs:** [Drug Checking](drug-checking.md), [Drug Alerts](drug-alerts.md),
   [Coroners & Deaths](coroners-deaths.md), [Peer Workforce](peer-workforce.md)
 - **Organisations:** [DanceWize (HRVic)](https://hrvic.org.au),

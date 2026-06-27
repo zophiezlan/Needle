@@ -19,7 +19,7 @@ from here, make it the one that finds the **CanTEST evaluation** (below): it's t
 piece of Australian drug-checking evidence.
 
 > **Entity reference:** every named service, domain, and report title below is catalogued in
-> [Source Intelligence → Drug Checking](../resources/source-intelligence.md#-drug-checking--pill-testing).
+> [Source Intelligence → Drug Checking](../resources/source-intelligence.md#drug-checking-pill-testing).
 
 ---
 
@@ -64,8 +64,9 @@ site:cantest.com.au (results OR alert OR "drug checking")
 (site:quihn.org OR site:theloop.org.au) "CheQpoint"
 ```
 
-> Note: CheQpoint was paused under a change in Queensland policy. Its published material and media
-> remain indexed — frame results as the record of QLD's fixed-site trial, not a current "go here".
+> Note: CheQpoint closed in April 2025 under a change in Queensland policy. Its published material
+> and media remain indexed — frame results as the record of QLD's fixed-site trial, not a current
+> "go here".
 
 ### Pill Testing Australia
 
@@ -176,10 +177,10 @@ FTIR ("drug checking" OR "pill testing") (accuracy OR limitation OR "false negat
 Australia is small; the international services are where decades of method, data, and operating
 knowledge live. These are real, named services — not generic "overseas examples".
 
-### WEDINOS (Wales) — Sample Data & Philtre
+### WEDINOS (Wales) — Sample Data & PHILTRE
 
 ```txt
-(site:wedinos.org OR site:wedinos.wales) (Philtre OR "sample results")
+(site:wedinos.wales OR site:wedinos.org) ("sample results" OR "WEDINOS") OR (site:publichealthwales.nhs.wales "PHILTRE")
 ```
 
 ### The Loop (UK)
@@ -291,9 +292,9 @@ site:aph.gov.au ("pill testing" OR "drug checking") (inquiry OR submission)
 ## 🔗 Related Resources
 
 - **Source Intelligence:**
-  [Drug Checking entities](../resources/source-intelligence.md#-drug-checking--pill-testing) — the
+  [Drug Checking entities](../resources/source-intelligence.md#drug-checking-pill-testing) — the
   named services, domains, and report titles every dork above is built on
-- **Synonym Block:** [Drug Checking Terms](../05-synonym-blocks.md#-drug-checking-terms)
+- **Synonym Block:** [Drug Checking Terms](../05-synonym-blocks.md#drug-checking-terms)
 - **Related Packs:** [Festivals](festivals.md), [Novel Substances](novel-substances.md),
   [Drug Alerts](drug-alerts.md)
 - **Key Services:** [CanTEST](https://cantest.com.au), [WEDINOS](https://wedinos.org),

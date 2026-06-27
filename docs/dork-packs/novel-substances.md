@@ -21,7 +21,7 @@ Australia (EDNA / EDNAV)**. Quote the compound, pair it with a program or an Aus
 you skip the generic noise.
 
 > **Entity reference:** every compound, program, and surveillance body below is catalogued in
-> [Source Intelligence → Novel Substances, NPS & Toxico-surveillance](../resources/source-intelligence.md#-novel-substances-nps--toxico-surveillance).
+> [Source Intelligence → Novel Substances, NPS & Toxico-surveillance](../resources/source-intelligence.md#novel-substances-nps-toxico-surveillance).
 
 ---
 
@@ -208,7 +208,7 @@ reach a coroner.
 ### Drug-Checking Detections
 
 ```txt
-(site:cantest.com.au OR site:health.act.gov.au OR site:wedinos.org) ("nitazene" OR "unexpected" OR "not as expected" OR alert)
+(site:cantest.com.au OR site:health.act.gov.au OR site:wedinos.wales) ("nitazene" OR "unexpected" OR "not as expected" OR alert)
 ```
 
 ---
@@ -273,9 +273,9 @@ site:drugsdata.org (results OR "lab tested") ("unexpected" OR nitazene OR cathin
 ## 🔗 Related Resources
 
 - **Source Intelligence:**
-  [Novel Substances, NPS & Toxico-surveillance entities](../resources/source-intelligence.md#-novel-substances-nps--toxico-surveillance)
+  [Novel Substances, NPS & Toxico-surveillance entities](../resources/source-intelligence.md#novel-substances-nps-toxico-surveillance)
   — the compounds, programs, and bodies every dork above is built on
-- **Synonym Block:** [Novel/Emerging Substances](../05-synonym-blocks.md#-novelemerging-substances)
+- **Synonym Block:** [Novel/Emerging Substances](../05-synonym-blocks.md#novelemerging-substances)
 - **Related Packs:** [Drug Alerts](drug-alerts.md), [Drug Checking](drug-checking.md),
   [Coroners & Deaths](coroners-deaths.md)
 - **Databases:** [Erowid](https://erowid.org), [PsychonautWiki](https://psychonautwiki.org),

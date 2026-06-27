@@ -21,7 +21,7 @@ Several domains recently moved — Portugal's agency is now **ICAD** (was SICAD)
 Quote the current names below.
 
 > **Entity reference:** every agency, service, and law below is catalogued in
-> [Source Intelligence → International Reference Bodies](../resources/source-intelligence.md#-international-reference-bodies-for-the-strong-international-layer).
+> [Source Intelligence → International Reference Bodies](../resources/source-intelligence.md#international-reference-bodies-for-the-strong-international-layer).
 
 ---
 
@@ -301,7 +301,7 @@ Australia ("international comparison" OR "compared to" OR "lessons from") ("harm
 ## 🔗 Related Resources
 
 - **Source Intelligence:**
-  [International Reference Bodies](../resources/source-intelligence.md#-international-reference-bodies-for-the-strong-international-layer)
+  [International Reference Bodies](../resources/source-intelligence.md#international-reference-bodies-for-the-strong-international-layer)
   — the agencies, services, and laws every dork above is built on
 - **Related Packs:** [Policy & Advocacy](policy-advocacy.md), [Drug Checking](drug-checking.md),
   [Supervised Consumption](supervised-consumption.md), [Research](research.md)

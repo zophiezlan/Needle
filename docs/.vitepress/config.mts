@@ -147,6 +147,21 @@ export default defineConfig({
     outline: [2, 3],
   },
   markdown: {
+    // Clean, emoji-free heading anchors (e.g. "## ⚡ Quick Start" -> #quick-start).
+    // Without this, VitePress retains the emoji in the id (#⚡-quick-start), which no
+    // cross-reference link targets — see the anchor convention note in the repo docs.
+    anchor: {
+      slugify: (str: string) =>
+        str
+          .replace(/\p{Extended_Pictographic}/gu, "") // strip emoji
+          .normalize("NFKD")
+          .replace(/[^\w\s-]/g, "") // strip accents, variation selectors, punctuation
+          .trim()
+          .toLowerCase()
+          .replace(/\s+/g, "-")
+          .replace(/-+/g, "-")
+          .replace(/^-+|-+$/g, ""),
+    },
     config: (md) => {
       md.use(markdownItGitHubAlerts);
     },

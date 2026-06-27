@@ -17,7 +17,7 @@ Elizabeth Street Common Ground). For people who use drugs, the street-based and 
 end is where housing and harm reduction meet.
 
 > **Entity reference:** every program, peak body, and dataset below is catalogued in
-> [Source Intelligence → Populations & Intersections](../resources/source-intelligence.md#-populations--intersections).
+> [Source Intelligence → Populations & Intersections](../resources/source-intelligence.md#populations-intersections).
 
 ---
 
@@ -208,9 +208,9 @@ site:ahuri.edu.au ("Final Report" OR "Research Paper") ("substance use" OR "drug
 ## 🔗 Related Resources
 
 - **Source Intelligence:**
-  [Populations & Intersections](../resources/source-intelligence.md#-populations--intersections) —
-  the programs, peaks, and datasets every dork above is built on
-- **Synonym Block:** [Social Determinants Terms](../05-synonym-blocks.md#-social-determinants-terms)
+  [Populations & Intersections](../resources/source-intelligence.md#populations-intersections) — the
+  programs, peaks, and datasets every dork above is built on
+- **Synonym Block:** [Social Determinants Terms](../05-synonym-blocks.md#social-determinants-terms)
 - **Related Packs:** [Mental Health](mental-health.md), [NSP](nsp.md),
   [Service Directories](service-directories.md)
 - **Key Sources:** [AHURI](https://ahuri.edu.au),

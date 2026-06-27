@@ -20,7 +20,7 @@ it — supervised dosing, **takeaway** access, and pharmacy **dispensing fees** 
 peers know better than any guideline.
 
 > **Entity reference:** every guideline, program, and brand below is catalogued in
-> [Source Intelligence → Opioid Agonist Treatment](../resources/source-intelligence.md#-opioid-agonist-treatment-oatost).
+> [Source Intelligence → Opioid Agonist Treatment](../resources/source-intelligence.md#opioid-agonist-treatment-oatost).
 
 ---
 
@@ -275,9 +275,9 @@ site:cochranelibrary.com ("opioid agonist" OR methadone OR buprenorphine OR "opi
 ## 🔗 Related Resources
 
 - **Source Intelligence:**
-  [Opioid Agonist Treatment entities](../resources/source-intelligence.md#-opioid-agonist-treatment-oatost)
+  [Opioid Agonist Treatment entities](../resources/source-intelligence.md#opioid-agonist-treatment-oatost)
   — the guidelines, programs, and brands every dork above is built on
-- **Synonym Block:** [Opioid Treatment Terms](../05-synonym-blocks.md#-opioid-treatment-terms)
+- **Synonym Block:** [Opioid Treatment Terms](../05-synonym-blocks.md#opioid-treatment-terms)
 - **Related Packs:** [Naloxone](naloxone.md), [Prisons & Justice](prisons-justice.md),
   [Research](research.md)
 - **Key Sources:** [NDARC](https://ndarc.med.unsw.edu.au), [OTEP](https://otep.org.au)

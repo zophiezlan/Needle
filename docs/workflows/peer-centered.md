@@ -229,7 +229,7 @@ Save important peer publications—they sometimes disappear from websites.
 
 - [Peer Workforce Pack](../dork-packs/peer-workforce.md)
 - [Peer Knowledge Pack](../dork-packs/peer-knowledge.md)
-- [Synonym Blocks: Peer Terms](../05-synonym-blocks.md#-peerlived-experience-terms)
+- [Synonym Blocks: Peer Terms](../05-synonym-blocks.md#peerlived-experience-terms)
 
 ---
 

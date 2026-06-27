@@ -17,7 +17,7 @@ School prevention runs on named programs from the **Matilda Centre** — **Posit
 Islander program **Strong & Deadly Futures**.
 
 > **Entity reference:** every service and program below is catalogued in
-> [Source Intelligence → Populations & Intersections](../resources/source-intelligence.md#-populations--intersections).
+> [Source Intelligence → Populations & Intersections](../resources/source-intelligence.md#populations-intersections).
 
 ---
 
@@ -192,9 +192,9 @@ site:ysas.org.au ("Embedded Youth Outreach Program" OR "Victorian Pill Testing S
 ## 🔗 Related Resources
 
 - **Source Intelligence:**
-  [Populations & Intersections](../resources/source-intelligence.md#-populations--intersections) —
-  the services and programs every dork above is built on
-- **Synonym Block:** [Youth Terms](../05-synonym-blocks.md#-youth-terms)
+  [Populations & Intersections](../resources/source-intelligence.md#populations-intersections) — the
+  services and programs every dork above is built on
+- **Synonym Block:** [Youth Terms](../05-synonym-blocks.md#youth-terms)
 - **Related Packs:** [Festivals](festivals.md), [Mental Health](mental-health.md),
   [Families & Carers](families-carers.md)
 - **Key Orgs:** [YSAS](https://ysas.org.au), [headspace](https://headspace.org.au),

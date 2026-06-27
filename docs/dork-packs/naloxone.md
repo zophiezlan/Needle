@@ -22,7 +22,7 @@ it the one that finds the program itself — or **Penington Institute's _Austral
 Report_**, the single most-cited overdose dataset in the country.
 
 > **Entity reference:** every program, product, and report below is catalogued in
-> [Source Intelligence → Overdose, Naloxone & THN](../resources/source-intelligence.md#-overdose-naloxone--take-home-naloxone-thn).
+> [Source Intelligence → Overdose, Naloxone & THN](../resources/source-intelligence.md#overdose-naloxone-take-home-naloxone-thn).
 
 ---
 
@@ -285,9 +285,9 @@ site:penington.org.au "Australia's Annual Overdose Report" (filetype:pdf OR data
 ## 🔗 Related Resources
 
 - **Source Intelligence:**
-  [Overdose, Naloxone & THN entities](../resources/source-intelligence.md#-overdose-naloxone--take-home-naloxone-thn)
+  [Overdose, Naloxone & THN entities](../resources/source-intelligence.md#overdose-naloxone-take-home-naloxone-thn)
   — the programs, products, and reports every dork above is built on
-- **Synonym Block:** [Naloxone Terms](../05-synonym-blocks.md#-naloxone-terms)
+- **Synonym Block:** [Naloxone Terms](../05-synonym-blocks.md#naloxone-terms)
 - **Related Packs:** [Coroners & Deaths](coroners-deaths.md),
   [Novel Substances](novel-substances.md), [Peer Workforce](peer-workforce.md)
 - **Key Sources:**

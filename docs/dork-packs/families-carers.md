@@ -19,7 +19,7 @@ Culture, Equity & Health (CEH)**.
 These services are peer-informed and lived-experience-led — lead with them.
 
 > **Entity reference:** every service and program below is catalogued in
-> [Source Intelligence → Populations & Intersections](../resources/source-intelligence.md#-populations--intersections).
+> [Source Intelligence → Populations & Intersections](../resources/source-intelligence.md#populations-intersections).
 
 ---
 
@@ -192,9 +192,9 @@ site:ceh.org.au ("Centre for Culture" ("Equity" OR "Ethnicity")) ("alcohol and o
 ## 🔗 Related Resources
 
 - **Source Intelligence:**
-  [Populations & Intersections](../resources/source-intelligence.md#-populations--intersections) —
-  the services and programs every dork above is built on
-- **Synonym Block:** [Family Terms](../05-synonym-blocks.md#-family-terms)
+  [Populations & Intersections](../resources/source-intelligence.md#populations-intersections) — the
+  services and programs every dork above is built on
+- **Synonym Block:** [Family Terms](../05-synonym-blocks.md#family-terms)
 - **Related Packs:** [Youth](youth.md), [Mental Health](mental-health.md),
   [Service Directories](service-directories.md)
 - **Key Orgs:** [Family Drug Support](https://fds.org.au), [SHARC](https://sharc.org.au),

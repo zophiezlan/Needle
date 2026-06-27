@@ -30,10 +30,10 @@ page. Directory mining (`inurl:/publications/`, `intitle:"index of"`) finds docu
 were never linked; the registers and archives give you a known target to mine.
 
 > **Entity reference:** the registers and archives these techniques target are catalogued in
-> [Source Intelligence → Discovery Platforms & File Types](../resources/source-intelligence.md#-discovery-platforms--file-types),
-> [→ Organisational Intelligence & Registers](../resources/source-intelligence.md#-organisational-intelligence--registers),
+> [Source Intelligence → Discovery Platforms & File Types](../resources/source-intelligence.md#discovery-platforms-file-types),
+> [→ Organisational Intelligence & Registers](../resources/source-intelligence.md#organisational-intelligence-registers),
 > and
-> [→ Web Archives & Temporal Search](../resources/source-intelligence.md#-web-archives--temporal-search).
+> [→ Web Archives & Temporal Search](../resources/source-intelligence.md#web-archives-temporal-search).
 
 ---
 
@@ -235,8 +235,8 @@ site:*.gov.au filetype:pdf (evaluation OR review OR "process evaluation" OR "out
 ## 🔗 Related Resources
 
 - **Source Intelligence:**
-  [Discovery Platforms & File Types](../resources/source-intelligence.md#-discovery-platforms--file-types),
-  [Organisational Intelligence & Registers](../resources/source-intelligence.md#-organisational-intelligence--registers)
+  [Discovery Platforms & File Types](../resources/source-intelligence.md#discovery-platforms-file-types),
+  [Organisational Intelligence & Registers](../resources/source-intelligence.md#organisational-intelligence-registers)
 - **Advanced Operators:** [Advanced Operators](../03-advanced-operators.md)
 - **Related Packs:** [Document Discovery](document-discovery.md),
   [Organizational Intelligence](organizational-intelligence.md),

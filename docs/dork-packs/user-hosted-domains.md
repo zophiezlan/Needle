@@ -16,7 +16,7 @@ set below and caught one dead host (**Glitch**, hosting ended July 2025) and a f
 peer/community platforms.
 
 > **Entity reference:** every platform below is catalogued in
-> [Source Intelligence → Discovery Platforms & File Types](../resources/source-intelligence.md#-discovery-platforms--file-types).
+> [Source Intelligence → Discovery Platforms & File Types](../resources/source-intelligence.md#discovery-platforms-file-types).
 
 ---
 
@@ -231,9 +231,9 @@ site:reddit.com OR site:quora.com OR site:padlet.com OR site:wakelet.com
 ## 🔗 Related Resources
 
 - **Source Intelligence:**
-  [Discovery Platforms & File Types](../resources/source-intelligence.md#-discovery-platforms--file-types)
+  [Discovery Platforms & File Types](../resources/source-intelligence.md#discovery-platforms-file-types)
   — the currency-checked platform list every dork above is built on
-- **Synonym Block:** [Platform Patterns](../05-synonym-blocks.md#-user-hosted-platform-patterns)
+- **Synonym Block:** [Platform Patterns](../05-synonym-blocks.md#user-hosted-platform-patterns)
 - **Related Packs:** [Forum & Community](forum-community.md), [Peer Knowledge](peer-knowledge.md),
   [Multimedia Discovery](multimedia-discovery.md)
 

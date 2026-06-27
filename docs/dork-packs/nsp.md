@@ -20,7 +20,7 @@ NSP Survey (ANSPS)** (a bio-behavioural serosurvey) and the **NSP National Minim
 kit is the **Fitpack**. Quote those and you skip the generic results.
 
 > **Entity reference:** every data series, model, and domain below is catalogued in
-> [Source Intelligence → Supervised Consumption & NSP](../resources/source-intelligence.md#-supervised-consumption--nsp).
+> [Source Intelligence → Supervised Consumption & NSP](../resources/source-intelligence.md#supervised-consumption-nsp).
 
 ---
 
@@ -232,9 +232,9 @@ site:cochranelibrary.com ("needle syringe" OR "needle exchange" OR "harm reducti
 ## 🔗 Related Resources
 
 - **Source Intelligence:**
-  [Supervised Consumption & NSP entities](../resources/source-intelligence.md#-supervised-consumption--nsp)
+  [Supervised Consumption & NSP entities](../resources/source-intelligence.md#supervised-consumption-nsp)
   — the data series, models, and domains every dork above is built on
-- **Synonym Block:** [NSP Terms](../05-synonym-blocks.md#-nsp-terms-needle-syringe-program)
+- **Synonym Block:** [NSP Terms](../05-synonym-blocks.md#nsp-terms-needle-syringe-program)
 - **Related Packs:** [Supervised Consumption](supervised-consumption.md),
   [Peer Workforce](peer-workforce.md), [Data & Statistics](data-statistics.md)
 - **Key Sources:** [Kirby Institute](https://kirby.unsw.edu.au), [NUAA](https://nuaa.org.au)

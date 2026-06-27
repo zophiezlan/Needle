@@ -2478,7 +2478,7 @@
           "title": "CheQpoint (Queensland)",
           "category": "Basic Queries",
           "query": "(site:quihn.org OR site:theloop.org.au) \"CheQpoint\"",
-          "explanation": "> Note: CheQpoint was paused under a change in Queensland policy. Its published material and media\n> remain indexed — frame results as the record of QLD's fixed-site trial, not a current \"go here\".",
+          "explanation": "> Note: CheQpoint closed in April 2025 under a change in Queensland policy. Its published material\n> and media remain indexed — frame results as the record of QLD's fixed-site trial, not a current\n> \"go here\".",
           "difficulty": "beginner",
           "sourceFile": "dork-packs/drug-checking.md",
           "sourceType": "dork-pack",
@@ -2505,7 +2505,7 @@
           "difficulty": "beginner",
           "sourceFile": "dork-packs/drug-checking.md",
           "sourceType": "dork-pack",
-          "sourceLine": 70,
+          "sourceLine": 71,
           "operators": [
             "site"
           ],
@@ -2529,7 +2529,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/drug-checking.md",
           "sourceType": "dork-pack",
-          "sourceLine": 80,
+          "sourceLine": 81,
           "operators": [
             "site",
             "filetype"
@@ -2554,7 +2554,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/drug-checking.md",
           "sourceType": "dork-pack",
-          "sourceLine": 86,
+          "sourceLine": 87,
           "operators": [
             "site"
           ],
@@ -2576,7 +2576,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/drug-checking.md",
           "sourceType": "dork-pack",
-          "sourceLine": 92,
+          "sourceLine": 93,
           "operators": [],
           "targetDomains": [],
           "domainCategory": "any",
@@ -2594,7 +2594,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/drug-checking.md",
           "sourceType": "dork-pack",
-          "sourceLine": 98,
+          "sourceLine": 99,
           "operators": [],
           "targetDomains": [],
           "domainCategory": "any",
@@ -2613,7 +2613,7 @@
           "difficulty": "advanced",
           "sourceFile": "dork-packs/drug-checking.md",
           "sourceType": "dork-pack",
-          "sourceLine": 113,
+          "sourceLine": 114,
           "operators": [
             "filetype",
             "after"
@@ -2636,7 +2636,7 @@
           "difficulty": "advanced",
           "sourceFile": "dork-packs/drug-checking.md",
           "sourceType": "dork-pack",
-          "sourceLine": 119,
+          "sourceLine": 120,
           "operators": [
             "filetype"
           ],
@@ -2657,7 +2657,7 @@
           "difficulty": "advanced",
           "sourceFile": "dork-packs/drug-checking.md",
           "sourceType": "dork-pack",
-          "sourceLine": 125,
+          "sourceLine": 126,
           "operators": [
             "site",
             "filetype",
@@ -2682,7 +2682,7 @@
           "difficulty": "advanced",
           "sourceFile": "dork-packs/drug-checking.md",
           "sourceType": "dork-pack",
-          "sourceLine": 131,
+          "sourceLine": 132,
           "operators": [],
           "targetDomains": [],
           "domainCategory": "any",
@@ -2700,7 +2700,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/drug-checking.md",
           "sourceType": "dork-pack",
-          "sourceLine": 149,
+          "sourceLine": 150,
           "operators": [
             "filetype"
           ],
@@ -2720,7 +2720,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/drug-checking.md",
           "sourceType": "dork-pack",
-          "sourceLine": 155,
+          "sourceLine": 156,
           "operators": [],
           "targetDomains": [],
           "domainCategory": "any",
@@ -2736,7 +2736,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/drug-checking.md",
           "sourceType": "dork-pack",
-          "sourceLine": 161,
+          "sourceLine": 162,
           "operators": [],
           "targetDomains": [],
           "domainCategory": "any",
@@ -2745,20 +2745,21 @@
         },
         {
           "id": "drug-checking-wedinos-wales-sample-data-philtre",
-          "title": "WEDINOS (Wales) — Sample Data & Philtre",
+          "title": "WEDINOS (Wales) — Sample Data & PHILTRE",
           "category": "International Services & Sample Data",
-          "query": "(site:wedinos.org OR site:wedinos.wales) (Philtre OR \"sample results\")",
+          "query": "(site:wedinos.wales OR site:wedinos.org) (\"sample results\" OR \"WEDINOS\") OR (site:publichealthwales.nhs.wales \"PHILTRE\")",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/drug-checking.md",
           "sourceType": "dork-pack",
-          "sourceLine": 179,
+          "sourceLine": 180,
           "operators": [
             "site"
           ],
           "targetDomains": [
+            "wedinos.wales",
             "wedinos.org",
-            "wedinos.wales"
+            "publichealthwales.nhs.wales"
           ],
           "domainCategory": "any",
           "contentType": "any",
@@ -2775,7 +2776,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/drug-checking.md",
           "sourceType": "dork-pack",
-          "sourceLine": 185,
+          "sourceLine": 186,
           "operators": [
             "site"
           ],
@@ -2797,7 +2798,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/drug-checking.md",
           "sourceType": "dork-pack",
-          "sourceLine": 191,
+          "sourceLine": 192,
           "operators": [
             "filetype"
           ],
@@ -2818,7 +2819,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/drug-checking.md",
           "sourceType": "dork-pack",
-          "sourceLine": 197,
+          "sourceLine": 198,
           "operators": [
             "site"
           ],
@@ -2841,7 +2842,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/drug-checking.md",
           "sourceType": "dork-pack",
-          "sourceLine": 203,
+          "sourceLine": 204,
           "operators": [
             "site"
           ],
@@ -2864,7 +2865,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/drug-checking.md",
           "sourceType": "dork-pack",
-          "sourceLine": 209,
+          "sourceLine": 210,
           "operators": [
             "site"
           ],
@@ -2887,7 +2888,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/drug-checking.md",
           "sourceType": "dork-pack",
-          "sourceLine": 222,
+          "sourceLine": 223,
           "operators": [],
           "targetDomains": [],
           "domainCategory": "any",
@@ -2906,7 +2907,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/drug-checking.md",
           "sourceType": "dork-pack",
-          "sourceLine": 228,
+          "sourceLine": 229,
           "operators": [],
           "targetDomains": [],
           "domainCategory": "any",
@@ -2925,7 +2926,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/drug-checking.md",
           "sourceType": "dork-pack",
-          "sourceLine": 234,
+          "sourceLine": 235,
           "operators": [
             "site"
           ],
@@ -2948,7 +2949,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/drug-checking.md",
           "sourceType": "dork-pack",
-          "sourceLine": 249,
+          "sourceLine": 250,
           "operators": [],
           "targetDomains": [],
           "domainCategory": "any",
@@ -2967,7 +2968,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/drug-checking.md",
           "sourceType": "dork-pack",
-          "sourceLine": 255,
+          "sourceLine": 256,
           "operators": [
             "filetype"
           ],
@@ -2988,7 +2989,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/drug-checking.md",
           "sourceType": "dork-pack",
-          "sourceLine": 261,
+          "sourceLine": 262,
           "operators": [
             "site",
             "filetype"
@@ -3014,7 +3015,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/drug-checking.md",
           "sourceType": "dork-pack",
-          "sourceLine": 271,
+          "sourceLine": 272,
           "operators": [
             "site"
           ],
@@ -3036,7 +3037,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/drug-checking.md",
           "sourceType": "dork-pack",
-          "sourceLine": 277,
+          "sourceLine": 278,
           "operators": [
             "site"
           ],
@@ -3061,7 +3062,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/drug-checking.md",
           "sourceType": "dork-pack",
-          "sourceLine": 283,
+          "sourceLine": 284,
           "operators": [
             "site"
           ],
@@ -4582,11 +4583,11 @@
           "title": "Search reddit.com",
           "category": "Quick Start",
           "query": "site:reddit.com \"harm reduction\" Australia",
-          "explanation": "> **Entity reference:** the named forums, subreddits, and peer-org accounts below are catalogued in\n> [Source Intelligence → Community Forums](../resources/source-intelligence.md#-community-forums--lived-experience-knowledge).\n> Peer organisations use consistent handles — **NUAA** is `@nuaansw`, **Harm Reduction Victoria** is\n> `@HRV_Aust`.",
+          "explanation": "**Why this works:**\n\n- Reddit hosts active Australian harm-reduction discussion; `site:reddit.com` + an AU term surfaces\nlived-experience reports faster than a generic web search",
           "difficulty": "beginner",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 29,
+          "sourceLine": 44,
           "operators": [
             "site"
           ],
@@ -4602,13 +4603,13 @@
         {
           "id": "forum-community-harm-reduction-subreddits",
           "title": "Harm Reduction Subreddits",
-          "category": "Reddit",
+          "category": "\udfe0 Reddit",
           "query": "site:reddit.com/r/researchchemicals Australia",
           "explanation": "",
-          "difficulty": "advanced",
+          "difficulty": "intermediate",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 41,
+          "sourceLine": 56,
           "operators": [
             "site"
           ],
@@ -4625,13 +4626,13 @@
         {
           "id": "forum-community-australian-subreddits",
           "title": "Australian Subreddits",
-          "category": "Reddit",
+          "category": "\udfe0 Reddit",
           "query": "site:reddit.com/r/brisbane naloxone OR \"needle exchange\"",
           "explanation": "",
-          "difficulty": "advanced",
+          "difficulty": "intermediate",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 59,
+          "sourceLine": 74,
           "operators": [
             "site"
           ],
@@ -4645,13 +4646,13 @@
         {
           "id": "forum-community-specific-topics-on-reddit",
           "title": "Specific Topics on Reddit",
-          "category": "Reddit",
+          "category": "\udfe0 Reddit",
           "query": "site:reddit.com \"methadone\" OR \"buprenorphine\" Australia experience",
           "explanation": "",
-          "difficulty": "advanced",
+          "difficulty": "intermediate",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 77,
+          "sourceLine": 92,
           "operators": [
             "site"
           ],
@@ -4667,13 +4668,13 @@
         {
           "id": "forum-community-recovery-support-subreddits",
           "title": "Recovery & Support Subreddits",
-          "category": "Reddit",
+          "category": "\udfe0 Reddit",
           "query": "site:reddit.com/r/addiction Australia support",
           "explanation": "",
-          "difficulty": "advanced",
+          "difficulty": "intermediate",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 99,
+          "sourceLine": 114,
           "operators": [
             "site"
           ],
@@ -4695,7 +4696,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 120,
+          "sourceLine": 135,
           "operators": [
             "site"
           ],
@@ -4718,7 +4719,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 138,
+          "sourceLine": 153,
           "operators": [
             "site"
           ],
@@ -4741,7 +4742,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 144,
+          "sourceLine": 159,
           "operators": [
             "site"
           ],
@@ -4762,7 +4763,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 150,
+          "sourceLine": 165,
           "operators": [
             "site"
           ],
@@ -4783,7 +4784,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 160,
+          "sourceLine": 175,
           "operators": [
             "site"
           ],
@@ -4805,7 +4806,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 166,
+          "sourceLine": 181,
           "operators": [
             "site"
           ],
@@ -4827,7 +4828,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 172,
+          "sourceLine": 187,
           "operators": [
             "site"
           ],
@@ -4849,7 +4850,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 178,
+          "sourceLine": 193,
           "operators": [
             "site"
           ],
@@ -4869,7 +4870,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 184,
+          "sourceLine": 199,
           "operators": [
             "site"
           ],
@@ -4892,7 +4893,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 194,
+          "sourceLine": 209,
           "operators": [
             "inurl"
           ],
@@ -4910,7 +4911,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 200,
+          "sourceLine": 215,
           "operators": [
             "inurl"
           ],
@@ -4928,7 +4929,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 206,
+          "sourceLine": 221,
           "operators": [
             "inurl"
           ],
@@ -4948,7 +4949,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 212,
+          "sourceLine": 227,
           "operators": [
             "inurl"
           ],
@@ -4968,7 +4969,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 218,
+          "sourceLine": 233,
           "operators": [],
           "targetDomains": [],
           "domainCategory": "any",
@@ -4984,7 +4985,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 224,
+          "sourceLine": 239,
           "operators": [],
           "targetDomains": [],
           "domainCategory": "any",
@@ -5002,7 +5003,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 230,
+          "sourceLine": 245,
           "operators": [
             "inurl"
           ],
@@ -5020,7 +5021,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 236,
+          "sourceLine": 251,
           "operators": [],
           "targetDomains": [],
           "domainCategory": "any",
@@ -5036,7 +5037,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 242,
+          "sourceLine": 257,
           "operators": [],
           "targetDomains": [],
           "domainCategory": "community",
@@ -5054,7 +5055,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 248,
+          "sourceLine": 263,
           "operators": [
             "inurl"
           ],
@@ -5072,7 +5073,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 254,
+          "sourceLine": 269,
           "operators": [],
           "targetDomains": [],
           "domainCategory": "any",
@@ -5088,7 +5089,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 260,
+          "sourceLine": 275,
           "operators": [
             "inurl"
           ],
@@ -5106,7 +5107,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 266,
+          "sourceLine": 281,
           "operators": [],
           "targetDomains": [],
           "domainCategory": "community",
@@ -5122,7 +5123,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 272,
+          "sourceLine": 287,
           "operators": [
             "site"
           ],
@@ -5142,7 +5143,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 278,
+          "sourceLine": 293,
           "operators": [],
           "targetDomains": [],
           "domainCategory": "any",
@@ -5158,7 +5159,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 284,
+          "sourceLine": 299,
           "operators": [],
           "targetDomains": [],
           "domainCategory": "community",
@@ -5174,7 +5175,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 294,
+          "sourceLine": 309,
           "operators": [
             "site"
           ],
@@ -5196,7 +5197,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 300,
+          "sourceLine": 315,
           "operators": [
             "site"
           ],
@@ -5216,7 +5217,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 306,
+          "sourceLine": 321,
           "operators": [],
           "targetDomains": [],
           "domainCategory": "community",
@@ -5234,7 +5235,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 312,
+          "sourceLine": 327,
           "operators": [],
           "targetDomains": [],
           "domainCategory": "community",
@@ -5252,7 +5253,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 318,
+          "sourceLine": 333,
           "operators": [],
           "targetDomains": [],
           "domainCategory": "community",
@@ -5270,7 +5271,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 324,
+          "sourceLine": 339,
           "operators": [],
           "targetDomains": [],
           "domainCategory": "community",
@@ -5288,7 +5289,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 330,
+          "sourceLine": 345,
           "operators": [],
           "targetDomains": [],
           "domainCategory": "community",
@@ -5306,7 +5307,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 340,
+          "sourceLine": 355,
           "operators": [],
           "targetDomains": [],
           "domainCategory": "community",
@@ -5324,7 +5325,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 346,
+          "sourceLine": 361,
           "operators": [],
           "targetDomains": [],
           "domainCategory": "community",
@@ -5340,7 +5341,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 352,
+          "sourceLine": 367,
           "operators": [],
           "targetDomains": [],
           "domainCategory": "community",
@@ -5358,7 +5359,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 358,
+          "sourceLine": 373,
           "operators": [
             "site"
           ],
@@ -5380,7 +5381,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 364,
+          "sourceLine": 379,
           "operators": [],
           "targetDomains": [],
           "domainCategory": "community",
@@ -5398,7 +5399,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 374,
+          "sourceLine": 389,
           "operators": [
             "site"
           ],
@@ -5418,7 +5419,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 380,
+          "sourceLine": 395,
           "operators": [
             "site"
           ],
@@ -5441,7 +5442,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 386,
+          "sourceLine": 401,
           "operators": [
             "site"
           ],
@@ -5461,7 +5462,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 392,
+          "sourceLine": 407,
           "operators": [
             "site"
           ],
@@ -5481,7 +5482,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 398,
+          "sourceLine": 413,
           "operators": [
             "site"
           ],
@@ -5501,7 +5502,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 408,
+          "sourceLine": 423,
           "operators": [
             "site"
           ],
@@ -5523,7 +5524,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 414,
+          "sourceLine": 429,
           "operators": [
             "site"
           ],
@@ -5545,7 +5546,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 420,
+          "sourceLine": 435,
           "operators": [
             "site"
           ],
@@ -5568,7 +5569,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 426,
+          "sourceLine": 441,
           "operators": [
             "site"
           ],
@@ -5588,7 +5589,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 432,
+          "sourceLine": 447,
           "operators": [
             "site"
           ],
@@ -5608,7 +5609,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 442,
+          "sourceLine": 457,
           "operators": [
             "site"
           ],
@@ -5630,7 +5631,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 448,
+          "sourceLine": 463,
           "operators": [
             "site"
           ],
@@ -5652,7 +5653,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 454,
+          "sourceLine": 469,
           "operators": [
             "site"
           ],
@@ -5668,13 +5669,13 @@
         {
           "id": "forum-community-find-forum-discussions-about-specific-topics-1",
           "title": "Find Forum Discussions About Specific Topics - 1",
-          "category": "\udd0d Advanced Forum Searches",
+          "category": "Advanced Forum Searches",
           "query": "inurl:forum OR inurl:thread \"fentanyl\" Australia alert",
           "explanation": "",
           "difficulty": "advanced",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 464,
+          "sourceLine": 479,
           "operators": [
             "inurl"
           ],
@@ -5689,13 +5690,13 @@
         {
           "id": "forum-community-find-forum-discussions-about-specific-topics-2",
           "title": "Find Forum Discussions About Specific Topics - 2",
-          "category": "\udd0d Advanced Forum Searches",
+          "category": "Advanced Forum Searches",
           "query": "inurl:forum \"drug warning\" OR \"contaminated\" Australia",
           "explanation": "",
           "difficulty": "advanced",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 470,
+          "sourceLine": 485,
           "operators": [
             "inurl"
           ],
@@ -5710,13 +5711,13 @@
         {
           "id": "forum-community-find-forum-discussions-about-specific-topics-3",
           "title": "Find Forum Discussions About Specific Topics - 3",
-          "category": "\udd0d Advanced Forum Searches",
+          "category": "Advanced Forum Searches",
           "query": "inurl:forum \"naloxone\" access Australia",
           "explanation": "",
           "difficulty": "advanced",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 476,
+          "sourceLine": 491,
           "operators": [
             "inurl"
           ],
@@ -5730,13 +5731,13 @@
         {
           "id": "forum-community-find-user-experiences-1",
           "title": "Find User Experiences - 1",
-          "category": "\udd0d Advanced Forum Searches",
+          "category": "Advanced Forum Searches",
           "query": "inurl:forum \"my experience\" \"harm reduction\" Australia",
           "explanation": "",
           "difficulty": "advanced",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 482,
+          "sourceLine": 497,
           "operators": [
             "inurl"
           ],
@@ -5750,13 +5751,13 @@
         {
           "id": "forum-community-find-user-experiences-2",
           "title": "Find User Experiences - 2",
-          "category": "\udd0d Advanced Forum Searches",
+          "category": "Advanced Forum Searches",
           "query": "inurl:forum \"personal story\" drug OR overdose",
           "explanation": "",
           "difficulty": "advanced",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 488,
+          "sourceLine": 503,
           "operators": [
             "inurl"
           ],
@@ -5768,13 +5769,13 @@
         {
           "id": "forum-community-find-user-experiences-3",
           "title": "Find User Experiences - 3",
-          "category": "\udd0d Advanced Forum Searches",
+          "category": "Advanced Forum Searches",
           "query": "inurl:thread \"what helped me\" addiction OR recovery",
           "explanation": "",
           "difficulty": "advanced",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 494,
+          "sourceLine": 509,
           "operators": [
             "inurl"
           ],
@@ -5786,13 +5787,13 @@
         {
           "id": "forum-community-find-local-discussions-1",
           "title": "Find Local Discussions - 1",
-          "category": "\udd0d Advanced Forum Searches",
+          "category": "Advanced Forum Searches",
           "query": "inurl:forum \"Sydney\" \"harm reduction\" OR \"drug\"",
           "explanation": "",
           "difficulty": "advanced",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 500,
+          "sourceLine": 515,
           "operators": [
             "inurl"
           ],
@@ -5804,13 +5805,13 @@
         {
           "id": "forum-community-find-local-discussions-2",
           "title": "Find Local Discussions - 2",
-          "category": "\udd0d Advanced Forum Searches",
+          "category": "Advanced Forum Searches",
           "query": "inurl:forum \"Melbourne\" \"safe injecting\" OR \"MSIR\"",
           "explanation": "",
           "difficulty": "advanced",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 506,
+          "sourceLine": 521,
           "operators": [
             "inurl"
           ],
@@ -5822,13 +5823,13 @@
         {
           "id": "forum-community-find-local-discussions-3",
           "title": "Find Local Discussions - 3",
-          "category": "\udd0d Advanced Forum Searches",
+          "category": "Advanced Forum Searches",
           "query": "inurl:forum \"Brisbane\" naloxone OR \"NSP\"",
           "explanation": "",
           "difficulty": "advanced",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 512,
+          "sourceLine": 527,
           "operators": [
             "inurl"
           ],
@@ -5846,7 +5847,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 522,
+          "sourceLine": 537,
           "operators": [
             "inurl"
           ],
@@ -5866,7 +5867,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 528,
+          "sourceLine": 543,
           "operators": [
             "inurl"
           ],
@@ -5886,7 +5887,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 534,
+          "sourceLine": 549,
           "operators": [
             "inurl"
           ],
@@ -5906,7 +5907,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 540,
+          "sourceLine": 555,
           "operators": [
             "inurl",
             "after"
@@ -5927,7 +5928,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 553,
+          "sourceLine": 568,
           "operators": [],
           "targetDomains": [],
           "domainCategory": "community",
@@ -5945,7 +5946,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 559,
+          "sourceLine": 574,
           "operators": [],
           "targetDomains": [],
           "domainCategory": "community",
@@ -5961,7 +5962,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 565,
+          "sourceLine": 580,
           "operators": [
             "site"
           ],
@@ -5981,7 +5982,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 575,
+          "sourceLine": 590,
           "operators": [
             "site"
           ],
@@ -6003,7 +6004,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 581,
+          "sourceLine": 596,
           "operators": [],
           "targetDomains": [],
           "domainCategory": "community",
@@ -6021,7 +6022,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 587,
+          "sourceLine": 602,
           "operators": [],
           "targetDomains": [],
           "domainCategory": "community",
@@ -10224,7 +10225,7 @@
           "id": "novel-substances-drug-checking-detections",
           "title": "Drug-Checking Detections",
           "category": "Detection & Toxico-surveillance",
-          "query": "(site:cantest.com.au OR site:health.act.gov.au OR site:wedinos.org) (\"nitazene\" OR \"unexpected\" OR \"not as expected\" OR alert)",
+          "query": "(site:cantest.com.au OR site:health.act.gov.au OR site:wedinos.wales) (\"nitazene\" OR \"unexpected\" OR \"not as expected\" OR alert)",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/novel-substances.md",
@@ -10236,7 +10237,7 @@
           "targetDomains": [
             "cantest.com.au",
             "health.act.gov.au",
-            "wedinos.org"
+            "wedinos.wales"
           ],
           "domainCategory": "government",
           "contentType": "any",
@@ -12108,7 +12109,7 @@
         {
           "id": "organizational-intelligence-all-documents-from-one-org",
           "title": "All Documents from One Org",
-          "category": "\udd0d Organization-Specific Deep Dives",
+          "category": "\udd0d Organisation-Specific Deep Dives",
           "query": "site:nuaa.org.au (\"annual report\" OR \"Annual Information Statement\" OR \"strategic plan\" OR policy)",
           "explanation": "",
           "difficulty": "intermediate",
@@ -12132,7 +12133,7 @@
         {
           "id": "organizational-intelligence-comparing-organisations",
           "title": "Comparing Organisations",
-          "category": "\udd0d Organization-Specific Deep Dives",
+          "category": "\udd0d Organisation-Specific Deep Dives",
           "query": "(\"annual report\" OR \"Annual Information Statement\") (AIVL OR NUAA OR \"Harm Reduction Victoria\" OR QuIHN) filetype:pdf",
           "explanation": "",
           "difficulty": "intermediate",
@@ -12152,7 +12153,7 @@
         {
           "id": "organizational-intelligence-tracking-change-over-time",
           "title": "Tracking Change Over Time",
-          "category": "\udd0d Organization-Specific Deep Dives",
+          "category": "\udd0d Organisation-Specific Deep Dives",
           "query": "site:web.archive.org/web/*/aivl.org.au \"strategic plan\"",
           "explanation": "> Pair with the [Temporal Intelligence pack](temporal-intelligence.md) to recover superseded plans\n> and removed reports.",
           "difficulty": "intermediate",
@@ -12201,21 +12202,153 @@
     {
       "id": "peer-knowledge",
       "title": "Peer Knowledge, Publications & Storytelling",
-      "description": "Finding peer voices, lived experience narratives, and peer-produced knowledge.",
+      "description": "Find peer voices and lived-experience knowledge — named by the actual peer publication and",
       "dorks": [
         {
           "id": "peer-knowledge-search-nuaa-org-au",
           "title": "Search nuaa.org.au",
           "category": "Quick Start",
-          "query": "(site:nuaa.org.au OR site:aivl.org.au OR site:hrvic.org.au) filetype:pdf",
+          "query": "site:nuaa.org.au \"User's News\"",
           "explanation": "",
           "difficulty": "beginner",
           "sourceFile": "dork-packs/peer-knowledge.md",
           "sourceType": "dork-pack",
-          "sourceLine": 14,
+          "sourceLine": 28,
           "operators": [
-            "site",
+            "site"
+          ],
+          "targetDomains": [
+            "nuaa.org.au"
+          ],
+          "domainCategory": "ngo",
+          "contentType": "any",
+          "tags": [
+            "australia"
+          ]
+        },
+        {
+          "id": "peer-knowledge-named-peer-publications",
+          "title": "Named Peer Publications",
+          "category": "Basic Queries",
+          "query": "(\"User's News\" OR \"Insider's News\" OR \"AIVL News\") (site:nuaa.org.au OR site:aivl.org.au)",
+          "explanation": "**Why this works:**\n\n- Names the actual peer mastheads — NUAA's **User's News** and prison-distributed **Insider's\nNews**, and **AIVL News** — instead of a generic `\"peer newsletter\"` query that mostly misses them",
+          "difficulty": "beginner",
+          "sourceFile": "dork-packs/peer-knowledge.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 35,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "nuaa.org.au",
+            "aivl.org.au"
+          ],
+          "domainCategory": "ngo",
+          "contentType": "any",
+          "tags": [
+            "peer",
+            "australia"
+          ]
+        },
+        {
+          "id": "peer-knowledge-australian-drug-user-organisations",
+          "title": "Australian Drug-User Organisations",
+          "category": "Basic Queries",
+          "query": "(site:nuaa.org.au OR site:aivl.org.au OR site:hrvic.org.au OR site:quihn.org OR site:wasua.com.au OR site:cahma.org.au) (\"peer\" OR \"lived experience\" OR \"harm reduction\")",
+          "explanation": "",
+          "difficulty": "beginner",
+          "sourceFile": "dork-packs/peer-knowledge.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 46,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "nuaa.org.au",
+            "aivl.org.au",
+            "hrvic.org.au",
+            "quihn.org",
+            "wasua.com.au",
+            "cahma.org.au"
+          ],
+          "domainCategory": "ngo",
+          "contentType": "any",
+          "tags": [
+            "peer",
+            "australia"
+          ]
+        },
+        {
+          "id": "peer-knowledge-peer-produced-knowledge",
+          "title": "Peer-Produced Knowledge",
+          "category": "Basic Queries",
+          "query": "(\"by peers, for peers\" OR \"peer-produced\" OR \"peer-developed\" OR \"in their own words\") (\"people who use drugs\" OR \"harm reduction\") Australia",
+          "explanation": "",
+          "difficulty": "beginner",
+          "sourceFile": "dork-packs/peer-knowledge.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 52,
+          "operators": [],
+          "targetDomains": [],
+          "domainCategory": "any",
+          "contentType": "any",
+          "tags": [
+            "peer",
+            "australia"
+          ]
+        },
+        {
+          "id": "peer-knowledge-lived-living-experience-narratives",
+          "title": "Lived & Living Experience Narratives",
+          "category": "Intermediate Queries",
+          "query": "(\"lived experience\" OR \"lived and living experience\" OR \"in their own words\") (story OR narrative OR testimony) (\"people who use drugs\" OR \"drug use\") Australia filetype:pdf",
+          "explanation": "**Why this works:**\n\n- \"Lived and living experience\" (LLE) is the sector's current term — searching it alongside the\nolder \"lived experience\" catches both eras of peer-authored material",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/peer-knowledge.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 62,
+          "operators": [
             "filetype"
+          ],
+          "targetDomains": [],
+          "domainCategory": "any",
+          "contentType": "pdf",
+          "tags": [
+            "documents",
+            "peer",
+            "australia"
+          ]
+        },
+        {
+          "id": "peer-knowledge-digital-storytelling-creative-work",
+          "title": "Digital Storytelling & Creative Work",
+          "category": "Intermediate Queries",
+          "query": "(\"photovoice\" OR \"digital storytelling\" OR poetry OR zine) (\"people who use drugs\" OR \"lived experience\" OR \"harm reduction\")",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/peer-knowledge.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 73,
+          "operators": [],
+          "targetDomains": [],
+          "domainCategory": "any",
+          "contentType": "any",
+          "tags": [
+            "peer"
+          ]
+        },
+        {
+          "id": "peer-knowledge-peer-voice-in-submissions",
+          "title": "Peer Voice in Submissions",
+          "category": "Intermediate Queries",
+          "query": "(site:nuaa.org.au OR site:aivl.org.au OR site:hrvic.org.au) (submission OR \"position statement\") (inquiry OR consultation OR \"drug policy\")",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/peer-knowledge.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 79,
+          "operators": [
+            "site"
           ],
           "targetDomains": [
             "nuaa.org.au",
@@ -12223,198 +12356,23 @@
             "hrvic.org.au"
           ],
           "domainCategory": "ngo",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "australia"
-          ]
-        },
-        {
-          "id": "peer-knowledge-peer-newsletters-magazines-1",
-          "title": "Peer Newsletters & Magazines - 1",
-          "category": "Basic Queries",
-          "query": "site:nuaa.org.au \"User's News\" filetype:pdf",
-          "explanation": "",
-          "difficulty": "beginner",
-          "sourceFile": "dork-packs/peer-knowledge.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 28,
-          "operators": [
-            "site",
-            "filetype"
-          ],
-          "targetDomains": [
-            "nuaa.org.au"
-          ],
-          "domainCategory": "ngo",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "peer",
-            "australia"
-          ]
-        },
-        {
-          "id": "peer-knowledge-peer-newsletters-magazines-2",
-          "title": "Peer Newsletters & Magazines - 2",
-          "category": "Basic Queries",
-          "query": "site:aivl.org.au \"The Advocate\" OR newsletter filetype:pdf",
-          "explanation": "",
-          "difficulty": "beginner",
-          "sourceFile": "dork-packs/peer-knowledge.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 34,
-          "operators": [
-            "site",
-            "filetype"
-          ],
-          "targetDomains": [
-            "aivl.org.au"
-          ],
-          "domainCategory": "ngo",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "peer",
-            "australia"
-          ]
-        },
-        {
-          "id": "peer-knowledge-peer-organisation-publications",
-          "title": "Peer Organisation Publications",
-          "category": "Basic Queries",
-          "query": "site:*.org.au (\"by peers\" OR \"peer written\" OR \"peer voices\") filetype:pdf",
-          "explanation": "",
-          "difficulty": "beginner",
-          "sourceFile": "dork-packs/peer-knowledge.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 40,
-          "operators": [
-            "site",
-            "filetype"
-          ],
-          "targetDomains": [
-            "org.au"
-          ],
-          "domainCategory": "ngo",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "peer",
-            "australia"
-          ]
-        },
-        {
-          "id": "peer-knowledge-general-peer-newsletters",
-          "title": "General Peer Newsletters",
-          "category": "Basic Queries",
-          "query": "\"peer newsletter\" OR \"peer magazine\" harm reduction Australia filetype:pdf",
-          "explanation": "",
-          "difficulty": "beginner",
-          "sourceFile": "dork-packs/peer-knowledge.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 46,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "news",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "peer",
-            "australia"
-          ]
-        },
-        {
-          "id": "peer-knowledge-lived-experience-narratives",
-          "title": "Lived Experience Narratives",
-          "category": "Intermediate Queries",
-          "query": "\"lived experience\" (story OR narrative OR testimony) drug use Australia filetype:pdf",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/peer-knowledge.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 56,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "peer",
-            "australia"
-          ]
-        },
-        {
-          "id": "peer-knowledge-first-person-accounts",
-          "title": "First-Person Accounts",
-          "category": "Intermediate Queries",
-          "query": "\"first person\" OR \"personal account\" drug use harm reduction",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/peer-knowledge.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 62,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
           "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "peer-knowledge-peer-stories-in-resources",
-          "title": "Peer Stories in Resources",
-          "category": "Intermediate Queries",
-          "query": "site:*.org.au (\"in their own words\" OR \"peer perspectives\" OR \"peer stories\") filetype:pdf",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/peer-knowledge.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 68,
-          "operators": [
-            "site",
-            "filetype"
-          ],
-          "targetDomains": [
-            "org.au"
-          ],
-          "domainCategory": "ngo",
-          "contentType": "pdf",
           "tags": [
-            "documents",
             "peer",
+            "policy",
             "australia"
           ]
-        },
-        {
-          "id": "peer-knowledge-digital-storytelling",
-          "title": "Digital Storytelling",
-          "category": "Intermediate Queries",
-          "query": "\"photovoice\" OR \"digital storytelling\" \"people who use drugs\" OR \"drug use\"",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/peer-knowledge.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 74,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": []
         },
         {
           "id": "peer-knowledge-comprehensive-peer-knowledge-sweep",
-          "title": "Comprehensive Peer Knowledge Sweep",
+          "title": "Comprehensive Peer-Knowledge Sweep",
           "category": "Advanced Queries",
-          "query": "(site:nuaa.org.au OR site:aivl.org.au OR site:hrvic.org.au OR site:quihn.org OR site:wasua.com.au) filetype:pdf after:2020",
+          "query": "(site:nuaa.org.au OR site:aivl.org.au OR site:hrvic.org.au OR site:quihn.org OR site:quivaa.org.au OR site:wasua.com.au) (\"peer\" OR \"lived experience\" OR \"User's News\" OR \"harm reduction\") filetype:pdf after:2020",
           "explanation": "",
           "difficulty": "advanced",
           "sourceFile": "dork-packs/peer-knowledge.md",
           "sourceType": "dork-pack",
-          "sourceLine": 84,
+          "sourceLine": 89,
           "operators": [
             "site",
             "filetype",
@@ -12425,6 +12383,7 @@
             "aivl.org.au",
             "hrvic.org.au",
             "quihn.org",
+            "quivaa.org.au",
             "wasua.com.au"
           ],
           "domainCategory": "ngo",
@@ -12436,531 +12395,153 @@
           ]
         },
         {
-          "id": "peer-knowledge-peer-developed-resources",
-          "title": "Peer-Developed Resources",
+          "id": "peer-knowledge-peer-led-research-co-design",
+          "title": "Peer-Led Research & Co-Design",
           "category": "Advanced Queries",
-          "query": "site:*.org.au (\"peer-developed\" OR \"peer-produced\" OR \"peer-created\") (materials OR resources OR tools) drug use filetype:pdf",
-          "explanation": "",
+          "query": "(\"peer-led research\" OR \"peer researcher\" OR \"co-design\" OR \"participatory action research\") (\"people who use drugs\" OR \"harm reduction\") Australia filetype:pdf",
+          "explanation": "**Why this works:**\n\n- The peer-research vocabulary (peer-led, co-design, PAR) finds the work done _with_ rather than\n_about_ people who use drugs — the methodological side of \"nothing about us without us\"",
           "difficulty": "advanced",
           "sourceFile": "dork-packs/peer-knowledge.md",
           "sourceType": "dork-pack",
-          "sourceLine": 90,
+          "sourceLine": 95,
           "operators": [
-            "site",
             "filetype"
           ],
-          "targetDomains": [
-            "org.au"
-          ],
-          "domainCategory": "ngo",
+          "targetDomains": [],
+          "domainCategory": "research",
           "contentType": "pdf",
           "tags": [
             "documents",
             "peer",
+            "research",
             "australia"
           ]
         },
         {
-          "id": "peer-knowledge-peer-wisdom-expertise",
-          "title": "Peer Wisdom & Expertise",
+          "id": "peer-knowledge-meaningful-participation-not-tokenism",
+          "title": "Meaningful Participation (not Tokenism)",
           "category": "Advanced Queries",
-          "query": "\"peer expertise\" OR \"experiential knowledge\" OR \"peer wisdom\" drug use filetype:pdf",
+          "query": "(\"meaningful participation\" OR \"authentic engagement\" OR \"nothing about us without us\") (\"people who use drugs\" OR \"consumer representative\") (policy OR research OR advisory)",
           "explanation": "",
           "difficulty": "advanced",
           "sourceFile": "dork-packs/peer-knowledge.md",
           "sourceType": "dork-pack",
-          "sourceLine": 96,
-          "operators": [
-            "filetype"
-          ],
+          "sourceLine": 106,
+          "operators": [],
           "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "pdf",
+          "domainCategory": "research",
+          "contentType": "any",
           "tags": [
-            "documents",
-            "peer"
-          ]
-        },
-        {
-          "id": "peer-knowledge-peer-representation-guidelines",
-          "title": "Peer Representation Guidelines",
-          "category": "Advanced Queries",
-          "query": "\"peer representative\" (guidelines OR support OR training) filetype:pdf",
-          "explanation": "",
-          "difficulty": "advanced",
-          "sourceFile": "dork-packs/peer-knowledge.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 102,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
             "peer",
-            "training"
+            "research",
+            "policy"
           ]
         },
         {
-          "id": "peer-knowledge-user-s-news-nuaa-1",
-          "title": "User's News (NUAA) - 1",
-          "category": "\udcf0 Peer Publications",
-          "query": "site:nuaa.org.au \"User's News\" filetype:pdf",
+          "id": "peer-knowledge-user-s-news-insider-s-news-nuaa",
+          "title": "User's News & Insider's News (NUAA)",
+          "category": "\udcf0 Named Peer Publications",
+          "query": "site:nuaa.org.au (\"User's News\" OR \"Insider's News\")",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/peer-knowledge.md",
           "sourceType": "dork-pack",
-          "sourceLine": 112,
+          "sourceLine": 116,
           "operators": [
-            "site",
-            "filetype"
+            "site"
           ],
           "targetDomains": [
             "nuaa.org.au"
           ],
           "domainCategory": "ngo",
-          "contentType": "pdf",
+          "contentType": "any",
           "tags": [
-            "documents",
             "australia"
           ]
         },
         {
-          "id": "peer-knowledge-user-s-news-nuaa-2",
-          "title": "User's News (NUAA) - 2",
-          "category": "\udcf0 Peer Publications",
-          "query": "\"User's News\" NUAA [TOPIC]",
+          "id": "peer-knowledge-aivl-news-position-statements",
+          "title": "AIVL News & Position Statements",
+          "category": "\udcf0 Named Peer Publications",
+          "query": "site:aivl.org.au (\"AIVL News\" OR \"position statement\" OR submission OR \"NSP Directory\")",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/peer-knowledge.md",
           "sourceType": "dork-pack",
-          "sourceLine": 118,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "news",
-          "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "peer-knowledge-aivl-publications",
-          "title": "AIVL Publications",
-          "category": "\udcf0 Peer Publications",
-          "query": "site:aivl.org.au filetype:pdf",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/peer-knowledge.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 124,
+          "sourceLine": 122,
           "operators": [
-            "site",
-            "filetype"
+            "site"
           ],
           "targetDomains": [
             "aivl.org.au"
           ],
           "domainCategory": "ngo",
-          "contentType": "pdf",
+          "contentType": "any",
           "tags": [
-            "documents",
             "australia"
           ]
         },
         {
-          "id": "peer-knowledge-hrvic-publications",
-          "title": "HRVic Publications",
-          "category": "\udcf0 Peer Publications",
-          "query": "site:hrvic.org.au filetype:pdf",
+          "id": "peer-knowledge-dancewize-peer-festival-programs",
+          "title": "DanceWize (Peer Festival Programs)",
+          "category": "\udcf0 Named Peer Publications",
+          "query": "(site:hrvic.org.au OR site:dancewizensw.org.au OR site:nuaa.org.au) (\"DanceWize\" OR \"crowd care\" OR \"peer education\")",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/peer-knowledge.md",
           "sourceType": "dork-pack",
-          "sourceLine": 130,
+          "sourceLine": 128,
           "operators": [
-            "site",
-            "filetype"
+            "site"
           ],
           "targetDomains": [
-            "hrvic.org.au"
+            "hrvic.org.au",
+            "dancewizensw.org.au",
+            "nuaa.org.au"
           ],
           "domainCategory": "ngo",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "australia"
-          ]
-        },
-        {
-          "id": "peer-knowledge-state-organisation-publications",
-          "title": "State Organisation Publications",
-          "category": "\udcf0 Peer Publications",
-          "query": "(site:quihn.org OR site:wasua.com.au) filetype:pdf",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/peer-knowledge.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 136,
-          "operators": [
-            "site",
-            "filetype"
-          ],
-          "targetDomains": [
-            "quihn.org",
-            "wasua.com.au"
-          ],
-          "domainCategory": "any",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "australia"
-          ]
-        },
-        {
-          "id": "peer-knowledge-finding-specific-issues-1",
-          "title": "Finding Specific Issues - 1",
-          "category": "\udcf0 Peer Publications",
-          "query": "\"User's News\" [TOPIC] filetype:pdf",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/peer-knowledge.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 142,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "news",
-          "contentType": "pdf",
-          "tags": [
-            "documents"
-          ]
-        },
-        {
-          "id": "peer-knowledge-finding-specific-issues-2",
-          "title": "Finding Specific Issues - 2",
-          "category": "\udcf0 Peer Publications",
-          "query": "\"peer newsletter\" [TOPIC] Australia",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/peer-knowledge.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 148,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "news",
           "contentType": "any",
           "tags": [
             "peer",
+            "services",
+            "training",
             "australia"
           ]
         },
         {
-          "id": "peer-knowledge-lived-experience-stories",
-          "title": "Lived Experience Stories",
-          "category": "\udcd6 Narratives & Storytelling",
-          "query": "\"lived experience\" (story OR narrative) \"drug use\" OR \"drug user\" Australia filetype:pdf",
+          "id": "peer-knowledge-peer-submissions-advisory",
+          "title": "Peer Submissions & Advisory",
+          "category": "\udde3 Peer Voice in Policy",
+          "query": "(site:nuaa.org.au OR site:aivl.org.au) (submission OR \"reference group\" OR advisory) (drug OR \"harm reduction\")",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/peer-knowledge.md",
           "sourceType": "dork-pack",
-          "sourceLine": 158,
+          "sourceLine": 138,
           "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "peer",
-            "australia"
-          ]
-        },
-        {
-          "id": "peer-knowledge-peer-testimonies",
-          "title": "Peer Testimonies",
-          "category": "\udcd6 Narratives & Storytelling",
-          "query": "\"peer stories\" OR \"peer testimonies\" OR \"peer voices\" drug policy OR harm reduction",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/peer-knowledge.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 164,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "peer",
-            "policy"
-          ]
-        },
-        {
-          "id": "peer-knowledge-oral-histories",
-          "title": "Oral Histories",
-          "category": "\udcd6 Narratives & Storytelling",
-          "query": "\"oral history\" OR \"oral histories\" (\"drug use\" OR \"harm reduction\" OR \"drug user movement\") Australia",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/peer-knowledge.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 170,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "australia"
-          ]
-        },
-        {
-          "id": "peer-knowledge-creative-expression",
-          "title": "Creative Expression",
-          "category": "\udcd6 Narratives & Storytelling",
-          "query": "(poetry OR art OR creative) \"lived experience\" drug use harm reduction",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/peer-knowledge.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 176,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "peer"
-          ]
-        },
-        {
-          "id": "peer-knowledge-factsheets-by-peers",
-          "title": "Factsheets by Peers",
-          "category": "\udcda Peer-Led Resources",
-          "query": "site:nuaa.org.au OR site:aivl.org.au (factsheet OR \"fact sheet\" OR guide) filetype:pdf",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/peer-knowledge.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 186,
-          "operators": [
-            "site",
-            "filetype"
+            "site"
           ],
           "targetDomains": [
             "nuaa.org.au",
             "aivl.org.au"
           ],
           "domainCategory": "ngo",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "peer",
-            "australia"
-          ]
-        },
-        {
-          "id": "peer-knowledge-peer-education-materials-1",
-          "title": "Peer Education Materials - 1",
-          "category": "\udcda Peer-Led Resources",
-          "query": "\"peer education\" resources harm reduction Australia filetype:pdf",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/peer-knowledge.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 192,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "peer",
-            "training",
-            "australia"
-          ]
-        },
-        {
-          "id": "peer-knowledge-peer-education-materials-2",
-          "title": "Peer Education Materials - 2",
-          "category": "\udcda Peer-Led Resources",
-          "query": "\"by peers for peers\" harm reduction",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/peer-knowledge.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 198,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
           "contentType": "any",
           "tags": [
             "peer",
-            "training"
-          ]
-        },
-        {
-          "id": "peer-knowledge-peer-developed-campaigns",
-          "title": "Peer-Developed Campaigns",
-          "category": "\udcda Peer-Led Resources",
-          "query": "site:*.org.au \"peer-led\" (campaign OR resource OR toolkit) filetype:pdf",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/peer-knowledge.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 204,
-          "operators": [
-            "site",
-            "filetype"
-          ],
-          "targetDomains": [
-            "org.au"
-          ],
-          "domainCategory": "ngo",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "peer",
-            "australia"
-          ]
-        },
-        {
-          "id": "peer-knowledge-peer-submissions-1",
-          "title": "Peer Submissions - 1",
-          "category": "\udde3 Peer Voice in Policy",
-          "query": "(site:aivl.org.au OR site:nuaa.org.au) submission filetype:pdf",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/peer-knowledge.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 214,
-          "operators": [
-            "site",
-            "filetype"
-          ],
-          "targetDomains": [
-            "aivl.org.au",
-            "nuaa.org.au"
-          ],
-          "domainCategory": "ngo",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "peer",
-            "australia"
-          ]
-        },
-        {
-          "id": "peer-knowledge-peer-submissions-2",
-          "title": "Peer Submissions - 2",
-          "category": "\udde3 Peer Voice in Policy",
-          "query": "\"peer organisation\" submission (inquiry OR consultation) drug",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/peer-knowledge.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 220,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "peer"
-          ]
-        },
-        {
-          "id": "peer-knowledge-lived-experience-in-advisory",
-          "title": "Lived Experience in Advisory",
-          "category": "\udde3 Peer Voice in Policy",
-          "query": "\"lived experience\" (advisory OR \"reference group\" OR committee) drug policy",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/peer-knowledge.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 226,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "peer",
-            "policy"
-          ]
-        },
-        {
-          "id": "peer-knowledge-meaningful-participation",
-          "title": "Meaningful Participation",
-          "category": "\udde3 Peer Voice in Policy",
-          "query": "\"meaningful participation\" OR \"authentic engagement\" \"people who use drugs\" (policy OR research)",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/peer-knowledge.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 232,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "research",
-          "contentType": "any",
-          "tags": [
-            "research",
-            "policy"
-          ]
-        },
-        {
-          "id": "peer-knowledge-avoiding-tokenism",
-          "title": "Avoiding Tokenism",
-          "category": "\udde3 Peer Voice in Policy",
-          "query": "\"tokenism\" (drug user OR peer) involvement (address OR avoid OR prevent)",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/peer-knowledge.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 238,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "peer"
-          ]
-        },
-        {
-          "id": "peer-knowledge-peer-campaigns",
-          "title": "Peer Campaigns",
-          "category": "\udce2 Peer Advocacy",
-          "query": "site:*.org.au \"peer-led\" (advocacy OR campaign) drug policy filetype:pdf",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/peer-knowledge.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 248,
-          "operators": [
-            "site",
-            "filetype"
-          ],
-          "targetDomains": [
-            "org.au"
-          ],
-          "domainCategory": "ngo",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "peer",
-            "policy",
             "australia"
           ]
         },
         {
           "id": "peer-knowledge-nothing-about-us-without-us",
           "title": "\"Nothing About Us Without Us\"",
-          "category": "\udce2 Peer Advocacy",
-          "query": "\"nothing about us without us\" drug policy OR harm reduction filetype:pdf",
+          "category": "\udde3 Peer Voice in Policy",
+          "query": "\"nothing about us without us\" (\"drug policy\" OR \"harm reduction\" OR \"people who use drugs\") filetype:pdf",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/peer-knowledge.md",
           "sourceType": "dork-pack",
-          "sourceLine": 254,
+          "sourceLine": 144,
           "operators": [
             "filetype"
           ],
@@ -12973,158 +12554,62 @@
           ]
         },
         {
-          "id": "peer-knowledge-peer-advocacy-history-1",
-          "title": "Peer Advocacy History - 1",
-          "category": "\udce2 Peer Advocacy",
-          "query": "\"drug user movement\" OR \"drug user organising\" Australia history",
+          "id": "peer-knowledge-inpud-euronpud",
+          "title": "INPUD & EuroNPUD",
+          "category": "International Peer Networks",
+          "query": "(site:inpud.net OR site:euronpud.net) (\"Words Matter\" OR \"European Diaries\" OR \"people who use drugs\" OR peer)",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/peer-knowledge.md",
           "sourceType": "dork-pack",
-          "sourceLine": 260,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "peer",
-            "australia"
-          ]
-        },
-        {
-          "id": "peer-knowledge-peer-advocacy-history-2",
-          "title": "Peer Advocacy History - 2",
-          "category": "\udce2 Peer Advocacy",
-          "query": "(NUAA OR AIVL) history OR \"early days\" OR founding",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/peer-knowledge.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 266,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "peer"
-          ]
-        },
-        {
-          "id": "peer-knowledge-peer-led-research",
-          "title": "Peer-Led Research",
-          "category": "Peer Research",
-          "query": "\"peer-led research\" OR \"peer researcher\" (drug use OR harm reduction) Australia filetype:pdf",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/peer-knowledge.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 276,
+          "sourceLine": 156,
           "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "research",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "peer",
-            "research",
-            "australia"
-          ]
-        },
-        {
-          "id": "peer-knowledge-participatory-research",
-          "title": "Participatory Research",
-          "category": "Peer Research",
-          "query": "\"participatory action research\" OR \"community-based participatory research\" drug use filetype:pdf",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/peer-knowledge.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 282,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "research",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "research"
-          ]
-        },
-        {
-          "id": "peer-knowledge-co-design",
-          "title": "Co-Design",
-          "category": "Peer Research",
-          "query": "\"co-design\" OR \"co-production\" \"people who use drugs\" OR peer filetype:pdf",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/peer-knowledge.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 288,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "peer"
-          ]
-        },
-        {
-          "id": "peer-knowledge-inpud-1",
-          "title": "INPUD - 1",
-          "category": "International Peer Content",
-          "query": "site:inpud.net filetype:pdf",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/peer-knowledge.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 298,
-          "operators": [
-            "site",
-            "filetype"
+            "site"
           ],
           "targetDomains": [
-            "inpud.net"
+            "inpud.net",
+            "euronpud.net"
           ],
-          "domainCategory": "any",
-          "contentType": "pdf",
-          "tags": [
-            "documents"
-          ]
-        },
-        {
-          "id": "peer-knowledge-inpud-2",
-          "title": "INPUD - 2",
-          "category": "International Peer Content",
-          "query": "\"International Network of People Who Use Drugs\" resources",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/peer-knowledge.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 304,
-          "operators": [],
-          "targetDomains": [],
           "domainCategory": "any",
           "contentType": "any",
           "tags": [
-            "international"
+            "peer"
           ]
         },
         {
-          "id": "peer-knowledge-european-networks",
-          "title": "European Networks",
-          "category": "International Peer Content",
-          "query": "\"European Network of People Who Use Drugs\" (EuroNPUD OR ENPUD)",
+          "id": "peer-knowledge-canadian-us-peer-unions",
+          "title": "Canadian & US Peer Unions",
+          "category": "International Peer Networks",
+          "query": "(site:vandu.org OR site:capud.ca OR site:urban-survivors.org) (peer OR \"drug user union\" OR \"overdose response\")",
+          "explanation": "**Why this works:**\n\n- VANDU (Vancouver), CAPUD (Canada), and the Urban Survivors Union (US) are the named drug-user\nunions — far richer than a generic `\"people who use drugs\" organisation` search",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/peer-knowledge.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 162,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "vandu.org",
+            "capud.ca",
+            "urban-survivors.org"
+          ],
+          "domainCategory": "any",
+          "contentType": "any",
+          "tags": [
+            "peer"
+          ]
+        },
+        {
+          "id": "peer-knowledge-movement-history",
+          "title": "Movement History",
+          "category": "\udd70 Historical & Archived Peer Content",
+          "query": "(\"NSW Users and AIDS Association\" OR NUAA OR VIVAIDS OR \"Harm Reduction Victoria\" OR AIVL) (history OR founded OR \"early days\")",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/peer-knowledge.md",
           "sourceType": "dork-pack",
-          "sourceLine": 310,
+          "sourceLine": 179,
           "operators": [],
           "targetDomains": [],
           "domainCategory": "any",
@@ -13132,101 +12617,22 @@
           "tags": []
         },
         {
-          "id": "peer-knowledge-canadian-peer-orgs-1",
-          "title": "Canadian Peer Orgs - 1",
-          "category": "International Peer Content",
-          "query": "\"Canadian Association of People Who Use Drugs\" (CAPUD)",
-          "explanation": "",
+          "id": "peer-knowledge-archived-peer-publications",
+          "title": "Archived Peer Publications",
+          "category": "\udd70 Historical & Archived Peer Content",
+          "query": "site:web.archive.org/web/*/nuaa.org.au (\"User's News\" OR about OR history)",
+          "explanation": "> Pair with the [Temporal Intelligence pack](temporal-intelligence.md) to recover old issues and the\n> [Stigma & Language pack](stigma-language.md) for the movement's history.",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/peer-knowledge.md",
           "sourceType": "dork-pack",
-          "sourceLine": 316,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "peer"
-          ]
-        },
-        {
-          "id": "peer-knowledge-canadian-peer-orgs-2",
-          "title": "Canadian Peer Orgs - 2",
-          "category": "International Peer Content",
-          "query": "site:vandu.org OR site:capud.ca filetype:pdf",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/peer-knowledge.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 322,
-          "operators": [
-            "site",
-            "filetype"
-          ],
-          "targetDomains": [
-            "vandu.org",
-            "capud.ca"
-          ],
-          "domainCategory": "any",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "peer"
-          ]
-        },
-        {
-          "id": "peer-knowledge-archive-org-for-historical-content",
-          "title": "Archive.org for Historical Content",
-          "category": "\udca1 Finding Unindexed Peer Content",
-          "query": "site:web.archive.org (nuaa.org.au OR aivl.org.au)",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/peer-knowledge.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 332,
+          "sourceLine": 185,
           "operators": [
             "site"
           ],
           "targetDomains": [
-            "web.archive.org"
+            "web.archive.org/web/*/nuaa.org.au"
           ],
           "domainCategory": "ngo",
-          "contentType": "any",
-          "tags": [
-            "australia"
-          ]
-        },
-        {
-          "id": "peer-knowledge-historical-peer-publications-1",
-          "title": "Historical Peer Publications - 1",
-          "category": "\udca1 Finding Unindexed Peer Content",
-          "query": "\"User's News\" 1990..2010",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/peer-knowledge.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 338,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "news",
-          "contentType": "any",
-          "tags": [
-            "peer"
-          ]
-        },
-        {
-          "id": "peer-knowledge-historical-peer-publications-2",
-          "title": "Historical Peer Publications - 2",
-          "category": "\udca1 Finding Unindexed Peer Content",
-          "query": "\"peer newsletter\" harm reduction Australia 1990..2015",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/peer-knowledge.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 344,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "news",
           "contentType": "any",
           "tags": [
             "peer",
@@ -25843,7 +25249,7 @@
       "title": "Query 8",
       "category": "⚓ Advanced: Bias Counteraction",
       "query": "\"nitazenes\" AROUND(15) \"harm reduction\"",
-      "explanation": "> **💡 Pro Tip:** See\n> [The \"Sinker\" Method](../tools/search-tweaks.md#-the-sinker-method-bias-counteraction) for more\n> weighting patterns.",
+      "explanation": "> **💡 Pro Tip:** See\n> [The \"Sinker\" Method](../tools/search-tweaks.md#the-sinker-method-bias-counteraction) for more\n> weighting patterns.",
       "difficulty": "advanced",
       "sourceFile": "workflows/research-workflow.md",
       "sourceType": "workflow",
@@ -26135,7 +25541,7 @@
       "title": "Query 5",
       "category": "\udd94 Identity Verification (Name Net)",
       "query": "(\"Jane Doe\" OR \"Jane M. Doe\" OR \"J. Doe\" OR \"Doe, Jane\") (harm reduction OR \"drug policy\")",
-      "explanation": "> **💡 Pro Tip:** See\n> [The \"Name Net\"](../tools/search-tweaks.md#%EF%B8%8F-the-name-net-identity-verification) in Search\n> Tweaks for the full technique.",
+      "explanation": "> **💡 Pro Tip:** See [The \"Name Net\"](../tools/search-tweaks.md#the-name-net-identity-verification)\n> in Search Tweaks for the full technique.",
       "difficulty": "intermediate",
       "sourceFile": "workflows/verification.md",
       "sourceType": "workflow",
@@ -26157,7 +25563,7 @@
       "difficulty": "intermediate",
       "sourceFile": "workflows/verification.md",
       "sourceType": "workflow",
-      "sourceLine": 143,
+      "sourceLine": 142,
       "operators": [
         "site",
         "filetype",
@@ -26183,7 +25589,7 @@
       "difficulty": "intermediate",
       "sourceFile": "workflows/verification.md",
       "sourceType": "workflow",
-      "sourceLine": 155,
+      "sourceLine": 154,
       "operators": [
         "site"
       ],
@@ -26206,7 +25612,7 @@
       "difficulty": "intermediate",
       "sourceFile": "workflows/verification.md",
       "sourceType": "workflow",
-      "sourceLine": 161,
+      "sourceLine": 160,
       "operators": [
         "site",
         "filetype"
@@ -26231,7 +25637,7 @@
       "difficulty": "intermediate",
       "sourceFile": "workflows/verification.md",
       "sourceType": "workflow",
-      "sourceLine": 167,
+      "sourceLine": 166,
       "operators": [
         "site"
       ],
@@ -26254,7 +25660,7 @@
       "difficulty": "intermediate",
       "sourceFile": "workflows/verification.md",
       "sourceType": "workflow",
-      "sourceLine": 188,
+      "sourceLine": 187,
       "operators": [
         "filetype"
       ],
@@ -26274,7 +25680,7 @@
       "difficulty": "intermediate",
       "sourceFile": "workflows/verification.md",
       "sourceType": "workflow",
-      "sourceLine": 194,
+      "sourceLine": 193,
       "operators": [
         "site",
         "filetype"
@@ -26299,7 +25705,7 @@
       "difficulty": "intermediate",
       "sourceFile": "workflows/verification.md",
       "sourceType": "workflow",
-      "sourceLine": 200,
+      "sourceLine": 199,
       "operators": [
         "site",
         "filetype"
@@ -26323,7 +25729,7 @@
       "difficulty": "intermediate",
       "sourceFile": "workflows/verification.md",
       "sourceType": "workflow",
-      "sourceLine": 210,
+      "sourceLine": 209,
       "operators": [
         "filetype",
         "intitle"
@@ -26344,7 +25750,7 @@
       "difficulty": "intermediate",
       "sourceFile": "workflows/verification.md",
       "sourceType": "workflow",
-      "sourceLine": 216,
+      "sourceLine": 215,
       "operators": [
         "filetype",
         "intitle"
@@ -26365,7 +25771,7 @@
       "difficulty": "intermediate",
       "sourceFile": "workflows/verification.md",
       "sourceType": "workflow",
-      "sourceLine": 222,
+      "sourceLine": 221,
       "operators": [
         "filetype",
         "intitle"
@@ -26379,9 +25785,9 @@
     }
   ],
   "meta": {
-    "buildDate": "2026-06-27T17:33:44.849Z",
+    "buildDate": "2026-06-27T18:13:23.920Z",
     "version": "2.0.0",
-    "totalDorks": 1195,
+    "totalDorks": 1166,
     "sourceFiles": [
       "01-quick-start.md",
       "02-core-operators.md",

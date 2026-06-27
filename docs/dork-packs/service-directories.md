@@ -19,7 +19,7 @@ A couple of commonly-cited domains are dead — `path2help.org.au` and `dassa.sa
 resolve; the verified hosts are below.
 
 > **Entity reference:** every finder, hotline, and domain below is catalogued in
-> [Source Intelligence → Service Finders & Directories](../resources/source-intelligence.md#-service-finders--directories).
+> [Source Intelligence → Service Finders & Directories](../resources/source-intelligence.md#service-finders-directories).
 
 ---
 
@@ -217,9 +217,9 @@ site:sahealth.sa.gov.au ("Drug and Alcohol Services South Australia" OR DASSA OR
 ## 🔗 Related Resources
 
 - **Source Intelligence:**
-  [Service Finders & Directories](../resources/source-intelligence.md#-service-finders--directories)
-  — the finders, hotlines, and domains every dork above is built on
-- **Synonym Block:** [Treatment & Service Terms](../05-synonym-blocks.md#-treatment--service-terms)
+  [Service Finders & Directories](../resources/source-intelligence.md#service-finders-directories) —
+  the finders, hotlines, and domains every dork above is built on
+- **Synonym Block:** [Treatment & Service Terms](../05-synonym-blocks.md#treatment-service-terms)
 - **Related Packs:** [NSP](nsp.md), [OAT/OST](oat-ost.md), [Rural & Remote](rural-remote.md)
 - **Key Tools:** [Path2Help](https://adf.org.au/help-support/path2help/),
   [Counselling Online](https://counsellingonline.org.au), [Ask Izzy](https://askizzy.org.au)

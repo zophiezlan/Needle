@@ -33,7 +33,7 @@ Torres Strait Islander communities. When searching:
 > surface deceased persons. Restrict to reports and recommendations; never name individuals.
 >
 > **Entity reference:** every ACCHO, resource, and data-sovereignty framework below is catalogued in
-> [Source Intelligence → First Nations AOD (Community-Controlled)](../resources/source-intelligence.md#-first-nations-aod-community-controlled).
+> [Source Intelligence → First Nations AOD (Community-Controlled)](../resources/source-intelligence.md#first-nations-aod-community-controlled).
 
 ---
 
@@ -256,9 +256,9 @@ site:closingthegap.gov.au ("Target 10" OR "Target 11" OR incarceration OR "youth
 ## 🔗 Related Resources
 
 - **Source Intelligence:**
-  [First Nations AOD (Community-Controlled)](../resources/source-intelligence.md#-first-nations-aod-community-controlled)
+  [First Nations AOD (Community-Controlled)](../resources/source-intelligence.md#first-nations-aod-community-controlled)
   — the ACCHOs, resources, and data-sovereignty frameworks every dork above is built on
-- **Synonym Block:** [First Nations Terms](../05-synonym-blocks.md#-first-nations-terms)
+- **Synonym Block:** [First Nations Terms](../05-synonym-blocks.md#first-nations-terms)
 - **Related Packs:** [Rural & Remote](rural-remote.md), [Prisons & Justice](prisons-justice.md),
   [Stigma & Language](stigma-language.md)
 - **Key Orgs:** [NACCHO](https://naccho.org.au), [Lowitja Institute](https://lowitja.org.au),

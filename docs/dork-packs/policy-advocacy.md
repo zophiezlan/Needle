@@ -21,7 +21,7 @@ Lead with the people most affected: drug-user organisations (**AIVL**, **NUAA**)
 documents leave out.
 
 > **Entity reference:** every strategy, inquiry, and organisation below is catalogued in
-> [Source Intelligence → Policy, Inquiries & Advocacy](../resources/source-intelligence.md#-policy-inquiries--advocacy).
+> [Source Intelligence → Policy, Inquiries & Advocacy](../resources/source-intelligence.md#policy-inquiries-advocacy).
 
 ---
 
@@ -245,9 +245,9 @@ site:*.gov.au inurl:submissions ("harm reduction" OR "drug policy") after:2025
 ## 🔗 Related Resources
 
 - **Source Intelligence:**
-  [Policy, Inquiries & Advocacy](../resources/source-intelligence.md#-policy-inquiries--advocacy) —
+  [Policy, Inquiries & Advocacy](../resources/source-intelligence.md#policy-inquiries-advocacy) —
   the strategy, inquiries, and organisations every dork above is built on
-- **Synonym Block:** [Policy Terms](../05-synonym-blocks.md#-policy-terms)
+- **Synonym Block:** [Policy Terms](../05-synonym-blocks.md#policy-terms)
 - **Related Packs:** [Research](research.md), [International](international.md),
   [Coroners & Deaths](coroners-deaths.md)
 - **Key Orgs:** [AADC](https://aadc.org.au), [AIVL](https://aivl.org.au),

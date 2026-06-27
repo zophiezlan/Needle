@@ -17,7 +17,7 @@ for the Bush"** research series, and the clinician advice line **DACAS**. Second
 actually filter to non-metro evidence instead of hoping the word "rural" appears.
 
 > **Entity reference:** every org, dataset, and rurality code below is catalogued in
-> [Source Intelligence → Rural, Regional & Remote](../resources/source-intelligence.md#-rural-regional--remote).
+> [Source Intelligence → Rural, Regional & Remote](../resources/source-intelligence.md#rural-regional-remote).
 
 ---
 
@@ -239,9 +239,9 @@ Rural peer knowledge is thin online and worth surfacing wherever it exists.
 ## 🔗 Related Resources
 
 - **Source Intelligence:**
-  [Rural, Regional & Remote](../resources/source-intelligence.md#-rural-regional--remote) — the
-  orgs, datasets, and rurality codes every dork above is built on
-- **Synonym Block:** [Social Determinants Terms](../05-synonym-blocks.md#-social-determinants-terms)
+  [Rural, Regional & Remote](../resources/source-intelligence.md#rural-regional-remote) — the orgs,
+  datasets, and rurality codes every dork above is built on
+- **Synonym Block:** [Social Determinants Terms](../05-synonym-blocks.md#social-determinants-terms)
 - **Related Packs:** [Service Directories](service-directories.md),
   [First Nations](first-nations.md), [Mental Health](mental-health.md)
 - **Key Orgs:** [NRHA](https://ruralhealth.org.au), [RFDS](https://flyingdoctor.org.au),

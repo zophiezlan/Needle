@@ -21,7 +21,7 @@ Europe says **"drug consumption room"** (DCR); Canada distinguishes federally sa
 Search the local term for local documents.
 
 > **Entity reference:** every service, review, and domain below is catalogued in
-> [Source Intelligence → Supervised Consumption & NSP](../resources/source-intelligence.md#-supervised-consumption--nsp).
+> [Source Intelligence → Supervised Consumption & NSP](../resources/source-intelligence.md#supervised-consumption-nsp).
 
 ---
 
@@ -230,9 +230,9 @@ reality is best described by — the people who use it and the peers who work in
 ## 🔗 Related Resources
 
 - **Source Intelligence:**
-  [Supervised Consumption & NSP entities](../resources/source-intelligence.md#-supervised-consumption--nsp)
+  [Supervised Consumption & NSP entities](../resources/source-intelligence.md#supervised-consumption-nsp)
   — the services, reviews, and domains every dork above is built on
-- **Synonym Block:** [Treatment & Service Terms](../05-synonym-blocks.md#-treatment--service-terms)
+- **Synonym Block:** [Treatment & Service Terms](../05-synonym-blocks.md#treatment-service-terms)
 - **Related Packs:** [NSP](nsp.md), [Coroners & Deaths](coroners-deaths.md),
   [International](international.md), [Policy & Advocacy](policy-advocacy.md)
 - **Key Services:** [Uniting MSIC](https://uniting.org), [North Richmond MSIR](https://nrch.com.au),

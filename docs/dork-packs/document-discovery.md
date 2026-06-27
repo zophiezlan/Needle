@@ -16,7 +16,7 @@ open data sits on **data.gov.au** (CKAN), **AIHW** (report data tables as `.xlsx
 numbers.
 
 > **Entity reference:** every portal, dataset, and platform below is catalogued in
-> [Source Intelligence → Discovery Platforms & File Types](../resources/source-intelligence.md#-discovery-platforms--file-types).
+> [Source Intelligence → Discovery Platforms & File Types](../resources/source-intelligence.md#discovery-platforms-file-types).
 >
 > **Ethics:** search only publicly accessible information; never attempt to access
 > password-protected or private content; consider whether information should be public before using
@@ -212,7 +212,7 @@ filetype:xlsx "harm reduction" -"copy" -"backup" -"old"
 ## 🔗 Related Resources
 
 - **Source Intelligence:**
-  [Discovery Platforms & File Types](../resources/source-intelligence.md#-discovery-platforms--file-types)
+  [Discovery Platforms & File Types](../resources/source-intelligence.md#discovery-platforms-file-types)
   — the portals, datasets, and platforms every dork above is built on
 - **Related Packs:** [Data & Statistics](data-statistics.md), [Investigative](investigative.md),
   [Organizational Intelligence](organizational-intelligence.md)

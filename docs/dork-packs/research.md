@@ -20,7 +20,7 @@ Peer knowledge is expert knowledge here too: weight **peer-led**, **participator
 **co-designed** research, not only the `.edu.au` PDF.
 
 > **Entity reference:** every centre, cohort, and journal below is catalogued in
-> [Source Intelligence → Research, Data & Surveillance](../resources/source-intelligence.md#-research-data--surveillance-au).
+> [Source Intelligence → Research, Data & Surveillance](../resources/source-intelligence.md#research-data-surveillance-au).
 
 ---
 
@@ -271,9 +271,9 @@ site:cochranelibrary.com inurl:cdsr ("harm reduction" OR naloxone OR "needle syr
 ## 🔗 Related Resources
 
 - **Source Intelligence:**
-  [Research, Data & Surveillance entities](../resources/source-intelligence.md#-research-data--surveillance-au)
+  [Research, Data & Surveillance entities](../resources/source-intelligence.md#research-data-surveillance-au)
   — the centres, cohorts, and journals every dork above is built on
-- **Synonym Block:** [Research Terms](../05-synonym-blocks.md#-research-terms)
+- **Synonym Block:** [Research Terms](../05-synonym-blocks.md#research-terms)
 - **Related Packs:** [Data & Statistics](data-statistics.md),
   [Policy & Advocacy](policy-advocacy.md)
 - **Resource:** [Academic Access](../resources/academic-access.md)

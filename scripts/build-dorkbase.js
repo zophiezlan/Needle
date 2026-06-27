@@ -580,11 +580,7 @@ async function processFiles() {
     cwd: DOCS_DIR,
     // Reference/index docs are not dork sources: their code blocks and tables
     // are illustrative, so extracting them would pollute the dataset.
-    ignore: [
-      "**/README.md",
-      "**/node_modules/**",
-      "resources/source-intelligence.md",
-    ],
+    ignore: ["**/README.md", "**/node_modules/**", "resources/source-intelligence.md"],
     absolute: true,
   });
 

@@ -643,7 +643,7 @@ acronym "CREMS" is ambiguous, so don't quote it.
 
 ---
 
-## ⚖️ Justice, Custody & Diversion
+## 🔒 Justice, Custody & Diversion
 
 People who use drugs are massively over-represented in custody, and the system has its own named
 services, courts, data collections and (limited) harm-reduction footprint. Lead with the peer voice,
@@ -811,7 +811,7 @@ adversity, `"seasonal"` / `"harvest"` workers. Pair generic region names (`"Kimb
 
 ---
 
-## 🌏 International Reference Bodies (for the "strong international" layer)
+## 🌐 International Reference Bodies (for the "strong international" layer)
 
 For the "strong international layer", name the country's actual agency or service — not "overseas
 examples". Each pack should pull the relevant rows.

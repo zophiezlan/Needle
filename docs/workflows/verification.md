@@ -95,9 +95,8 @@ citations.
 ("Jane Doe" OR "Jane M. Doe" OR "J. Doe" OR "Doe, Jane") (harm reduction OR "drug policy")
 ```
 
-> **💡 Pro Tip:** See
-> [The "Name Net"](../tools/search-tweaks.md#%EF%B8%8F-the-name-net-identity-verification) in Search
-> Tweaks for the full technique.
+> **💡 Pro Tip:** See [The "Name Net"](../tools/search-tweaks.md#the-name-net-identity-verification)
+> in Search Tweaks for the full technique.
 
 ---
 

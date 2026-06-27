@@ -17,7 +17,7 @@ and Drug Foundation's plain-language **Drug Facts**. For blood-borne viruses the
 **Crew** and NZ's **The Level** carry decades of plain-language know-how.
 
 > **Entity reference:** every producer and series below is catalogued in
-> [Source Intelligence → Safer-Use Education](../resources/source-intelligence.md#-safer-use-education--plain-language-resources).
+> [Source Intelligence → Safer-Use Education](../resources/source-intelligence.md#safer-use-education-plain-language-resources).
 
 ---
 
@@ -175,11 +175,10 @@ site:dancesafe.org ("Drug Information" OR "test strip" OR "fact")
 ## 🔗 Related Resources
 
 - **Source Intelligence:**
-  [Safer-Use Education](../resources/source-intelligence.md#-safer-use-education--plain-language-resources)
+  [Safer-Use Education](../resources/source-intelligence.md#safer-use-education-plain-language-resources)
   — the producers and series every dork above is built on
-- **Synonym Blocks:**
-  [Treatment & Service Terms](../05-synonym-blocks.md#-treatment--service-terms),
-  [Peer/Lived Experience Terms](../05-synonym-blocks.md#-peerlived-experience-terms)
+- **Synonym Blocks:** [Treatment & Service Terms](../05-synonym-blocks.md#treatment-service-terms),
+  [Peer/Lived Experience Terms](../05-synonym-blocks.md#peerlived-experience-terms)
 - **Related Packs:** [Peer Workforce](peer-workforce.md), [Peer Knowledge](peer-knowledge.md),
   [Naloxone](naloxone.md), [Drug Checking](drug-checking.md)
 - **Key Sources:** [NUAA](https://nuaa.org.au), [ADF Drug Facts](https://adf.org.au/drug-facts/)

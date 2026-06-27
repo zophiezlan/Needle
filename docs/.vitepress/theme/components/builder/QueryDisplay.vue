@@ -4,7 +4,8 @@ import { useQueryBuilder } from "../../composables/useQueryBuilder";
 import { useToast } from "../../composables/useToast";
 import { highlightDorkWithLint, lintDorkScript } from "../../utils/dorkscript";
 
-const { blocks, queryString, selectBlock, selectedBlockId, removeBlock, moveBlock } = useQueryBuilder();
+const { blocks, queryString, selectBlock, selectedBlockId, removeBlock, moveBlock } =
+  useQueryBuilder();
 const { success } = useToast();
 
 const blockColors: Record<string, string> = {
@@ -78,7 +79,9 @@ const highlightedQuery = computed(() =>
               @click.stop="moveBlock(block.id, 'up')"
               title="Move left"
               aria-label="Move block left"
-            >◀</button>
+            >
+              ◀
+            </button>
           </span>
           {{ block.type }}:{{ block.value || "..." }}
           <span class="block-reorder" v-if="block.id === selectedBlockId">
@@ -88,9 +91,18 @@ const highlightedQuery = computed(() =>
               @click.stop="moveBlock(block.id, 'down')"
               title="Move right"
               aria-label="Move block right"
-            >▶</button>
+            >
+              ▶
+            </button>
           </span>
-          <button class="block-remove" @click.stop="removeBlock(block.id)" title="Remove block" aria-label="Remove block">×</button>
+          <button
+            class="block-remove"
+            @click.stop="removeBlock(block.id)"
+            title="Remove block"
+            aria-label="Remove block"
+          >
+            ×
+          </button>
         </span>
       </div>
     </div>

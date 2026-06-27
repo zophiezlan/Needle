@@ -17,7 +17,7 @@ publish **Activity Work Plans**. Replace the generic `"annual report" filetype:p
 those exact terms and you find the structured record, not just the glossy PDF.
 
 > **Entity reference:** every register and document type below is catalogued in
-> [Source Intelligence → Organisational Intelligence & Registers](../resources/source-intelligence.md#-organisational-intelligence--registers).
+> [Source Intelligence → Organisational Intelligence & Registers](../resources/source-intelligence.md#organisational-intelligence-registers).
 
 ---
 
@@ -208,7 +208,7 @@ Quick-copy patterns — combine with an org name or `site:`.
 
 ---
 
-## 🔍 Organization-Specific Deep Dives
+## 🔍 Organisation-Specific Deep Dives
 
 ### All Documents from One Org
 
@@ -262,7 +262,7 @@ site:*.health.*.gov.au ("harm reduction" OR AOD) ("annual report" OR strategy OR
 ## 🔗 Related Resources
 
 - **Source Intelligence:**
-  [Organisational Intelligence & Registers](../resources/source-intelligence.md#-organisational-intelligence--registers)
+  [Organisational Intelligence & Registers](../resources/source-intelligence.md#organisational-intelligence-registers)
   — the registers and document types every dork above is built on
 - **Related Packs:** [Policy & Advocacy](policy-advocacy.md), [Research](research.md),
   [Temporal Intelligence](temporal-intelligence.md)

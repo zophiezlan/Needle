@@ -20,7 +20,7 @@ lives in named collections (AIHW's **National Prisoner Health Data Collection**,
 post-release mortality study).
 
 > **Entity reference:** every service, court, dataset, and report below is catalogued in
-> [Source Intelligence → Justice, Custody & Diversion](../resources/source-intelligence.md#-justice-custody--diversion).
+> [Source Intelligence → Justice, Custody & Diversion](../resources/source-intelligence.md#justice-custody-diversion).
 
 ---
 
@@ -374,9 +374,9 @@ the official record.
 ## 🔗 Related Resources
 
 - **Source Intelligence:**
-  [Justice, Custody & Diversion](../resources/source-intelligence.md#-justice-custody--diversion) —
+  [Justice, Custody & Diversion](../resources/source-intelligence.md#justice-custody-diversion) —
   the services, courts, datasets, and peer publications every dork above is built on
-- **Synonym Block:** [Justice Terms](../05-synonym-blocks.md#-justice-terms)
+- **Synonym Block:** [Justice Terms](../05-synonym-blocks.md#justice-terms)
 - **Related Packs:** [First Nations](first-nations.md), [OAT/OST](oat-ost.md),
   [Naloxone](naloxone.md), [Coroners & Deaths](coroners-deaths.md)
 - **Key Sources:** [Justice Health NSW](https://justicehealth.nsw.gov.au),

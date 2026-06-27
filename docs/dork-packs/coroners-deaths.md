@@ -30,7 +30,7 @@ For harm reduction, coronial **recommendations** matter most: naloxone access, d
 the injecting rooms all advanced on the back of them — and agencies must formally respond.
 
 > **Entity reference:** every court, system, and dataset below is catalogued in
-> [Source Intelligence → Coroners, Inquests & Death Data](../resources/source-intelligence.md#-coroners-inquests--death-data).
+> [Source Intelligence → Coroners, Inquests & Death Data](../resources/source-intelligence.md#coroners-inquests-death-data).
 
 ---
 
@@ -309,7 +309,7 @@ to miss in a statistics-only search.
 ## 🔗 Related Resources
 
 - **Source Intelligence:**
-  [Coroners, Inquests & Death Data entities](../resources/source-intelligence.md#-coroners-inquests--death-data)
+  [Coroners, Inquests & Death Data entities](../resources/source-intelligence.md#coroners-inquests-death-data)
   — the courts, systems, and datasets every dork above is built on
 - **Related Packs:** [Naloxone](naloxone.md), [Novel Substances](novel-substances.md),
   [Data & Statistics](data-statistics.md), [Drug Alerts](drug-alerts.md)

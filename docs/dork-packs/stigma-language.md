@@ -20,7 +20,7 @@ To find older documents you sometimes must search the _legacy_ stigmatising term
 them as research keys, thoughtfully.
 
 > **Entity reference:** every guide and historical anchor below is catalogued in
-> [Source Intelligence → Stigma, Language & Movement History](../resources/source-intelligence.md#-stigma-language--movement-history).
+> [Source Intelligence → Stigma, Language & Movement History](../resources/source-intelligence.md#stigma-language-movement-history).
 
 ---
 
@@ -253,11 +253,11 @@ Peer-led anti-stigma work leads here — the people most affected reframing the 
 ## 🔗 Related Resources
 
 - **Source Intelligence:**
-  [Stigma, Language & Movement History](../resources/source-intelligence.md#-stigma-language--movement-history)
+  [Stigma, Language & Movement History](../resources/source-intelligence.md#stigma-language-movement-history)
   — the guides and historical anchors every dork above is built on
 - **Synonym Blocks:**
-  [Peer/Lived Experience Terms](../05-synonym-blocks.md#-peerlived-experience-terms),
-  [Spelling Variations](../05-synonym-blocks.md#-spelling-variations-auuk-vs-us)
+  [Peer/Lived Experience Terms](../05-synonym-blocks.md#peerlived-experience-terms),
+  [Spelling Variations](../05-synonym-blocks.md#spelling-variations-auuk-vs-us)
 - **Related Packs:** [Peer Knowledge](peer-knowledge.md), [Policy & Advocacy](policy-advocacy.md),
   [Temporal Intelligence](temporal-intelligence.md)
 - **Key Guides:** [Language Matters (NADA)](https://nada.org.au/resources/language-matters/),

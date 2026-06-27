@@ -23,7 +23,7 @@
 > risk.
 >
 > **Entity reference:** every peer org and resource below is catalogued in
-> [Source Intelligence → Sex Worker Health (Peer-Led)](../resources/source-intelligence.md#-sex-worker-health-peer-led).
+> [Source Intelligence → Sex Worker Health (Peer-Led)](../resources/source-intelligence.md#sex-worker-health-peer-led).
 
 ---
 
@@ -192,7 +192,7 @@ site:*.edu.au ("sex worker" OR "sex work") (health OR "harm reduction" OR "drug 
 ## 🔗 Related Resources
 
 - **Source Intelligence:**
-  [Sex Worker Health (Peer-Led)](../resources/source-intelligence.md#-sex-worker-health-peer-led) —
+  [Sex Worker Health (Peer-Led)](../resources/source-intelligence.md#sex-worker-health-peer-led) —
   the peer orgs, resources, and decrim status every dork above is built on
 - **Related Packs:** [LGBTQ+ Health](lgbtq-health.md), [NSP](nsp.md),
   [Housing & Homelessness](housing-homelessness.md)

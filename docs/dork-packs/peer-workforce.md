@@ -18,7 +18,7 @@ and the broader **"National Lived Experience (Peer) Workforce Development Guidel
 lands.
 
 > **Entity reference:** the named frameworks and peer orgs below are catalogued in
-> [Source Intelligence → Peer & Drug-User Organisations](../resources/source-intelligence.md#-cross-cutting-peer--drug-user-organisations-au).
+> [Source Intelligence → Peer & Drug-User Organisations](../resources/source-intelligence.md#cross-cutting-peer-drug-user-organisations-au).
 
 ---
 
@@ -233,10 +233,10 @@ The peer workforce carries disproportionate emotional load — this is essential
 ## 🔗 Related Resources
 
 - **Source Intelligence:**
-  [Peer & Drug-User Organisations](../resources/source-intelligence.md#-cross-cutting-peer--drug-user-organisations-au)
+  [Peer & Drug-User Organisations](../resources/source-intelligence.md#cross-cutting-peer-drug-user-organisations-au)
   — the frameworks and peer orgs every dork above is built on
 - **Synonym Block:**
-  [Peer/Lived Experience Terms](../05-synonym-blocks.md#-peerlived-experience-terms)
+  [Peer/Lived Experience Terms](../05-synonym-blocks.md#peerlived-experience-terms)
 - **Related Packs:** [Peer Knowledge](peer-knowledge.md), [Forum & Community](forum-community.md)
 - **Key Orgs:** [AIVL](https://aivl.org.au), [NUAA](https://nuaa.org.au),
   [SHARC](https://sharc.org.au)

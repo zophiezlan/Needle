@@ -19,7 +19,7 @@ a fallback.
 > below instead.
 >
 > **Entity reference:** every archive and endpoint below is catalogued in
-> [Source Intelligence → Web Archives & Temporal Search](../resources/source-intelligence.md#-web-archives--temporal-search).
+> [Source Intelligence → Web Archives & Temporal Search](../resources/source-intelligence.md#web-archives-temporal-search).
 
 ---
 
@@ -244,7 +244,7 @@ https://web.archive.org/save/<the-live-url>
 ## 🔗 Related Resources
 
 - **Source Intelligence:**
-  [Web Archives & Temporal Search](../resources/source-intelligence.md#-web-archives--temporal-search)
+  [Web Archives & Temporal Search](../resources/source-intelligence.md#web-archives-temporal-search)
   — the archives and endpoints every dork above is built on
 - **Operator Guide:** [Core Operators](../02-core-operators.md) — date-operator syntax
 - **Related Packs:** [Research](research.md),
