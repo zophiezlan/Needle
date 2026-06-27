@@ -45,7 +45,8 @@ export default defineConfig({
       "meta",
       {
         property: "og:description",
-        content: "Search discovery platform with 700+ pre-built queries for harm reduction professionals",
+        content:
+          "Search discovery platform with 700+ pre-built queries for harm reduction professionals",
       },
     ],
     ["meta", { property: "og:locale", content: "en_AU" }],
@@ -124,6 +125,9 @@ export default defineConfig({
             { text: "Google Alerts", link: "/tools/google-alerts" },
             { text: "OSINT Tools", link: "/tools/osint" },
             { text: "Cheat Sheet", link: "/resources/cheat-sheet" },
+            { text: "Source Intelligence", link: "/resources/source-intelligence" },
+            { text: "Organisations Directory", link: "/resources/organizations" },
+            { text: "Australian OSINT", link: "/resources/australian-osint" },
           ],
         },
       ],
@@ -143,6 +147,21 @@ export default defineConfig({
     outline: [2, 3],
   },
   markdown: {
+    // Clean, emoji-free heading anchors (e.g. "## ⚡ Quick Start" -> #quick-start).
+    // Without this, VitePress retains the emoji in the id (#⚡-quick-start), which no
+    // cross-reference link targets — see the anchor convention note in the repo docs.
+    anchor: {
+      slugify: (str: string) =>
+        str
+          .replace(/\p{Extended_Pictographic}/gu, "") // strip emoji
+          .normalize("NFKD")
+          .replace(/[^\w\s-]/g, "") // strip accents, variation selectors, punctuation
+          .trim()
+          .toLowerCase()
+          .replace(/\s+/g, "-")
+          .replace(/-+/g, "-")
+          .replace(/^-+|-+$/g, ""),
+    },
     config: (md) => {
       md.use(markdownItGitHubAlerts);
     },

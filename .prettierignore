@@ -1,3 +1,9 @@
 .mypy_cache/
 node_modules/
 archive/
+
+# Generated build output (raw JSON from scripts/build-dorkbase.js) — not hand-edited,
+# so exclude from Prettier so `npm run format:check` / CI lint passes.
+tools/dork-explorer/dork-data.json
+tools/dork-explorer/dork-data-integrity.json
+tools/dork-explorer/dork-data.js

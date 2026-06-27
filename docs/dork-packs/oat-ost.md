@@ -1,67 +1,105 @@
 # Opioid Agonist Treatment (OAT/OST)
 
-> Guidelines, clinical tools, access policies, and research for opioid pharmacotherapy.
+> Find the guidelines, clinical tools, access policies, and products behind opioid pharmacotherapy —
+> named by guideline, program, and brand, not just by keyword.
 
 [← Back to Dork Packs](README.md) | [← Main Guide](../README.md)
 
 ---
 
+## 👥 About This Pack
+
+OAT (methadone and buprenorphine treatment) is governed by named documents: the national **MATOD
+guidelines** and a _different_ program in every state — NSW's **OTP**, Victoria's **maintenance
+pharmacotherapy policy**, WA's **CPOP**, Queensland's **QOTP**, SA's **MATOD**. The medicines have
+exact brands too — **Biodone Forte**, **Suboxone Film**, and the depot injectables **Buvidal** and
+**Sublocade**.
+
+Lead with the lived-experience view: OAT is one of the most-critiqued interventions by the people on
+it — supervised dosing, **takeaway** access, and pharmacy **dispensing fees** are everyday issues
+peers know better than any guideline.
+
+> **Entity reference:** every guideline, program, and brand below is catalogued in
+> [Source Intelligence → Opioid Agonist Treatment](../resources/source-intelligence.md#opioid-agonist-treatment-oatost).
+
+---
+
 ## ⚡ Quick Start
 
-Find Australian OAT guidelines:
+Find the national clinical guidelines:
 
 ```txt
-site:*.health.*.gov.au filetype:pdf ("opioid agonist" OR methadone OR buprenorphine) guideline
+"National Guidelines for Medication-Assisted Treatment of Opioid Dependence" site:health.gov.au
 ```
 
 ---
 
 ## 🟢 Basic Queries
 
-### Government Treatment Guidelines
+### National MATOD Guidelines
 
 ```txt
-site:*.health.*.gov.au filetype:pdf ("opioid agonist" OR "opioid treatment program") (guideline OR policy OR protocol)
+("National Guidelines for Medication-Assisted Treatment of Opioid Dependence" OR MATOD) site:health.gov.au
 ```
 
-### Methadone-Specific
+**Why this works:**
+
+- Goes to the exact national framework rather than guessing `*.gov.au` — note the hyphen in
+  "Medication-Assisted" and that the document dates from 2014 (states issue the operational detail)
+
+### Peer & Consumer Perspectives on OAT
 
 ```txt
-site:*.gov.au filetype:pdf methadone (guideline OR program OR prescribing)
+(site:nuaa.org.au OR site:aivl.org.au OR site:hrvic.org.au) (methadone OR buprenorphine OR "opioid treatment" OR pharmacotherapy)
 ```
 
-### Buprenorphine-Specific
+**Why this works:**
+
+- Peer orgs document the access and dignity issues — supervised dosing, takeaways, dispensing fees —
+  that clinical guidelines gloss over; this is the by-and-with-consumers side
+
+### State Treatment Guidelines
 
 ```txt
-site:*.gov.au filetype:pdf (buprenorphine OR suboxone) (guideline OR program OR prescribing)
+(site:health.nsw.gov.au OR site:health.vic.gov.au OR site:mhc.wa.gov.au) ("opioid treatment" OR pharmacotherapy OR methadone OR buprenorphine) (guideline OR policy)
 ```
 
 ---
 
 ## 🟡 Intermediate Queries
 
-### State-Specific OAT Policies
+### Depot (Long-Acting Injectable) Buprenorphine
 
 ```txt
-site:*.gov.au filetype:pdf ("opioid treatment" OR "pharmacotherapy") (NSW OR VIC OR QLD OR WA OR SA OR TAS OR ACT OR NT)
+("Buvidal Weekly" OR "Buvidal Monthly" OR "Sublocade" OR "depot buprenorphine" OR LAIB) (Australia OR PBS OR guideline)
 ```
 
-### Prescriber Resources
+**Why this works:**
+
+- Naming the actual depot brands (Buvidal from Camurus; Sublocade from Indivior) finds the
+  product-specific guidance and PBS detail, not generic "buprenorphine" pages
+
+### Takeaway Doses & Supervised Dosing
 
 ```txt
-site:*.gov.au "authorised prescriber" OR "prescriber training" (methadone OR buprenorphine OR opioid) filetype:pdf
+("takeaway doses" OR "take-away doses" OR "unsupervised doses" OR "supervised dosing") (methadone OR buprenorphine OR OTP) Australia
 ```
 
-### Clinic Directories
+### Prescriber Training & Authorisation
 
 ```txt
-"opioid treatment" clinic OR service directory [YOUR STATE] site:*.gov.au
+(site:racgp.org.au OR site:otep.org.au OR site:insight.qld.edu.au) ("Medication Assisted Treatment for Opioid Dependence" OR "Opioid Dependence Treatment Education Program" OR "authorised prescriber" OR prescriber)
 ```
 
-### Dosing Guidelines
+**Why this works:**
+
+- RACGP's MATOD training and NSW's OTEP are the named prescriber pathways; "authorised prescriber"
+  is the exact regulatory status — these surface the real training, not job ads
+
+### Dispensing Fees & Access Barriers
 
 ```txt
-site:*.gov.au filetype:pdf (methadone OR buprenorphine) (dosing OR induction OR "dose adjustment")
+(methadone OR buprenorphine OR pharmacotherapy) ("dispensing fee" OR "daily dosing fee" OR "cost" OR "access barrier") Australia
 ```
 
 ---
@@ -71,87 +109,143 @@ site:*.gov.au filetype:pdf (methadone OR buprenorphine) (dosing OR induction OR 
 ### Comprehensive OAT Document Sweep
 
 ```txt
-site:*.gov.au filetype:pdf (OAT OR OST OR "opioid agonist" OR "opioid substitution" OR methadone OR buprenorphine OR "pharmacotherapy") (guideline OR policy OR framework OR protocol) after:2020
+site:*.gov.au filetype:pdf (OAT OR OST OR "opioid agonist" OR "opioid dependence" OR methadone OR buprenorphine OR pharmacotherapy) (guideline OR policy OR framework OR "clinical policies") after:2018
 ```
 
-### Long-Acting Injectable Buprenorphine
+### Pregnancy & Perinatal OAT
 
 ```txt
-("long-acting" OR "extended-release" OR "depot" OR "monthly") buprenorphine (sublocade OR buvidal) Australia
-```
-
-### Take-Away/Takeaway Doses
-
-```txt
-site:*.gov.au ("take-away" OR "takeaway" OR "unsupervised") (dose OR dosing) (methadone OR buprenorphine) filetype:pdf
-```
-
-### Pregnancy & OAT
-
-```txt
-site:*.gov.au (pregnancy OR pregnant OR antenatal OR perinatal) (methadone OR buprenorphine OR "opioid treatment") guideline filetype:pdf
+(pregnancy OR perinatal OR antenatal) (methadone OR buprenorphine OR "opioid dependence") (guideline OR management) Australia filetype:pdf
 ```
 
 ### Pain Management & OAT
 
 ```txt
-site:*.gov.au ("chronic pain" OR "pain management") (methadone OR buprenorphine OR OAT) guideline filetype:pdf
+("chronic pain" OR "pain management") (methadone OR buprenorphine OR "depot buprenorphine") (guideline OR interaction) Australia filetype:pdf
+```
+
+### Diversion, Safety & Governance
+
+```txt
+(methadone OR buprenorphine) (diversion OR "safe storage" OR supervision OR "clinical governance") (policy OR guideline) site:*.gov.au filetype:pdf
 ```
 
 ---
 
-## 📍 State-by-State OAT Resources
+## 📍 State Programs & Guidelines
 
-### NSW
+Each state's named program and current guideline — verified, because the titles differ.
+
+### NSW — Opioid Treatment Program (OTP)
 
 ```txt
-site:health.nsw.gov.au "opioid treatment" OR methadone
+site:health.nsw.gov.au ("NSW Clinical Guidelines" "Treatment of Opioid Dependence" OR "Opioid Treatment Program" OR "depot buprenorphine")
 ```
 
-### QLD
+### Victoria — Maintenance Pharmacotherapy Policy
 
 ```txt
-site:health.qld.gov.au "opioid treatment program"
+site:health.vic.gov.au "Policy for maintenance pharmacotherapy for opioid dependence"
 ```
 
-### SA
+### WA — Community Program for Opioid Pharmacotherapy (CPOP)
 
 ```txt
-site:sahealth.sa.gov.au "opioid treatment"
+site:mhc.wa.gov.au ("Community Program for Opioid Pharmacotherapy" OR CPOP OR "Clinical Policies and Procedures for the Use of Methadone and Buprenorphine")
 ```
 
-### VIC
+### QLD — Queensland Opioid Treatment Program (QOTP)
 
 ```txt
-site:health.vic.gov.au "pharmacotherapy" OR methadone OR buprenorphine
+site:health.qld.gov.au ("Queensland Opioid Dependence Treatment Guidelines" OR "Queensland Opioid Treatment Program" OR QOTP)
 ```
 
-### WA
+### SA — Medication Assisted Treatment for Opioid Dependence (MATOD)
 
 ```txt
-site:health.wa.gov.au "community program for opioid pharmacotherapy"
+site:sahealth.sa.gov.au "Medication Assisted Treatment for Opioid Dependence" OR MATOD
 ```
 
 ---
 
-## 🎓 Training & Workforce
+## 💊 Medications & Brands
 
-### Prescriber Training
+The brand names are how supply, PBS listing, and shortages get described.
+
+### Methadone (Biodone / Aspen)
 
 ```txt
-"opioid treatment" OR "pharmacotherapy" (prescriber OR "medical practitioner") training Australia
+("Biodone Forte" OR "Aspen Methadone Syrup" OR "Aspen Methadone Liquid") (methadone OR PBS) site:.au
 ```
 
-### Nursing in OAT
+### Buprenorphine-Naloxone (Suboxone)
 
 ```txt
-(nurse OR nursing) "opioid treatment" OR "pharmacotherapy" (role OR training OR guideline) Australia filetype:pdf
+("Suboxone Film" OR "buprenorphine-naloxone" OR Subutex) (PBS OR guideline OR "soluble film") site:.au
 ```
 
-### Pharmacy Dispensing
+### Depot Buprenorphine (Buvidal / Sublocade)
 
 ```txt
-(pharmacy OR pharmacist) (methadone OR buprenorphine) (dispensing OR protocol OR guideline) Australia
+("Buvidal" OR "Sublocade") (Camurus OR Indivior OR PBS OR "modified release") site:.au
+```
+
+**Why this works:**
+
+- Buvidal (weekly/monthly, Camurus) and Sublocade (monthly, Indivior) are the only depot
+  buprenorphines registered in Australia — quoting them finds the real product and access info
+
+---
+
+## 💬 Peer & Lived-Experience Perspectives
+
+The everyday reality of OAT — and its strongest critiques — come from the people on it.
+
+### Consumer Experience & Critique
+
+```txt
+(methadone OR buprenorphine OR "opioid treatment") ("in their own words" OR "client experience" OR "consumer" OR dignity OR "supervised dosing") Australia
+```
+
+### Peer Advocacy on Access
+
+```txt
+(site:nuaa.org.au OR site:aivl.org.au) (methadone OR pharmacotherapy OR OTP) (submission OR campaign OR "dispensing fee" OR takeaway)
+```
+
+### Community Discussion & Real-Time Reports
+
+```txt
+(site:reddit.com/r/AusDrugs OR site:bluelight.org) ("methadone" OR "subbies" OR "suboxone" OR "buvidal" OR "depot")
+```
+
+**Why this works:**
+
+- Forums carry the practical, unfiltered experience — transferring between programs, depot side
+  effects, takeaway negotiations — that an effectiveness study never captures
+
+---
+
+## 🌏 International OAT Guidance
+
+The reference standards other guidelines build on.
+
+### WHO Opioid Dependence Guidelines
+
+```txt
+"Guidelines for the psychosocially assisted pharmacological treatment of opioid dependence" (site:who.int OR site:iris.who.int)
+```
+
+### UK "Orange Book"
+
+```txt
+"Drug misuse and dependence: UK guidelines on clinical management" site:gov.uk
+```
+
+### Canada BCCSU
+
+```txt
+"A Guideline for the Clinical Management of Opioid Use Disorder" site:bccsu.ca
 ```
 
 ---
@@ -161,51 +255,32 @@ site:health.wa.gov.au "community program for opioid pharmacotherapy"
 ### Australian Research
 
 ```txt
-site:ndarc.med.unsw.edu.au OR site:turning-point.org.au (methadone OR buprenorphine OR OAT) filetype:pdf
+(site:unsw.edu.au OR site:ndarc.med.unsw.edu.au OR site:turningpoint.org.au) ("opioid agonist" OR methadone OR buprenorphine OR "depot buprenorphine") (outcomes OR retention OR evaluation) filetype:pdf
 ```
 
-### Effectiveness Research
+### Effectiveness & Retention
 
 ```txt
-site:*.edu.au ("opioid agonist therapy" OR methadone OR buprenorphine) (effectiveness OR outcomes OR retention) filetype:pdf
+("opioid agonist treatment" OR OAT OR methadone OR buprenorphine) (retention OR mortality OR effectiveness) Australia filetype:pdf
 ```
 
 ### Systematic Reviews
 
 ```txt
-intitle:"systematic review" ("opioid agonist" OR methadone OR buprenorphine) effectiveness
-```
-
----
-
-## 🏥 Clinical Considerations
-
-### Drug Interactions
-
-```txt
-(methadone OR buprenorphine) "drug interaction" OR interaction (guideline OR warning) filetype:pdf
-```
-
-### Withdrawal Management
-
-```txt
-site:*.gov.au "opioid withdrawal" (methadone OR buprenorphine) (induction OR management) filetype:pdf
-```
-
-### Diversion & Safety
-
-```txt
-site:*.gov.au (methadone OR buprenorphine) (diversion OR "safe storage" OR supervision) policy filetype:pdf
+site:cochranelibrary.com ("opioid agonist" OR methadone OR buprenorphine OR "opioid dependence")
 ```
 
 ---
 
 ## 🔗 Related Resources
 
-- **Synonym Block:** [Opioid Treatment Terms](../05-synonym-blocks.md#-opioid-treatment-terms)
-- **Related Packs:** [Naloxone](naloxone.md), [Prisons & Justice](prisons-justice.md)
-- **Research:** [NDARC](https://ndarc.med.unsw.edu.au),
-  [Turning Point](https://turning-point.org.au)
+- **Source Intelligence:**
+  [Opioid Agonist Treatment entities](../resources/source-intelligence.md#opioid-agonist-treatment-oatost)
+  — the guidelines, programs, and brands every dork above is built on
+- **Synonym Block:** [Opioid Treatment Terms](../05-synonym-blocks.md#opioid-treatment-terms)
+- **Related Packs:** [Naloxone](naloxone.md), [Prisons & Justice](prisons-justice.md),
+  [Research](research.md)
+- **Key Sources:** [NDARC](https://ndarc.med.unsw.edu.au), [OTEP](https://otep.org.au)
 
 ---
 

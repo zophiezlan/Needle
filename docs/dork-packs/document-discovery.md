@@ -1,533 +1,204 @@
 # Document Discovery
 
-> Finding spreadsheets, databases, presentations, and other document types beyond PDFs.
+> Find spreadsheets, datasets, presentations, and document types beyond PDFs — anchored to the named
+> data portals and collections, not just a bare `filetype:` guess.
 
 [← Back to Dork Packs](README.md) | [← Main Guide](../README.md)
 
 ---
 
-## ⚠️ Ethical Framework
+## 👥 About This Pack
 
-These techniques can surface sensitive documents. Use responsibly:
+`filetype:` is only half the move — the other half is naming _where the data lives_. Australia's
+open data sits on **data.gov.au** (CKAN), **AIHW** (report data tables as `.xlsx`), and **ABS**
+(Data Explorer). The high-value AOD collections have exact names: the **AODTS NMDS** and the
+**NDSHS**. Pair the file-type with the portal and the dataset name and you land on the actual
+numbers.
 
-- Only search for publicly accessible information
-- Never attempt to access password-protected or private content
-- Respect copyright and data protection laws
-- Consider whether the information should be public before using it
+> **Entity reference:** every portal, dataset, and platform below is catalogued in
+> [Source Intelligence → Discovery Platforms & File Types](../resources/source-intelligence.md#discovery-platforms-file-types).
+>
+> **Ethics:** search only publicly accessible information; never attempt to access
+> password-protected or private content; consider whether information should be public before using
+> it.
 
 ---
 
 ## ⚡ Quick Start
 
-Find spreadsheets with harm reduction data on government sites:
+Find harm-reduction spreadsheets on Australia's open-data portal:
 
 ```txt
-filetype:xlsx "harm reduction" OR "AOD" site:*.gov.au
+site:data.gov.au filetype:csv ("drug" OR "alcohol" OR "needle syringe")
+```
+
+---
+
+## 📂 Named Data Portals & Datasets
+
+The specificity win — go to the portal and quote the dataset.
+
+### data.gov.au (Open Data)
+
+```txt
+site:data.gov.au (filetype:csv OR filetype:xlsx) ("alcohol and other drug" OR "needle syringe" OR overdose)
+```
+
+### AIHW Data Tables (AODTS NMDS / NDSHS)
+
+```txt
+site:aihw.gov.au filetype:xlsx ("AODTS NMDS" OR "Alcohol and Other Drug Treatment Services" OR "National Drug Strategy Household Survey")
+```
+
+**Why this works:**
+
+- AIHW attaches `"Data tables"` as `.xlsx` to its reports — naming the **AODTS NMDS** (treatment
+  data) and **NDSHS** (household survey) lands on the spreadsheets behind the headline figures
+
+### ABS & NSP Survey
+
+```txt
+(site:abs.gov.au filetype:xlsx "drug-induced") OR (site:kirby.unsw.edu.au ("Australian Needle and Syringe Program Survey" OR ANSPS) (filetype:pdf OR filetype:xlsx))
 ```
 
 ---
 
 ## 📊 Spreadsheets & Data Files
 
-### Excel Files (Modern) - Harm reduction
+### Excel (Modern & Legacy)
 
 ```txt
-filetype:xlsx "harm reduction" site:*.gov.au
+(filetype:xlsx OR filetype:xls) ("needle syringe" OR "opioid treatment" OR overdose OR "harm reduction") site:*.gov.au
 ```
 
-### Excel Files (Modern) - Needle syringe
+### CSV Data Files
 
 ```txt
-filetype:xlsx "needle syringe" OR "NSP" statistics
+filetype:csv ("needle syringe" OR "NSP" OR overdose OR "treatment episodes") (site:*.gov.au OR site:data.gov.au)
 ```
 
-### Excel Files (Modern) - Overdose
+### Structured Data (JSON / XML)
 
 ```txt
-filetype:xlsx "overdose" data OR statistics Australia
-```
-
-### Excel Files (Modern) - Opioid
-
-```txt
-filetype:xlsx "opioid" OR "methadone" treatment
-```
-
-### Excel Files (Modern) - Service directory
-
-```txt
-filetype:xlsx "service directory" drug alcohol
-```
-
-### Excel Files (Legacy) - 1
-
-```txt
-filetype:xls "opioid treatment" OR "methadone" clinic
-```
-
-### Excel Files (Legacy) - 2
-
-```txt
-filetype:xls "drug" OR "alcohol" statistics Australia
-```
-
-### Excel Files (Legacy) - 3
-
-```txt
-filetype:xls "hepatitis" OR "HIV" surveillance
-```
-
-### CSV Data Files - Needle syringe
-
-```txt
-filetype:csv "needle syringe" OR "NSP" OR "overdose"
-```
-
-### CSV Data Files - Drug
-
-```txt
-filetype:csv "drug" OR "alcohol" site:*.gov.au
-```
-
-### CSV Data Files - Treatment
-
-```txt
-filetype:csv "treatment" episodes Australia
-```
-
-### CSV Data Files - Hospitalisation
-
-```txt
-filetype:csv "hospitalisation" drug OR alcohol
+(filetype:json OR filetype:xml) ("harm reduction" OR drug OR health) (data OR API) site:*.gov.au
 ```
 
 ---
 
 ## 🎬 Presentations
 
-### PowerPoint (Modern) - Harm reduction
+### PowerPoint (Modern & Legacy)
 
 ```txt
-filetype:pptx "harm reduction" Australia
+(filetype:pptx OR filetype:ppt) ("harm reduction" OR "drug checking" OR naloxone OR "needle exchange") Australia
 ```
 
-### PowerPoint (Modern) - Drug checking
+### Slide Platforms
 
 ```txt
-filetype:pptx "drug checking" OR "pill testing"
-```
-
-### PowerPoint (Modern) - Naloxone
-
-```txt
-filetype:pptx "naloxone" training OR program
-```
-
-### PowerPoint (Modern) - Overdose
-
-```txt
-filetype:pptx "overdose" prevention OR response
-```
-
-### PowerPoint (Modern) - Alcohol and other drugs
-
-```txt
-filetype:pptx conference "alcohol and other drugs"
-```
-
-### PowerPoint (Legacy) - 1
-
-```txt
-filetype:ppt "needle exchange" OR "NSP" presentation
-```
-
-### PowerPoint (Legacy) - 2
-
-```txt
-filetype:ppt "methadone" OR "buprenorphine" treatment
-```
-
-### PDF Presentations (Slide Decks) - 1
-
-```txt
-filetype:pdf "slide" OR "presentation" "harm reduction" Australia
-```
-
-### PDF Presentations (Slide Decks) - 2
-
-```txt
-inurl:presentation filetype:pdf "drug policy"
+(site:slideshare.net OR site:speakerdeck.com) "harm reduction" (conference OR training OR APSAD)
 ```
 
 ---
 
-## 📝 Word Documents
+## 📄 Document-Sharing Platforms
 
-### Modern Word Files - Harm reduction
+Republished reports, zines, and newsletters often live off the org's own site.
 
-```txt
-filetype:docx "harm reduction" policy OR procedure
-```
-
-### Modern Word Files - Needle syringe
+### Flipbook & Sharing Platforms
 
 ```txt
-filetype:docx "needle syringe" guidelines
+(site:issuu.com OR site:scribd.com OR site:calameo.com OR site:yumpu.com) ("harm reduction" OR "drug checking" OR "peer")
 ```
 
-### Modern Word Files - Overdose
+### DocumentCloud (FOI & Primary Sources)
 
 ```txt
-filetype:docx "overdose" protocol OR response
+site:documentcloud.org ("harm reduction" OR "drug policy" OR "coronial" OR FOI)
 ```
 
-### Modern Word Files - Drug checking
+**Why this works:**
 
-```txt
-filetype:docx "drug checking" service design
-```
-
-### Legacy Word Files - 1
-
-```txt
-filetype:doc "harm minimisation" Australia
-```
-
-### Legacy Word Files - 2
-
-```txt
-filetype:doc "injecting drug use" guidelines
-```
-
-### RTF & ODT (Alternative Formats) - 1
-
-```txt
-filetype:rtf "harm reduction" Australia
-```
-
-### RTF & ODT (Alternative Formats) - 2
-
-```txt
-filetype:odt "drug checking" OR "pill testing"
-```
+- DocumentCloud (run by MuckRock) is where journalists upload FOI releases and primary-source
+  records — high value for accountability work that never reaches a polished PDF
 
 ---
 
-## 🗃️ Database Files
-
-> [!CAUTION] Database files may contain sensitive information. Only access files that are clearly
-> intended for public distribution.
-
-### SQL Dumps (Public Datasets) - 1
+## 📝 Word & Alternative Formats
 
 ```txt
-filetype:sql "drug" OR "health" site:*.edu.au
-```
-
-### SQL Dumps (Public Datasets) - 2
-
-```txt
-filetype:sql "research" data export
-```
-
-### Access Databases - 1
-
-```txt
-filetype:mdb "health" OR "drug" research
-```
-
-### Access Databases - 2
-
-```txt
-filetype:accdb "service" directory
-```
-
-### Structured Data - 1
-
-```txt
-filetype:json "harm reduction" OR "drug" API
-```
-
-### Structured Data - 2
-
-```txt
-filetype:xml "health" data Australia
-```
-
----
-
-## 📁 Archive Files
-
-### ZIP Archives - 1
-
-```txt
-filetype:zip "harm reduction" resources
-```
-
-### ZIP Archives - 2
-
-```txt
-filetype:zip "training" materials drug alcohol
-```
-
-### ZIP Archives - 3
-
-```txt
-filetype:zip "toolkit" AOD OR "alcohol and other drugs"
-```
-
----
-
-## 📖 E-books & Publications
-
-### EPUB Files - 1
-
-```txt
-filetype:epub "harm reduction" guide
-```
-
-### EPUB Files - 2
-
-```txt
-filetype:epub "drug policy" reform
-```
-
-### EPUB Files - 3
-
-```txt
-filetype:epub "addiction" OR "recovery"
-```
-
----
-
-## 🔧 Configuration & Technical Files
-
-### Sitemaps (Discover Hidden Pages) - 1
-
-```txt
-filetype:xml sitemap "health" site:*.gov.au
-```
-
-### Sitemaps (Discover Hidden Pages) - 2
-
-```txt
-filetype:xml sitemap "drug" site:*.org.au
-```
-
-### Log Files (Public Health Data)
-
-```txt
-filetype:log "drug" OR "health" site:*.gov.au
+(filetype:docx OR filetype:doc OR filetype:rtf OR filetype:odt) ("harm reduction" OR "harm minimisation" OR "drug checking") (policy OR guideline OR procedure)
 ```
 
 ---
 
 ## ☁️ Cloud Storage & Collaboration
 
-### Google Docs (Public) - 1
+> Caveat: Google indexes only docs explicitly **published to web** — link-shared Google Docs/Drive
+> files are excluded, so these are low-yield. Canva design links aren't indexed at all (only
+> published Canva Sites). Prefer the hosting org's own `site:`.
+
+### Published Google Docs (Niche)
 
 ```txt
-site:docs.google.com/document "harm reduction"
-```
-
-### Google Docs (Public) - 2
-
-```txt
-site:docs.google.com/spreadsheets "drug" OR "alcohol" data
-```
-
-### Google Docs (Public) - 3
-
-```txt
-site:docs.google.com/presentation "AOD" OR "harm reduction"
-```
-
-### Cloud Storage (Public Files) - 1
-
-```txt
-site:drive.google.com "harm reduction" resources
-```
-
-### Cloud Storage (Public Files) - 2
-
-```txt
-site:dropbox.com "drug policy" OR "harm reduction"
-```
-
-### Cloud Storage (Public Files) - 3
-
-```txt
-site:onedrive.live.com "AOD" training
+(site:docs.google.com OR site:drive.google.com) "harm reduction" (training OR resources OR directory)
 ```
 
 ---
 
 ## 🎓 Academic & Research Documents
 
-### Theses & Dissertations - 1
+### Theses & Working Papers
 
 ```txt
-filetype:pdf "thesis" OR "dissertation" "harm reduction" Australia
+filetype:pdf ("thesis" OR "dissertation" OR "working paper" OR "discussion paper") ("harm reduction" OR "drug policy") Australia
 ```
 
-### Theses & Dissertations - 2
+### Research Repositories
 
 ```txt
-filetype:pdf "PhD" "drug policy" OR "drug use"
-```
-
-### Working Papers - 1
-
-```txt
-filetype:pdf "working paper" "harm reduction" OR "drug policy"
-```
-
-### Working Papers - 2
-
-```txt
-filetype:pdf "discussion paper" "alcohol and other drugs"
+(site:osf.io OR site:zenodo.org OR site:figshare.com) ("harm reduction" OR "drug checking") (dataset OR data OR report)
 ```
 
 ---
 
-## 🏥 Health Service Documents
+## 🏥 Service & Government Documents
 
-### Service Directories - 1
-
-```txt
-filetype:xlsx "service directory" drug OR alcohol Australia
-```
-
-### Service Directories - 2
+### Service Directories
 
 ```txt
-filetype:pdf "service directory" AOD OR "alcohol and other drugs"
+(filetype:xlsx OR filetype:csv OR filetype:pdf) "service directory" (drug OR alcohol OR AOD) Australia
 ```
 
-### Service Directories - 3
+### Budget & Funding (with Named Registers)
 
 ```txt
-filetype:csv "treatment services" drug alcohol
+(filetype:xlsx OR filetype:pdf) (budget OR funding OR "Grant Award" OR "Contract Notice") ("harm reduction" OR AOD) (site:*.gov.au OR site:grants.gov.au OR site:tenders.gov.au)
 ```
 
-### Clinical Guidelines - 1
-
-```txt
-filetype:pdf "clinical guideline" OR "practice guideline" opioid
-```
-
-### Clinical Guidelines - 2
-
-```txt
-filetype:pdf "protocol" "overdose" OR "withdrawal"
-```
-
-### Clinical Guidelines - 3
-
-```txt
-filetype:docx "procedure" naloxone OR "take-home"
-```
+> See the [Organizational Intelligence pack](organizational-intelligence.md) for the named registers
+> (ACNC AIS, GrantConnect, AusTender) behind these.
 
 ---
 
-## 📋 Government Documents
+## 🔍 Multi-Format & Pro Tips
 
-### Meeting Minutes & Agendas - 1
+### Combine File Types
 
 ```txt
-filetype:pdf "meeting minutes" "harm reduction" OR "drug policy"
+(filetype:xlsx OR filetype:csv OR filetype:pdf) (overdose OR "needle syringe") data Australia
 ```
 
-### Meeting Minutes & Agendas - 2
+### Open Directories
 
 ```txt
-filetype:docx "agenda" "alcohol and other drugs" committee
+intitle:"index of" (filetype:xlsx OR filetype:pptx) site:*.gov.au "drug"
 ```
 
-### Meeting Minutes & Agendas - 3
+### By Year Range
 
 ```txt
-filetype:pdf "steering committee" AOD minutes
-```
-
-### Budget & Funding - 1
-
-```txt
-filetype:xlsx "budget" "harm reduction" OR "AOD" site:*.gov.au
-```
-
-### Budget & Funding - 2
-
-```txt
-filetype:pdf "funding" allocation drug OR alcohol
-```
-
-### Budget & Funding - 3
-
-```txt
-filetype:xls "expenditure" health drug services
-```
-
----
-
-## 🔍 Multi-Format Searches
-
-### Combine Multiple File Types - 1
-
-```txt
-(filetype:xlsx OR filetype:csv) "overdose" data Australia
-```
-
-### Combine Multiple File Types - 2
-
-```txt
-(filetype:pptx OR filetype:pdf) "harm reduction" conference presentation
-```
-
-### Combine Multiple File Types - 3
-
-```txt
-(filetype:docx OR filetype:pdf) "policy" "drug checking"
-```
-
-### All Data Files
-
-```txt
-(filetype:xlsx OR filetype:xls OR filetype:csv) "drug" statistics Australia
-```
-
-### All Presentation Types
-
-```txt
-(filetype:pptx OR filetype:ppt OR filetype:pdf) "harm reduction" slides conference
-```
-
----
-
-## 💡 Pro Tips
-
-### Finding Hidden Directories - 1
-
-```txt
-intitle:"index of" filetype:xlsx site:*.gov.au
-```
-
-### Finding Hidden Directories - 2
-
-```txt
-intitle:"index of" filetype:pptx site:*.health.*.gov.au
-```
-
-### By Year Range - 1
-
-```txt
-filetype:xlsx "harm reduction" 2020..2026
-```
-
-### By Year Range - 2
-
-```txt
-filetype:pptx "drug policy" after:2023
+(filetype:xlsx OR filetype:pptx) ("harm reduction" OR "drug policy") 2020..2026
 ```
 
 ### Exclude Duplicates
@@ -540,10 +211,13 @@ filetype:xlsx "harm reduction" -"copy" -"backup" -"old"
 
 ## 🔗 Related Resources
 
-- [Investigative Searching](investigative.md) - Advanced discovery techniques
-- [Research Pack](research.md) - Academic research dorks
-- [Data & Statistics](data-statistics.md) - Statistical sources
-- [OSINT Tools](../tools/osint.md) - Automated discovery tools
+- **Source Intelligence:**
+  [Discovery Platforms & File Types](../resources/source-intelligence.md#discovery-platforms-file-types)
+  — the portals, datasets, and platforms every dork above is built on
+- **Related Packs:** [Data & Statistics](data-statistics.md), [Investigative](investigative.md),
+  [Organizational Intelligence](organizational-intelligence.md)
+- **Key Portals:** [data.gov.au](https://data.gov.au), [AIHW](https://aihw.gov.au),
+  [DocumentCloud](https://documentcloud.org)
 
 ---
 

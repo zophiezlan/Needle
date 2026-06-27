@@ -94,7 +94,7 @@ chemical names for your target substance.
 3. Build a "Synonym Block" (OR group)
 
 > **💡 Pro Tip:** See
-> [Wikipedia Synonym Expansion](../tools/search-tweaks.md#-wikipedia-synonym-expansion) for the
+> [Wikipedia Synonym Expansion](../tools/search-tweaks.md#wikipedia-synonym-expansion) for the
 > step-by-step recipe.
 
 ---
@@ -111,7 +111,7 @@ method to force Google to prioritize harm reduction context.
 ```
 
 > **💡 Pro Tip:** See
-> [The "Sinker" Method](../tools/search-tweaks.md#-the-sinker-method-bias-counteraction) for more
+> [The "Sinker" Method](../tools/search-tweaks.md#the-sinker-method-bias-counteraction) for more
 > weighting patterns.
 
 ---

@@ -319,7 +319,16 @@ onUnmounted(() => {
             <button
               v-if="history.length > 0"
               class="text-btn danger"
-              @click="requestConfirm('Clear History', `Delete all ${history.length} saved queries? This cannot be undone.`, () => { clearHistory(); success('History cleared'); })"
+              @click="
+                requestConfirm(
+                  'Clear History',
+                  `Delete all ${history.length} saved queries? This cannot be undone.`,
+                  () => {
+                    clearHistory();
+                    success('History cleared');
+                  }
+                )
+              "
             >
               Clear All
             </button>
@@ -395,7 +404,12 @@ onUnmounted(() => {
     <!-- Confirm Dialog -->
     <Transition name="modal">
       <div v-if="showConfirmDialog" class="modal-overlay" @click.self="cancelConfirm">
-        <div class="modal confirm-modal" role="alertdialog" aria-modal="true" :aria-labelledby="'confirm-title'">
+        <div
+          class="modal confirm-modal"
+          role="alertdialog"
+          aria-modal="true"
+          :aria-labelledby="'confirm-title'"
+        >
           <div class="modal-header">
             <h2 id="confirm-title">{{ confirmTitle }}</h2>
             <button class="modal-close" @click="cancelConfirm" aria-label="Close">×</button>

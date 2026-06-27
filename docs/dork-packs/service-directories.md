@@ -1,303 +1,228 @@
 # Service Finding & Directories
 
-> Locate hard-to-find lists of AOD, NSP, sexual health, and harm reduction services.
+> Locate AOD, NSP, and harm-reduction services — named by the actual finder tool and intake line,
+> not just by "service directory".
 
 [← Back to Dork Packs](README.md) | [← Main Guide](../README.md)
 
 ---
 
+## 👥 About This Pack
+
+The hard part is knowing the named tool. Nationally that's the ADF's **Path2Help**, **Counselling
+Online** (Turning Point), the **National Alcohol and Other Drug Hotline** (1800 250 015),
+**Healthdirect**, and **Ask Izzy**. Each state has its own intake line and finder — NSW's **Your
+Room** / **ADIS**, Victoria's **DirectLine** and **SupportConnect** (with a Needle and Syringe
+Program Finder), Queensland's **Adis**, SA's **DASSA**, and WA's **Alcohol and Drug Support Line**.
+
+A couple of commonly-cited domains are dead — `path2help.org.au` and `dassa.sa.gov.au` don't
+resolve; the verified hosts are below.
+
+> **Entity reference:** every finder, hotline, and domain below is catalogued in
+> [Source Intelligence → Service Finders & Directories](../resources/source-intelligence.md#service-finders-directories).
+
+---
+
 ## ⚡ Quick Start
 
-Find AOD service directories:
+Go to the national AOD service-finder tool:
 
 ```txt
-(filetype:pdf OR filetype:xlsx) "service directory" (AOD OR "alcohol and other drugs") site:*.gov.au
+site:adf.org.au "Path2Help"
 ```
 
 ---
 
 ## 🟢 Basic Queries
 
+### National Service Finders
+
+```txt
+(site:adf.org.au "Path2Help") OR (site:counsellingonline.org.au "Counselling Online") OR (site:askizzy.org.au "Ask Izzy")
+```
+
+**Why this works:**
+
+- Three named national tools in one query — Path2Help (ADF), Counselling Online (Turning Point), Ask
+  Izzy (Infoxchange). Note Path2Help lives on `adf.org.au`, not the dead `path2help.org.au`
+
 ### Government Service Directories
 
 ```txt
-(filetype:pdf OR filetype:xlsx) ("service directory" OR "service finder" OR "contact list") (AOD OR "alcohol and other drugs") site:*.gov.au
+(filetype:pdf OR filetype:xlsx) ("service directory" OR "service finder" OR "service list") (AOD OR "alcohol and other drugs") site:*.gov.au
 ```
 
-### Regional Service Lists
+### Peer NSP & Equipment
 
 ```txt
-site:*.health.nsw.gov.au "service directory" ("central coast" OR newcastle OR "hunter region")
-```
-
-### Inurl Directory Pattern
-
-```txt
-inurl:aod-services OR inurl:directory site:*.gov.au
+(site:nuaa.org.au OR site:health.nsw.gov.au) ("Needle and Syringe Program" OR "NSP equipment" OR "NSP outlets")
 ```
 
 ---
 
 ## 🟡 Intermediate Queries
 
-### Sexual Health & BBV Services
+### State Intake Lines (ADIS)
 
 ```txt
-("hepatitis" OR "HCV" OR "sexual health") (clinic OR service OR directory) site:*.health.*.gov.au
+(site:yourroom.health.nsw.gov.au OR site:adis.health.qld.gov.au OR site:sahealth.sa.gov.au) "Alcohol and Drug Information Service"
 ```
 
-### NSP Directories
+**Why this works:**
 
-```txt
-("needle syringe program" OR NSP) (directory OR "service list" OR locations) [YOUR STATE]
-```
-
-### Mental Health Service Directories
-
-```txt
-site:*.gov.au "mental health" service directory (filetype:pdf OR filetype:xlsx)
-```
+- "ADIS" (Alcohol and Drug Information Service) exists in several states — pinning by domain returns
+  the right state's intake line rather than cross-state noise
 
 ### Spreadsheet Directories (Data-Rich)
 
 ```txt
-filetype:xlsx ("service directory" OR "contact list") (AOD OR "drug and alcohol" OR "harm reduction") site:*.gov.au
+filetype:xlsx ("service directory" OR "contact list" OR "service list") (AOD OR "drug and alcohol" OR "harm reduction") site:*.gov.au
+```
+
+### Sexual Health & BBV Services
+
+```txt
+("hepatitis" OR HCV OR "sexual health" OR BBV) (clinic OR service OR directory) site:*.health.*.gov.au
 ```
 
 ---
 
 ## 🔴 Advanced Queries
 
-### Comprehensive Service Directory Sweep
+### Comprehensive Service-Directory Sweep
 
 ```txt
-(filetype:pdf OR filetype:xlsx OR filetype:csv) ("service directory" OR "service finder" OR "service list" OR "contact directory") (AOD OR "alcohol and other drugs" OR "drug and alcohol" OR "harm reduction") site:*.gov.au OR site:*.org.au after:2022
+(filetype:pdf OR filetype:xlsx OR filetype:csv) ("service directory" OR "service finder" OR "service list" OR "treatment locator") (AOD OR "alcohol and other drugs" OR "drug and alcohol" OR "harm reduction") (site:*.gov.au OR site:*.org.au) after:2022
 ```
 
-### Treatment Service Finders
+### Finding Hidden Directories (inurl)
 
 ```txt
-(treatment OR rehabilitation OR detox OR counselling) service (directory OR finder OR list) [YOUR STATE] -jobs
+site:*.gov.au (inurl:services OR inurl:directory OR inurl:providers) (filetype:pdf OR filetype:xlsx) (AOD OR "drug and alcohol")
 ```
 
-### Outreach Services
+### Outreach & After-Hours Services
 
 ```txt
-(outreach OR mobile OR "street-based") service (AOD OR "harm reduction") directory OR list [YOUR STATE]
-```
-
-### After-Hours Services
-
-```txt
-("after hours" OR "24 hour" OR "crisis") service (AOD OR "drug and alcohol" OR "mental health") [YOUR STATE]
+(outreach OR mobile OR "after hours" OR "24 hour" OR crisis) service (AOD OR "drug and alcohol" OR "harm reduction") (directory OR list OR finder)
 ```
 
 ---
 
-## 📍 State-by-State Service Directories
+## 🇦🇺 National Service Finders
 
-### NSW - 1
+The named national tools — verified hosts.
+
+### ADF Path2Help
 
 ```txt
-site:health.nsw.gov.au OR site:nsw.gov.au "service directory" AOD OR "alcohol drug"
+site:adf.org.au "Path2Help"
 ```
 
-### NSW - 2
+### Counselling Online (Turning Point)
 
 ```txt
-site:*.nsw.gov.au filetype:xlsx service directory
+site:counsellingonline.org.au "Counselling Online"
 ```
 
-### Victoria - 1
+### National AOD Hotline
 
 ```txt
-site:health.vic.gov.au "service directory" OR "service finder" AOD
+"National Alcohol and Other Drug Hotline" "1800 250 015"
 ```
 
-### Victoria - 2
+### Healthdirect & Ask Izzy
 
 ```txt
-site:*.vic.gov.au "alcohol and drug" services directory
-```
-
-### Queensland
-
-```txt
-site:health.qld.gov.au "service directory" AOD OR "alcohol and other drugs"
-```
-
-### Western Australia - 1
-
-```txt
-site:health.wa.gov.au "service directory" AOD OR "alcohol and other drugs"
-```
-
-### Western Australia - 2
-
-```txt
-site:mhc.wa.gov.au services directory
-```
-
-### South Australia - 1
-
-```txt
-site:sahealth.sa.gov.au service directory drug OR alcohol
-```
-
-### South Australia - 2
-
-```txt
-site:dassa.sa.gov.au services
-```
-
-### Tasmania
-
-```txt
-site:health.tas.gov.au "service directory" alcohol drug
-```
-
-### ACT - 1
-
-```txt
-site:health.act.gov.au service directory AOD
-```
-
-### ACT - 2
-
-```txt
-site:*.act.gov.au "alcohol and drug" services
-```
-
-### NT
-
-```txt
-site:health.nt.gov.au service directory AOD
+(site:healthdirect.gov.au ("Service Finder" OR "Find a health service")) OR (site:askizzy.org.au "Ask Izzy")
 ```
 
 ---
 
-## 🏥 Service Type Directories
+## 📍 State Intake Lines & Finders
 
-### Opioid Treatment (OAT/OST) Clinics
+Verified — several states' domains are easy to get wrong.
+
+### NSW — Your Room / ADIS / NSP Outlets
 
 ```txt
-("opioid treatment" OR methadone OR buprenorphine) (clinic OR service OR prescriber) directory [YOUR STATE]
+site:yourroom.health.nsw.gov.au ("Alcohol and Drug Information Service" OR ADIS) OR site:health.nsw.gov.au "NSP outlets"
 ```
 
-### Residential Rehabilitation
+### VIC — DirectLine & SupportConnect
 
 ```txt
-("residential rehabilitation" OR "residential treatment" OR rehab) directory OR list [YOUR STATE] AOD
+(site:directline.org.au "DirectLine") OR (site:supportconnect.org.au ("Needle and Syringe Program Finder" OR "Naloxone Service Finder"))
 ```
 
-### Withdrawal/Detox Services
+### QLD — Adis Queensland
 
 ```txt
-(withdrawal OR detox OR "detoxification") service (directory OR list) [YOUR STATE]
+site:adis.health.qld.gov.au ("Adis" OR "Alcohol and Drug Information Service")
 ```
 
-### Counselling Services
+### SA — DASSA
 
 ```txt
-(counselling OR counseling) service (AOD OR "drug and alcohol") directory [YOUR STATE]
+site:sahealth.sa.gov.au ("Drug and Alcohol Services South Australia" OR DASSA OR "Alcohol and Drug Information Service")
 ```
 
-### Youth Services
+> Note: SA's DASSA content lives under `sahealth.sa.gov.au` — `dassa.sa.gov.au` does not resolve.
+
+### WA — Alcohol and Drug Support Line
 
 ```txt
-(youth OR "young people") (AOD OR "drug and alcohol") service directory [YOUR STATE]
+(site:admhss.mhc.wa.gov.au OR site:mhc.wa.gov.au) "Alcohol and Drug Support Line"
+```
+
+> Note: the WA line is now delivered by the Alcohol, Drug and Mental Health Support Service (ADMHSS)
+> at `admhss.mhc.wa.gov.au` — query both that and `mhc.wa.gov.au`.
+
+---
+
+## 🏥 Service-Type Directories
+
+### Opioid Treatment (OAT/OST) Prescribers
+
+```txt
+("opioid treatment" OR methadone OR buprenorphine) (clinic OR prescriber OR "dosing point") (directory OR list OR finder) Australia
+```
+
+### Residential Rehab & Withdrawal
+
+```txt
+("residential rehabilitation" OR detox OR withdrawal OR "therapeutic community") (directory OR list OR finder) AOD [YOUR STATE]
+```
+
+### Youth & Family Services
+
+```txt
+(site:headspace.org.au OR "youth" OR "family drug support") (AOD OR "alcohol and other drugs") (service OR directory OR finder)
 ```
 
 ---
 
 ## 🖤💛❤️ First Nations Services
 
-### 🖤💛❤️ First Nations Services - 1
+> Prefer community-controlled sources; ACCHOs are the community-controlled health services.
+
+### Aboriginal Community Controlled Services
 
 ```txt
-(Aboriginal OR "Torres Strait Islander" OR Indigenous) (AOD OR "alcohol and other drugs") service directory
-```
-
-### 🖤💛❤️ First Nations Services - 2
-
-```txt
-(ACCHO OR "community controlled") "alcohol and other drugs" services [YOUR STATE]
-```
-
----
-
-## 🏠 Related Service Directories
-
-### Housing/Homelessness
-
-```txt
-(housing OR homelessness OR accommodation) service directory [YOUR STATE]
-```
-
-### Mental Health
-
-```txt
-"mental health" service directory [YOUR STATE] site:*.gov.au
-```
-
-### Family Support
-
-```txt
-("family support" OR "family drug support") service directory [YOUR STATE]
-```
-
----
-
-## 🔧 Finding Hidden Directories
-
-### Inurl Patterns - 1
-
-```txt
-site:*.gov.au inurl:services OR inurl:directory filetype:pdf AOD
-```
-
-### Inurl Patterns - 2
-
-```txt
-site:*.gov.au inurl:contacts OR inurl:providers filetype:xlsx
-```
-
-### Spreadsheet Mining
-
-```txt
-site:*.gov.au filetype:xlsx "service" ("contact" OR "phone" OR "address") drug OR alcohol
-```
-
----
-
-## 📱 Online Service Finders
-
-### Known Online Tools (search for updates) - 1
-
-```txt
-"service finder" AOD Australia online
-```
-
-### Known Online Tools (search for updates) - 2
-
-```txt
-"treatment locator" "drug and alcohol" Australia
-```
-
-### App/Digital Services
-
-```txt
-(app OR application OR "online tool") "service finder" AOD Australia
+(ACCHO OR "Aboriginal Community Controlled" OR NACCHO) ("alcohol and other drugs" OR AOD OR "harm reduction") (service OR directory) [YOUR STATE]
 ```
 
 ---
 
 ## 🔗 Related Resources
 
-- **Synonym Block:** [AOD Service Terms](../05-synonym-blocks.md#-treatment--service-terms)
+- **Source Intelligence:**
+  [Service Finders & Directories](../resources/source-intelligence.md#service-finders-directories) —
+  the finders, hotlines, and domains every dork above is built on
+- **Synonym Block:** [Treatment & Service Terms](../05-synonym-blocks.md#treatment-service-terms)
 - **Related Packs:** [NSP](nsp.md), [OAT/OST](oat-ost.md), [Rural & Remote](rural-remote.md)
-- **Domain Map:**
-  [State Health Departments](../04-domain-map.md#-state--territory-health-departments)
+- **Key Tools:** [Path2Help](https://adf.org.au/help-support/path2help/),
+  [Counselling Online](https://counsellingonline.org.au), [Ask Izzy](https://askizzy.org.au)
 
 ---
 

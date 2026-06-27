@@ -13,11 +13,26 @@ Community forums contain personal experiences and peer knowledge. Use responsibl
 
 - **Respect anonymity** - Never attempt to identify forum users
 - **Don't screenshot identifying info** - Blur usernames when citing
-- **Context matters** - Forum posts are informal; don't weaponize personal stories
+- **Context matters** - Forum posts are informal; don't weaponise personal stories
 - **Give back** - If you learn from communities, consider contributing
 - **Trauma-informed** - Content may describe difficult experiences
 
 **This pack is for understanding community perspectives, NOT surveillance.**
+
+---
+
+## 👥 About This Pack
+
+Forums and community platforms hold the real-time, lived-experience knowledge that never reaches a
+PDF — the "I got it checked and…" reports, the early warnings, the peer answers. Lead with the
+drug-user orgs' own channels (NUAA `@nuaansw`, Harm Reduction Victoria `@HRV_Aust`) and the named
+communities, then widen to platform sweeps. Treat forum content as lived knowledge, not vetted
+advice — cross-check dosing/combination claims against clinical and service sources.
+
+> **Entity reference:** the named forums, subreddits, and peer-org accounts below are catalogued in
+> [Source Intelligence → Community Forums](../resources/source-intelligence.md#community-forums-lived-experience-knowledge).
+> Peer organisations use consistent handles — **NUAA** is `@nuaansw`, **Harm Reduction Victoria** is
+> `@HRV_Aust`.
 
 ---
 
@@ -29,9 +44,14 @@ Find harm reduction discussions on Reddit:
 site:reddit.com "harm reduction" Australia
 ```
 
+**Why this works:**
+
+- Reddit hosts active Australian harm-reduction discussion; `site:reddit.com` + an AU term surfaces
+  lived-experience reports faster than a generic web search
+
 ---
 
-## 🔴 Reddit
+## 🟠 Reddit
 
 ### Harm Reduction Subreddits
 
@@ -109,10 +129,13 @@ site:reddit.com/r/addiction Australia support
 
 ## 🐦 Twitter/X
 
+> Twitter is now **x.com**, but older posts stay indexed under `twitter.com`. For best coverage use
+> `(site:x.com OR site:twitter.com)`; the examples below use `twitter.com` for brevity.
+
 ### Hashtag Research
 
 ```txt
-site:twitter.com "#harmreduction" Australia
+(site:x.com OR site:twitter.com) "#harmreduction" Australia
 ```
 
 ```txt
@@ -130,19 +153,19 @@ site:twitter.com "#peersupport" drug OR AOD
 ### Organisation Accounts - 1
 
 ```txt
-site:twitter.com from:aaborginald harm reduction
+(site:x.com OR site:twitter.com) from:nuaansw (naloxone OR "harm reduction" OR "drug alert")
 ```
 
 ### Organisation Accounts - 2
 
 ```txt
-site:twitter.com from:NUABORGINALTAA naloxone
+(site:x.com OR site:twitter.com) from:HRV_Aust ("harm reduction" OR "drug checking" OR naloxone)
 ```
 
 ### Organisation Accounts - 3
 
 ```txt
-site:twitter.com from:HRVic
+(site:x.com OR site:twitter.com) ("NUAA" OR "Harm Reduction Victoria" OR "NSW Users and AIDS Association")
 ```
 
 ---
@@ -451,7 +474,7 @@ site:sbs.com.au "harm reduction" comments
 
 ---
 
-## 🔍 Advanced Forum Searches
+## 🔴 Advanced Forum Searches
 
 ### Find Forum Discussions About Specific Topics - 1
 
@@ -620,10 +643,13 @@ When researching forum content:
 
 ## 🔗 Related Resources
 
-- [Peer Knowledge Pack](peer-knowledge.md) - Peer-led publications
-- [Drug Alerts Pack](drug-alerts.md) - Early warning systems
-- [Privacy & Security](../tools/privacy-security.md) - Protect yourself
-- [Verification Workflow](../workflows/verification.md) - Assess source reliability
+- **Source Intelligence:**
+  [Community Forums & Lived-Experience Knowledge](../resources/source-intelligence.md#community-forums-lived-experience-knowledge)
+  — the forums, subreddits, and peer-org handles every dork above is built on
+- **Related Packs:** [Peer Knowledge](peer-knowledge.md),
+  [User-Hosted Domains](user-hosted-domains.md), [Drug Alerts](drug-alerts.md)
+- **Workflow:** [Verification](../workflows/verification.md) — assess source reliability
+- **Key Channels:** [r/AusDrugs](https://reddit.com/r/AusDrugs), [Bluelight](https://bluelight.org)
 
 ---
 

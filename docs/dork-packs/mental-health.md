@@ -1,299 +1,236 @@
 # Mental Health & Dual Diagnosis
 
-> Co-occurring mental health and substance use.
+> Co-occurring mental health and substance use — named by the actual guideline, service, and centre,
+> not just by "dual diagnosis".
 
 [← Back to Dork Packs](README.md) | [← Main Guide](../README.md)
 
 ---
 
+## 👥 About This Pack
+
+Co-occurring (dual diagnosis) work has named anchors. The single most useful is the Matilda Centre's
+**Comorbidity Guidelines**; for acute care, the NSW comorbidity guideline; for services, Turning
+Point's **Hamilton Centre** and Victoria's **VDDI** (with NEXUS at St Vincent's). Trauma sits with
+**Phoenix Australia**, and the major MH orgs (**Black Dog Institute**, **SANE Australia**, **Beyond
+Blue**, **Orygen**) all carry AOD-relevant material.
+
+> **Entity reference:** every guideline and service below is catalogued in
+> [Source Intelligence → Populations & Intersections](../resources/source-intelligence.md#populations-intersections).
+
+---
+
 ## ⚡ Quick Start
 
-Find dual diagnosis resources:
+Go to the national co-occurring treatment guidelines:
 
 ```txt
-"dual diagnosis" OR "co-occurring" (mental health AND substance) Australia filetype:pdf
+site:comorbidityguidelines.org.au "co-occurring alcohol and other drug and mental health conditions"
 ```
 
 ---
 
 ## 🟢 Basic Queries
 
-### Dual Diagnosis / Co-occurring
+### The Comorbidity Guidelines (Matilda Centre)
 
 ```txt
-"dual diagnosis" OR "co-occurring" (mental health AND substance) Australia filetype:pdf
+(site:comorbidityguidelines.org.au OR "Guidelines on the management of co-occurring alcohol and other drug and mental health conditions")
 ```
 
-### Comorbidity
+**Why this works:**
+
+- This is _the_ national guideline for managing co-occurring conditions in AOD settings (Matilda
+  Centre, 3rd ed 2022) — quoting it goes straight to the evidence base, not generic "dual diagnosis"
+
+### Named Dual-Diagnosis Services
 
 ```txt
-"comorbidity" OR "comorbid" mental health drug OR alcohol Australia
+(site:turningpoint.org.au OR site:dualdiagnosis.org.au OR site:health.vic.gov.au) ("Hamilton Centre" OR "Victorian Dual Diagnosis Initiative" OR "dual diagnosis")
 ```
 
-### Co-existing Conditions
+### Dual Diagnosis / Co-occurring (General)
 
 ```txt
-"co-existing" mental health AOD OR "alcohol and other drugs"
+("dual diagnosis" OR "co-occurring" OR comorbid OR "co-existing") ("mental health" AND ("substance use" OR AOD)) Australia filetype:pdf
 ```
 
 ---
 
 ## 🟡 Intermediate Queries
 
-### Treatment Frameworks
+### Clinical Guidelines (Named)
 
 ```txt
-"dual diagnosis" (treatment OR service OR framework) Australia filetype:pdf
+("Guidelines on the management of co-occurring alcohol and other drug and mental health conditions" OR "For the Care of Persons with Comorbid Mental Illness and Substance Use Disorders in Acute Care Settings")
 ```
 
-### Trauma & Substance Use
+**Why this works:**
+
+- The Matilda Centre guideline (AOD settings) and the NSW Health 2009 guideline (acute care) are the
+  two named Australian comorbidity guidelines — exact titles cut straight to them
+
+### Trauma & PTSD (Phoenix Australia)
 
 ```txt
-("trauma" OR "PTSD") "substance use" OR "drug use" treatment Australia
+(site:phoenixaustralia.org OR "Australian Guidelines for the Prevention and Treatment of Acute Stress Disorder, Posttraumatic Stress Disorder and Complex PTSD") ("substance use" OR "trauma-informed")
 ```
 
 ### Integrated Treatment Models
 
 ```txt
-"integrated treatment" mental health substance use Australia
+("integrated treatment" OR "no wrong door" OR "stepped care") ("mental health" AND ("substance use" OR AOD)) Australia filetype:pdf
 ```
 
 ---
 
 ## 🔴 Advanced Queries
 
-### Comprehensive Dual Diagnosis Sweep
+### Comprehensive Dual-Diagnosis Sweep
 
 ```txt
-("dual diagnosis" OR "co-occurring" OR "comorbid" OR "co-existing") ("mental health" AND ("substance use" OR "drug use" OR "alcohol" OR AOD)) Australia (treatment OR service OR guideline OR research) filetype:pdf after:2020
+("dual diagnosis" OR "co-occurring" OR comorbid OR "co-existing") ("mental health" AND ("substance use" OR "drug use" OR AOD)) (treatment OR guideline OR service OR research) Australia filetype:pdf after:2020
 ```
 
-### No Wrong Door
+### Trauma-Informed Care
 
 ```txt
-"no wrong door" mental health AOD OR "alcohol and other drugs"
+("trauma-informed" OR PTSD OR "complex trauma") (AOD OR "alcohol and other drugs" OR "substance use") (framework OR practice OR guideline) Australia filetype:pdf
 ```
 
-### Service Models
+### Service Integration
 
 ```txt
-"integrated service" OR "integrated care" dual diagnosis Australia
+("service integration" OR "integrated care" OR "no wrong door" OR "system navigation") ("dual diagnosis" OR "co-occurring") Australia
 ```
 
 ---
 
 ## 🧠 Specific Conditions
 
-### Trauma & PTSD - 1
+### Psychosis & Substance Use
 
 ```txt
-("trauma" OR "PTSD" OR "post-traumatic") "substance use" treatment Australia filetype:pdf
+("psychosis" OR "schizophrenia" OR "drug-induced psychosis") ("substance use" OR "drug use" OR methamphetamine) (treatment OR management) Australia filetype:pdf
 ```
 
-### Trauma & PTSD - 2
+### Anxiety, Depression & ADHD
 
 ```txt
-"trauma-informed" AOD OR "alcohol and other drugs" Australia
+("anxiety" OR "depression" OR ADHD OR "borderline personality") "substance use" (co-occurring OR comorbid OR treatment) Australia
 ```
 
-### Anxiety & Depression
+### Trauma & PTSD
 
 ```txt
-("anxiety" OR "depression") "substance use" dual treatment Australia
-```
-
-### Psychosis - 1
-
-```txt
-("psychosis" OR "schizophrenia") "substance use" OR "drug use" Australia filetype:pdf
-```
-
-### Psychosis - 2
-
-```txt
-"drug-induced psychosis" treatment OR management Australia
-```
-
-### Personality Disorders - 1
-
-```txt
-"borderline personality" substance use treatment Australia
-```
-
-### Personality Disorders - 2
-
-```txt
-"personality disorder" AOD treatment Australia
-```
-
-### ADHD - 1
-
-```txt
-"ADHD" substance use OR drug use relationship treatment Australia
-```
-
-### ADHD - 2
-
-```txt
-"attention deficit" AOD Australia
+site:phoenixaustralia.org ("Posttraumatic Stress Disorder" OR "Complex PTSD" OR "substance use")
 ```
 
 ---
 
-## 🏥 Treatment Approaches
+## 🏥 Named Guidelines & Services
 
-### Integrated Treatment - 1
+### Comorbidity Guidelines (Matilda Centre)
 
 ```txt
-"integrated treatment" mental health substance use Australia filetype:pdf
+site:comorbidityguidelines.org.au ("co-occurring" OR comorbid OR "alcohol and other drug")
 ```
 
-### Integrated Treatment - 2
+### NSW Acute-Care Comorbidity Guideline
 
 ```txt
-"treating together" mental health substance use
+site:health.nsw.gov.au "For the Care of Persons with Comorbid Mental Illness and Substance Use Disorders in Acute Care Settings"
 ```
 
-### Parallel vs Sequential - 1
+### Turning Point — Hamilton Centre
 
 ```txt
-"parallel treatment" vs "integrated" dual diagnosis
+site:turningpoint.org.au ("Hamilton Centre" OR "co-occurring")
 ```
 
-### Parallel vs Sequential - 2
+### Victorian Dual Diagnosis Initiative (VDDI)
 
 ```txt
-"sequential treatment" dual diagnosis
-```
-
-### Stepped Care
-
-```txt
-"stepped care" mental health AOD OR substance use Australia
+(site:dualdiagnosis.org.au OR site:health.vic.gov.au) ("Victorian Dual Diagnosis Initiative" OR VDDI OR NEXUS OR "dual diagnosis")
 ```
 
 ---
 
 ## ⚠️ Suicide & Self-Harm
 
-### Suicide & Substance Use - 1
+> Sensitive content. If you or someone you know needs help, contact **Lifeline (13 11 14)**.
+
+### Suicide, Self-Harm & Substance Use
 
 ```txt
-"suicide" "substance use" OR "drug use" (risk OR prevention) Australia
+("suicide" OR "self-harm" OR "suicidal ideation") ("substance use" OR "drug use" OR overdose) (risk OR prevention OR Australia) filetype:pdf
 ```
 
-### Suicide & Substance Use - 2
+### Crisis Support Orgs
 
 ```txt
-"suicidal ideation" substance use treatment
-```
-
-### Self-Harm
-
-```txt
-"self-harm" drug OR alcohol intoxication
-```
-
-### Intentional Overdose
-
-```txt
-"overdose" (intentional OR "self-harm" OR suicide) Australia
+(site:lifeline.org.au OR site:beyondblue.org.au OR site:sane.org) ("alcohol" OR "substance use" OR "co-occurring")
 ```
 
 ---
 
-## 📋 Guidelines & Frameworks
+## 👥 Peer & Lived-Experience (Mental Health + AOD)
 
-### Clinical Guidelines - 1
+The lived-experience of co-occurring conditions is its own expertise.
+
+### Lived-Experience & Peer Support
 
 ```txt
-"dual diagnosis" (guideline OR "clinical guideline" OR protocol) Australia filetype:pdf
+("lived experience" OR "peer support" OR "peer worker") ("dual diagnosis" OR "co-occurring" OR "mental health" AOD) Australia filetype:pdf
 ```
 
-### Clinical Guidelines - 2
+### Consumer Perspectives
 
 ```txt
-site:*.gov.au "dual diagnosis" OR "co-occurring" guideline
-```
-
-### Screening Tools
-
-```txt
-"screening" "dual diagnosis" OR "co-occurring" (tool OR instrument) Australia
-```
-
-### Assessment
-
-```txt
-"assessment" "dual diagnosis" Australia (framework OR guideline)
+(site:sane.org OR site:*.org.au) ("consumer" OR "lived experience") ("dual diagnosis" OR "co-occurring") (story OR perspective)
 ```
 
 ---
 
-## 👥 Workforce & Training
+## 👷 Workforce & Training
 
-### Dual Diagnosis Capability
+### Dual-Diagnosis Capability
 
 ```txt
-"dual diagnosis capability" OR "co-occurring capability" (training OR framework) Australia
+("dual diagnosis capability" OR "co-occurring capability") (training OR framework OR competencies) Australia filetype:pdf
 ```
 
-### Workforce Development
+### Workforce Resources (VDDI / Turning Point)
 
 ```txt
-"dual diagnosis" workforce (training OR development OR competencies) Australia
+(site:dualdiagnosis.org.au OR site:turningpoint.org.au) ("dual diagnosis" OR "co-occurring") (training OR workforce OR resource)
 ```
 
 ---
 
 ## 📊 Research
 
-### Australian Research
+### Comorbidity Research
 
 ```txt
-site:*.edu.au "dual diagnosis" OR "co-occurring" Australia filetype:pdf
+(site:*.edu.au OR site:comorbidityguidelines.org.au) ("comorbidity" OR "dual diagnosis" OR "co-occurring") (prevalence OR treatment OR outcomes) filetype:pdf
 ```
 
-### Prevalence Data
-
-```txt
-"dual diagnosis" OR "comorbidity" prevalence (mental health AND substance) Australia
-```
-
-### Treatment Outcomes
-
-```txt
-"dual diagnosis" treatment (outcomes OR effectiveness) Australia research
-```
-
----
-
-## 🏛️ Service System
-
-### System Navigation
-
-```txt
-"system navigation" mental health AOD OR "alcohol and other drugs"
-```
-
-### Service Integration
-
-```txt
-"service integration" OR "integrated services" mental health AOD Australia
-```
-
-### Referral Pathways
-
-```txt
-"referral pathway" dual diagnosis OR "co-occurring" Australia
-```
+> The NHMRC Centre of Research Excellence in Mental Health and Substance Use is best searched by
+> full name + `"Maree Teesson"` / NDARC / Matilda Centre (the acronym "CREMS" is ambiguous).
 
 ---
 
 ## 🔗 Related Resources
 
-- **Synonym Block:** [Mental Health Terms](../05-synonym-blocks.md#-mental-health-terms)
-- **Related Packs:** [Housing & Homelessness](housing-homelessness.md), [Research](research.md)
+- **Source Intelligence:**
+  [Populations & Intersections](../resources/source-intelligence.md#populations-intersections) — the
+  guidelines and services every dork above is built on
+- **Synonym Block:** [Mental Health Terms](../05-synonym-blocks.md#mental-health-terms)
+- **Related Packs:** [Housing & Homelessness](housing-homelessness.md), [Youth](youth.md),
+  [Research](research.md)
+- **Key Sources:** [Comorbidity Guidelines](https://comorbidityguidelines.org.au),
+  [Turning Point](https://turningpoint.org.au), [Phoenix Australia](https://phoenixaustralia.org)
 
 ---
 

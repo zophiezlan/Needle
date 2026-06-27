@@ -1,6 +1,7 @@
 # Coroners, Inquests & Death Data
 
-> Understanding drug-related deaths through coronial findings.
+> Find coronial findings, recommendations, and overdose mortality data — named by court, by document
+> genre, and by dataset, not just by keyword.
 
 [← Back to Dork Packs](README.md) | [← Main Guide](../README.md)
 
@@ -8,93 +9,102 @@
 
 ## ⚠️ Sensitivity Note
 
-This section deals with death data and coronial findings. These searches can surface distressing
-content.
+This pack deals with death data and coronial findings. These searches can surface distressing
+content, including details of individual deaths.
 
-**Take care of yourself** and consider your purpose carefully before searching.
+**Take care of yourself**, consider your purpose, and handle results — especially anything naming an
+individual — with respect for the people and families behind the data.
+
+---
+
+## 👥 About This Pack
+
+The expert move in coronial searching is to know the **document genre** and the **system**. The
+genre is `"findings"` — not "report" — with jurisdiction-specific variants: Victoria publishes a
+`"finding without inquest"`, Queensland publishes `"non-inquest findings"`, and
+`"inquest into the death of [name]"` is a high-precision title pattern across every state. The
+systems are the **National Coronial Information System (NCIS)**, the Victorian **Coroners Prevention
+Unit (CPU)**, and the death datasets from **AIHW**, the **ABS**, and **Penington Institute**.
+
+For harm reduction, coronial **recommendations** matter most: naloxone access, drug checking, and
+the injecting rooms all advanced on the back of them — and agencies must formally respond.
+
+> **Entity reference:** every court, system, and dataset below is catalogued in
+> [Source Intelligence → Coroners, Inquests & Death Data](../resources/source-intelligence.md#coroners-inquests-death-data).
 
 ---
 
 ## ⚡ Quick Start
 
-Find coronial findings on drug-related deaths:
+Find drug-related coronial recommendations from the national system and courts:
 
 ```txt
-"coronial recommendation" drug OR overdose Australia filetype:pdf
+("inquest into the death of" OR "coronial findings") (drug OR overdose) recommendation Australia
 ```
 
 ---
 
 ## 🟢 Basic Queries
 
-### Coronial Courts (General) - 1
+### The National Coronial Information System (NCIS)
 
 ```txt
-site:coroners.nsw.gov.au "drug" OR "overdose" OR "substance"
+site:ncis.org.au ("NCIS Fact Sheet" OR "data report" OR drug OR overdose)
 ```
 
-### Coronial Courts (General) - 2
+**Why this works:**
+
+- NCIS is the national database of coronial deaths. Its full data is access-controlled, but the
+  published `"NCIS Fact Sheet"` and `"data report"` series are public — naming them finds the
+  figures
+
+### Coronial Findings (the Document Genre)
 
 ```txt
-site:coronerscourt.vic.gov.au inquest drug OR overdose
+("inquest into the death of" OR "finding without inquest" OR "non-inquest findings") (drug OR overdose OR substance)
 ```
 
-### Coronial Recommendations
+**Why this works:**
+
+- These are the actual coronial document types — far more precise than the generic word "report".
+  Bare "findings" is too noisy; these phrases are not
+
+### Coroners Court of Victoria
 
 ```txt
-"coronial recommendation" OR "coroner's recommendation" drug OR overdose Australia
-```
-
-### Drug Death Statistics - 1
-
-```txt
-"drug-induced death" OR "drug-related death" statistics Australia
-```
-
-### Drug Death Statistics - 2
-
-```txt
-site:aihw.gov.au "drug-induced deaths"
+site:coronerscourt.vic.gov.au ("Coroners Prevention Unit" OR "finding without inquest" OR overdose)
 ```
 
 ---
 
 ## 🟡 Intermediate Queries
 
-### Finding Coronial Recommendations - 1
+### Coroners Prevention Unit (Victoria)
 
 ```txt
-"coroner" "recommendation" ("harm reduction" OR naloxone OR prevention)
+"Coroners Prevention Unit" (overdose OR drug OR "drug-related") (finding OR recommendation OR data)
 ```
 
-### Finding Coronial Recommendations - 2
+**Why this works:**
+
+- Victoria's CPU is a specialist unit that analyses reportable deaths for prevention — it produces
+  some of the most detailed overdose-death analysis in the country
+
+### Recommendations & Government Responses
 
 ```txt
-inquest finding "drug" OR "overdose" "recommendation" Australia
+coroner (recommendation OR "recommend") ("harm reduction" OR naloxone OR "drug checking" OR "supervised injecting") (response OR implementation)
 ```
 
-### Systemic Issues - 1
+**Why this works:**
+
+- Coroners make recommendations and agencies must respond in writing — pairing "recommendation" with
+  "response" finds both the lever and whether it was acted on
+
+### Cluster & Spike Investigations
 
 ```txt
-"systemic issues" OR "systemic failures" coronial drug death
-```
-
-### Systemic Issues - 2
-
-```txt
-"coroner" "prevention" drug death Australia
-```
-
-### Cluster Investigations - 1
-
-```txt
-"cluster" overdose OR "drug death" investigation Australia
-```
-
-### Cluster Investigations - 2
-
-```txt
-"spike" OR "surge" overdose deaths investigation
+(overdose OR "drug death") (cluster OR spike OR surge OR "enhanced surveillance") (investigation OR "public health response") Australia
 ```
 
 ---
@@ -104,250 +114,207 @@ inquest finding "drug" OR "overdose" "recommendation" Australia
 ### Comprehensive Coronial Sweep
 
 ```txt
-(coroner OR coronial OR inquest) ("drug" OR "overdose" OR "substance" OR "opioid") (finding OR recommendation OR inquest) Australia filetype:pdf after:2020
-```
-
-### Enhanced Surveillance
-
-```txt
-"enhanced surveillance" OR "public health response" overdose cluster
+(coroner OR coronial OR inquest) (drug OR overdose OR opioid OR substance) ("finding without inquest" OR "non-inquest findings" OR recommendation) Australia filetype:pdf after:2020
 ```
 
 ### Prevention-Focused Findings
 
 ```txt
-"coroner" (prevention OR "preventable death" OR recommendation) ("drug" OR "overdose") Australia
+coroner (prevention OR "preventable death" OR recommendation) (drug OR overdose) ("harm reduction" OR naloxone OR "drug checking") Australia
+```
+
+### Systemic Issues & Failures
+
+```txt
+coronial ("systemic issues" OR "systemic failures" OR "missed opportunities") (drug OR overdose) Australia
 ```
 
 ---
 
-## 📍 State Coroners Courts
+## 📍 State & Territory Coroners Courts
 
-### NSW - 1
+Each jurisdiction publishes findings on its own host — and several are easy to get wrong. These are
+the current, correct domains.
+
+### New South Wales
 
 ```txt
-site:coroners.nsw.gov.au "drug" OR "overdose" OR "substance"
+site:coroners.nsw.gov.au ("Coronial findings and recommendations" OR inquest) (drug OR overdose)
 ```
 
-### NSW - 2
+### Victoria
 
 ```txt
-site:coroners.nsw.gov.au inquest finding
-```
-
-### Victoria - 1
-
-```txt
-site:coronerscourt.vic.gov.au drug OR overdose
-```
-
-### Victoria - 2
-
-```txt
-site:coronerscourt.vic.gov.au inquest finding
+site:coronerscourt.vic.gov.au ("finding without inquest" OR inquest) (drug OR overdose)
 ```
 
 ### Queensland
 
 ```txt
-site:courts.qld.gov.au/courts/coroners-court "drug" OR "overdose"
+site:coronerscourt.qld.gov.au ("Non-inquest findings" OR "inquest into the death of") (drug OR overdose)
 ```
+
+> Note: use `coronerscourt.qld.gov.au`, not `courts.qld.gov.au` — the canonical findings host
+> changed.
 
 ### Western Australia
 
 ```txt
-site:coronerscourt.wa.gov.au drug OR substance OR overdose
+site:coronerscourt.wa.gov.au ("Inquest Findings" OR "inquest into the death of") (drug OR overdose)
 ```
 
 ### South Australia
 
 ```txt
-site:courts.sa.gov.au/courts/coroners-court "drug" death
+site:courts.sa.gov.au/court-decisions/coroners-findings (drug OR overdose OR substance)
 ```
 
-### ACT
+### Australian Capital Territory
 
 ```txt
-site:coronialservices.act.gov.au drug OR overdose
+site:courts.act.gov.au coroner (drug OR overdose) (findings OR inquest)
 ```
 
 ### Northern Territory
 
 ```txt
-site:courts.nt.gov.au/coroner drug OR substance death
+(site:nt.gov.au OR site:agd.nt.gov.au) coroner ("coronial findings" OR inquest) (drug OR overdose)
 ```
+
+> Note: the NT publishes coronial findings across several government hosts — query both `nt.gov.au`
+> and the Attorney-General's Department `agd.nt.gov.au` rather than a single fixed path.
 
 ### Tasmania
 
 ```txt
-site:magistratescourt.tas.gov.au/divisions/coronial drug overdose
+site:magistratescourt.tas.gov.au/coronerscourt ("Coronial Findings" OR "findings, comments and recommendations") (drug OR overdose)
 ```
 
 ---
 
-## 📊 Drug Death Data & Statistics
+## 📊 Drug-Induced Death Data
 
-### AIHW Data
+`"drug-induced deaths"` is the precise, shared term used by the ABS and AIHW — quote it.
 
-```txt
-site:aihw.gov.au "drug-induced deaths" OR "opioid deaths" filetype:pdf
-```
-
-### Overdose Mortality
+### AIHW Drug-Induced Deaths
 
 ```txt
-"overdose mortality" OR "overdose fatality" data Australia
+site:aihw.gov.au ("Alcohol, tobacco & other drugs in Australia" OR "drug-induced deaths")
 ```
 
-### Accidental Overdose
+### ABS Causes of Death
 
 ```txt
-"accidental drug overdose" OR "unintentional overdose" statistics Australia
+site:abs.gov.au "Causes of Death, Australia" "drug-induced deaths"
 ```
 
-### Penington Institute Reports
+### Penington Institute Annual Overdose Report
 
 ```txt
-site:penington.org.au "overdose" OR "Australia's Annual Overdose Report"
+site:penington.org.au "Australia's Annual Overdose Report" (opioid OR data OR filetype:pdf)
 ```
+
+**Why this works:**
+
+- The ABS is the upstream source; AIHW and Penington both build on it. Penington's report aggregates
+  ABS/coronial data into the most-cited national overdose picture — quoting the exact titles finds
+  the numbers rather than commentary
 
 ---
 
 ## 💊 Specific Substances & Death
 
-### Opioids (General)
+### Opioids & Pharmaceutical Opioids
 
 ```txt
-"opioid" death OR overdose Australia (coroner OR statistics)
+("opioid" OR oxycodone OR fentanyl OR codeine OR heroin) (death OR overdose) Australia (coroner OR "drug-induced deaths")
 ```
 
-### Heroin
+### Stimulants
 
 ```txt
-"heroin" death OR overdose Australia (coroner OR statistics)
+("methamphetamine" OR "ice" OR cocaine OR MDMA) (death OR overdose) Australia (coroner OR data)
 ```
 
-### Pharmaceutical Opioids - 1
+### Emerging Substances
 
 ```txt
-("pharmaceutical opioid" OR "prescription opioid") death Australia
+("nitazene" OR "isotonitazene" OR "protonitazene" OR "synthetic opioid") (death OR coronial OR toxicity) Australia
 ```
 
-### Pharmaceutical Opioids - 2
+### Polydrug Toxicity
 
 ```txt
-(oxycodone OR fentanyl OR codeine) overdose death Australia
-```
-
-### Methamphetamine
-
-```txt
-"methamphetamine" OR "ice" death Australia (coroner OR data)
-```
-
-### Emerging Substances - 1
-
-```txt
-"fentanyl" death OR overdose Australia (emerging)
-```
-
-### Emerging Substances - 2
-
-```txt
-"nitazene" death Australia
-```
-
-### Polydrug/Combination - 1
-
-```txt
-"benzodiazepine" "opioid" combined overdose death
-```
-
-### Polydrug/Combination - 2
-
-```txt
-"polydrug" OR "multiple substances" overdose death
+("polydrug" OR "polydrug toxicity" OR "multiple drug toxicity" OR "benzodiazepine" "opioid") (death OR overdose) Australia
 ```
 
 ---
 
-## 🔍 Specific Case Types
+## 📋 Recommendations as Harm-Reduction Levers
 
-### Custody Deaths
+Coronial recommendations are how harm-reduction measures get onto the policy agenda. These searches
+trace the lever and the follow-through.
 
-```txt
-"death in custody" drug OR overdose OR withdrawal Australia
-```
-
-### Prison Deaths
+### Naloxone & Overdose Prevention
 
 ```txt
-("prison death" OR "correctional") drug OR overdose OR withdrawal Australia
+coroner recommendation (naloxone OR "take-home naloxone" OR "overdose prevention") (drug OR opioid) Australia
 ```
 
-### Hospital/Healthcare Deaths
+### Drug Checking & Festival Deaths
 
 ```txt
-"hospital" OR "healthcare" drug OR overdose death coronial
+coroner (recommendation OR inquest) ("drug checking" OR "pill testing") (festival OR "music festival" OR MDMA) Australia
 ```
 
-### Post-Release Deaths
+### Post-Release & Custody Deaths
 
 ```txt
-"post-release" OR "release from custody" overdose death Australia
+("post-release" OR "release from custody" OR "death in custody") (overdose OR drug OR withdrawal) (coroner OR recommendation OR prevention) Australia
 ```
+
+**Why this works:**
+
+- Post-release overdose is one of the most preventable death patterns and a recurring coronial theme
+  — tying it to "recommendation" or "prevention" finds the documents that argue for
+  naloxone-on-release and continuity of treatment
 
 ---
 
-## 📋 Recommendations & Prevention
+## 💬 Affected Communities & Lived Experience
 
-### Prevention Recommendations
+Behind the data are families, friends, and peers. Their voices belong in prevention — and are easy
+to miss in a statistics-only search.
 
-```txt
-coroner recommendation ("harm reduction" OR naloxone OR "overdose prevention")
-```
-
-### Implementation of Recommendations
+### Families & Affected Others
 
 ```txt
-coronial recommendation (implementation OR response OR "government response") drug
+(overdose OR "drug-related death") ("family" OR "affected family" OR "bereaved" OR "in memory") (story OR support OR Australia)
 ```
 
-### Systemic Change
+### Peer & Community Grief and Response
 
 ```txt
-coroner ("systemic change" OR "systemic recommendation") drug OR overdose
+(overdose OR "drug death") ("peer" OR "community response" OR "remembrance" OR "International Overdose Awareness Day") Australia
 ```
 
----
+**Why this works:**
 
-## 📈 Trends & Patterns
-
-### Annual Reports
-
-```txt
-"drug-related deaths" OR "overdose deaths" "annual report" Australia
-```
-
-### Trend Analysis
-
-```txt
-("drug death" OR "overdose") trend Australia 2020..2026
-```
-
-### Geographic Patterns
-
-```txt
-("drug death" OR "overdose") (rural OR regional OR metropolitan) Australia comparison
-```
+- International Overdose Awareness Day and peer-org remembrance material carry the lived-experience
+  and family voice that coronial data abstracts away — important context for advocacy, handled with
+  care
 
 ---
 
 ## 🔗 Related Resources
 
-- **Related Packs:** [Drug Alerts](drug-alerts.md), [Novel Substances](novel-substances.md),
-  [Data & Statistics](data-statistics.md)
-- **Key Sources:** [Penington Institute](https://penington.org.au), [AIHW](https://aihw.gov.au)
+- **Source Intelligence:**
+  [Coroners, Inquests & Death Data entities](../resources/source-intelligence.md#coroners-inquests-death-data)
+  — the courts, systems, and datasets every dork above is built on
+- **Related Packs:** [Naloxone](naloxone.md), [Novel Substances](novel-substances.md),
+  [Data & Statistics](data-statistics.md), [Drug Alerts](drug-alerts.md)
+- **Key Sources:** [NCIS](https://www.ncis.org.au), [AIHW](https://aihw.gov.au),
+  [Penington Institute](https://penington.org.au)
 
 ---
 

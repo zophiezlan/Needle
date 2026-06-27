@@ -6,7 +6,7 @@
 **A search discovery platform for the AOD & harm reduction workforce.**
 
 <SiteMetaStrip />
-[![License](https://img.shields.io/badge/license-Share%20Freely-orange.svg)](#license--attribution)
+[![License](https://img.shields.io/badge/license-Share%20Freely-orange.svg)](#license-attribution)
 
 </div>
 
@@ -127,6 +127,15 @@ Ready-to-use search queries organized by harm reduction task:
 | [Investigative](dork-packs/investigative.md)             | Creative & ethical deep searching       |
 | [Safer Use Education](dork-packs/safer-use-education.md) | Factsheets, brochures, health promotion |
 | [Stigma & Language](dork-packs/stigma-language.md)       | Historical research & terminology       |
+| [User-Hosted Domains](dork-packs/user-hosted-domains.md) | Grassroots content on user platforms    |
+
+### Power User Techniques
+
+| Pack                                                                     | Description                                |
+| :----------------------------------------------------------------------- | :----------------------------------------- |
+| [Multimedia Discovery](dork-packs/multimedia-discovery.md)               | Video, audio, podcasts & visual resources  |
+| [Organizational Intelligence](dork-packs/organizational-intelligence.md) | Strategic plans, governance & funding docs |
+| [Temporal Intelligence](dork-packs/temporal-intelligence.md)             | Archives, historical content & time-based  |
 
 👉 [**Browse All Dork Packs →**](dork-packs/README.md)
 

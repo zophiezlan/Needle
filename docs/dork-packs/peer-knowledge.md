@@ -1,360 +1,207 @@
 # Peer Knowledge, Publications & Storytelling
 
-> Finding peer voices, lived experience narratives, and peer-produced knowledge.
+> Find peer voices and lived-experience knowledge — named by the actual peer publication and
+> drug-user organisation, not generic "peer" keywords.
 
 [← Back to Dork Packs](README.md) | [← Main Guide](../README.md)
 
 ---
 
-## ⚡ Quick Start
+## 👥 About This Pack
 
-Find peer organisation publications:
+**Peer knowledge is expert knowledge.** The drug-user organisations publish named series worth
+knowing: NUAA's **User's News** (and **Insider's News**, distributed inside NSW prisons), **AIVL
+News**, and the **DanceWize** peer programs (HRVic and NUAA). Internationally, INPUD's **Words
+Matter** and EuroNPUD's **European Diaries** carry the peer voice. The specificity move is the same
+as every pack — name the publication, not just "peer newsletter".
 
-```txt
-(site:nuaa.org.au OR site:aivl.org.au OR site:hrvic.org.au) filetype:pdf
-```
+> **Entity reference:** every peer org, publication, and handle below is catalogued in
+> [Source Intelligence → Cross-Cutting: Peer & Drug-User Organisations](../resources/source-intelligence.md#cross-cutting-peer-drug-user-organisations-au).
 
 ---
 
-## 👥 About This Pack
+## ⚡ Quick Start
 
-**Peer knowledge is expert knowledge.** This pack helps you find content created by and for people
-with lived experience of drug use—resources that center peer voices and wisdom.
+Go to Australia's flagship peer magazine:
+
+```txt
+site:nuaa.org.au "User's News"
+```
 
 ---
 
 ## 🟢 Basic Queries
 
-### Peer Newsletters & Magazines - 1
+### Named Peer Publications
 
 ```txt
-site:nuaa.org.au "User's News" filetype:pdf
+("User's News" OR "Insider's News" OR "AIVL News") (site:nuaa.org.au OR site:aivl.org.au)
 ```
 
-### Peer Newsletters & Magazines - 2
+**Why this works:**
+
+- Names the actual peer mastheads — NUAA's **User's News** and prison-distributed **Insider's
+  News**, and **AIVL News** — instead of a generic `"peer newsletter"` query that mostly misses them
+
+### Australian Drug-User Organisations
 
 ```txt
-site:aivl.org.au "The Advocate" OR newsletter filetype:pdf
+(site:nuaa.org.au OR site:aivl.org.au OR site:hrvic.org.au OR site:quihn.org OR site:wasua.com.au OR site:cahma.org.au) ("peer" OR "lived experience" OR "harm reduction")
 ```
 
-### Peer Organisation Publications
+### Peer-Produced Knowledge
 
 ```txt
-site:*.org.au ("by peers" OR "peer written" OR "peer voices") filetype:pdf
-```
-
-### General Peer Newsletters
-
-```txt
-"peer newsletter" OR "peer magazine" harm reduction Australia filetype:pdf
+("by peers, for peers" OR "peer-produced" OR "peer-developed" OR "in their own words") ("people who use drugs" OR "harm reduction") Australia
 ```
 
 ---
 
 ## 🟡 Intermediate Queries
 
-### Lived Experience Narratives
+### Lived & Living Experience Narratives
 
 ```txt
-"lived experience" (story OR narrative OR testimony) drug use Australia filetype:pdf
+("lived experience" OR "lived and living experience" OR "in their own words") (story OR narrative OR testimony) ("people who use drugs" OR "drug use") Australia filetype:pdf
 ```
 
-### First-Person Accounts
+**Why this works:**
+
+- "Lived and living experience" (LLE) is the sector's current term — searching it alongside the
+  older "lived experience" catches both eras of peer-authored material
+
+### Digital Storytelling & Creative Work
 
 ```txt
-"first person" OR "personal account" drug use harm reduction
+("photovoice" OR "digital storytelling" OR poetry OR zine) ("people who use drugs" OR "lived experience" OR "harm reduction")
 ```
 
-### Peer Stories in Resources
+### Peer Voice in Submissions
 
 ```txt
-site:*.org.au ("in their own words" OR "peer perspectives" OR "peer stories") filetype:pdf
-```
-
-### Digital Storytelling
-
-```txt
-"photovoice" OR "digital storytelling" "people who use drugs" OR "drug use"
+(site:nuaa.org.au OR site:aivl.org.au OR site:hrvic.org.au) (submission OR "position statement") (inquiry OR consultation OR "drug policy")
 ```
 
 ---
 
 ## 🔴 Advanced Queries
 
-### Comprehensive Peer Knowledge Sweep
+### Comprehensive Peer-Knowledge Sweep
 
 ```txt
-(site:nuaa.org.au OR site:aivl.org.au OR site:hrvic.org.au OR site:quihn.org OR site:wasua.com.au) filetype:pdf after:2020
+(site:nuaa.org.au OR site:aivl.org.au OR site:hrvic.org.au OR site:quihn.org OR site:quivaa.org.au OR site:wasua.com.au) ("peer" OR "lived experience" OR "User's News" OR "harm reduction") filetype:pdf after:2020
 ```
 
-### Peer-Developed Resources
+### Peer-Led Research & Co-Design
 
 ```txt
-site:*.org.au ("peer-developed" OR "peer-produced" OR "peer-created") (materials OR resources OR tools) drug use filetype:pdf
+("peer-led research" OR "peer researcher" OR "co-design" OR "participatory action research") ("people who use drugs" OR "harm reduction") Australia filetype:pdf
 ```
 
-### Peer Wisdom & Expertise
+**Why this works:**
+
+- The peer-research vocabulary (peer-led, co-design, PAR) finds the work done _with_ rather than
+  _about_ people who use drugs — the methodological side of "nothing about us without us"
+
+### Meaningful Participation (not Tokenism)
 
 ```txt
-"peer expertise" OR "experiential knowledge" OR "peer wisdom" drug use filetype:pdf
-```
-
-### Peer Representation Guidelines
-
-```txt
-"peer representative" (guidelines OR support OR training) filetype:pdf
-```
-
----
-
-## 📰 Peer Publications
-
-### User's News (NUAA) - 1
-
-```txt
-site:nuaa.org.au "User's News" filetype:pdf
-```
-
-### User's News (NUAA) - 2
-
-```txt
-"User's News" NUAA [TOPIC]
-```
-
-### AIVL Publications
-
-```txt
-site:aivl.org.au filetype:pdf
-```
-
-### HRVic Publications
-
-```txt
-site:hrvic.org.au filetype:pdf
-```
-
-### State Organisation Publications
-
-```txt
-(site:quihn.org OR site:wasua.com.au) filetype:pdf
-```
-
-### Finding Specific Issues - 1
-
-```txt
-"User's News" [TOPIC] filetype:pdf
-```
-
-### Finding Specific Issues - 2
-
-```txt
-"peer newsletter" [TOPIC] Australia
+("meaningful participation" OR "authentic engagement" OR "nothing about us without us") ("people who use drugs" OR "consumer representative") (policy OR research OR advisory)
 ```
 
 ---
 
-## 📖 Narratives & Storytelling
+## 📰 Named Peer Publications
 
-### Lived Experience Stories
+### User's News & Insider's News (NUAA)
 
 ```txt
-"lived experience" (story OR narrative) "drug use" OR "drug user" Australia filetype:pdf
+site:nuaa.org.au ("User's News" OR "Insider's News")
 ```
 
-### Peer Testimonies
+### AIVL News & Position Statements
 
 ```txt
-"peer stories" OR "peer testimonies" OR "peer voices" drug policy OR harm reduction
+site:aivl.org.au ("AIVL News" OR "position statement" OR submission OR "NSP Directory")
 ```
 
-### Oral Histories
+### DanceWize (Peer Festival Programs)
 
 ```txt
-"oral history" OR "oral histories" ("drug use" OR "harm reduction" OR "drug user movement") Australia
-```
-
-### Creative Expression
-
-```txt
-(poetry OR art OR creative) "lived experience" drug use harm reduction
-```
-
----
-
-## 📚 Peer-Led Resources
-
-### Factsheets by Peers
-
-```txt
-site:nuaa.org.au OR site:aivl.org.au (factsheet OR "fact sheet" OR guide) filetype:pdf
-```
-
-### Peer Education Materials - 1
-
-```txt
-"peer education" resources harm reduction Australia filetype:pdf
-```
-
-### Peer Education Materials - 2
-
-```txt
-"by peers for peers" harm reduction
-```
-
-### Peer-Developed Campaigns
-
-```txt
-site:*.org.au "peer-led" (campaign OR resource OR toolkit) filetype:pdf
+(site:hrvic.org.au OR site:dancewizensw.org.au OR site:nuaa.org.au) ("DanceWize" OR "crowd care" OR "peer education")
 ```
 
 ---
 
 ## 🗣️ Peer Voice in Policy
 
-### Peer Submissions - 1
+### Peer Submissions & Advisory
 
 ```txt
-(site:aivl.org.au OR site:nuaa.org.au) submission filetype:pdf
-```
-
-### Peer Submissions - 2
-
-```txt
-"peer organisation" submission (inquiry OR consultation) drug
-```
-
-### Lived Experience in Advisory
-
-```txt
-"lived experience" (advisory OR "reference group" OR committee) drug policy
-```
-
-### Meaningful Participation
-
-```txt
-"meaningful participation" OR "authentic engagement" "people who use drugs" (policy OR research)
-```
-
-### Avoiding Tokenism
-
-```txt
-"tokenism" (drug user OR peer) involvement (address OR avoid OR prevent)
-```
-
----
-
-## 📢 Peer Advocacy
-
-### Peer Campaigns
-
-```txt
-site:*.org.au "peer-led" (advocacy OR campaign) drug policy filetype:pdf
+(site:nuaa.org.au OR site:aivl.org.au) (submission OR "reference group" OR advisory) (drug OR "harm reduction")
 ```
 
 ### "Nothing About Us Without Us"
 
 ```txt
-"nothing about us without us" drug policy OR harm reduction filetype:pdf
-```
-
-### Peer Advocacy History - 1
-
-```txt
-"drug user movement" OR "drug user organising" Australia history
-```
-
-### Peer Advocacy History - 2
-
-```txt
-(NUAA OR AIVL) history OR "early days" OR founding
+"nothing about us without us" ("drug policy" OR "harm reduction" OR "people who use drugs") filetype:pdf
 ```
 
 ---
 
-## 🎓 Peer Research
+## 🌏 International Peer Networks
 
-### Peer-Led Research
+These are real, named drug-user networks — the global peer movement.
 
-```txt
-"peer-led research" OR "peer researcher" (drug use OR harm reduction) Australia filetype:pdf
-```
-
-### Participatory Research
+### INPUD & EuroNPUD
 
 ```txt
-"participatory action research" OR "community-based participatory research" drug use filetype:pdf
+(site:inpud.net OR site:euronpud.net) ("Words Matter" OR "European Diaries" OR "people who use drugs" OR peer)
 ```
 
-### Co-Design
+### Canadian & US Peer Unions
 
 ```txt
-"co-design" OR "co-production" "people who use drugs" OR peer filetype:pdf
+(site:vandu.org OR site:capud.ca OR site:urban-survivors.org) (peer OR "drug user union" OR "overdose response")
 ```
+
+**Why this works:**
+
+- VANDU (Vancouver), CAPUD (Canada), and the Urban Survivors Union (US) are the named drug-user
+  unions — far richer than a generic `"people who use drugs" organisation` search
 
 ---
 
-## 🌏 International Peer Content
+## 🕰️ Historical & Archived Peer Content
 
-### INPUD - 1
+The drug-user movement is its own history — and old peer publications are often only in archives.
 
-```txt
-site:inpud.net filetype:pdf
-```
-
-### INPUD - 2
+### Movement History
 
 ```txt
-"International Network of People Who Use Drugs" resources
+("NSW Users and AIDS Association" OR NUAA OR VIVAIDS OR "Harm Reduction Victoria" OR AIVL) (history OR founded OR "early days")
 ```
 
-### European Networks
+### Archived Peer Publications
 
 ```txt
-"European Network of People Who Use Drugs" (EuroNPUD OR ENPUD)
+site:web.archive.org/web/*/nuaa.org.au ("User's News" OR about OR history)
 ```
 
-### Canadian Peer Orgs - 1
-
-```txt
-"Canadian Association of People Who Use Drugs" (CAPUD)
-```
-
-### Canadian Peer Orgs - 2
-
-```txt
-site:vandu.org OR site:capud.ca filetype:pdf
-```
-
----
-
-## 💡 Finding Unindexed Peer Content
-
-### Archive.org for Historical Content
-
-```txt
-site:web.archive.org (nuaa.org.au OR aivl.org.au)
-```
-
-### Historical Peer Publications - 1
-
-```txt
-"User's News" 1990..2010
-```
-
-### Historical Peer Publications - 2
-
-```txt
-"peer newsletter" harm reduction Australia 1990..2015
-```
+> Pair with the [Temporal Intelligence pack](temporal-intelligence.md) to recover old issues and the
+> [Stigma & Language pack](stigma-language.md) for the movement's history.
 
 ---
 
 ## 🔗 Related Resources
 
+- **Source Intelligence:**
+  [Cross-Cutting: Peer & Drug-User Organisations](../resources/source-intelligence.md#cross-cutting-peer-drug-user-organisations-au)
+  — the peer orgs, publications, and handles every dork above is built on
 - **Synonym Block:**
-  [Peer/Lived Experience Terms](../05-synonym-blocks.md#-peerlived-experience-terms)
-- **Related Packs:** [Peer Workforce](peer-workforce.md), [Stigma & Language](stigma-language.md)
-- **Workflow:** [Peer-Centered Search](../workflows/peer-centered.md)
+  [Peer/Lived Experience Terms](../05-synonym-blocks.md#peerlived-experience-terms)
+- **Related Packs:** [Peer Workforce](peer-workforce.md), [Forum & Community](forum-community.md),
+  [Stigma & Language](stigma-language.md)
 - **Key Orgs:** [NUAA](https://nuaa.org.au), [AIVL](https://aivl.org.au), [INPUD](https://inpud.net)
 
 ---

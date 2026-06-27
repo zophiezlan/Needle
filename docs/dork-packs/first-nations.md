@@ -1,423 +1,268 @@
 # Aboriginal & Torres Strait Islander AOD & Harm Reduction
 
-> Culturally safe, self-determined approaches to healing.
+> Culturally safe, self-determined approaches — led by Aboriginal Community Controlled
+> organisations, named by the actual ACCHO and resource, not generic "Indigenous" keywords.
 
 [← Back to Dork Packs](README.md) | [← Main Guide](../README.md)
 
 ---
 
-## 🖤💛❤️ Cultural Safety Note
+> ⚠️ **DRAFT — pending community review.** This pack was drafted against web-verified
+> community-controlled sources, but **terminology, framing, and cultural-safety calls must be signed
+> off by Aboriginal and Torres Strait Islander reviewers before it is treated as final.** It applies
+> an Indigenous Data Sovereignty lens (see below) but is not a substitute for community governance.
+> Flagged calls are noted inline.
 
-> This section supports finding resources that are led by, co-designed with, or appropriate for
-> Aboriginal and Torres Strait Islander communities.
+---
 
-**When searching for or using this information:**
+## 🖤💛❤️ Cultural Safety & Data Sovereignty
 
-- **Prioritise Aboriginal Community Controlled** organisations and resources
-- **Respect cultural protocols** around knowledge sharing
-- **Recognise ongoing impacts** of colonisation, Stolen Generations, and intergenerational trauma
-- **Centre self-determination** – Aboriginal and Torres Strait Islander peoples leading their own
-  solutions
-- **Use respectful language** – follow each community's preferences
+This pack supports finding resources **led by, governed by, or co-designed with** Aboriginal and
+Torres Strait Islander communities. When searching:
+
+- **Prioritise Aboriginal Community Controlled** organisations (ACCHOs) — services governed _by_ the
+  community, not mainstream/government services that merely serve it.
+- **Centre self-determination** and **social and emotional wellbeing (SEWB)** — a strengths-based
+  frame, not deficit language.
+- **Respect cultural protocols** and **Indigenous Data Sovereignty** (see the Data Sovereignty
+  section) — be careful with any search that could aggregate or expose community-level data.
+- **Use respectful language** — "Aboriginal and Torres Strait Islander" (name both); spell out
+  rather than "ATSI"; "volatile substance use", not "petrol sniffing" as a label.
+
+> **Sorry Business / cultural warning:** searches touching deaths in custody or mortality may
+> surface deceased persons. Restrict to reports and recommendations; never name individuals.
+>
+> **Entity reference:** every ACCHO, resource, and data-sovereignty framework below is catalogued in
+> [Source Intelligence → First Nations AOD (Community-Controlled)](../resources/source-intelligence.md#first-nations-aod-community-controlled).
 
 ---
 
 ## ⚡ Quick Start
 
-Find ACCHO AOD resources:
+Go to the national community-controlled health peak:
 
 ```txt
-site:naccho.org.au "alcohol" OR "drug" OR "AOD" filetype:pdf
+site:naccho.org.au ("alcohol and other drugs" OR AOD OR "community controlled")
 ```
 
 ---
 
 ## 🟢 Basic Queries
 
-### Aboriginal Community Controlled Health (ACCHOs) - 1
+### Aboriginal Community Controlled Health (NACCHO)
 
 ```txt
-site:naccho.org.au "alcohol" OR "drug" OR "AOD" OR "substance"
+site:naccho.org.au ("alcohol and other drugs" OR AOD OR "social and emotional wellbeing")
 ```
 
-### Aboriginal Community Controlled Health (ACCHOs) - 2
+**Why this works:**
+
+- Goes to the national ACCHO peak and its AOD remit, rather than a generic `"Aboriginal" "drug"`
+  query that surfaces mainstream commentary _about_ communities
+
+### State & Territory ACCHO Peaks
 
 ```txt
-"Aboriginal Community Controlled Health" AOD OR "alcohol and other drugs"
+(site:ahmrc.org.au OR site:vaccho.org.au OR site:qaihc.com.au OR site:ahcsa.org.au OR site:ahcwa.org.au OR site:amsant.org.au) ("alcohol and other drugs" OR AOD OR "substance")
 ```
 
-### Aboriginal-Specific Programs - 1
+### Community-Controlled Research (Lowitja)
 
 ```txt
-"Aboriginal" "harm reduction" program Australia filetype:pdf
-```
-
-### Aboriginal-Specific Programs - 2
-
-```txt
-"Aboriginal" "alcohol and other drugs" service OR program
-```
-
-### Indigenous Health (Exclude US/Canada)
-
-```txt
-"Indigenous" "drug and alcohol" OR "AOD" Australia -USA -Canada
+site:lowitja.org.au ("alcohol" OR "social and emotional wellbeing" OR "data sovereignty")
 ```
 
 ---
 
 ## 🟡 Intermediate Queries
 
-### State ACCHOs - 1
+### Self-Determination & Community Control
 
 ```txt
-site:ahmrc.org.au filetype:pdf
-```
-
-### State ACCHOs - 2
-
-```txt
-site:vaccho.org.au "alcohol and other drugs"
-```
-
-### State ACCHOs - 3
-
-```txt
-site:qaihc.com.au harm reduction OR AOD
-```
-
-### Cultural Healing Approaches - 1
-
-```txt
-"cultural healing" "alcohol" OR "drug" Aboriginal Australia
-```
-
-### Cultural Healing Approaches - 2
-
-```txt
-"connection to country" OR "return to country" healing substance
-```
-
-### Regional Identifiers
-
-```txt
-"Koori" OR "Murri" OR "Nunga" "drug" OR "alcohol" health
-```
-
----
-
-## 🔴 Advanced Queries
-
-### Comprehensive Aboriginal AOD Sweep
-
-```txt
-("Aboriginal" OR "Torres Strait Islander" OR "Indigenous" OR "First Nations") ("alcohol and other drugs" OR AOD OR "harm reduction" OR "drug and alcohol") Australia (program OR service OR policy OR research) filetype:pdf -USA -Canada after:2020
-```
-
-### Self-Determination in AOD
-
-```txt
-"self-determination" OR "community controlled" (Aboriginal OR Indigenous) ("alcohol and other drugs" OR AOD) Australia
+("Aboriginal Community Controlled" OR "self-determination" OR "community-led") ("alcohol and other drugs" OR AOD OR "social and emotional wellbeing") filetype:pdf
 ```
 
 ### Culturally Safe Practice
 
 ```txt
-"cultural safety" OR "culturally safe" (AOD OR "alcohol and other drugs" OR "harm reduction") Aboriginal filetype:pdf
+("cultural safety" OR "culturally safe" OR "culturally responsive") (AOD OR "alcohol and other drugs") (Aboriginal OR "Torres Strait Islander") filetype:pdf
 ```
+
+### Healing & Connection to Country
+
+```txt
+("cultural healing" OR "connection to Country" OR "on Country" OR "healing centre") (alcohol OR substance OR wellbeing) Aboriginal
+```
+
+**Why this works:**
+
+- Healing-on-Country and cultural-healing models are how community-controlled services frame
+  recovery — searching the model surfaces community-authored material
+
+### AODconnect (Knowledge Centre)
+
+```txt
+site:healthinfonet.ecu.edu.au ("AODconnect" OR "alcohol and other drugs" OR "Knowledge Centre")
+```
+
+> Note: the **AODconnect** app is published by the Australian Indigenous HealthInfoNet AOD Knowledge
+> Centre — not NACCHO.
 
 ---
 
-## 🏥 Aboriginal Community Controlled Organisations
+## 🔴 Advanced Queries
 
-### National - 1
+### Comprehensive Community-Controlled AOD Sweep
 
 ```txt
-site:naccho.org.au filetype:pdf
+("Aboriginal and Torres Strait Islander" OR "First Nations" OR ACCHO) ("alcohol and other drugs" OR AOD OR "social and emotional wellbeing" OR "harm reduction") (service OR program OR resource OR research) Australia filetype:pdf -USA -Canada after:2020
 ```
 
-### National - 2
+### Volatile Substance Use (Strengths-Based)
 
 ```txt
-"National Aboriginal Community Controlled Health Organisation" AOD
+("volatile substance use" OR "low aromatic fuel" OR "Opal fuel") ("Petrol Sniffing Strategy" OR prevention OR remote) (site:health.gov.au OR site:niaa.gov.au)
 ```
 
-### State/Territory ACCHOs
+**Why this works:**
 
-#### NSW
+- Names the actual intervention (low aromatic fuel substitution) and the government strategy, framed
+  as volatile substance use rather than a stigmatising label
 
-```txt
-site:ahmrc.org.au filetype:pdf
-```
-
-#### QLD
+### Residential Healing & Treatment
 
 ```txt
-site:qaihc.com.au filetype:pdf
-```
-
-#### SA
-
-```txt
-site:ahcsa.org.au filetype:pdf
-```
-
-#### VIC
-
-```txt
-site:vaccho.org.au filetype:pdf
-```
-
-#### WA
-
-```txt
-site:ahcwa.org.au filetype:pdf
-```
-
-### Multi-ACCHO Search
-
-```txt
-(ACCHO OR "community controlled") ("harm reduction" OR "alcohol drug" OR AOD) filetype:pdf
+("Aboriginal" OR "Aboriginal and Torres Strait Islander") ("healing centre" OR "residential rehabilitation" OR "residential rehab") (drug OR alcohol OR healing) Australia
 ```
 
 ---
 
 ## 🌿 Cultural Approaches & Healing
 
-### Cultural Healing
+### Yarning & Yarning Circles
 
 ```txt
-"cultural healing" ("alcohol" OR "drug" OR "substance") Aboriginal Australia filetype:pdf
+("yarning" OR "yarning circle") (substance OR alcohol OR wellbeing OR healing) (Aboriginal OR "Torres Strait Islander")
 ```
 
-### Connection to Country
+### Elders & Cultural Practice
 
 ```txt
-"connection to country" OR "return to country" healing (substance OR addiction OR alcohol)
+("Elders" OR "cultural practice" OR "ceremony") (healing OR recovery OR wellbeing) (substance OR alcohol) Aboriginal
 ```
 
-### Ceremony & Cultural Practice
+### Men's & Women's Business
 
 ```txt
-"ceremony" OR "cultural practice" healing (addiction OR substance OR alcohol) Aboriginal
-```
-
-### Elders' Roles
-
-```txt
-"Elders" role healing OR recovery (substance OR alcohol) Aboriginal
-```
-
-### Gender-Specific Healing - 1
-
-```txt
-"men's group" OR "women's group" Aboriginal healing alcohol drug
-```
-
-### Gender-Specific Healing - 2
-
-```txt
-"women's business" OR "men's business" healing substance
-```
-
-### Yarning
-
-```txt
-"yarning circle" OR "yarning" (substance OR alcohol OR wellbeing OR healing) Aboriginal
+("men's group" OR "women's group" OR "men's business" OR "women's business") (healing OR wellbeing) (alcohol OR substance) Aboriginal
 ```
 
 ---
 
-## 📋 Policy & Research
+## 🛡️ Indigenous Data Sovereignty
 
-### Lowitja Institute
+Before running data/statistics dorks, know the governance frameworks — they apply to anything that
+could aggregate or expose community data.
 
-```txt
-site:lowitja.org.au "alcohol" OR "drug" OR "substance" filetype:pdf
-```
-
-### Closing the Gap
+### Data Sovereignty Frameworks
 
 ```txt
-"Closing the Gap" ("alcohol" OR "drug" OR "substance")
+(site:maiamnayriwingara.org OR site:gida-global.org OR site:lowitja.org.au) ("Indigenous data sovereignty" OR "data governance" OR "CARE Principles")
 ```
 
-### National Strategies - 1
+**Why this works:**
 
-```txt
-"National Aboriginal and Torres Strait Islander" drug OR alcohol strategy
-```
-
-### National Strategies - 2
-
-```txt
-"Aboriginal and Torres Strait Islander" health plan AOD
-```
-
-### AIHW Aboriginal Data (Statistics)
-
-```txt
-site:aihw.gov.au ("Aboriginal" OR "Indigenous") ("alcohol and other drugs" OR substance)
-```
-
----
-
-## ⚖️ Justice & Incarceration
-
-### Diversion Programs - 1
-
-```txt
-"Aboriginal" "justice" "alcohol" OR "drug" diversion
-```
-
-### Diversion Programs - 2
-
-```txt
-"Koori Court" OR "Murri Court" drug OR alcohol
-```
-
-### Diversion Programs - 3
-
-```txt
-"Aboriginal Legal Service" drug OR alcohol diversion
-```
-
-### Over-Representation - 1
-
-```txt
-"over-representation" Aboriginal prison drug OR alcohol
-```
-
-### Over-Representation - 2
-
-```txt
-"Aboriginal" "incarceration" OR "prison" drug OR alcohol
-```
-
-### Circle Sentencing
-
-```txt
-"circle sentencing" drug OR alcohol Aboriginal
-```
+- Names **Maiam nayri Wingara** (the AU IDSov collective) and the **CARE Principles** — the
+  governance that should frame any use of community-level data
 
 ---
 
 ## 💔 Trauma & Healing
 
-### Stolen Generations
+### Stolen Generations & Intergenerational Trauma
 
 ```txt
-"Stolen Generations" trauma "substance" OR "alcohol"
+("Stolen Generations" OR "intergenerational trauma" OR "historical trauma") (alcohol OR substance OR "social and emotional wellbeing") Aboriginal
 ```
 
-### Intergenerational Trauma - 1
+### Trauma-Informed, Culturally Safe Care
 
 ```txt
-"intergenerational trauma" "alcohol" OR "drug" Aboriginal
-```
-
-### Intergenerational Trauma - 2
-
-```txt
-"historical trauma" OR "collective trauma" Aboriginal substance
-```
-
-### Trauma-Informed Care
-
-```txt
-"trauma-informed" Aboriginal (drug OR alcohol) service filetype:pdf
+"trauma-informed" ("culturally safe" OR Aboriginal OR "Torres Strait Islander") (drug OR alcohol OR AOD) service filetype:pdf
 ```
 
 ---
 
 ## 👨‍👩‍👧 Youth & Families
 
-### Aboriginal Youth - 1
+### Youth Programs (Named & Generic)
 
 ```txt
-"Aboriginal youth" drug OR alcohol prevention
+("Strong & Deadly Futures" OR "Strong and Deadly Futures" OR "Strong Spirit Strong Mind" OR "Aboriginal young people") ("alcohol and other drugs" OR AOD OR prevention)
 ```
 
-### Aboriginal Youth - 2
+> Handle with care: **Strong & Deadly Futures** is university-led (Matilda Centre, with Aboriginal
+> co-design) and **Strong Spirit Strong Mind** is a WA Government (MHC) program — name them, but
+> don't present either as community-controlled.
+
+### Families, Kinship & FASD
 
 ```txt
-"Aboriginal young people" (AOD OR "alcohol and other drugs")
-```
-
-### Families - 1
-
-```txt
-"Aboriginal families" substance OR alcohol support
-```
-
-### Families - 2
-
-```txt
-"kinship" OR "family" Aboriginal "alcohol drug" healing
-```
-
-### FASD
-
-```txt
-"Aboriginal" (FASD OR "fetal alcohol") prevention
+("Aboriginal families" OR kinship) (substance OR alcohol OR FASD OR "fetal alcohol") (support OR healing OR prevention)
 ```
 
 ---
 
-## 🏡 Residential & Treatment Services
+## ⚖️ Justice & Healing
 
-### Aboriginal Residential Rehab - 1
+> Cultural warning applies (Sorry Business). Restrict to reports/recommendations; see the
+> [Prisons & Justice pack](prisons-justice.md) for the verified justice entities.
+
+### Aboriginal Sentencing Courts & Diversion
 
 ```txt
-"Aboriginal residential rehabilitation" OR "Aboriginal healing centre"
+("Koori Court" OR "Murri Court" OR "Nunga Court" OR "Galambany Court" OR "Circle Sentencing") (drug OR alcohol OR diversion)
 ```
 
-### Aboriginal Residential Rehab - 2
+### Over-Representation & Closing the Gap
 
 ```txt
-"Aboriginal" (rehab OR rehabilitation) "drug" OR "alcohol"
-```
-
-### Culturally Safe Treatment
-
-```txt
-"culturally safe" treatment (Aboriginal OR Indigenous) (drug OR alcohol) Australia
+site:closingthegap.gov.au ("Target 10" OR "Target 11" OR incarceration OR "youth detention")
 ```
 
 ---
 
 ## 📊 Data & Statistics
 
-### AIHW Aboriginal Data - 1
+> Apply the Indigenous Data Sovereignty lens above before relying on these.
+
+### AIHW & ABS Aboriginal Data
 
 ```txt
-site:aihw.gov.au "Aboriginal" "alcohol" statistics
+(site:aihw.gov.au OR site:abs.gov.au) ("Aboriginal and Torres Strait Islander" OR Indigenous) ("alcohol and other drugs" OR "substance use") (statistics OR data)
 ```
 
-### AIHW Aboriginal Data - 2
+### Community-Controlled Research Data
 
 ```txt
-site:abs.gov.au "Indigenous" "substance use" OR "alcohol"
+(site:lowitja.org.au OR site:menzies.edu.au) ("alcohol" OR "substance" OR "social and emotional wellbeing") (research OR report) filetype:pdf
 ```
 
-### Overdose/Death Data - 1
-
-```txt
-"Aboriginal" "overdose" OR "drug death" data Australia
-```
-
-### Overdose/Death Data - 2
-
-```txt
-"Aboriginal" "alcohol-related" hospitalisation OR death statistics
-```
+> Lowitja is community-controlled; Menzies is a research institute working _in partnership with_
+> communities — note the difference when citing.
 
 ---
 
 ## 🔗 Related Resources
 
-- **Related Packs:** [Rural & Remote](rural-remote.md), [Prisons & Justice](prisons-justice.md)
-- **Key Orgs:** [NACCHO](https://naccho.org.au), [Lowitja Institute](https://lowitja.org.au)
+- **Source Intelligence:**
+  [First Nations AOD (Community-Controlled)](../resources/source-intelligence.md#first-nations-aod-community-controlled)
+  — the ACCHOs, resources, and data-sovereignty frameworks every dork above is built on
+- **Synonym Block:** [First Nations Terms](../05-synonym-blocks.md#first-nations-terms)
+- **Related Packs:** [Rural & Remote](rural-remote.md), [Prisons & Justice](prisons-justice.md),
+  [Stigma & Language](stigma-language.md)
+- **Key Orgs:** [NACCHO](https://naccho.org.au), [Lowitja Institute](https://lowitja.org.au),
+  [Maiam nayri Wingara](https://maiamnayriwingara.org)
 
 ---
 

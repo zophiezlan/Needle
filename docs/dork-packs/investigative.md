@@ -1,6 +1,7 @@
 # Creative & Investigative Searching
 
-> Finding buried, niche, obscure, and unusual content through creative dorking. Use responsibly.
+> Surface buried, unlinked, and historical documents through directory mining, FOI logs, and named
+> registers — creative dorking with an ethical frame. Use responsibly.
 
 [← Back to Dork Packs](README.md) | [← Main Guide](../README.md)
 
@@ -8,22 +9,37 @@
 
 ## ⚠️ Ethical Framework
 
-> These techniques can surface sensitive, obscure, or "hidden" information. Before using them:
+> These techniques can surface obscure or "hidden" information. Before using them:
 
-1. **Ask:** Is there a legitimate harm reduction purpose?
+1. **Ask:** Is there a legitimate harm-reduction purpose?
 2. **Consider:** Could this information cause harm if misused?
 3. **Check:** Does your organisation have policies on investigative research?
-4. **Protect:** Never expose personal data or breach privacy
-5. **Document:** Keep records of what you searched and why
+4. **Protect:** Never expose personal data or breach privacy.
+5. **Document:** Keep records of what you searched and why.
 
-**The purpose is always to help people who use drugs, support advocacy, or hold systems
-accountable—never to harm individuals or organisations.**
+**The purpose is always to help people who use drugs, support advocacy, or hold systems accountable
+— never to harm individuals or organisations.**
+
+---
+
+## 👥 About This Pack
+
+This pack is technique-driven, but the techniques sharpen when pointed at _named_ things: the FOI
+**disclosure log**, the **AusTender** Contract Notice, the **Australian Web Archive** for a deleted
+page. Directory mining (`inurl:/publications/`, `intitle:"index of"`) finds documents that exist but
+were never linked; the registers and archives give you a known target to mine.
+
+> **Entity reference:** the registers and archives these techniques target are catalogued in
+> [Source Intelligence → Discovery Platforms & File Types](../resources/source-intelligence.md#discovery-platforms-file-types),
+> [→ Organisational Intelligence & Registers](../resources/source-intelligence.md#organisational-intelligence-registers),
+> and
+> [→ Web Archives & Temporal Search](../resources/source-intelligence.md#web-archives-temporal-search).
 
 ---
 
 ## ⚡ Quick Start
 
-Find unlisted PDF documents in government publication directories:
+Find unlinked PDFs sitting in government publication directories:
 
 ```txt
 site:*.gov.au inurl:"/publications/" filetype:pdf "harm reduction" -inurl:html
@@ -33,74 +49,49 @@ site:*.gov.au inurl:"/publications/" filetype:pdf "harm reduction" -inurl:html
 
 ## 🟢 Basic Queries
 
-### Directory & Index Mining - 1
+### Directory & Index Mining
 
 ```txt
-site:*.gov.au inurl:"/publications/" filetype:pdf "harm reduction"
+site:*.gov.au (inurl:"/publications/" OR inurl:"/uploads/" OR inurl:"/documents/") filetype:pdf ("harm reduction" OR drug OR overdose)
 ```
 
-### Directory & Index Mining - 2
+**Why this works:**
+
+- Documents are often uploaded to asset directories but never linked from a navigable page — mining
+  the directory path surfaces them
+
+### Draft & Working Documents
 
 ```txt
-site:*.gov.au inurl:"/uploads/" filetype:pdf "drug"
-```
-
-### Directory & Index Mining - 3
-
-```txt
-site:*.gov.au inurl:"/documents/" filetype:pdf "overdose"
-```
-
-### Finding Draft Documents
-
-```txt
-site:*.gov.au filetype:pdf "draft" "harm reduction" -"final"
+site:*.gov.au filetype:pdf (draft OR "working paper" OR "discussion paper") "harm reduction" -"final"
 ```
 
 ### Conference Presentations
 
 ```txt
-filetype:pptx OR filetype:ppt "harm reduction" Australia
+(filetype:pptx OR filetype:ppt) "harm reduction" Australia
 ```
 
 ---
 
 ## 🟡 Intermediate Queries
 
-### Index Pages - 1
+### Open Directories
 
 ```txt
-site:*.gov.au intitle:"index of" "harm reduction" OR "drug"
+site:*.gov.au intitle:"index of" ("harm reduction" OR drug OR AOD)
 ```
 
-### Index Pages - 2
+### Internal / Unpublished
 
 ```txt
-site:*.health.*.gov.au inurl:"/assets/" filetype:pdf
+site:*.gov.au filetype:pdf ("internal use only" OR "not for distribution" OR "for official use") ("drug" OR "alcohol and other drugs") -"de-identified"
 ```
 
-### Internal/Unpublished Documents - 1
+### Embargoed / Pre-Release
 
 ```txt
-site:*.gov.au filetype:pdf "internal use only" OR "not for distribution" "drug"
-```
-
-### Internal/Unpublished Documents - 2
-
-```txt
-site:*.gov.au filetype:pdf "confidential" "alcohol and other drugs" -"de-identified"
-```
-
-### Embargoed/Pre-Release - 1
-
-```txt
-site:*.gov.au filetype:pdf "embargoed" OR "pre-release" drug policy
-```
-
-### Embargoed/Pre-Release - 2
-
-```txt
-"working paper" OR "discussion paper" harm reduction site:*.gov.au
+site:*.gov.au filetype:pdf (embargoed OR "pre-release" OR "under embargo") ("drug policy" OR "harm reduction")
 ```
 
 ---
@@ -113,272 +104,111 @@ site:*.gov.au filetype:pdf "embargoed" OR "pre-release" drug policy
 site:*.gov.au (inurl:"/publications/" OR inurl:"/uploads/" OR inurl:"/documents/" OR inurl:"/assets/" OR inurl:"/files/") filetype:pdf ("harm reduction" OR "drug policy" OR "alcohol and other drugs") -inurl:html
 ```
 
-### Meeting Minutes & Agendas - 1
+### Tenders & Funding (Named Registers)
 
 ```txt
-site:*.gov.au filetype:pdf "meeting minutes" ("harm reduction" OR "drug policy")
+(site:tenders.gov.au "Contract Notice") OR (site:grants.gov.au "Grant Award") OR (site:*.gov.au filetype:pdf ("funding agreement" OR "request for tender") AOD)
 ```
 
-### Meeting Minutes & Agendas - 2
+**Why this works:**
+
+- Instead of a vague `tender "harm reduction"`, this hits the actual award genres — **AusTender**
+  Contract Notices and **GrantConnect** Grant Awards (see the Organizational Intelligence pack)
+
+### Meeting Minutes & Committees
 
 ```txt
-site:*.gov.au filetype:pdf "agenda" "alcohol and other drugs" committee
-```
-
-### Meeting Minutes & Agendas - 3
-
-```txt
-"steering committee" OR "working group" minutes harm reduction filetype:pdf
-```
-
-### Tender Documents & Funding - Tender
-
-```txt
-site:*.gov.au "tender" OR "expression of interest" "harm reduction"
-```
-
-### Tender Documents & Funding - Funding agreement
-
-```txt
-site:*.gov.au filetype:pdf "funding agreement" OR "service agreement" AOD
-```
-
-### Tender Documents & Funding - Request for tender
-
-```txt
-"request for tender" "alcohol and other drugs" site:*.gov.au
-```
-
-### Tender Documents & Funding - Grant guidelines
-
-```txt
-"grant guidelines" harm reduction site:*.gov.au
-```
-
----
-
-## 📊 Spreadsheets & Data Files
-
-### Excel Files - 1
-
-```txt
-filetype:xlsx "harm reduction" OR "AOD" site:*.gov.au
-```
-
-### Excel Files - 2
-
-```txt
-filetype:xlsx "service directory" OR "contact list" drug alcohol
-```
-
-### CSV Files - 1
-
-```txt
-filetype:csv "needle syringe" OR "NSP" OR "overdose"
-```
-
-### CSV Files - 2
-
-```txt
-filetype:csv "drug" OR "alcohol" site:*.gov.au
-```
-
-### Old Excel Formats
-
-```txt
-filetype:xls "opioid treatment" OR "methadone" clinic
+site:*.gov.au filetype:pdf ("meeting minutes" OR agenda OR "steering committee" OR "working group") ("harm reduction" OR "alcohol and other drugs")
 ```
 
 ---
 
 ## 📋 FOI (Freedom of Information)
 
-### FOI Releases - 1
+### Disclosure Logs
 
 ```txt
-site:*.gov.au "freedom of information" OR "FOI" "drug" OR "harm reduction" filetype:pdf
+("disclosure log" OR "FOI disclosure log") site:*.gov.au ("drug" OR "harm reduction" OR "alcohol and other drugs")
 ```
 
-### FOI Releases - 2
+**Why this works:**
+
+- Agencies publish a **disclosure log** of released FOI documents — searching it by name finds
+  material already cleared for release but never publicised
+
+### FOI Releases
 
 ```txt
-site:*.gov.au inurl:foi OR inurl:freedom-of-information "alcohol" OR "overdose"
-```
-
-### Disclosure Logs - 1
-
-```txt
-"disclosure log" site:*.gov.au "drug policy" OR "harm reduction"
-```
-
-### Disclosure Logs - 2
-
-```txt
-"FOI release" "harm reduction" OR "drug checking"
+site:*.gov.au (inurl:foi OR "released under FOI" OR "freedom of information") ("overdose" OR "drug checking" OR "harm reduction") filetype:pdf
 ```
 
 ---
 
 ## 📜 Legacy & Archived Content
 
-### Historical Documents - 1
+When a document is gone from the live site, go to the archive.
+
+### Australian Web Archive & Wayback
+
+```txt
+(site:webarchive.nla.gov.au OR site:trove.nla.gov.au OR site:web.archive.org) ("harm reduction" OR "needle exchange") (Australia OR *.gov.au)
+```
+
+> See the [Temporal Intelligence pack](temporal-intelligence.md) for the full recovery workflow
+> (Google's `cache:` operator is dead — use Wayback / archive.today instead).
+
+### Historical Policy Documents
 
 ```txt
 site:*.gov.au "harm reduction" 1990..2005 filetype:pdf
-```
-
-### Historical Documents - 2
-
-```txt
-"national drug strategy" Australia 1985..2000 filetype:pdf
-```
-
-### Historical Documents - 3
-
-```txt
-"needle exchange" Australia history OR origins 1980s
-```
-
-### Web Archive (NLA) - 1
-
-```txt
-site:webarchive.nla.gov.au "harm reduction"
-```
-
-### Web Archive (NLA) - 2
-
-```txt
-site:web.archive.org "aivl.org.au" OR "nuaa.org.au"
-```
-
-### AIDS Era Documents
-
-```txt
-"AIDS" "injecting drug use" Australia 1980s OR 1990s filetype:pdf
 ```
 
 ---
 
 ## 🔍 Buried Evaluations
 
-### Hidden Evaluations - 1
+### Hidden Evaluations & Reviews
 
 ```txt
-site:*.gov.au filetype:pdf "evaluation" "harm reduction" inurl:publications
+site:*.gov.au filetype:pdf (evaluation OR review OR "process evaluation" OR "outcome evaluation") ("harm reduction" OR "needle syringe program") -news
 ```
 
-### Hidden Evaluations - 2
+### Cost-Effectiveness (Often Buried)
 
 ```txt
-site:*.gov.au filetype:pdf "review" "needle syringe program" -news
-```
-
-### Process & Outcome Evaluations
-
-```txt
-"process evaluation" OR "outcome evaluation" harm reduction Australia filetype:pdf
-```
-
-### Cost-Effectiveness (Often Buried) - 1
-
-```txt
-"cost-effectiveness" OR "cost-benefit" harm reduction Australia filetype:pdf
-```
-
-### Cost-Effectiveness (Often Buried) - 2
-
-```txt
-site:*.gov.au "economic evaluation" ("harm reduction" OR "needle syringe" OR naloxone)
-```
-
----
-
-## 📄 Unusual File Types
-
-### RTF & ODT - 1
-
-```txt
-filetype:rtf "harm reduction" Australia
-```
-
-### RTF & ODT - 2
-
-```txt
-filetype:odt "drug checking" OR "pill testing"
-```
-
-### Ebooks
-
-```txt
-filetype:epub "harm reduction" guide
-```
-
-### Sitemaps (Reveal Hidden Pages)
-
-```txt
-filetype:xml "drug" site:*.gov.au sitemap
+("cost-effectiveness" OR "cost-benefit" OR "economic evaluation" OR "return on investment") ("harm reduction" OR "needle syringe" OR naloxone) Australia filetype:pdf
 ```
 
 ---
 
 ## 🗣️ Minority Reports & Dissent
 
-### Dissenting Views - 1
+### Dissenting Views
 
 ```txt
-"minority report" OR "dissenting opinion" drug policy Australia
-```
-
-### Dissenting Views - 2
-
-```txt
-"addendum" OR "additional comments" harm reduction inquiry
-```
-
-### Dissenting Views - 3
-
-```txt
-"supplementary submission" drug policy parliament
+("minority report" OR "dissenting opinion" OR "additional comments" OR "supplementary submission") ("drug policy" OR "drug law reform") Australia
 ```
 
 ### Alternative Perspectives
 
 ```txt
-"alternative view" OR "contrary evidence" drug law reform
+("alternative view" OR "contrary evidence" OR "additional comments") ("drug law reform" OR "harm reduction") (inquiry OR submission)
 ```
 
 ---
 
 ## 🔧 URL Pattern Tricks
 
-### Common Directory Patterns - Query 1
+### Common Directory Patterns
 
 ```txt
-inurl:publications site:*.gov.au filetype:pdf
-```
-
-### Common Directory Patterns - Query 2
-
-```txt
-inurl:submissions site:*.gov.au filetype:pdf
-```
-
-### Common Directory Patterns - Query 3
-
-```txt
-inurl:reports site:*.gov.au filetype:pdf
-```
-
-### Common Directory Patterns - Query 4
-
-```txt
-inurl:resources site:*.org.au filetype:pdf
+(inurl:publications OR inurl:submissions OR inurl:reports OR inurl:resources) (site:*.gov.au OR site:*.org.au) filetype:pdf ("harm reduction" OR AOD)
 ```
 
 ### Asset Directories
 
 ```txt
-inurl:/assets/ OR inurl:/uploads/ OR inurl:/files/ site:*.gov.au filetype:pdf "drug"
+(inurl:/assets/ OR inurl:/uploads/ OR inurl:/files/) site:*.gov.au filetype:pdf ("drug" OR "harm reduction")
 ```
 
 ---
@@ -390,8 +220,8 @@ inurl:/assets/ OR inurl:/uploads/ OR inurl:/files/ site:*.gov.au filetype:pdf "d
 - Finding official documents that should be public but aren't linked
 - Locating historical policy documents for research
 - Finding evaluation reports that weren't publicised
-- Accessing meeting minutes from public committees
-- Researching funding and tender processes for advocacy
+- Accessing minutes from public committees
+- Researching funding/tender processes for advocacy
 
 **Inappropriate uses:**
 
@@ -404,9 +234,13 @@ inurl:/assets/ OR inurl:/uploads/ OR inurl:/files/ site:*.gov.au filetype:pdf "d
 
 ## 🔗 Related Resources
 
+- **Source Intelligence:**
+  [Discovery Platforms & File Types](../resources/source-intelligence.md#discovery-platforms-file-types),
+  [Organisational Intelligence & Registers](../resources/source-intelligence.md#organisational-intelligence-registers)
 - **Advanced Operators:** [Advanced Operators](../03-advanced-operators.md)
-- **Related Packs:** [Policy & Advocacy](policy-advocacy.md), [Research](research.md)
-- **Tools:** [OSINT Tools](../tools/osint.md)
+- **Related Packs:** [Document Discovery](document-discovery.md),
+  [Organizational Intelligence](organizational-intelligence.md),
+  [Temporal Intelligence](temporal-intelligence.md)
 
 ---
 

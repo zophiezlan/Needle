@@ -1,61 +1,100 @@
 # LGBTQ+ Health & Harm Reduction
 
-> Resources for LGBTQ+ communities, including sexual health, chemsex, and inclusive services.
+> AOD, chemsex, and inclusive services for LGBTQ+ communities — named by the actual peer program and
+> resource (ACON's Between the Lines / M3THOD, Thorne Harbour's Re-Wired), not generic keywords.
 
 [← Back to Dork Packs](README.md) | [← Main Guide](../README.md)
 
 ---
 
+> ⚠️ **DRAFT — pending community/peer review.** Drafted against web-verified community LGBTQ+ health
+> sources, but **terminology (including which acronym) and framing must be signed off by LGBTQ+
+> peers before this is treated as final.** "Peer-led" is reserved for programs designed and
+> delivered _by_ people with lived/living experience — not merely LGBTQ-staffed. Flagged calls are
+> inline.
+
+---
+
+> **Terminology.** The umbrella acronym is contested — **LGBTQ+ / LGBTIQ+ / LGBTQIA+** are all in
+> use; match the term each org uses for itself (ACON: "LGBTQ+"; the national peak: "LGBTIQ+"). AOD
+> terms: **"chemsex" / "party and play" / "PnP" / "sexualised drug use"** — avoid "chemsex epidemic"
+> sensationalism. **"MSM"** is clinical, not a community identity — pair with "gay, bi+ and queer
+> men".
+>
+> **Entity reference:** every org and resource below is catalogued in
+> [Source Intelligence → LGBTQ+ Health (Peer & Community)](../resources/source-intelligence.md#lgbtq-health-peer-community).
+
+---
+
 ## ⚡ Quick Start
 
-Find LGBTQ+ inclusive AOD resources:
+Go to ACON's community harm-reduction hub:
 
 ```txt
-("LGBTQ" OR "LGBTI" OR "queer") ("harm reduction" OR "alcohol and other drugs") Australia filetype:pdf
+site:betweenthelines.org.au ("party and play" OR chemsex OR "harm reduction" OR GHB)
 ```
 
 ---
 
 ## 🟢 Basic Queries
 
-### LGBTQ+ AOD Services
+### ACON AOD & Chemsex (Named Programs)
 
 ```txt
-("LGBTQ" OR "LGBTI" OR "queer" OR "rainbow") "alcohol and other drugs" service Australia
+(site:acon.org.au OR site:betweenthelines.org.au OR site:pivotpoint.org.au) ("Between the Lines" OR M3THOD OR "ACON Rovers" OR chemsex OR "sexualised drug use")
 ```
 
-### Inclusive Treatment
+**Why this works:**
+
+- Names ACON's actual AOD assets — the **Between the Lines** community hub, the peer chemsex service
+  **M3THOD**, and the **ACON Rovers** event outreach — instead of guessing at generic terms
+
+### Thorne Harbour Health (VIC/SA)
 
 ```txt
-"LGBTQ" OR "LGBTI" inclusive drug OR alcohol treatment Australia
+site:thorneharbour.org ("Re-Wired" OR ReWired OR Anchor OR "Triple A" OR "alcohol and other drug" OR chemsex)
 ```
 
-### Rainbow Tick Services
+### National LGBTIQ+ AOD Info (Touchbase)
 
 ```txt
-"rainbow tick" OR "LGBTI inclusive" AOD OR "harm reduction" Australia
+site:touchbase.org.au (drugs OR alcohol OR chemsex OR "mixing drugs" OR "drugs and HIV")
 ```
+
+> Touchbase is run by **Thorne Harbour Health** (not ACON); check currency before relying on
+> specific drug-interaction advice.
 
 ---
 
 ## 🟡 Intermediate Queries
 
-### Chemsex Resources
+### Chemsex / Party and Play
 
 ```txt
-"chemsex" OR "chem sex" OR "party and play" harm reduction Australia
+("chemsex" OR "party and play" OR PnP OR "sexualised drug use") (site:betweenthelines.org.au OR site:pivotpoint.org.au OR site:thorneharbour.org OR site:touchbase.org.au)
 ```
 
-### GHB/GBL Specific
+### GHB / GBL Specific
 
 ```txt
-"GHB" OR "GBL" OR "G" harm reduction "gay men" OR "MSM" Australia
+("GHB" OR "GBL" OR "G") ("harm reduction" OR "overdose" OR dosing OR "party and play") (site:betweenthelines.org.au OR site:touchbase.org.au)
 ```
 
-### Crystal Meth & LGBTQ+
+**Why this works:**
+
+- GHB/GBL dosing and overdose risk is the highest-acuity chemsex harm-reduction topic — the named
+  community hubs carry community-written guidance on it
+
+### Crystal Methamphetamine & Peer Support
 
 ```txt
-("crystal meth" OR "methamphetamine" OR "ice") ("gay men" OR "MSM" OR "LGBTQ") harm reduction Australia
+("crystal meth" OR methamphetamine OR ice) ("gay" OR "bi+" OR "queer men") ("Re-Wired" OR M3THOD OR "peer support" OR "harm reduction")
+```
+
+### Inclusive Practice Guidelines (for Providers)
+
+```txt
+site:pivotpoint.org.au ("Inclusive Practice Guidelines" OR "treatment providers" OR NADA)
 ```
 
 ---
@@ -65,161 +104,110 @@ Find LGBTQ+ inclusive AOD resources:
 ### Comprehensive LGBTQ+ AOD Sweep
 
 ```txt
-("LGBTQ" OR "LGBTI" OR "LGBTQIA" OR "queer" OR "gay" OR "lesbian" OR "bisexual" OR "transgender" OR "MSM") ("alcohol and other drugs" OR AOD OR "substance use" OR "drug use" OR "harm reduction") Australia (service OR resource OR program OR guideline) filetype:pdf after:2020
+("LGBTQ" OR "LGBTIQ" OR "LGBTQIA" OR rainbow OR "gay" OR "bi+" OR "trans" OR "gender diverse") ("alcohol and other drugs" OR AOD OR chemsex OR "sexualised drug use" OR "harm reduction") (service OR resource OR "peer support") Australia filetype:pdf after:2020
 ```
 
-### Intersectional Resources
+### Peer-Led & Lived-Experience Programs
 
 ```txt
-("LGBTQ" OR "queer") ("Aboriginal" OR "First Nations" OR "Indigenous") "harm reduction" Australia
+("peer-led" OR "lived experience" OR "peer support") (chemsex OR "party and play" OR "alcohol and other drugs") (site:acon.org.au OR site:thorneharbour.org)
 ```
 
----
-
-## 🏥 Sexual Health Integration
-
-### Sexual Health & Drug Use
+### PrEP, HIV & Drug Interactions
 
 ```txt
-"sexual health" "drug use" OR "substance use" ("gay men" OR "MSM" OR "LGBTQ") Australia
-```
-
-### PrEP & Drug Interactions
-
-```txt
-"PrEP" OR "pre-exposure prophylaxis" drug interaction harm reduction
-```
-
-### HIV Services & AOD
-
-```txt
-"HIV" "alcohol and other drugs" OR AOD service Australia
+(site:emen8.com.au OR site:endinghiv.org.au) (PrEP OR "drug interaction" OR chemsex OR "party and play")
 ```
 
 ---
 
 ## 🏳️‍⚧️ Trans & Gender Diverse
 
-### Trans-Specific Resources
+### Trans-Inclusive AOD
 
 ```txt
-("transgender" OR "trans" OR "gender diverse") "alcohol and other drugs" OR "harm reduction" Australia
+("trans" OR "gender diverse" OR "transgender") ("alcohol and other drugs" OR "harm reduction" OR chemsex) (inclusive OR affirming OR peer) Australia
 ```
 
 ### Hormone Therapy & Substances
 
 ```txt
-"hormone therapy" OR "HRT" drug interaction "trans" OR "transgender"
-```
-
-### Trans-Inclusive Services
-
-```txt
-"trans inclusive" OR "trans affirming" AOD OR drug OR alcohol service Australia
+("hormone therapy" OR HRT OR "gender affirming") ("drug interaction" OR "alcohol and other drugs") (trans OR "gender diverse")
 ```
 
 ---
 
-## 👥 Community Organizations
+## 👥 Community Organisations
 
-### ACON Resources
-
-```txt
-site:acon.org.au (drug OR alcohol OR "harm reduction" OR chemsex)
-```
-
-### Thorne Harbour Health
+### National Peak & Peer Support
 
 ```txt
-site:thorneharbour.org (drug OR alcohol OR "harm reduction" OR chemsex)
+(site:lgbtiqhealth.org.au OR site:qlife.org.au) ("alcohol and other drugs" OR "substance use" OR "peer support" OR referral)
 ```
 
-### LGBTQ+ Health Australia
+### Inclusive-Practice Accreditation (Rainbow Tick)
 
 ```txt
-site:lgbtiqhealth.org.au (drug OR alcohol OR "substance use")
+site:rainbowhealthaustralia.org.au ("Rainbow Tick" OR "inclusive practice" OR training OR "alcohol and other drugs")
 ```
 
----
-
-## 🧠 Mental Health & LGBTQ+
-
-### Dual Concerns
-
-```txt
-("LGBTQ" OR "queer") "mental health" "substance use" OR AOD Australia
-```
-
-### Minority Stress
-
-```txt
-"minority stress" ("substance use" OR "drug use" OR AOD) LGBTQ Australia
-```
+> Rainbow Health Australia is a university-hosted training/accreditation body (La Trobe ARCSHS), not
+> a peer service — useful for finding inclusive-practice standards.
 
 ---
 
 ## 🎉 Events & Nightlife
 
-### Pride Events
-
 ```txt
-"pride" OR "mardi gras" "harm reduction" OR "drug safety" Australia
+("Mardi Gras" OR Pride OR Midsumma OR "queer nightlife") ("harm reduction" OR "drug checking" OR "ACON Rovers" OR DanceWize) Australia
 ```
 
-### Queer Nightlife Safety
+---
+
+## 🧠 Mental Health & Minority Stress
 
 ```txt
-"queer" OR "LGBTQ" nightlife OR club "harm reduction" OR safety Australia
+("LGBTQ" OR "LGBTIQ" OR queer) ("minority stress" OR "mental health") ("substance use" OR AOD OR chemsex) Australia
 ```
+
+---
+
+## 🌏 International Peer Layer (Chemsex)
+
+```txt
+(site:controllingchemsex.com OR site:chemsex.co.uk) (chemsex OR "harm reduction" OR GHB OR "first aid")
+```
+
+> UK-specific services (Terrence Higgins Trust runs `chemsex.co.uk`; the old "Friday/Monday"
+> redirects there) — the harm-reduction information transfers, the service referrals don't.
 
 ---
 
 ## 📊 Research & Data
 
-### LGBTQ+ Drug Use Research
-
 ```txt
-site:*.edu.au ("LGBTQ" OR "gay" OR "MSM") "drug use" OR "substance use" Australia filetype:pdf
+site:*.edu.au ("LGBTQ" OR "gay" OR "bi+" OR "MSM" OR "gender diverse") ("drug use" OR "substance use" OR chemsex) Australia filetype:pdf
 ```
 
-### Prevalence Studies
-
-```txt
-("LGBTQ" OR "gay men" OR "MSM") "drug use" (prevalence OR survey OR statistics) Australia
-```
-
----
-
-## 👶 LGBTQ+ Youth
-
-### Young LGBTQ+ People
-
-```txt
-("LGBTQ" OR "queer") "young people" OR youth "alcohol and other drugs" Australia
-```
-
-### Minus18 Resources
-
-```txt
-site:minus18.org.au (drug OR alcohol OR "harm reduction")
-```
+> "MSM" is the clinical/epidemiological term — pair it with community terms; it's not how most
+> people describe themselves.
 
 ---
 
 ## 🔗 Related Resources
 
-- **Related Packs:** [Mental Health](mental-health.md), [Youth](youth.md), [Festivals](festivals.md)
-- **Key Organizations:**
-  - [ACON](https://acon.org.au)
-  - [Thorne Harbour Health](https://thorneharbour.org)
-  - [LGBTIQ+ Health Australia](https://lgbtiqhealth.org.au)
-- **See Also:** [Sex Worker Health](sex-worker-health.md)
+- **Source Intelligence:**
+  [LGBTQ+ Health (Peer & Community)](../resources/source-intelligence.md#lgbtq-health-peer-community)
+  — the orgs and resources every dork above is built on
+- **Related Packs:** [Sex Worker Health](sex-worker-health.md), [Mental Health](mental-health.md),
+  [Festivals](festivals.md)
+- **Key Orgs:** [ACON](https://acon.org.au), [Thorne Harbour Health](https://thorneharbour.org),
+  [LGBTIQ+ Health Australia](https://lgbtiqhealth.org.au), [QLife](https://qlife.org.au)
 
 ---
 
-> [!NOTE] When searching historical documents, you may encounter outdated terminology. Use
-> inclusive, current language in your own work while recognizing that older resources may use
-> different terms.
+> [!NOTE] Historical documents may use outdated terminology. Use current, community-preferred
+> language in your own work while recognising older resources may differ.
 
 ---
 

@@ -1,86 +1,98 @@
 # Rural, Regional & Remote Australia
 
-> Harm reduction services and research specific to non-metropolitan areas.
+> Harm reduction services, evidence, and the "tyranny of distance" outside the metros — named by the
+> actual producer, dataset, and rurality code, not just by "rural".
 
 [← Back to Dork Packs](README.md) | [← Main Guide](../README.md)
 
 ---
 
-## 🌏 Why This Matters
+## 👥 About This Pack
 
-Rural and remote Australians face unique challenges:
+Two specificity moves win here. First, name the **AOD-relevant** producer — most rural-health orgs
+are mental-health-only, so the rare named exceptions matter: the National Rural Health Alliance's
+fact sheet **"Alcohol, smoking, vaping and other drug use in rural Australia"**, the RFDS **"Best
+for the Bush"** research series, and the clinician advice line **DACAS**. Second, use the formal
+**rurality codes** — the **Modified Monash Model** (MM 1–7) and the ABS **Remoteness Areas** — to
+actually filter to non-metro evidence instead of hoping the word "rural" appears.
 
-- Distance from services
-- Limited workforce and specialist availability
-- Stigma in small communities
-- Different drug markets
-- "Tyranny of distance" shapes everything
+> **Entity reference:** every org, dataset, and rurality code below is catalogued in
+> [Source Intelligence → Rural, Regional & Remote](../resources/source-intelligence.md#rural-regional-remote).
 
 ---
 
 ## ⚡ Quick Start
 
-Find rural/regional AOD resources:
+Go to the rare rural-AOD-specific named publication:
 
 ```txt
-("rural" OR "regional" OR "remote") "harm reduction" Australia filetype:pdf
+site:ruralhealth.org.au "Alcohol, smoking, vaping and other drug use in rural Australia"
 ```
 
 ---
 
 ## 🟢 Basic Queries
 
+### Named Rural Producers (AOD content)
+
+```txt
+(site:ruralhealth.org.au OR site:flyingdoctor.org.au) ("alcohol and other drugs" OR "Partyline" OR "Best for the Bush")
+```
+
+**Why this works:**
+
+- Goes straight to the two named rural producers that actually carry AOD material — the NRHA
+  (magazine **Partyline**, plus the AOD fact sheet) and the RFDS (**Best for the Bush**) — instead
+  of a generic `"rural" "drug"` query
+
+### Rural Clinician AOD Advice (DACAS)
+
+```txt
+site:dacas.org.au ("Drug and Alcohol Clinical Advisory Service" OR "secondary consultation")
+```
+
 ### General Rural/Regional AOD
 
 ```txt
-("rural" OR "regional" OR "remote") "alcohol and other drugs" (service OR access) site:*.gov.au
-```
-
-### Rural Harm Reduction
-
-```txt
-("rural" OR "regional") "harm reduction" Australia filetype:pdf
-```
-
-### Tyranny of Distance
-
-```txt
-"tyranny of distance" drug OR alcohol OR AOD Australia
+("rural" OR "regional" OR "remote") ("harm reduction" OR "alcohol and other drugs") (service OR access) site:*.gov.au filetype:pdf
 ```
 
 ---
 
 ## 🟡 Intermediate Queries
 
-### Non-Metropolitan Services
+### Filter by Rurality Code (the insider move)
 
 ```txt
-"non-metropolitan" ("harm reduction" OR AOD OR "alcohol and other drugs") Australia filetype:pdf
+("Modified Monash" OR "MM 5" OR "MM 6" OR "MM 7" OR "Outer Regional" OR "Remote" OR "Very Remote") ("alcohol and other drugs" OR AOD OR "harm reduction") Australia filetype:pdf
 ```
 
-### Country/Bush Context
+**Why this works:**
+
+- The **Modified Monash Model** and ABS **Remoteness Areas** are how rural health is actually
+  classified — searching the code filters to genuine non-metro evidence, where the bare word "rural"
+  pulls in tourism and real-estate noise
+
+### Telehealth & Clinician Advice (by state)
 
 ```txt
-("country" OR "bush") ("drug use" OR "alcohol") Australia -USA -UK
+("Drug and Alcohol Clinical Advisory Service" OR DACAS OR "Drug and Alcohol Specialist Advisory Service" OR DASAS) (rural OR remote OR telehealth OR "secondary consultation")
 ```
 
-### Telehealth AOD
+### RFDS Research
 
 ```txt
-"telehealth" OR "telemedicine" (AOD OR "alcohol and other drugs" OR "drug and alcohol") Australia
+site:flyingdoctor.org.au ("Best for the Bush" OR "Rural and Remote Health Base Line" OR "mental health" OR alcohol OR drug)
 ```
 
-### Remote Health Services - 1
+### Remote Aboriginal Community-Controlled (ACCHO)
 
 ```txt
-"remote health" "alcohol and other drugs" Australia
+("Aboriginal Community Controlled" OR ACCHO) (remote OR "very remote") ("alcohol and other drugs" OR AOD)
 ```
 
-### Remote Health Services - 2
-
-```txt
-site:rfds.org.au "alcohol" OR "drug" OR "AOD"
-```
+> Handle with cultural-safety care and prioritise community-controlled framing — see the
+> [First Nations pack](first-nations.md).
 
 ---
 
@@ -89,270 +101,151 @@ site:rfds.org.au "alcohol" OR "drug" OR "AOD"
 ### Comprehensive Rural Sweep
 
 ```txt
-("rural" OR "regional" OR "remote" OR "non-metropolitan" OR "country") ("harm reduction" OR "alcohol and other drugs" OR AOD OR "drug and alcohol") Australia (service OR access OR workforce OR research) filetype:pdf -USA -UK after:2020
+("rural" OR "regional" OR "remote" OR "non-metropolitan" OR "Modified Monash" OR "Remoteness Areas") ("harm reduction" OR "alcohol and other drugs" OR AOD) (service OR access OR workforce OR research) Australia filetype:pdf -USA -UK after:2020
 ```
 
-### FIFO/DIDO Contexts - 1
+### Diversion in Rural & Remote Australia
 
 ```txt
-"fly-in fly-out" OR "FIFO" OR "drive-in drive-out" (drug OR alcohol) health
+site:aihw.gov.au "The effectiveness of the Illicit Drug Diversion Initiative in rural and remote Australia"
 ```
 
-### FIFO/DIDO Contexts - 2
+**Why this works:**
+
+- A named AIHW report that sits exactly at the rural × justice intersection — quoting its title is
+  far stronger than guessing at a generic diversion-in-the-bush search
+
+### Rural Workforce & Professional Isolation
 
 ```txt
-"mining" OR "resources sector" (drug OR alcohol) (testing OR policy OR health)
+("rural" OR "remote") (AOD OR "alcohol and other drug" OR "drug and alcohol") (workforce OR "professional isolation" OR generalist OR retention) Australia filetype:pdf
 ```
 
-### Farming Communities - 1
+---
+
+## 📍 Rurality Codes & Classifications
+
+The formal codes are the highest-precision rural filter.
+
+### Modified Monash Model
 
 ```txt
-"farming" OR "agriculture" ("alcohol" OR "drug use") mental health Australia
+site:health.gov.au ("Modified Monash Model" OR "Modified Monash Model 2023")
 ```
 
-### Farming Communities - 2
+### ABS Remoteness Areas
 
 ```txt
-"drought" OR "natural disaster" "alcohol" OR "drug" rural Australia
+(site:abs.gov.au OR site:aihw.gov.au) ("Remoteness Areas" OR "Remoteness Structure" OR "Very Remote Australia")
+```
+
+### National Rural Health Commissioner
+
+```txt
+site:health.gov.au ("Office of the National Rural Health Commissioner" OR "National Rural Health Commissioner")
+```
+
+---
+
+## 🚜 Special Contexts
+
+### FIFO & Mining Mental Health
+
+```txt
+(site:wa.gov.au OR site:mhc.wa.gov.au OR site:transformativeworkdesign.com) ("Mental Awareness, Respect and Safety" OR "MARS Program" OR "Impact of FIFO work arrangements")
+```
+
+**Why this works:**
+
+- Names WA's **MARS** program and the Curtin **"Impact of FIFO work arrangements on the mental
+  health and wellbeing of FIFO workers"** report — the actual titles, hosted on `wa.gov.au` /
+  `mhc.wa.gov.au` (the old `dmirs.wa.gov.au` is dead)
+
+### Drought & Rural Adversity
+
+```txt
+(site:ramhp.com.au OR site:health.nsw.gov.au) ("Rural Adversity Mental Health Program" OR RAMHP OR drought) ("alcohol" OR "substance use" OR "mental health")
+```
+
+### Farming Communities & Men's Help-Seeking
+
+```txt
+(site:farmerhealth.org.au OR site:therippleeffect.com.au OR site:ifarmwell.com.au) ("National Centre for Farmer Health" OR "Sustainable Farm Families" OR "The Ripple Effect" OR ifarmwell)
 ```
 
 ---
 
 ## 📍 Specific Regional Areas
 
-### NSW Regions - Central West
+Pair a region name with an AOD term, or you drown in tourism results.
+
+### NSW Regions
 
 ```txt
-"Central West" OR "Far West" NSW AOD OR "alcohol drug"
+("Far West" OR "Northern Rivers" OR "New England" OR "Riverina") NSW ("alcohol and other drugs" OR AOD OR "needle syringe" OR "harm reduction")
 ```
 
-### NSW Regions - North Coast
+### Queensland & Northern Territory
 
 ```txt
-"North Coast" OR "Northern Rivers" NSW harm reduction OR AOD
+("Far North Queensland" OR "Outback Queensland" OR "Top End" OR "Central Australia" OR "Alice Springs") ("alcohol and other drugs" OR AOD OR "harm reduction")
 ```
 
-### NSW Regions - Hunter
+### WA, SA, VIC & TAS
 
 ```txt
-"Hunter" OR "New England" AOD services NSW
-```
-
-### NSW Regions - Riverina
-
-```txt
-"Riverina" OR "Murray" harm reduction OR "needle syringe"
-```
-
-### Queensland Regions - 1
-
-```txt
-"North Queensland" OR "Far North Queensland" harm reduction
-```
-
-### Queensland Regions - 2
-
-```txt
-"Central Queensland" OR "Wide Bay" AOD services
-```
-
-### Queensland Regions - 3
-
-```txt
-"Outback Queensland" drug OR alcohol health
-```
-
-### Western Australia Regions - 1
-
-```txt
-"Kimberley" OR "Pilbara" OR "Goldfields" drug OR alcohol health
-```
-
-### Western Australia Regions - 2
-
-```txt
-"Wheatbelt" OR "Great Southern" WA AOD
-```
-
-### Victoria Regions - 1
-
-```txt
-"Gippsland" OR "Mallee" OR "Wimmera" AOD services
-```
-
-### Victoria Regions - 2
-
-```txt
-"Murray" OR "Hume" VIC harm reduction
-```
-
-### Northern Territory - 1
-
-```txt
-"Top End" OR "Katherine" OR "Alice Springs" alcohol drug
-```
-
-### Northern Territory - 2
-
-```txt
-"Central Australia" AOD OR "alcohol and other drugs"
-```
-
-### Tasmania
-
-```txt
-"Tasmania" ("rural" OR "regional") harm reduction OR AOD
-```
-
-### South Australia - 1
-
-```txt
-"Eyre Peninsula" OR "Riverland" SA drug OR alcohol
-```
-
-### South Australia - 2
-
-```txt
-"outback" SA AOD health
+("Kimberley" OR "Pilbara" OR "Eyre Peninsula" OR "Riverland" OR "Gippsland" OR "Mallee" OR Tasmania) (rural OR remote) ("alcohol and other drugs" OR AOD OR "harm reduction")
 ```
 
 ---
 
-## 🏥 Remote Health Services
+## 🌏 International Rural Opioid Response
 
-### Royal Flying Doctor Service - 1
-
-```txt
-site:rfds.org.au "alcohol" OR "drug" OR "AOD"
-```
-
-### Royal Flying Doctor Service - 2
+### US — Rural Communities Opioid Response Program
 
 ```txt
-"Royal Flying Doctor Service" harm reduction OR overdose OR AOD
+site:hrsa.gov ("Rural Communities Opioid Response Program" OR RCORP) (opioid OR "substance use disorder" OR rural)
 ```
 
-### Remote Area Nurses
+### Canada & Scotland (broad fallbacks)
 
 ```txt
-"remote area nurse" OR "RAN" (drug OR alcohol OR AOD) Australia
+(site:canada.ca ("Substance Use and Addictions Program" OR SUAP) (northern OR remote)) OR ((site:gov.scot OR site:publichealthscotland.scot) "National Mission on Drug Deaths" (rural OR remote OR island))
 ```
 
-### Aboriginal Health Services (Remote) - 1
-
-```txt
-"remote" "Aboriginal" (AOD OR "alcohol and other drugs") health
-```
-
-### Aboriginal Health Services (Remote) - 2
-
-```txt
-"Aboriginal Community Controlled" remote (drug OR alcohol)
-```
+> No rural-specific quotable titles were confirmed for Canada or Scotland — these use the verified
+> national umbrella programs plus a rural qualifier rather than a fabricated title.
 
 ---
 
-## 👥 Rural Workforce
+## 💬 Peer & Community
 
-### Workforce Development - 1
+Rural peer knowledge is thin online and worth surfacing wherever it exists.
+
+### Peer & Drug-User-Org Rural Material
 
 ```txt
-"rural workforce" (AOD OR "alcohol and other drugs") filetype:pdf
+(site:nuaa.org.au OR site:aivl.org.au OR site:wasua.com.au) (rural OR regional OR remote OR "outreach") (peer OR "harm reduction" OR NSP)
 ```
 
-### Workforce Development - 2
+### Community Forums & Lived Experience
 
 ```txt
-"rural health" (peer worker OR AOD worker) training
-```
-
-### Generalist Practice - 1
-
-```txt
-"generalist" (AOD OR "alcohol drug") rural practitioner
-```
-
-### Generalist Practice - 2
-
-```txt
-"upskilling" OR "professional development" rural AOD worker
-```
-
-### Retention & Support
-
-```txt
-(retention OR support OR "professional isolation") rural (AOD OR "drug and alcohol") worker
-```
-
----
-
-## 📊 Rural Research
-
-### Academic Research - 1
-
-```txt
-site:*.edu.au filetype:pdf "rural" harm reduction Australia
-```
-
-### Academic Research - 2
-
-```txt
-site:crrmh.com.au OR site:ruralhealth.org.au "alcohol" OR "drug"
-```
-
-### National Rural Health Alliance
-
-```txt
-"National Rural Health Alliance" alcohol OR drug OR AOD
-```
-
-### Centre for Rural and Remote Mental Health
-
-```txt
-"Centre for Rural and Remote Mental Health" AOD OR "alcohol and other drugs"
-```
-
----
-
-## 🚜 Agricultural & Farming Contexts
-
-### Farming Families - 1
-
-```txt
-"farming families" substance use OR alcohol
-```
-
-### Farming Families - 2
-
-```txt
-"rural men" alcohol OR drug use help-seeking
-```
-
-### Drought & Disasters - 1
-
-```txt
-"drought" OR "bushfire" OR "flood" (alcohol OR drug) rural Australia
-```
-
-### Drought & Disasters - 2
-
-```txt
-"natural disaster" substance use OR alcohol rural
-```
-
-### Seasonal Workers
-
-```txt
-"seasonal workers" OR "harvest workers" drug OR alcohol health Australia
+(site:reddit.com/r/AusDrugs OR site:bluelight.org) (rural OR regional OR remote OR "country town" OR FIFO) ("harm reduction" OR "drug checking" OR access)
 ```
 
 ---
 
 ## 🔗 Related Resources
 
+- **Source Intelligence:**
+  [Rural, Regional & Remote](../resources/source-intelligence.md#rural-regional-remote) — the orgs,
+  datasets, and rurality codes every dork above is built on
+- **Synonym Block:** [Social Determinants Terms](../05-synonym-blocks.md#social-determinants-terms)
 - **Related Packs:** [Service Directories](service-directories.md),
-  [First Nations](first-nations.md)
-- **Key Orgs:** [NRHA](https://ruralhealth.org.au), [CRRMH](https://crrmh.com.au)
+  [First Nations](first-nations.md), [Mental Health](mental-health.md)
+- **Key Orgs:** [NRHA](https://ruralhealth.org.au), [RFDS](https://flyingdoctor.org.au),
+  [DACAS](https://dacas.org.au)
 
 ---
 

@@ -1,73 +1,98 @@
 # Data, Statistics & Surveillance
 
-> Datasets, prevalence surveys, overdose statistics, and surveillance reports.
+> Find the actual numbers — named by dataset, collection code, and repository, not by generic "drug
+> statistics".
 
 [← Back to Dork Packs](README.md) | [← Main Guide](../README.md)
 
 ---
 
+## 👥 About This Pack
+
+For data, the exact title _is_ the dork. The named national collections are the **National Drug
+Strategy Household Survey (NDSHS)**, the **AODTS NMDS** (treatment data), NDARC's **Drug Trends**
+(IDRS/EDRS), Kirby's **NSP NMDC**, the ACIC **National Wastewater Drug Monitoring Program**, and —
+for non-fatal harms — the **National Ambulance Surveillance System (NASS)** surfaced via
+**AODstats**. Mortality comes from the **ABS** ("Causes of Death, Australia", "drug-induced
+deaths"), aggregated by **Penington Institute**. Raw data lives on **data.gov.au**, the **Australian
+Data Archive**, and **ARDC/Research Data Australia**.
+
+> **Entity reference:** every dataset, code, and repository below is catalogued in
+> [Source Intelligence → Datasets & Data Repositories](../resources/source-intelligence.md#datasets-surveillance-feeds-data-repositories).
+
+---
+
 ## ⚡ Quick Start
 
-Find AIHW alcohol and drug statistics:
+Go straight to the flagship national survey:
 
 ```txt
-site:aihw.gov.au "alcohol and other drugs" statistics filetype:pdf
+site:aihw.gov.au "National Drug Strategy Household Survey"
 ```
 
 ---
 
 ## 🟢 Basic Queries
 
-### AIHW Drug Statistics
+### AIHW — Household Survey (NDSHS)
 
 ```txt
-site:aihw.gov.au "alcohol and other drugs" statistics
+site:aihw.gov.au "National Drug Strategy Household Survey" ("2022–2023" OR NDSHS)
 ```
 
-### ABS Drug Use Data
+**Why this works:**
+
+- NDSHS is _the_ national prevalence survey. The latest released edition is 2022–2023 (use the
+  en-dash form for exact-title matching; a 2025 wave is collected but not yet released)
+
+### ABS — Causes of Death
 
 ```txt
-site:abs.gov.au "illicit drug use" OR "drug use" survey
+site:abs.gov.au "Causes of Death, Australia" "drug-induced deaths"
 ```
 
-### Overdose Death Data
+### Penington — Annual Overdose Report
 
 ```txt
-"overdose deaths" OR "drug-induced deaths" statistics Australia 2023..2026
+site:penington.org.au "Australia's Annual Overdose Report"
 ```
 
 ---
 
 ## 🟡 Intermediate Queries
 
-### National Drug Strategy Household Survey
+### AODTS NMDS (Treatment Data)
 
 ```txt
-"National Drug Strategy Household Survey" OR NDSHS (latest OR 2022 OR 2023) filetype:pdf
+site:aihw.gov.au ("Alcohol and other drug treatment services in Australia" OR "AODTS NMDS" OR "Alcohol and Other Drug Treatment Services National Minimum Data Set")
 ```
 
-### IDRS (Illicit Drug Reporting System) - 1
+**Why this works:**
+
+- The report is "Alcohol and other drug treatment services in Australia"; its dataset code is the
+  _spaced_ "AODTS NMDS" (the hyphenated form is rarer). METEOR (`meteor.aihw.gov.au`) defines it
+
+### NDARC Drug Trends (IDRS / EDRS)
 
 ```txt
-"Illicit Drug Reporting System" OR IDRS filetype:pdf
+(site:unsw.edu.au OR site:ndarc.med.unsw.edu.au) ("Illicit Drug Reporting System" OR "Ecstasy and Related Drugs Reporting System" OR "Australian Drug Trends")
 ```
 
-### IDRS (Illicit Drug Reporting System) - 2
+### ACIC Wastewater Monitoring
 
 ```txt
-site:ndarc.med.unsw.edu.au IDRS
+site:acic.gov.au "National Wastewater Drug Monitoring Program" ("Report 25" OR "Report 24")
 ```
 
-### EDRS (Ecstasy Reporting System)
+**Why this works:**
+
+- The NWDMP is published as numbered reports — target the highest number for the freshest data, or
+  broaden across recent numbers to catch the latest as new editions drop
+
+### Ambulance Attendance Data (AODstats)
 
 ```txt
-"Ecstasy and Related Drugs Reporting System" OR EDRS filetype:pdf
-```
-
-### Ambulance Data
-
-```txt
-"ambulance attendance" OR "ambulance callouts" drug related (NSW OR VIC OR QLD) data
+site:aodstats.org.au ("ambulance attendances" OR GHB OR heroin OR methamphetamine)
 ```
 
 ---
@@ -77,248 +102,150 @@ site:ndarc.med.unsw.edu.au IDRS
 ### Comprehensive Data Sweep
 
 ```txt
-site:aihw.gov.au OR site:abs.gov.au OR site:ndarc.med.unsw.edu.au ("alcohol and other drugs" OR "drug use" OR "substance use") (statistics OR data OR survey OR report) filetype:pdf after:2022
+(site:aihw.gov.au OR site:abs.gov.au OR site:unsw.edu.au OR site:acic.gov.au) ("National Drug Strategy Household Survey" OR "AODTS NMDS" OR "Drug Trends" OR "drug-induced deaths" OR "National Wastewater Drug Monitoring Program") (data OR report OR statistics) after:2022
 ```
 
-### State-Level Data
+### Raw Datasets (CSV / XLSX)
 
 ```txt
-site:*.gov.au ("drug-related" OR "alcohol-related") (hospitalisation OR hospitalization OR "emergency department" OR ambulance) data [YOUR STATE]
+(site:data.gov.au OR site:*.gov.au) (filetype:csv OR filetype:xlsx) (drug OR alcohol OR AOD OR overdose OR "needle syringe")
 ```
 
-### Treatment Episode Data
+### Research Microdata
 
 ```txt
-site:aihw.gov.au "Alcohol and other drug treatment services" OR "AODTS-NMDS" filetype:pdf
+(site:ada.edu.au OR site:researchdata.edu.au OR site:ardc.edu.au) ("National Drug Strategy Household Survey" OR drug OR alcohol OR AOD) (microdata OR dataverse OR CURF)
 ```
 
-### Wastewater Drug Monitoring
+> Note: the old ANDS (`ands.org.au`) merged into **ARDC** (`ardc.edu.au`) in 2018; dataset metadata
+> is discoverable via **Research Data Australia** (`researchdata.edu.au`).
+
+---
+
+## 📊 Named National Datasets
+
+### Household Survey (Prevalence)
 
 ```txt
-"wastewater analysis" OR "wastewater epidemiology" (drug OR substance) Australia (data OR report)
+site:aihw.gov.au "National Drug Strategy Household Survey" (illicit OR prevalence OR "data tables")
+```
+
+### Treatment Services
+
+```txt
+site:aihw.gov.au "Alcohol and other drug treatment services in Australia" (filetype:pdf OR "data tables")
+```
+
+### NSP Distribution (Kirby)
+
+```txt
+site:kirby.unsw.edu.au "Needle Syringe Program National Minimum Data Collection"
 ```
 
 ---
 
-## 📊 Key Data Sources
+## 🚑 Non-Fatal Harm Surveillance
 
-### AIHW (National)
+The named systems for harms that don't reach a death certificate.
+
+### National Ambulance Surveillance System (NASS)
 
 ```txt
-site:aihw.gov.au filetype:pdf ("alcohol and other drugs" OR "drug use" OR "substance use")
+"National Ambulance Surveillance System" (alcohol OR drug) (site:turningpoint.org.au OR site:research.monash.edu)
 ```
 
-**Key AIHW reports:**
+**Why this works:**
 
-- Alcohol and other drug treatment services data
-- National Drug Strategy Household Survey
-- Drug-induced deaths
-- Alcohol-related deaths
+- NASS (Turning Point @ Monash) codes drug/alcohol-related ambulance attendances; it has no public
+  portal of its own — its Victorian outputs are surfaced through AODstats, so name the program and
+  pair it with its host
 
-### ABS (National)
+### Emergency-Department Toxico-surveillance (EDNA)
 
 ```txt
-site:abs.gov.au ("drug use" OR "substance use" OR "alcohol consumption") survey OR data
+("Emerging Drugs Network of Australia" OR EDNAV) ("emergency department" OR toxicosurveillance OR "novel psychoactive")
 ```
 
-### NDARC Drug Trends
+### Hospital Separations
 
 ```txt
-site:ndarc.med.unsw.edu.au ("drug trends" OR IDRS OR EDRS) filetype:pdf
-```
-
-### Penington Institute (Overdose)
-
-```txt
-site:penington.org.au "overdose" OR "Australia's Annual Overdose Report"
+site:aihw.gov.au ("drug-related" OR "alcohol-related") (hospitalisation OR separations OR "emergency department") data
 ```
 
 ---
 
-## 💉 NSP Data
+## ☠️ Mortality Data
 
-### NSP Distribution Data - 1
+### Drug-Induced Deaths (ABS / AIHW)
 
 ```txt
-"needle syringe" ("distribution data" OR "equipment distributed" OR statistics) Australia
+(site:abs.gov.au OR site:aihw.gov.au) "drug-induced deaths" (filetype:pdf OR "data tables" OR time series)
 ```
 
-### NSP Distribution Data - 2
+### Opioid-Specific Mortality
 
 ```txt
-site:aihw.gov.au "needle syringe program" data
+("opioid deaths" OR "opioid-induced deaths" OR "opioid overdose deaths") Australia (site:aihw.gov.au OR site:penington.org.au)
 ```
 
-### BBV & NSP Data
+### ABS National Health Survey (Alcohol)
 
 ```txt
-site:kirby.unsw.edu.au ("hepatitis C" OR HCV) ("injecting drug use" OR NSP) data
-```
-
----
-
-## 💊 Treatment Data
-
-### Treatment Episodes
-
-```txt
-site:aihw.gov.au "treatment episode" AOD OR "alcohol and other drugs" filetype:pdf
-```
-
-### OAT/Pharmacotherapy Data
-
-```txt
-site:aihw.gov.au (methadone OR buprenorphine OR "opioid pharmacotherapy") data OR statistics
-```
-
-### Waiting Lists/Access Data
-
-```txt
-"waiting list" OR "wait times" (treatment OR detox OR rehabilitation) AOD [YOUR STATE]
+site:abs.gov.au "National Health Survey" "Alcohol consumption"
 ```
 
 ---
 
-## ☠️ Mortality & Morbidity
+## 🗂️ Raw Data & Repositories
 
-### Drug-Induced Deaths - 1
+### National Open Data Portal
 
 ```txt
-site:aihw.gov.au "drug-induced deaths" filetype:pdf
+site:data.gov.au (drug OR alcohol OR AOD OR overdose OR "needle syringe") filetype:csv
 ```
 
-### Drug-Induced Deaths - 2
+### Australian Data Archive (Microdata)
 
 ```txt
-"drug-related mortality" OR "drug deaths" statistics Australia
+site:ada.edu.au ("National Drug Strategy Household Survey" OR drug OR alcohol) (dataverse OR microdata OR CURF)
 ```
 
-### Opioid Deaths Specifically
+### Research Data Australia (ARDC)
 
 ```txt
-"opioid deaths" OR "opioid mortality" OR "opioid overdose deaths" Australia statistics
-```
-
-### Alcohol-Related Deaths
-
-```txt
-site:aihw.gov.au "alcohol-related deaths" OR "alcohol-attributable deaths"
-```
-
-### Hospitalisations
-
-```txt
-site:aihw.gov.au ("drug-related" OR "alcohol-related") (hospitalisation OR hospitalization) data
-```
-
----
-
-## 📈 Trend & Surveillance
-
-### Drug Market Trends - 1
-
-```txt
-"drug market" trend OR surveillance Australia filetype:pdf
-```
-
-### Drug Market Trends - 2
-
-```txt
-site:ndarc.med.unsw.edu.au "drug trends" OR "market" filetype:pdf
-```
-
-### Novel Substance Monitoring
-
-```txt
-("novel psychoactive" OR NPS) (surveillance OR monitoring OR detection) Australia data
-```
-
-### Drug Checking Results Data
-
-```txt
-"drug checking" (results OR data OR "substances detected") Australia
-```
-
----
-
-## 📍 State-Specific Data
-
-### NSW
-
-```txt
-site:health.nsw.gov.au OR site:nsw.gov.au (drug OR alcohol) statistics OR data
-```
-
-### Victoria - 1
-
-```txt
-site:health.vic.gov.au OR site:vic.gov.au ("drug related" OR "alcohol related") data
-```
-
-### Victoria - 2
-
-```txt
-site:turning-point.org.au data OR statistics
-```
-
-### Queensland
-
-```txt
-site:health.qld.gov.au (drug OR alcohol) statistics
-```
-
-### Other States
-
-```txt
-site:*.gov.au [STATE] ("drug-related" OR "alcohol-related") (statistics OR data OR report)
-```
-
----
-
-## 🔬 Research Data
-
-### Finding Raw Data/Datasets
-
-```txt
-filetype:xlsx OR filetype:csv (drug OR alcohol OR AOD) (data OR dataset) Australia site:*.gov.au
-```
-
-### Open Data Portals
-
-```txt
-site:data.gov.au (drug OR alcohol OR "harm reduction" OR overdose)
-```
-
-### Research Data Repositories
-
-```txt
-site:ada.edu.au OR site:ands.org.au (drug OR alcohol OR AOD) data
+(site:researchdata.edu.au OR site:ardc.edu.au) (drug OR alcohol OR AOD OR "harm reduction") dataset
 ```
 
 ---
 
 ## 🖤💛❤️ First Nations Data
 
-### 🖤💛❤️ First Nations Data - 1
+> Handle with care: Aboriginal and Torres Strait Islander data is subject to Indigenous Data
+> Sovereignty principles. Prefer community-controlled sources and correct framing.
+
+### AIHW Aboriginal & Torres Strait Islander Data
 
 ```txt
-site:aihw.gov.au ("Aboriginal" OR "Indigenous") ("alcohol" OR "drug" OR "substance") statistics
+site:aihw.gov.au ("Aboriginal and Torres Strait Islander" OR Indigenous) (alcohol OR drug OR "substance use") statistics
 ```
 
-### 🖤💛❤️ First Nations Data - 2
+### Closing the Gap
 
 ```txt
-"Closing the Gap" (alcohol OR drug OR substance) data
+"Closing the Gap" (alcohol OR drug OR "substance use") (target OR data OR dashboard)
 ```
 
 ---
 
 ## 🔗 Related Resources
 
-- **Related Packs:** [Research](research.md), [Coroners & Deaths](coroners-deaths.md)
+- **Source Intelligence:**
+  [Datasets & Data Repositories entities](../resources/source-intelligence.md#datasets-surveillance-feeds-data-repositories)
+  — the collections, codes, and repositories every dork above is built on
+- **Related Packs:** [Research](research.md), [Coroners & Deaths](coroners-deaths.md),
+  [Novel Substances](novel-substances.md)
 - **Key Sources:** [AIHW](https://aihw.gov.au), [ABS](https://abs.gov.au),
-  [NDARC](https://ndarc.med.unsw.edu.au)
-- **Workflow:** [Research Workflow](../workflows/research-workflow.md)
+  [data.gov.au](https://data.gov.au)
 
 ---
 

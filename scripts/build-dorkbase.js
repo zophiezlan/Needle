@@ -578,7 +578,9 @@ async function processFiles() {
   // Find all markdown files
   const files = await fg("**/*.md", {
     cwd: DOCS_DIR,
-    ignore: ["**/README.md", "**/node_modules/**"],
+    // Reference/index docs are not dork sources: their code blocks and tables
+    // are illustrative, so extracting them would pollute the dataset.
+    ignore: ["**/README.md", "**/node_modules/**", "resources/source-intelligence.md"],
     absolute: true,
   });
 
