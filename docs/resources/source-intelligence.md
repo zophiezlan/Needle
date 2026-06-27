@@ -1046,6 +1046,109 @@ unverified subreddit name.
 
 ---
 
+> **⚠️ The three sections below are community-controlled domains — review before relying on them.**
+>
+> The entities are web-verified, but **terminology and framing in these domains must be signed off
+> by the relevant community/peer reviewers** before the dorks built on them are treated as final.
+> Each section carries a terminology note and per-entity review flags. The load-bearing distinction
+> throughout: **community-controlled / peer-LED** (run _by_ the affected community) vs a mainstream
+> service that is merely _about / for_ them — don't conflate the two.
+
+## 🖤 First Nations AOD (Community-Controlled)
+
+Lead with Aboriginal Community Controlled Health Organisations (ACCHOs) and First-Nations-led
+research. Several widely-cited "Aboriginal programs" are government- or university-led — those are
+flagged, because mislabelling them as community-controlled is itself a harm.
+
+**Terminology (review before shipping):** use **"Aboriginal and Torres Strait Islander"** (name
+both; "First Nations"/"First Peoples" are increasingly used but can flatten Torres Strait Islander
+identity). Spell out — **don't use "ATSI"** in running text. **"Community-controlled" / ACCHO /
+ACCHS** is a specific governance term — apply it only to community-governed services. Prefer
+strengths-based **"social and emotional wellbeing (SEWB)"** framing and **"alcohol and other drugs
+(AOD)"**; avoid deficit language. Frame **"volatile substance use"** (not "petrol sniffing" as a
+label). Capitalise Aboriginal, Torres Strait Islander, Elder, Country.
+
+| Entity                          | `site:` target                                                                                   | Named signals / status                                                                                        |
+| ------------------------------- | ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------- |
+| **NACCHO** (national peak)      | `naccho.org.au`                                                                                  | `"Aboriginal Community Controlled Health"` / `ACCHO`, `"alcohol and other drugs"` — community-controlled ✓    |
+| **State/territory ACCHO peaks** | `ahmrc.org.au`, `vaccho.org.au`, `qaihc.com.au`, `ahcsa.org.au`, `ahcwa.org.au`, `amsant.org.au` | AH&MRC (NSW), VACCHO (VIC), QAIHC (QLD), AHCSA (SA), AHCWA (WA), AMSANT (NT) — all community-controlled ✓     |
+| **Winnunga** (ACT service)      | `winnunga.org.au`                                                                                | community-controlled ACT service (not a peak); for Tas/ACT affiliates use the NACCHO member directory         |
+| **Lowitja Institute**           | `lowitja.org.au`                                                                                 | Australia's only Aboriginal & Torres Strait Islander **community-controlled** health research institute ✓     |
+| **AOD Knowledge Centre**        | `healthinfonet.ecu.edu.au`                                                                       | Australian Indigenous HealthInfoNet; publishes the **`"AODconnect"`** app (NOT NACCHO)                        |
+| **Strong Spirit Strong Mind** ⚠ | `strongspiritstrongmind.com.au`, `mhc.wa.gov.au`                                                 | WA **government** (MHC) Aboriginal AOD/SEWB program — Aboriginal-designed but **not** community-controlled    |
+| **Strong & Deadly Futures** ⚠   | `sydney.edu.au` (`/matilda-centre`)                                                              | school AOD program — **university-led** (Matilda Centre + Gilimbaa), Aboriginal co-design                     |
+| **ATSIHAW** ⚠                   | `atsihiv.org.au`                                                                                 | Aboriginal & Torres Strait Islander HIV Awareness Week (`"U AND ME CAN STOP HIV"`); Aboriginal-led, UQ-hosted |
+| **Low aromatic fuel** ⚠         | `health.gov.au`, `niaa.gov.au`                                                                   | `"low aromatic fuel"` / `"Opal fuel"`, `"Petrol Sniffing Strategy"` — govt strategy (frame as VSU)            |
+
+**Indigenous Data Sovereignty (governs how this whole pack treats community data):**
+
+| Framework                  | `site:` target          | Named signals                                                                                              |
+| -------------------------- | ----------------------- | ---------------------------------------------------------------------------------------------------------- |
+| **Maiam nayri Wingara**    | `maiamnayriwingara.org` | Indigenous Data Sovereignty Collective; the Australian `"IDSov principles"`                                |
+| **CARE Principles** (GIDA) | `gida-global.org`       | `"CARE Principles for Indigenous Data Governance"` (Collective benefit, Authority, Responsibility, Ethics) |
+
+> **⚠ Cultural safety:** deaths-in-custody / mortality dorks may surface deceased persons — add a
+> **Sorry Business** warning and never name individuals. Apply Indigenous Data Sovereignty to any
+> dork that could aggregate or expose community-level data. The verified **First Nations & justice**
+> items (RCIADIC, Koori/Murri/Nunga/Galambany courts, Closing the Gap targets) live in the Justice
+> section — keep them flagged. **No named ATSI-specific peer drug-user program was verified** —
+> NUAA/AIVL serve Aboriginal people but don't fabricate a program name; confirm current naming with
+> the orgs.
+
+## ☂️ Sex Worker Health (Peer-Led)
+
+Lead with **sex-worker-led / peer-only** organisations. The load-bearing distinction: a peer-only
+org (run _by_ current/former sex workers) vs a "sex-worker-affirmative" mainstream service.
+
+**Terminology (review before shipping):** **"sex worker" / "sex work"** (never "prostitute" except
+when citing legislation — many AU Acts are still titled "Prostitution Act"). **"Sex work is work."**
+**Decriminalisation ≠ legalisation** — don't conflate; sex-worker orgs and NSWP back full
+decriminalisation and oppose the "Nordic/end-demand" model. Decrim status drives framing: **NSW**
+(1995), **NT** (2019), **VIC** (1 Dec 2023), **QLD** (2 Aug 2024) decriminalised; **SA still fully
+criminalised** (frame for legal risk).
+
+| Entity                               | `site:` target                                   | Named signals / status                                                                                              |
+| ------------------------------------ | ------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------- |
+| **Scarlet Alliance** (national peak) | `scarletalliance.org.au`                         | `"Red Book"` / `"Red Book Online"`, `"SANTP"` (peer educator training), migration project — peer-only ✓             |
+| **SWOP NSW**                         | `swop.org.au`                                    | `"SWOPconnect"`, `"Report a Mug"`, `"Ugly Mug List"` — peer-based ✓ (NSW decriminalised)                            |
+| **Vixen** (VIC peer-only)            | `vixen.org.au`                                   | Victoria's **peer-only** org (**not** `vixencollective.org`); `"Vixen Asian Migrant Project"`                       |
+| **Respect Inc** (QLD)                | `respectqld.org.au`                              | peer-only; `"Career Development Program"`, legal/health clinics (QLD decriminalised 2024)                           |
+| **SIN** (SA)                         | `sin.org.au`                                     | `"Sex Industry Network"`, `"by sex workers for sex workers"` — peer-led ✓ (**SA criminalised** — see above)         |
+| **Magenta** (WA)                     | `magenta.org.au`                                 | `"Magenta Sex Worker Project"`, `"Ugly Mugs"` — peer-based (confirm governance)                                     |
+| **SWOP NT / SWOP ACT**               | `ntahc.org.au/swopnt`, `meridianact.org.au/swop` | SWOP NT (a program of NTAHC); SWOP ACT (delivered by Meridian) — peer-led programs                                  |
+| **Touching Base**                    | `touchingbase.org`                               | disability + sex work; Scarlet Alliance member                                                                      |
+| **RhED** ⚠ (service, not peer-only)  | `sexworker.org.au`                               | `"RhED"`, `"Ugly Mugs"` — a program of **Star Health** (sex-worker-_affirmative_; pair with Vixen as VIC peer-only) |
+| **NSWP** (global peer)               | `nswp.org`                                       | `"Global Network of Sex Work Projects"`, `"smart guide"`, `"briefing paper"` — sex-worker-led ✓                     |
+
+> **Ugly Mugs** (bad-client reporting) is real and peer-run but delivered **per-org** (no single AU
+> domain; SWOP `"Report a Mug"`, RhED, Magenta) — and these lists are sex-worker-only/closed, so
+> don't dork into restricted content. Note: **National Ugly Mugs (`nationaluglymugs.org`) is UK**,
+> not AU.
+
+## 🌈 LGBTQ+ Health (Peer & Community)
+
+Lead with community-controlled LGBTQ+ health orgs and peer-led AOD/chemsex programs.
+
+**Terminology (review before shipping):** the acronym is contested — **LGBTQ+ / LGBTIQ+ / LGBTQIA+**
+are all in use; **match the term each org uses for itself** (ACON: "LGBTQ+"; the national peak:
+"LGBTIQ+"). Don't assume intersex inclusion just because the "I" is present. **"Chemsex" / "party
+and play" / "PnP" / "sexualised drug use"** are the AOD terms — avoid "chemsex epidemic"
+sensationalism. **"MSM"** is clinical, not a community identity — pair with "gay, bi+ and queer
+men". Peer-LED ≠ merely LGBTQ-staffed.
+
+| Entity                              | `site:` target                                               | Named signals / status                                                                                                                                                     |
+| ----------------------------------- | ------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **ACON** (NSW)                      | `acon.org.au`, `betweenthelines.org.au`, `pivotpoint.org.au` | AOD hub **`"Between the Lines"`**; peer chemsex service **`"M3THOD"`**; **`"ACON Rovers"`** outreach; `"Pivot Point"` (incl. provider guidelines) — community-controlled ✓ |
+| **Thorne Harbour Health** (VIC/SA)  | `thorneharbour.org`                                          | `"Re-Wired"` (meth), `"Anchor"` (alcohol), `"Triple A"` (peer AOD group) — community-controlled ✓ (ex-VAC)                                                                 |
+| **Touchbase**                       | `touchbase.org.au`                                           | national LGBTIQ+ AOD info — run by **Thorne Harbour Health** (NOT ACON); check currency (2022 footer)                                                                      |
+| **LGBTIQ+ Health Australia** (peak) | `lgbtiqhealth.org.au`                                        | national peak (ex–National LGBTI Health Alliance); policy/data; auspices QLife                                                                                             |
+| **QLife**                           | `qlife.org.au`                                               | national LGBTIQ+ **peer** support & referral (Switchboard/Diverse Voices/Living Proud/Twenty10)                                                                            |
+| **Rainbow Health Australia** ⚠      | `rainbowhealthaustralia.org.au`                              | `"Rainbow Tick"` accreditation/training — **university-hosted** (La Trobe ARCSHS), not a peer service                                                                      |
+| **Emen8 / Ending HIV**              | `emen8.com.au`, `endinghiv.org.au`                           | gay/bi+ men's sexual health (ACON + THH) — chemsex-adjacent / PrEP-and-drugs (HIV-led, AOD secondary)                                                                      |
+| **Controlling Chemsex / THT** (UK)  | `controllingchemsex.com`, `chemsex.co.uk`                    | UK peer/lived-experience chemsex support (`chemsex.co.uk` = Terrence Higgins Trust; `fridaymonday.org.uk` redirects here)                                                  |
+
+---
+
 ## 🛠️ Maintaining This File
 
 - Add an entity here **before** writing a dork that depends on it.

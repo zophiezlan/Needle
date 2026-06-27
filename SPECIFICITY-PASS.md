@@ -61,6 +61,7 @@ These were chosen by the project owner. Keep to them unless told otherwise:
 | 9   | Batch 7 rewritten + reference verified/extended   | `prisons-justice`, `rural-remote`                                                    |
 | 10  | Batch 8 rewritten + reference verified/extended   | `stigma-language`, `temporal-intelligence`, `organizational-intelligence`            |
 | 11  | Batch 9 rewritten + reference verified/extended   | `investigative`, `document-discovery`, `multimedia-discovery`, `user-hosted-domains` |
+| 12  | Batch 10 drafted (community review pending)       | `first-nations`, `sex-worker-health`, `lgbtq-health` ⚠ draft                         |
 
 - **`source-intelligence.md`** is the heart of this work: an entity → searchable-signal map. For
   each real org/service/dataset it records the `site:` target, the named publications to put in
@@ -211,20 +212,28 @@ from scratch (§4): "Discovery Platforms & File Types" (dead-platform graveyard;
 named HR podcasts; document/data platforms + AU open-data portals + named datasets; user-hosted/
 Jamstack platform currency). 3-cluster verification fan-out (134k tokens, 53 web lookups).
 
-**Only the community-controlled packs remain:** `first-nations`, `sex-worker-health`, `lgbtq-health`
-— handle with extra care (see note below). All technique and topical packs are now done. Note: batch
-7 already catalogued a verified, cultural-safety-flagged **First Nations & justice** sub-section in
-source-intelligence — a useful starting point for the `first-nations` pack.
+**Done — DRAFT (batch 10):** `first-nations`, `sex-worker-health`, `lgbtq-health` — the
+community-controlled set. Drafted (project owner chose "draft, you review before merge"), each pack
+carrying a prominent **⚠ DRAFT — pending community/peer review** banner; not to be treated as final
+until the relevant community/peer reviewers sign off terminology + framing. Three reference sections
+built from scratch (§4) under a shared review banner: "First Nations AOD (Community-Controlled)",
+"Sex Worker Health (Peer-Led)", "LGBTQ+ Health (Peer & Community)" — each with a terminology note
+and per-entity review flags. 3-cluster verification fan-out (141k tokens, 59 web lookups).
 
-### Packs needing a reference section built first (§4 before §3)
+### All 34 packs now drafted
 
-`first-nations` · `lgbtq-health` · `sex-worker-health` (the community-controlled set — all that
-remains)
+Every pack in `docs/dork-packs/README.md` has been rewritten against the verified entity layer
+(`peer-knowledge` was the original model and remains light-touch). The **only outstanding work is
+the community/peer sign-off** on the three batch-10 drafts before they lose their DRAFT banners —
+that is a human review step, not a drafting step.
 
-> For `first-nations`, `sex-worker-health`, and `lgbtq-health` especially: prioritise community-
-> controlled and peer sources, and be careful with framing/terminology. When in doubt, flag for
-> human/peer review rather than guessing. These are good candidates to co-author with the project
-> owner (at NUAA) rather than draft solo.
+> **Review checklist for the batch-10 drafts** (for the project owner / community reviewers):
+> confirm terminology in each domain; confirm "community-controlled / peer-led" is applied only
+> where accurate (several batch-10 entities are government- or university-led and flagged ⚠ as
+> such); apply Indigenous Data Sovereignty to any First Nations data dork; confirm current decrim
+> status per state for the sex-worker pack; confirm the current preferred LGBTQ+ acronym; and have
+> NUAA/AIVL confirm the name of any Aboriginal peer drug-user program before one is added (none was
+> verified).
 
 ### Outstanding `⚠ verify` flags (confirm before use)
 
@@ -359,6 +368,28 @@ Up_) for AU audio. Reddit subs **r/HarmReduction** and **r/Drugs** confirmed liv
 **r/ReagentTesting**, **r/opiates**, **r/AusDrugs** could not be verified (Reddit blocks the
 fetcher) — prefer the confirmed subs + platform-level `site:reddit.com` + named-AU-service terms
 over asserting a niche subreddit.
+
+Resolved/corrected in batch 10 (community-controlled — **all still pending community/peer
+sign-off**): ACCHO peaks confirmed (NACCHO + AH&MRC/VACCHO/QAIHC/AHCSA/AHCWA/AMSANT); **Lowitja** is
+community-controlled but **Menzies**, **Strong Spirit Strong Mind** (WA MHC), **Strong & Deadly
+Futures** (Matilda Centre) and **low aromatic fuel** (govt strategy) are **not** — flagged ⚠ so the
+toolkit doesn't over-claim community control. **AODconnect** = HealthInfoNet AOD Knowledge Centre,
+not NACCHO. Data sovereignty: **Maiam nayri Wingara** (`maiamnayriwingara.org`), **CARE Principles**
+(`gida-global.org`). Sex worker: **Vixen** = `vixen.org.au` (not vixencollective.org); **SWOP NT** =
+`ntahc.org.au/swopnt`, **SWOP ACT** = `meridianact.org.au/swop`; **RhED** (`sexworker.org.au`) is a
+Star Health _service_, not peer-only (pair with Vixen). Decrim: VIC 1 Dec 2023, QLD 2 Aug 2024, NT
+2019, NSW 1995; **SA still criminalised**. LGBTQ+: ACON AOD hub is **Between the Lines** +
+**M3THOD** + **ACON Rovers** + **Pivot Point** (NOT "Touch Base"/"Rovid"); **Touchbase**
+(`touchbase.org.au`) is **Thorne Harbour Health**, not ACON; **chemsex.co.uk** (Terrence Higgins
+Trust) supersedes "Friday/Monday".
+
+Still flagged (batch 10 — for community/peer review): **Whole community-controlled set is DRAFT** —
+do not drop the banners until reviewed. **No Aboriginal-specific peer drug-user program name
+verified** (NUAA/AIVL to confirm). **Tasmanian ACCHO peak** unconfirmed — route via the NACCHO
+member directory, don't invent one. **LGBTQ+ acronym** is contested (LGBTQ+/LGBTIQ+/LGBTQIA+) —
+match each org's own usage. **SA sex-work decrim status** changes periodically — re-verify at ship
+time. **Sorry Business**: First Nations deaths-in-custody/mortality dorks need a cultural warning
+and must not name individuals.
 
 Still flagged: **Strong & Deadly Futures** is an Aboriginal & Torres Strait Islander program — quote
 it but keep cultural-safety framing. The **NHMRC CRE in Mental Health and Substance Use** ("CREMS")

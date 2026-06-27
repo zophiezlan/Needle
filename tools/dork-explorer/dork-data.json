@@ -4093,42 +4093,18 @@
     {
       "id": "first-nations",
       "title": "Aboriginal & Torres Strait Islander AOD & Harm Reduction",
-      "description": "Culturally safe, self-determined approaches to healing.",
+      "description": "Culturally safe, self-determined approaches — led by Aboriginal Community Controlled",
       "dorks": [
         {
           "id": "first-nations-search-naccho-org-au",
           "title": "Search naccho.org.au",
           "category": "Quick Start",
-          "query": "site:naccho.org.au \"alcohol\" OR \"drug\" OR \"AOD\" filetype:pdf",
+          "query": "site:naccho.org.au (\"alcohol and other drugs\" OR AOD OR \"community controlled\")",
           "explanation": "",
           "difficulty": "beginner",
           "sourceFile": "dork-packs/first-nations.md",
           "sourceType": "dork-pack",
-          "sourceLine": 30,
-          "operators": [
-            "site",
-            "filetype"
-          ],
-          "targetDomains": [
-            "naccho.org.au"
-          ],
-          "domainCategory": "ngo",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "australia"
-          ]
-        },
-        {
-          "id": "first-nations-aboriginal-community-controlled-health-acchos-1",
-          "title": "Aboriginal Community Controlled Health (ACCHOs) - 1",
-          "category": "Basic Queries",
-          "query": "site:naccho.org.au \"alcohol\" OR \"drug\" OR \"AOD\" OR \"substance\"",
-          "explanation": "",
-          "difficulty": "beginner",
-          "sourceFile": "dork-packs/first-nations.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 37,
+          "sourceLine": 45,
           "operators": [
             "site"
           ],
@@ -4142,31 +4118,108 @@
           ]
         },
         {
-          "id": "first-nations-aboriginal-community-controlled-health-acchos-2",
-          "title": "Aboriginal Community Controlled Health (ACCHOs) - 2",
+          "id": "first-nations-aboriginal-community-controlled-health-naccho",
+          "title": "Aboriginal Community Controlled Health (NACCHO)",
           "category": "Basic Queries",
-          "query": "\"Aboriginal Community Controlled Health\" AOD OR \"alcohol and other drugs\"",
+          "query": "site:naccho.org.au (\"alcohol and other drugs\" OR AOD OR \"social and emotional wellbeing\")",
+          "explanation": "**Why this works:**\n\n- Goes to the national ACCHO peak and its AOD remit, rather than a generic `\"Aboriginal\" \"drug\"`\nquery that surfaces mainstream commentary _about_ communities",
+          "difficulty": "beginner",
+          "sourceFile": "dork-packs/first-nations.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 52,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "naccho.org.au"
+          ],
+          "domainCategory": "ngo",
+          "contentType": "any",
+          "tags": [
+            "australia"
+          ]
+        },
+        {
+          "id": "first-nations-state-territory-accho-peaks",
+          "title": "State & Territory ACCHO Peaks",
+          "category": "Basic Queries",
+          "query": "(site:ahmrc.org.au OR site:vaccho.org.au OR site:qaihc.com.au OR site:ahcsa.org.au OR site:ahcwa.org.au OR site:amsant.org.au) (\"alcohol and other drugs\" OR AOD OR \"substance\")",
           "explanation": "",
           "difficulty": "beginner",
           "sourceFile": "dork-packs/first-nations.md",
           "sourceType": "dork-pack",
-          "sourceLine": 43,
-          "operators": [],
+          "sourceLine": 63,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "ahmrc.org.au",
+            "vaccho.org.au",
+            "qaihc.com.au",
+            "ahcsa.org.au",
+            "ahcwa.org.au",
+            "amsant.org.au"
+          ],
+          "domainCategory": "ngo",
+          "contentType": "any",
+          "tags": [
+            "australia"
+          ]
+        },
+        {
+          "id": "first-nations-community-controlled-research-lowitja",
+          "title": "Community-Controlled Research (Lowitja)",
+          "category": "Basic Queries",
+          "query": "site:lowitja.org.au (\"alcohol\" OR \"social and emotional wellbeing\" OR \"data sovereignty\")",
+          "explanation": "",
+          "difficulty": "beginner",
+          "sourceFile": "dork-packs/first-nations.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 69,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "lowitja.org.au"
+          ],
+          "domainCategory": "ngo",
+          "contentType": "any",
+          "tags": [
+            "research",
+            "data",
+            "australia"
+          ]
+        },
+        {
+          "id": "first-nations-self-determination-community-control",
+          "title": "Self-Determination & Community Control",
+          "category": "Intermediate Queries",
+          "query": "(\"Aboriginal Community Controlled\" OR \"self-determination\" OR \"community-led\") (\"alcohol and other drugs\" OR AOD OR \"social and emotional wellbeing\") filetype:pdf",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/first-nations.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 79,
+          "operators": [
+            "filetype"
+          ],
           "targetDomains": [],
           "domainCategory": "community",
-          "contentType": "any",
-          "tags": []
+          "contentType": "pdf",
+          "tags": [
+            "documents"
+          ]
         },
         {
-          "id": "first-nations-aboriginal-specific-programs-1",
-          "title": "Aboriginal-Specific Programs - 1",
-          "category": "Basic Queries",
-          "query": "\"Aboriginal\" \"harm reduction\" program Australia filetype:pdf",
+          "id": "first-nations-culturally-safe-practice",
+          "title": "Culturally Safe Practice",
+          "category": "Intermediate Queries",
+          "query": "(\"cultural safety\" OR \"culturally safe\" OR \"culturally responsive\") (AOD OR \"alcohol and other drugs\") (Aboriginal OR \"Torres Strait Islander\") filetype:pdf",
           "explanation": "",
-          "difficulty": "beginner",
+          "difficulty": "intermediate",
           "sourceFile": "dork-packs/first-nations.md",
           "sourceType": "dork-pack",
-          "sourceLine": 49,
+          "sourceLine": 85,
           "operators": [
             "filetype"
           ],
@@ -4174,143 +4227,19 @@
           "domainCategory": "any",
           "contentType": "pdf",
           "tags": [
-            "documents",
-            "services",
-            "australia"
+            "documents"
           ]
         },
         {
-          "id": "first-nations-aboriginal-specific-programs-2",
-          "title": "Aboriginal-Specific Programs - 2",
-          "category": "Basic Queries",
-          "query": "\"Aboriginal\" \"alcohol and other drugs\" service OR program",
-          "explanation": "",
-          "difficulty": "beginner",
-          "sourceFile": "dork-packs/first-nations.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 55,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "services"
-          ]
-        },
-        {
-          "id": "first-nations-indigenous-health-exclude-us-canada",
-          "title": "Indigenous Health (Exclude US/Canada)",
-          "category": "Basic Queries",
-          "query": "\"Indigenous\" \"drug and alcohol\" OR \"AOD\" Australia -USA -Canada",
-          "explanation": "",
-          "difficulty": "beginner",
-          "sourceFile": "dork-packs/first-nations.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 61,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "australia"
-          ]
-        },
-        {
-          "id": "first-nations-state-acchos-1",
-          "title": "State ACCHOs - 1",
+          "id": "first-nations-healing-connection-to-country",
+          "title": "Healing & Connection to Country",
           "category": "Intermediate Queries",
-          "query": "site:ahmrc.org.au filetype:pdf",
-          "explanation": "",
+          "query": "(\"cultural healing\" OR \"connection to Country\" OR \"on Country\" OR \"healing centre\") (alcohol OR substance OR wellbeing) Aboriginal",
+          "explanation": "**Why this works:**\n\n- Healing-on-Country and cultural-healing models are how community-controlled services frame\nrecovery — searching the model surfaces community-authored material",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/first-nations.md",
           "sourceType": "dork-pack",
-          "sourceLine": 71,
-          "operators": [
-            "site",
-            "filetype"
-          ],
-          "targetDomains": [
-            "ahmrc.org.au"
-          ],
-          "domainCategory": "ngo",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "australia"
-          ]
-        },
-        {
-          "id": "first-nations-state-acchos-2",
-          "title": "State ACCHOs - 2",
-          "category": "Intermediate Queries",
-          "query": "site:vaccho.org.au \"alcohol and other drugs\"",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/first-nations.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 77,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "vaccho.org.au"
-          ],
-          "domainCategory": "ngo",
-          "contentType": "any",
-          "tags": [
-            "australia"
-          ]
-        },
-        {
-          "id": "first-nations-state-acchos-3",
-          "title": "State ACCHOs - 3",
-          "category": "Intermediate Queries",
-          "query": "site:qaihc.com.au harm reduction OR AOD",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/first-nations.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 83,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "qaihc.com.au"
-          ],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "australia"
-          ]
-        },
-        {
-          "id": "first-nations-cultural-healing-approaches-1",
-          "title": "Cultural Healing Approaches - 1",
-          "category": "Intermediate Queries",
-          "query": "\"cultural healing\" \"alcohol\" OR \"drug\" Aboriginal Australia",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/first-nations.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 89,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "australia"
-          ]
-        },
-        {
-          "id": "first-nations-cultural-healing-approaches-2",
-          "title": "Cultural Healing Approaches - 2",
-          "category": "Intermediate Queries",
-          "query": "\"connection to country\" OR \"return to country\" healing substance",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/first-nations.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 95,
+          "sourceLine": 91,
           "operators": [],
           "targetDomains": [],
           "domainCategory": "any",
@@ -4318,31 +4247,37 @@
           "tags": []
         },
         {
-          "id": "first-nations-regional-identifiers",
-          "title": "Regional Identifiers",
+          "id": "first-nations-aodconnect-knowledge-centre",
+          "title": "AODconnect (Knowledge Centre)",
           "category": "Intermediate Queries",
-          "query": "\"Koori\" OR \"Murri\" OR \"Nunga\" \"drug\" OR \"alcohol\" health",
-          "explanation": "",
+          "query": "site:healthinfonet.ecu.edu.au (\"AODconnect\" OR \"alcohol and other drugs\" OR \"Knowledge Centre\")",
+          "explanation": "> Note: the **AODconnect** app is published by the Australian Indigenous HealthInfoNet AOD Knowledge\n> Centre — not NACCHO.",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/first-nations.md",
           "sourceType": "dork-pack",
-          "sourceLine": 101,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
+          "sourceLine": 102,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "healthinfonet.ecu.edu.au"
+          ],
+          "domainCategory": "education",
           "contentType": "any",
-          "tags": []
+          "tags": [
+            "australia"
+          ]
         },
         {
-          "id": "first-nations-comprehensive-aboriginal-aod-sweep",
-          "title": "Comprehensive Aboriginal AOD Sweep",
+          "id": "first-nations-comprehensive-community-controlled-aod-sweep",
+          "title": "Comprehensive Community-Controlled AOD Sweep",
           "category": "Advanced Queries",
-          "query": "(\"Aboriginal\" OR \"Torres Strait Islander\" OR \"Indigenous\" OR \"First Nations\") (\"alcohol and other drugs\" OR AOD OR \"harm reduction\" OR \"drug and alcohol\") Australia (program OR service OR policy OR research) filetype:pdf -USA -Canada after:2020",
+          "query": "(\"Aboriginal and Torres Strait Islander\" OR \"First Nations\" OR ACCHO) (\"alcohol and other drugs\" OR AOD OR \"social and emotional wellbeing\" OR \"harm reduction\") (service OR program OR resource OR research) Australia filetype:pdf -USA -Canada after:2020",
           "explanation": "",
           "difficulty": "advanced",
           "sourceFile": "dork-packs/first-nations.md",
           "sourceType": "dork-pack",
-          "sourceLine": 111,
+          "sourceLine": 115,
           "operators": [
             "filetype",
             "after"
@@ -4353,685 +4288,251 @@
           "tags": [
             "documents",
             "research",
-            "policy",
             "services",
             "australia"
           ]
         },
         {
-          "id": "first-nations-self-determination-in-aod",
-          "title": "Self-Determination in AOD",
+          "id": "first-nations-volatile-substance-use-strengths-based",
+          "title": "Volatile Substance Use (Strengths-Based)",
           "category": "Advanced Queries",
-          "query": "\"self-determination\" OR \"community controlled\" (Aboriginal OR Indigenous) (\"alcohol and other drugs\" OR AOD) Australia",
+          "query": "(\"volatile substance use\" OR \"low aromatic fuel\" OR \"Opal fuel\") (\"Petrol Sniffing Strategy\" OR prevention OR remote) (site:health.gov.au OR site:niaa.gov.au)",
+          "explanation": "**Why this works:**\n\n- Names the actual intervention (low aromatic fuel substitution) and the government strategy, framed\nas volatile substance use rather than a stigmatising label",
+          "difficulty": "advanced",
+          "sourceFile": "dork-packs/first-nations.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 121,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "health.gov.au",
+            "niaa.gov.au"
+          ],
+          "domainCategory": "government",
+          "contentType": "any",
+          "tags": [
+            "policy",
+            "australia"
+          ]
+        },
+        {
+          "id": "first-nations-residential-healing-treatment",
+          "title": "Residential Healing & Treatment",
+          "category": "Advanced Queries",
+          "query": "(\"Aboriginal\" OR \"Aboriginal and Torres Strait Islander\") (\"healing centre\" OR \"residential rehabilitation\" OR \"residential rehab\") (drug OR alcohol OR healing) Australia",
           "explanation": "",
           "difficulty": "advanced",
           "sourceFile": "dork-packs/first-nations.md",
           "sourceType": "dork-pack",
-          "sourceLine": 117,
+          "sourceLine": 132,
           "operators": [],
           "targetDomains": [],
-          "domainCategory": "community",
+          "domainCategory": "any",
           "contentType": "any",
           "tags": [
             "australia"
           ]
         },
         {
-          "id": "first-nations-culturally-safe-practice",
-          "title": "Culturally Safe Practice",
-          "category": "Advanced Queries",
-          "query": "\"cultural safety\" OR \"culturally safe\" (AOD OR \"alcohol and other drugs\" OR \"harm reduction\") Aboriginal filetype:pdf",
-          "explanation": "",
-          "difficulty": "advanced",
-          "sourceFile": "dork-packs/first-nations.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 123,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "pdf",
-          "tags": [
-            "documents"
-          ]
-        },
-        {
-          "id": "first-nations-national-1",
-          "title": "National - 1",
-          "category": "\udfe5 Aboriginal Community Controlled Organisations",
-          "query": "site:naccho.org.au filetype:pdf",
+          "id": "first-nations-yarning-yarning-circles",
+          "title": "Yarning & Yarning Circles",
+          "category": "\udf3f Cultural Approaches & Healing",
+          "query": "(\"yarning\" OR \"yarning circle\") (substance OR alcohol OR wellbeing OR healing) (Aboriginal OR \"Torres Strait Islander\")",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/first-nations.md",
           "sourceType": "dork-pack",
-          "sourceLine": 133,
+          "sourceLine": 142,
+          "operators": [],
+          "targetDomains": [],
+          "domainCategory": "any",
+          "contentType": "any",
+          "tags": []
+        },
+        {
+          "id": "first-nations-elders-cultural-practice",
+          "title": "Elders & Cultural Practice",
+          "category": "\udf3f Cultural Approaches & Healing",
+          "query": "(\"Elders\" OR \"cultural practice\" OR \"ceremony\") (healing OR recovery OR wellbeing) (substance OR alcohol) Aboriginal",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/first-nations.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 148,
+          "operators": [],
+          "targetDomains": [],
+          "domainCategory": "any",
+          "contentType": "any",
+          "tags": []
+        },
+        {
+          "id": "first-nations-men-s-women-s-business",
+          "title": "Men's & Women's Business",
+          "category": "\udf3f Cultural Approaches & Healing",
+          "query": "(\"men's group\" OR \"women's group\" OR \"men's business\" OR \"women's business\") (healing OR wellbeing) (alcohol OR substance) Aboriginal",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/first-nations.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 154,
+          "operators": [],
+          "targetDomains": [],
+          "domainCategory": "any",
+          "contentType": "any",
+          "tags": []
+        },
+        {
+          "id": "first-nations-data-sovereignty-frameworks",
+          "title": "Data Sovereignty Frameworks",
+          "category": "\udee1 Indigenous Data Sovereignty",
+          "query": "(site:maiamnayriwingara.org OR site:gida-global.org OR site:lowitja.org.au) (\"Indigenous data sovereignty\" OR \"data governance\" OR \"CARE Principles\")",
+          "explanation": "**Why this works:**\n\n- Names **Maiam nayri Wingara** (the AU IDSov collective) and the **CARE Principles** — the\ngovernance that should frame any use of community-level data",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/first-nations.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 167,
           "operators": [
-            "site",
-            "filetype"
+            "site"
           ],
           "targetDomains": [
-            "naccho.org.au"
-          ],
-          "domainCategory": "ngo",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "australia"
-          ]
-        },
-        {
-          "id": "first-nations-national-2",
-          "title": "National - 2",
-          "category": "\udfe5 Aboriginal Community Controlled Organisations",
-          "query": "\"National Aboriginal Community Controlled Health Organisation\" AOD",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/first-nations.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 139,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "community",
-          "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "first-nations-state-territory-acchos",
-          "title": "State/Territory ACCHOs",
-          "category": "\udfe5 Aboriginal Community Controlled Organisations",
-          "query": "site:ahcwa.org.au filetype:pdf",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/first-nations.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 145,
-          "operators": [
-            "site",
-            "filetype"
-          ],
-          "targetDomains": [
-            "ahcwa.org.au"
-          ],
-          "domainCategory": "ngo",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "australia"
-          ]
-        },
-        {
-          "id": "first-nations-multi-accho-search",
-          "title": "Multi-ACCHO Search",
-          "category": "\udfe5 Aboriginal Community Controlled Organisations",
-          "query": "(ACCHO OR \"community controlled\") (\"harm reduction\" OR \"alcohol drug\" OR AOD) filetype:pdf",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/first-nations.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 177,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "community",
-          "contentType": "pdf",
-          "tags": [
-            "documents"
-          ]
-        },
-        {
-          "id": "first-nations-cultural-healing",
-          "title": "Cultural Healing",
-          "category": "\udf3f Cultural Approaches & Healing",
-          "query": "\"cultural healing\" (\"alcohol\" OR \"drug\" OR \"substance\") Aboriginal Australia filetype:pdf",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/first-nations.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 187,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "australia"
-          ]
-        },
-        {
-          "id": "first-nations-connection-to-country",
-          "title": "Connection to Country",
-          "category": "\udf3f Cultural Approaches & Healing",
-          "query": "\"connection to country\" OR \"return to country\" healing (substance OR addiction OR alcohol)",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/first-nations.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 193,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "first-nations-ceremony-cultural-practice",
-          "title": "Ceremony & Cultural Practice",
-          "category": "\udf3f Cultural Approaches & Healing",
-          "query": "\"ceremony\" OR \"cultural practice\" healing (addiction OR substance OR alcohol) Aboriginal",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/first-nations.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 199,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "first-nations-elders-roles",
-          "title": "Elders' Roles",
-          "category": "\udf3f Cultural Approaches & Healing",
-          "query": "\"Elders\" role healing OR recovery (substance OR alcohol) Aboriginal",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/first-nations.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 205,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "first-nations-gender-specific-healing-1",
-          "title": "Gender-Specific Healing - 1",
-          "category": "\udf3f Cultural Approaches & Healing",
-          "query": "\"men's group\" OR \"women's group\" Aboriginal healing alcohol drug",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/first-nations.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 211,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "first-nations-gender-specific-healing-2",
-          "title": "Gender-Specific Healing - 2",
-          "category": "\udf3f Cultural Approaches & Healing",
-          "query": "\"women's business\" OR \"men's business\" healing substance",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/first-nations.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 217,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "first-nations-yarning",
-          "title": "Yarning",
-          "category": "\udf3f Cultural Approaches & Healing",
-          "query": "\"yarning circle\" OR \"yarning\" (substance OR alcohol OR wellbeing OR healing) Aboriginal",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/first-nations.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 223,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "first-nations-lowitja-institute",
-          "title": "Lowitja Institute",
-          "category": "\udccb Policy & Research",
-          "query": "site:lowitja.org.au \"alcohol\" OR \"drug\" OR \"substance\" filetype:pdf",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/first-nations.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 233,
-          "operators": [
-            "site",
-            "filetype"
-          ],
-          "targetDomains": [
+            "maiamnayriwingara.org",
+            "gida-global.org",
             "lowitja.org.au"
           ],
           "domainCategory": "ngo",
-          "contentType": "pdf",
+          "contentType": "any",
           "tags": [
-            "documents",
+            "policy",
+            "data",
+            "international",
             "australia"
           ]
         },
         {
-          "id": "first-nations-closing-the-gap",
-          "title": "Closing the Gap",
-          "category": "\udccb Policy & Research",
-          "query": "\"Closing the Gap\" (\"alcohol\" OR \"drug\" OR \"substance\")",
+          "id": "first-nations-stolen-generations-intergenerational-trauma",
+          "title": "Stolen Generations & Intergenerational Trauma",
+          "category": "\udc94 Trauma & Healing",
+          "query": "(\"Stolen Generations\" OR \"intergenerational trauma\" OR \"historical trauma\") (alcohol OR substance OR \"social and emotional wellbeing\") Aboriginal",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/first-nations.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 182,
+          "operators": [],
+          "targetDomains": [],
+          "domainCategory": "any",
+          "contentType": "any",
+          "tags": []
+        },
+        {
+          "id": "first-nations-trauma-informed-culturally-safe-care",
+          "title": "Trauma-Informed, Culturally Safe Care",
+          "category": "\udc94 Trauma & Healing",
+          "query": "\"trauma-informed\" (\"culturally safe\" OR Aboriginal OR \"Torres Strait Islander\") (drug OR alcohol OR AOD) service filetype:pdf",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/first-nations.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 188,
+          "operators": [
+            "filetype"
+          ],
+          "targetDomains": [],
+          "domainCategory": "any",
+          "contentType": "pdf",
+          "tags": [
+            "documents",
+            "services"
+          ]
+        },
+        {
+          "id": "first-nations-youth-programs-named-generic",
+          "title": "Youth Programs (Named & Generic)",
+          "category": "\udc68‍\udc69‍\udc67 Youth & Families",
+          "query": "(\"Strong & Deadly Futures\" OR \"Strong and Deadly Futures\" OR \"Strong Spirit Strong Mind\" OR \"Aboriginal young people\") (\"alcohol and other drugs\" OR AOD OR prevention)",
+          "explanation": "> Handle with care: **Strong & Deadly Futures** is university-led (Matilda Centre, with Aboriginal\n> co-design) and **Strong Spirit Strong Mind** is a WA Government (MHC) program — name them, but\n> don't present either as community-controlled.",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/first-nations.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 198,
+          "operators": [],
+          "targetDomains": [],
+          "domainCategory": "any",
+          "contentType": "any",
+          "tags": [
+            "services"
+          ]
+        },
+        {
+          "id": "first-nations-families-kinship-fasd",
+          "title": "Families, Kinship & FASD",
+          "category": "\udc68‍\udc69‍\udc67 Youth & Families",
+          "query": "(\"Aboriginal families\" OR kinship) (substance OR alcohol OR FASD OR \"fetal alcohol\") (support OR healing OR prevention)",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/first-nations.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 208,
+          "operators": [],
+          "targetDomains": [],
+          "domainCategory": "any",
+          "contentType": "any",
+          "tags": []
+        },
+        {
+          "id": "first-nations-aboriginal-sentencing-courts-diversion",
+          "title": "Aboriginal Sentencing Courts & Diversion",
+          "category": "⚖ Justice & Healing",
+          "query": "(\"Koori Court\" OR \"Murri Court\" OR \"Nunga Court\" OR \"Galambany Court\" OR \"Circle Sentencing\") (drug OR alcohol OR diversion)",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/first-nations.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 221,
+          "operators": [],
+          "targetDomains": [],
+          "domainCategory": "any",
+          "contentType": "any",
+          "tags": []
+        },
+        {
+          "id": "first-nations-over-representation-closing-the-gap",
+          "title": "Over-Representation & Closing the Gap",
+          "category": "⚖ Justice & Healing",
+          "query": "site:closingthegap.gov.au (\"Target 10\" OR \"Target 11\" OR incarceration OR \"youth detention\")",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/first-nations.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 227,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "closingthegap.gov.au"
+          ],
+          "domainCategory": "government",
+          "contentType": "any",
+          "tags": [
+            "australia"
+          ]
+        },
+        {
+          "id": "first-nations-aihw-abs-aboriginal-data",
+          "title": "AIHW & ABS Aboriginal Data",
+          "category": "Data & Statistics",
+          "query": "(site:aihw.gov.au OR site:abs.gov.au) (\"Aboriginal and Torres Strait Islander\" OR Indigenous) (\"alcohol and other drugs\" OR \"substance use\") (statistics OR data)",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/first-nations.md",
           "sourceType": "dork-pack",
           "sourceLine": 239,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "first-nations-national-strategies-1",
-          "title": "National Strategies - 1",
-          "category": "\udccb Policy & Research",
-          "query": "\"National Aboriginal and Torres Strait Islander\" drug OR alcohol strategy",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/first-nations.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 245,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "policy"
-          ]
-        },
-        {
-          "id": "first-nations-national-strategies-2",
-          "title": "National Strategies - 2",
-          "category": "\udccb Policy & Research",
-          "query": "\"Aboriginal and Torres Strait Islander\" health plan AOD",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/first-nations.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 251,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "first-nations-aihw-aboriginal-data-statistics",
-          "title": "AIHW Aboriginal Data (Statistics)",
-          "category": "\udccb Policy & Research",
-          "query": "site:aihw.gov.au (\"Aboriginal\" OR \"Indigenous\") (\"alcohol and other drugs\" OR substance)",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/first-nations.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 257,
           "operators": [
             "site"
           ],
           "targetDomains": [
-            "aihw.gov.au"
-          ],
-          "domainCategory": "government",
-          "contentType": "any",
-          "tags": [
-            "data",
-            "australia"
-          ]
-        },
-        {
-          "id": "first-nations-diversion-programs-1",
-          "title": "Diversion Programs - 1",
-          "category": "⚖ Justice & Incarceration",
-          "query": "\"Aboriginal\" \"justice\" \"alcohol\" OR \"drug\" diversion",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/first-nations.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 267,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "services"
-          ]
-        },
-        {
-          "id": "first-nations-diversion-programs-2",
-          "title": "Diversion Programs - 2",
-          "category": "⚖ Justice & Incarceration",
-          "query": "\"Koori Court\" OR \"Murri Court\" drug OR alcohol",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/first-nations.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 273,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "services"
-          ]
-        },
-        {
-          "id": "first-nations-diversion-programs-3",
-          "title": "Diversion Programs - 3",
-          "category": "⚖ Justice & Incarceration",
-          "query": "\"Aboriginal Legal Service\" drug OR alcohol diversion",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/first-nations.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 279,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "services"
-          ]
-        },
-        {
-          "id": "first-nations-over-representation-1",
-          "title": "Over-Representation - 1",
-          "category": "⚖ Justice & Incarceration",
-          "query": "\"over-representation\" Aboriginal prison drug OR alcohol",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/first-nations.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 285,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "first-nations-over-representation-2",
-          "title": "Over-Representation - 2",
-          "category": "⚖ Justice & Incarceration",
-          "query": "\"Aboriginal\" \"incarceration\" OR \"prison\" drug OR alcohol",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/first-nations.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 291,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "first-nations-circle-sentencing",
-          "title": "Circle Sentencing",
-          "category": "⚖ Justice & Incarceration",
-          "query": "\"circle sentencing\" drug OR alcohol Aboriginal",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/first-nations.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 297,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "first-nations-stolen-generations",
-          "title": "Stolen Generations",
-          "category": "\udc94 Trauma & Healing",
-          "query": "\"Stolen Generations\" trauma \"substance\" OR \"alcohol\"",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/first-nations.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 307,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "first-nations-intergenerational-trauma-1",
-          "title": "Intergenerational Trauma - 1",
-          "category": "\udc94 Trauma & Healing",
-          "query": "\"intergenerational trauma\" \"alcohol\" OR \"drug\" Aboriginal",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/first-nations.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 313,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "first-nations-intergenerational-trauma-2",
-          "title": "Intergenerational Trauma - 2",
-          "category": "\udc94 Trauma & Healing",
-          "query": "\"historical trauma\" OR \"collective trauma\" Aboriginal substance",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/first-nations.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 319,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "first-nations-trauma-informed-care",
-          "title": "Trauma-Informed Care",
-          "category": "\udc94 Trauma & Healing",
-          "query": "\"trauma-informed\" Aboriginal (drug OR alcohol) service filetype:pdf",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/first-nations.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 325,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "services"
-          ]
-        },
-        {
-          "id": "first-nations-aboriginal-youth-1",
-          "title": "Aboriginal Youth - 1",
-          "category": "\udc68‍\udc69‍\udc67 Youth & Families",
-          "query": "\"Aboriginal youth\" drug OR alcohol prevention",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/first-nations.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 335,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "first-nations-aboriginal-youth-2",
-          "title": "Aboriginal Youth - 2",
-          "category": "\udc68‍\udc69‍\udc67 Youth & Families",
-          "query": "\"Aboriginal young people\" (AOD OR \"alcohol and other drugs\")",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/first-nations.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 341,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "first-nations-families-1",
-          "title": "Families - 1",
-          "category": "\udc68‍\udc69‍\udc67 Youth & Families",
-          "query": "\"Aboriginal families\" substance OR alcohol support",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/first-nations.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 347,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "first-nations-families-2",
-          "title": "Families - 2",
-          "category": "\udc68‍\udc69‍\udc67 Youth & Families",
-          "query": "\"kinship\" OR \"family\" Aboriginal \"alcohol drug\" healing",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/first-nations.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 353,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "first-nations-fasd",
-          "title": "FASD",
-          "category": "\udc68‍\udc69‍\udc67 Youth & Families",
-          "query": "\"Aboriginal\" (FASD OR \"fetal alcohol\") prevention",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/first-nations.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 359,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "first-nations-aboriginal-residential-rehab-1",
-          "title": "Aboriginal Residential Rehab - 1",
-          "category": "Residential & Treatment Services",
-          "query": "\"Aboriginal residential rehabilitation\" OR \"Aboriginal healing centre\"",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/first-nations.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 369,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "first-nations-aboriginal-residential-rehab-2",
-          "title": "Aboriginal Residential Rehab - 2",
-          "category": "Residential & Treatment Services",
-          "query": "\"Aboriginal\" (rehab OR rehabilitation) \"drug\" OR \"alcohol\"",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/first-nations.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 375,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "first-nations-culturally-safe-treatment",
-          "title": "Culturally Safe Treatment",
-          "category": "Residential & Treatment Services",
-          "query": "\"culturally safe\" treatment (Aboriginal OR Indigenous) (drug OR alcohol) Australia",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/first-nations.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 381,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "australia"
-          ]
-        },
-        {
-          "id": "first-nations-aihw-aboriginal-data-1",
-          "title": "AIHW Aboriginal Data - 1",
-          "category": "Data & Statistics",
-          "query": "site:aihw.gov.au \"Aboriginal\" \"alcohol\" statistics",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/first-nations.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 391,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "aihw.gov.au"
-          ],
-          "domainCategory": "government",
-          "contentType": "any",
-          "tags": [
-            "data",
-            "australia"
-          ]
-        },
-        {
-          "id": "first-nations-aihw-aboriginal-data-2",
-          "title": "AIHW Aboriginal Data - 2",
-          "category": "Data & Statistics",
-          "query": "site:abs.gov.au \"Indigenous\" \"substance use\" OR \"alcohol\"",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/first-nations.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 397,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
+            "aihw.gov.au",
             "abs.gov.au"
           ],
           "domainCategory": "government",
@@ -5042,40 +4543,30 @@
           ]
         },
         {
-          "id": "first-nations-overdose-death-data-1",
-          "title": "Overdose/Death Data - 1",
+          "id": "first-nations-community-controlled-research-data",
+          "title": "Community-Controlled Research Data",
           "category": "Data & Statistics",
-          "query": "\"Aboriginal\" \"overdose\" OR \"drug death\" data Australia",
-          "explanation": "",
+          "query": "(site:lowitja.org.au OR site:menzies.edu.au) (\"alcohol\" OR \"substance\" OR \"social and emotional wellbeing\") (research OR report) filetype:pdf",
+          "explanation": "> Lowitja is community-controlled; Menzies is a research institute working _in partnership with_\n> communities — note the difference when citing.",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/first-nations.md",
           "sourceType": "dork-pack",
-          "sourceLine": 403,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
+          "sourceLine": 245,
+          "operators": [
+            "site",
+            "filetype"
+          ],
+          "targetDomains": [
+            "lowitja.org.au",
+            "menzies.edu.au"
+          ],
+          "domainCategory": "education",
+          "contentType": "pdf",
           "tags": [
+            "documents",
+            "research",
             "data",
             "australia"
-          ]
-        },
-        {
-          "id": "first-nations-overdose-death-data-2",
-          "title": "Overdose/Death Data - 2",
-          "category": "Data & Statistics",
-          "query": "\"Aboriginal\" \"alcohol-related\" hospitalisation OR death statistics",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/first-nations.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 409,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "data"
           ]
         }
       ],
@@ -8285,301 +7776,23 @@
     {
       "id": "lgbtq-health",
       "title": "LGBTQ+ Health & Harm Reduction",
-      "description": "Resources for LGBTQ+ communities, including sexual health, chemsex, and inclusive services.",
+      "description": "AOD, chemsex, and inclusive services for LGBTQ+ communities — named by the actual peer program and",
       "dorks": [
         {
-          "id": "lgbtq-health-find-pdf-files",
-          "title": "Find PDF files",
+          "id": "lgbtq-health-search-betweenthelines-org-au",
+          "title": "Search betweenthelines.org.au",
           "category": "Quick Start",
-          "query": "(\"LGBTQ\" OR \"LGBTI\" OR \"queer\") (\"harm reduction\" OR \"alcohol and other drugs\") Australia filetype:pdf",
+          "query": "site:betweenthelines.org.au (\"party and play\" OR chemsex OR \"harm reduction\" OR GHB)",
           "explanation": "",
           "difficulty": "beginner",
           "sourceFile": "dork-packs/lgbtq-health.md",
           "sourceType": "dork-pack",
-          "sourceLine": 14,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "australia"
-          ]
-        },
-        {
-          "id": "lgbtq-health-lgbtq-aod-services",
-          "title": "LGBTQ+ AOD Services",
-          "category": "Basic Queries",
-          "query": "(\"LGBTQ\" OR \"LGBTI\" OR \"queer\" OR \"rainbow\") \"alcohol and other drugs\" service Australia",
-          "explanation": "",
-          "difficulty": "beginner",
-          "sourceFile": "dork-packs/lgbtq-health.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 21,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "services",
-            "australia"
-          ]
-        },
-        {
-          "id": "lgbtq-health-inclusive-treatment",
-          "title": "Inclusive Treatment",
-          "category": "Basic Queries",
-          "query": "\"LGBTQ\" OR \"LGBTI\" inclusive drug OR alcohol treatment Australia",
-          "explanation": "",
-          "difficulty": "beginner",
-          "sourceFile": "dork-packs/lgbtq-health.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 27,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "australia"
-          ]
-        },
-        {
-          "id": "lgbtq-health-rainbow-tick-services",
-          "title": "Rainbow Tick Services",
-          "category": "Basic Queries",
-          "query": "\"rainbow tick\" OR \"LGBTI inclusive\" AOD OR \"harm reduction\" Australia",
-          "explanation": "",
-          "difficulty": "beginner",
-          "sourceFile": "dork-packs/lgbtq-health.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 33,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "services",
-            "australia"
-          ]
-        },
-        {
-          "id": "lgbtq-health-chemsex-resources",
-          "title": "Chemsex Resources",
-          "category": "Intermediate Queries",
-          "query": "\"chemsex\" OR \"chem sex\" OR \"party and play\" harm reduction Australia",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/lgbtq-health.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 43,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "australia"
-          ]
-        },
-        {
-          "id": "lgbtq-health-ghb-gbl-specific",
-          "title": "GHB/GBL Specific",
-          "category": "Intermediate Queries",
-          "query": "\"GHB\" OR \"GBL\" OR \"G\" harm reduction \"gay men\" OR \"MSM\" Australia",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/lgbtq-health.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 49,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "australia"
-          ]
-        },
-        {
-          "id": "lgbtq-health-crystal-meth-lgbtq",
-          "title": "Crystal Meth & LGBTQ+",
-          "category": "Intermediate Queries",
-          "query": "(\"crystal meth\" OR \"methamphetamine\" OR \"ice\") (\"gay men\" OR \"MSM\" OR \"LGBTQ\") harm reduction Australia",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/lgbtq-health.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 55,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "australia"
-          ]
-        },
-        {
-          "id": "lgbtq-health-comprehensive-lgbtq-aod-sweep",
-          "title": "Comprehensive LGBTQ+ AOD Sweep",
-          "category": "Advanced Queries",
-          "query": "(\"LGBTQ\" OR \"LGBTI\" OR \"LGBTQIA\" OR \"queer\" OR \"gay\" OR \"lesbian\" OR \"bisexual\" OR \"transgender\" OR \"MSM\") (\"alcohol and other drugs\" OR AOD OR \"substance use\" OR \"drug use\" OR \"harm reduction\") Australia (service OR resource OR program OR guideline) filetype:pdf after:2020",
-          "explanation": "",
-          "difficulty": "advanced",
-          "sourceFile": "dork-packs/lgbtq-health.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 65,
-          "operators": [
-            "filetype",
-            "after"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "services",
-            "australia"
-          ]
-        },
-        {
-          "id": "lgbtq-health-intersectional-resources",
-          "title": "Intersectional Resources",
-          "category": "Advanced Queries",
-          "query": "(\"LGBTQ\" OR \"queer\") (\"Aboriginal\" OR \"First Nations\" OR \"Indigenous\") \"harm reduction\" Australia",
-          "explanation": "",
-          "difficulty": "advanced",
-          "sourceFile": "dork-packs/lgbtq-health.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 71,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "australia"
-          ]
-        },
-        {
-          "id": "lgbtq-health-sexual-health-drug-use",
-          "title": "Sexual Health & Drug Use",
-          "category": "\udfe5 Sexual Health Integration",
-          "query": "\"sexual health\" \"drug use\" OR \"substance use\" (\"gay men\" OR \"MSM\" OR \"LGBTQ\") Australia",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/lgbtq-health.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 81,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "australia"
-          ]
-        },
-        {
-          "id": "lgbtq-health-prep-drug-interactions",
-          "title": "PrEP & Drug Interactions",
-          "category": "\udfe5 Sexual Health Integration",
-          "query": "\"PrEP\" OR \"pre-exposure prophylaxis\" drug interaction harm reduction",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/lgbtq-health.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 87,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "lgbtq-health-hiv-services-aod",
-          "title": "HIV Services & AOD",
-          "category": "\udfe5 Sexual Health Integration",
-          "query": "\"HIV\" \"alcohol and other drugs\" OR AOD service Australia",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/lgbtq-health.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 93,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "services",
-            "australia"
-          ]
-        },
-        {
-          "id": "lgbtq-health-trans-specific-resources",
-          "title": "Trans-Specific Resources",
-          "category": "\udff3‍⚧ Trans & Gender Diverse",
-          "query": "(\"transgender\" OR \"trans\" OR \"gender diverse\") \"alcohol and other drugs\" OR \"harm reduction\" Australia",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/lgbtq-health.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 103,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "australia"
-          ]
-        },
-        {
-          "id": "lgbtq-health-hormone-therapy-substances",
-          "title": "Hormone Therapy & Substances",
-          "category": "\udff3‍⚧ Trans & Gender Diverse",
-          "query": "\"hormone therapy\" OR \"HRT\" drug interaction \"trans\" OR \"transgender\"",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/lgbtq-health.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 109,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "lgbtq-health-trans-inclusive-services",
-          "title": "Trans-Inclusive Services",
-          "category": "\udff3‍⚧ Trans & Gender Diverse",
-          "query": "\"trans inclusive\" OR \"trans affirming\" AOD OR drug OR alcohol service Australia",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/lgbtq-health.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 115,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "services",
-            "australia"
-          ]
-        },
-        {
-          "id": "lgbtq-health-acon-resources",
-          "title": "ACON Resources",
-          "category": "\udc65 Community Organizations",
-          "query": "site:acon.org.au (drug OR alcohol OR \"harm reduction\" OR chemsex)",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/lgbtq-health.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 125,
+          "sourceLine": 34,
           "operators": [
             "site"
           ],
           "targetDomains": [
-            "acon.org.au"
+            "betweenthelines.org.au"
           ],
           "domainCategory": "ngo",
           "contentType": "any",
@@ -8588,15 +7801,40 @@
           ]
         },
         {
-          "id": "lgbtq-health-thorne-harbour-health",
-          "title": "Thorne Harbour Health",
-          "category": "\udc65 Community Organizations",
-          "query": "site:thorneharbour.org (drug OR alcohol OR \"harm reduction\" OR chemsex)",
-          "explanation": "",
-          "difficulty": "intermediate",
+          "id": "lgbtq-health-acon-aod-chemsex-named-programs",
+          "title": "ACON AOD & Chemsex (Named Programs)",
+          "category": "Basic Queries",
+          "query": "(site:acon.org.au OR site:betweenthelines.org.au OR site:pivotpoint.org.au) (\"Between the Lines\" OR M3THOD OR \"ACON Rovers\" OR chemsex OR \"sexualised drug use\")",
+          "explanation": "**Why this works:**\n\n- Names ACON's actual AOD assets — the **Between the Lines** community hub, the peer chemsex service\n**M3THOD**, and the **ACON Rovers** event outreach — instead of guessing at generic terms",
+          "difficulty": "beginner",
           "sourceFile": "dork-packs/lgbtq-health.md",
           "sourceType": "dork-pack",
-          "sourceLine": 131,
+          "sourceLine": 41,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "acon.org.au",
+            "betweenthelines.org.au",
+            "pivotpoint.org.au"
+          ],
+          "domainCategory": "ngo",
+          "contentType": "any",
+          "tags": [
+            "services",
+            "australia"
+          ]
+        },
+        {
+          "id": "lgbtq-health-thorne-harbour-health-vic-sa",
+          "title": "Thorne Harbour Health (VIC/SA)",
+          "category": "Basic Queries",
+          "query": "site:thorneharbour.org (\"Re-Wired\" OR ReWired OR Anchor OR \"Triple A\" OR \"alcohol and other drug\" OR chemsex)",
+          "explanation": "",
+          "difficulty": "beginner",
+          "sourceFile": "dork-packs/lgbtq-health.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 52,
           "operators": [
             "site"
           ],
@@ -8608,73 +7846,279 @@
           "tags": []
         },
         {
-          "id": "lgbtq-health-lgbtq-health-australia",
-          "title": "LGBTQ+ Health Australia",
-          "category": "\udc65 Community Organizations",
-          "query": "site:lgbtiqhealth.org.au (drug OR alcohol OR \"substance use\")",
-          "explanation": "",
-          "difficulty": "intermediate",
+          "id": "lgbtq-health-national-lgbtiq-aod-info-touchbase",
+          "title": "National LGBTIQ+ AOD Info (Touchbase)",
+          "category": "Basic Queries",
+          "query": "site:touchbase.org.au (drugs OR alcohol OR chemsex OR \"mixing drugs\" OR \"drugs and HIV\")",
+          "explanation": "> Touchbase is run by **Thorne Harbour Health** (not ACON); check currency before relying on\n> specific drug-interaction advice.",
+          "difficulty": "beginner",
           "sourceFile": "dork-packs/lgbtq-health.md",
           "sourceType": "dork-pack",
-          "sourceLine": 137,
+          "sourceLine": 58,
           "operators": [
             "site"
           ],
           "targetDomains": [
-            "lgbtiqhealth.org.au"
+            "touchbase.org.au"
+          ],
+          "domainCategory": "ngo",
+          "contentType": "any",
+          "tags": [
+            "australia"
+          ]
+        },
+        {
+          "id": "lgbtq-health-chemsex-party-and-play",
+          "title": "Chemsex / Party and Play",
+          "category": "Intermediate Queries",
+          "query": "(\"chemsex\" OR \"party and play\" OR PnP OR \"sexualised drug use\") (site:betweenthelines.org.au OR site:pivotpoint.org.au OR site:thorneharbour.org OR site:touchbase.org.au)",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/lgbtq-health.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 71,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "betweenthelines.org.au",
+            "pivotpoint.org.au",
+            "thorneharbour.org",
+            "touchbase.org.au"
+          ],
+          "domainCategory": "ngo",
+          "contentType": "any",
+          "tags": [
+            "australia"
+          ]
+        },
+        {
+          "id": "lgbtq-health-ghb-gbl-specific",
+          "title": "GHB / GBL Specific",
+          "category": "Intermediate Queries",
+          "query": "(\"GHB\" OR \"GBL\" OR \"G\") (\"harm reduction\" OR \"overdose\" OR dosing OR \"party and play\") (site:betweenthelines.org.au OR site:touchbase.org.au)",
+          "explanation": "**Why this works:**\n\n- GHB/GBL dosing and overdose risk is the highest-acuity chemsex harm-reduction topic — the named\ncommunity hubs carry community-written guidance on it",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/lgbtq-health.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 77,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "betweenthelines.org.au",
+            "touchbase.org.au"
+          ],
+          "domainCategory": "ngo",
+          "contentType": "any",
+          "tags": [
+            "australia"
+          ]
+        },
+        {
+          "id": "lgbtq-health-crystal-methamphetamine-peer-support",
+          "title": "Crystal Methamphetamine & Peer Support",
+          "category": "Intermediate Queries",
+          "query": "(\"crystal meth\" OR methamphetamine OR ice) (\"gay\" OR \"bi+\" OR \"queer men\") (\"Re-Wired\" OR M3THOD OR \"peer support\" OR \"harm reduction\")",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/lgbtq-health.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 88,
+          "operators": [],
+          "targetDomains": [],
+          "domainCategory": "any",
+          "contentType": "any",
+          "tags": [
+            "peer"
+          ]
+        },
+        {
+          "id": "lgbtq-health-inclusive-practice-guidelines-for-providers",
+          "title": "Inclusive Practice Guidelines (for Providers)",
+          "category": "Intermediate Queries",
+          "query": "site:pivotpoint.org.au (\"Inclusive Practice Guidelines\" OR \"treatment providers\" OR NADA)",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/lgbtq-health.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 94,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "pivotpoint.org.au"
+          ],
+          "domainCategory": "ngo",
+          "contentType": "any",
+          "tags": [
+            "australia"
+          ]
+        },
+        {
+          "id": "lgbtq-health-comprehensive-lgbtq-aod-sweep",
+          "title": "Comprehensive LGBTQ+ AOD Sweep",
+          "category": "Advanced Queries",
+          "query": "(\"LGBTQ\" OR \"LGBTIQ\" OR \"LGBTQIA\" OR rainbow OR \"gay\" OR \"bi+\" OR \"trans\" OR \"gender diverse\") (\"alcohol and other drugs\" OR AOD OR chemsex OR \"sexualised drug use\" OR \"harm reduction\") (service OR resource OR \"peer support\") Australia filetype:pdf after:2020",
+          "explanation": "",
+          "difficulty": "advanced",
+          "sourceFile": "dork-packs/lgbtq-health.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 104,
+          "operators": [
+            "filetype",
+            "after"
+          ],
+          "targetDomains": [],
+          "domainCategory": "any",
+          "contentType": "pdf",
+          "tags": [
+            "documents",
+            "peer",
+            "services",
+            "australia"
+          ]
+        },
+        {
+          "id": "lgbtq-health-peer-led-lived-experience-programs",
+          "title": "Peer-Led & Lived-Experience Programs",
+          "category": "Advanced Queries",
+          "query": "(\"peer-led\" OR \"lived experience\" OR \"peer support\") (chemsex OR \"party and play\" OR \"alcohol and other drugs\") (site:acon.org.au OR site:thorneharbour.org)",
+          "explanation": "",
+          "difficulty": "advanced",
+          "sourceFile": "dork-packs/lgbtq-health.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 110,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "acon.org.au",
+            "thorneharbour.org"
+          ],
+          "domainCategory": "ngo",
+          "contentType": "any",
+          "tags": [
+            "peer",
+            "services",
+            "australia"
+          ]
+        },
+        {
+          "id": "lgbtq-health-prep-hiv-drug-interactions",
+          "title": "PrEP, HIV & Drug Interactions",
+          "category": "Advanced Queries",
+          "query": "(site:emen8.com.au OR site:endinghiv.org.au) (PrEP OR \"drug interaction\" OR chemsex OR \"party and play\")",
+          "explanation": "",
+          "difficulty": "advanced",
+          "sourceFile": "dork-packs/lgbtq-health.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 116,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "emen8.com.au",
+            "endinghiv.org.au"
+          ],
+          "domainCategory": "ngo",
+          "contentType": "any",
+          "tags": [
+            "australia"
+          ]
+        },
+        {
+          "id": "lgbtq-health-trans-inclusive-aod",
+          "title": "Trans-Inclusive AOD",
+          "category": "\udff3‍⚧ Trans & Gender Diverse",
+          "query": "(\"trans\" OR \"gender diverse\" OR \"transgender\") (\"alcohol and other drugs\" OR \"harm reduction\" OR chemsex) (inclusive OR affirming OR peer) Australia",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/lgbtq-health.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 126,
+          "operators": [],
+          "targetDomains": [],
+          "domainCategory": "any",
+          "contentType": "any",
+          "tags": [
+            "peer",
+            "australia"
+          ]
+        },
+        {
+          "id": "lgbtq-health-hormone-therapy-substances",
+          "title": "Hormone Therapy & Substances",
+          "category": "\udff3‍⚧ Trans & Gender Diverse",
+          "query": "(\"hormone therapy\" OR HRT OR \"gender affirming\") (\"drug interaction\" OR \"alcohol and other drugs\") (trans OR \"gender diverse\")",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/lgbtq-health.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 132,
+          "operators": [],
+          "targetDomains": [],
+          "domainCategory": "any",
+          "contentType": "any",
+          "tags": []
+        },
+        {
+          "id": "lgbtq-health-national-peak-peer-support",
+          "title": "National Peak & Peer Support",
+          "category": "\udc65 Community Organisations",
+          "query": "(site:lgbtiqhealth.org.au OR site:qlife.org.au) (\"alcohol and other drugs\" OR \"substance use\" OR \"peer support\" OR referral)",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/lgbtq-health.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 142,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "lgbtiqhealth.org.au",
+            "qlife.org.au"
           ],
           "domainCategory": "health",
           "contentType": "any",
           "tags": [
+            "peer",
             "australia"
           ]
         },
         {
-          "id": "lgbtq-health-dual-concerns",
-          "title": "Dual Concerns",
-          "category": "🧠 Mental Health & LGBTQ+",
-          "query": "(\"LGBTQ\" OR \"queer\") \"mental health\" \"substance use\" OR AOD Australia",
-          "explanation": "",
+          "id": "lgbtq-health-inclusive-practice-accreditation-rainbow-tick",
+          "title": "Inclusive-Practice Accreditation (Rainbow Tick)",
+          "category": "\udc65 Community Organisations",
+          "query": "site:rainbowhealthaustralia.org.au (\"Rainbow Tick\" OR \"inclusive practice\" OR training OR \"alcohol and other drugs\")",
+          "explanation": "> Rainbow Health Australia is a university-hosted training/accreditation body (La Trobe ARCSHS), not\n> a peer service — useful for finding inclusive-practice standards.",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/lgbtq-health.md",
           "sourceType": "dork-pack",
-          "sourceLine": 147,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
+          "sourceLine": 148,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "rainbowhealthaustralia.org.au"
+          ],
+          "domainCategory": "ngo",
           "contentType": "any",
           "tags": [
+            "training",
             "australia"
           ]
         },
         {
-          "id": "lgbtq-health-minority-stress",
-          "title": "Minority Stress",
-          "category": "🧠 Mental Health & LGBTQ+",
-          "query": "\"minority stress\" (\"substance use\" OR \"drug use\" OR AOD) LGBTQ Australia",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/lgbtq-health.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 153,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "australia"
-          ]
-        },
-        {
-          "id": "lgbtq-health-pride-events",
-          "title": "Pride Events",
+          "id": "lgbtq-health-query-16",
+          "title": "Query 16",
           "category": "\udf89 Events & Nightlife",
-          "query": "\"pride\" OR \"mardi gras\" \"harm reduction\" OR \"drug safety\" Australia",
+          "query": "(\"Mardi Gras\" OR Pride OR Midsumma OR \"queer nightlife\") (\"harm reduction\" OR \"drug checking\" OR \"ACON Rovers\" OR DanceWize) Australia",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/lgbtq-health.md",
           "sourceType": "dork-pack",
-          "sourceLine": 163,
+          "sourceLine": 162,
           "operators": [],
           "targetDomains": [],
           "domainCategory": "any",
@@ -8684,15 +8128,15 @@
           ]
         },
         {
-          "id": "lgbtq-health-queer-nightlife-safety",
-          "title": "Queer Nightlife Safety",
-          "category": "\udf89 Events & Nightlife",
-          "query": "\"queer\" OR \"LGBTQ\" nightlife OR club \"harm reduction\" OR safety Australia",
+          "id": "lgbtq-health-query-17",
+          "title": "Query 17",
+          "category": "🧠 Mental Health & Minority Stress",
+          "query": "(\"LGBTQ\" OR \"LGBTIQ\" OR queer) (\"minority stress\" OR \"mental health\") (\"substance use\" OR AOD OR chemsex) Australia",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/lgbtq-health.md",
           "sourceType": "dork-pack",
-          "sourceLine": 169,
+          "sourceLine": 170,
           "operators": [],
           "targetDomains": [],
           "domainCategory": "any",
@@ -8702,15 +8146,36 @@
           ]
         },
         {
-          "id": "lgbtq-health-lgbtq-drug-use-research",
-          "title": "LGBTQ+ Drug Use Research",
+          "id": "lgbtq-health-search-controllingchemsex-com",
+          "title": "Search controllingchemsex.com",
+          "category": "International Peer Layer (Chemsex)",
+          "query": "(site:controllingchemsex.com OR site:chemsex.co.uk) (chemsex OR \"harm reduction\" OR GHB OR \"first aid\")",
+          "explanation": "> UK-specific services (Terrence Higgins Trust runs `chemsex.co.uk`; the old \"Friday/Monday\"\n> redirects there) — the harm-reduction information transfers, the service referrals don't.",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/lgbtq-health.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 178,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "controllingchemsex.com",
+            "chemsex.co.uk"
+          ],
+          "domainCategory": "any",
+          "contentType": "any",
+          "tags": []
+        },
+        {
+          "id": "lgbtq-health-search-edu-au",
+          "title": "Search edu.au",
           "category": "Research & Data",
-          "query": "site:*.edu.au (\"LGBTQ\" OR \"gay\" OR \"MSM\") \"drug use\" OR \"substance use\" Australia filetype:pdf",
-          "explanation": "",
+          "query": "site:*.edu.au (\"LGBTQ\" OR \"gay\" OR \"bi+\" OR \"MSM\" OR \"gender diverse\") (\"drug use\" OR \"substance use\" OR chemsex) Australia filetype:pdf",
+          "explanation": "> \"MSM\" is the clinical/epidemiological term — pair it with community terms; it's not how most\n> people describe themselves.",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/lgbtq-health.md",
           "sourceType": "dork-pack",
-          "sourceLine": 179,
+          "sourceLine": 189,
           "operators": [
             "site",
             "filetype"
@@ -8722,66 +8187,6 @@
           "contentType": "pdf",
           "tags": [
             "documents",
-            "research",
-            "australia"
-          ]
-        },
-        {
-          "id": "lgbtq-health-prevalence-studies",
-          "title": "Prevalence Studies",
-          "category": "Research & Data",
-          "query": "(\"LGBTQ\" OR \"gay men\" OR \"MSM\") \"drug use\" (prevalence OR survey OR statistics) Australia",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/lgbtq-health.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 185,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "data",
-            "australia"
-          ]
-        },
-        {
-          "id": "lgbtq-health-young-lgbtq-people",
-          "title": "Young LGBTQ+ People",
-          "category": "\udc76 LGBTQ+ Youth",
-          "query": "(\"LGBTQ\" OR \"queer\") \"young people\" OR youth \"alcohol and other drugs\" Australia",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/lgbtq-health.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 195,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "australia"
-          ]
-        },
-        {
-          "id": "lgbtq-health-minus18-resources",
-          "title": "Minus18 Resources",
-          "category": "\udc76 LGBTQ+ Youth",
-          "query": "site:minus18.org.au (drug OR alcohol OR \"harm reduction\")",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/lgbtq-health.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 201,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "minus18.org.au"
-          ],
-          "domainCategory": "ngo",
-          "contentType": "any",
-          "tags": [
             "australia"
           ]
         }
@@ -18154,189 +17559,18 @@
     {
       "id": "sex-worker-health",
       "title": "Sex Worker Health & Safety",
-      "description": "Resources for sex worker health, safety, and harm reduction services.",
+      "description": "Health, safety, and harm reduction by and for sex workers — led by the peer organisations, named",
       "dorks": [
         {
-          "id": "sex-worker-health-find-pdf-files",
-          "title": "Find PDF files",
+          "id": "sex-worker-health-search-scarletalliance-org-au",
+          "title": "Search scarletalliance.org.au",
           "category": "Quick Start",
-          "query": "\"sex worker\" OR \"sex work\" health OR \"harm reduction\" Australia filetype:pdf",
+          "query": "site:scarletalliance.org.au (\"Red Book\" OR \"harm reduction\" OR health OR \"peer education\")",
           "explanation": "",
           "difficulty": "beginner",
           "sourceFile": "dork-packs/sex-worker-health.md",
           "sourceType": "dork-pack",
-          "sourceLine": 19,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "australia"
-          ]
-        },
-        {
-          "id": "sex-worker-health-sex-worker-health-services",
-          "title": "Sex Worker Health Services",
-          "category": "Basic Queries",
-          "query": "\"sex worker\" health service OR clinic Australia",
-          "explanation": "",
-          "difficulty": "beginner",
-          "sourceFile": "dork-packs/sex-worker-health.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 26,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "services",
-            "australia"
-          ]
-        },
-        {
-          "id": "sex-worker-health-peer-organizations",
-          "title": "Peer Organizations",
-          "category": "Basic Queries",
-          "query": "\"sex worker\" \"peer organisation\" OR \"peer organization\" Australia",
-          "explanation": "",
-          "difficulty": "beginner",
-          "sourceFile": "dork-packs/sex-worker-health.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 32,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "peer",
-            "australia"
-          ]
-        },
-        {
-          "id": "sex-worker-health-harm-reduction-resources",
-          "title": "Harm Reduction Resources",
-          "category": "Basic Queries",
-          "query": "\"sex work\" \"harm reduction\" Australia (resource OR guideline OR information)",
-          "explanation": "",
-          "difficulty": "beginner",
-          "sourceFile": "dork-packs/sex-worker-health.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 38,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "australia"
-          ]
-        },
-        {
-          "id": "sex-worker-health-drug-use-sex-work",
-          "title": "Drug Use & Sex Work",
-          "category": "Intermediate Queries",
-          "query": "\"sex worker\" OR \"sex work\" \"drug use\" OR \"alcohol and other drugs\" Australia",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/sex-worker-health.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 48,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "australia"
-          ]
-        },
-        {
-          "id": "sex-worker-health-overdose-prevention",
-          "title": "Overdose Prevention",
-          "category": "Intermediate Queries",
-          "query": "\"sex worker\" OR \"sex work\" (overdose OR naloxone) prevention Australia",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/sex-worker-health.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 54,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "australia"
-          ]
-        },
-        {
-          "id": "sex-worker-health-stimulant-use",
-          "title": "Stimulant Use",
-          "category": "Intermediate Queries",
-          "query": "\"sex work\" OR \"sex worker\" (methamphetamine OR \"crystal meth\" OR stimulant) harm reduction",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/sex-worker-health.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 60,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "sex-worker-health-comprehensive-sex-worker-resources",
-          "title": "Comprehensive Sex Worker Resources",
-          "category": "Advanced Queries",
-          "query": "(\"sex worker\" OR \"sex work\" OR \"people in the sex industry\") (\"harm reduction\" OR \"health service\" OR \"peer support\" OR safety) Australia (resource OR guideline OR service OR program) filetype:pdf after:2020",
-          "explanation": "",
-          "difficulty": "advanced",
-          "sourceFile": "dork-packs/sex-worker-health.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 70,
-          "operators": [
-            "filetype",
-            "after"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "peer",
-            "services",
-            "australia"
-          ]
-        },
-        {
-          "id": "sex-worker-health-intersectional-resources",
-          "title": "Intersectional Resources",
-          "category": "Advanced Queries",
-          "query": "\"sex worker\" (\"Aboriginal\" OR \"First Nations\" OR \"migrant\" OR \"trans\" OR \"CALD\") Australia",
-          "explanation": "",
-          "difficulty": "advanced",
-          "sourceFile": "dork-packs/sex-worker-health.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 76,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "australia"
-          ]
-        },
-        {
-          "id": "sex-worker-health-scarlet-alliance",
-          "title": "Scarlet Alliance",
-          "category": "\udc65 Peer Organizations",
-          "query": "site:scarletalliance.org.au (drug OR alcohol OR \"harm reduction\" OR health)",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/sex-worker-health.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 86,
+          "sourceLine": 35,
           "operators": [
             "site"
           ],
@@ -18346,288 +17580,144 @@
           "domainCategory": "ngo",
           "contentType": "any",
           "tags": [
-            "australia"
-          ]
-        },
-        {
-          "id": "sex-worker-health-rhed-resourcing-health-education",
-          "title": "RhED (Resourcing Health & Education)",
-          "category": "\udc65 Peer Organizations",
-          "query": "site:sexworker.org.au (drug OR alcohol OR \"harm reduction\" OR overdose)",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/sex-worker-health.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 92,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "sexworker.org.au"
-          ],
-          "domainCategory": "ngo",
-          "contentType": "any",
-          "tags": [
+            "peer",
             "training",
             "australia"
           ]
         },
         {
-          "id": "sex-worker-health-swop-nsw",
-          "title": "SWOP NSW",
-          "category": "\udc65 Peer Organizations",
-          "query": "site:swop.org.au (drug OR alcohol OR health OR safety)",
-          "explanation": "",
-          "difficulty": "intermediate",
+          "id": "sex-worker-health-peer-peak-health-resource-scarlet-alliance",
+          "title": "Peer Peak & Health Resource (Scarlet Alliance)",
+          "category": "Basic Queries",
+          "query": "site:scarletalliance.org.au (\"Red Book\" OR \"migration project\" OR SANTP OR drug OR \"harm reduction\")",
+          "explanation": "**Why this works:**\n\n- Goes to the national peer body and its named resource (**Red Book** — sexual-health info \"by sex\nworkers, for sex workers\") rather than a generic `\"sex worker\" health` query",
+          "difficulty": "beginner",
           "sourceFile": "dork-packs/sex-worker-health.md",
           "sourceType": "dork-pack",
-          "sourceLine": 98,
+          "sourceLine": 42,
           "operators": [
             "site"
           ],
           "targetDomains": [
-            "swop.org.au"
+            "scarletalliance.org.au"
           ],
           "domainCategory": "ngo",
           "contentType": "any",
           "tags": [
+            "peer",
             "australia"
           ]
         },
         {
-          "id": "sex-worker-health-respect-inc-qld",
-          "title": "Respect Inc (QLD)",
-          "category": "\udc65 Peer Organizations",
-          "query": "site:respectqld.org.au (drug OR alcohol OR health OR \"harm reduction\")",
-          "explanation": "",
-          "difficulty": "intermediate",
+          "id": "sex-worker-health-state-peer-organisations",
+          "title": "State Peer Organisations",
+          "category": "Basic Queries",
+          "query": "(site:swop.org.au OR site:vixen.org.au OR site:respectqld.org.au OR site:sin.org.au OR site:magenta.org.au) (drug OR alcohol OR \"harm reduction\" OR health OR safety)",
+          "explanation": "**Why this works:**\n\n- Names the peer-led state orgs — SWOP (NSW), Vixen (VIC, peer-only), Respect Inc (QLD), SIN (SA),\nMagenta (WA). Note Vixen is `vixen.org.au` (not vixencollective.org)",
+          "difficulty": "beginner",
           "sourceFile": "dork-packs/sex-worker-health.md",
           "sourceType": "dork-pack",
-          "sourceLine": 104,
+          "sourceLine": 53,
           "operators": [
             "site"
           ],
           "targetDomains": [
-            "respectqld.org.au"
+            "swop.org.au",
+            "vixen.org.au",
+            "respectqld.org.au",
+            "sin.org.au",
+            "magenta.org.au"
           ],
           "domainCategory": "ngo",
           "contentType": "any",
           "tags": [
+            "peer",
             "australia"
           ]
         },
         {
-          "id": "sex-worker-health-sexual-health",
-          "title": "Sexual Health",
-          "category": "\udfe5 Health Services",
-          "query": "\"sex worker\" \"sexual health\" service OR clinic Australia",
+          "id": "sex-worker-health-global-peer-network-nswp",
+          "title": "Global Peer Network (NSWP)",
+          "category": "Basic Queries",
+          "query": "site:nswp.org (\"smart guide\" OR \"briefing paper\" OR \"community guide\") (drug OR \"harm reduction\")",
           "explanation": "",
-          "difficulty": "intermediate",
+          "difficulty": "beginner",
           "sourceFile": "dork-packs/sex-worker-health.md",
           "sourceType": "dork-pack",
-          "sourceLine": 114,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
+          "sourceLine": 64,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "nswp.org"
+          ],
+          "domainCategory": "community",
           "contentType": "any",
           "tags": [
-            "services",
-            "australia"
+            "peer"
           ]
         },
         {
-          "id": "sex-worker-health-bbv-prevention",
-          "title": "BBV Prevention",
-          "category": "\udfe5 Health Services",
-          "query": "\"sex worker\" (\"HIV\" OR \"hepatitis\" OR \"BBV\") prevention Australia",
+          "id": "sex-worker-health-drug-use-sex-work-peer-harm-reduction",
+          "title": "Drug Use & Sex Work (Peer Harm Reduction)",
+          "category": "Intermediate Queries",
+          "query": "(site:scarletalliance.org.au OR site:swop.org.au OR site:vixen.org.au) (\"drug use\" OR \"alcohol and other drugs\" OR overdose OR naloxone OR stimulant)",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/sex-worker-health.md",
           "sourceType": "dork-pack",
-          "sourceLine": 120,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
+          "sourceLine": 74,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "scarletalliance.org.au",
+            "swop.org.au",
+            "vixen.org.au"
+          ],
+          "domainCategory": "ngo",
           "contentType": "any",
           "tags": [
+            "peer",
             "australia"
           ]
         },
         {
-          "id": "sex-worker-health-outreach-services",
-          "title": "Outreach Services",
-          "category": "\udfe5 Health Services",
-          "query": "\"sex worker\" outreach (health OR \"harm reduction\") Australia",
-          "explanation": "",
+          "id": "sex-worker-health-safety-ugly-mugs-peer-run",
+          "title": "Safety & Ugly Mugs (Peer-Run)",
+          "category": "Intermediate Queries",
+          "query": "(\"ugly mugs\" OR \"report a mug\") (site:swop.org.au OR site:sexworker.org.au OR site:magenta.org.au)",
+          "explanation": "> The Ugly Mugs bad-client reporting scheme is peer-run, delivered per-org (no single national\n> site), and the lists are sex-worker-only — don't dork into restricted content. (UK \"National Ugly\n> Mugs\" is a separate org.)",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/sex-worker-health.md",
           "sourceType": "dork-pack",
-          "sourceLine": 126,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
+          "sourceLine": 80,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "swop.org.au",
+            "sexworker.org.au",
+            "magenta.org.au"
+          ],
+          "domainCategory": "ngo",
           "contentType": "any",
           "tags": [
-            "services",
+            "documents",
+            "peer",
             "australia"
           ]
         },
         {
-          "id": "sex-worker-health-workplace-safety",
-          "title": "Workplace Safety",
-          "category": "\udee1 Safety Resources",
-          "query": "\"sex worker\" OR \"sex work\" (safety OR \"occupational health\") Australia guideline",
+          "id": "sex-worker-health-overdose-naloxone",
+          "title": "Overdose & Naloxone",
+          "category": "Intermediate Queries",
+          "query": "(\"sex worker\" OR \"sex work\") (overdose OR naloxone OR \"take-home naloxone\") (peer OR \"harm reduction\") Australia",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/sex-worker-health.md",
           "sourceType": "dork-pack",
-          "sourceLine": 136,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "australia"
-          ]
-        },
-        {
-          "id": "sex-worker-health-violence-prevention",
-          "title": "Violence Prevention",
-          "category": "\udee1 Safety Resources",
-          "query": "\"sex worker\" violence prevention OR safety resource Australia",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/sex-worker-health.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 142,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "australia"
-          ]
-        },
-        {
-          "id": "sex-worker-health-legal-information",
-          "title": "Legal Information",
-          "category": "\udee1 Safety Resources",
-          "query": "\"sex work\" law OR legal rights (NSW OR VIC OR QLD) Australia",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/sex-worker-health.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 148,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "australia"
-          ]
-        },
-        {
-          "id": "sex-worker-health-trans-specific-resources",
-          "title": "Trans-Specific Resources",
-          "category": "\udff3‍⚧ Trans Sex Workers",
-          "query": "\"trans\" OR \"transgender\" \"sex worker\" (health OR safety OR resource) Australia",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/sex-worker-health.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 158,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "australia"
-          ]
-        },
-        {
-          "id": "sex-worker-health-trans-health-sex-work",
-          "title": "Trans Health & Sex Work",
-          "category": "\udff3‍⚧ Trans Sex Workers",
-          "query": "\"trans sex worker\" OR \"transgender sex worker\" harm reduction Australia",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/sex-worker-health.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 164,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "australia"
-          ]
-        },
-        {
-          "id": "sex-worker-health-migrant-resources",
-          "title": "Migrant Resources",
-          "category": "Migrant Sex Workers",
-          "query": "\"migrant\" \"sex worker\" (health OR support OR service) Australia",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/sex-worker-health.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 174,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "services",
-            "australia"
-          ]
-        },
-        {
-          "id": "sex-worker-health-multilingual-resources",
-          "title": "Multilingual Resources",
-          "category": "Migrant Sex Workers",
-          "query": "\"sex worker\" (Chinese OR Thai OR Korean OR Vietnamese) resource Australia",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/sex-worker-health.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 180,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "australia"
-          ]
-        },
-        {
-          "id": "sex-worker-health-mental-health-support",
-          "title": "Mental Health Support",
-          "category": "🧠 Mental Health & Wellbeing",
-          "query": "\"sex worker\" \"mental health\" support OR service Australia",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/sex-worker-health.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 190,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "services",
-            "australia"
-          ]
-        },
-        {
-          "id": "sex-worker-health-peer-support",
-          "title": "Peer Support",
-          "category": "🧠 Mental Health & Wellbeing",
-          "query": "\"sex worker\" \"peer support\" OR \"peer counselling\" Australia",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/sex-worker-health.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 196,
+          "sourceLine": 90,
           "operators": [],
           "targetDomains": [],
           "domainCategory": "any",
@@ -18638,15 +17728,242 @@
           ]
         },
         {
-          "id": "sex-worker-health-academic-research",
-          "title": "Academic Research",
-          "category": "Research & Data",
-          "query": "site:*.edu.au \"sex worker\" OR \"sex work\" health OR \"harm reduction\" Australia filetype:pdf",
+          "id": "sex-worker-health-comprehensive-peer-led-sweep",
+          "title": "Comprehensive Peer-Led Sweep",
+          "category": "Advanced Queries",
+          "query": "(site:scarletalliance.org.au OR site:swop.org.au OR site:vixen.org.au OR site:respectqld.org.au OR site:sin.org.au OR site:magenta.org.au OR site:nswp.org) (\"harm reduction\" OR \"drug use\" OR overdose OR safety OR health) (resource OR guide OR program)",
+          "explanation": "",
+          "difficulty": "advanced",
+          "sourceFile": "dork-packs/sex-worker-health.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 100,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "scarletalliance.org.au",
+            "swop.org.au",
+            "vixen.org.au",
+            "respectqld.org.au",
+            "sin.org.au",
+            "magenta.org.au",
+            "nswp.org"
+          ],
+          "domainCategory": "ngo",
+          "contentType": "any",
+          "tags": [
+            "peer",
+            "services",
+            "australia"
+          ]
+        },
+        {
+          "id": "sex-worker-health-decriminalisation-context-state-specific",
+          "title": "Decriminalisation Context (State-Specific)",
+          "category": "Advanced Queries",
+          "query": "(\"sex work\" OR \"sex worker\") (decriminalisation OR \"law reform\") (NSW OR Victoria OR Queensland OR \"Northern Territory\" OR \"South Australia\") (site:scarletalliance.org.au OR site:*.gov.au)",
+          "explanation": "**Why this works:**\n\n- Legal status differs by state and drives risk — SIN (SA) leads decrim advocacy in the one still-\ncriminalised state; tying the search to jurisdiction surfaces the right framing",
+          "difficulty": "advanced",
+          "sourceFile": "dork-packs/sex-worker-health.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 106,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "scarletalliance.org.au",
+            "gov.au"
+          ],
+          "domainCategory": "government",
+          "contentType": "any",
+          "tags": [
+            "australia"
+          ]
+        },
+        {
+          "id": "sex-worker-health-intersectional-resources",
+          "title": "Intersectional Resources",
+          "category": "Advanced Queries",
+          "query": "(\"sex worker\") (\"Aboriginal\" OR \"Torres Strait Islander\" OR migrant OR CALD OR \"trans\" OR \"gender diverse\") (health OR \"harm reduction\" OR peer) Australia",
+          "explanation": "",
+          "difficulty": "advanced",
+          "sourceFile": "dork-packs/sex-worker-health.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 117,
+          "operators": [],
+          "targetDomains": [],
+          "domainCategory": "any",
+          "contentType": "any",
+          "tags": [
+            "peer",
+            "australia"
+          ]
+        },
+        {
+          "id": "sex-worker-health-migrant-peer-projects",
+          "title": "Migrant Peer Projects",
+          "category": "Migrant & CALD Sex Workers",
+          "query": "(site:scarletalliance.org.au OR site:vixen.org.au) (migrant OR CALD OR \"Asian Migrant Project\" OR multilingual) (health OR \"harm reduction\" OR rights)",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/sex-worker-health.md",
           "sourceType": "dork-pack",
-          "sourceLine": 206,
+          "sourceLine": 127,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "scarletalliance.org.au",
+            "vixen.org.au"
+          ],
+          "domainCategory": "ngo",
+          "contentType": "any",
+          "tags": [
+            "peer",
+            "australia"
+          ]
+        },
+        {
+          "id": "sex-worker-health-multilingual-resources",
+          "title": "Multilingual Resources",
+          "category": "Migrant & CALD Sex Workers",
+          "query": "(\"sex worker\") (Chinese OR Thai OR Korean OR Vietnamese OR multilingual) (health OR resource) (site:scarletalliance.org.au OR site:*.org.au)",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/sex-worker-health.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 133,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "scarletalliance.org.au",
+            "org.au"
+          ],
+          "domainCategory": "ngo",
+          "contentType": "any",
+          "tags": [
+            "australia"
+          ]
+        },
+        {
+          "id": "sex-worker-health-query-13",
+          "title": "Query 13",
+          "category": "\udff3‍⚧ Trans & Gender Diverse Sex Workers",
+          "query": "(\"trans\" OR \"gender diverse\" OR \"transgender\") \"sex worker\" (health OR safety OR \"harm reduction\" OR peer) Australia",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/sex-worker-health.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 144,
+          "operators": [],
+          "targetDomains": [],
+          "domainCategory": "any",
+          "contentType": "any",
+          "tags": [
+            "peer",
+            "australia"
+          ]
+        },
+        {
+          "id": "sex-worker-health-sexual-health-bbv-prevention",
+          "title": "Sexual Health & BBV Prevention",
+          "category": "\udfe5 Health Services & BBV",
+          "query": "\"sex worker\" (\"sexual health\" OR HIV OR hepatitis OR BBV) (peer OR outreach OR clinic) Australia",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/sex-worker-health.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 151,
+          "operators": [],
+          "targetDomains": [],
+          "domainCategory": "any",
+          "contentType": "any",
+          "tags": [
+            "peer",
+            "services",
+            "australia"
+          ]
+        },
+        {
+          "id": "sex-worker-health-disability-sex-work-touching-base",
+          "title": "Disability & Sex Work (Touching Base)",
+          "category": "\udfe5 Health Services & BBV",
+          "query": "site:touchingbase.org (\"disability\" AND \"sex work\")",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/sex-worker-health.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 157,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "touchingbase.org"
+          ],
+          "domainCategory": "any",
+          "contentType": "any",
+          "tags": []
+        },
+        {
+          "id": "sex-worker-health-rights-based-submissions-inquiries",
+          "title": "Rights-Based Submissions & Inquiries",
+          "category": "⚖ Policy & Advocacy",
+          "query": "(site:scarletalliance.org.au OR site:*.gov.au) (\"sex work\" OR \"sex worker\") (submission OR inquiry OR \"law reform\") filetype:pdf",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/sex-worker-health.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 167,
+          "operators": [
+            "site",
+            "filetype"
+          ],
+          "targetDomains": [
+            "scarletalliance.org.au",
+            "gov.au"
+          ],
+          "domainCategory": "government",
+          "contentType": "pdf",
+          "tags": [
+            "documents",
+            "australia"
+          ]
+        },
+        {
+          "id": "sex-worker-health-decriminalisation-advocacy",
+          "title": "Decriminalisation Advocacy",
+          "category": "⚖ Policy & Advocacy",
+          "query": "(\"sex worker rights\" OR \"decriminalisation\" OR \"rights-based\") (site:scarletalliance.org.au OR site:sin.org.au OR site:nswp.org)",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/sex-worker-health.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 173,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "scarletalliance.org.au",
+            "sin.org.au",
+            "nswp.org"
+          ],
+          "domainCategory": "ngo",
+          "contentType": "any",
+          "tags": [
+            "australia"
+          ]
+        },
+        {
+          "id": "sex-worker-health-search-edu-au",
+          "title": "Search edu.au",
+          "category": "Research & Data",
+          "query": "site:*.edu.au (\"sex worker\" OR \"sex work\") (health OR \"harm reduction\" OR \"drug use\") Australia filetype:pdf",
+          "explanation": "> Prefer peer-authored and peer-partnered research; sex-worker orgs are wary of extractive research\n> that isn't worker-led.",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/sex-worker-health.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 184,
           "operators": [
             "site",
             "filetype"
@@ -18655,89 +17972,6 @@
             "edu.au"
           ],
           "domainCategory": "education",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "research",
-            "australia"
-          ]
-        },
-        {
-          "id": "sex-worker-health-health-data",
-          "title": "Health Data",
-          "category": "Research & Data",
-          "query": "\"sex worker\" (survey OR study OR data) health Australia filetype:pdf",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/sex-worker-health.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 212,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "research",
-            "data",
-            "australia"
-          ]
-        },
-        {
-          "id": "sex-worker-health-decriminalisation",
-          "title": "Decriminalisation",
-          "category": "⚖ Policy & Advocacy",
-          "query": "\"sex work\" decriminalisation OR decriminalization (Australia OR NSW OR VIC) policy",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/sex-worker-health.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 222,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "policy",
-            "australia"
-          ]
-        },
-        {
-          "id": "sex-worker-health-rights-based-approaches",
-          "title": "Rights-Based Approaches",
-          "category": "⚖ Policy & Advocacy",
-          "query": "\"sex worker rights\" OR \"rights-based\" \"sex work\" policy Australia",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/sex-worker-health.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 228,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "policy",
-            "australia"
-          ]
-        },
-        {
-          "id": "sex-worker-health-submissions-inquiries",
-          "title": "Submissions & Inquiries",
-          "category": "⚖ Policy & Advocacy",
-          "query": "\"sex work\" OR \"sex worker\" (submission OR inquiry) parliament Australia filetype:pdf",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/sex-worker-health.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 234,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
           "contentType": "pdf",
           "tags": [
             "documents",
@@ -27145,9 +26379,9 @@
     }
   ],
   "meta": {
-    "buildDate": "2026-06-27T17:12:51.493Z",
+    "buildDate": "2026-06-27T17:33:44.849Z",
     "version": "2.0.0",
-    "totalDorks": 1244,
+    "totalDorks": 1195,
     "sourceFiles": [
       "01-quick-start.md",
       "02-core-operators.md",
