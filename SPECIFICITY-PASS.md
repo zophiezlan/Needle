@@ -48,14 +48,15 @@ These were chosen by the project owner. Keep to them unless told otherwise:
 
 ## 2. What's Done So Far
 
-| #   | Commit theme                                      | Artifact                                                                    |
-| --- | ------------------------------------------------- | --------------------------------------------------------------------------- |
-| 1   | Reference layer built                             | `docs/resources/source-intelligence.md`                                     |
-| 2   | Flagged entries verified/corrected via web search | same file                                                                   |
-| 3   | Drug-checking pack rewritten (proof-of-concept)   | `docs/dork-packs/drug-checking.md`                                          |
-| 4   | Batch 2 rewritten + reference verified/extended   | `naloxone`, `supervised-consumption`, `novel-substances`, `coroners-deaths` |
-| 5   | Batch 3 rewritten + reference verified/extended   | `drug-alerts`, `nsp`, `research`, `data-statistics`                         |
-| 6   | Batch 4 rewritten + reference verified/extended   | `oat-ost`, `international`, `peer-workforce`, `forum-community`             |
+| #   | Commit theme                                      | Artifact                                                                     |
+| --- | ------------------------------------------------- | ---------------------------------------------------------------------------- |
+| 1   | Reference layer built                             | `docs/resources/source-intelligence.md`                                      |
+| 2   | Flagged entries verified/corrected via web search | same file                                                                    |
+| 3   | Drug-checking pack rewritten (proof-of-concept)   | `docs/dork-packs/drug-checking.md`                                           |
+| 4   | Batch 2 rewritten + reference verified/extended   | `naloxone`, `supervised-consumption`, `novel-substances`, `coroners-deaths`  |
+| 5   | Batch 3 rewritten + reference verified/extended   | `drug-alerts`, `nsp`, `research`, `data-statistics`                          |
+| 6   | Batch 4 rewritten + reference verified/extended   | `oat-ost`, `international`, `peer-workforce`, `forum-community`              |
+| 7   | Batch 5 rewritten + reference verified/extended   | `policy-advocacy`, `festivals`, `service-directories`, `safer-use-education` |
 
 - **`source-intelligence.md`** is the heart of this work: an entity → searchable-signal map. For
   each real org/service/dataset it records the `site:` target, the named publications to put in
@@ -176,16 +177,22 @@ against verified entities; reference layer gained a new § "Opioid Agonist Treat
 fully country-organised International section (Canada/UK/Europe/NZ), and peer-workforce frameworks +
 verified peer-org social handles. Fixed forum-community's corrupted Twitter handles.
 
-**Suggested next batch:** `policy-advocacy`, `service-directories`, `safer-use-education`,
-`festivals` — all need their reference sections built first (§4).
+**Done (batch 5):** `policy-advocacy`, `festivals`, `service-directories`, `safer-use-education` —
+reference sections built from scratch (§4): four new source-intelligence sections — "Policy,
+Inquiries & Advocacy", "Festivals & Events", "Service Finders & Directories", and "Safer-Use
+Education & Plain-Language Resources". Resolved the Crew (`crew.scot`) flag.
+
+**Suggested next batch:** the population/setting packs — `youth`, `families-carers`,
+`housing-homelessness`, `mental-health` (each needs a reference section built first, §4). Handle the
+community-controlled/peer packs (`first-nations`, `sex-worker-health`, `lgbtq-health`) with extra
+care — see note below.
 
 ### Packs needing a reference section built first (§4 before §3)
 
-`festivals` · `first-nations` · `lgbtq-health` · `prisons-justice` · `rural-remote` ·
-`sex-worker-health` · `youth` · `families-carers` · `housing-homelessness` · `mental-health` ·
-`policy-advocacy` · `service-directories` · `stigma-language` · `temporal-intelligence` ·
-`organizational-intelligence` · `investigative` · `document-discovery` · `multimedia-discovery` ·
-`safer-use-education` · `user-hosted-domains`
+`first-nations` · `lgbtq-health` · `prisons-justice` · `rural-remote` · `sex-worker-health` ·
+`youth` · `families-carers` · `housing-homelessness` · `mental-health` · `stigma-language` ·
+`temporal-intelligence` · `organizational-intelligence` · `investigative` · `document-discovery` ·
+`multimedia-discovery` · `user-hosted-domains`
 
 > For `first-nations`, `sex-worker-health`, and `lgbtq-health` especially: prioritise community-
 > controlled and peer sources, and be careful with framing/terminology. When in doubt, flag for
@@ -222,16 +229,31 @@ NUAA handle `@nuaansw`, HRVic `@HRV_Aust` (replacing the corrupted `from:aaborgi
 Release/The Loop/Transform, ICAD/CDT, Saferparty/HeGeBe, Trimbos/DIMS, akzept/JES, NZ Drug
 Foundation/The Level/KnowYourStuffNZ, AIVL/SHARC peer frameworks.
 
-Still flagged: **ATLAS** is an Aboriginal & Torres Strait Islander STI/BBV surveillance network, not
-a PWID cohort — keep flagged for Indigenous-data-sovereignty / cultural-safety review. **NT coroner
-host** is unstable (spread across `nt.gov.au` and `agd.nt.gov.au`) — use the multi-site form.
-**EDND** ("European Database on New Drugs") is access-restricted, not web-indexed — dropped as a
-quotable signal (use `"EU Early Warning System"` + EUDA/EMCDDA filters). **WA** has no public
-drug-alert index — use a keyword fallback. **National NSP policy** has no current standalone title
-(the 2010–2014 framework is expired) — target the National Drug Strategy / BBV strategies instead.
-**ASHM** has no verifiable named OAT prescriber course — use RACGP MATOD / OTEP / state programs.
-**Crew (Scotland)** `crew.scot` still unverified. **Bluesky** handles for AU peer orgs unconfirmed —
-use org-name + `site:bsky.app`, don't guess a handle.
+Resolved/corrected in batch 5: national AOD peak = **AADC** (`aadc.org.au`) — not "AADA"; **Fair
+Treatment** is `fairtreatment.org` and **Unharm** is `unharm.org` (both `.org`, not `.org.au`);
+**SSDP Australia** is `ssdp.org.au` (global is `ssdp.org`); **Path2Help** lives on `adf.org.au` (the
+standalone `path2help.org.au` is dead); SA **DASSA** is under `sahealth.sa.gov.au`
+(`dassa.sa.gov.au` is dead); WA's Alcohol and Drug Support Line moved to **ADMHSS**
+(`admhss.mhc.wa.gov.au`); **Rainbow Serpent** renamed **Rainbow Spirit Festival**
+(`rainbowspirit.net`); **Crew** flag resolved (`crew.scot` = "Crew 2000 (Scotland)"). New named
+entities: National Drug Strategy 2017-2026, NSW Ice Inquiry, 2024 NSW Drug Summit, ACT decrim Act,
+NSW music-festival inquest + Music Festivals Act 2019, ACT GTM / VIC pill-testing trials,
+DanceWize/DanceWize NSW, AIDR "Safe and Healthy Crowded Places", the state/national service finders,
+and the safer-use education producers.
+
+Still flagged: **ACEM** has no verifiable festival/mass-gathering guideline title — use the AIDR
+"Safe and Healthy Crowded Places" handbook instead. No titled **"Easy Read"** harm-reduction series
+verified — use a broad `("easy read" OR "plain language")` fallback. **ATLAS** is an Aboriginal &
+Torres Strait Islander STI/BBV surveillance network, not a PWID cohort — keep flagged for
+Indigenous-data-sovereignty / cultural-safety review. **NT coroner host** is unstable (spread across
+`nt.gov.au` and `agd.nt.gov.au`) — use the multi-site form. **EDND** ("European Database on New
+Drugs") is access-restricted, not web-indexed — dropped as a quotable signal (use
+`"EU Early Warning System"` + EUDA/EMCDDA filters). **WA** has no public drug-alert index — use a
+keyword fallback. **National NSP policy** has no current standalone title (the 2010–2014 framework
+is expired) — target the National Drug Strategy / BBV strategies instead. **ASHM** has no verifiable
+named OAT prescriber course — use RACGP MATOD / OTEP / state programs. **Crew (Scotland)**
+`crew.scot` still unverified. **Bluesky** handles for AU peer orgs unconfirmed — use org-name +
+`site:bsky.app`, don't guess a handle.
 
 ---
 

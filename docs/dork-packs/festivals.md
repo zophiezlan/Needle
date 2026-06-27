@@ -1,67 +1,95 @@
 # Festivals & Event Harm Reduction
 
-> Planning, safety plans, medical directives, and event-specific intelligence for festival health.
+> Find the peer programs, pill-testing trials, coronial drivers, and event-health resources behind
+> festival harm reduction — named by program, trial, and finding.
 
 [← Back to Dork Packs](README.md) | [← Main Guide](../README.md)
 
 ---
 
+## 👥 About This Pack
+
+Festival harm reduction in Australia is led by peers — **DanceWize** (HRVic) in Victoria and
+**DanceWize NSW** (NUAA) in NSW run the crowd-care model. Policy moves on named drivers: the 2019
+NSW **Inquest into the death of six patrons of NSW music festivals**, the **Music Festivals Act
+2019**, the ACT **Groovin the Moo pill-testing pilots** (2018/2019), and Victoria's 2024
+**pill-testing Act** and trial. Quote those, and pair festival names with a harm-reduction term
+(several festivals are defunct or renamed).
+
+> **Entity reference:** every program, trial, and finding below is catalogued in
+> [Source Intelligence → Festivals & Events](../resources/source-intelligence.md#-festivals--events).
+>
+> **Sensitivity:** this pack touches festival deaths and coronial findings. Handle results — and
+> anything naming an individual — with care and respect.
+
+---
+
 ## ⚡ Quick Start
 
-Find festival harm reduction resources:
+Find the peer crowd-care program at the heart of Australian festival harm reduction:
 
 ```txt
-("festival" OR "music event") "harm reduction" filetype:pdf -news -opinion
+("DanceWize" OR "DanceWize NSW") ("crowd care" OR "harm reduction" OR festival)
 ```
 
 ---
 
 ## 🟢 Basic Queries
 
+### DanceWize & DanceWize NSW (Peer Programs)
+
+```txt
+(site:hrvic.org.au OR site:dancewizensw.org.au OR site:nuaa.org.au) ("DanceWize" OR "crowd care")
+```
+
+**Why this works:**
+
+- DanceWize (HRVic, since 1999) and DanceWize NSW (NUAA) are the named peer crowd-care services —
+  this is the by-and-with-peers core, not the lab side
+
+### Drug Checking at Festivals
+
+```txt
+("drug checking" OR "pill testing") festival (Australia OR NSW OR VIC OR ACT) (evaluation OR report OR trial)
+```
+
 ### General Festival Harm Reduction
 
 ```txt
-("festival" OR "music event") ("harm reduction" OR "drug checking" OR "peer-led") filetype:pdf -news
-```
-
-### Festival Medical Planning
-
-```txt
-(festival OR "music event") ("medical plan" OR "health plan" OR "event health") filetype:pdf
-```
-
-### Australian Festival Resources
-
-```txt
-(festival OR "music festival") harm reduction Australia (guideline OR protocol OR evaluation) filetype:pdf
+("festival" OR "music event") ("harm reduction" OR "crowd care" OR "drug checking") filetype:pdf -news
 ```
 
 ---
 
 ## 🟡 Intermediate Queries
 
-### Event Safety Plans
+### ACT Pill-Testing Pilots (Groovin the Moo)
 
 ```txt
-(inurl:festival OR inurl:event) ("medical plan" OR "health plan" OR "safety plan") filetype:pdf
+("Report on the ACT GTM Pill Testing Pilot" OR "Report on the 2nd ACT GTM Pill Testing Pilot") (site:harmreductionaustralia.org.au OR site:pilltestingaustralia.com.au OR site:apo.org.au)
 ```
 
-### Drug Checking at Festivals
+**Why this works:**
+
+- Australia's first sanctioned festival pill-testing trials (2018 STA-SAFE Consortium; 2019 Pill
+  Testing Australia) — quoting the exact report titles finds the evaluations, not media recaps
+
+### Victorian Pill-Testing Trial (2024–)
 
 ```txt
-"drug checking" festival (Australia OR NSW OR VIC OR ACT) (evaluation OR report)
+("Drugs, Poisons and Controlled Substances Amendment (Pill Testing) Act 2024" OR "Beyond the Valley" pill testing) ("YSAS" OR "The Loop Australia" OR "Harm Reduction Victoria")
 ```
 
-### DanceWize & Peer Programs
+### Coronial Drivers
 
 ```txt
-"DanceWize" OR ("peer harm reduction" festival) filetype:pdf
+"Inquest into the death of six patrons of NSW music festivals" site:coroners.nsw.gov.au
 ```
 
-### Festival Medical Guidelines
+### Event Medical Planning
 
 ```txt
-"festival medical" (guidelines OR protocol OR "best practice") filetype:pdf
+(festival OR "music event") ("safety management plan" OR "event health" OR "medical plan") filetype:pdf
 ```
 
 ---
@@ -71,221 +99,164 @@ Find festival harm reduction resources:
 ### Comprehensive Festival Health Sweep
 
 ```txt
-(festival OR "music event" OR "outdoor event") ("harm reduction" OR "drug safety" OR "event health") (Australia OR NSW OR VIC OR QLD) (evaluation OR report OR guideline) filetype:pdf -news after:2020
+(festival OR "music event") ("harm reduction" OR "drug checking" OR "crowd care" OR "event health") (Australia OR NSW OR VIC OR QLD) (evaluation OR report OR guideline) filetype:pdf -news after:2020
 ```
 
-### Roving Medical/Welfare Teams
+### Crowd & Mass-Gathering Safety
 
 ```txt
-(festival OR "music event") ("roving" OR "welfare team" OR "peer support") (protocol OR training OR guideline)
+("Safe and Healthy Crowded Places" OR "mass gathering" OR "crowd safety") (festival OR event) (guideline OR handbook OR protocol)
 ```
 
-### Chill-Out Spaces
+### Welfare & Chill-Out Models
 
 ```txt
-("chill out" OR "chill-out" OR "welfare tent" OR "safe space") festival (guideline OR protocol OR training) filetype:pdf
-```
-
-### Heat/Weather Safety
-
-```txt
-(festival OR "outdoor event") (heat OR weather OR dehydration OR "heat stress") (safety OR guideline OR protocol)
-```
-
-### Crowd Safety
-
-```txt
-(festival OR "music event") ("crowd safety" OR "crowd crush" OR "crowd management") (guideline OR protocol)
+(festival OR "music event") ("crowd care" OR "welfare tent" OR "chill-out" OR "roving") (protocol OR training OR evaluation)
 ```
 
 ---
 
-## 🎪 Specific Major Festivals
+## ⚖️ Coronial & Policy Drivers
 
-### Australian Festivals - Groovin the Moo
+The findings and laws that shaped Australian festival policy.
+
+### NSW Music-Festival Deaths Inquest (2019)
 
 ```txt
-"Groovin the Moo" ("drug checking" OR "harm reduction" OR medical)
+"Inquest into the death of six patrons of NSW music festivals" ("Harriet Grahame" OR recommendation) site:coroners.nsw.gov.au
 ```
 
-### Australian Festivals - Lost Paradise
+### NSW Music Festivals Act 2019
 
 ```txt
-"Lost Paradise" ("drug checking" OR "harm reduction")
+("Music Festivals Act 2019" OR "Review of the Music Festivals Act 2019") site:legislation.nsw.gov.au OR site:nsw.gov.au
 ```
 
-### Australian Festivals - Splendour in the Grass
+### Victorian Pill-Testing Act 2024
 
 ```txt
-"Splendour in the Grass" ("harm reduction" OR "medical report")
-```
-
-### Australian Festivals - Falls Festival
-
-```txt
-"Falls Festival" ("harm reduction" OR medical OR "incident report")
-```
-
-### Australian Festivals - Rainbow Serpent
-
-```txt
-"Rainbow Serpent" harm reduction OR "event health"
-```
-
-### Australian Festivals - Strawberry Fields
-
-```txt
-"Strawberry Fields" "drug checking" OR "harm reduction"
-```
-
-### Australian Festivals - Subsonic
-
-```txt
-"Subsonic" harm reduction
-```
-
-### Australian Festivals - Beyond the Valley
-
-```txt
-"Beyond the Valley" medical OR "harm reduction"
-```
-
-### Finding Event-Specific Intelligence
-
-```txt
-"[FESTIVAL NAME]" ("harm reduction" OR "medical" OR "drug checking" OR "incident")
+"Drugs, Poisons and Controlled Substances Amendment (Pill Testing) Act 2024" site:legislation.vic.gov.au
 ```
 
 ---
 
-## 🏥 Medical & Clinical
+## 💊 Pill Testing / Drug Checking at Festivals
 
-### Medical Services at Events
-
-```txt
-"event medical" OR "festival medical" (services OR team OR protocol) Australia
-```
-
-### Drug-Related Presentations
+### The ACT Trials (Named Reports)
 
 ```txt
-(festival OR "music event") ("drug related" OR "substance related") (presentation OR emergency OR incident) (data OR report)
+("Report on the ACT GTM Pill Testing Pilot" OR "STA-SAFE") ("a Harm Reduction Service" OR "Groovin the Moo") filetype:pdf
 ```
 
-### Overdose Response at Events
+### Pill Testing Australia
 
 ```txt
-(festival OR event) overdose (response OR protocol OR "rapid response") filetype:pdf
+site:pilltestingaustralia.com.au ("Festival Drug Checking Services" OR "Groovin the Moo" OR report)
 ```
 
-### First Aid Protocols
-
-```txt
-"first aid" ("drug related" OR "substance") festival (protocol OR response)
-```
+> See the [Drug Checking](drug-checking.md) pack for the fixed-site services (CanTEST, CheQpoint)
+> and the analysis methods.
 
 ---
 
 ## 👥 Peer Programs
 
-### DanceWize - 1
+### DanceWize (Victoria)
 
 ```txt
-site:hrvic.org.au DanceWize filetype:pdf
+site:hrvic.org.au "DanceWize" (training OR volunteer OR "crowd care" OR protocol)
 ```
 
-### DanceWize - 2
+### DanceWize NSW
 
 ```txt
-"DanceWize" (training OR volunteer OR protocol)
+(site:dancewizensw.org.au OR site:nuaa.org.au) "DanceWize NSW" (training OR "crowd care" OR roving)
 ```
 
-### Peer Outreach at Events
+### Volunteer Training & Reflection
 
 ```txt
-("peer outreach" OR "peer support") festival (training OR protocol OR evaluation)
-```
-
-### Volunteer Training
-
-```txt
-(festival OR event) ("harm reduction" OR "peer support") volunteer training filetype:pdf
+(festival OR event) ("peer support" OR "crowd care" OR "harm reduction") (volunteer OR training OR reflection) filetype:pdf
 ```
 
 ---
 
-## 📊 Evaluation & Research
+## 🎪 Specific Festivals
 
-### Festival Harm Reduction Evaluations
+Festival names are useful search terms even when an event is on hiatus — pair generic names with
+`festival` or a harm-reduction term. (Status noted; all valid historically.)
+
+### Active Events
 
 ```txt
-"festival harm reduction" evaluation (report OR findings) filetype:pdf
+("Beyond the Valley" OR "Strawberry Fields" OR "Subsonic Music Festival" OR "Lost Paradise") ("harm reduction" OR DanceWize OR "drug checking" OR overdose) site:.au
 ```
 
-### Drug Checking Trial Evaluations
+### Groovin the Moo (Pill-Testing History)
 
 ```txt
-"drug checking" festival (evaluation OR pilot OR trial) Australia filetype:pdf
+"Groovin the Moo" ("pill testing" OR "drug checking" OR "harm reduction")
 ```
 
-### Event Health Data
+### Renamed / Historical
 
 ```txt
-(festival OR "music event") "health data" OR "presentation data" OR statistics (report OR analysis)
+("Rainbow Serpent Festival" OR "Rainbow Spirit Festival" OR "Splendour in the Grass" OR "Falls Festival") ("harm reduction" OR "drug checking" OR medical OR overdose)
+```
+
+> Note: Rainbow Serpent was renamed **Rainbow Spirit Festival** (2023); Splendour and Falls are on
+> indefinite hiatus — useful as historical search terms only.
+
+---
+
+## 🏥 Event Medical & Crowd Safety
+
+### Mass-Gathering Health Reference
+
+```txt
+"Safe and Healthy Crowded Places" (festival OR "medical services" OR "first aid" OR "harm reduction") site:aidr.org.au OR filetype:pdf
+```
+
+### Event Health Services
+
+```txt
+"St John Ambulance" "Event Health Services" (festival OR "mass gathering" OR concert) site:.au
+```
+
+### Drug-Related Presentations Data
+
+```txt
+(festival OR "music event") ("drug related" OR "substance related") (presentation OR emergency) (data OR report)
 ```
 
 ---
 
-## 🔧 Planning & Operations
-
-### Event Health Planning
-
-```txt
-"event health" planning OR "risk assessment" (festival OR "music event") filetype:pdf
-```
-
-### Licensing & Regulations
-
-```txt
-(festival OR "music event") (license OR regulation OR "harm reduction requirements") (NSW OR VIC OR QLD)
-```
-
-### Stakeholder Coordination
-
-```txt
-(festival OR event) ("multi-agency" OR "stakeholder" OR "coordination") (health OR safety OR "harm reduction")
-```
-
----
-
-## 🌏 International Best Practice
-
-### UK Festival Health
-
-```txt
-site:*.gov.uk OR site:*.org.uk "festival" "harm reduction" OR "drug safety"
-```
-
-### European Models
-
-```txt
-(Europe OR Netherlands OR Switzerland) festival "drug checking" OR "harm reduction" (model OR "best practice")
-```
+## 🌏 International
 
 ### The Loop (UK)
 
 ```txt
-"The Loop" "drug checking" festival evaluation OR results
+site:wearetheloop.org ("drug checking" OR "TEST & KNOW" OR festival)
+```
+
+### European Festival Models
+
+```txt
+(site:saferparty.ch OR site:euda.europa.eu) (festival OR "drug checking" OR "nightlife")
 ```
 
 ---
 
 ## 🔗 Related Resources
 
-- **Synonym Block:** [Festival Terms](../05-synonym-blocks.md#-festivalevent-terms)
+- **Source Intelligence:**
+  [Festivals & Events](../resources/source-intelligence.md#-festivals--events) — the programs,
+  trials, and findings every dork above is built on
+- **Synonym Block:** [Festival/Event Terms](../05-synonym-blocks.md#-festivalevent-terms)
 - **Related Packs:** [Drug Checking](drug-checking.md), [Drug Alerts](drug-alerts.md),
-  [Peer Workforce](peer-workforce.md)
-- **Organisations:** [DanceWize/HRVic](https://hrvic.org.au), [DanceSafe](https://dancesafe.org)
+  [Coroners & Deaths](coroners-deaths.md), [Peer Workforce](peer-workforce.md)
+- **Organisations:** [DanceWize (HRVic)](https://hrvic.org.au),
+  [DanceWize NSW](https://dancewizensw.org.au)
 
 ---
 

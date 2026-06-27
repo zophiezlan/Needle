@@ -431,6 +431,150 @@ hold the practical, real-time knowledge that doesn't make it into PDFs.
 
 ---
 
+## 🏛️ Policy, Inquiries & Advocacy
+
+The specificity here is the named strategy, the named inquiry, and the named peak body — not generic
+"drug policy".
+
+**Strategy & landmark inquiries:**
+
+| Entity                     | `site:` target           | Named signals                                                                                              |
+| -------------------------- | ------------------------ | ---------------------------------------------------------------------------------------------------------- |
+| **National Drug Strategy** | `health.gov.au`          | `"National Drug Strategy 2017-2026"` (en-dash in title, hyphen in URL); `"reduce demand, supply and harm"` |
+| **NSW Ice Inquiry**        | `nsw.gov.au`             | `"Special Commission of Inquiry into the Drug 'Ice'"` (Dan Howard SC, 2020, 109 recommendations)           |
+| **2024 NSW Drug Summit**   | `health.nsw.gov.au`      | `"Report on the 2024 New South Wales Drug Summit"` (Apr 2025, 56 recs; path `/aod/summit`)                 |
+| **ACT decriminalisation**  | `legislation.act.gov.au` | `"Drugs of Dependence (Personal Use) Amendment Act 2022"` (A2022-20; commenced 28 Oct 2023)                |
+| **Federal ice inquiry**    | `aph.gov.au`             | `"Inquiry into crystal methamphetamine (ice)"` (Parliamentary Joint Committee on Law Enforcement, 2018)    |
+
+**AOD peak bodies (quote the exact name or acronym):**
+
+| Body                | `site:` target  | Name                                                                  |
+| ------------------- | --------------- | --------------------------------------------------------------------- |
+| **AADC** (national) | `aadc.org.au`   | `"Australian Alcohol and other Drugs Council"` — national sector peak |
+| **ATODA** (ACT)     | `atoda.org.au`  | `"Alcohol Tobacco and Other Drug Association ACT"`                    |
+| **NADA** (NSW)      | `nada.org.au`   | `"Network of Alcohol and other Drugs Agencies"`                       |
+| **VAADA** (VIC)     | `vaada.org.au`  | `"Victorian Alcohol and Drug Association"`                            |
+| **QNADA** (QLD)     | `qnada.org.au`  | `"Queensland Network of Alcohol and Other Drug Agencies"`             |
+| **WANADA** (WA)     | `wanada.org.au` | `"Western Australian Network of Alcohol and other Drug Agencies"`     |
+| **SANDAS** (SA)     | `sandas.org.au` | `"South Australian Network of Drug and Alcohol Services"`             |
+| **ATDC** (TAS)      | `atdc.org.au`   | `"Alcohol, Tobacco and other Drugs Council Tasmania"`                 |
+| **AADANT** (NT)     | `aadant.org.au` | `"Association of Alcohol and other Drug Agencies NT"`                 |
+
+**Reform & advocacy orgs:**
+
+| Org                          | `site:` target                                   | Named signals                                                                                           |
+| ---------------------------- | ------------------------------------------------ | ------------------------------------------------------------------------------------------------------- |
+| **Uniting "Fair Treatment"** | `fairtreatment.org`, `uniting.org`               | `"Fair Treatment"` campaign (NSW.ACT; note `.org`, not `.org.au`)                                       |
+| **Australia21**              | `australia21.org.au`                             | `"Australia21"`, `"Drug Policy Reform"` roundtables/reports                                             |
+| **Harm Reduction Australia** | `harmreductionaustralia.org.au`                  | `"Harm Reduction Australia"` (HRA)                                                                      |
+| **Unharm**                   | `unharm.org`                                     | `"Unharm"` (note `.org`)                                                                                |
+| **SSDP Australia**           | `ssdp.org.au`                                    | `"Students for Sensible Drug Policy Australia"` / `"SSDP Australia"` (AU chapter; global is `ssdp.org`) |
+| **ADLRF**                    | `adlrf.org.au`                                   | `"Australian Drug Law Reform Foundation"`, `"Alex Wodak"`                                               |
+| **Penington / peer orgs**    | `penington.org.au`, `aivl.org.au`, `nuaa.org.au` | advocacy + drug-user-org submissions and position statements                                            |
+
+**Insider vocabulary:** `"National Drug Strategy"`, the three pillars `"demand reduction"` /
+`"supply reduction"` / `"harm reduction"`, `"decriminalisation"` / `"depenalisation"` /
+`"diversion"`, `"special commission of inquiry"`, `"drug summit"`, `"submission"` + `"inquiry"`,
+`"government response"`, `"Hansard"`, `"legal regulation"`.
+
+---
+
+## 🎪 Festivals & Events
+
+Australian festival drug-checking policy moves on coronial findings and named trials — quote those,
+plus the peer programs and the (changing) festival names.
+
+**Coronial & policy drivers:**
+
+| Entity                          | `site:` target                                                 | Named signals                                                                                                                                                     |
+| ------------------------------- | -------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **NSW festival-deaths inquest** | `coroners.nsw.gov.au`                                          | `"Inquest into the death of six patrons of NSW music festivals"` (Dep. State Coroner Harriet Grahame, 2019)                                                       |
+| **NSW Music Festivals Act**     | `legislation.nsw.gov.au`                                       | `"Music Festivals Act 2019"` (No 17); `"Review of the Music Festivals Act 2019"`                                                                                  |
+| **ACT GTM pill-test pilots**    | `harmreductionaustralia.org.au`, `pilltestingaustralia.com.au` | `"Report on the ACT GTM Pill Testing Pilot"` (2018, STA-SAFE Consortium); `"Report on the 2nd ACT GTM Pill Testing Pilot"` (2019, Pill Testing Australia)         |
+| **VIC pill-testing trial**      | `legislation.vic.gov.au`, `premier.vic.gov.au`                 | `"Drugs, Poisons and Controlled Substances Amendment (Pill Testing) Act 2024"`; YSAS + The Loop Australia + Harm Reduction Victoria; Beyond the Valley (Dec 2024) |
+
+**Peer programs & event health:**
+
+| Entity                        | `site:` target                       | Named signals                                                                             |
+| ----------------------------- | ------------------------------------ | ----------------------------------------------------------------------------------------- |
+| **DanceWize** (VIC)           | `hrvic.org.au`                       | `"DanceWize"`, `"crowd care"` — peer harm reduction (HRVic; since 1999, ex-RaveSafe)      |
+| **DanceWize NSW**             | `dancewizensw.org.au`, `nuaa.org.au` | `"DanceWize NSW"` (NUAA), `"crowd care"`                                                  |
+| **Red Frogs**                 | `redfrogs.com.au`                    | `"Red Frogs"` chaplaincy/welfare (abstinence-leaning — not peer drug-checking)            |
+| **St John event health**      | `stjohnvic.com.au` (state-federated) | `"Event Health Services"`                                                                 |
+| **AIDR crowded-places guide** | `aidr.org.au`                        | `"Safe and Healthy Crowded Places"` (Handbook 15; ex- "Safe and Healthy Mass Gatherings") |
+
+**Australian festivals (all valid as historical search terms; pair generic names with `festival` / a
+harm-reduction term):** Beyond the Valley (`beyondthevalley.com.au`, active), Strawberry Fields
+(`strawberry-fields.com.au`, active), Subsonic Music Festival (active), Lost Paradise (active),
+Groovin the Moo (returning 2026; site of the ACT pill-testing trials), Rainbow Serpent → renamed
+**Rainbow Spirit Festival** (`rainbowspirit.net`, 2023), Splendour in the Grass + Falls Festival
+(defunct/hiatus — historical only).
+
+**Insider vocabulary:** `"crowd care"`, `"welfare tent"` / `"chill-out space"`, `"roving"`,
+`"drug checking"` / `"pill testing"`, `"adverse event"` / `"presentation"`, `"mass gathering"`,
+`"event health"`, `"safety management plan"`.
+
+---
+
+## 📒 Service Finders & Directories
+
+The hard part is the named tool. Lead with the national finders, then the state intake lines.
+
+**National:**
+
+| Tool                     | `site:` target             | Named signals                                                                                              |
+| ------------------------ | -------------------------- | ---------------------------------------------------------------------------------------------------------- |
+| **ADF Path2Help**        | `adf.org.au`               | `"Path2Help"` (service finder; path `/help-support/path2help` — **not** `path2help.org.au`, which is dead) |
+| **Counselling Online**   | `counsellingonline.org.au` | `"Counselling Online"` (Turning Point; 24/7 national AOD)                                                  |
+| **National AOD Hotline** | `health.gov.au`            | `"National Alcohol and Other Drug Hotline"`, `"1800 250 015"`                                              |
+| **Healthdirect**         | `healthdirect.gov.au`      | `"Service Finder"` / `"Find a health service"` (National Health Services Directory / NHSD)                 |
+| **Ask Izzy**             | `askizzy.org.au`           | `"Ask Izzy"` (Infoxchange; broad services directory)                                                       |
+| **headspace** (youth)    | `headspace.org.au`         | `"headspace"`, `"eheadspace"` (12–25; incl. AOD)                                                           |
+
+**State intake lines & finders:**
+
+| State      | `site:` target                                    | Named signals                                                                                                                       |
+| ---------- | ------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
+| NSW        | `yourroom.health.nsw.gov.au`, `health.nsw.gov.au` | `"Your Room"`, `"Alcohol and Drug Information Service"` (ADIS); `"NSP outlets"` finder                                              |
+| VIC        | `directline.org.au`, `supportconnect.org.au`      | `"DirectLine"` (Turning Point); `"SupportConnect"` — `"Needle and Syringe Program Finder"`, `"Naloxone Service Finder"`             |
+| QLD        | `adis.health.qld.gov.au`                          | `"Adis"` (Alcohol and Drug Information Service, QLD)                                                                                |
+| SA         | `sahealth.sa.gov.au`                              | `"Drug and Alcohol Services South Australia"` (DASSA) + `"Alcohol and Drug Information Service"` (**not** `dassa.sa.gov.au` — dead) |
+| WA         | `admhss.mhc.wa.gov.au`, `mhc.wa.gov.au`           | `"Alcohol and Drug Support Line"` (now via `"Alcohol, Drug and Mental Health Support Service"` / ADMHSS)                            |
+| NSW (peer) | `nuaa.org.au`                                     | NUAA `"Needle and Syringe Program"` mail-out / `"NSP equipment"`                                                                    |
+
+**Insider vocabulary:** `"service directory"` / `"service finder"` / `"treatment locator"`,
+`"intake"` / `"referral"`, `"ADIS"` (Alcohol and Drug Information Service — exists in several
+states, so pin by domain), `filetype:xlsx` / `filetype:csv` for data-rich directories.
+
+---
+
+## 📚 Safer-Use Education & Plain-Language Resources
+
+Lead with peer-produced and plain-language material; clinical resources are real but secondary.
+
+| Source                        | `site:` target                                | Named signals                                                                      |
+| ----------------------------- | --------------------------------------------- | ---------------------------------------------------------------------------------- |
+| **NUAA** (peer pubs)          | `nuaa.org.au`, `usersnews.com.au`             | `"User's News"`, `"Insider's News"` (prisons), `"PeerLink"`, `"ConnectED"`         |
+| **ADF**                       | `adf.org.au`                                  | `"Drug Facts"`, `"Path2Help"`, `"Power of Words"` (language guide)                 |
+| **DanceWize**                 | `hrvic.org.au`, `dancewizensw.org.au`         | `"DanceWize"` festival crowd-care cards/resources                                  |
+| **Health Translations** (VIC) | `healthtranslations.vic.gov.au`, `ceh.org.au` | multilingual translated health resources (Centre for Culture Ethnicity and Health) |
+| **Hepatitis Australia**       | `hepatitisaustralia.com`                      | `"Hepatitis Australia"`, `"HepLink"` (note `.com`)                                 |
+| **Hepatitis NSW**             | `hep.org.au`                                  | `"Hepatitis NSW"`, `"Hepatitis Infoline"`, free factsheets                         |
+| **ASHM** (clinical)           | `ashm.org.au`, `hepatitisb.org.au`            | `"B Positive"` guide, `"Hepatitis B Toolkit"`                                      |
+
+**International plain-language education:** DanceSafe `"Drug Information"` + test-strip sheets
+(`dancesafe.org`); TripSit `"Combo Chart"` / factsheets (`combo.tripsit.me`, `drugs.tripsit.me`,
+`wiki.tripsit.me` — note subdomains); Erowid `"Experience Vaults"` (`erowid.org`); The Loop
+`"Harm reduction information"` (`wearetheloop.org`); Crew `"Drugs A-Z"` (`crew.scot`); The Level
+`"Straight up drug info"` (`thelevel.org.nz`, NZ Drug Foundation); Toward the Heart
+`"Substance Information Sheets"` (`towardtheheart.com`).
+
+**Note:** no single titled "Easy Read" harm-reduction series was verifiable — for accessible
+material use `("easy read" OR "plain language") (naloxone OR "harm reduction") filetype:pdf` across
+`.org.au` / `.gov.au`.
+
+---
+
 ## 🌏 International Reference Bodies (for the "strong international" layer)
 
 For the "strong international layer", name the country's actual agency or service — not "overseas
@@ -479,7 +623,7 @@ examples". Each pack should pull the relevant rows.
 | **Switzerland**     | `saferparty.ch`, `bag.admin.ch`     | `"Saferparty"` / `"Drogeninformationszentrum"` (DIZ), `"Substanzwarnung"`; `"heroingestützte Behandlung"` / HeGeBe; `"Vier-Säulen-Politik"`                                |
 | **Netherlands**     | `trimbos.nl`                        | `"Trimbos-instituut"`, `"DIMS"` / `"Drugs Information and Monitoring System"`, `"Red Alert"`                                                                               |
 | **Germany**         | `akzept.eu`, `jes-bundesverband.de` | `"Drogenkonsumraum"`, `"akzept e.V."` + `"Alternativer Drogen- und Suchtbericht"`, `"JES Bundesverband"`                                                                   |
-| **Scotland**        | `crew.scot` ⚠ verify                | Crew — peer drug info, Scottish drug-checking                                                                                                                              |
+| **Scotland**        | `crew.scot`                         | `"Crew 2000 (Scotland)"` (brand: Crew) — `"Drugs A-Z"`, `"The Scottish Drug Checking Project"`                                                                             |
 
 **New Zealand:**
 

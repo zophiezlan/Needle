@@ -4824,121 +4824,60 @@
     {
       "id": "festivals",
       "title": "Festivals & Event Harm Reduction",
-      "description": "Planning, safety plans, medical directives, and event-specific intelligence for festival health.",
+      "description": "Find the peer programs, pill-testing trials, coronial drivers, and event-health resources behind",
       "dorks": [
         {
-          "id": "festivals-find-pdf-files",
-          "title": "Find PDF files",
+          "id": "festivals-query-1",
+          "title": "Query 1",
           "category": "Quick Start",
-          "query": "(\"festival\" OR \"music event\") \"harm reduction\" filetype:pdf -news -opinion",
+          "query": "(\"DanceWize\" OR \"DanceWize NSW\") (\"crowd care\" OR \"harm reduction\" OR festival)",
           "explanation": "",
           "difficulty": "beginner",
           "sourceFile": "dork-packs/festivals.md",
           "sourceType": "dork-pack",
-          "sourceLine": 14,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "news",
-          "contentType": "pdf",
-          "tags": [
-            "documents"
-          ]
-        },
-        {
-          "id": "festivals-general-festival-harm-reduction",
-          "title": "General Festival Harm Reduction",
-          "category": "Basic Queries",
-          "query": "(\"festival\" OR \"music event\") (\"harm reduction\" OR \"drug checking\" OR \"peer-led\") filetype:pdf -news",
-          "explanation": "",
-          "difficulty": "beginner",
-          "sourceFile": "dork-packs/festivals.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 21,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "news",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "peer"
-          ]
-        },
-        {
-          "id": "festivals-festival-medical-planning",
-          "title": "Festival Medical Planning",
-          "category": "Basic Queries",
-          "query": "(festival OR \"music event\") (\"medical plan\" OR \"health plan\" OR \"event health\") filetype:pdf",
-          "explanation": "",
-          "difficulty": "beginner",
-          "sourceFile": "dork-packs/festivals.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 27,
-          "operators": [
-            "filetype"
-          ],
+          "sourceLine": 32,
+          "operators": [],
           "targetDomains": [],
           "domainCategory": "any",
-          "contentType": "pdf",
-          "tags": [
-            "documents"
-          ]
+          "contentType": "any",
+          "tags": []
         },
         {
-          "id": "festivals-australian-festival-resources",
-          "title": "Australian Festival Resources",
+          "id": "festivals-dancewize-dancewize-nsw-peer-programs",
+          "title": "DanceWize & DanceWize NSW (Peer Programs)",
           "category": "Basic Queries",
-          "query": "(festival OR \"music festival\") harm reduction Australia (guideline OR protocol OR evaluation) filetype:pdf",
-          "explanation": "",
+          "query": "(site:hrvic.org.au OR site:dancewizensw.org.au OR site:nuaa.org.au) (\"DanceWize\" OR \"crowd care\")",
+          "explanation": "**Why this works:**\n\n- DanceWize (HRVic, since 1999) and DanceWize NSW (NUAA) are the named peer crowd-care services —\nthis is the by-and-with-peers core, not the lab side",
           "difficulty": "beginner",
           "sourceFile": "dork-packs/festivals.md",
           "sourceType": "dork-pack",
-          "sourceLine": 33,
+          "sourceLine": 39,
           "operators": [
-            "filetype"
+            "site"
           ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "pdf",
+          "targetDomains": [
+            "hrvic.org.au",
+            "dancewizensw.org.au",
+            "nuaa.org.au"
+          ],
+          "domainCategory": "ngo",
+          "contentType": "any",
           "tags": [
-            "documents",
+            "peer",
+            "services",
             "australia"
-          ]
-        },
-        {
-          "id": "festivals-event-safety-plans",
-          "title": "Event Safety Plans",
-          "category": "Intermediate Queries",
-          "query": "(inurl:festival OR inurl:event) (\"medical plan\" OR \"health plan\" OR \"safety plan\") filetype:pdf",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/festivals.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 43,
-          "operators": [
-            "filetype",
-            "inurl"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "pdf",
-          "tags": [
-            "documents"
           ]
         },
         {
           "id": "festivals-drug-checking-at-festivals",
           "title": "Drug Checking at Festivals",
-          "category": "Intermediate Queries",
-          "query": "\"drug checking\" festival (Australia OR NSW OR VIC OR ACT) (evaluation OR report)",
+          "category": "Basic Queries",
+          "query": "(\"drug checking\" OR \"pill testing\") festival (Australia OR NSW OR VIC OR ACT) (evaluation OR report OR trial)",
           "explanation": "",
-          "difficulty": "intermediate",
+          "difficulty": "beginner",
           "sourceFile": "dork-packs/festivals.md",
           "sourceType": "dork-pack",
-          "sourceLine": 49,
+          "sourceLine": 50,
           "operators": [],
           "targetDomains": [],
           "domainCategory": "any",
@@ -4949,37 +4888,100 @@
           ]
         },
         {
-          "id": "festivals-dancewize-peer-programs",
-          "title": "DanceWize & Peer Programs",
-          "category": "Intermediate Queries",
-          "query": "\"DanceWize\" OR (\"peer harm reduction\" festival) filetype:pdf",
+          "id": "festivals-general-festival-harm-reduction",
+          "title": "General Festival Harm Reduction",
+          "category": "Basic Queries",
+          "query": "(\"festival\" OR \"music event\") (\"harm reduction\" OR \"crowd care\" OR \"drug checking\") filetype:pdf -news",
           "explanation": "",
-          "difficulty": "intermediate",
+          "difficulty": "beginner",
           "sourceFile": "dork-packs/festivals.md",
           "sourceType": "dork-pack",
-          "sourceLine": 55,
+          "sourceLine": 56,
           "operators": [
             "filetype"
           ],
           "targetDomains": [],
-          "domainCategory": "any",
+          "domainCategory": "news",
           "contentType": "pdf",
           "tags": [
-            "documents",
-            "peer",
-            "services"
+            "documents"
           ]
         },
         {
-          "id": "festivals-festival-medical-guidelines",
-          "title": "Festival Medical Guidelines",
+          "id": "festivals-act-pill-testing-pilots-groovin-the-moo",
+          "title": "ACT Pill-Testing Pilots (Groovin the Moo)",
           "category": "Intermediate Queries",
-          "query": "\"festival medical\" (guidelines OR protocol OR \"best practice\") filetype:pdf",
+          "query": "(\"Report on the ACT GTM Pill Testing Pilot\" OR \"Report on the 2nd ACT GTM Pill Testing Pilot\") (site:harmreductionaustralia.org.au OR site:pilltestingaustralia.com.au OR site:apo.org.au)",
+          "explanation": "**Why this works:**\n\n- Australia's first sanctioned festival pill-testing trials (2018 STA-SAFE Consortium; 2019 Pill\nTesting Australia) — quoting the exact report titles finds the evaluations, not media recaps",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/festivals.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 66,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "harmreductionaustralia.org.au",
+            "pilltestingaustralia.com.au",
+            "apo.org.au"
+          ],
+          "domainCategory": "ngo",
+          "contentType": "any",
+          "tags": [
+            "documents",
+            "australia"
+          ]
+        },
+        {
+          "id": "festivals-victorian-pill-testing-trial-2024",
+          "title": "Victorian Pill-Testing Trial (2024–)",
+          "category": "Intermediate Queries",
+          "query": "(\"Drugs, Poisons and Controlled Substances Amendment (Pill Testing) Act 2024\" OR \"Beyond the Valley\" pill testing) (\"YSAS\" OR \"The Loop Australia\" OR \"Harm Reduction Victoria\")",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/festivals.md",
           "sourceType": "dork-pack",
-          "sourceLine": 61,
+          "sourceLine": 77,
+          "operators": [],
+          "targetDomains": [],
+          "domainCategory": "any",
+          "contentType": "any",
+          "tags": [
+            "australia"
+          ]
+        },
+        {
+          "id": "festivals-coronial-drivers",
+          "title": "Coronial Drivers",
+          "category": "Intermediate Queries",
+          "query": "\"Inquest into the death of six patrons of NSW music festivals\" site:coroners.nsw.gov.au",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/festivals.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 83,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "coroners.nsw.gov.au"
+          ],
+          "domainCategory": "government",
+          "contentType": "any",
+          "tags": [
+            "australia"
+          ]
+        },
+        {
+          "id": "festivals-event-medical-planning",
+          "title": "Event Medical Planning",
+          "category": "Intermediate Queries",
+          "query": "(festival OR \"music event\") (\"safety management plan\" OR \"event health\" OR \"medical plan\") filetype:pdf",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/festivals.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 89,
           "operators": [
             "filetype"
           ],
@@ -4994,12 +4996,12 @@
           "id": "festivals-comprehensive-festival-health-sweep",
           "title": "Comprehensive Festival Health Sweep",
           "category": "Advanced Queries",
-          "query": "(festival OR \"music event\" OR \"outdoor event\") (\"harm reduction\" OR \"drug safety\" OR \"event health\") (Australia OR NSW OR VIC OR QLD) (evaluation OR report OR guideline) filetype:pdf -news after:2020",
+          "query": "(festival OR \"music event\") (\"harm reduction\" OR \"drug checking\" OR \"crowd care\" OR \"event health\") (Australia OR NSW OR VIC OR QLD) (evaluation OR report OR guideline) filetype:pdf -news after:2020",
           "explanation": "",
           "difficulty": "advanced",
           "sourceFile": "dork-packs/festivals.md",
           "sourceType": "dork-pack",
-          "sourceLine": 71,
+          "sourceLine": 99,
           "operators": [
             "filetype",
             "after"
@@ -5013,84 +5015,12 @@
           ]
         },
         {
-          "id": "festivals-roving-medical-welfare-teams",
-          "title": "Roving Medical/Welfare Teams",
+          "id": "festivals-crowd-mass-gathering-safety",
+          "title": "Crowd & Mass-Gathering Safety",
           "category": "Advanced Queries",
-          "query": "(festival OR \"music event\") (\"roving\" OR \"welfare team\" OR \"peer support\") (protocol OR training OR guideline)",
+          "query": "(\"Safe and Healthy Crowded Places\" OR \"mass gathering\" OR \"crowd safety\") (festival OR event) (guideline OR handbook OR protocol)",
           "explanation": "",
           "difficulty": "advanced",
-          "sourceFile": "dork-packs/festivals.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 77,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "peer",
-            "training"
-          ]
-        },
-        {
-          "id": "festivals-chill-out-spaces",
-          "title": "Chill-Out Spaces",
-          "category": "Advanced Queries",
-          "query": "(\"chill out\" OR \"chill-out\" OR \"welfare tent\" OR \"safe space\") festival (guideline OR protocol OR training) filetype:pdf",
-          "explanation": "",
-          "difficulty": "advanced",
-          "sourceFile": "dork-packs/festivals.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 83,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "training"
-          ]
-        },
-        {
-          "id": "festivals-heat-weather-safety",
-          "title": "Heat/Weather Safety",
-          "category": "Advanced Queries",
-          "query": "(festival OR \"outdoor event\") (heat OR weather OR dehydration OR \"heat stress\") (safety OR guideline OR protocol)",
-          "explanation": "",
-          "difficulty": "advanced",
-          "sourceFile": "dork-packs/festivals.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 89,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "festivals-crowd-safety",
-          "title": "Crowd Safety",
-          "category": "Advanced Queries",
-          "query": "(festival OR \"music event\") (\"crowd safety\" OR \"crowd crush\" OR \"crowd management\") (guideline OR protocol)",
-          "explanation": "",
-          "difficulty": "advanced",
-          "sourceFile": "dork-packs/festivals.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 95,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "festivals-australian-festivals-groovin-the-moo",
-          "title": "Australian Festivals - Groovin the Moo",
-          "category": "\udfaa Specific Major Festivals",
-          "query": "\"Groovin the Moo\" (\"drug checking\" OR \"harm reduction\" OR medical)",
-          "explanation": "",
-          "difficulty": "intermediate",
           "sourceFile": "dork-packs/festivals.md",
           "sourceType": "dork-pack",
           "sourceLine": 105,
@@ -5101,12 +5031,12 @@
           "tags": []
         },
         {
-          "id": "festivals-australian-festivals-lost-paradise",
-          "title": "Australian Festivals - Lost Paradise",
-          "category": "\udfaa Specific Major Festivals",
-          "query": "\"Lost Paradise\" (\"drug checking\" OR \"harm reduction\")",
+          "id": "festivals-welfare-chill-out-models",
+          "title": "Welfare & Chill-Out Models",
+          "category": "Advanced Queries",
+          "query": "(festival OR \"music event\") (\"crowd care\" OR \"welfare tent\" OR \"chill-out\" OR \"roving\") (protocol OR training OR evaluation)",
           "explanation": "",
-          "difficulty": "intermediate",
+          "difficulty": "advanced",
           "sourceFile": "dork-packs/festivals.md",
           "sourceType": "dork-pack",
           "sourceLine": 111,
@@ -5114,70 +5044,223 @@
           "targetDomains": [],
           "domainCategory": "any",
           "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "festivals-australian-festivals-splendour-in-the-grass",
-          "title": "Australian Festivals - Splendour in the Grass",
-          "category": "\udfaa Specific Major Festivals",
-          "query": "\"Splendour in the Grass\" (\"harm reduction\" OR \"medical report\")",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/festivals.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 117,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
           "tags": [
-            "documents"
+            "training"
           ]
         },
         {
-          "id": "festivals-australian-festivals-falls-festival",
-          "title": "Australian Festivals - Falls Festival",
-          "category": "\udfaa Specific Major Festivals",
-          "query": "\"Falls Festival\" (\"harm reduction\" OR medical OR \"incident report\")",
+          "id": "festivals-nsw-music-festival-deaths-inquest-2019",
+          "title": "NSW Music-Festival Deaths Inquest (2019)",
+          "category": "⚖ Coronial & Policy Drivers",
+          "query": "\"Inquest into the death of six patrons of NSW music festivals\" (\"Harriet Grahame\" OR recommendation) site:coroners.nsw.gov.au",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/festivals.md",
           "sourceType": "dork-pack",
           "sourceLine": 123,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "coroners.nsw.gov.au"
+          ],
+          "domainCategory": "government",
           "contentType": "any",
           "tags": [
-            "documents"
+            "australia"
           ]
         },
         {
-          "id": "festivals-australian-festivals-rainbow-serpent",
-          "title": "Australian Festivals - Rainbow Serpent",
-          "category": "\udfaa Specific Major Festivals",
-          "query": "\"Rainbow Serpent\" harm reduction OR \"event health\"",
+          "id": "festivals-nsw-music-festivals-act-2019",
+          "title": "NSW Music Festivals Act 2019",
+          "category": "⚖ Coronial & Policy Drivers",
+          "query": "(\"Music Festivals Act 2019\" OR \"Review of the Music Festivals Act 2019\") site:legislation.nsw.gov.au OR site:nsw.gov.au",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/festivals.md",
           "sourceType": "dork-pack",
           "sourceLine": 129,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "legislation.nsw.gov.au",
+            "nsw.gov.au"
+          ],
+          "domainCategory": "government",
           "contentType": "any",
-          "tags": []
+          "tags": [
+            "australia"
+          ]
         },
         {
-          "id": "festivals-australian-festivals-strawberry-fields",
-          "title": "Australian Festivals - Strawberry Fields",
-          "category": "\udfaa Specific Major Festivals",
-          "query": "\"Strawberry Fields\" \"drug checking\" OR \"harm reduction\"",
+          "id": "festivals-victorian-pill-testing-act-2024",
+          "title": "Victorian Pill-Testing Act 2024",
+          "category": "⚖ Coronial & Policy Drivers",
+          "query": "\"Drugs, Poisons and Controlled Substances Amendment (Pill Testing) Act 2024\" site:legislation.vic.gov.au",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/festivals.md",
           "sourceType": "dork-pack",
           "sourceLine": 135,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "legislation.vic.gov.au"
+          ],
+          "domainCategory": "government",
+          "contentType": "any",
+          "tags": [
+            "australia"
+          ]
+        },
+        {
+          "id": "festivals-the-act-trials-named-reports",
+          "title": "The ACT Trials (Named Reports)",
+          "category": "Pill Testing / Drug Checking at Festivals",
+          "query": "(\"Report on the ACT GTM Pill Testing Pilot\" OR \"STA-SAFE\") (\"a Harm Reduction Service\" OR \"Groovin the Moo\") filetype:pdf",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/festivals.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 145,
+          "operators": [
+            "filetype"
+          ],
+          "targetDomains": [],
+          "domainCategory": "any",
+          "contentType": "pdf",
+          "tags": [
+            "documents",
+            "services"
+          ]
+        },
+        {
+          "id": "festivals-pill-testing-australia",
+          "title": "Pill Testing Australia",
+          "category": "Pill Testing / Drug Checking at Festivals",
+          "query": "site:pilltestingaustralia.com.au (\"Festival Drug Checking Services\" OR \"Groovin the Moo\" OR report)",
+          "explanation": "> See the [Drug Checking](drug-checking.md) pack for the fixed-site services (CanTEST, CheQpoint)\n> and the analysis methods.",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/festivals.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 151,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "pilltestingaustralia.com.au"
+          ],
+          "domainCategory": "any",
+          "contentType": "any",
+          "tags": [
+            "documents",
+            "services",
+            "australia"
+          ]
+        },
+        {
+          "id": "festivals-dancewize-victoria",
+          "title": "DanceWize (Victoria)",
+          "category": "\udc65 Peer Programs",
+          "query": "site:hrvic.org.au \"DanceWize\" (training OR volunteer OR \"crowd care\" OR protocol)",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/festivals.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 164,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "hrvic.org.au"
+          ],
+          "domainCategory": "ngo",
+          "contentType": "any",
+          "tags": [
+            "training",
+            "australia"
+          ]
+        },
+        {
+          "id": "festivals-dancewize-nsw",
+          "title": "DanceWize NSW",
+          "category": "\udc65 Peer Programs",
+          "query": "(site:dancewizensw.org.au OR site:nuaa.org.au) \"DanceWize NSW\" (training OR \"crowd care\" OR roving)",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/festivals.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 170,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "dancewizensw.org.au",
+            "nuaa.org.au"
+          ],
+          "domainCategory": "ngo",
+          "contentType": "any",
+          "tags": [
+            "training",
+            "australia"
+          ]
+        },
+        {
+          "id": "festivals-volunteer-training-reflection",
+          "title": "Volunteer Training & Reflection",
+          "category": "\udc65 Peer Programs",
+          "query": "(festival OR event) (\"peer support\" OR \"crowd care\" OR \"harm reduction\") (volunteer OR training OR reflection) filetype:pdf",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/festivals.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 176,
+          "operators": [
+            "filetype"
+          ],
+          "targetDomains": [],
+          "domainCategory": "any",
+          "contentType": "pdf",
+          "tags": [
+            "documents",
+            "peer",
+            "training"
+          ]
+        },
+        {
+          "id": "festivals-active-events",
+          "title": "Active Events",
+          "category": "\udfaa Specific Festivals",
+          "query": "(\"Beyond the Valley\" OR \"Strawberry Fields\" OR \"Subsonic Music Festival\" OR \"Lost Paradise\") (\"harm reduction\" OR DanceWize OR \"drug checking\" OR overdose) site:.au",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/festivals.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 189,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            ".au"
+          ],
+          "domainCategory": "any",
+          "contentType": "any",
+          "tags": [
+            "australia"
+          ]
+        },
+        {
+          "id": "festivals-groovin-the-moo-pill-testing-history",
+          "title": "Groovin the Moo (Pill-Testing History)",
+          "category": "\udfaa Specific Festivals",
+          "query": "\"Groovin the Moo\" (\"pill testing\" OR \"drug checking\" OR \"harm reduction\")",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/festivals.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 195,
           "operators": [],
           "targetDomains": [],
           "domainCategory": "any",
@@ -5185,15 +5268,15 @@
           "tags": []
         },
         {
-          "id": "festivals-australian-festivals-subsonic",
-          "title": "Australian Festivals - Subsonic",
-          "category": "\udfaa Specific Major Festivals",
-          "query": "\"Subsonic\" harm reduction",
-          "explanation": "",
+          "id": "festivals-renamed-historical",
+          "title": "Renamed / Historical",
+          "category": "\udfaa Specific Festivals",
+          "query": "(\"Rainbow Serpent Festival\" OR \"Rainbow Spirit Festival\" OR \"Splendour in the Grass\" OR \"Falls Festival\") (\"harm reduction\" OR \"drug checking\" OR medical OR overdose)",
+          "explanation": "> Note: Rainbow Serpent was renamed **Rainbow Spirit Festival** (2023); Splendour and Falls are on\n> indefinite hiatus — useful as historical search terms only.",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/festivals.md",
           "sourceType": "dork-pack",
-          "sourceLine": 141,
+          "sourceLine": 201,
           "operators": [],
           "targetDomains": [],
           "domainCategory": "any",
@@ -5201,49 +5284,46 @@
           "tags": []
         },
         {
-          "id": "festivals-australian-festivals-beyond-the-valley",
-          "title": "Australian Festivals - Beyond the Valley",
-          "category": "\udfaa Specific Major Festivals",
-          "query": "\"Beyond the Valley\" medical OR \"harm reduction\"",
+          "id": "festivals-mass-gathering-health-reference",
+          "title": "Mass-Gathering Health Reference",
+          "category": "\udfe5 Event Medical & Crowd Safety",
+          "query": "\"Safe and Healthy Crowded Places\" (festival OR \"medical services\" OR \"first aid\" OR \"harm reduction\") site:aidr.org.au OR filetype:pdf",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/festivals.md",
           "sourceType": "dork-pack",
-          "sourceLine": 147,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": []
+          "sourceLine": 214,
+          "operators": [
+            "site",
+            "filetype"
+          ],
+          "targetDomains": [
+            "aidr.org.au"
+          ],
+          "domainCategory": "ngo",
+          "contentType": "pdf",
+          "tags": [
+            "documents",
+            "services",
+            "australia"
+          ]
         },
         {
-          "id": "festivals-finding-event-specific-intelligence",
-          "title": "Finding Event-Specific Intelligence",
-          "category": "\udfaa Specific Major Festivals",
-          "query": "\"[FESTIVAL NAME]\" (\"harm reduction\" OR \"medical\" OR \"drug checking\" OR \"incident\")",
+          "id": "festivals-event-health-services",
+          "title": "Event Health Services",
+          "category": "\udfe5 Event Medical & Crowd Safety",
+          "query": "\"St John Ambulance\" \"Event Health Services\" (festival OR \"mass gathering\" OR concert) site:.au",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/festivals.md",
           "sourceType": "dork-pack",
-          "sourceLine": 153,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "festivals-medical-services-at-events",
-          "title": "Medical Services at Events",
-          "category": "\udfe5 Medical & Clinical",
-          "query": "\"event medical\" OR \"festival medical\" (services OR team OR protocol) Australia",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/festivals.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 163,
-          "operators": [],
-          "targetDomains": [],
+          "sourceLine": 220,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            ".au"
+          ],
           "domainCategory": "any",
           "contentType": "any",
           "tags": [
@@ -5252,15 +5332,15 @@
           ]
         },
         {
-          "id": "festivals-drug-related-presentations",
-          "title": "Drug-Related Presentations",
-          "category": "\udfe5 Medical & Clinical",
-          "query": "(festival OR \"music event\") (\"drug related\" OR \"substance related\") (presentation OR emergency OR incident) (data OR report)",
+          "id": "festivals-drug-related-presentations-data",
+          "title": "Drug-Related Presentations Data",
+          "category": "\udfe5 Event Medical & Crowd Safety",
+          "query": "(festival OR \"music event\") (\"drug related\" OR \"substance related\") (presentation OR emergency) (data OR report)",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/festivals.md",
           "sourceType": "dork-pack",
-          "sourceLine": 169,
+          "sourceLine": 226,
           "operators": [],
           "targetDomains": [],
           "domainCategory": "any",
@@ -5269,287 +5349,44 @@
             "documents",
             "data"
           ]
-        },
-        {
-          "id": "festivals-overdose-response-at-events",
-          "title": "Overdose Response at Events",
-          "category": "\udfe5 Medical & Clinical",
-          "query": "(festival OR event) overdose (response OR protocol OR \"rapid response\") filetype:pdf",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/festivals.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 175,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "pdf",
-          "tags": [
-            "documents"
-          ]
-        },
-        {
-          "id": "festivals-first-aid-protocols",
-          "title": "First Aid Protocols",
-          "category": "\udfe5 Medical & Clinical",
-          "query": "\"first aid\" (\"drug related\" OR \"substance\") festival (protocol OR response)",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/festivals.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 181,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "festivals-dancewize-1",
-          "title": "DanceWize - 1",
-          "category": "\udc65 Peer Programs",
-          "query": "site:hrvic.org.au DanceWize filetype:pdf",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/festivals.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 191,
-          "operators": [
-            "site",
-            "filetype"
-          ],
-          "targetDomains": [
-            "hrvic.org.au"
-          ],
-          "domainCategory": "ngo",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "australia"
-          ]
-        },
-        {
-          "id": "festivals-dancewize-2",
-          "title": "DanceWize - 2",
-          "category": "\udc65 Peer Programs",
-          "query": "\"DanceWize\" (training OR volunteer OR protocol)",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/festivals.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 197,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "training"
-          ]
-        },
-        {
-          "id": "festivals-peer-outreach-at-events",
-          "title": "Peer Outreach at Events",
-          "category": "\udc65 Peer Programs",
-          "query": "(\"peer outreach\" OR \"peer support\") festival (training OR protocol OR evaluation)",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/festivals.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 203,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "peer",
-            "training"
-          ]
-        },
-        {
-          "id": "festivals-volunteer-training",
-          "title": "Volunteer Training",
-          "category": "\udc65 Peer Programs",
-          "query": "(festival OR event) (\"harm reduction\" OR \"peer support\") volunteer training filetype:pdf",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/festivals.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 209,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "peer",
-            "training"
-          ]
-        },
-        {
-          "id": "festivals-festival-harm-reduction-evaluations",
-          "title": "Festival Harm Reduction Evaluations",
-          "category": "Evaluation & Research",
-          "query": "\"festival harm reduction\" evaluation (report OR findings) filetype:pdf",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/festivals.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 219,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "pdf",
-          "tags": [
-            "documents"
-          ]
-        },
-        {
-          "id": "festivals-drug-checking-trial-evaluations",
-          "title": "Drug Checking Trial Evaluations",
-          "category": "Evaluation & Research",
-          "query": "\"drug checking\" festival (evaluation OR pilot OR trial) Australia filetype:pdf",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/festivals.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 225,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "australia"
-          ]
-        },
-        {
-          "id": "festivals-event-health-data",
-          "title": "Event Health Data",
-          "category": "Evaluation & Research",
-          "query": "(festival OR \"music event\") \"health data\" OR \"presentation data\" OR statistics (report OR analysis)",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/festivals.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 231,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "documents",
-            "data"
-          ]
-        },
-        {
-          "id": "festivals-event-health-planning",
-          "title": "Event Health Planning",
-          "category": "\udd27 Planning & Operations",
-          "query": "\"event health\" planning OR \"risk assessment\" (festival OR \"music event\") filetype:pdf",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/festivals.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 241,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "pdf",
-          "tags": [
-            "documents"
-          ]
-        },
-        {
-          "id": "festivals-licensing-regulations",
-          "title": "Licensing & Regulations",
-          "category": "\udd27 Planning & Operations",
-          "query": "(festival OR \"music event\") (license OR regulation OR \"harm reduction requirements\") (NSW OR VIC OR QLD)",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/festivals.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 247,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "festivals-stakeholder-coordination",
-          "title": "Stakeholder Coordination",
-          "category": "\udd27 Planning & Operations",
-          "query": "(festival OR event) (\"multi-agency\" OR \"stakeholder\" OR \"coordination\") (health OR safety OR \"harm reduction\")",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/festivals.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 253,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "festivals-uk-festival-health",
-          "title": "UK Festival Health",
-          "category": "International Best Practice",
-          "query": "site:*.gov.uk OR site:*.org.uk \"festival\" \"harm reduction\" OR \"drug safety\"",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/festivals.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 263,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "gov.uk",
-            "org.uk"
-          ],
-          "domainCategory": "government",
-          "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "festivals-european-models",
-          "title": "European Models",
-          "category": "International Best Practice",
-          "query": "(Europe OR Netherlands OR Switzerland) festival \"drug checking\" OR \"harm reduction\" (model OR \"best practice\")",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/festivals.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 269,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": []
         },
         {
           "id": "festivals-the-loop-uk",
           "title": "The Loop (UK)",
-          "category": "International Best Practice",
-          "query": "\"The Loop\" \"drug checking\" festival evaluation OR results",
+          "category": "International",
+          "query": "site:wearetheloop.org (\"drug checking\" OR \"TEST & KNOW\" OR festival)",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/festivals.md",
           "sourceType": "dork-pack",
-          "sourceLine": 275,
-          "operators": [],
-          "targetDomains": [],
+          "sourceLine": 236,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "wearetheloop.org"
+          ],
+          "domainCategory": "any",
+          "contentType": "any",
+          "tags": []
+        },
+        {
+          "id": "festivals-european-festival-models",
+          "title": "European Festival Models",
+          "category": "International",
+          "query": "(site:saferparty.ch OR site:euda.europa.eu) (festival OR \"drug checking\" OR \"nightlife\")",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/festivals.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 242,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "saferparty.ch",
+            "euda.europa.eu"
+          ],
           "domainCategory": "any",
           "contentType": "any",
           "tags": []
@@ -17889,18 +17726,127 @@
     {
       "id": "policy-advocacy",
       "title": "Policy, Inquiries & Advocacy",
-      "description": "Parliamentary submissions, inquiries, policy directives, and advocacy resources.",
+      "description": "Find the strategy, the inquiry, and the peak-body position — named by the actual document and",
       "dorks": [
         {
-          "id": "policy-advocacy-search-aph-gov-au",
-          "title": "Search aph.gov.au",
+          "id": "policy-advocacy-search-nsw-gov-au",
+          "title": "Search nsw.gov.au",
           "category": "Quick Start",
-          "query": "site:aph.gov.au inurl:submissions (\"drug policy\" OR \"harm reduction\") filetype:pdf",
+          "query": "\"Special Commission of Inquiry into the Drug 'Ice'\" site:nsw.gov.au",
           "explanation": "",
           "difficulty": "beginner",
           "sourceFile": "dork-packs/policy-advocacy.md",
           "sourceType": "dork-pack",
-          "sourceLine": 14,
+          "sourceLine": 33,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "nsw.gov.au"
+          ],
+          "domainCategory": "government",
+          "contentType": "any",
+          "tags": [
+            "australia"
+          ]
+        },
+        {
+          "id": "policy-advocacy-the-national-drug-strategy",
+          "title": "The National Drug Strategy",
+          "category": "Basic Queries",
+          "query": "site:health.gov.au \"National Drug Strategy 2017-2026\"",
+          "explanation": "**Why this works:**\n\n- Goes to the exact framework (note the en-dash in the cover title, hyphen in the URL) — the spine\nevery state strategy maps back to",
+          "difficulty": "beginner",
+          "sourceFile": "dork-packs/policy-advocacy.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 40,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "health.gov.au"
+          ],
+          "domainCategory": "government",
+          "contentType": "any",
+          "tags": [
+            "policy",
+            "australia"
+          ]
+        },
+        {
+          "id": "policy-advocacy-peak-body-positions",
+          "title": "Peak-Body Positions",
+          "category": "Basic Queries",
+          "query": "(site:aadc.org.au OR site:nada.org.au OR site:vaada.org.au OR site:qnada.org.au) (position OR submission OR statement)",
+          "explanation": "**Why this works:**\n\n- The state AOD peak bodies (and the national AADC) publish the sector's formal positions — naming\ntheir domains beats a generic `.org.au` sweep",
+          "difficulty": "beginner",
+          "sourceFile": "dork-packs/policy-advocacy.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 51,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "aadc.org.au",
+            "nada.org.au",
+            "vaada.org.au",
+            "qnada.org.au"
+          ],
+          "domainCategory": "ngo",
+          "contentType": "any",
+          "tags": [
+            "australia"
+          ]
+        },
+        {
+          "id": "policy-advocacy-drug-user-organisation-advocacy",
+          "title": "Drug-User Organisation Advocacy",
+          "category": "Basic Queries",
+          "query": "(site:aivl.org.au OR site:nuaa.org.au) (submission OR position OR campaign OR \"drug law reform\")",
+          "explanation": "",
+          "difficulty": "beginner",
+          "sourceFile": "dork-packs/policy-advocacy.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 62,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "aivl.org.au",
+            "nuaa.org.au"
+          ],
+          "domainCategory": "ngo",
+          "contentType": "any",
+          "tags": [
+            "australia"
+          ]
+        },
+        {
+          "id": "policy-advocacy-named-inquiries-summits",
+          "title": "Named Inquiries & Summits",
+          "category": "Intermediate Queries",
+          "query": "(\"Special Commission of Inquiry into the Drug 'Ice'\" OR \"2024 New South Wales Drug Summit\" OR \"Inquiry into crystal methamphetamine (ice)\")",
+          "explanation": "**Why this works:**\n\n- These are the three most-cited recent inquiries; quoting their exact titles finds the reports and\nthe government responses, not commentary",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/policy-advocacy.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 72,
+          "operators": [],
+          "targetDomains": [],
+          "domainCategory": "any",
+          "contentType": "any",
+          "tags": []
+        },
+        {
+          "id": "policy-advocacy-parliamentary-submissions",
+          "title": "Parliamentary Submissions",
+          "category": "Intermediate Queries",
+          "query": "site:aph.gov.au inurl:submissions (\"drug policy\" OR \"harm reduction\" OR \"drug law reform\") filetype:pdf",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/policy-advocacy.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 83,
           "operators": [
             "site",
             "filetype",
@@ -17918,210 +17864,60 @@
           ]
         },
         {
-          "id": "policy-advocacy-commonwealth-government-policy",
-          "title": "Commonwealth Government Policy",
-          "category": "Basic Queries",
-          "query": "site:health.gov.au filetype:pdf \"national drug strategy\"",
+          "id": "policy-advocacy-current-consultations",
+          "title": "Current Consultations",
+          "category": "Intermediate Queries",
+          "query": "site:*.gov.au (\"call for submissions\" OR \"public consultation\") (\"harm reduction\" OR \"alcohol and other drugs\") (\"closing date\" OR open) after:2025",
           "explanation": "",
-          "difficulty": "beginner",
+          "difficulty": "intermediate",
           "sourceFile": "dork-packs/policy-advocacy.md",
           "sourceType": "dork-pack",
-          "sourceLine": 21,
+          "sourceLine": 89,
           "operators": [
             "site",
-            "filetype"
-          ],
-          "targetDomains": [
-            "health.gov.au"
-          ],
-          "domainCategory": "government",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "policy",
-            "australia"
-          ]
-        },
-        {
-          "id": "policy-advocacy-parliamentary-inquiries",
-          "title": "Parliamentary Inquiries",
-          "category": "Basic Queries",
-          "query": "site:aph.gov.au (committee OR committees) (drug OR \"alcohol and other drugs\") (inquiry OR submissions)",
-          "explanation": "",
-          "difficulty": "beginner",
-          "sourceFile": "dork-packs/policy-advocacy.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 27,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "aph.gov.au"
-          ],
-          "domainCategory": "government",
-          "contentType": "any",
-          "tags": [
-            "australia"
-          ]
-        },
-        {
-          "id": "policy-advocacy-aihw-policy-analysis",
-          "title": "AIHW Policy Analysis",
-          "category": "Basic Queries",
-          "query": "site:aihw.gov.au \"alcohol and other drugs\" policy",
-          "explanation": "",
-          "difficulty": "beginner",
-          "sourceFile": "dork-packs/policy-advocacy.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 33,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "aihw.gov.au"
-          ],
-          "domainCategory": "government",
-          "contentType": "any",
-          "tags": [
-            "policy",
-            "australia"
-          ]
-        },
-        {
-          "id": "policy-advocacy-state-parliamentary-inquiries-1",
-          "title": "State Parliamentary Inquiries - 1",
-          "category": "Intermediate Queries",
-          "query": "site:parliament.nsw.gov.au \"special commission of inquiry\" drugs",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/policy-advocacy.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 43,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "parliament.nsw.gov.au"
-          ],
-          "domainCategory": "government",
-          "contentType": "any",
-          "tags": [
-            "australia"
-          ]
-        },
-        {
-          "id": "policy-advocacy-state-parliamentary-inquiries-2",
-          "title": "State Parliamentary Inquiries - 2",
-          "category": "Intermediate Queries",
-          "query": "site:parliament.*.gov.au (\"drug law reform\" OR \"decriminalisation\" OR \"inquiry\")",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/policy-advocacy.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 49,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "parliament.*.gov.au"
-          ],
-          "domainCategory": "government",
-          "contentType": "any",
-          "tags": [
-            "australia"
-          ]
-        },
-        {
-          "id": "policy-advocacy-current-consultations-1",
-          "title": "Current Consultations - 1",
-          "category": "Intermediate Queries",
-          "query": "\"public consultation\" \"harm reduction\" \"closing date\" 2025..2026",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/policy-advocacy.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 55,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "policy-advocacy-current-consultations-2",
-          "title": "Current Consultations - 2",
-          "category": "Intermediate Queries",
-          "query": "\"call for submissions\" AOD policy 2025..2026",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/policy-advocacy.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 61,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "policy"
-          ]
-        },
-        {
-          "id": "policy-advocacy-draft-policies",
-          "title": "Draft Policies",
-          "category": "Intermediate Queries",
-          "query": "site:*.gov.au \"draft\" (\"harm reduction\" OR \"drug policy\") filetype:pdf",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/policy-advocacy.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 67,
-          "operators": [
-            "site",
-            "filetype"
+            "after"
           ],
           "targetDomains": [
             "gov.au"
           ],
           "domainCategory": "government",
-          "contentType": "pdf",
+          "contentType": "any",
           "tags": [
-            "documents",
-            "policy",
             "australia"
           ]
         },
         {
-          "id": "policy-advocacy-policy-briefs",
-          "title": "Policy Briefs",
+          "id": "policy-advocacy-act-decriminalisation",
+          "title": "ACT Decriminalisation",
           "category": "Intermediate Queries",
-          "query": "\"policy brief\" (\"drug checking\" OR \"pill testing\" OR \"harm reduction\") Australia filetype:pdf",
+          "query": "\"Drugs of Dependence (Personal Use) Amendment Act 2022\" site:legislation.act.gov.au",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/policy-advocacy.md",
           "sourceType": "dork-pack",
-          "sourceLine": 73,
+          "sourceLine": 95,
           "operators": [
-            "filetype"
+            "site"
           ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "pdf",
+          "targetDomains": [
+            "legislation.act.gov.au"
+          ],
+          "domainCategory": "government",
+          "contentType": "any",
           "tags": [
-            "documents",
-            "policy",
             "australia"
           ]
         },
         {
-          "id": "policy-advocacy-comprehensive-policy-document-sweep",
-          "title": "Comprehensive Policy Document Sweep",
+          "id": "policy-advocacy-comprehensive-policy-sweep",
+          "title": "Comprehensive Policy Sweep",
           "category": "Advanced Queries",
-          "query": "site:*.gov.au filetype:pdf (\"drug policy\" OR \"drug strategy\" OR \"harm reduction\" OR \"alcohol and other drugs\") (policy OR strategy OR framework OR \"action plan\") after:2022",
+          "query": "site:*.gov.au filetype:pdf (\"National Drug Strategy\" OR \"drug strategy\" OR \"harm reduction\" OR \"alcohol and other drugs\") (strategy OR framework OR \"action plan\" OR review) after:2022",
           "explanation": "",
           "difficulty": "advanced",
           "sourceFile": "dork-packs/policy-advocacy.md",
           "sourceType": "dork-pack",
-          "sourceLine": 83,
+          "sourceLine": 105,
           "operators": [
             "site",
             "filetype",
@@ -18139,41 +17935,15 @@
           ]
         },
         {
-          "id": "policy-advocacy-parliamentary-submissions-all-states",
-          "title": "Parliamentary Submissions (All States)",
-          "category": "Advanced Queries",
-          "query": "site:*.gov.au inurl:submissions (\"drug policy\" OR \"harm reduction\" OR \"drug law reform\") filetype:pdf",
-          "explanation": "",
-          "difficulty": "advanced",
-          "sourceFile": "dork-packs/policy-advocacy.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 89,
-          "operators": [
-            "site",
-            "filetype",
-            "inurl"
-          ],
-          "targetDomains": [
-            "gov.au"
-          ],
-          "domainCategory": "government",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "policy",
-            "australia"
-          ]
-        },
-        {
           "id": "policy-advocacy-decriminalisation-reform-documents",
-          "title": "Decriminalisation/Reform Documents",
+          "title": "Decriminalisation & Reform Documents",
           "category": "Advanced Queries",
-          "query": "(\"decriminalisation\" OR \"decriminalization\" OR \"depenalisation\" OR \"drug law reform\") Australia (analysis OR evaluation OR model) filetype:pdf",
+          "query": "(decriminalisation OR \"decriminalization\" OR \"depenalisation\" OR \"drug law reform\" OR \"legal regulation\") Australia (analysis OR evaluation OR model OR submission) filetype:pdf",
           "explanation": "",
           "difficulty": "advanced",
           "sourceFile": "dork-packs/policy-advocacy.md",
           "sourceType": "dork-pack",
-          "sourceLine": 95,
+          "sourceLine": 111,
           "operators": [
             "filetype"
           ],
@@ -18186,132 +17956,19 @@
           ]
         },
         {
-          "id": "policy-advocacy-international-comparisons-1",
-          "title": "International Comparisons - 1",
+          "id": "policy-advocacy-government-responses-to-inquiries",
+          "title": "Government Responses to Inquiries",
           "category": "Advanced Queries",
-          "query": "\"drug policy\" \"international comparison\" Australia filetype:pdf",
-          "explanation": "",
+          "query": "(\"government response\" OR \"implementation\") (\"Drug Summit\" OR \"Special Commission of Inquiry\" OR \"drug policy\") (NSW OR Australia) filetype:pdf",
+          "explanation": "**Why this works:**\n\n- Recommendations only matter if acted on — pairing an inquiry with \"government response\" finds the\nfollow-through (or the lack of it)",
           "difficulty": "advanced",
-          "sourceFile": "dork-packs/policy-advocacy.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 101,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "policy",
-            "international",
-            "australia"
-          ]
-        },
-        {
-          "id": "policy-advocacy-international-comparisons-2",
-          "title": "International Comparisons - 2",
-          "category": "Advanced Queries",
-          "query": "\"harm reduction\" policy (Portugal OR Canada OR Switzerland) comparison Australia",
-          "explanation": "",
-          "difficulty": "advanced",
-          "sourceFile": "dork-packs/policy-advocacy.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 107,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "policy",
-            "australia"
-          ]
-        },
-        {
-          "id": "policy-advocacy-commonwealth-parliament-1",
-          "title": "Commonwealth Parliament - 1",
-          "category": "Parliamentary Sources",
-          "query": "site:aph.gov.au/parliamentary_business/committees \"drug policy\"",
-          "explanation": "",
-          "difficulty": "intermediate",
           "sourceFile": "dork-packs/policy-advocacy.md",
           "sourceType": "dork-pack",
           "sourceLine": 117,
           "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "aph.gov.au/parliamentary_business/committees"
-          ],
-          "domainCategory": "government",
-          "contentType": "any",
-          "tags": [
-            "policy",
-            "australia"
-          ]
-        },
-        {
-          "id": "policy-advocacy-commonwealth-parliament-2",
-          "title": "Commonwealth Parliament - 2",
-          "category": "Parliamentary Sources",
-          "query": "site:aph.gov.au \"inquiry\" (\"illicit drugs\" OR \"harm reduction\" OR \"drug policy\")",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/policy-advocacy.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 123,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "aph.gov.au"
-          ],
-          "domainCategory": "government",
-          "contentType": "any",
-          "tags": [
-            "policy",
-            "australia"
-          ]
-        },
-        {
-          "id": "policy-advocacy-state-parliaments",
-          "title": "State Parliaments",
-          "category": "Parliamentary Sources",
-          "query": "site:parliament.wa.gov.au inquiry drug",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/policy-advocacy.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 129,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "parliament.wa.gov.au"
-          ],
-          "domainCategory": "government",
-          "contentType": "any",
-          "tags": [
-            "australia"
-          ]
-        },
-        {
-          "id": "policy-advocacy-finding-submissions",
-          "title": "Finding Submissions",
-          "category": "Parliamentary Sources",
-          "query": "site:aph.gov.au \"submission\" \"harm reduction\" OR \"drug policy\" filetype:pdf",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/policy-advocacy.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 161,
-          "operators": [
-            "site",
             "filetype"
           ],
-          "targetDomains": [
-            "aph.gov.au"
-          ],
+          "targetDomains": [],
           "domainCategory": "government",
           "contentType": "pdf",
           "tags": [
@@ -18321,39 +17978,82 @@
           ]
         },
         {
-          "id": "policy-advocacy-hansard-parliamentary-debate",
-          "title": "Hansard (Parliamentary Debate)",
-          "category": "Parliamentary Sources",
-          "query": "site:aph.gov.au OR site:parliament.*.gov.au \"hansard\" (\"harm reduction\" OR \"drug policy\")",
+          "id": "policy-advocacy-nsw-ice-inquiry-2020",
+          "title": "NSW Ice Inquiry (2020)",
+          "category": "Landmark Inquiries & Strategy",
+          "query": "\"Special Commission of Inquiry into the Drug 'Ice'\" (\"Dan Howard\" OR recommendations) site:nsw.gov.au",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/policy-advocacy.md",
           "sourceType": "dork-pack",
-          "sourceLine": 167,
+          "sourceLine": 134,
           "operators": [
             "site"
           ],
           "targetDomains": [
-            "aph.gov.au",
-            "parliament.*.gov.au"
+            "nsw.gov.au"
           ],
           "domainCategory": "government",
           "contentType": "any",
           "tags": [
-            "policy",
             "australia"
           ]
         },
         {
-          "id": "policy-advocacy-national-drug-strategy-1",
-          "title": "National Drug Strategy - 1",
-          "category": "\udccb Strategy & Framework Documents",
-          "query": "site:health.gov.au \"National Drug Strategy\" filetype:pdf",
+          "id": "policy-advocacy-2024-nsw-drug-summit",
+          "title": "2024 NSW Drug Summit",
+          "category": "Landmark Inquiries & Strategy",
+          "query": "site:health.nsw.gov.au \"Report on the 2024 New South Wales Drug Summit\"",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/policy-advocacy.md",
           "sourceType": "dork-pack",
-          "sourceLine": 177,
+          "sourceLine": 140,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "health.nsw.gov.au"
+          ],
+          "domainCategory": "government",
+          "contentType": "any",
+          "tags": [
+            "documents",
+            "australia"
+          ]
+        },
+        {
+          "id": "policy-advocacy-federal-ice-inquiry",
+          "title": "Federal Ice Inquiry",
+          "category": "Landmark Inquiries & Strategy",
+          "query": "site:aph.gov.au \"Inquiry into crystal methamphetamine (ice)\"",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/policy-advocacy.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 146,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "aph.gov.au"
+          ],
+          "domainCategory": "government",
+          "contentType": "any",
+          "tags": [
+            "australia"
+          ]
+        },
+        {
+          "id": "policy-advocacy-national-drug-strategy",
+          "title": "National Drug Strategy",
+          "category": "Landmark Inquiries & Strategy",
+          "query": "site:health.gov.au \"National Drug Strategy 2017-2026\" filetype:pdf",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/policy-advocacy.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 152,
           "operators": [
             "site",
             "filetype"
@@ -18370,292 +18070,172 @@
           ]
         },
         {
-          "id": "policy-advocacy-national-drug-strategy-2",
-          "title": "National Drug Strategy - 2",
-          "category": "\udccb Strategy & Framework Documents",
-          "query": "\"National Drug Strategy\" 2017..2026 Australia",
+          "id": "policy-advocacy-state-national-peak-bodies",
+          "title": "State & National Peak Bodies",
+          "category": "✊ Peak Bodies & Reform Organisations",
+          "query": "(site:aadc.org.au OR site:atoda.org.au OR site:nada.org.au OR site:vaada.org.au OR site:qnada.org.au OR site:wanada.org.au OR site:sandas.org.au OR site:atdc.org.au OR site:aadant.org.au) (submission OR position OR \"pre-budget\")",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/policy-advocacy.md",
           "sourceType": "dork-pack",
-          "sourceLine": 183,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "policy",
-            "australia"
-          ]
-        },
-        {
-          "id": "policy-advocacy-state-strategies",
-          "title": "State Strategies",
-          "category": "\udccb Strategy & Framework Documents",
-          "query": "site:*.gov.au (\"drug strategy\" OR \"AOD strategy\" OR \"alcohol and other drugs strategy\") [STATE] filetype:pdf",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/policy-advocacy.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 189,
+          "sourceLine": 162,
           "operators": [
-            "site",
-            "filetype"
+            "site"
           ],
           "targetDomains": [
-            "gov.au"
-          ],
-          "domainCategory": "government",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "policy",
-            "australia"
-          ]
-        },
-        {
-          "id": "policy-advocacy-action-plans",
-          "title": "Action Plans",
-          "category": "\udccb Strategy & Framework Documents",
-          "query": "site:*.gov.au \"action plan\" (\"harm reduction\" OR \"alcohol and other drugs\") filetype:pdf",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/policy-advocacy.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 195,
-          "operators": [
-            "site",
-            "filetype"
-          ],
-          "targetDomains": [
-            "gov.au"
-          ],
-          "domainCategory": "government",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "australia"
-          ]
-        },
-        {
-          "id": "policy-advocacy-peak-body-positions",
-          "title": "Peak Body Positions",
-          "category": "✊ Advocacy Resources",
-          "query": "(site:atoda.org.au OR site:nada.org.au OR site:vaada.org.au) (position OR statement OR submission) filetype:pdf",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/policy-advocacy.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 205,
-          "operators": [
-            "site",
-            "filetype"
-          ],
-          "targetDomains": [
+            "aadc.org.au",
             "atoda.org.au",
             "nada.org.au",
-            "vaada.org.au"
+            "vaada.org.au",
+            "qnada.org.au",
+            "wanada.org.au",
+            "sandas.org.au",
+            "atdc.org.au",
+            "aadant.org.au"
           ],
           "domainCategory": "ngo",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "australia"
-          ]
-        },
-        {
-          "id": "policy-advocacy-drug-user-organisation-advocacy",
-          "title": "Drug User Organisation Advocacy",
-          "category": "✊ Advocacy Resources",
-          "query": "(site:aivl.org.au OR site:nuaa.org.au) (submission OR advocacy OR position) filetype:pdf",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/policy-advocacy.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 211,
-          "operators": [
-            "site",
-            "filetype"
-          ],
-          "targetDomains": [
-            "aivl.org.au",
-            "nuaa.org.au"
-          ],
-          "domainCategory": "ngo",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "australia"
-          ]
-        },
-        {
-          "id": "policy-advocacy-reform-campaigns",
-          "title": "Reform Campaigns",
-          "category": "✊ Advocacy Resources",
-          "query": "(\"drug law reform\" OR \"drug policy reform\") (campaign OR advocacy) Australia",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/policy-advocacy.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 217,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
           "contentType": "any",
           "tags": [
-            "policy",
             "australia"
           ]
         },
         {
-          "id": "policy-advocacy-human-rights-approaches-1",
-          "title": "Human Rights Approaches - 1",
-          "category": "✊ Advocacy Resources",
-          "query": "\"drug policy\" \"human rights\" Australia filetype:pdf",
-          "explanation": "",
+          "id": "policy-advocacy-drug-law-reform-campaigns",
+          "title": "Drug-Law-Reform Campaigns",
+          "category": "✊ Peak Bodies & Reform Organisations",
+          "query": "(site:fairtreatment.org OR site:unharm.org OR site:ssdp.org.au OR site:harmreductionaustralia.org.au OR site:adlrf.org.au) (\"drug law reform\" OR campaign OR submission)",
+          "explanation": "**Why this works:**\n\n- Uniting's \"Fair Treatment\", Unharm, SSDP Australia, HRA and the ADLRF are the named reform\nvehicles — note `fairtreatment.org` and `unharm.org` are `.org`, not `.org.au`",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/policy-advocacy.md",
           "sourceType": "dork-pack",
-          "sourceLine": 223,
+          "sourceLine": 168,
           "operators": [
-            "filetype"
+            "site"
           ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "pdf",
+          "targetDomains": [
+            "fairtreatment.org",
+            "unharm.org",
+            "ssdp.org.au",
+            "harmreductionaustralia.org.au",
+            "adlrf.org.au"
+          ],
+          "domainCategory": "ngo",
+          "contentType": "any",
           "tags": [
-            "documents",
-            "policy",
             "australia"
           ]
         },
         {
-          "id": "policy-advocacy-human-rights-approaches-2",
-          "title": "Human Rights Approaches - 2",
-          "category": "✊ Advocacy Resources",
-          "query": "\"harm reduction\" \"human rights\" (framework OR approach) filetype:pdf",
+          "id": "policy-advocacy-think-tank-evidence-reform",
+          "title": "Think-Tank & Evidence Reform",
+          "category": "✊ Peak Bodies & Reform Organisations",
+          "query": "(site:australia21.org.au OR site:penington.org.au) (\"drug policy\" OR \"drug law reform\" OR \"Drug Policy Reform\")",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/policy-advocacy.md",
           "sourceType": "dork-pack",
-          "sourceLine": 229,
+          "sourceLine": 179,
           "operators": [
-            "filetype"
+            "site"
           ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "policy"
-          ]
-        },
-        {
-          "id": "policy-advocacy-evidence-reviews",
-          "title": "Evidence Reviews",
-          "category": "Policy Analysis",
-          "query": "\"evidence review\" OR \"evidence base\" (\"drug policy\" OR \"harm reduction\") Australia filetype:pdf",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/policy-advocacy.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 239,
-          "operators": [
-            "filetype"
+          "targetDomains": [
+            "australia21.org.au",
+            "penington.org.au"
           ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "pdf",
+          "domainCategory": "ngo",
+          "contentType": "any",
           "tags": [
-            "documents",
             "research",
             "policy",
             "australia"
           ]
         },
         {
-          "id": "policy-advocacy-evaluations-of-policies",
-          "title": "Evaluations of Policies",
-          "category": "Policy Analysis",
-          "query": "site:*.gov.au OR site:*.edu.au \"drug policy\" evaluation OR review Australia filetype:pdf",
+          "id": "policy-advocacy-peer-body-submissions",
+          "title": "Peer-Body Submissions",
+          "category": "\udcac Peer & Lived-Experience Advocacy",
+          "query": "(site:aivl.org.au OR site:nuaa.org.au) (submission OR \"position statement\") (inquiry OR consultation OR \"drug summit\")",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/policy-advocacy.md",
           "sourceType": "dork-pack",
-          "sourceLine": 245,
+          "sourceLine": 191,
           "operators": [
-            "site",
-            "filetype"
+            "site"
           ],
           "targetDomains": [
-            "gov.au",
-            "edu.au"
+            "aivl.org.au",
+            "nuaa.org.au"
           ],
-          "domainCategory": "government",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "policy",
-            "australia"
-          ]
-        },
-        {
-          "id": "policy-advocacy-economic-analysis",
-          "title": "Economic Analysis",
-          "category": "Policy Analysis",
-          "query": "(\"cost-benefit\" OR \"cost-effectiveness\" OR \"economic analysis\") (\"drug policy\" OR \"harm reduction\") Australia filetype:pdf",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/policy-advocacy.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 251,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "policy",
-            "australia"
-          ]
-        },
-        {
-          "id": "policy-advocacy-decriminalisation-models-1",
-          "title": "Decriminalisation Models - 1",
-          "category": "International Policy",
-          "query": "\"decriminalisation\" Portugal (model OR evaluation OR lessons) filetype:pdf",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/policy-advocacy.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 261,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "pdf",
-          "tags": [
-            "documents"
-          ]
-        },
-        {
-          "id": "policy-advocacy-decriminalisation-models-2",
-          "title": "Decriminalisation Models - 2",
-          "category": "International Policy",
-          "query": "\"drug policy\" reform (Canada OR Switzerland OR Netherlands) evaluation",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/policy-advocacy.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 267,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
+          "domainCategory": "ngo",
           "contentType": "any",
           "tags": [
+            "peer",
+            "australia"
+          ]
+        },
+        {
+          "id": "policy-advocacy-nothing-about-us-without-us",
+          "title": "\"Nothing About Us Without Us\"",
+          "category": "\udcac Peer & Lived-Experience Advocacy",
+          "query": "\"nothing about us without us\" (\"drug policy\" OR \"drug law reform\" OR \"harm reduction\") Australia filetype:pdf",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/policy-advocacy.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 197,
+          "operators": [
+            "filetype"
+          ],
+          "targetDomains": [],
+          "domainCategory": "any",
+          "contentType": "pdf",
+          "tags": [
+            "documents",
+            "policy",
+            "australia"
+          ]
+        },
+        {
+          "id": "policy-advocacy-human-rights-approaches",
+          "title": "Human-Rights Approaches",
+          "category": "\udcac Peer & Lived-Experience Advocacy",
+          "query": "(\"drug policy\" OR \"harm reduction\") \"human rights\" (framework OR approach OR Australia) filetype:pdf",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/policy-advocacy.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 203,
+          "operators": [
+            "filetype"
+          ],
+          "targetDomains": [],
+          "domainCategory": "any",
+          "contentType": "pdf",
+          "tags": [
+            "documents",
+            "policy",
+            "australia"
+          ]
+        },
+        {
+          "id": "policy-advocacy-decriminalisation-models",
+          "title": "Decriminalisation Models",
+          "category": "International Policy",
+          "query": "(decriminalisation OR \"legal regulation\") (Portugal OR \"British Columbia\" OR Switzerland) (\"drug policy\" OR lessons OR evaluation) filetype:pdf",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/policy-advocacy.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 213,
+          "operators": [
+            "filetype"
+          ],
+          "targetDomains": [],
+          "domainCategory": "any",
+          "contentType": "pdf",
+          "tags": [
+            "documents",
             "policy"
           ]
         },
@@ -18663,18 +18243,18 @@
           "id": "policy-advocacy-un-who-policy",
           "title": "UN & WHO Policy",
           "category": "International Policy",
-          "query": "site:who.int OR site:unodc.org \"drug policy\" OR \"harm reduction\" guidelines",
-          "explanation": "",
+          "query": "(site:unodc.org OR site:who.int) (\"drug policy\" OR \"harm reduction\") (guidelines OR standards)",
+          "explanation": "> See the [International](international.md) pack for the named overseas agencies and laws.",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/policy-advocacy.md",
           "sourceType": "dork-pack",
-          "sourceLine": 273,
+          "sourceLine": 219,
           "operators": [
             "site"
           ],
           "targetDomains": [
-            "who.int",
-            "unodc.org"
+            "unodc.org",
+            "who.int"
           ],
           "domainCategory": "international",
           "contentType": "any",
@@ -18684,63 +18264,19 @@
           ]
         },
         {
-          "id": "policy-advocacy-international-best-practice",
-          "title": "International Best Practice",
-          "category": "International Policy",
-          "query": "\"drug policy\" \"best practice\" (international OR global) (comparison OR review) filetype:pdf",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/policy-advocacy.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 279,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "policy",
-            "international"
-          ]
-        },
-        {
-          "id": "policy-advocacy-open-consultations-1",
-          "title": "Open Consultations - 1",
+          "id": "policy-advocacy-open-consultations",
+          "title": "Open Consultations",
           "category": "\udcc5 Tracking Current Consultations",
-          "query": "site:*.gov.au \"consultation\" (\"harm reduction\" OR \"drug policy\") \"closing date\" 2026",
+          "query": "site:*.gov.au inurl:consultation (\"harm reduction\" OR \"drug policy\" OR \"alcohol and other drugs\") (\"closing date\" OR open) after:2025",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/policy-advocacy.md",
           "sourceType": "dork-pack",
-          "sourceLine": 289,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "gov.au"
-          ],
-          "domainCategory": "government",
-          "contentType": "any",
-          "tags": [
-            "policy",
-            "australia"
-          ]
-        },
-        {
-          "id": "policy-advocacy-open-consultations-2",
-          "title": "Open Consultations - 2",
-          "category": "\udcc5 Tracking Current Consultations",
-          "query": "inurl:consultation site:*.gov.au (drug OR alcohol) \"open\" OR \"current\"",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/policy-advocacy.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 295,
+          "sourceLine": 231,
           "operators": [
             "site",
-            "inurl"
+            "inurl",
+            "after"
           ],
           "targetDomains": [
             "gov.au"
@@ -18748,6 +18284,7 @@
           "domainCategory": "government",
           "contentType": "any",
           "tags": [
+            "policy",
             "australia"
           ]
         },
@@ -18760,7 +18297,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/policy-advocacy.md",
           "sourceType": "dork-pack",
-          "sourceLine": 301,
+          "sourceLine": 237,
           "operators": [
             "site",
             "inurl",
@@ -21130,29 +20667,76 @@
     {
       "id": "safer-use-education",
       "title": "Safer Use Education & Health Promotion",
-      "description": "Finding factsheets, brochures, and health promotion resources for safer use education. Focused on",
+      "description": "Find factsheets, brochures, and plain-language harm-reduction materials — named by the producer",
       "dorks": [
         {
-          "id": "safer-use-education-search-org-au",
-          "title": "Search org.au",
+          "id": "safer-use-education-search-nuaa-org-au",
+          "title": "Search nuaa.org.au",
           "category": "Quick Start",
-          "query": "site:*.org.au (factsheet OR brochure OR \"information sheet\") (\"harm reduction\" OR \"safer use\") filetype:pdf",
+          "query": "(site:nuaa.org.au OR site:adf.org.au) (\"User's News\" OR \"Drug Facts\" OR factsheet OR \"safer use\")",
           "explanation": "",
           "difficulty": "beginner",
           "sourceFile": "dork-packs/safer-use-education.md",
           "sourceType": "dork-pack",
-          "sourceLine": 15,
+          "sourceLine": 29,
           "operators": [
-            "site",
-            "filetype"
+            "site"
           ],
           "targetDomains": [
-            "org.au"
+            "nuaa.org.au",
+            "adf.org.au"
           ],
           "domainCategory": "ngo",
-          "contentType": "pdf",
+          "contentType": "any",
           "tags": [
-            "documents",
+            "australia"
+          ]
+        },
+        {
+          "id": "safer-use-education-peer-produced-resources-nuaa-dancewize",
+          "title": "Peer-Produced Resources (NUAA / DanceWize)",
+          "category": "Basic Queries",
+          "query": "(site:nuaa.org.au OR site:usersnews.com.au OR site:hrvic.org.au OR site:dancewizensw.org.au) (\"User's News\" OR \"Insider's News\" OR \"DanceWize\" OR factsheet)",
+          "explanation": "**Why this works:**\n\n- NUAA's _User's News_ / _Insider's News_ and DanceWize's crowd-care material are written by and for\npeople who use drugs — the by-and-with-peers core of safer-use education",
+          "difficulty": "beginner",
+          "sourceFile": "dork-packs/safer-use-education.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 36,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "nuaa.org.au",
+            "usersnews.com.au",
+            "hrvic.org.au",
+            "dancewizensw.org.au"
+          ],
+          "domainCategory": "ngo",
+          "contentType": "any",
+          "tags": [
+            "peer",
+            "australia"
+          ]
+        },
+        {
+          "id": "safer-use-education-adf-plain-language-drug-info",
+          "title": "ADF Plain-Language Drug Info",
+          "category": "Basic Queries",
+          "query": "site:adf.org.au (\"Drug Facts\" OR \"Power of Words\" OR \"safer use\")",
+          "explanation": "",
+          "difficulty": "beginner",
+          "sourceFile": "dork-packs/safer-use-education.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 47,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "adf.org.au"
+          ],
+          "domainCategory": "ngo",
+          "contentType": "any",
+          "tags": [
             "australia"
           ]
         },
@@ -21160,12 +20744,62 @@
           "id": "safer-use-education-safer-injecting-factsheets",
           "title": "Safer Injecting Factsheets",
           "category": "Basic Queries",
-          "query": "(\"safer injecting\" OR \"safer injection\") (factsheet OR brochure OR \"information sheet\") site:*.org.au filetype:pdf",
+          "query": "(\"safer injecting\" OR \"safer injection\" OR \"safer use\") (factsheet OR brochure OR \"information sheet\") (site:*.org.au OR site:nuaa.org.au) filetype:pdf",
           "explanation": "",
           "difficulty": "beginner",
           "sourceFile": "dork-packs/safer-use-education.md",
           "sourceType": "dork-pack",
-          "sourceLine": 22,
+          "sourceLine": 53,
+          "operators": [
+            "site",
+            "filetype"
+          ],
+          "targetDomains": [
+            "org.au",
+            "nuaa.org.au"
+          ],
+          "domainCategory": "ngo",
+          "contentType": "pdf",
+          "tags": [
+            "documents",
+            "australia"
+          ]
+        },
+        {
+          "id": "safer-use-education-overdose-naloxone-education",
+          "title": "Overdose & Naloxone Education",
+          "category": "Intermediate Queries",
+          "query": "(\"overdose prevention\" OR \"overdose response\" OR naloxone) (factsheet OR \"information sheet\" OR \"how to use\" OR toolkit) site:*.org.au filetype:pdf",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/safer-use-education.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 63,
+          "operators": [
+            "site",
+            "filetype"
+          ],
+          "targetDomains": [
+            "org.au"
+          ],
+          "domainCategory": "ngo",
+          "contentType": "pdf",
+          "tags": [
+            "documents",
+            "training",
+            "australia"
+          ]
+        },
+        {
+          "id": "safer-use-education-substance-specific-harm-reduction-sheets",
+          "title": "Substance-Specific Harm-Reduction Sheets",
+          "category": "Intermediate Queries",
+          "query": "(\"harm reduction\" OR \"safer use\") (opioid OR stimulant OR methamphetamine OR benzodiazepine OR GHB OR ketamine) (\"information sheet\" OR factsheet) site:*.org.au filetype:pdf",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/safer-use-education.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 69,
           "operators": [
             "site",
             "filetype"
@@ -21181,44 +20815,22 @@
           ]
         },
         {
-          "id": "safer-use-education-safer-smoking-or-snorting-materials",
-          "title": "Safer Smoking or Snorting Materials",
-          "category": "Basic Queries",
-          "query": "(\"safer smoking\" OR \"safer snorting\" OR \"safer use\") (factsheet OR brochure OR leaflet) site:*.org.au filetype:pdf",
+          "id": "safer-use-education-bbv-hepatitis-education",
+          "title": "BBV & Hepatitis Education",
+          "category": "Intermediate Queries",
+          "query": "(site:hepatitisaustralia.com OR site:hep.org.au OR site:ashm.org.au) (\"hepatitis C\" OR \"harm reduction\" OR factsheet OR \"HepLink\")",
           "explanation": "",
-          "difficulty": "beginner",
+          "difficulty": "intermediate",
           "sourceFile": "dork-packs/safer-use-education.md",
           "sourceType": "dork-pack",
-          "sourceLine": 28,
-          "operators": [
-            "site",
-            "filetype"
-          ],
-          "targetDomains": [
-            "org.au"
-          ],
-          "domainCategory": "ngo",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "australia"
-          ]
-        },
-        {
-          "id": "safer-use-education-overdose-prevention-education",
-          "title": "Overdose Prevention Education",
-          "category": "Basic Queries",
-          "query": "(\"overdose prevention\" OR \"overdose education\") (factsheet OR \"information sheet\") site:*.org.au",
-          "explanation": "",
-          "difficulty": "beginner",
-          "sourceFile": "dork-packs/safer-use-education.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 34,
+          "sourceLine": 75,
           "operators": [
             "site"
           ],
           "targetDomains": [
-            "org.au"
+            "hepatitisaustralia.com",
+            "hep.org.au",
+            "ashm.org.au"
           ],
           "domainCategory": "ngo",
           "contentType": "any",
@@ -21228,70 +20840,44 @@
           ]
         },
         {
-          "id": "safer-use-education-health-promotion-toolkits",
-          "title": "Health Promotion Toolkits",
-          "category": "Intermediate Queries",
-          "query": "(\"harm reduction\" OR \"safer use\") (\"health promotion\" OR toolkit OR resources) site:*.org.au filetype:pdf",
+          "id": "safer-use-education-multilingual-translated-materials",
+          "title": "Multilingual & Translated Materials",
+          "category": "Advanced Queries",
+          "query": "(site:healthtranslations.vic.gov.au OR site:ceh.org.au) (\"harm reduction\" OR naloxone OR \"safer injecting\" OR hepatitis)",
           "explanation": "",
-          "difficulty": "intermediate",
+          "difficulty": "advanced",
           "sourceFile": "dork-packs/safer-use-education.md",
           "sourceType": "dork-pack",
-          "sourceLine": 44,
+          "sourceLine": 85,
           "operators": [
-            "site",
-            "filetype"
+            "site"
           ],
           "targetDomains": [
-            "org.au"
+            "healthtranslations.vic.gov.au",
+            "ceh.org.au"
           ],
-          "domainCategory": "ngo",
-          "contentType": "pdf",
+          "domainCategory": "government",
+          "contentType": "any",
           "tags": [
-            "documents",
             "australia"
           ]
         },
         {
-          "id": "safer-use-education-peer-education-resources",
-          "title": "Peer Education Resources",
-          "category": "Intermediate Queries",
-          "query": "(\"peer education\" OR \"peer-led\") (\"harm reduction\" OR \"safer use\") site:*.org.au filetype:pdf",
-          "explanation": "",
-          "difficulty": "intermediate",
+          "id": "safer-use-education-easy-read-plain-language",
+          "title": "Easy-Read & Plain-Language",
+          "category": "Advanced Queries",
+          "query": "(\"easy read\" OR \"Easy English\" OR \"plain language\") (naloxone OR \"harm reduction\" OR overdose OR \"safer use\") (site:*.org.au OR site:*.gov.au) filetype:pdf",
+          "explanation": "> Note: no single titled \"Easy Read\" harm-reduction series is established — the ADF's \"Power of\n> Words\" language guide is the nearest named plain-language resource.",
+          "difficulty": "advanced",
           "sourceFile": "dork-packs/safer-use-education.md",
           "sourceType": "dork-pack",
-          "sourceLine": 50,
+          "sourceLine": 91,
           "operators": [
             "site",
             "filetype"
           ],
           "targetDomains": [
-            "org.au"
-          ],
-          "domainCategory": "ngo",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "peer",
-            "training",
-            "australia"
-          ]
-        },
-        {
-          "id": "safer-use-education-government-factsheets-and-brochures",
-          "title": "Government Factsheets and Brochures",
-          "category": "Intermediate Queries",
-          "query": "site:*.gov.au (\"harm reduction\" OR \"safer use\") (factsheet OR brochure OR leaflet) filetype:pdf",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/safer-use-education.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 56,
-          "operators": [
-            "site",
-            "filetype"
-          ],
-          "targetDomains": [
+            "org.au",
             "gov.au"
           ],
           "domainCategory": "government",
@@ -21302,63 +20888,15 @@
           ]
         },
         {
-          "id": "safer-use-education-multilingual-or-easy-read-materials",
-          "title": "Multilingual or Easy Read Materials",
+          "id": "safer-use-education-campaigns-posters-social-marketing",
+          "title": "Campaigns, Posters & Social Marketing",
           "category": "Advanced Queries",
-          "query": "(\"harm reduction\" OR \"safer use\") (translated OR multilingual OR \"easy read\" OR \"plain language\") site:*.org.au filetype:pdf",
+          "query": "(\"harm reduction\" OR \"safer use\" OR \"overdose prevention\") (campaign OR \"social marketing\" OR poster OR infographic) Australia filetype:pdf",
           "explanation": "",
           "difficulty": "advanced",
           "sourceFile": "dork-packs/safer-use-education.md",
           "sourceType": "dork-pack",
-          "sourceLine": 66,
-          "operators": [
-            "site",
-            "filetype"
-          ],
-          "targetDomains": [
-            "org.au"
-          ],
-          "domainCategory": "ngo",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "australia"
-          ]
-        },
-        {
-          "id": "safer-use-education-substance-specific-harm-reduction-sheets",
-          "title": "Substance-Specific Harm Reduction Sheets",
-          "category": "Advanced Queries",
-          "query": "(\"harm reduction\" OR \"safer use\") (opioid OR stimulant OR benzodiazepine OR alcohol) \"information sheet\" site:*.org.au filetype:pdf",
-          "explanation": "",
-          "difficulty": "advanced",
-          "sourceFile": "dork-packs/safer-use-education.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 72,
-          "operators": [
-            "site",
-            "filetype"
-          ],
-          "targetDomains": [
-            "org.au"
-          ],
-          "domainCategory": "ngo",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "australia"
-          ]
-        },
-        {
-          "id": "safer-use-education-campaigns-posters-and-communications",
-          "title": "Campaigns, Posters, and Communications",
-          "category": "Advanced Queries",
-          "query": "(\"harm reduction\" OR \"safer use\") (campaign OR \"social marketing\" OR poster OR \"communication plan\") Australia filetype:pdf",
-          "explanation": "",
-          "difficulty": "advanced",
-          "sourceFile": "dork-packs/safer-use-education.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 78,
+          "sourceLine": 100,
           "operators": [
             "filetype"
           ],
@@ -21367,6 +20905,187 @@
           "contentType": "pdf",
           "tags": [
             "documents",
+            "australia"
+          ]
+        },
+        {
+          "id": "safer-use-education-nuaa-publications-programs",
+          "title": "NUAA Publications & Programs",
+          "category": "\udce3 Peer-Produced Education",
+          "query": "(site:nuaa.org.au OR site:usersnews.com.au) (\"User's News\" OR \"Insider's News\" OR \"PeerLink\" OR \"ConnectED\")",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/safer-use-education.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 112,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "nuaa.org.au",
+            "usersnews.com.au"
+          ],
+          "domainCategory": "ngo",
+          "contentType": "any",
+          "tags": [
+            "peer",
+            "services",
+            "australia"
+          ]
+        },
+        {
+          "id": "safer-use-education-dancewize-crowd-care-resources",
+          "title": "DanceWize Crowd-Care Resources",
+          "category": "\udce3 Peer-Produced Education",
+          "query": "(site:hrvic.org.au OR site:dancewizensw.org.au) \"DanceWize\" (resource OR card OR \"crowd care\" OR factsheet)",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/safer-use-education.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 118,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "hrvic.org.au",
+            "dancewizensw.org.au"
+          ],
+          "domainCategory": "ngo",
+          "contentType": "any",
+          "tags": [
+            "australia"
+          ]
+        },
+        {
+          "id": "safer-use-education-dancesafe-us",
+          "title": "DanceSafe (US)",
+          "category": "\udf10 Plain-Language Substance Info",
+          "query": "site:dancesafe.org (\"Drug Information\" OR \"test strip\" OR \"fact\")",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/safer-use-education.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 130,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "dancesafe.org"
+          ],
+          "domainCategory": "any",
+          "contentType": "any",
+          "tags": []
+        },
+        {
+          "id": "safer-use-education-tripsit-factsheets-combo-chart",
+          "title": "TripSit (Factsheets & Combo Chart)",
+          "category": "\udf10 Plain-Language Substance Info",
+          "query": "(site:drugs.tripsit.me OR site:combo.tripsit.me OR site:wiki.tripsit.me OR site:tripsit.me \"Combo Chart\")",
+          "explanation": "> Note: TripSit's factsheets and combination chart live on subdomains (`drugs.`, `combo.`, `wiki.`),\n> not the `tripsit.me` root.",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/safer-use-education.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 136,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "drugs.tripsit.me",
+            "combo.tripsit.me",
+            "wiki.tripsit.me",
+            "tripsit.me"
+          ],
+          "domainCategory": "any",
+          "contentType": "any",
+          "tags": []
+        },
+        {
+          "id": "safer-use-education-erowid-the-loop-crew",
+          "title": "Erowid, The Loop & Crew",
+          "category": "\udf10 Plain-Language Substance Info",
+          "query": "(site:erowid.org \"Experience Vaults\") OR (site:wearetheloop.org \"Harm reduction information\") OR (site:crew.scot \"Drugs A-Z\")",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/safer-use-education.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 145,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "erowid.org",
+            "wearetheloop.org",
+            "crew.scot"
+          ],
+          "domainCategory": "any",
+          "contentType": "any",
+          "tags": []
+        },
+        {
+          "id": "safer-use-education-the-level-nz-toward-the-heart-canada",
+          "title": "The Level (NZ) & Toward the Heart (Canada)",
+          "category": "\udf10 Plain-Language Substance Info",
+          "query": "(site:thelevel.org.nz \"Straight up drug info\") OR (site:towardtheheart.com \"Substance Information Sheets\")",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/safer-use-education.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 151,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "thelevel.org.nz",
+            "towardtheheart.com"
+          ],
+          "domainCategory": "ngo",
+          "contentType": "any",
+          "tags": []
+        },
+        {
+          "id": "safer-use-education-hepatitis-bodies",
+          "title": "Hepatitis Bodies",
+          "category": "🩸 BBV & Hepatitis Education",
+          "query": "(site:hepatitisaustralia.com OR site:hep.org.au) (\"Hepatitis Infoline\" OR \"HepLink\" OR factsheet OR \"order free resources\")",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/safer-use-education.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 161,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "hepatitisaustralia.com",
+            "hep.org.au"
+          ],
+          "domainCategory": "ngo",
+          "contentType": "any",
+          "tags": [
+            "australia"
+          ]
+        },
+        {
+          "id": "safer-use-education-clinical-provider-guides-ashm",
+          "title": "Clinical / Provider Guides (ASHM)",
+          "category": "🩸 BBV & Hepatitis Education",
+          "query": "(site:ashm.org.au OR site:hepatitisb.org.au) (\"B Positive\" OR \"Hepatitis B Toolkit\" OR \"viral hepatitis\")",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/safer-use-education.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 167,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "ashm.org.au",
+            "hepatitisb.org.au"
+          ],
+          "domainCategory": "ngo",
+          "contentType": "any",
+          "tags": [
+            "services",
             "australia"
           ]
         }
@@ -21376,29 +21095,51 @@
     {
       "id": "service-directories",
       "title": "Service Finding & Directories",
-      "description": "Locate hard-to-find lists of AOD, NSP, sexual health, and harm reduction services.",
+      "description": "Locate AOD, NSP, and harm-reduction services — named by the actual finder tool and intake line,",
       "dorks": [
         {
-          "id": "service-directories-search-gov-au",
-          "title": "Search gov.au",
+          "id": "service-directories-search-adf-org-au",
+          "title": "Search adf.org.au",
           "category": "Quick Start",
-          "query": "(filetype:pdf OR filetype:xlsx) \"service directory\" (AOD OR \"alcohol and other drugs\") site:*.gov.au",
+          "query": "site:adf.org.au \"Path2Help\"",
           "explanation": "",
           "difficulty": "beginner",
           "sourceFile": "dork-packs/service-directories.md",
           "sourceType": "dork-pack",
-          "sourceLine": 14,
+          "sourceLine": 31,
           "operators": [
-            "site",
-            "filetype"
+            "site"
           ],
           "targetDomains": [
-            "gov.au"
+            "adf.org.au"
           ],
-          "domainCategory": "government",
-          "contentType": "pdf",
+          "domainCategory": "ngo",
+          "contentType": "any",
           "tags": [
-            "documents",
+            "australia"
+          ]
+        },
+        {
+          "id": "service-directories-national-service-finders",
+          "title": "National Service Finders",
+          "category": "Basic Queries",
+          "query": "(site:adf.org.au \"Path2Help\") OR (site:counsellingonline.org.au \"Counselling Online\") OR (site:askizzy.org.au \"Ask Izzy\")",
+          "explanation": "**Why this works:**\n\n- Three named national tools in one query — Path2Help (ADF), Counselling Online (Turning Point), Ask\nIzzy (Infoxchange). Note Path2Help lives on `adf.org.au`, not the dead `path2help.org.au`",
+          "difficulty": "beginner",
+          "sourceFile": "dork-packs/service-directories.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 38,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "adf.org.au",
+            "counsellingonline.org.au",
+            "askizzy.org.au"
+          ],
+          "domainCategory": "ngo",
+          "contentType": "any",
+          "tags": [
             "services",
             "australia"
           ]
@@ -21407,12 +21148,12 @@
           "id": "service-directories-government-service-directories",
           "title": "Government Service Directories",
           "category": "Basic Queries",
-          "query": "(filetype:pdf OR filetype:xlsx) (\"service directory\" OR \"service finder\" OR \"contact list\") (AOD OR \"alcohol and other drugs\") site:*.gov.au",
+          "query": "(filetype:pdf OR filetype:xlsx) (\"service directory\" OR \"service finder\" OR \"service list\") (AOD OR \"alcohol and other drugs\") site:*.gov.au",
           "explanation": "",
           "difficulty": "beginner",
           "sourceFile": "dork-packs/service-directories.md",
           "sourceType": "dork-pack",
-          "sourceLine": 21,
+          "sourceLine": 49,
           "operators": [
             "site",
             "filetype"
@@ -21429,114 +21170,51 @@
           ]
         },
         {
-          "id": "service-directories-regional-service-lists",
-          "title": "Regional Service Lists",
+          "id": "service-directories-peer-nsp-equipment",
+          "title": "Peer NSP & Equipment",
           "category": "Basic Queries",
-          "query": "site:*.health.nsw.gov.au \"service directory\" (\"central coast\" OR newcastle OR \"hunter region\")",
+          "query": "(site:nuaa.org.au OR site:health.nsw.gov.au) (\"Needle and Syringe Program\" OR \"NSP equipment\" OR \"NSP outlets\")",
           "explanation": "",
           "difficulty": "beginner",
           "sourceFile": "dork-packs/service-directories.md",
           "sourceType": "dork-pack",
-          "sourceLine": 27,
+          "sourceLine": 55,
           "operators": [
             "site"
           ],
           "targetDomains": [
+            "nuaa.org.au",
             "health.nsw.gov.au"
           ],
           "domainCategory": "government",
           "contentType": "any",
           "tags": [
+            "peer",
             "services",
             "australia"
           ]
         },
         {
-          "id": "service-directories-inurl-directory-pattern",
-          "title": "Inurl Directory Pattern",
-          "category": "Basic Queries",
-          "query": "inurl:aod-services OR inurl:directory site:*.gov.au",
-          "explanation": "",
-          "difficulty": "beginner",
-          "sourceFile": "dork-packs/service-directories.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 33,
-          "operators": [
-            "site",
-            "inurl"
-          ],
-          "targetDomains": [
-            "gov.au"
-          ],
-          "domainCategory": "government",
-          "contentType": "any",
-          "tags": [
-            "services",
-            "australia"
-          ]
-        },
-        {
-          "id": "service-directories-sexual-health-bbv-services",
-          "title": "Sexual Health & BBV Services",
+          "id": "service-directories-state-intake-lines-adis",
+          "title": "State Intake Lines (ADIS)",
           "category": "Intermediate Queries",
-          "query": "(\"hepatitis\" OR \"HCV\" OR \"sexual health\") (clinic OR service OR directory) site:*.health.*.gov.au",
-          "explanation": "",
+          "query": "(site:yourroom.health.nsw.gov.au OR site:adis.health.qld.gov.au OR site:sahealth.sa.gov.au) \"Alcohol and Drug Information Service\"",
+          "explanation": "**Why this works:**\n\n- \"ADIS\" (Alcohol and Drug Information Service) exists in several states — pinning by domain returns\nthe right state's intake line rather than cross-state noise",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/service-directories.md",
           "sourceType": "dork-pack",
-          "sourceLine": 43,
+          "sourceLine": 65,
           "operators": [
             "site"
           ],
           "targetDomains": [
-            "health.*.gov.au"
+            "yourroom.health.nsw.gov.au",
+            "adis.health.qld.gov.au",
+            "sahealth.sa.gov.au"
           ],
           "domainCategory": "government",
           "contentType": "any",
           "tags": [
-            "services",
-            "australia"
-          ]
-        },
-        {
-          "id": "service-directories-nsp-directories",
-          "title": "NSP Directories",
-          "category": "Intermediate Queries",
-          "query": "(\"needle syringe program\" OR NSP) (directory OR \"service list\" OR locations) [YOUR STATE]",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/service-directories.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 49,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "services"
-          ]
-        },
-        {
-          "id": "service-directories-mental-health-service-directories",
-          "title": "Mental Health Service Directories",
-          "category": "Intermediate Queries",
-          "query": "site:*.gov.au \"mental health\" service directory (filetype:pdf OR filetype:xlsx)",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/service-directories.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 55,
-          "operators": [
-            "site",
-            "filetype"
-          ],
-          "targetDomains": [
-            "gov.au"
-          ],
-          "domainCategory": "government",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
             "services",
             "australia"
           ]
@@ -21545,12 +21223,12 @@
           "id": "service-directories-spreadsheet-directories-data-rich",
           "title": "Spreadsheet Directories (Data-Rich)",
           "category": "Intermediate Queries",
-          "query": "filetype:xlsx (\"service directory\" OR \"contact list\") (AOD OR \"drug and alcohol\" OR \"harm reduction\") site:*.gov.au",
+          "query": "filetype:xlsx (\"service directory\" OR \"contact list\" OR \"service list\") (AOD OR \"drug and alcohol\" OR \"harm reduction\") site:*.gov.au",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/service-directories.md",
           "sourceType": "dork-pack",
-          "sourceLine": 61,
+          "sourceLine": 76,
           "operators": [
             "site",
             "filetype"
@@ -21567,15 +21245,38 @@
           ]
         },
         {
+          "id": "service-directories-sexual-health-bbv-services",
+          "title": "Sexual Health & BBV Services",
+          "category": "Intermediate Queries",
+          "query": "(\"hepatitis\" OR HCV OR \"sexual health\" OR BBV) (clinic OR service OR directory) site:*.health.*.gov.au",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/service-directories.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 82,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "health.*.gov.au"
+          ],
+          "domainCategory": "government",
+          "contentType": "any",
+          "tags": [
+            "services",
+            "australia"
+          ]
+        },
+        {
           "id": "service-directories-comprehensive-service-directory-sweep",
-          "title": "Comprehensive Service Directory Sweep",
+          "title": "Comprehensive Service-Directory Sweep",
           "category": "Advanced Queries",
-          "query": "(filetype:pdf OR filetype:xlsx OR filetype:csv) (\"service directory\" OR \"service finder\" OR \"service list\" OR \"contact directory\") (AOD OR \"alcohol and other drugs\" OR \"drug and alcohol\" OR \"harm reduction\") site:*.gov.au OR site:*.org.au after:2022",
+          "query": "(filetype:pdf OR filetype:xlsx OR filetype:csv) (\"service directory\" OR \"service finder\" OR \"service list\" OR \"treatment locator\") (AOD OR \"alcohol and other drugs\" OR \"drug and alcohol\" OR \"harm reduction\") (site:*.gov.au OR site:*.org.au) after:2022",
           "explanation": "",
           "difficulty": "advanced",
           "sourceFile": "dork-packs/service-directories.md",
           "sourceType": "dork-pack",
-          "sourceLine": 71,
+          "sourceLine": 92,
           "operators": [
             "site",
             "filetype",
@@ -21594,553 +21295,15 @@
           ]
         },
         {
-          "id": "service-directories-treatment-service-finders",
-          "title": "Treatment Service Finders",
+          "id": "service-directories-finding-hidden-directories-inurl",
+          "title": "Finding Hidden Directories (inurl)",
           "category": "Advanced Queries",
-          "query": "(treatment OR rehabilitation OR detox OR counselling) service (directory OR finder OR list) [YOUR STATE] -jobs",
+          "query": "site:*.gov.au (inurl:services OR inurl:directory OR inurl:providers) (filetype:pdf OR filetype:xlsx) (AOD OR \"drug and alcohol\")",
           "explanation": "",
           "difficulty": "advanced",
           "sourceFile": "dork-packs/service-directories.md",
           "sourceType": "dork-pack",
-          "sourceLine": 77,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "services"
-          ]
-        },
-        {
-          "id": "service-directories-outreach-services",
-          "title": "Outreach Services",
-          "category": "Advanced Queries",
-          "query": "(outreach OR mobile OR \"street-based\") service (AOD OR \"harm reduction\") directory OR list [YOUR STATE]",
-          "explanation": "",
-          "difficulty": "advanced",
-          "sourceFile": "dork-packs/service-directories.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 83,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "services"
-          ]
-        },
-        {
-          "id": "service-directories-after-hours-services",
-          "title": "After-Hours Services",
-          "category": "Advanced Queries",
-          "query": "(\"after hours\" OR \"24 hour\" OR \"crisis\") service (AOD OR \"drug and alcohol\" OR \"mental health\") [YOUR STATE]",
-          "explanation": "",
-          "difficulty": "advanced",
-          "sourceFile": "dork-packs/service-directories.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 89,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "services"
-          ]
-        },
-        {
-          "id": "service-directories-nsw-1",
-          "title": "NSW - 1",
-          "category": "State-by-State Service Directories",
-          "query": "site:health.nsw.gov.au OR site:nsw.gov.au \"service directory\" AOD OR \"alcohol drug\"",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/service-directories.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 99,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "health.nsw.gov.au",
-            "nsw.gov.au"
-          ],
-          "domainCategory": "government",
-          "contentType": "any",
-          "tags": [
-            "services",
-            "australia"
-          ]
-        },
-        {
-          "id": "service-directories-nsw-2",
-          "title": "NSW - 2",
-          "category": "State-by-State Service Directories",
-          "query": "site:*.nsw.gov.au filetype:xlsx service directory",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/service-directories.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 105,
-          "operators": [
-            "site",
-            "filetype"
-          ],
-          "targetDomains": [
-            "nsw.gov.au"
-          ],
-          "domainCategory": "government",
-          "contentType": "xls",
-          "tags": [
-            "services",
-            "australia"
-          ]
-        },
-        {
-          "id": "service-directories-victoria-1",
-          "title": "Victoria - 1",
-          "category": "State-by-State Service Directories",
-          "query": "site:health.vic.gov.au \"service directory\" OR \"service finder\" AOD",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/service-directories.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 111,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "health.vic.gov.au"
-          ],
-          "domainCategory": "government",
-          "contentType": "any",
-          "tags": [
-            "services",
-            "australia"
-          ]
-        },
-        {
-          "id": "service-directories-victoria-2",
-          "title": "Victoria - 2",
-          "category": "State-by-State Service Directories",
-          "query": "site:*.vic.gov.au \"alcohol and drug\" services directory",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/service-directories.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 117,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "vic.gov.au"
-          ],
-          "domainCategory": "government",
-          "contentType": "any",
-          "tags": [
-            "services",
-            "australia"
-          ]
-        },
-        {
-          "id": "service-directories-queensland",
-          "title": "Queensland",
-          "category": "State-by-State Service Directories",
-          "query": "site:health.qld.gov.au \"service directory\" AOD OR \"alcohol and other drugs\"",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/service-directories.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 123,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "health.qld.gov.au"
-          ],
-          "domainCategory": "government",
-          "contentType": "any",
-          "tags": [
-            "services",
-            "australia"
-          ]
-        },
-        {
-          "id": "service-directories-western-australia-1",
-          "title": "Western Australia - 1",
-          "category": "State-by-State Service Directories",
-          "query": "site:health.wa.gov.au \"service directory\" AOD OR \"alcohol and other drugs\"",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/service-directories.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 129,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "health.wa.gov.au"
-          ],
-          "domainCategory": "government",
-          "contentType": "any",
-          "tags": [
-            "services",
-            "australia"
-          ]
-        },
-        {
-          "id": "service-directories-western-australia-2",
-          "title": "Western Australia - 2",
-          "category": "State-by-State Service Directories",
-          "query": "site:mhc.wa.gov.au services directory",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/service-directories.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 135,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "mhc.wa.gov.au"
-          ],
-          "domainCategory": "government",
-          "contentType": "any",
-          "tags": [
-            "services",
-            "australia"
-          ]
-        },
-        {
-          "id": "service-directories-south-australia-1",
-          "title": "South Australia - 1",
-          "category": "State-by-State Service Directories",
-          "query": "site:sahealth.sa.gov.au service directory drug OR alcohol",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/service-directories.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 141,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "sahealth.sa.gov.au"
-          ],
-          "domainCategory": "government",
-          "contentType": "any",
-          "tags": [
-            "services",
-            "australia"
-          ]
-        },
-        {
-          "id": "service-directories-south-australia-2",
-          "title": "South Australia - 2",
-          "category": "State-by-State Service Directories",
-          "query": "site:dassa.sa.gov.au services",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/service-directories.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 147,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "dassa.sa.gov.au"
-          ],
-          "domainCategory": "government",
-          "contentType": "any",
-          "tags": [
-            "services",
-            "australia"
-          ]
-        },
-        {
-          "id": "service-directories-tasmania",
-          "title": "Tasmania",
-          "category": "State-by-State Service Directories",
-          "query": "site:health.tas.gov.au \"service directory\" alcohol drug",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/service-directories.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 153,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "health.tas.gov.au"
-          ],
-          "domainCategory": "government",
-          "contentType": "any",
-          "tags": [
-            "services",
-            "australia"
-          ]
-        },
-        {
-          "id": "service-directories-act-1",
-          "title": "ACT - 1",
-          "category": "State-by-State Service Directories",
-          "query": "site:health.act.gov.au service directory AOD",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/service-directories.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 159,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "health.act.gov.au"
-          ],
-          "domainCategory": "government",
-          "contentType": "any",
-          "tags": [
-            "services",
-            "australia"
-          ]
-        },
-        {
-          "id": "service-directories-act-2",
-          "title": "ACT - 2",
-          "category": "State-by-State Service Directories",
-          "query": "site:*.act.gov.au \"alcohol and drug\" services",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/service-directories.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 165,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "act.gov.au"
-          ],
-          "domainCategory": "government",
-          "contentType": "any",
-          "tags": [
-            "services",
-            "australia"
-          ]
-        },
-        {
-          "id": "service-directories-nt",
-          "title": "NT",
-          "category": "State-by-State Service Directories",
-          "query": "site:health.nt.gov.au service directory AOD",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/service-directories.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 171,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "health.nt.gov.au"
-          ],
-          "domainCategory": "government",
-          "contentType": "any",
-          "tags": [
-            "services",
-            "australia"
-          ]
-        },
-        {
-          "id": "service-directories-opioid-treatment-oat-ost-clinics",
-          "title": "Opioid Treatment (OAT/OST) Clinics",
-          "category": "\udfe5 Service Type Directories",
-          "query": "(\"opioid treatment\" OR methadone OR buprenorphine) (clinic OR service OR prescriber) directory [YOUR STATE]",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/service-directories.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 181,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "services"
-          ]
-        },
-        {
-          "id": "service-directories-residential-rehabilitation",
-          "title": "Residential Rehabilitation",
-          "category": "\udfe5 Service Type Directories",
-          "query": "(\"residential rehabilitation\" OR \"residential treatment\" OR rehab) directory OR list [YOUR STATE] AOD",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/service-directories.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 187,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "service-directories-withdrawal-detox-services",
-          "title": "Withdrawal/Detox Services",
-          "category": "\udfe5 Service Type Directories",
-          "query": "(withdrawal OR detox OR \"detoxification\") service (directory OR list) [YOUR STATE]",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/service-directories.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 193,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "services"
-          ]
-        },
-        {
-          "id": "service-directories-counselling-services",
-          "title": "Counselling Services",
-          "category": "\udfe5 Service Type Directories",
-          "query": "(counselling OR counseling) service (AOD OR \"drug and alcohol\") directory [YOUR STATE]",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/service-directories.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 199,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "services"
-          ]
-        },
-        {
-          "id": "service-directories-youth-services",
-          "title": "Youth Services",
-          "category": "\udfe5 Service Type Directories",
-          "query": "(youth OR \"young people\") (AOD OR \"drug and alcohol\") service directory [YOUR STATE]",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/service-directories.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 205,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "services"
-          ]
-        },
-        {
-          "id": "service-directories-first-nations-services-1",
-          "title": "🖤💛❤️ First Nations Services - 1",
-          "category": "\udda4\udc9b❤ First Nations Services",
-          "query": "(Aboriginal OR \"Torres Strait Islander\" OR Indigenous) (AOD OR \"alcohol and other drugs\") service directory",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/service-directories.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 215,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "services"
-          ]
-        },
-        {
-          "id": "service-directories-first-nations-services-2",
-          "title": "🖤💛❤️ First Nations Services - 2",
-          "category": "\udda4\udc9b❤ First Nations Services",
-          "query": "(ACCHO OR \"community controlled\") \"alcohol and other drugs\" services [YOUR STATE]",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/service-directories.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 221,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "community",
-          "contentType": "any",
-          "tags": [
-            "services"
-          ]
-        },
-        {
-          "id": "service-directories-housing-homelessness",
-          "title": "Housing/Homelessness",
-          "category": "\udfe0 Related Service Directories",
-          "query": "(housing OR homelessness OR accommodation) service directory [YOUR STATE]",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/service-directories.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 231,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "services"
-          ]
-        },
-        {
-          "id": "service-directories-mental-health",
-          "title": "Mental Health",
-          "category": "\udfe0 Related Service Directories",
-          "query": "\"mental health\" service directory [YOUR STATE] site:*.gov.au",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/service-directories.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 237,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "gov.au"
-          ],
-          "domainCategory": "government",
-          "contentType": "any",
-          "tags": [
-            "services",
-            "australia"
-          ]
-        },
-        {
-          "id": "service-directories-family-support",
-          "title": "Family Support",
-          "category": "\udfe0 Related Service Directories",
-          "query": "(\"family support\" OR \"family drug support\") service directory [YOUR STATE]",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/service-directories.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 243,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "services"
-          ]
-        },
-        {
-          "id": "service-directories-inurl-patterns-1",
-          "title": "Inurl Patterns - 1",
-          "category": "\udd27 Finding Hidden Directories",
-          "query": "site:*.gov.au inurl:services OR inurl:directory filetype:pdf AOD",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/service-directories.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 253,
+          "sourceLine": 98,
           "operators": [
             "site",
             "filetype",
@@ -22158,63 +21321,234 @@
           ]
         },
         {
-          "id": "service-directories-inurl-patterns-2",
-          "title": "Inurl Patterns - 2",
-          "category": "\udd27 Finding Hidden Directories",
-          "query": "site:*.gov.au inurl:contacts OR inurl:providers filetype:xlsx",
+          "id": "service-directories-outreach-after-hours-services",
+          "title": "Outreach & After-Hours Services",
+          "category": "Advanced Queries",
+          "query": "(outreach OR mobile OR \"after hours\" OR \"24 hour\" OR crisis) service (AOD OR \"drug and alcohol\" OR \"harm reduction\") (directory OR list OR finder)",
+          "explanation": "",
+          "difficulty": "advanced",
+          "sourceFile": "dork-packs/service-directories.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 104,
+          "operators": [],
+          "targetDomains": [],
+          "domainCategory": "any",
+          "contentType": "any",
+          "tags": [
+            "services"
+          ]
+        },
+        {
+          "id": "service-directories-adf-path2help",
+          "title": "ADF Path2Help",
+          "category": "\udde6\uddfa National Service Finders",
+          "query": "site:adf.org.au \"Path2Help\"",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/service-directories.md",
           "sourceType": "dork-pack",
-          "sourceLine": 259,
+          "sourceLine": 116,
           "operators": [
-            "site",
-            "filetype",
-            "inurl"
+            "site"
           ],
           "targetDomains": [
-            "gov.au"
+            "adf.org.au"
           ],
-          "domainCategory": "government",
-          "contentType": "xls",
+          "domainCategory": "ngo",
+          "contentType": "any",
           "tags": [
             "australia"
           ]
         },
         {
-          "id": "service-directories-spreadsheet-mining",
-          "title": "Spreadsheet Mining",
-          "category": "\udd27 Finding Hidden Directories",
-          "query": "site:*.gov.au filetype:xlsx \"service\" (\"contact\" OR \"phone\" OR \"address\") drug OR alcohol",
+          "id": "service-directories-counselling-online-turning-point",
+          "title": "Counselling Online (Turning Point)",
+          "category": "\udde6\uddfa National Service Finders",
+          "query": "site:counsellingonline.org.au \"Counselling Online\"",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/service-directories.md",
           "sourceType": "dork-pack",
-          "sourceLine": 265,
+          "sourceLine": 122,
           "operators": [
-            "site",
-            "filetype"
+            "site"
           ],
           "targetDomains": [
-            "gov.au"
+            "counsellingonline.org.au"
+          ],
+          "domainCategory": "ngo",
+          "contentType": "any",
+          "tags": [
+            "australia"
+          ]
+        },
+        {
+          "id": "service-directories-national-aod-hotline",
+          "title": "National AOD Hotline",
+          "category": "\udde6\uddfa National Service Finders",
+          "query": "\"National Alcohol and Other Drug Hotline\" \"1800 250 015\"",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/service-directories.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 128,
+          "operators": [],
+          "targetDomains": [],
+          "domainCategory": "any",
+          "contentType": "any",
+          "tags": []
+        },
+        {
+          "id": "service-directories-healthdirect-ask-izzy",
+          "title": "Healthdirect & Ask Izzy",
+          "category": "\udde6\uddfa National Service Finders",
+          "query": "(site:healthdirect.gov.au (\"Service Finder\" OR \"Find a health service\")) OR (site:askizzy.org.au \"Ask Izzy\")",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/service-directories.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 134,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "healthdirect.gov.au",
+            "askizzy.org.au"
           ],
           "domainCategory": "government",
-          "contentType": "xls",
+          "contentType": "any",
           "tags": [
             "services",
             "australia"
           ]
         },
         {
-          "id": "service-directories-known-online-tools-search-for-updates-1",
-          "title": "Known Online Tools (search for updates) - 1",
-          "category": "\udcf1 Online Service Finders",
-          "query": "\"service finder\" AOD Australia online",
+          "id": "service-directories-nsw-your-room-adis-nsp-outlets",
+          "title": "NSW — Your Room / ADIS / NSP Outlets",
+          "category": "State Intake Lines & Finders",
+          "query": "site:yourroom.health.nsw.gov.au (\"Alcohol and Drug Information Service\" OR ADIS) OR site:health.nsw.gov.au \"NSP outlets\"",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/service-directories.md",
           "sourceType": "dork-pack",
-          "sourceLine": 275,
+          "sourceLine": 146,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "yourroom.health.nsw.gov.au",
+            "health.nsw.gov.au"
+          ],
+          "domainCategory": "government",
+          "contentType": "any",
+          "tags": [
+            "services",
+            "australia"
+          ]
+        },
+        {
+          "id": "service-directories-vic-directline-supportconnect",
+          "title": "VIC — DirectLine & SupportConnect",
+          "category": "State Intake Lines & Finders",
+          "query": "(site:directline.org.au \"DirectLine\") OR (site:supportconnect.org.au (\"Needle and Syringe Program Finder\" OR \"Naloxone Service Finder\"))",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/service-directories.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 152,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "directline.org.au",
+            "supportconnect.org.au"
+          ],
+          "domainCategory": "ngo",
+          "contentType": "any",
+          "tags": [
+            "services",
+            "australia"
+          ]
+        },
+        {
+          "id": "service-directories-qld-adis-queensland",
+          "title": "QLD — Adis Queensland",
+          "category": "State Intake Lines & Finders",
+          "query": "site:adis.health.qld.gov.au (\"Adis\" OR \"Alcohol and Drug Information Service\")",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/service-directories.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 158,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "adis.health.qld.gov.au"
+          ],
+          "domainCategory": "government",
+          "contentType": "any",
+          "tags": [
+            "services",
+            "australia"
+          ]
+        },
+        {
+          "id": "service-directories-sa-dassa",
+          "title": "SA — DASSA",
+          "category": "State Intake Lines & Finders",
+          "query": "site:sahealth.sa.gov.au (\"Drug and Alcohol Services South Australia\" OR DASSA OR \"Alcohol and Drug Information Service\")",
+          "explanation": "> Note: SA's DASSA content lives under `sahealth.sa.gov.au` — `dassa.sa.gov.au` does not resolve.",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/service-directories.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 164,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "sahealth.sa.gov.au"
+          ],
+          "domainCategory": "government",
+          "contentType": "any",
+          "tags": [
+            "services",
+            "australia"
+          ]
+        },
+        {
+          "id": "service-directories-wa-alcohol-and-drug-support-line",
+          "title": "WA — Alcohol and Drug Support Line",
+          "category": "State Intake Lines & Finders",
+          "query": "(site:admhss.mhc.wa.gov.au OR site:mhc.wa.gov.au) \"Alcohol and Drug Support Line\"",
+          "explanation": "> Note: the WA line is now delivered by the Alcohol, Drug and Mental Health Support Service (ADMHSS)\n> at `admhss.mhc.wa.gov.au` — query both that and `mhc.wa.gov.au`.",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/service-directories.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 172,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "admhss.mhc.wa.gov.au",
+            "mhc.wa.gov.au"
+          ],
+          "domainCategory": "government",
+          "contentType": "any",
+          "tags": [
+            "australia"
+          ]
+        },
+        {
+          "id": "service-directories-opioid-treatment-oat-ost-prescribers",
+          "title": "Opioid Treatment (OAT/OST) Prescribers",
+          "category": "\udfe5 Service-Type Directories",
+          "query": "(\"opioid treatment\" OR methadone OR buprenorphine) (clinic OR prescriber OR \"dosing point\") (directory OR list OR finder) Australia",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/service-directories.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 185,
           "operators": [],
           "targetDomains": [],
           "domainCategory": "any",
@@ -22225,40 +21559,60 @@
           ]
         },
         {
-          "id": "service-directories-known-online-tools-search-for-updates-2",
-          "title": "Known Online Tools (search for updates) - 2",
-          "category": "\udcf1 Online Service Finders",
-          "query": "\"treatment locator\" \"drug and alcohol\" Australia",
+          "id": "service-directories-residential-rehab-withdrawal",
+          "title": "Residential Rehab & Withdrawal",
+          "category": "\udfe5 Service-Type Directories",
+          "query": "(\"residential rehabilitation\" OR detox OR withdrawal OR \"therapeutic community\") (directory OR list OR finder) AOD [YOUR STATE]",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/service-directories.md",
           "sourceType": "dork-pack",
-          "sourceLine": 281,
+          "sourceLine": 191,
           "operators": [],
           "targetDomains": [],
-          "domainCategory": "any",
+          "domainCategory": "community",
           "contentType": "any",
-          "tags": [
-            "australia"
-          ]
+          "tags": []
         },
         {
-          "id": "service-directories-app-digital-services",
-          "title": "App/Digital Services",
-          "category": "\udcf1 Online Service Finders",
-          "query": "(app OR application OR \"online tool\") \"service finder\" AOD Australia",
+          "id": "service-directories-youth-family-services",
+          "title": "Youth & Family Services",
+          "category": "\udfe5 Service-Type Directories",
+          "query": "(site:headspace.org.au OR \"youth\" OR \"family drug support\") (AOD OR \"alcohol and other drugs\") (service OR directory OR finder)",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/service-directories.md",
           "sourceType": "dork-pack",
-          "sourceLine": 287,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
+          "sourceLine": 197,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "headspace.org.au"
+          ],
+          "domainCategory": "ngo",
           "contentType": "any",
           "tags": [
             "services",
             "australia"
+          ]
+        },
+        {
+          "id": "service-directories-aboriginal-community-controlled-services",
+          "title": "Aboriginal Community Controlled Services",
+          "category": "\udda4\udc9b❤ First Nations Services",
+          "query": "(ACCHO OR \"Aboriginal Community Controlled\" OR NACCHO) (\"alcohol and other drugs\" OR AOD OR \"harm reduction\") (service OR directory) [YOUR STATE]",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/service-directories.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 209,
+          "operators": [],
+          "targetDomains": [],
+          "domainCategory": "community",
+          "contentType": "any",
+          "tags": [
+            "services"
           ]
         }
       ],
@@ -32212,9 +31566,9 @@
     }
   ],
   "meta": {
-    "buildDate": "2026-06-27T14:30:14.548Z",
+    "buildDate": "2026-06-27T15:02:44.194Z",
     "version": "2.0.0",
-    "totalDorks": 1528,
+    "totalDorks": 1492,
     "sourceFiles": [
       "01-quick-start.md",
       "02-core-operators.md",
