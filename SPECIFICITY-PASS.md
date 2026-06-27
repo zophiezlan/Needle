@@ -57,6 +57,7 @@ These were chosen by the project owner. Keep to them unless told otherwise:
 | 5   | Batch 3 rewritten + reference verified/extended   | `drug-alerts`, `nsp`, `research`, `data-statistics`                          |
 | 6   | Batch 4 rewritten + reference verified/extended   | `oat-ost`, `international`, `peer-workforce`, `forum-community`              |
 | 7   | Batch 5 rewritten + reference verified/extended   | `policy-advocacy`, `festivals`, `service-directories`, `safer-use-education` |
+| 8   | Batch 6 rewritten + reference verified/extended   | `youth`, `families-carers`, `housing-homelessness`, `mental-health`          |
 
 - **`source-intelligence.md`** is the heart of this work: an entity → searchable-signal map. For
   each real org/service/dataset it records the `site:` target, the named publications to put in
@@ -182,17 +183,22 @@ reference sections built from scratch (§4): four new source-intelligence sectio
 Inquiries & Advocacy", "Festivals & Events", "Service Finders & Directories", and "Safer-Use
 Education & Plain-Language Resources". Resolved the Crew (`crew.scot`) flag.
 
-**Suggested next batch:** the population/setting packs — `youth`, `families-carers`,
-`housing-homelessness`, `mental-health` (each needs a reference section built first, §4). Handle the
-community-controlled/peer packs (`first-nations`, `sex-worker-health`, `lgbtq-health`) with extra
-care — see note below.
+**Done (batch 6):** `youth`, `families-carers`, `housing-homelessness`, `mental-health` — reference
+section built from scratch (§4): new source-intelligence section "Populations & Intersections"
+(youth services + Matilda Centre prevention programs; family/carer orgs; housing-first/homelessness
+peaks & datasets; co-occurring guidelines & services).
+
+**Suggested next batch:** `prisons-justice`, `rural-remote`, `stigma-language`, plus the power-user
+technique packs (`temporal-intelligence`, `organizational-intelligence`, `investigative`,
+`document-discovery`, `multimedia-discovery`, `user-hosted-domains`). Handle the
+community-controlled packs (`first-nations`, `sex-worker-health`, `lgbtq-health`) with extra care —
+see note below.
 
 ### Packs needing a reference section built first (§4 before §3)
 
 `first-nations` · `lgbtq-health` · `prisons-justice` · `rural-remote` · `sex-worker-health` ·
-`youth` · `families-carers` · `housing-homelessness` · `mental-health` · `stigma-language` ·
-`temporal-intelligence` · `organizational-intelligence` · `investigative` · `document-discovery` ·
-`multimedia-discovery` · `user-hosted-domains`
+`stigma-language` · `temporal-intelligence` · `organizational-intelligence` · `investigative` ·
+`document-discovery` · `multimedia-discovery` · `user-hosted-domains`
 
 > For `first-nations`, `sex-worker-health`, and `lgbtq-health` especially: prioritise community-
 > controlled and peer sources, and be careful with framing/terminology. When in doubt, flag for
@@ -240,6 +246,22 @@ entities: National Drug Strategy 2017-2026, NSW Ice Inquiry, 2024 NSW Drug Summi
 NSW music-festival inquest + Music Festivals Act 2019, ACT GTM / VIC pill-testing trials,
 DanceWize/DanceWize NSW, AIDR "Safe and Healthy Crowded Places", the state/national service finders,
 and the safer-use education producers.
+
+Resolved/corrected in batch 6: **YSAS** leads the "Victorian Pill Testing Service" (not just
+co-leads); SHARC's family service is now **"Family Drug & Gambling Help"** on `sharc.org.au` (the
+standalone `familydrughelp.org.au` does not resolve); **CEH** rebranded "Ethnicity" → **"Equity"**
+(allow both); FDS course is **"Stepping Stones"** (not "...to Success"; "BEACON" unverified);
+**Mission Australia** = `missionaustralia.com.au`; **Sacred Heart Mission** / **SANE** / **Phoenix
+Australia** are `.org`. New named entities: YSAS/Dovetail/Orygen/ReachOut, Positive Choices /
+OurFutures (ex-Climate Schools) / Cracks in the Ice / Strong & Deadly Futures, LDAT / Good Sports,
+FDS / SHARC "BreakThrough" / Bouverie "Single Session Family Consultation" / Emerging Minds-COPMI,
+AIHW SHS / AHURI / J2SI / Common Ground, the **Comorbidity Guidelines** / NSW comorbidity guideline
+/ Turning Point "Hamilton Centre" / VDDI.
+
+Still flagged: **Strong & Deadly Futures** is an Aboriginal & Torres Strait Islander program — quote
+it but keep cultural-safety framing. The **NHMRC CRE in Mental Health and Substance Use** ("CREMS")
+acronym is ambiguous (collides with a Macquarie "Substance Abuse" CRE and with CREMSI) — search the
+full name + Teesson/NDARC/Matilda, don't quote "CREMS".
 
 Still flagged: **ACEM** has no verifiable festival/mass-gathering guideline title — use the AIDR
 "Safe and Healthy Crowded Places" handbook instead. No titled **"Easy Read"** harm-reduction series

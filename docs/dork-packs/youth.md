@@ -1,61 +1,95 @@
 # Youth & Young People
 
-> Young people specific resources and approaches.
+> Find youth-specific AOD services, prevention programs, and evidence — named by the actual service
+> and program, not just by "youth".
 
 [← Back to Dork Packs](README.md) | [← Main Guide](../README.md)
 
 ---
 
+## 👥 About This Pack
+
+Youth AOD work has named providers and programs worth knowing: **YSAS** (Australia's largest
+youth-specific AOD service, and lead of the Victorian Pill Testing Service), **Dovetail** (the
+Queensland youth-AOD workforce service), and **headspace** (where AOD is one of four core streams).
+School prevention runs on named programs from the **Matilda Centre** — **Positive Choices**,
+**OurFutures** (formerly Climate Schools), **Cracks in the Ice**, and the Aboriginal & Torres Strait
+Islander program **Strong & Deadly Futures**.
+
+> **Entity reference:** every service and program below is catalogued in
+> [Source Intelligence → Populations & Intersections](../resources/source-intelligence.md#-populations--intersections).
+
+---
+
 ## ⚡ Quick Start
 
-Find youth AOD resources:
+Go to Australia's largest youth-specific AOD service:
 
 ```txt
-"youth" OR "young people" "alcohol and other drugs" service Australia filetype:pdf
+site:ysas.org.au ("alcohol and other drugs" OR "Victorian Pill Testing Service" OR "youth")
 ```
 
 ---
 
 ## 🟢 Basic Queries
 
-### Youth AOD Services
+### Named Youth AOD Services
 
 ```txt
-"youth" OR "young people" "alcohol and other drugs" service Australia
+(site:ysas.org.au OR site:dovetail.org.au OR site:headspace.org.au) ("alcohol and other drugs" OR AOD OR "youth")
 ```
 
-### Adolescent Programs
+**Why this works:**
+
+- YSAS (VIC), Dovetail (QLD youth-AOD workforce), and headspace are the named youth providers —
+  searching them beats a generic `"young people" "drug"` query
+
+### School & Community Prevention (Matilda Centre)
 
 ```txt
-"adolescent" drug OR alcohol treatment program Australia
+(site:positivechoices.org.au OR site:ourfuturesinstitute.org.au OR site:cracksintheice.org.au) (drug OR alcohol OR education)
 ```
 
-### Early Intervention
+### Youth Mental Health & AOD
 
 ```txt
-"early intervention" youth drug OR alcohol Australia
+(site:headspace.org.au OR site:orygen.org.au OR site:au.reachout.com) ("alcohol and other drugs" OR "substance use")
 ```
 
 ---
 
 ## 🟡 Intermediate Queries
 
-### Youth Outreach
+### Drug Education Programs (Named)
 
 ```txt
-"youth outreach" drug OR alcohol harm reduction Australia
+("Positive Choices" OR "OurFutures" OR "Climate Schools" OR "Cracks in the Ice") (school OR education OR evaluation)
 ```
 
-### School-Based Programs
+**Why this works:**
+
+- These are the evidence-based programs an insider names — "Climate Schools" is OurFutures' former
+  name, so searching both catches older evaluations
+
+### Aboriginal & Torres Strait Islander Youth Programs
 
 ```txt
-"school-based" OR "school" drug OR alcohol prevention Australia evaluation
+(site:strongdeadly.org.au OR "Strong & Deadly Futures" OR "Strong and Deadly Futures") (school OR "alcohol and other drugs" OR prevention)
+```
+
+> Handle with cultural-safety care: prioritise community-controlled framing and the program's own
+> materials.
+
+### Youth Outreach & Early Intervention
+
+```txt
+("youth outreach" OR "early intervention" OR "Embedded Youth Outreach Program") (drug OR alcohol OR "harm reduction") Australia
 ```
 
 ### Peer Education (Youth)
 
 ```txt
-"peer education" youth drug OR alcohol Australia
+"peer education" (youth OR "young people") (drug OR alcohol OR "harm reduction") Australia filetype:pdf
 ```
 
 ---
@@ -65,216 +99,106 @@ Find youth AOD resources:
 ### Comprehensive Youth AOD Sweep
 
 ```txt
-("youth" OR "young people" OR "adolescent" OR "teen" OR "young adult") ("alcohol and other drugs" OR AOD OR "drug use" OR "harm reduction") Australia (service OR program OR prevention OR research) filetype:pdf after:2020
+("youth" OR "young people" OR "adolescent") ("alcohol and other drugs" OR AOD OR "drug use" OR "harm reduction") (service OR program OR prevention OR evaluation) Australia filetype:pdf after:2020
 ```
 
-### Life Skills Programs
+### Prevention Evidence
 
 ```txt
-"life skills" OR "resilience" drug prevention young people Australia
+("Positive Choices" OR "OurFutures" OR "drug education") (effectiveness OR evaluation OR "randomised") (school OR "young people") filetype:pdf
 ```
 
 ### Youth-Specific Harm Reduction
 
 ```txt
-"youth" OR "young people" "harm reduction" approach Australia filetype:pdf
-```
-
----
-
-## 🎓 Prevention & Education
-
-### Drug Education
-
-```txt
-"drug education" schools Australia (effectiveness OR evaluation) filetype:pdf
-```
-
-### Prevention Programs
-
-```txt
-"prevention" "young people" OR youth (drug OR alcohol) Australia evaluation
-```
-
-### Evidence-Based Prevention
-
-```txt
-"evidence-based" prevention youth (drug OR alcohol) Australia
-```
-
-### Harm Reduction Education
-
-```txt
-"harm reduction education" young people Australia
+("young people" OR youth) "harm reduction" (festival OR nightlife OR "drug checking" OR "safer partying") Australia
 ```
 
 ---
 
 ## 🏥 Youth AOD Services
 
-### Specialist Youth Services - 1
+### YSAS (Victoria)
 
 ```txt
-"youth" AOD service OR "alcohol and other drugs" (directory OR list) [YOUR STATE]
+site:ysas.org.au ("Embedded Youth Outreach Program" OR "Victorian Pill Testing Service" OR withdrawal OR outreach)
 ```
 
-### Specialist Youth Services - 2
+### Dovetail (Queensland Workforce)
 
 ```txt
-site:ysas.org.au filetype:pdf
+(site:dovetail.org.au OR site:insight.qld.edu.au) ("Dovetail" OR "Dovetail Good Practice Guide" OR "youth alcohol and other drug")
 ```
 
-### Youth Withdrawal
+### Youth Withdrawal & Residential
 
 ```txt
-"youth" OR "adolescent" withdrawal OR detox (service OR program) Australia
-```
-
-### Youth Residential
-
-```txt
-"youth residential" OR "adolescent residential" (treatment OR rehabilitation) drug alcohol Australia
-```
-
----
-
-## 🎪 Nightlife & Festivals (Youth Focus)
-
-### Festival Safety
-
-```txt
-"festival" young people drug OR alcohol safety Australia
-```
-
-### Party/Nightlife
-
-```txt
-"party" OR "nightlife" young people harm reduction Australia
-```
-
-### Drink Spiking
-
-```txt
-"drink spiking" prevention young people Australia
-```
-
-### Safer Partying
-
-```txt
-"safer partying" OR "safer clubbing" young people Australia
+("youth" OR "adolescent") (withdrawal OR detox OR residential) (treatment OR service OR program) (drug OR alcohol) Australia
 ```
 
 ---
 
 ## ⚖️ Youth Justice
 
-### Youth Justice AOD
+### Youth Justice & AOD
 
 ```txt
-"youth justice" OR "juvenile justice" drug OR alcohol Australia filetype:pdf
+("youth justice" OR "youth detention" OR "young offenders") (drug OR alcohol OR diversion OR "Embedded Youth Outreach Program") Australia filetype:pdf
 ```
 
-### Youth Diversion
+### Diversion Programs
 
 ```txt
-"young offenders" drug OR alcohol diversion Australia
-```
-
-### Youth Detention
-
-```txt
-"youth detention" drug OR alcohol program Australia
-```
-
-### Children's Court
-
-```txt
-"children's court" drug OR alcohol diversion Australia
+("young people" OR youth) (diversion OR "Children's Court" OR "cautioning") (drug OR alcohol) Australia
 ```
 
 ---
 
 ## 🧠 Mental Health & Youth
 
-### Youth Mental Health & AOD - 1
+### Youth Mental Health & Substance Use
 
 ```txt
-"youth" OR "young people" "mental health" ("substance use" OR AOD) Australia
+(site:headspace.org.au OR site:orygen.org.au) ("substance use" OR "alcohol and other drugs" OR comorbid OR "dual diagnosis")
 ```
 
-### Youth Mental Health & AOD - 2
+### Early Psychosis & Substance Use
 
 ```txt
-site:headspace.org.au drug OR alcohol
-```
-
-### Early Psychosis
-
-```txt
-"early psychosis" substance use youth Australia
-```
-
----
-
-## 👨‍👩‍👧 Family & Youth
-
-### Family Involvement
-
-```txt
-"family" "youth" OR "adolescent" AOD treatment Australia
-```
-
-### Parent Programs
-
-```txt
-"parent" program youth drug OR alcohol prevention Australia
+("early psychosis" OR "drug-induced psychosis") ("young people" OR youth) "substance use" Australia
 ```
 
 ---
 
 ## 📊 Research & Data
 
-### Youth Drug Use Data - 1
+### Youth Drug-Use Data
 
 ```txt
-"young people" OR "youth" drug use (survey OR statistics) Australia
+(site:aihw.gov.au OR site:unsw.edu.au) (youth OR "young people" OR "secondary students") ("alcohol and other drugs" OR "drug use") (survey OR statistics OR data)
 ```
 
-### Youth Drug Use Data - 2
+> The NDSHS (see the Data & Statistics pack) carries the national youth prevalence numbers; pair it
+> with `"secondary students"` for the school-survey data.
+
+### Academic Research
 
 ```txt
-site:aihw.gov.au youth "alcohol and other drugs"
-```
-
-### Research
-
-```txt
-site:*.edu.au "youth" OR "young people" (AOD OR "alcohol and other drugs") Australia filetype:pdf
-```
-
----
-
-## 📱 Digital & Online
-
-### Online Interventions
-
-```txt
-"online" OR "digital" (intervention OR program) youth drug OR alcohol Australia
-```
-
-### Apps for Youth
-
-```txt
-(app OR application) youth drug OR alcohol Australia
+(site:*.edu.au OR site:ourfuturesinstitute.org.au) (youth OR "young people" OR adolescent) (AOD OR "substance use") (prevention OR evaluation) filetype:pdf
 ```
 
 ---
 
 ## 🔗 Related Resources
 
+- **Source Intelligence:**
+  [Populations & Intersections](../resources/source-intelligence.md#-populations--intersections) —
+  the services and programs every dork above is built on
 - **Synonym Block:** [Youth Terms](../05-synonym-blocks.md#-youth-terms)
-- **Related Packs:** [Festivals](festivals.md), [Mental Health](mental-health.md)
-- **Key Org:** [YSAS](https://ysas.org.au)
+- **Related Packs:** [Festivals](festivals.md), [Mental Health](mental-health.md),
+  [Families & Carers](families-carers.md)
+- **Key Orgs:** [YSAS](https://ysas.org.au), [headspace](https://headspace.org.au),
+  [Positive Choices](https://positivechoices.org.au)
 
 ---
 

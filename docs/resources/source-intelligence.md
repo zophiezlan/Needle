@@ -575,6 +575,74 @@ material use `("easy read" OR "plain language") (naloxone OR "harm reduction") f
 
 ---
 
+## 🧩 Populations & Intersections
+
+Youth, families & carers, housing & homelessness, and mental health — who is affected and where AOD
+intersects other systems. The specificity move is the same: name the service, the program, the
+guideline.
+
+**Youth (AOD + youth mental health):**
+
+| Entity                        | `site:` target                             | Named signals                                                                                                                        |
+| ----------------------------- | ------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------ |
+| **YSAS**                      | `ysas.org.au`                              | `"Youth Support and Advocacy Service"`, `"Victorian Pill Testing Service"`, `"Embedded Youth Outreach Program"`                      |
+| **Dovetail** (QLD)            | `dovetail.org.au`, `insight.qld.edu.au`    | `"Dovetail"` `"alcohol and other drug"`, `"Dovetail Good Practice Guide"` (youth-AOD workforce; QLD Health/Insight)                  |
+| **headspace**                 | `headspace.org.au`                         | `"headspace"` + `"alcohol and other drugs"` (AOD is one of four core streams)                                                        |
+| **Orygen**                    | `orygen.org.au`                            | `"Orygen"`, `"National Centre of Excellence in Youth Mental Health"`                                                                 |
+| **ReachOut**                  | `au.reachout.com`, `about.au.reachout.com` | `"ReachOut"`, `"PeerChat"` (research on the `about.` subdomain)                                                                      |
+| **Positive Choices**          | `positivechoices.org.au`                   | `"Positive Choices"` — school/community drug-education portal (Matilda Centre)                                                       |
+| **OurFutures**                | `ourfuturesinstitute.org.au`               | `"OurFutures"`, `"Climate Schools"` (former name) — school prevention program                                                        |
+| **Cracks in the Ice**         | `cracksintheice.org.au`                    | `"Cracks in the Ice"` — national methamphetamine toolkit (Matilda Centre)                                                            |
+| **Strong & Deadly Futures** ⚠ | `strongdeadly.org.au`                      | `"Strong & Deadly Futures"` / `"Strong and Deadly Futures"` — Aboriginal & TSI school AOD program (handle with cultural-safety care) |
+| **ADF prevention**            | `adf.org.au`, `goodsports.com.au`          | `"Local Drug Action Team"` (LDAT), `"Good Sports"`                                                                                   |
+
+**Families, carers & affected others:**
+
+| Entity                          | `site:` target                         | Named signals                                                                                                                       |
+| ------------------------------- | -------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
+| **Family Drug Support**         | `fds.org.au`                           | `"Family Drug Support"`, `"Stepping Stones"` / `"Stepping Forward"`, `"Tony Trimingham"` (not "...to Success"; "BEACON" unverified) |
+| **Family Drug & Gambling Help** | `sharc.org.au`                         | `"Family Drug & Gambling Help"` / `"Family Drug Help"` (SHARC; not the unresolving `familydrughelp.org.au`)                         |
+| **SHARC**                       | `sharc.org.au`                         | `"Self Help Addiction Resource Centre"`, `"BreakThrough"` (family workshops, with Turning Point)                                    |
+| **The Bouverie Centre**         | `bouverie.org.au`                      | `"The Bouverie Centre"`, `"Single Session Family Consultation"` (La Trobe; family therapy)                                          |
+| **Emerging Minds / COPMI**      | `emergingminds.com.au`, `copmi.net.au` | `"Children of Parents with a Mental Illness"`, `"COPMI"` (now a legacy program of Emerging Minds)                                   |
+| **CEH** (CALD)                  | `ceh.org.au`                           | `"Centre for Culture, Equity & Health"` / `"...Ethnicity..."` (legacy), `"Multicultural Drug & Alcohol Partnership"`                |
+
+**Housing & homelessness:**
+
+| Entity                          | `site:` target                 | Named signals                                                                                                                 |
+| ------------------------------- | ------------------------------ | ----------------------------------------------------------------------------------------------------------------------------- |
+| **AIHW SHS**                    | `aihw.gov.au`                  | `"Specialist homelessness services annual report"` / `"Specialist Homelessness Services"` (SHS)                               |
+| **AHURI**                       | `ahuri.edu.au`                 | `"Australian Housing and Urban Research Institute"`, `"Final Report"` series, `"Common Ground Housing Model Practice Manual"` |
+| **Homelessness Australia**      | `homelessnessaustralia.org.au` | `"Homelessness Australia"` — national peak                                                                                    |
+| **Council to Homeless Persons** | `chp.org.au`                   | `"Council to Homeless Persons"` — VIC peak                                                                                    |
+| **J2SI** (Sacred Heart Mission) | `sacredheartmission.org`       | `"Journey to Social Inclusion"` / `"J2SI"`, `"Sustaining exits from long-term homelessness"` (Housing First RCT)              |
+| **Launch Housing**              | `launchhousing.org.au`         | `"Launch Housing"`, `"Elizabeth Street Common Ground"` (legacy: Hanover / HomeGround)                                         |
+| **Mission Australia**           | `missionaustralia.com.au`      | `"Mission Australia"`, `"Missionbeat"`                                                                                        |
+
+> **"Common Ground"** is a supportive-housing _model_, not one org — pair with a named building
+> (`"Elizabeth Street Common Ground"`) or the AHURI practice manual; the bare term is noisy.
+
+**Mental health & co-occurring (dual diagnosis):**
+
+| Entity                              | `site:` target                                                                 | Named signals                                                                                                                                                                   |
+| ----------------------------------- | ------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Comorbidity Guidelines**          | `comorbidityguidelines.org.au`                                                 | `"Guidelines on the management of co-occurring alcohol and other drug and mental health conditions in alcohol and other drug treatment settings"` (Matilda Centre, 3rd ed 2022) |
+| **NSW comorbidity guideline**       | `health.nsw.gov.au`                                                            | `"For the Care of Persons with Comorbid Mental Illness and Substance Use Disorders in Acute Care Settings"` (NSW Health, 2009)                                                  |
+| **Turning Point — Hamilton Centre** | `turningpoint.org.au`                                                          | `"Hamilton Centre"`, `"co-occurring"` (co-occurring mental illness + addiction hub)                                                                                             |
+| **VDDI** (VIC)                      | `dualdiagnosis.org.au`, `health.vic.gov.au`                                    | `"Victorian Dual Diagnosis Initiative"`, `"NEXUS"` (St Vincent's)                                                                                                               |
+| **Phoenix Australia** (trauma)      | `phoenixaustralia.org`                                                         | `"Australian Guidelines for the Prevention and Treatment of Acute Stress Disorder, Posttraumatic Stress Disorder and Complex PTSD"` (note `.org`)                               |
+| **MH orgs**                         | `blackdoginstitute.org.au`, `sane.org`, `beyondblue.org.au`, `lifeline.org.au` | `"Black Dog Institute"`, `"SANE Australia"` (`.org`), `"Beyond Blue"`, `"Lifeline Australia"` (13 11 14)                                                                        |
+
+**Insider vocabulary:** `"dual diagnosis"` / `"co-occurring"` / `"comorbid"` / `"co-existing"`,
+`"no wrong door"`, `"Housing First"`, `"specialist homelessness services"` / `SHS`,
+`"assertive outreach"`, `"family inclusive practice"`, `"affected family member"` /
+`"affected other"`, `"children of parents"` / `COPMI`, `"early intervention"`,
+`"social determinants"`. The research-side comorbidity body (NHMRC CRE in Mental Health and
+Substance Use) is best searched by full name + `"Maree Teesson"` / NDARC / Matilda Centre — the
+acronym "CREMS" is ambiguous, so don't quote it.
+
+---
+
 ## 🌏 International Reference Bodies (for the "strong international" layer)
 
 For the "strong international layer", name the country's actual agency or service — not "overseas
