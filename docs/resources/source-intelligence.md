@@ -89,12 +89,19 @@ services. Fix that first.
 | Entity                          | `site:` target                       | Named signals                                                                                              |
 | ------------------------------- | ------------------------------------ | ---------------------------------------------------------------------------------------------------------- |
 | **CanTEST** (ACT, fixed-site)   | `cantest.com.au`                     | `"CanTEST"`, `"Health and Drug Checking Service"`, `"Results"`, `"six-month report"`                       |
+| CanTEST evaluation (ANU)        | `anu.edu.au`, `directionshealth.com` | `"CanTEST Health and Drug Checking Service Program Evaluation"` (Interim / Final Report 2023)              |
 | **Pill Testing Australia**      | `pilltestingaustralia.com.au`        | `"Pill Testing Australia"`, `"Festival Drug Checking Services"`, `"Groovin the Moo"`                       |
 | **CheQpoint** (QLD, fixed-site) | `quihn.org`                          | `"CheQpoint"`, `"drug checking service"`, Bowen Hills (paused under policy change — content still indexed) |
 | **The Loop Australia**          | `theloop.org.au`                     | `"The Loop Australia"` — AU drug-checking org (partner in CheQpoint)                                       |
 | **The Loop** (UK)               | `wearetheloop.org`                   | `"The Loop"`, `"back of house"`, `"front of house"` testing model                                          |
 | **WEDINOS** (Wales)             | `wedinos.org`, `wedinos.wales`       | `"WEDINOS"`, `"Philtre"` (quarterly bulletin), `"sample results"`, downloadable data                       |
 | **DanceSafe** (US)              | `dancesafe.org`                      | `"DanceSafe"`, reagent kits, `"lab testing"`                                                               |
+| **DrugsData.org** (US, Erowid)  | `drugsdata.org`                      | lab-tested sample database (formerly `"EcstasyData"`), `"DrugsData"`                                       |
+| **TEDI network**                | `euda.europa.eu`                     | `"Trans European Drug Information"`, `"TEDI"`, six-monthly drug-checking data                              |
+| **Energy Control** (ES)         | `energycontrol-international.org`    | `"Energy Control"`, TEDI coordinator, international mail-in analysis                                       |
+| **Saferparty / DIZ** (Zurich)   | `saferparty.ch`                      | `"Saferparty"`, `"Drug Information Center"` / DIZ, `"Substanzwarnung"` (substance warning)                 |
+| **CheckIt!** (Vienna)           | `checkit.wien`                       | `"checkit"`, `"Substanzwarnung"`, HPLC event testing                                                       |
+| **DIMS / Trimbos** (NL)         | `trimbos.nl`                         | `"Drugs Information and Monitoring System"`, `"DIMS"`                                                      |
 | **EUDA / EMCDDA**               | `euda.europa.eu`, `emcdda.europa.eu` | `"drug checking"`, `"Trendspotter"`                                                                        |
 
 **Insider vocabulary:** `FTIR` (Fourier-transform infrared), `"reagent testing"`, `"mass spec"` /

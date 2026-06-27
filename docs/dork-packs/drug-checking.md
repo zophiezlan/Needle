@@ -1,191 +1,267 @@
 # Drug Checking & Pill Testing
 
-> Evidence, evaluations, operating models, and implementation resources for drug checking services.
+> Find the evidence, evaluations, sample data, and operating models behind real drug checking
+> services — named by service, not just by keyword.
 
 [← Back to Dork Packs](README.md) | [← Main Guide](../README.md)
 
 ---
 
+## 👥 About This Pack
+
+Australia says **"pill testing"** in public and on the news; the services and their evaluations
+increasingly say **"drug checking"**. Search both, but know the difference: the lay term surfaces
+media and opinion, the sector term surfaces the documents written _by_ the field.
+
+This pack names the actual services — **CanTEST** (ACT), **CheQpoint** (QLD), **Pill Testing
+Australia**, **The Loop Australia** — and their real publications. If you only remember one query
+from here, make it the one that finds the **CanTEST evaluation** (below): it's the single most-cited
+piece of Australian drug-checking evidence.
+
+> **Entity reference:** every named service, domain, and report title below is catalogued in
+> [Source Intelligence → Drug Checking](../resources/source-intelligence.md#-drug-checking--pill-testing).
+
+---
+
 ## ⚡ Quick Start
 
-Find Australian drug checking research and evaluations:
+Find the ANU-led evaluation of Australia's first fixed-site service:
 
 ```txt
-site:*.edu.au filetype:pdf "drug checking" OR "pill testing" evaluation
+"CanTEST Health and Drug Checking Service Program Evaluation" filetype:pdf
 ```
 
 ---
 
 ## 🟢 Basic Queries
 
-### Government Documents
+### The Service Itself (CanTEST)
 
 ```txt
-("drug checking" OR "pill testing") site:*.gov.au filetype:pdf (trial OR evaluation OR report)
+site:cantest.com.au (results OR alert OR "drug checking")
 ```
 
 **Why this works:**
 
-- Both terms used interchangeably in Australia
-- Government sources for official reports
-- Focus on trials and evaluations
+- Goes straight to the service rather than guessing at `.gov.au` wildcards
+- CanTEST publishes its own results and substance alerts on-site
 
-### Research Evidence
+### CanTEST Evaluation Reports
 
 ```txt
-site:*.edu.au filetype:pdf ("drug checking" OR "pill testing") (evaluation OR outcomes OR "harm reduction")
+(site:directionshealth.com OR site:anu.edu.au) "CanTEST" evaluation filetype:pdf
 ```
 
-### Sector Organisation Resources
+**Why this works:**
+
+- CanTEST is operated by **Directions Health** (with Pill Testing Australia + CAHMA) and evaluated
+  by the **ANU** — the Interim and Final Reports (2023) live on those two domains, not a generic
+  government site
+
+### CheQpoint (Queensland)
 
 ```txt
-site:*.org.au filetype:pdf ("drug checking" OR "pill testing") (practice OR protocol OR training)
+(site:quihn.org OR site:theloop.org.au) "CheQpoint"
+```
+
+> Note: CheQpoint was paused under a change in Queensland policy. Its published material and media
+> remain indexed — frame results as the record of QLD's fixed-site trial, not a current "go here".
+
+### Pill Testing Australia
+
+```txt
+site:pilltestingaustralia.com.au ("Festival Drug Checking Services" OR "Groovin the Moo" OR report)
 ```
 
 ---
 
 ## 🟡 Intermediate Queries
 
-### State-Specific Trials
+### Government & Peak-Body Evidence
 
 ```txt
-"drug checking" "festival" ("New South Wales" OR "NSW" OR "Victoria" OR "ACT")
+("drug checking" OR "pill testing") site:*.gov.au filetype:pdf (trial OR evaluation OR "operating model")
 ```
 
-### Festival/Event Context
+### State Trials & Announcements
 
 ```txt
-("drug checking" OR "pill testing") (festival OR "music event") Australia (evaluation OR report) filetype:pdf
+("drug checking" OR "pill testing") ("New South Wales" OR Victoria OR Queensland OR ACT) (trial OR pilot OR announcement) -site:news.com.au
 ```
 
-### Technology & Methods
+### Festival & Event Context
 
 ```txt
-("drug checking" OR "pill testing") (FTIR OR "infrared" OR "mass spectrometry" OR "reagent") Australia
+("drug checking" OR "pill testing") (festival OR "music event") ("Groovin the Moo" OR "Lost Paradise" OR "Beyond the Valley") (evaluation OR report)
 ```
 
-### Canberran/ACT Trials
+### DanceWize & Peer Drug-Checking Programs
 
 ```txt
-site:*.act.gov.au OR site:*.org.au "drug checking" (Canberra OR ACT OR "Groovin the Moo") filetype:pdf
+(DanceWize OR "DanceWize NSW") ("drug checking" OR "drug information" OR "peer support")
 ```
+
+**Why this works:**
+
+- DanceWize (HRVic) and DanceWize NSW (NUAA) are the peer programs that sit alongside checking —
+  searching them finds the lived-experience and peer-education side, not just the lab side
 
 ---
 
 ## 🔴 Advanced Queries
 
-### Comprehensive Evidence Sweep
+### Comprehensive Australian Evidence Sweep
 
 ```txt
-("drug checking" OR "pill testing" OR "substance checking") (Australia OR NSW OR VIC OR ACT) (trial OR evaluation OR pilot OR outcomes) filetype:pdf -news -opinion after:2018
+("CanTEST" OR "CheQpoint" OR "Pill Testing Australia" OR "drug checking") (evaluation OR pilot OR outcomes OR "substances detected") (Australia OR NSW OR VIC OR QLD OR ACT) filetype:pdf after:2018
 ```
 
-### Implementation & Governance Models
+### Implementation, Governance & Operating Models
 
 ```txt
-"drug checking" (implementation OR governance OR "operating model" OR framework) Australia filetype:pdf
+"drug checking" (implementation OR governance OR "operating model" OR protocol OR "standard operating") (Australia OR ACT OR Queensland) filetype:pdf
 ```
 
-### International Comparisons
+### Parliamentary Submissions & Inquiries
 
 ```txt
-"drug checking" OR "pill testing" (evaluation OR effectiveness) (Europe OR UK OR "New Zealand" OR Canada) filetype:pdf
+site:*.gov.au inurl:submission ("drug checking" OR "pill testing") filetype:pdf
 ```
 
-### Policy Submissions on Drug Checking
+### Coronial & Inquiry Drivers
 
 ```txt
-site:*.gov.au inurl:submissions ("drug checking" OR "pill testing") filetype:pdf
+("drug checking" OR "pill testing") ("coronial" OR "inquest" OR "Festival" OR "music festival deaths") (recommendation OR finding) Australia
 ```
 
-### Consumer/Client Perspectives
+**Why this works:**
 
-```txt
-"drug checking" ("user experience" OR "client feedback" OR "consumer evaluation" OR survey) Australia filetype:pdf
-```
+- Australian pill-testing policy moves in response to coronial findings and festival-death inquiries
+  — tying the search to those drivers finds the documents that actually shifted policy
 
 ---
 
 ## 🔬 Technology & Analysis Methods
 
-### FTIR (Fourier Transform Infrared)
+The method tells you how much to trust a result. These names are how analysts and evaluations
+describe their kit.
+
+### FTIR (Fourier-Transform Infrared)
 
 ```txt
-FTIR ("drug checking" OR "pill testing") (accuracy OR limitations OR comparison) filetype:pdf
+FTIR ("drug checking" OR "pill testing") (accuracy OR limitation OR "false negative" OR comparison) filetype:pdf
 ```
 
 ### Reagent Testing
 
 ```txt
-"reagent testing" (accuracy OR limitations OR "harm reduction") ("drug checking" OR "pill testing")
+("reagent testing" OR Marquis OR Mecke OR Mandelin) ("drug checking" OR "harm reduction") (accuracy OR limitation)
 ```
 
-### Mass Spectrometry
+### Spectrometry & Chromatography
 
 ```txt
-"mass spectrometry" "drug checking" OR "pill testing" (method OR validation OR results)
+("mass spectrometry" OR GC-MS OR HPLC) "drug checking" (method OR validation OR confirmation)
 ```
 
-### Comparison of Methods
+**Why this works:**
+
+- Fixed sites (CanTEST, Saferparty, CheckIt!) run lab-grade GC-MS/HPLC; festival tents often run
+  FTIR plus reagents — naming the technique filters to the appropriate evidence and its limits
+
+---
+
+## 🌏 International Services & Sample Data
+
+Australia is small; the international services are where decades of method, data, and operating
+knowledge live. These are real, named services — not generic "overseas examples".
+
+### WEDINOS (Wales) — Sample Data & Philtre
 
 ```txt
-"drug checking" (method OR technology) comparison OR review filetype:pdf
+(site:wedinos.org OR site:wedinos.wales) (Philtre OR "sample results")
+```
+
+### The Loop (UK)
+
+```txt
+site:wearetheloop.org (report OR "back of house" OR "drug checking")
+```
+
+### European Network (TEDI) & Founders
+
+```txt
+("Trans European Drug Information" OR TEDI OR "Energy Control") "drug checking" (data OR results OR network) filetype:pdf
+```
+
+### Continental Fixed Sites (Substance Warnings)
+
+```txt
+(site:saferparty.ch OR site:checkit.wien) (Substanzwarnung OR warning OR "drug checking")
+```
+
+### DrugsData & DanceSafe (US)
+
+```txt
+(site:drugsdata.org OR site:dancesafe.org) (results OR reagent OR "lab tested")
+```
+
+### EU Drugs Agency (EUDA/EMCDDA)
+
+```txt
+(site:euda.europa.eu OR site:emcdda.europa.eu) "drug checking" (Trendspotter OR report)
 ```
 
 ---
 
-## 🎪 Festival-Specific
+## 💬 Peer & Lived-Experience Perspectives
 
-### Major Australian Festivals - 1
+Checking is a health _and_ a peer intervention. This is the side that an evaluation spreadsheet
+misses — and the side a peer-built resource should lead with.
 
-```txt
-"Groovin the Moo" ("drug checking" OR "pill testing")
-```
-
-### Major Australian Festivals - 2
+### Client & Consumer Experience
 
 ```txt
-"Lost Paradise" "drug checking" OR "harm reduction"
+"drug checking" ("client experience" OR "consumer feedback" OR "in their own words" OR "would not use") Australia
 ```
 
-### Major Australian Festivals - 3
+### Peer Worker & Volunteer Knowledge
 
 ```txt
-"Splendour in the Grass" "pill testing" OR "harm reduction"
+("drug checking" OR "pill testing") ("peer worker" OR volunteer OR "harm reduction worker") (reflection OR experience OR training)
 ```
 
-### Event Medical Context
+### Community Discussion & Real-Time Reports
 
 ```txt
-(festival OR "music event") "drug checking" ("medical team" OR "health services" OR "harm reduction tent")
+(site:reddit.com/r/AusDrugs OR site:bluelight.org) ("pill testing" OR "drug checking" OR CanTEST)
 ```
 
-### DanceWize & Peer Programs
+**Why this works:**
 
-```txt
-(DanceWize OR "peer harm reduction") festival ("drug checking" OR "drug information")
-```
+- Forums carry the in-the-moment "I got it checked and…" knowledge that never reaches a PDF —
+  cross-check against service data, but don't ignore it
 
 ---
 
 ## 📊 Data & Results
 
-### Finding Published Results
+### Substances Detected & Alerts
 
 ```txt
-"drug checking" (results OR findings OR "substances detected") Australia filetype:pdf
+("CanTEST" OR "drug checking") ("substances detected" OR "substance of concern" OR "not as expected" OR alert) Australia
 ```
 
-### Alert/Warning Data from Checking
+### Published Result Sets
 
 ```txt
-"drug checking" (alert OR warning OR "unexpected substance") Australia
+("drug checking" OR "pill testing") (results OR dataset OR "samples tested") (filetype:pdf OR filetype:csv OR filetype:xlsx)
 ```
 
-### Statistical Reports
+### NDARC Service Profiles
 
 ```txt
-"drug checking" (statistics OR data OR "number of samples") Australia report filetype:pdf
+site:ndarc.med.unsw.edu.au "drug checking" (profile OR review OR "international") filetype:pdf
 ```
 
 ---
@@ -195,45 +271,33 @@ FTIR ("drug checking" OR "pill testing") (accuracy OR limitations OR comparison)
 ### Parliamentary Inquiries
 
 ```txt
-site:aph.gov.au "pill testing" OR "drug checking" (inquiry OR submission)
+site:aph.gov.au ("pill testing" OR "drug checking") (inquiry OR submission)
 ```
 
 ### Peak Body Positions
 
 ```txt
-(site:atoda.org.au OR site:nada.org.au OR site:vaada.org.au) "drug checking" OR "pill testing" position OR statement
+(site:atoda.org.au OR site:nada.org.au OR site:vaada.org.au OR site:qnada.org.au) ("drug checking" OR "pill testing") (position OR statement OR submission)
 ```
 
-### International Policy Examples
+### Peer-Body Advocacy
 
 ```txt
-"drug checking" policy (Netherlands OR Switzerland OR UK) "best practice" OR model
-```
-
----
-
-## 🎓 Training & Workforce
-
-### Staff Training
-
-```txt
-"drug checking" (training OR "staff development" OR "workforce") harm reduction filetype:pdf
-```
-
-### Counselling in Drug Checking
-
-```txt
-"drug checking" (counselling OR "brief intervention" OR "health promotion") filetype:pdf
+(site:nuaa.org.au OR site:hrvic.org.au OR site:cahma.org.au OR site:quivaa.org.au) ("pill testing" OR "drug checking") (submission OR position OR campaign)
 ```
 
 ---
 
 ## 🔗 Related Resources
 
+- **Source Intelligence:**
+  [Drug Checking entities](../resources/source-intelligence.md#-drug-checking--pill-testing) — the
+  named services, domains, and report titles every dork above is built on
 - **Synonym Block:** [Drug Checking Terms](../05-synonym-blocks.md#-drug-checking-terms)
 - **Related Packs:** [Festivals](festivals.md), [Novel Substances](novel-substances.md),
   [Drug Alerts](drug-alerts.md)
-- **International:** [EMCDDA](https://emcdda.europa.eu), [DanceSafe](https://dancesafe.org)
+- **Key Services:** [CanTEST](https://cantest.com.au), [WEDINOS](https://wedinos.org),
+  [DanceSafe](https://dancesafe.org)
 
 ---
 
