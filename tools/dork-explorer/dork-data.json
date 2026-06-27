@@ -14481,107 +14481,62 @@
     {
       "id": "organizational-intelligence",
       "title": "Organizational Intelligence & Infrastructure",
-      "description": "Find the \"behind the scenes\" of how harm reduction works — strategic plans, governance documents,",
+      "description": "The behind-the-scenes of how harm reduction is governed and funded — named by the actual register",
       "dorks": [
         {
-          "id": "organizational-intelligence-search-org-au",
-          "title": "Search org.au",
+          "id": "organizational-intelligence-search-acnc-gov-au",
+          "title": "Search acnc.gov.au",
           "category": "Quick Start",
-          "query": "site:*.org.au \"annual report\" \"harm reduction\" filetype:pdf",
+          "query": "site:acnc.gov.au \"Annual Information Statement\" (\"harm reduction\" OR \"alcohol and other drugs\")",
           "explanation": "",
           "difficulty": "beginner",
           "sourceFile": "dork-packs/organizational-intelligence.md",
           "sourceType": "dork-pack",
-          "sourceLine": 16,
-          "operators": [
-            "site",
-            "filetype"
-          ],
-          "targetDomains": [
-            "org.au"
-          ],
-          "domainCategory": "ngo",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "australia"
-          ]
-        },
-        {
-          "id": "organizational-intelligence-annual-reports",
-          "title": "Annual Reports",
-          "category": "Basic Queries",
-          "query": "(\"annual report\" OR \"yearly report\") \"harm reduction\" filetype:pdf",
-          "explanation": "**Why this works:**\n\n- Annual reports reveal organizational priorities and achievements\n- Usually publicly available as PDFs\n- Good for understanding organizational scope and funding",
-          "difficulty": "beginner",
-          "sourceFile": "dork-packs/organizational-intelligence.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 23,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "pdf",
-          "tags": [
-            "documents"
-          ]
-        },
-        {
-          "id": "organizational-intelligence-strategic-plans",
-          "title": "Strategic Plans",
-          "category": "Basic Queries",
-          "query": "(\"strategic plan\" OR \"strategic framework\" OR \"corporate plan\") \"harm reduction\" filetype:pdf",
-          "explanation": "**Why this works:**\n\n- Strategic plans show where organizations are heading\n- Reveal priorities and planned initiatives\n- Often multi-year documents",
-          "difficulty": "beginner",
-          "sourceFile": "dork-packs/organizational-intelligence.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 37,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "policy"
-          ]
-        },
-        {
-          "id": "organizational-intelligence-governance-documents",
-          "title": "Governance Documents",
-          "category": "Basic Queries",
-          "query": "(constitution OR \"governance framework\" OR \"terms of reference\" OR bylaws) \"harm reduction\" site:*.org.au",
-          "explanation": "**Why this works:**\n\n- Governance docs reveal organizational structure\n- Show accountability mechanisms\n- Often required for funding compliance",
-          "difficulty": "beginner",
-          "sourceFile": "dork-packs/organizational-intelligence.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 51,
+          "sourceLine": 29,
           "operators": [
             "site"
           ],
           "targetDomains": [
-            "org.au"
+            "acnc.gov.au"
           ],
-          "domainCategory": "ngo",
+          "domainCategory": "government",
           "contentType": "any",
           "tags": [
-            "documents",
-            "policy",
             "australia"
           ]
         },
         {
-          "id": "organizational-intelligence-funding-applications-grants",
-          "title": "Funding Applications & Grants",
-          "category": "Intermediate Queries",
-          "query": "(\"funding application\" OR \"grant application\" OR \"funding submission\" OR \"expression of interest\") \"harm reduction\" filetype:pdf",
-          "explanation": "**Why this works:**\n\n- Reveals how organizations pitch for funding\n- Shows program logic and expected outcomes\n- Sometimes published for transparency",
-          "difficulty": "intermediate",
+          "id": "organizational-intelligence-charity-register-acnc-ais",
+          "title": "Charity Register (ACNC AIS)",
+          "category": "Basic Queries",
+          "query": "site:acnc.gov.au (\"Annual Information Statement\" OR \"Charity Register\") (\"harm reduction\" OR AOD OR \"drug\")",
+          "explanation": "**Why this works:**\n\n- Charities _must_ lodge an **Annual Information Statement** with the ACNC even if they never\npublish a conventional annual report — the AIS is the reliable, structured record",
+          "difficulty": "beginner",
           "sourceFile": "dork-packs/organizational-intelligence.md",
           "sourceType": "dork-pack",
-          "sourceLine": 69,
+          "sourceLine": 36,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "acnc.gov.au"
+          ],
+          "domainCategory": "government",
+          "contentType": "any",
+          "tags": [
+            "australia"
+          ]
+        },
+        {
+          "id": "organizational-intelligence-annual-reports-strategic-plans",
+          "title": "Annual Reports & Strategic Plans",
+          "category": "Basic Queries",
+          "query": "(\"annual report\" OR \"strategic plan\" OR \"corporate plan\") \"harm reduction\" filetype:pdf",
+          "explanation": "",
+          "difficulty": "beginner",
+          "sourceFile": "dork-packs/organizational-intelligence.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 47,
           "operators": [
             "filetype"
           ],
@@ -14593,15 +14548,81 @@
           ]
         },
         {
-          "id": "organizational-intelligence-tender-documents-service-specifications",
-          "title": "Tender Documents & Service Specifications",
+          "id": "organizational-intelligence-business-dgr-register-abn-lookup",
+          "title": "Business & DGR Register (ABN Lookup)",
+          "category": "Basic Queries",
+          "query": "site:abr.business.gov.au (\"Australian Business Number\" OR \"deductible gift recipient\")",
+          "explanation": "",
+          "difficulty": "beginner",
+          "sourceFile": "dork-packs/organizational-intelligence.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 53,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "abr.business.gov.au"
+          ],
+          "domainCategory": "government",
+          "contentType": "any",
+          "tags": [
+            "australia"
+          ]
+        },
+        {
+          "id": "organizational-intelligence-commonwealth-grants-awarded-grantconnect",
+          "title": "Commonwealth Grants Awarded (GrantConnect)",
           "category": "Intermediate Queries",
-          "query": "(tender OR \"request for proposal\" OR RFP OR \"service specification\" OR \"funding agreement\") \"harm reduction\" site:*.gov.au filetype:pdf",
-          "explanation": "**Why this works:**\n\n- Reveals government priorities and requirements\n- Shows what services are being commissioned\n- Contains KPIs and outcome expectations",
+          "query": "site:grants.gov.au (\"Grant Award\" OR \"/ga/\") (\"alcohol and other drugs\" OR \"harm reduction\" OR AOD)",
+          "explanation": "**Why this works:**\n\n- Awarded Commonwealth grants are published as **Grant Award (GA)** notices on GrantConnect\n(`grants.gov.au/ga/list`) — this is _who got funded_, not just who's pitching",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/organizational-intelligence.md",
           "sourceType": "dork-pack",
-          "sourceLine": 83,
+          "sourceLine": 63,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "grants.gov.au"
+          ],
+          "domainCategory": "government",
+          "contentType": "any",
+          "tags": [
+            "australia"
+          ]
+        },
+        {
+          "id": "organizational-intelligence-government-contracts-austender",
+          "title": "Government Contracts (AusTender)",
+          "category": "Intermediate Queries",
+          "query": "site:tenders.gov.au (\"Contract Notice\" OR \"/cn/\") (\"harm reduction\" OR AOD OR \"drug and alcohol\")",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/organizational-intelligence.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 74,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "tenders.gov.au"
+          ],
+          "domainCategory": "government",
+          "contentType": "any",
+          "tags": [
+            "australia"
+          ]
+        },
+        {
+          "id": "organizational-intelligence-tenders-service-specifications",
+          "title": "Tenders & Service Specifications",
+          "category": "Intermediate Queries",
+          "query": "(tender OR \"request for proposal\" OR \"service specification\" OR \"funding agreement\") (\"harm reduction\" OR AOD) site:*.gov.au filetype:pdf",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/organizational-intelligence.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 80,
           "operators": [
             "site",
             "filetype"
@@ -14618,15 +14639,39 @@
           ]
         },
         {
-          "id": "organizational-intelligence-board-papers-meeting-minutes",
-          "title": "Board Papers & Meeting Minutes",
+          "id": "organizational-intelligence-governance-documents",
+          "title": "Governance Documents",
           "category": "Intermediate Queries",
-          "query": "(\"board papers\" OR \"board meeting\" OR \"meeting minutes\" OR \"committee minutes\") \"harm reduction\"",
-          "explanation": "**Why this works:**\n\n- Board papers reveal decision-making processes\n- Minutes show what was discussed and decided\n- Governance transparency documents",
+          "query": "(constitution OR \"governance framework\" OR \"terms of reference\" OR \"board\") \"harm reduction\" site:*.org.au",
+          "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/organizational-intelligence.md",
           "sourceType": "dork-pack",
-          "sourceLine": 97,
+          "sourceLine": 86,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "org.au"
+          ],
+          "domainCategory": "ngo",
+          "contentType": "any",
+          "tags": [
+            "documents",
+            "policy",
+            "australia"
+          ]
+        },
+        {
+          "id": "organizational-intelligence-partnerships-mous",
+          "title": "Partnerships & MOUs",
+          "category": "Intermediate Queries",
+          "query": "(\"memorandum of understanding\" OR MOU OR \"partnership agreement\") (\"harm reduction\" OR AOD)",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/organizational-intelligence.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 92,
           "operators": [],
           "targetDomains": [],
           "domainCategory": "any",
@@ -14634,15 +14679,36 @@
           "tags": []
         },
         {
-          "id": "organizational-intelligence-position-descriptions",
-          "title": "Position Descriptions",
-          "category": "Intermediate Queries",
-          "query": "(\"position description\" OR \"job description\" OR \"role description\" OR \"person specification\") \"harm reduction\" filetype:pdf",
-          "explanation": "**Why this works:**\n\n- Shows how organizations define roles\n- Reveals workforce structure and requirements\n- Useful for understanding sector capacity",
-          "difficulty": "intermediate",
+          "id": "organizational-intelligence-phn-activity-work-plans-commissioning",
+          "title": "PHN Activity Work Plans (Commissioning)",
+          "category": "Advanced Queries",
+          "query": "(\"Activity Work Plan\" OR \"Drug and Alcohol Treatment Services Activity Work Plan\" OR \"Health Needs Assessment\") (AOD OR \"alcohol and other drugs\") filetype:pdf",
+          "explanation": "**Why this works:**\n\n- There's no national register of PHN plans — each of the 31 PHNs publishes its own **Activity Work\nPlan** as a PDF, so the exact document-type string + `filetype:pdf` is how you sweep them all",
+          "difficulty": "advanced",
           "sourceFile": "dork-packs/organizational-intelligence.md",
           "sourceType": "dork-pack",
-          "sourceLine": 111,
+          "sourceLine": 102,
+          "operators": [
+            "filetype"
+          ],
+          "targetDomains": [],
+          "domainCategory": "any",
+          "contentType": "pdf",
+          "tags": [
+            "documents",
+            "services"
+          ]
+        },
+        {
+          "id": "organizational-intelligence-reconciliation-action-plans",
+          "title": "Reconciliation Action Plans",
+          "category": "Advanced Queries",
+          "query": "\"Reconciliation Action Plan\" (AOD OR \"alcohol and other drugs\" OR \"harm reduction\" OR health) filetype:pdf",
+          "explanation": "",
+          "difficulty": "advanced",
+          "sourceFile": "dork-packs/organizational-intelligence.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 113,
           "operators": [
             "filetype"
           ],
@@ -14654,31 +14720,15 @@
           ]
         },
         {
-          "id": "organizational-intelligence-memoranda-of-understanding",
-          "title": "Memoranda of Understanding",
-          "category": "Intermediate Queries",
-          "query": "(\"memorandum of understanding\" OR MOU OR MoU OR \"partnership agreement\" OR \"collaboration agreement\") \"harm reduction\"",
-          "explanation": "**Why this works:**\n\n- Reveals organizational relationships\n- Shows formal partnerships\n- Indicates collaborative structures",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/organizational-intelligence.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 125,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": []
-        },
-        {
           "id": "organizational-intelligence-comprehensive-governance-sweep",
           "title": "Comprehensive Governance Sweep",
           "category": "Advanced Queries",
-          "query": "(site:*.org.au OR site:*.gov.au) \"harm reduction\" (\"annual report\" OR \"strategic plan\" OR \"board\" OR \"governance\" OR \"constitution\") filetype:pdf",
-          "explanation": "**Why this works:**\n\n- Broad sweep of organizational documents\n- Both gov and non-gov sources\n- PDF filter for formal documents",
+          "query": "(site:*.org.au OR site:*.gov.au) \"harm reduction\" (\"annual report\" OR \"strategic plan\" OR \"board\" OR governance OR constitution) filetype:pdf",
+          "explanation": "",
           "difficulty": "advanced",
           "sourceFile": "dork-packs/organizational-intelligence.md",
           "sourceType": "dork-pack",
-          "sourceLine": 143,
+          "sourceLine": 119,
           "operators": [
             "site",
             "filetype"
@@ -14698,12 +14748,12 @@
           "id": "organizational-intelligence-budget-financial-documents",
           "title": "Budget & Financial Documents",
           "category": "Advanced Queries",
-          "query": "(\"budget\" OR \"financial statements\" OR \"financial report\" OR \"audit report\" OR \"annual accounts\") \"harm reduction\" filetype:pdf",
-          "explanation": "**Why this works:**\n\n- Reveals funding levels and allocation\n- Shows financial health\n- Required for many funded organizations",
+          "query": "(\"financial statements\" OR \"audited accounts\" OR \"budget paper\" OR \"annual accounts\") (\"harm reduction\" OR AOD) filetype:pdf",
+          "explanation": "",
           "difficulty": "advanced",
           "sourceFile": "dork-packs/organizational-intelligence.md",
           "sourceType": "dork-pack",
-          "sourceLine": 157,
+          "sourceLine": 125,
           "operators": [
             "filetype"
           ],
@@ -14715,40 +14765,15 @@
           ]
         },
         {
-          "id": "organizational-intelligence-service-agreements-contracts",
-          "title": "Service Agreements & Contracts",
+          "id": "organizational-intelligence-evaluations-reviews",
+          "title": "Evaluations & Reviews",
           "category": "Advanced Queries",
-          "query": "(\"service agreement\" OR \"funding agreement\" OR \"contract\" OR \"schedule\" OR \"deliverables\") \"harm reduction\" site:*.gov.au filetype:pdf",
-          "explanation": "**Why this works:**\n\n- Shows what government has contracted\n- Reveals KPIs and reporting requirements\n- Service delivery specifications",
+          "query": "(evaluation OR \"program review\" OR \"independent review\") (\"harm reduction\" OR AOD) (recommendations OR findings) filetype:pdf",
+          "explanation": "",
           "difficulty": "advanced",
           "sourceFile": "dork-packs/organizational-intelligence.md",
           "sourceType": "dork-pack",
-          "sourceLine": 171,
-          "operators": [
-            "site",
-            "filetype"
-          ],
-          "targetDomains": [
-            "gov.au"
-          ],
-          "domainCategory": "government",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "services",
-            "australia"
-          ]
-        },
-        {
-          "id": "organizational-intelligence-evaluation-reports",
-          "title": "Evaluation Reports",
-          "category": "Advanced Queries",
-          "query": "(evaluation OR review OR \"program review\" OR assessment OR \"independent review\") \"harm reduction\" (recommendations OR findings) filetype:pdf",
-          "explanation": "**Why this works:**\n\n- Evaluations reveal program effectiveness\n- Recommendations show improvement areas\n- Independent assessments add credibility",
-          "difficulty": "advanced",
-          "sourceFile": "dork-packs/organizational-intelligence.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 185,
+          "sourceLine": 131,
           "operators": [
             "filetype"
           ],
@@ -14761,102 +14786,15 @@
           ]
         },
         {
-          "id": "organizational-intelligence-organizational-policies",
-          "title": "Organizational Policies",
+          "id": "organizational-intelligence-foi-releases",
+          "title": "FOI Releases",
           "category": "Advanced Queries",
-          "query": "site:*.org.au (\"policy\" OR \"procedure\" OR \"guideline\" OR \"protocol\") \"harm reduction\" (inurl:policy OR inurl:policies) filetype:pdf",
-          "explanation": "**Why this works:**\n\n- Policy documents reveal operational standards\n- Procedures show how work is done\n- Often publicly accessible for transparency",
+          "query": "site:*.gov.au (\"freedom of information\" OR FOI OR \"released under FOI\") (\"harm reduction\" OR \"drug and alcohol\")",
+          "explanation": "",
           "difficulty": "advanced",
           "sourceFile": "dork-packs/organizational-intelligence.md",
           "sourceType": "dork-pack",
-          "sourceLine": 199,
-          "operators": [
-            "site",
-            "filetype",
-            "inurl"
-          ],
-          "targetDomains": [
-            "org.au"
-          ],
-          "domainCategory": "ngo",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "policy",
-            "australia"
-          ]
-        },
-        {
-          "id": "organizational-intelligence-ceo-director-reports",
-          "title": "CEO/Director Reports",
-          "category": "Advanced Queries",
-          "query": "(\"CEO report\" OR \"director's report\" OR \"executive report\" OR \"chair's report\") \"harm reduction\"",
-          "explanation": "**Why this works:**\n\n- Executive reports summarize organizational status\n- Often published in annual reports\n- Reveals leadership priorities",
-          "difficulty": "advanced",
-          "sourceFile": "dork-packs/organizational-intelligence.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 213,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "documents"
-          ]
-        },
-        {
-          "id": "organizational-intelligence-workforce-data",
-          "title": "Workforce Data",
-          "category": "Advanced Queries",
-          "query": "(\"workforce\" OR \"staffing\" OR \"FTE\" OR \"headcount\" OR \"human resources\") \"harm reduction\" (report OR data OR statistics)",
-          "explanation": "**Why this works:**\n\n- Reveals sector capacity\n- Shows workforce trends\n- Useful for understanding service delivery capacity",
-          "difficulty": "advanced",
-          "sourceFile": "dork-packs/organizational-intelligence.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 227,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "documents",
-            "training",
-            "data"
-          ]
-        },
-        {
-          "id": "organizational-intelligence-departmental-reports",
-          "title": "Departmental Reports",
-          "category": "Government Infrastructure",
-          "query": "site:*.gov.au (\"departmental report\" OR \"annual report\" OR \"corporate plan\") (\"harm reduction\" OR \"AOD\" OR \"alcohol and other drugs\")",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/organizational-intelligence.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 245,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "gov.au"
-          ],
-          "domainCategory": "government",
-          "contentType": "any",
-          "tags": [
-            "documents",
-            "australia"
-          ]
-        },
-        {
-          "id": "organizational-intelligence-budget-papers-estimates",
-          "title": "Budget Papers & Estimates",
-          "category": "Government Infrastructure",
-          "query": "site:*.gov.au (\"budget paper\" OR \"budget estimates\" OR \"appropriation\") (\"harm reduction\" OR \"drug and alcohol\" OR \"AOD\")",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/organizational-intelligence.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 253,
+          "sourceLine": 137,
           "operators": [
             "site"
           ],
@@ -14870,44 +14808,20 @@
           ]
         },
         {
-          "id": "organizational-intelligence-policy-briefs-cabinet-documents",
-          "title": "Policy Briefs & Cabinet Documents",
-          "category": "Government Infrastructure",
-          "query": "site:*.gov.au (\"policy brief\" OR \"cabinet\" OR \"ministerial brief\" OR \"discussion paper\") \"harm reduction\"",
+          "id": "organizational-intelligence-grantconnect-awarded-open",
+          "title": "GrantConnect — Awarded & Open",
+          "category": "Government Funding & Commissioning",
+          "query": "site:grants.gov.au (\"Grant Award\" OR \"forecast opportunity\" OR \"grant opportunity\") (AOD OR \"alcohol and other drugs\" OR \"harm reduction\")",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/organizational-intelligence.md",
           "sourceType": "dork-pack",
-          "sourceLine": 261,
+          "sourceLine": 149,
           "operators": [
             "site"
           ],
           "targetDomains": [
-            "gov.au"
-          ],
-          "domainCategory": "government",
-          "contentType": "any",
-          "tags": [
-            "documents",
-            "policy",
-            "australia"
-          ]
-        },
-        {
-          "id": "organizational-intelligence-regulatory-impact-statements",
-          "title": "Regulatory Impact Statements",
-          "category": "Government Infrastructure",
-          "query": "site:*.gov.au (\"regulatory impact statement\" OR RIS OR \"regulation impact\") drug OR substance OR harm",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/organizational-intelligence.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 269,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "gov.au"
+            "grants.gov.au"
           ],
           "domainCategory": "government",
           "contentType": "any",
@@ -14916,20 +14830,20 @@
           ]
         },
         {
-          "id": "organizational-intelligence-freedom-of-information-releases",
-          "title": "Freedom of Information Releases",
-          "category": "Government Infrastructure",
-          "query": "site:*.gov.au (\"freedom of information\" OR FOI OR \"released under FOI\") \"harm reduction\"",
+          "id": "organizational-intelligence-austender-contract-notices",
+          "title": "AusTender — Contract Notices",
+          "category": "Government Funding & Commissioning",
+          "query": "site:tenders.gov.au \"Contract Notice\" (\"harm reduction\" OR AOD OR \"needle\" OR naloxone)",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/organizational-intelligence.md",
           "sourceType": "dork-pack",
-          "sourceLine": 277,
+          "sourceLine": 155,
           "operators": [
             "site"
           ],
           "targetDomains": [
-            "gov.au"
+            "tenders.gov.au"
           ],
           "domainCategory": "government",
           "contentType": "any",
@@ -14938,38 +14852,38 @@
           ]
         },
         {
-          "id": "organizational-intelligence-phn-commissioning",
-          "title": "PHN Commissioning",
-          "category": "Funding & Commissioning",
-          "query": "(site:*.com.au OR site:*.org.au) (PHN OR \"Primary Health Network\") (\"harm reduction\" OR AOD OR \"alcohol and other drugs\") (tender OR commission OR \"needs assessment\")",
+          "id": "organizational-intelligence-community-grants-hub",
+          "title": "Community Grants Hub",
+          "category": "Government Funding & Commissioning",
+          "query": "site:communitygrants.gov.au (\"grant opportunity guidelines\" OR program) (AOD OR \"drug and alcohol\")",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/organizational-intelligence.md",
           "sourceType": "dork-pack",
-          "sourceLine": 289,
+          "sourceLine": 161,
           "operators": [
             "site"
           ],
           "targetDomains": [
-            "com.au",
-            "org.au"
+            "communitygrants.gov.au"
           ],
-          "domainCategory": "ngo",
+          "domainCategory": "government",
           "contentType": "any",
           "tags": [
+            "services",
             "australia"
           ]
         },
         {
           "id": "organizational-intelligence-state-health-procurement",
           "title": "State Health Procurement",
-          "category": "Funding & Commissioning",
+          "category": "Government Funding & Commissioning",
           "query": "site:*.health.*.gov.au (tender OR procurement OR \"expression of interest\" OR EOI) (\"harm reduction\" OR AOD)",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/organizational-intelligence.md",
           "sourceType": "dork-pack",
-          "sourceLine": 297,
+          "sourceLine": 167,
           "operators": [
             "site"
           ],
@@ -14983,21 +14897,21 @@
           ]
         },
         {
-          "id": "organizational-intelligence-grant-opportunities",
-          "title": "Grant Opportunities",
-          "category": "Funding & Commissioning",
-          "query": "site:*.gov.au OR site:*.org.au (grant OR \"funding round\" OR \"funding opportunity\") \"harm reduction\" open OR applications",
+          "id": "organizational-intelligence-funding-recipients",
+          "title": "Funding Recipients",
+          "category": "Government Funding & Commissioning",
+          "query": "(\"funding recipients\" OR \"successful applicants\" OR \"grants awarded\") (\"harm reduction\" OR AOD) (site:*.gov.au OR site:grants.gov.au)",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/organizational-intelligence.md",
           "sourceType": "dork-pack",
-          "sourceLine": 305,
+          "sourceLine": 173,
           "operators": [
             "site"
           ],
           "targetDomains": [
             "gov.au",
-            "org.au"
+            "grants.gov.au"
           ],
           "domainCategory": "government",
           "contentType": "any",
@@ -15006,103 +14920,84 @@
           ]
         },
         {
-          "id": "organizational-intelligence-funding-recipient-lists",
-          "title": "Funding Recipient Lists",
-          "category": "Funding & Commissioning",
-          "query": "site:*.gov.au (\"funding recipients\" OR \"successful applicants\" OR \"grants awarded\") (\"harm reduction\" OR AOD OR \"drug and alcohol\")",
+          "id": "organizational-intelligence-organisational",
+          "title": "Organisational",
+          "category": "\udccb Document-Type Patterns",
+          "query": "(\"Annual Information Statement\" OR \"annual report\" OR \"strategic plan\" OR constitution OR \"terms of reference\")",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/organizational-intelligence.md",
           "sourceType": "dork-pack",
-          "sourceLine": 313,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "gov.au"
-          ],
-          "domainCategory": "government",
-          "contentType": "any",
-          "tags": [
-            "australia"
-          ]
-        },
-        {
-          "id": "organizational-intelligence-organizational-documents",
-          "title": "Organizational Documents",
-          "category": "\udccb Document Type Patterns",
-          "query": "policy OR procedure site:*.org.au \"harm reduction\"",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/organizational-intelligence.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 325,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "org.au"
-          ],
-          "domainCategory": "ngo",
-          "contentType": "any",
-          "tags": [
-            "documents",
-            "policy",
-            "australia"
-          ]
-        },
-        {
-          "id": "organizational-intelligence-government-documents",
-          "title": "Government Documents",
-          "category": "\udccb Document Type Patterns",
-          "query": "FOI site:*.gov.au \"harm reduction\"",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/organizational-intelligence.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 357,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "gov.au"
-          ],
-          "domainCategory": "government",
-          "contentType": "any",
-          "tags": [
-            "documents",
-            "australia"
-          ]
-        },
-        {
-          "id": "organizational-intelligence-workforce-documents",
-          "title": "Workforce Documents",
-          "category": "\udccb Document Type Patterns",
-          "query": "curriculum OR syllabus \"harm reduction\" training",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/organizational-intelligence.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 389,
+          "sourceLine": 185,
           "operators": [],
           "targetDomains": [],
           "domainCategory": "any",
           "contentType": "any",
           "tags": [
-            "documents",
-            "training"
+            "documents"
           ]
         },
         {
-          "id": "organizational-intelligence-finding-all-documents-from-one-org",
-          "title": "Finding All Documents from One Org",
-          "category": "\udd0d Organization-Specific Deep Dives",
-          "query": "site:nuaa.org.au (\"annual report\" OR \"strategic plan\" OR policy)",
+          "id": "organizational-intelligence-funding",
+          "title": "Funding",
+          "category": "\udccb Document-Type Patterns",
+          "query": "(\"Grant Award\" OR \"Contract Notice\" OR \"funding agreement\" OR \"expression of interest\" OR EOI OR deliverables)",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/organizational-intelligence.md",
           "sourceType": "dork-pack",
-          "sourceLine": 419,
+          "sourceLine": 191,
+          "operators": [],
+          "targetDomains": [],
+          "domainCategory": "any",
+          "contentType": "any",
+          "tags": []
+        },
+        {
+          "id": "organizational-intelligence-workforce",
+          "title": "Workforce",
+          "category": "\udccb Document-Type Patterns",
+          "query": "(\"position description\" OR \"workforce strategy\" OR \"competency framework\" OR \"FTE\")",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/organizational-intelligence.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 197,
+          "operators": [],
+          "targetDomains": [],
+          "domainCategory": "any",
+          "contentType": "any",
+          "tags": [
+            "policy",
+            "training"
+          ]
+        },
+        {
+          "id": "organizational-intelligence-evaluation",
+          "title": "Evaluation",
+          "category": "\udccb Document-Type Patterns",
+          "query": "(evaluation OR review OR audit OR \"independent review\")",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/organizational-intelligence.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 203,
+          "operators": [],
+          "targetDomains": [],
+          "domainCategory": "any",
+          "contentType": "any",
+          "tags": []
+        },
+        {
+          "id": "organizational-intelligence-all-documents-from-one-org",
+          "title": "All Documents from One Org",
+          "category": "\udd0d Organization-Specific Deep Dives",
+          "query": "site:nuaa.org.au (\"annual report\" OR \"Annual Information Statement\" OR \"strategic plan\" OR policy)",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/organizational-intelligence.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 213,
           "operators": [
             "site"
           ],
@@ -15118,15 +15013,15 @@
           ]
         },
         {
-          "id": "organizational-intelligence-comparing-organizations",
-          "title": "Comparing Organizations",
+          "id": "organizational-intelligence-comparing-organisations",
+          "title": "Comparing Organisations",
           "category": "\udd0d Organization-Specific Deep Dives",
-          "query": "\"annual report\" 2023 (AIVL OR NUAA OR \"Harm Reduction Victoria\" OR QuIHN) filetype:pdf",
+          "query": "(\"annual report\" OR \"Annual Information Statement\") (AIVL OR NUAA OR \"Harm Reduction Victoria\" OR QuIHN) filetype:pdf",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/organizational-intelligence.md",
           "sourceType": "dork-pack",
-          "sourceLine": 429,
+          "sourceLine": 223,
           "operators": [
             "filetype"
           ],
@@ -15138,206 +15033,20 @@
           ]
         },
         {
-          "id": "organizational-intelligence-tracking-organizational-changes",
-          "title": "Tracking Organizational Changes",
+          "id": "organizational-intelligence-tracking-change-over-time",
+          "title": "Tracking Change Over Time",
           "category": "\udd0d Organization-Specific Deep Dives",
-          "query": "\"strategic plan\" aivl (2020 OR 2021 OR 2022 OR 2023)",
-          "explanation": "",
+          "query": "site:web.archive.org/web/*/aivl.org.au \"strategic plan\"",
+          "explanation": "> Pair with the [Temporal Intelligence pack](temporal-intelligence.md) to recover superseded plans\n> and removed reports.",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/organizational-intelligence.md",
           "sourceType": "dork-pack",
-          "sourceLine": 435,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "organizational-intelligence-strategic-documents",
-          "title": "Strategic Documents",
-          "category": "\udccb Quick Copy Document Patterns",
-          "query": "(\"annual report\" OR \"strategic plan\" OR \"corporate plan\") filetype:pdf",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/organizational-intelligence.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 449,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "pdf",
-          "tags": [
-            "documents"
-          ]
-        },
-        {
-          "id": "organizational-intelligence-governance-patterns",
-          "title": "Governance Patterns",
-          "category": "\udccb Quick Copy Document Patterns",
-          "query": "(\"constitution\" OR \"governance\" OR \"board\" OR \"terms of reference\")",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/organizational-intelligence.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 455,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "organizational-intelligence-funding-documents",
-          "title": "Funding Documents",
-          "category": "\udccb Quick Copy Document Patterns",
-          "query": "(\"tender\" OR \"grant\" OR \"funding\" OR \"expression of interest\" OR EOI)",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/organizational-intelligence.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 461,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "documents"
-          ]
-        },
-        {
-          "id": "organizational-intelligence-workforce-patterns",
-          "title": "Workforce Patterns",
-          "category": "\udccb Quick Copy Document Patterns",
-          "query": "(\"position description\" OR \"job description\" OR \"workforce\" OR \"staffing\")",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/organizational-intelligence.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 467,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "training"
-          ]
-        },
-        {
-          "id": "organizational-intelligence-evaluation-documents",
-          "title": "Evaluation Documents",
-          "category": "\udccb Quick Copy Document Patterns",
-          "query": "(\"evaluation\" OR \"review\" OR \"assessment\" OR \"audit\")",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/organizational-intelligence.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 473,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "documents"
-          ]
-        },
-        {
-          "id": "organizational-intelligence-finding-document-versions",
-          "title": "Finding Document Versions",
-          "category": "\udca1 Advanced Techniques",
-          "query": "site:web.archive.org \"[document title]\"",
-          "explanation": "",
-          "difficulty": "advanced",
-          "sourceFile": "dork-packs/organizational-intelligence.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 483,
+          "sourceLine": 229,
           "operators": [
             "site"
           ],
           "targetDomains": [
-            "web.archive.org"
-          ],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "documents"
-          ]
-        },
-        {
-          "id": "organizational-intelligence-finding-confidential-leaks",
-          "title": "Finding Confidential Leaks",
-          "category": "\udca1 Advanced Techniques",
-          "query": "(\"confidential\" OR \"internal\" OR \"not for distribution\" OR \"draft\") \"harm reduction\" filetype:pdf",
-          "explanation": "",
-          "difficulty": "advanced",
-          "sourceFile": "dork-packs/organizational-intelligence.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 495,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "pdf",
-          "tags": [
-            "documents"
-          ]
-        },
-        {
-          "id": "organizational-intelligence-tender-response-deadlines",
-          "title": "Tender Response Deadlines",
-          "category": "\udca1 Advanced Techniques",
-          "query": "site:*.gov.au tender \"harm reduction\" (\"closes\" OR \"deadline\" OR \"due date\") 2025",
-          "explanation": "",
-          "difficulty": "advanced",
-          "sourceFile": "dork-packs/organizational-intelligence.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 503,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "gov.au"
-          ],
-          "domainCategory": "government",
-          "contentType": "any",
-          "tags": [
-            "australia"
-          ]
-        },
-        {
-          "id": "organizational-intelligence-finding-subcontractors",
-          "title": "Finding Subcontractors",
-          "category": "\udca1 Advanced Techniques",
-          "query": "(\"subcontract\" OR \"consortium\" OR \"partnership\" OR \"in partnership with\") \"harm reduction\" tender",
-          "explanation": "",
-          "difficulty": "advanced",
-          "sourceFile": "dork-packs/organizational-intelligence.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 511,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "organizational-intelligence-discovering-organizational-networks",
-          "title": "Discovering Organizational Networks",
-          "category": "\udca1 Advanced Techniques",
-          "query": "site:aivl.org.au (\"partnership\" OR \"partner\" OR \"collaboration\" OR \"in collaboration with\")",
-          "explanation": "",
-          "difficulty": "advanced",
-          "sourceFile": "dork-packs/organizational-intelligence.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 517,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "aivl.org.au"
+            "web.archive.org/web/*/aivl.org.au"
           ],
           "domainCategory": "ngo",
           "contentType": "any",
@@ -15346,90 +15055,15 @@
           ]
         },
         {
-          "id": "organizational-intelligence-nsw",
-          "title": "NSW",
-          "category": "State/Territory Specific",
-          "query": "(site:*.nsw.gov.au OR site:health.nsw.gov.au) (\"harm reduction\" OR AOD) (tender OR \"annual report\" OR strategy)",
+          "id": "organizational-intelligence-search-nsw-gov-au",
+          "title": "Search nsw.gov.au",
+          "category": "State / Territory Sweeps",
+          "query": "site:*.health.*.gov.au (\"harm reduction\" OR AOD) (\"annual report\" OR strategy OR \"Activity Work Plan\")",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/organizational-intelligence.md",
           "sourceType": "dork-pack",
-          "sourceLine": 529,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "nsw.gov.au",
-            "health.nsw.gov.au"
-          ],
-          "domainCategory": "government",
-          "contentType": "any",
-          "tags": [
-            "documents",
-            "policy",
-            "australia"
-          ]
-        },
-        {
-          "id": "organizational-intelligence-victoria",
-          "title": "Victoria",
-          "category": "State/Territory Specific",
-          "query": "(site:*.vic.gov.au OR site:health.vic.gov.au) (\"harm reduction\" OR AOD) (tender OR \"annual report\" OR strategy)",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/organizational-intelligence.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 535,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "vic.gov.au",
-            "health.vic.gov.au"
-          ],
-          "domainCategory": "government",
-          "contentType": "any",
-          "tags": [
-            "documents",
-            "policy",
-            "australia"
-          ]
-        },
-        {
-          "id": "organizational-intelligence-queensland",
-          "title": "Queensland",
-          "category": "State/Territory Specific",
-          "query": "(site:*.qld.gov.au OR site:health.qld.gov.au) (\"harm reduction\" OR AOD) (tender OR \"annual report\" OR strategy)",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/organizational-intelligence.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 541,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "qld.gov.au",
-            "health.qld.gov.au"
-          ],
-          "domainCategory": "government",
-          "contentType": "any",
-          "tags": [
-            "documents",
-            "policy",
-            "australia"
-          ]
-        },
-        {
-          "id": "organizational-intelligence-all-states",
-          "title": "All States",
-          "category": "State/Territory Specific",
-          "query": "site:*.health.*.gov.au (\"harm reduction\" OR AOD) (\"annual report\" OR strategy OR tender)",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/organizational-intelligence.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 547,
+          "sourceLine": 243,
           "operators": [
             "site"
           ],
@@ -21404,124 +21038,59 @@
     {
       "id": "stigma-language",
       "title": "Stigma, Language & Historical Research",
-      "description": "Understanding how language has changed and finding historical documents using legacy terminology.",
+      "description": "Find the named language guides, the anti-stigma evidence, and the movement's own history — by the",
       "dorks": [
         {
-          "id": "stigma-language-find-pdf-files",
-          "title": "Find PDF files",
+          "id": "stigma-language-search-nada-org-au",
+          "title": "Search nada.org.au",
           "category": "Quick Start",
-          "query": "\"stigma\" \"people who use drugs\" Australia research filetype:pdf",
+          "query": "(site:nada.org.au OR site:nuaa.org.au) \"Language Matters\"",
           "explanation": "",
           "difficulty": "beginner",
           "sourceFile": "dork-packs/stigma-language.md",
           "sourceType": "dork-pack",
-          "sourceLine": 23,
+          "sourceLine": 32,
           "operators": [
-            "filetype"
+            "site"
           ],
-          "targetDomains": [],
-          "domainCategory": "research",
-          "contentType": "pdf",
+          "targetDomains": [
+            "nada.org.au",
+            "nuaa.org.au"
+          ],
+          "domainCategory": "ngo",
+          "contentType": "any",
           "tags": [
-            "documents",
-            "research",
             "australia"
           ]
         },
         {
-          "id": "stigma-language-tracking-language-change-1",
-          "title": "Tracking Language Change - 1",
+          "id": "stigma-language-named-language-guides-peer-sector",
+          "title": "Named Language Guides (Peer & Sector)",
           "category": "Basic Queries",
-          "query": "\"people who use drugs\" OR \"person who uses drugs\" (definition OR meaning OR \"why we say\")",
-          "explanation": "",
+          "query": "(\"Language Matters\" OR \"Words Matter\" OR \"Power of Words\") (\"people who use drugs\" OR \"alcohol and other drugs\" OR stigma)",
+          "explanation": "**Why this works:**\n\n- Names the actual guides — NADA/NUAA's **Language Matters**, INPUD/ANPUD's **Words Matter!**, ADF's\n**Power of Words** — instead of a generic `\"language\" \"guide\"` query",
           "difficulty": "beginner",
           "sourceFile": "dork-packs/stigma-language.md",
           "sourceType": "dork-pack",
-          "sourceLine": 30,
+          "sourceLine": 39,
           "operators": [],
           "targetDomains": [],
           "domainCategory": "any",
           "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "stigma-language-tracking-language-change-2",
-          "title": "Tracking Language Change - 2",
-          "category": "Basic Queries",
-          "query": "\"stigma\" \"language\" drug use harm reduction",
-          "explanation": "",
-          "difficulty": "beginner",
-          "sourceFile": "dork-packs/stigma-language.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 36,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "stigma-language-people-first-language-1",
-          "title": "People-First Language - 1",
-          "category": "Basic Queries",
-          "query": "\"people-first language\" drug OR substance use",
-          "explanation": "",
-          "difficulty": "beginner",
-          "sourceFile": "dork-packs/stigma-language.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 42,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "stigma-language-people-first-language-2",
-          "title": "People-First Language - 2",
-          "category": "Basic Queries",
-          "query": "\"from 'addict' to 'person'\" language change",
-          "explanation": "",
-          "difficulty": "beginner",
-          "sourceFile": "dork-packs/stigma-language.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 48,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "stigma-language-language-guides-1",
-          "title": "Language Guides - 1",
-          "category": "Basic Queries",
-          "query": "(\"terminology\" OR \"language\") harm reduction guide filetype:pdf",
-          "explanation": "",
-          "difficulty": "beginner",
-          "sourceFile": "dork-packs/stigma-language.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 54,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "pdf",
           "tags": [
-            "documents"
+            "peer"
           ]
         },
         {
-          "id": "stigma-language-language-guides-2",
-          "title": "Language Guides - 2",
+          "id": "stigma-language-people-first-language",
+          "title": "People-First Language",
           "category": "Basic Queries",
-          "query": "\"words matter\" drug OR substance use campaign",
+          "query": "(\"people-first language\" OR \"person-centred language\" OR \"people who use drugs\") (why OR guide OR \"non-stigmatising\")",
           "explanation": "",
           "difficulty": "beginner",
           "sourceFile": "dork-packs/stigma-language.md",
           "sourceType": "dork-pack",
-          "sourceLine": 60,
+          "sourceLine": 50,
           "operators": [],
           "targetDomains": [],
           "domainCategory": "any",
@@ -21529,15 +21098,38 @@
           "tags": []
         },
         {
-          "id": "stigma-language-historical-stigmatising-terms-for-research-only-1",
-          "title": "Historical/Stigmatising Terms (For Research Only) - 1",
-          "category": "Intermediate Queries",
-          "query": "\"drug addict\" OR \"drug abuser\" Australia 1980..2010 filetype:pdf",
+          "id": "stigma-language-media-reporting-mindframe",
+          "title": "Media Reporting (Mindframe)",
+          "category": "Basic Queries",
+          "query": "site:mindframe.org.au (\"Mindframe for Alcohol and Other Drugs\" OR \"communicating about alcohol and other drugs\")",
           "explanation": "",
+          "difficulty": "beginner",
+          "sourceFile": "dork-packs/stigma-language.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 56,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "mindframe.org.au"
+          ],
+          "domainCategory": "ngo",
+          "contentType": "any",
+          "tags": [
+            "documents",
+            "australia"
+          ]
+        },
+        {
+          "id": "stigma-language-historical-legacy-terms-research-only",
+          "title": "Historical / Legacy Terms (Research Only)",
+          "category": "Intermediate Queries",
+          "query": "(\"drug addict\" OR \"drug abuser\" OR \"substance abuser\" OR \"IVDU\") Australia 1985..2005 filetype:pdf",
+          "explanation": "**Why this works:**\n\n- The legacy terms are the _keys_ to pre-2010 documents; the number-range operator (`YYYY..YYYY`)\ncatches the era they were written in",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/stigma-language.md",
           "sourceType": "dork-pack",
-          "sourceLine": 70,
+          "sourceLine": 66,
           "operators": [
             "filetype"
           ],
@@ -21551,93 +21143,58 @@
           ]
         },
         {
-          "id": "stigma-language-historical-stigmatising-terms-for-research-only-2",
-          "title": "Historical/Stigmatising Terms (For Research Only) - 2",
+          "id": "stigma-language-comparing-language-across-eras",
+          "title": "Comparing Language Across Eras",
           "category": "Intermediate Queries",
-          "query": "\"intravenous drug user\" OR \"IVDU\" Australia harm reduction",
+          "query": "(\"injecting drug user\" OR IDU) Australia 1990..2010    →    (\"people who inject drugs\" OR PWID) 2010..2026",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/stigma-language.md",
           "sourceType": "dork-pack",
-          "sourceLine": 78,
+          "sourceLine": 79,
           "operators": [],
           "targetDomains": [],
           "domainCategory": "any",
           "contentType": "any",
           "tags": [
-            "research",
             "australia"
           ]
         },
         {
-          "id": "stigma-language-historical-stigmatising-terms-for-research-only-3",
-          "title": "Historical/Stigmatising Terms (For Research Only) - 3",
+          "id": "stigma-language-aivl-anti-discrimination-evidence",
+          "title": "AIVL Anti-Discrimination Evidence",
           "category": "Intermediate Queries",
-          "query": "\"substance abuser\" policy OR program Australia before:2015",
+          "query": "site:aivl.org.au (\"Why wouldn't I discriminate against all of them\" OR stigma OR discrimination) filetype:pdf",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/stigma-language.md",
           "sourceType": "dork-pack",
-          "sourceLine": 84,
+          "sourceLine": 85,
           "operators": [
-            "before"
+            "site",
+            "filetype"
           ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
+          "targetDomains": [
+            "aivl.org.au"
+          ],
+          "domainCategory": "ngo",
+          "contentType": "pdf",
           "tags": [
+            "documents",
             "research",
-            "policy",
-            "services",
             "australia"
           ]
         },
         {
-          "id": "stigma-language-compare-language-across-eras-1",
-          "title": "Compare Language Across Eras - 1",
+          "id": "stigma-language-media-portrayal-analysis",
+          "title": "Media Portrayal Analysis",
           "category": "Intermediate Queries",
-          "query": "\"injecting drug user\" OR \"IDU\" 1990..2010 Australia",
+          "query": "(\"junkie\" OR \"druggie\" OR \"ice epidemic\") (media OR \"news\") (portrayal OR representation OR analysis) Australia",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/stigma-language.md",
           "sourceType": "dork-pack",
-          "sourceLine": 90,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "australia"
-          ]
-        },
-        {
-          "id": "stigma-language-compare-language-across-eras-2",
-          "title": "Compare Language Across Eras - 2",
-          "category": "Intermediate Queries",
-          "query": "\"people who inject drugs\" OR \"PWID\" 2010..2026 Australia",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/stigma-language.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 96,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "australia"
-          ]
-        },
-        {
-          "id": "stigma-language-media-analysis-1",
-          "title": "Media Analysis - 1",
-          "category": "Intermediate Queries",
-          "query": "\"junkie\" OR \"druggie\" (media OR news) Australia analysis",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/stigma-language.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 102,
+          "sourceLine": 91,
           "operators": [],
           "targetDomains": [],
           "domainCategory": "news",
@@ -21647,33 +21204,15 @@
           ]
         },
         {
-          "id": "stigma-language-media-analysis-2",
-          "title": "Media Analysis - 2",
-          "category": "Intermediate Queries",
-          "query": "\"media portrayal\" OR \"media representation\" drug use Australia",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/stigma-language.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 108,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "australia"
-          ]
-        },
-        {
           "id": "stigma-language-comprehensive-stigma-research",
           "title": "Comprehensive Stigma Research",
           "category": "Advanced Queries",
-          "query": "\"stigma\" (\"people who use drugs\" OR \"drug users\" OR \"substance use\") Australia (research OR study OR analysis) filetype:pdf after:2015",
+          "query": "\"stigma\" (\"people who use drugs\" OR \"drug use\" OR \"substance use\") Australia (research OR study OR review) filetype:pdf after:2015",
           "explanation": "",
           "difficulty": "advanced",
           "sourceFile": "dork-packs/stigma-language.md",
           "sourceType": "dork-pack",
-          "sourceLine": 118,
+          "sourceLine": 101,
           "operators": [
             "filetype",
             "after"
@@ -21688,15 +21227,15 @@
           ]
         },
         {
-          "id": "stigma-language-structural-stigma",
-          "title": "Structural Stigma",
+          "id": "stigma-language-structural-self-stigma",
+          "title": "Structural & Self-Stigma",
           "category": "Advanced Queries",
-          "query": "\"structural stigma\" drug use OR substance use (policy OR system OR institutional)",
+          "query": "(\"structural stigma\" OR \"self-stigma\" OR \"internalised stigma\" OR \"internalized stigma\") (drug OR substance) (policy OR healthcare OR experience)",
           "explanation": "",
           "difficulty": "advanced",
           "sourceFile": "dork-packs/stigma-language.md",
           "sourceType": "dork-pack",
-          "sourceLine": 124,
+          "sourceLine": 107,
           "operators": [],
           "targetDomains": [],
           "domainCategory": "any",
@@ -21706,31 +21245,15 @@
           ]
         },
         {
-          "id": "stigma-language-self-stigma",
-          "title": "Self-Stigma",
-          "category": "Advanced Queries",
-          "query": "\"self-stigma\" OR \"internalised stigma\" OR \"internalized stigma\" drug use",
-          "explanation": "",
-          "difficulty": "advanced",
-          "sourceFile": "dork-packs/stigma-language.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 130,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": []
-        },
-        {
           "id": "stigma-language-stigma-reduction-interventions",
-          "title": "Stigma Reduction Interventions",
+          "title": "Stigma-Reduction Interventions",
           "category": "Advanced Queries",
-          "query": "\"stigma reduction\" intervention drug use effectiveness filetype:pdf",
+          "query": "\"stigma reduction\" (intervention OR campaign OR training) (drug OR \"substance use\") (effectiveness OR evaluation) filetype:pdf",
           "explanation": "",
           "difficulty": "advanced",
           "sourceFile": "dork-packs/stigma-language.md",
           "sourceType": "dork-pack",
-          "sourceLine": 136,
+          "sourceLine": 113,
           "operators": [
             "filetype"
           ],
@@ -21738,14 +21261,62 @@
           "domainCategory": "any",
           "contentType": "pdf",
           "tags": [
-            "documents"
+            "documents",
+            "training"
           ]
         },
         {
-          "id": "stigma-language-origins-early-history-1",
-          "title": "Origins & Early History - 1",
+          "id": "stigma-language-national-strategy-mental-health-note-the-scope",
+          "title": "National Strategy (Mental Health — note the scope)",
+          "category": "Advanced Queries",
+          "query": "site:mentalhealthcommission.gov.au \"National Stigma and Discrimination Reduction Strategy\"",
+          "explanation": "> Caveat: this NMHC strategy is mental-health-focused and does **not** treat AOD as a primary domain\n> — read it as adjacent, not as the AOD stigma framework.",
+          "difficulty": "advanced",
+          "sourceFile": "dork-packs/stigma-language.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 119,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "mentalhealthcommission.gov.au"
+          ],
+          "domainCategory": "government",
+          "contentType": "any",
+          "tags": [
+            "policy",
+            "australia"
+          ]
+        },
+        {
+          "id": "stigma-language-policy-origin-harm-minimisation-1985",
+          "title": "Policy Origin — \"Harm Minimisation\" (1985)",
           "category": "\udcdc History of Harm Reduction in Australia",
-          "query": "\"harm minimisation\" Australia history OR origins 1980s OR 1990s",
+          "query": "(\"National Campaign Against Drug Abuse\" OR NCADA) 1985 \"harm minimisation\" (site:ndarc.med.unsw.edu.au OR site:health.gov.au)",
+          "explanation": "**Why this works:**\n\n- Australia's official \"harm minimisation\" framework dates to the 1985 NCADA — naming it (and the\nNDARC history \"The National Drug Strategy: The First 10 Years and Beyond\") beats a vague\n`\"harm reduction\" history` search",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/stigma-language.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 134,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "ndarc.med.unsw.edu.au",
+            "health.gov.au"
+          ],
+          "domainCategory": "government",
+          "contentType": "any",
+          "tags": [
+            "policy",
+            "australia"
+          ]
+        },
+        {
+          "id": "stigma-language-first-needle-exchange-1986",
+          "title": "First Needle Exchange (1986)",
+          "category": "\udcdc History of Harm Reduction in Australia",
+          "query": "\"Alex Wodak\" (\"St Vincent's\" OR Darlinghurst OR \"needle\") 1986 (history OR first OR pilot)",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/stigma-language.md",
@@ -21755,15 +21326,13 @@
           "targetDomains": [],
           "domainCategory": "any",
           "contentType": "any",
-          "tags": [
-            "australia"
-          ]
+          "tags": []
         },
         {
-          "id": "stigma-language-origins-early-history-2",
-          "title": "Origins & Early History - 2",
+          "id": "stigma-language-methadone-history-1969",
+          "title": "Methadone History (1969)",
           "category": "\udcdc History of Harm Reduction in Australia",
-          "query": "\"needle exchange\" Australia first OR \"pilot program\" history",
+          "query": "(\"Stella Dalton\" OR \"Opioid Agonist Therapy in Australia: A History\") methadone (1969 OR Sydney OR history)",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/stigma-language.md",
@@ -21774,15 +21343,14 @@
           "domainCategory": "any",
           "contentType": "any",
           "tags": [
-            "services",
             "australia"
           ]
         },
         {
-          "id": "stigma-language-methadone-history",
-          "title": "Methadone History",
+          "id": "stigma-language-supervised-injecting-the-1999-drug-summit",
+          "title": "Supervised Injecting & the 1999 Drug Summit",
           "category": "\udcdc History of Harm Reduction in Australia",
-          "query": "\"methadone program\" Australia history OR establishment",
+          "query": "\"Medically Supervised Injecting Centre\" (\"1999\" OR \"Drug Summit\" OR \"Kings Cross\") (history OR campaign OR origins)",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/stigma-language.md",
@@ -21792,51 +21360,36 @@
           "targetDomains": [],
           "domainCategory": "any",
           "contentType": "any",
-          "tags": [
-            "services",
-            "australia"
-          ]
+          "tags": []
         },
         {
-          "id": "stigma-language-aids-response",
-          "title": "AIDS Response",
+          "id": "stigma-language-nsp-value-named-evaluation",
+          "title": "NSP Value (Named Evaluation)",
           "category": "\udcdc History of Harm Reduction in Australia",
-          "query": "\"AIDS response\" Australia \"injecting drug use\" 1980s",
+          "query": "\"Return on Investment in Needle and Syringe Programs in Australia\" filetype:pdf",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/stigma-language.md",
           "sourceType": "dork-pack",
           "sourceLine": 164,
-          "operators": [],
+          "operators": [
+            "filetype"
+          ],
           "targetDomains": [],
           "domainCategory": "any",
-          "contentType": "any",
+          "contentType": "pdf",
           "tags": [
+            "documents",
+            "services",
             "australia"
           ]
         },
         {
-          "id": "stigma-language-supervised-injecting-history-1",
-          "title": "Supervised Injecting History - 1",
-          "category": "\udcdc History of Harm Reduction in Australia",
-          "query": "\"supervised injecting\" OR \"medically supervised injecting\" Sydney history OR origins",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/stigma-language.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 170,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "stigma-language-supervised-injecting-history-2",
-          "title": "Supervised Injecting History - 2",
-          "category": "\udcdc History of Harm Reduction in Australia",
-          "query": "\"Kings Cross\" \"injecting room\" history OR campaign",
-          "explanation": "",
+          "id": "stigma-language-drug-user-organisations-founding",
+          "title": "Drug-User Organisations (Founding)",
+          "category": "✊ History of Drug-User Organising",
+          "query": "(\"NSW Users and AIDS Association\" OR NUAA OR VIVAIDS OR \"Harm Reduction Victoria\" OR AIVL) (history OR founded OR \"early days\")",
+          "explanation": "**Why this works:**\n\n- NUAA (1989), VIVAIDS → HRVic (1987), and AIVL (\"formed in the late 1980s\") are the named drug-user\norgs that built Australia's HIV-era response — far richer than `\"drug user\" activism`",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/stigma-language.md",
           "sourceType": "dork-pack",
@@ -21848,85 +21401,15 @@
           "tags": []
         },
         {
-          "id": "stigma-language-movement-history-1",
-          "title": "Movement History - 1",
-          "category": "✊ History of Drug User Organising",
-          "query": "\"drug user organisation\" Australia history",
+          "id": "stigma-language-activism-the-peer-movement",
+          "title": "Activism & the Peer Movement",
+          "category": "✊ History of Drug-User Organising",
+          "query": "(\"drug user activism\" OR \"drug user movement\" OR \"peer movement\") Australia (1980s OR 1990s OR history)",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/stigma-language.md",
           "sourceType": "dork-pack",
-          "sourceLine": 186,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "australia"
-          ]
-        },
-        {
-          "id": "stigma-language-movement-history-2",
-          "title": "Movement History - 2",
-          "category": "✊ History of Drug User Organising",
-          "query": "(NUAA OR AIVL OR VIVAIDS) history OR \"early days\" OR founding",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/stigma-language.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 192,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "stigma-language-activism-1",
-          "title": "Activism - 1",
-          "category": "✊ History of Drug User Organising",
-          "query": "\"drug user activism\" OR \"drug user movement\" Australia",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/stigma-language.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 198,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "australia"
-          ]
-        },
-        {
-          "id": "stigma-language-activism-2",
-          "title": "Activism - 2",
-          "category": "✊ History of Drug User Organising",
-          "query": "\"civil society\" drug users Australia 1980s OR 1990s",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/stigma-language.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 204,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "australia"
-          ]
-        },
-        {
-          "id": "stigma-language-peer-movement",
-          "title": "Peer Movement",
-          "category": "✊ History of Drug User Organising",
-          "query": "\"peer movement\" drug use Australia history",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/stigma-language.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 210,
+          "sourceLine": 187,
           "operators": [],
           "targetDomains": [],
           "domainCategory": "any",
@@ -21937,78 +21420,37 @@
           ]
         },
         {
-          "id": "stigma-language-australian-stigma-research-1",
-          "title": "Australian Stigma Research - 1",
-          "category": "Stigma Research",
-          "query": "\"stigma\" \"people who use drugs\" Australia research filetype:pdf",
-          "explanation": "",
+          "id": "stigma-language-organisational-timelines-via-archive",
+          "title": "Organisational Timelines (via Archive)",
+          "category": "✊ History of Drug-User Organising",
+          "query": "site:web.archive.org/web/*/nuaa.org.au (about OR history OR mission)",
+          "explanation": "> Pair with the [Temporal Intelligence pack](temporal-intelligence.md) to trace how orgs described\n> themselves over time.",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/stigma-language.md",
           "sourceType": "dork-pack",
-          "sourceLine": 220,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "research",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "research",
-            "australia"
-          ]
-        },
-        {
-          "id": "stigma-language-australian-stigma-research-2",
-          "title": "Australian Stigma Research - 2",
-          "category": "Stigma Research",
-          "query": "site:*.edu.au \"stigma\" \"drug use\" OR \"substance use\" Australia",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/stigma-language.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 226,
+          "sourceLine": 193,
           "operators": [
             "site"
           ],
           "targetDomains": [
-            "edu.au"
+            "web.archive.org/web/*/nuaa.org.au"
           ],
-          "domainCategory": "education",
-          "contentType": "any",
-          "tags": [
-            "research",
-            "australia"
-          ]
-        },
-        {
-          "id": "stigma-language-healthcare-stigma-1",
-          "title": "Healthcare Stigma - 1",
-          "category": "Stigma Research",
-          "query": "\"discrimination\" drug use \"health care\" OR healthcare Australia",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/stigma-language.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 232,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
+          "domainCategory": "ngo",
           "contentType": "any",
           "tags": [
             "australia"
           ]
         },
         {
-          "id": "stigma-language-healthcare-stigma-2",
-          "title": "Healthcare Stigma - 2",
+          "id": "stigma-language-healthcare-service-stigma",
+          "title": "Healthcare & Service Stigma",
           "category": "Stigma Research",
-          "query": "\"stigma\" \"drug use\" (hospital OR \"emergency department\" OR \"health service\") Australia",
+          "query": "(\"stigma\" OR \"discrimination\") (\"drug use\" OR \"people who use drugs\") (hospital OR \"emergency department\" OR healthcare OR \"health service\") Australia",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/stigma-language.md",
           "sourceType": "dork-pack",
-          "sourceLine": 238,
+          "sourceLine": 206,
           "operators": [],
           "targetDomains": [],
           "domainCategory": "any",
@@ -22019,109 +21461,15 @@
           ]
         },
         {
-          "id": "stigma-language-employment-housing-stigma",
-          "title": "Employment & Housing Stigma",
+          "id": "stigma-language-justice-housing-employment-stigma",
+          "title": "Justice, Housing & Employment Stigma",
           "category": "Stigma Research",
-          "query": "\"discrimination\" drug use (housing OR employment) Australia",
+          "query": "(\"stigma\" OR \"discrimination\") \"drug use\" (\"criminal record\" OR \"justice system\" OR housing OR employment) Australia filetype:pdf",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/stigma-language.md",
           "sourceType": "dork-pack",
-          "sourceLine": 244,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "australia"
-          ]
-        },
-        {
-          "id": "stigma-language-criminal-justice-stigma",
-          "title": "Criminal Justice Stigma",
-          "category": "Stigma Research",
-          "query": "\"stigma\" OR \"discrimination\" \"drug use\" (\"criminal record\" OR \"justice system\") Australia",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/stigma-language.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 250,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "australia"
-          ]
-        },
-        {
-          "id": "stigma-language-terminology-shifts",
-          "title": "Terminology Shifts",
-          "category": "Language Evolution Studies",
-          "query": "\"terminology\" change OR evolution \"drug use\" OR \"substance use\" filetype:pdf",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/stigma-language.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 260,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "pdf",
-          "tags": [
-            "documents"
-          ]
-        },
-        {
-          "id": "stigma-language-style-guides",
-          "title": "Style Guides",
-          "category": "Language Evolution Studies",
-          "query": "\"style guide\" OR \"language guide\" (\"drug use\" OR \"substance use\" OR \"harm reduction\") filetype:pdf",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/stigma-language.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 266,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "pdf",
-          "tags": [
-            "documents"
-          ]
-        },
-        {
-          "id": "stigma-language-international-language-standards",
-          "title": "International Language Standards",
-          "category": "Language Evolution Studies",
-          "query": "\"people-first language\" OR \"person-centred language\" drug international guidelines",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/stigma-language.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 272,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "international"
-          ]
-        },
-        {
-          "id": "stigma-language-finding-legacy-vs-current-terminology",
-          "title": "Finding Legacy vs Current Terminology",
-          "category": "\udd04 Before/After Comparisons",
-          "query": "(\"people who use drugs\" OR \"PWUD\" OR \"person with lived experience\") 2010..2026 filetype:pdf",
-          "explanation": "**2010s-2020s terminology:**",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/stigma-language.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 282,
+          "sourceLine": 212,
           "operators": [
             "filetype"
           ],
@@ -22130,61 +21478,92 @@
           "contentType": "pdf",
           "tags": [
             "documents",
-            "peer"
+            "australia"
+          ]
+        },
+        {
+          "id": "stigma-language-australian-academic-stigma-research",
+          "title": "Australian Academic Stigma Research",
+          "category": "Stigma Research",
+          "query": "site:*.edu.au \"stigma\" (\"people who use drugs\" OR \"substance use\") Australia filetype:pdf",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/stigma-language.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 218,
+          "operators": [
+            "site",
+            "filetype"
+          ],
+          "targetDomains": [
+            "edu.au"
+          ],
+          "domainCategory": "education",
+          "contentType": "pdf",
+          "tags": [
+            "documents",
+            "research",
+            "australia"
+          ]
+        },
+        {
+          "id": "stigma-language-peer-led-lived-experience-anti-stigma",
+          "title": "Peer-Led & Lived-Experience Anti-Stigma",
+          "category": "\udcac Challenging Stigma",
+          "query": "(\"peer-led\" OR \"lived experience\" OR \"nothing about us without us\") stigma (reduction OR challenge OR campaign) (drug OR \"alcohol and other drugs\") Australia",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/stigma-language.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 230,
+          "operators": [],
+          "targetDomains": [],
+          "domainCategory": "any",
+          "contentType": "any",
+          "tags": [
+            "peer",
+            "australia"
           ]
         },
         {
           "id": "stigma-language-anti-stigma-campaigns",
           "title": "Anti-Stigma Campaigns",
           "category": "\udcac Challenging Stigma",
-          "query": "\"anti-stigma\" OR \"stigma campaign\" drug OR substance Australia",
-          "explanation": "",
+          "query": "(\"anti-stigma\" OR \"stigma\") (\"people who use drugs\" OR \"alcohol and other drugs\") campaign Australia site:*.org.au",
+          "explanation": "> Note: `#stigmakills` / \"Make Stigma History\" are not real AU AOD campaigns — search the broad form\n> above rather than a named hashtag.",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/stigma-language.md",
           "sourceType": "dork-pack",
-          "sourceLine": 302,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
+          "sourceLine": 236,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "org.au"
+          ],
+          "domainCategory": "ngo",
           "contentType": "any",
           "tags": [
             "australia"
           ]
         },
         {
-          "id": "stigma-language-changing-the-narrative",
-          "title": "Changing the Narrative",
+          "id": "stigma-language-reframing-the-narrative",
+          "title": "Reframing the Narrative",
           "category": "\udcac Challenging Stigma",
-          "query": "\"changing the narrative\" OR \"reframing\" drug use OR \"drug policy\"",
+          "query": "(\"changing the narrative\" OR reframing OR \"person-first\") (\"drug policy\" OR \"drug use\") (peer OR \"lived experience\")",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/stigma-language.md",
           "sourceType": "dork-pack",
-          "sourceLine": 308,
+          "sourceLine": 245,
           "operators": [],
           "targetDomains": [],
           "domainCategory": "any",
           "contentType": "any",
           "tags": [
+            "peer",
             "policy"
-          ]
-        },
-        {
-          "id": "stigma-language-peer-led-stigma-work",
-          "title": "Peer-Led Stigma Work",
-          "category": "\udcac Challenging Stigma",
-          "query": "(\"peer-led\" OR \"lived experience\") stigma (reduction OR challenge OR campaign) drug",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/stigma-language.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 314,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "peer"
           ]
         }
       ],
@@ -22642,40 +22021,42 @@
     {
       "id": "temporal-intelligence",
       "title": "Temporal Intelligence & Archive Diving",
-      "description": "Search across time. Find archived content, deleted pages, policy evolution, historical documents,",
+      "description": "Search across time — archived snapshots, deleted pages, policy evolution. Named by the actual",
       "dorks": [
         {
           "id": "temporal-intelligence-search-web-archive-org",
           "title": "Search web.archive.org",
           "category": "Quick Start",
-          "query": "site:web.archive.org \"harm reduction\" (Australia OR Australian)",
+          "query": "site:web.archive.org \"harm reduction\" (Australia OR Australian) filetype:pdf",
           "explanation": "",
           "difficulty": "beginner",
           "sourceFile": "dork-packs/temporal-intelligence.md",
           "sourceType": "dork-pack",
-          "sourceLine": 16,
+          "sourceLine": 31,
           "operators": [
-            "site"
+            "site",
+            "filetype"
           ],
           "targetDomains": [
             "web.archive.org"
           ],
           "domainCategory": "any",
-          "contentType": "any",
+          "contentType": "pdf",
           "tags": [
+            "documents",
             "australia"
           ]
         },
         {
-          "id": "temporal-intelligence-internet-archive-wayback-machine",
-          "title": "Internet Archive - Wayback Machine",
+          "id": "temporal-intelligence-wayback-machine-internet-archive",
+          "title": "Wayback Machine (Internet Archive)",
           "category": "Basic Queries",
           "query": "site:web.archive.org \"harm reduction\" filetype:pdf",
-          "explanation": "**Why this works:**\n\n- Archive.org preserves millions of web pages over time\n- PDFs are often preserved intact with full content\n- Catches resources that may no longer exist on original sites",
+          "explanation": "**Why this works:**\n\n- The Internet Archive preserves snapshots over time; PDFs are often kept intact\n- Catches resources that no longer exist on the original site",
           "difficulty": "beginner",
           "sourceFile": "dork-packs/temporal-intelligence.md",
           "sourceType": "dork-pack",
-          "sourceLine": 23,
+          "sourceLine": 38,
           "operators": [
             "site",
             "filetype"
@@ -22694,11 +22075,11 @@
           "title": "Recent Content Only",
           "category": "Basic Queries",
           "query": "site:*.gov.au \"harm reduction\" after:2024-01-01",
-          "explanation": "**Why this works:**\n\n- `after:` operator limits to recent content\n- Good for finding current policies and recent publications\n- Filters out outdated information",
+          "explanation": "",
           "difficulty": "beginner",
           "sourceFile": "dork-packs/temporal-intelligence.md",
           "sourceType": "dork-pack",
-          "sourceLine": 37,
+          "sourceLine": 49,
           "operators": [
             "site",
             "after"
@@ -22717,11 +22098,11 @@
           "title": "Historical Deep Dive",
           "category": "Basic Queries",
           "query": "site:*.gov.au \"harm reduction\" before:2015",
-          "explanation": "**Why this works:**\n\n- `before:` operator finds historical content\n- Useful for tracing policy origins\n- Finds foundational documents and early research",
+          "explanation": "**Why this works:**\n\n- `after:` / `before:` filter by Google's index date — good for current policy vs foundational\ndocuments (note: index date, not publication date)",
           "difficulty": "beginner",
           "sourceFile": "dork-packs/temporal-intelligence.md",
           "sourceType": "dork-pack",
-          "sourceLine": 51,
+          "sourceLine": 55,
           "operators": [
             "site",
             "before"
@@ -22740,11 +22121,11 @@
           "title": "Decade-Specific Research",
           "category": "Intermediate Queries",
           "query": "\"harm reduction\" (Australia OR Australian) 2000..2010",
-          "explanation": "**Why this works:**\n\n- Number range operator (`..`) finds content mentioning years in that range\n- Useful for historical research and policy evolution\n- Catches documents that reference specific time periods",
+          "explanation": "**Why this works:**\n\n- The number-range operator (`YYYY..YYYY`) matches documents _mentioning_ years in that range —\nuseful for tracing policy eras",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/temporal-intelligence.md",
           "sourceType": "dork-pack",
-          "sourceLine": 69,
+          "sourceLine": 70,
           "operators": [],
           "targetDomains": [],
           "domainCategory": "any",
@@ -22755,15 +22136,38 @@
           ]
         },
         {
-          "id": "temporal-intelligence-archive-org-specific-site-archives",
-          "title": "Archive.org Specific Site Archives",
+          "id": "temporal-intelligence-australian-web-archive-trove-for-au-pages-wayback-missed",
+          "title": "Australian Web Archive (Trove) — for `.au` Pages Wayback Missed",
           "category": "Intermediate Queries",
-          "query": "site:web.archive.org/web/*/aivl.org.au",
-          "explanation": "**Why this works:**\n\n- Targets archived snapshots of a specific domain\n- Shows content evolution over time\n- Finds pages that may have been removed",
+          "query": "(site:trove.nla.gov.au/search/category/websites OR site:pandora.nla.gov.au) \"harm reduction\"",
+          "explanation": "**Why this works:**\n\n- Trove's **Australian Web Archive** combines PANDORA + the Government Web Archive + `.au` harvests\n— it captures Australian sites the global Wayback Machine often doesn't",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/temporal-intelligence.md",
           "sourceType": "dork-pack",
-          "sourceLine": 97,
+          "sourceLine": 81,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "trove.nla.gov.au/search/category/websites",
+            "pandora.nla.gov.au"
+          ],
+          "domainCategory": "government",
+          "contentType": "any",
+          "tags": [
+            "australia"
+          ]
+        },
+        {
+          "id": "temporal-intelligence-all-snapshots-of-one-site",
+          "title": "All Snapshots of One Site",
+          "category": "Intermediate Queries",
+          "query": "site:web.archive.org/web/*/aivl.org.au",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/temporal-intelligence.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 92,
           "operators": [
             "site"
           ],
@@ -22780,12 +22184,12 @@
           "id": "temporal-intelligence-policy-version-tracking",
           "title": "Policy Version Tracking",
           "category": "Intermediate Queries",
-          "query": "\"National Drug Strategy\" (2010 OR 2017 OR 2023) filetype:pdf",
-          "explanation": "**Why this works:**\n\n- Finds multiple iterations of policy documents\n- Useful for comparative analysis\n- Tracks policy evolution over time",
+          "query": "\"National Drug Strategy\" (2010 OR 2017 OR \"2017-2026\") filetype:pdf",
+          "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/temporal-intelligence.md",
           "sourceType": "dork-pack",
-          "sourceLine": 111,
+          "sourceLine": 98,
           "operators": [
             "filetype"
           ],
@@ -22801,12 +22205,12 @@
           "id": "temporal-intelligence-finding-superseded-guidelines",
           "title": "Finding Superseded Guidelines",
           "category": "Intermediate Queries",
-          "query": "site:*.gov.au \"harm reduction\" (\"superseded\" OR \"replaced by\" OR \"archived\" OR \"historical\")",
-          "explanation": "**Why this works:**\n\n- Finds documents explicitly marked as outdated\n- Useful for understanding what's changed\n- Locates legacy guidance documents",
+          "query": "site:*.gov.au \"harm reduction\" (superseded OR \"replaced by\" OR archived OR historical)",
+          "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/temporal-intelligence.md",
           "sourceType": "dork-pack",
-          "sourceLine": 125,
+          "sourceLine": 104,
           "operators": [
             "site"
           ],
@@ -22823,12 +22227,12 @@
           "id": "temporal-intelligence-comprehensive-archive-sweep",
           "title": "Comprehensive Archive Sweep",
           "category": "Advanced Queries",
-          "query": "site:web.archive.org (\"harm reduction\" OR \"needle exchange\" OR \"naloxone\") (Australia OR *.gov.au OR *.org.au)",
-          "explanation": "**Why this works:**\n\n- Broad search across all archived Australian content\n- Multiple harm reduction terms for comprehensive coverage\n- Catches content from any Australian domain",
+          "query": "site:web.archive.org (\"harm reduction\" OR \"needle exchange\" OR naloxone) (Australia OR *.gov.au OR *.org.au)",
+          "explanation": "",
           "difficulty": "advanced",
           "sourceFile": "dork-packs/temporal-intelligence.md",
           "sourceType": "dork-pack",
-          "sourceLine": 141,
+          "sourceLine": 114,
           "operators": [
             "site"
           ],
@@ -22845,17 +22249,18 @@
           "id": "temporal-intelligence-deleted-government-pages",
           "title": "Deleted Government Pages",
           "category": "Advanced Queries",
-          "query": "site:web.archive.org/web/*/health.gov.au \"harm reduction\"",
-          "explanation": "**Why this works:**\n\n- Specifically targets archived government health pages\n- Finds removed policies, announcements, or resources\n- Useful for accountability research",
+          "query": "(site:web.archive.org/web/*/health.gov.au OR site:webarchive.nla.gov.au) \"harm reduction\"",
+          "explanation": "**Why this works:**\n\n- The Wayback path-wildcard finds removed pages; the **Australian Government Web Archive**\n(`webarchive.nla.gov.au`) is a bulk harvest of Commonwealth sites — between them, deleted\n`.gov.au` content resurfaces",
           "difficulty": "advanced",
           "sourceFile": "dork-packs/temporal-intelligence.md",
           "sourceType": "dork-pack",
-          "sourceLine": 155,
+          "sourceLine": 120,
           "operators": [
             "site"
           ],
           "targetDomains": [
-            "web.archive.org/web/*/health.gov.au"
+            "web.archive.org/web/*/health.gov.au",
+            "webarchive.nla.gov.au"
           ],
           "domainCategory": "government",
           "contentType": "any",
@@ -22864,39 +22269,15 @@
           ]
         },
         {
-          "id": "temporal-intelligence-before-after-policy-changes",
-          "title": "Before/After Policy Changes",
-          "category": "Advanced Queries",
-          "query": "\"drug policy\" Australia (before:2016 OR after:2020) filetype:pdf",
-          "explanation": "**Why this works:**\n\n- Brackets time periods around policy changes\n- Useful for impact analysis\n- Finds pre and post-reform content",
-          "difficulty": "advanced",
-          "sourceFile": "dork-packs/temporal-intelligence.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 169,
-          "operators": [
-            "filetype",
-            "after",
-            "before"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "policy",
-            "australia"
-          ]
-        },
-        {
-          "id": "temporal-intelligence-finding-removed-reports",
-          "title": "Finding Removed Reports",
+          "id": "temporal-intelligence-removed-reports-annual-reports",
+          "title": "Removed Reports & Annual Reports",
           "category": "Advanced Queries",
           "query": "site:web.archive.org filetype:pdf \"harm reduction\" \"annual report\"",
-          "explanation": "**Why this works:**\n\n- Annual reports are often archived then removed\n- PDFs preserved intact in archives\n- Good for longitudinal organizational analysis",
+          "explanation": "",
           "difficulty": "advanced",
           "sourceFile": "dork-packs/temporal-intelligence.md",
           "sourceType": "dork-pack",
-          "sourceLine": 183,
+          "sourceLine": 132,
           "operators": [
             "site",
             "filetype"
@@ -22914,20 +22295,17 @@
           "id": "temporal-intelligence-historical-news-coverage",
           "title": "Historical News Coverage",
           "category": "Advanced Queries",
-          "query": "site:web.archive.org (site:abc.net.au OR site:smh.com.au OR site:theage.com.au) (\"safe injecting\" OR \"pill testing\")",
-          "explanation": "**Why this works:**\n\n- Major news sites often remove old articles\n- Archive preserves historical coverage\n- Useful for media analysis and timeline building",
+          "query": "site:web.archive.org (abc.net.au OR smh.com.au OR theage.com.au) (\"safe injecting\" OR \"pill testing\")",
+          "explanation": "",
           "difficulty": "advanced",
           "sourceFile": "dork-packs/temporal-intelligence.md",
           "sourceType": "dork-pack",
-          "sourceLine": 195,
+          "sourceLine": 138,
           "operators": [
             "site"
           ],
           "targetDomains": [
-            "web.archive.org",
-            "abc.net.au",
-            "smh.com.au",
-            "theage.com.au"
+            "web.archive.org"
           ],
           "domainCategory": "news",
           "contentType": "any",
@@ -22936,38 +22314,15 @@
           ]
         },
         {
-          "id": "temporal-intelligence-early-web-era-content",
-          "title": "Early Web Era Content",
+          "id": "temporal-intelligence-organisational-history",
+          "title": "Organisational History",
           "category": "Advanced Queries",
-          "query": "(site:web.archive.org/web/199*/ OR site:web.archive.org/web/200*/) (\"harm reduction\" Australia)",
-          "explanation": "**Why this works:**\n\n- Targets specific decades in the archive\n- Finds pioneering harm reduction content\n- Historical research gold",
+          "query": "site:web.archive.org/web/*/nuaa.org.au (about OR history OR mission)",
+          "explanation": "",
           "difficulty": "advanced",
           "sourceFile": "dork-packs/temporal-intelligence.md",
           "sourceType": "dork-pack",
-          "sourceLine": 209,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "web.archive.org/web/199*/",
-            "web.archive.org/web/200*/"
-          ],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "australia"
-          ]
-        },
-        {
-          "id": "temporal-intelligence-organizational-history",
-          "title": "Organizational History",
-          "category": "Advanced Queries",
-          "query": "site:web.archive.org/web/*/nuaa.org.au \"about\" OR \"history\" OR \"mission\"",
-          "explanation": "**Why this works:**\n\n- Finds archived \"about\" pages over time\n- Shows how organizations describe themselves differently\n- Tracks mission and scope changes",
-          "difficulty": "advanced",
-          "sourceFile": "dork-packs/temporal-intelligence.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 223,
+          "sourceLine": 144,
           "operators": [
             "site"
           ],
@@ -22981,16 +22336,17 @@
           ]
         },
         {
-          "id": "temporal-intelligence-combining-date-filters",
-          "title": "Combining Date Filters",
+          "id": "temporal-intelligence-query-15",
+          "title": "Query 15",
           "category": "\udcc5 Time-Based Operator Reference",
-          "query": "\"harm reduction\" before:2020",
-          "explanation": "**Specific year:**\n\n\n**Excluding recent (finding older content):**",
+          "query": "\"harm reduction\" after:2023-01-01 before:2023-12-31",
+          "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/temporal-intelligence.md",
           "sourceType": "dork-pack",
-          "sourceLine": 249,
+          "sourceLine": 210,
           "operators": [
+            "after",
             "before"
           ],
           "targetDomains": [],
@@ -22999,60 +22355,21 @@
           "tags": []
         },
         {
-          "id": "temporal-intelligence-internet-archive-archive-org",
-          "title": "Internet Archive (archive.org)",
-          "category": "Archive Platform Reference",
-          "query": "site:web.archive.org",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/temporal-intelligence.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 273,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "web.archive.org"
-          ],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "temporal-intelligence-other-archive-sources",
-          "title": "Other Archive Sources",
-          "category": "Archive Platform Reference",
-          "query": "site:webarchive.org.uk",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/temporal-intelligence.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 299,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "webarchive.org.uk"
-          ],
-          "domainCategory": "ngo",
-          "contentType": "any",
-          "tags": []
-        },
-        {
           "id": "temporal-intelligence-policy-evolution-tracking",
           "title": "Policy Evolution Tracking",
           "category": "Research Strategies",
-          "query": "\"National Drug Strategy\" site:*.gov.au",
+          "query": "\"National Drug Strategy\" site:web.archive.org    →    \"National Drug Strategy\" site:health.gov.au",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/temporal-intelligence.md",
           "sourceType": "dork-pack",
-          "sourceLine": 329,
+          "sourceLine": 217,
           "operators": [
             "site"
           ],
           "targetDomains": [
-            "gov.au"
+            "web.archive.org",
+            "health.gov.au"
           ],
           "domainCategory": "government",
           "contentType": "any",
@@ -23062,233 +22379,25 @@
           ]
         },
         {
-          "id": "temporal-intelligence-organization-timeline-building",
-          "title": "Organization Timeline Building",
+          "id": "temporal-intelligence-before-after-a-policy-change",
+          "title": "Before/After a Policy Change",
           "category": "Research Strategies",
-          "query": "site:web.archive.org/web/*/aivl.org.au \"about us\"",
+          "query": "\"pill testing\" Australia before:2019    →    \"pill testing\" Australia after:2019",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/temporal-intelligence.md",
           "sourceType": "dork-pack",
-          "sourceLine": 343,
+          "sourceLine": 226,
           "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "web.archive.org/web/*/aivl.org.au"
-          ],
-          "domainCategory": "ngo",
-          "contentType": "any",
-          "tags": [
-            "australia"
-          ]
-        },
-        {
-          "id": "temporal-intelligence-finding-deleted-content",
-          "title": "Finding Deleted Content",
-          "category": "Research Strategies",
-          "query": "site:web.archive.org/web/*/[broken-url-domain]",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/temporal-intelligence.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 357,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "web.archive.org/web/*/[broken-url-domain]"
-          ],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "temporal-intelligence-before-after-analysis",
-          "title": "Before/After Analysis",
-          "category": "Research Strategies",
-          "query": "\"pill testing\" Australia after:2019",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/temporal-intelligence.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 371,
-          "operators": [
-            "after"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "australia"
-          ]
-        },
-        {
-          "id": "temporal-intelligence-recent-content",
-          "title": "Recent Content",
-          "category": "\udccb Quick Copy Time Patterns",
-          "query": "after:2024-01-01",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/temporal-intelligence.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 389,
-          "operators": [
-            "after"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "temporal-intelligence-historical-content",
-          "title": "Historical Content",
-          "category": "\udccb Quick Copy Time Patterns",
-          "query": "before:2015",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/temporal-intelligence.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 395,
-          "operators": [
+            "after",
             "before"
           ],
           "targetDomains": [],
           "domainCategory": "any",
           "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "temporal-intelligence-archive-platforms",
-          "title": "Archive Platforms",
-          "category": "\udccb Quick Copy Time Patterns",
-          "query": "site:web.archive.org OR site:trove.nla.gov.au OR site:pandora.nla.gov.au",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/temporal-intelligence.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 407,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "web.archive.org",
-            "trove.nla.gov.au",
-            "pandora.nla.gov.au"
-          ],
-          "domainCategory": "government",
-          "contentType": "any",
           "tags": [
+            "policy",
             "australia"
-          ]
-        },
-        {
-          "id": "temporal-intelligence-archived-australian-content",
-          "title": "Archived Australian Content",
-          "category": "\udccb Quick Copy Time Patterns",
-          "query": "site:web.archive.org (*.gov.au OR *.org.au OR *.edu.au)",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/temporal-intelligence.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 413,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "web.archive.org"
-          ],
-          "domainCategory": "government",
-          "contentType": "any",
-          "tags": [
-            "australia"
-          ]
-        },
-        {
-          "id": "temporal-intelligence-recovering-broken-links",
-          "title": "Recovering Broken Links",
-          "category": "\udca1 Advanced Techniques",
-          "query": "site:web.archive.org/web/*/health.gov.au/missing-page",
-          "explanation": "",
-          "difficulty": "advanced",
-          "sourceFile": "dork-packs/temporal-intelligence.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 423,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "web.archive.org/web/*/health.gov.au/missing-page"
-          ],
-          "domainCategory": "government",
-          "contentType": "any",
-          "tags": [
-            "australia"
-          ]
-        },
-        {
-          "id": "temporal-intelligence-finding-all-versions-of-a-document",
-          "title": "Finding All Versions of a Document",
-          "category": "\udca1 Advanced Techniques",
-          "query": "site:web.archive.org \"[exact document title]\" filetype:pdf",
-          "explanation": "",
-          "difficulty": "advanced",
-          "sourceFile": "dork-packs/temporal-intelligence.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 431,
-          "operators": [
-            "site",
-            "filetype"
-          ],
-          "targetDomains": [
-            "web.archive.org"
-          ],
-          "domainCategory": "any",
-          "contentType": "pdf",
-          "tags": [
-            "documents"
-          ]
-        },
-        {
-          "id": "temporal-intelligence-tracking-url-changes",
-          "title": "Tracking URL Changes",
-          "category": "\udca1 Advanced Techniques",
-          "query": "\"[document title or unique phrase]\" site:*.gov.au",
-          "explanation": "Then compare with current:",
-          "difficulty": "advanced",
-          "sourceFile": "dork-packs/temporal-intelligence.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 437,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "gov.au"
-          ],
-          "domainCategory": "government",
-          "contentType": "any",
-          "tags": [
-            "documents",
-            "australia"
-          ]
-        },
-        {
-          "id": "temporal-intelligence-seasonal-annual-patterns",
-          "title": "Seasonal/Annual Patterns",
-          "category": "\udca1 Advanced Techniques",
-          "query": "\"annual report\" \"harm reduction\" (2020 OR 2021 OR 2022 OR 2023 OR 2024)",
-          "explanation": "",
-          "difficulty": "advanced",
-          "sourceFile": "dork-packs/temporal-intelligence.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 451,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "documents"
           ]
         }
       ],
@@ -30490,9 +29599,9 @@
     }
   ],
   "meta": {
-    "buildDate": "2026-06-27T16:14:21.354Z",
+    "buildDate": "2026-06-27T16:48:20.348Z",
     "version": "2.0.0",
-    "totalDorks": 1410,
+    "totalDorks": 1364,
     "sourceFiles": [
       "01-quick-start.md",
       "02-core-operators.md",

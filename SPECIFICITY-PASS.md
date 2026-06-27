@@ -59,6 +59,7 @@ These were chosen by the project owner. Keep to them unless told otherwise:
 | 7   | Batch 5 rewritten + reference verified/extended   | `policy-advocacy`, `festivals`, `service-directories`, `safer-use-education` |
 | 8   | Batch 6 rewritten + reference verified/extended   | `youth`, `families-carers`, `housing-homelessness`, `mental-health`          |
 | 9   | Batch 7 rewritten + reference verified/extended   | `prisons-justice`, `rural-remote`                                            |
+| 10  | Batch 8 rewritten + reference verified/extended   | `stigma-language`, `temporal-intelligence`, `organizational-intelligence`    |
 
 - **`source-intelligence.md`** is the heart of this work: an entity → searchable-signal map. For
   each real org/service/dataset it records the `site:` target, the named publications to put in
@@ -196,20 +197,25 @@ courts/diversion by jurisdiction → prison data & post-release cohorts → thro
 rural AOD producers → rurality classifications → telehealth/clinician advice → FIFO/drought/farming
 → international rural-opioid layer). 8-cluster verification fan-out (337k tokens, 115 web lookups).
 
-**Suggested next batch:** `stigma-language`, plus the power-user technique packs
-(`temporal-intelligence`, `organizational-intelligence`, `investigative`, `document-discovery`,
-`multimedia-discovery`, `user-hosted-domains`) — these are _technique_-driven, so they may need a
-lighter touch (named archives/platforms/registers rather than service entities). Handle the
-community-controlled packs (`first-nations`, `sex-worker-health`, `lgbtq-health`) with extra care —
-see note below. Note: batch 7 already catalogued a verified, cultural-safety-flagged **First Nations
-& justice** sub-section in source-intelligence — a useful starting point for the `first-nations`
-pack.
+**Done (batch 8):** `stigma-language`, `temporal-intelligence`, `organizational-intelligence` — the
+"technique packs (1/2)" set. Three reference sections built from scratch (§4): "Stigma, Language &
+Movement History" (named language guides + AU HR-history anchors), "Web Archives & Temporal Search"
+(archives + the dead-`cache:` correction), "Organisational Intelligence & Registers"
+(ACNC/GrantConnect/ AusTender/PHN etc.). 4-cluster verification fan-out (153k tokens, 50 web
+lookups).
+
+**Suggested next batch (technique packs 2/2):** `investigative`, `document-discovery`,
+`multimedia-discovery`, `user-hosted-domains` — platform/format-driven, lighter touch (named
+platforms, file-type operators, the existing "User-Hosted Platform Patterns" synonym block). Then
+the community-controlled packs (`first-nations`, `sex-worker-health`, `lgbtq-health`) with extra
+care — see note below. Note: batch 7 already catalogued a verified, cultural-safety-flagged **First
+Nations & justice** sub-section in source-intelligence — a useful starting point for the
+`first-nations` pack.
 
 ### Packs needing a reference section built first (§4 before §3)
 
-`first-nations` · `lgbtq-health` · `sex-worker-health` · `stigma-language` · `temporal-intelligence`
-· `organizational-intelligence` · `investigative` · `document-discovery` · `multimedia-discovery` ·
-`user-hosted-domains`
+`first-nations` · `lgbtq-health` · `sex-worker-health` · `investigative` · `document-discovery` ·
+`multimedia-discovery` · `user-hosted-domains`
 
 > For `first-nations`, `sex-worker-health`, and `lgbtq-health` especially: prioritise community-
 > controlled and peer sources, and be careful with framing/terminology. When in doubt, flag for
@@ -305,6 +311,29 @@ health** has no stable branded service name (model under review) — multi-host 
 **Scotland** (rural) have no rural-specific quotable titles — use SUAP / "National Mission on Drug
 Deaths" + a rural qualifier. **Beyond Blue** has no confirmed rural-specific report title — use
 RAMHP instead.
+
+Resolved/corrected in batch 8: **Google `cache:` is DEAD** (cached links removed Jan 2024, operator
+retired Sept 2024) — removed from temporal-intelligence; replacement is the Wayback `web/*/`
+browse + `archive.org/wayback/available` API + `archive.ph/newest/`. Trove now surfaces the
+**Australian Web Archive** (PANDORA + **AGWA** `webarchive.nla.gov.au` + `.au` harvests, unified
+2019). Language guides pinned: NADA+NUAA **"Language Matters"** (`nada.org.au`; NSW Health promotes,
+didn't author its own), INPUD/ANPUD **"Words Matter!"** (`inpud.net`), ADF **"the Power of Words"**
+(`adf.org.au`, PDFs on `cdn.adf.org.au`), **Mindframe for Alcohol and Other Drugs**
+(`mindframe.org.au`), AIVL **"Why wouldn't I discriminate against all of them"** (2024). History
+anchors: **NCADA** 1985 ("harm minimisation"), **Alex Wodak** first NSP 1986, **Stella Dalton**
+methadone 1969, MSIC 2001 / 1999 Drug Summit, NUAA 1989, VIVAIDS→HRVic 1987, **"Return on Investment
+in Needle and Syringe Programs in Australia"** (2002). Registers: ACNC **"Annual Information
+Statement"** (beats "annual report" for charities), GrantConnect **"Grant Award"**/GA
+(`grants.gov.au/ga`), AusTender **"Contract Notice"**/CN (`tenders.gov.au/cn`), Community Grants
+Hub, PHN **"Activity Work Plan"**, **"Reconciliation Action Plan"**, DGR.
+
+Still flagged (batch 8): **`#stigmakills`** / **"Make Stigma History"** are NOT real AU AOD
+campaigns — dropped (the verified ones, #StigmaPledge / StigmaWatch, are mental-health). **QNADA**
+has no named language _guide_ (only the "addictionary" article) — don't quote one; point QLD users
+to Language Matters / Power of Words. The NMHC **"National Stigma and Discrimination Reduction
+Strategy"** is mental-health-focused — do **not** claim it covers AOD. **AIVL founding year**
+unconfirmed — cite "formed in the late 1980s", don't assert a year. **archive.today** has governance
+caveats (Wikipedia blacklisted it Feb 2026) — keep it secondary to Wayback.
 
 Still flagged: **Strong & Deadly Futures** is an Aboriginal & Torres Strait Islander program — quote
 it but keep cultural-safety framing. The **NHMRC CRE in Mental Health and Substance Use** ("CREMS")

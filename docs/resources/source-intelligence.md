@@ -872,6 +872,104 @@ examples". Each pack should pull the relevant rows.
 
 ---
 
+## 🗣️ Stigma, Language & Movement History
+
+The specificity move for the stigma/history domain is to name the actual **language guide** and the
+actual **historical event/person** — peer-authored guides and the founding facts of the drug-user
+movement, not a generic `"stigma" "drug use"` search.
+
+**Named language & anti-stigma guides (peer- and sector-authored):**
+
+| Guide                              | `site:` target                  | Named signals                                                                                                                                |
+| ---------------------------------- | ------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| **NADA + NUAA "Language Matters"** | `nada.org.au`                   | `"Language Matters"` (peer/sector guide; PDF `language_matters_-_online_-_final.pdf`) — NSW Health promotes it but didn't author its own     |
+| **INPUD/ANPUD "Words Matter!"**    | `inpud.net`                     | `"Words Matter"` / `"Language Statement"` (2022; PDF `Words-Matter-Language-Guide-1.pdf`) — global peer guide                                |
+| **AIVL** (anti-discrimination)     | `aivl.org.au`                   | `"Why wouldn't I discriminate against all of them"` (2024 stigma & discrimination report), `"language matters"` resource                     |
+| **ADF "the Power of Words"**       | `adf.org.au`, `cdn.adf.org.au`  | `"Power of Words"` (`"Having alcohol and other drug conversations"`; co-produced w/ SHARC/APSU, HRVic, Penington; PDFs on the `cdn.` host)   |
+| **Mindframe (AOD)**                | `mindframe.org.au`              | `"Mindframe for Alcohol and Other Drugs"` (Everymind; media-reporting guidelines; PDF on `mindframemedia.imgix.net`)                         |
+| **NMHC stigma strategy** ⚠         | `mentalhealthcommission.gov.au` | `"National Stigma and Discrimination Reduction Strategy"` — **mental-health-focused** (draft 2023); does _not_ cover AOD as a primary domain |
+
+> **Don't quote these:** `#stigmakills` / `"Make Stigma History"` are **not** real AU AOD campaigns
+> (the verified ones — `#StigmaPledge`, `StigmaWatch` — are mental-health). QNADA has no named
+> language _guide_ (only the `"addictionary"` commentary article) — point QLD users to Language
+> Matters / Power of Words instead.
+
+**AU harm-reduction & drug-user-movement history (quote the named event/person/report):**
+
+| Anchor                        | `site:` target                                | Named signals                                                                                                                                                         |
+| ----------------------------- | --------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Policy origin (1985)**      | `health.gov.au`, `ndarc.med.unsw.edu.au`      | `"National Campaign Against Drug Abuse"` / `"NCADA"` (origin of `"harm minimisation"`); NDARC `"The National Drug Strategy: The First 10 Years and Beyond"` (Mono.27) |
+| **First NSP (1986)**          | `adf.org.au`, `harmreductionaustralia.org.au` | `"Alex Wodak"` + `"St Vincent's"` Darlinghurst (illegal pilot Nov 1986; NSW adopted 1987)                                                                             |
+| **Methadone (1969)**          | `nceta.flinders.edu.au`                       | `"Stella Dalton"` (first documented AU methadone, Sydney 1969); NCETA `"Opioid Agonist Therapy in Australia: A History"`                                              |
+| **MSIC (2001)**               | `uniting.org`                                 | `"Medically Supervised Injecting Centre"` + `"1999"` `"Drug Summit"` (opened 6 May 2001, Kings Cross — see Supervised Consumption)                                    |
+| **Drug-user orgs (founding)** | `nuaa.org.au`, `hrvic.org.au`                 | NUAA `"NSW Users and AIDS Association"` (1989); `"VIVAIDS"` → Harm Reduction Victoria (1987); AIVL `"formed in the late 1980s"` (no precise year — don't assert)      |
+| **NSP value (named eval)**    | `health.gov.au`                               | `"Return on Investment in Needle and Syringe Programs in Australia"` (Health Outcomes International / NCHECR, 2002)                                                   |
+
+**Insider vocabulary:** the term shift itself is the history — `"addict"` / `"drug abuser"` /
+`"IVDU"` / `"substance abuser"` (legacy; use date ranges to find old docs) →
+`"people who use drugs"` / `"PWUD"` / `"PWID"` / `"person with lived experience"` (current).
+`"harm minimisation"` (the official AU policy term — note the AU spelling, vs international
+`"harm reduction"`), `"people-first language"`, `"structural stigma"` / `"self-stigma"` /
+`"internalised stigma"`, `"nothing about us without us"`. Searching the legacy term surfaces the
+era's documents; searching the current term surfaces who's reframing them.
+
+---
+
+## 🕰️ Web Archives & Temporal Search
+
+Finding moved, deleted, or historical content is a _platform_ skill — name the archive, and know
+which techniques still work.
+
+> **⚠ Dead technique:** Google's **`cache:`** operator is gone (cached links removed Jan 2024;
+> operator fully retired Sept 2024). **Do not recommend `cache:`.** To recover a deleted/cached page
+> now: (1) Wayback `https://web.archive.org/web/*/<URL>`; (2) the Availability API
+> `https://archive.org/wayback/available?url=<URL>`; (3) `https://archive.ph/newest/<URL>`; (4) for
+> `.au` sites, Trove's Australian Web Archive.
+
+| Archive / tool                        | `site:` target / endpoint                   | How to use                                                                                                                                                   |
+| ------------------------------------- | ------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Wayback Machine**                   | `web.archive.org`                           | `site:web.archive.org/web/*/example.com` lists captures; `web.archive.org/save/<URL>` = Save Page Now; `archive.org/wayback/available?url=` = JSON API       |
+| **Trove — Australian Web Archive**    | `trove.nla.gov.au`                          | `trove.nla.gov.au/search/category/websites` — the **AWA** combines PANDORA + AGWA + `.au` harvests (unified March 2019); best for `.au` pages Wayback missed |
+| **PANDORA**                           | `pandora.nla.gov.au`                        | NLA's _selective_ archive (since 1996; themes/events) — a component of the AWA                                                                               |
+| **Australian Government Web Archive** | `webarchive.nla.gov.au`                     | bulk harvest of Commonwealth Government sites (AGWA) — finds removed `.gov.au` pages                                                                         |
+| **archive.today**                     | `archive.today`, `archive.ph`, `archive.is` | `archive.ph/newest/<URL>` (latest), `archive.ph/<URL>` (all snapshots) — secondary to Wayback (governance caveats; Wikipedia blacklisted it Feb 2026)        |
+| **Common Crawl**                      | `commoncrawl.org`                           | bulk URL/index discovery (WARC, CDXJ) — pair with Wayback for actual replay                                                                                  |
+| **LOC / UK Web Archive**              | `webarchive.loc.gov`, `webarchive.org.uk`   | US / UK thematic collections (low AU relevance)                                                                                                              |
+
+**Insider vocabulary:** `after:` / `before:` (Google index date, **not** publication date),
+`YYYY..YYYY` (number-range, matches years _mentioned_), `"snapshot"` / `"capture"`,
+`"Save Page Now"`, `"link rot"`, `"superseded"` / `"archived"` / `"historical"` (gov pages
+self-label this). For policy-evolution work, pair an exact document title with the year iterations
+(`"National Drug Strategy" (2010 OR 2017 OR 2017-2026)`).
+
+---
+
+## 🏢 Organisational Intelligence & Registers
+
+The behind-the-scenes layer (governance, funding, structure). The specificity win is to name the
+actual **register** and the actual **document type** instead of `site:*.gov.au "annual report"`.
+
+| Register / source              | `site:` target                      | Named signals                                                                                                                                                              |
+| ------------------------------ | ----------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **ACNC Charity Register**      | `acnc.gov.au`                       | `"Annual Information Statement"` / `"AIS"` (charities must lodge this even when they publish no "annual report"); `"Charity Register"`                                     |
+| **ABN Lookup**                 | `abr.business.gov.au`               | `"Australian Business Number"` / `"ABN"`; DGR check at `abr.business.gov.au/Tools/DgrListing`                                                                              |
+| **GrantConnect**               | `grants.gov.au`                     | `"Grant Award"` / `"GA"` notices (`grants.gov.au/ga/list`) — Commonwealth grants since Dec 2017                                                                            |
+| **AusTender**                  | `tenders.gov.au`                    | `"Contract Notice"` / `"CN"` (`tenders.gov.au/cn/search`; IDs like `CN4138154`) — awarded contracts ≥ $10k                                                                 |
+| **Community Grants Hub**       | `communitygrants.gov.au`            | `"Community Grants Hub"`, `"grant opportunity guidelines"` (program admin; award data is on GrantConnect)                                                                  |
+| **Reconciliation Action Plan** | `reconciliation.org.au`             | `"Reconciliation Action Plan"` / `"RAP"` (`"Reflect"` / `"Innovate"` / `"Stretch"` / `"Elevate"`) — orgs also publish RAP PDFs on their own sites                          |
+| **DGR status** (ATO)           | `ato.gov.au`, `abr.business.gov.au` | `"deductible gift recipient"` / `"DGR"` — funding-eligibility signal                                                                                                       |
+| **PHN Activity Work Plans**    | (per-PHN domains)                   | `"Activity Work Plan"` / `"Drug and Alcohol Treatment Services Activity Work Plan"` + `"Health Needs Assessment"` (no national register — `filetype:pdf` across PHN sites) |
+| **Report on Gov Services**     | `pc.gov.au`                         | `"Report on Government Services"` / `"RoGS"` (cross-sector; for AOD-specific data prefer AIHW)                                                                             |
+
+**Insider vocabulary:** `"Annual Information Statement"` (the load-bearing term — beats "annual
+report" for charities), `"Grant Award"` / `"GA"` and `"Contract Notice"` / `"CN"` (the published
+award genres), `"funding agreement"` / `"deliverables"` / `"KPI"`, `"commissioning"` /
+`"needs assessment"` (PHN model), `"strategic plan"` / `"corporate plan"` / `"constitution"` /
+`"terms of reference"`, `"memorandum of understanding"` / `"MOU"`, `"expression of interest"` /
+`"EOI"`. The registers carry the structured data; the org's own `site:` carries the PDFs.
+
+---
+
 ## 🛠️ Maintaining This File
 
 - Add an entity here **before** writing a dork that depends on it.

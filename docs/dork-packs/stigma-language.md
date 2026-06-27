@@ -1,114 +1,97 @@
 # Stigma, Language & Historical Research
 
-> Understanding how language has changed and finding historical documents using legacy terminology.
+> Find the named language guides, the anti-stigma evidence, and the movement's own history — by the
+> actual guide and founding event, not a generic `"stigma" "drug use"` search.
 
 [← Back to Dork Packs](README.md) | [← Main Guide](../README.md)
 
 ---
 
-## 📝 Why This Section Exists
+## 👥 About This Pack
 
-**Language matters.** The words we use shape how people who use drugs are treated.
+**Language matters** — and the sector has named guides that say so, written _with_ people who use
+drugs: the NADA + NUAA **"Language Matters"** guide, INPUD/ANPUD's **"Words Matter!"**, AIVL's
+anti-discrimination work, ADF's **"the Power of Words"**, and **Mindframe** for media. This pack
+also treats the movement's _history_ as searchable: Australia adopted **"harm minimisation"** at the
+1985 **NCADA**; **Alex Wodak** ran the first (illegal) needle exchange in 1986; **NUAA** (1989) and
+**VIVAIDS** → Harm Reduction Victoria (1987) are the drug-user orgs that built the response.
 
-However, to find historical documents, you sometimes need to search using the language of that
-era—even when it's stigmatising. Use these searches thoughtfully.
+To find older documents you sometimes must search the _legacy_ stigmatising terms of that era — use
+them as research keys, thoughtfully.
+
+> **Entity reference:** every guide and historical anchor below is catalogued in
+> [Source Intelligence → Stigma, Language & Movement History](../resources/source-intelligence.md#-stigma-language--movement-history).
 
 ---
 
 ## ⚡ Quick Start
 
-Find resources on drug-related stigma:
+Go to the peer-authored Australian language guide:
 
 ```txt
-"stigma" "people who use drugs" Australia research filetype:pdf
+(site:nada.org.au OR site:nuaa.org.au) "Language Matters"
 ```
 
 ---
 
 ## 🟢 Basic Queries
 
-### Tracking Language Change - 1
+### Named Language Guides (Peer & Sector)
 
 ```txt
-"people who use drugs" OR "person who uses drugs" (definition OR meaning OR "why we say")
+("Language Matters" OR "Words Matter" OR "Power of Words") ("people who use drugs" OR "alcohol and other drugs" OR stigma)
 ```
 
-### Tracking Language Change - 2
+**Why this works:**
+
+- Names the actual guides — NADA/NUAA's **Language Matters**, INPUD/ANPUD's **Words Matter!**, ADF's
+  **Power of Words** — instead of a generic `"language" "guide"` query
+
+### People-First Language
 
 ```txt
-"stigma" "language" drug use harm reduction
+("people-first language" OR "person-centred language" OR "people who use drugs") (why OR guide OR "non-stigmatising")
 ```
 
-### People-First Language - 1
+### Media Reporting (Mindframe)
 
 ```txt
-"people-first language" drug OR substance use
-```
-
-### People-First Language - 2
-
-```txt
-"from 'addict' to 'person'" language change
-```
-
-### Language Guides - 1
-
-```txt
-("terminology" OR "language") harm reduction guide filetype:pdf
-```
-
-### Language Guides - 2
-
-```txt
-"words matter" drug OR substance use campaign
+site:mindframe.org.au ("Mindframe for Alcohol and Other Drugs" OR "communicating about alcohol and other drugs")
 ```
 
 ---
 
 ## 🟡 Intermediate Queries
 
-### Historical/Stigmatising Terms (For Research Only) - 1
+### Historical / Legacy Terms (Research Only)
 
-> ⚠️ Use when you need to locate older documents
+> ⚠️ Use the era's own language to locate older documents — not as endorsed terminology.
 
 ```txt
-"drug addict" OR "drug abuser" Australia 1980..2010 filetype:pdf
+("drug addict" OR "drug abuser" OR "substance abuser" OR "IVDU") Australia 1985..2005 filetype:pdf
 ```
 
-### Historical/Stigmatising Terms (For Research Only) - 2
+**Why this works:**
+
+- The legacy terms are the _keys_ to pre-2010 documents; the number-range operator (`YYYY..YYYY`)
+  catches the era they were written in
+
+### Comparing Language Across Eras
 
 ```txt
-"intravenous drug user" OR "IVDU" Australia harm reduction
+("injecting drug user" OR IDU) Australia 1990..2010    →    ("people who inject drugs" OR PWID) 2010..2026
 ```
 
-### Historical/Stigmatising Terms (For Research Only) - 3
+### AIVL Anti-Discrimination Evidence
 
 ```txt
-"substance abuser" policy OR program Australia before:2015
+site:aivl.org.au ("Why wouldn't I discriminate against all of them" OR stigma OR discrimination) filetype:pdf
 ```
 
-### Compare Language Across Eras - 1
+### Media Portrayal Analysis
 
 ```txt
-"injecting drug user" OR "IDU" 1990..2010 Australia
-```
-
-### Compare Language Across Eras - 2
-
-```txt
-"people who inject drugs" OR "PWID" 2010..2026 Australia
-```
-
-### Media Analysis - 1
-
-```txt
-"junkie" OR "druggie" (media OR news) Australia analysis
-```
-
-### Media Analysis - 2
-
-```txt
-"media portrayal" OR "media representation" drug use Australia
+("junkie" OR "druggie" OR "ice epidemic") (media OR "news") (portrayal OR representation OR analysis) Australia
 ```
 
 ---
@@ -118,211 +101,168 @@ Find resources on drug-related stigma:
 ### Comprehensive Stigma Research
 
 ```txt
-"stigma" ("people who use drugs" OR "drug users" OR "substance use") Australia (research OR study OR analysis) filetype:pdf after:2015
+"stigma" ("people who use drugs" OR "drug use" OR "substance use") Australia (research OR study OR review) filetype:pdf after:2015
 ```
 
-### Structural Stigma
+### Structural & Self-Stigma
 
 ```txt
-"structural stigma" drug use OR substance use (policy OR system OR institutional)
+("structural stigma" OR "self-stigma" OR "internalised stigma" OR "internalized stigma") (drug OR substance) (policy OR healthcare OR experience)
 ```
 
-### Self-Stigma
+### Stigma-Reduction Interventions
 
 ```txt
-"self-stigma" OR "internalised stigma" OR "internalized stigma" drug use
+"stigma reduction" (intervention OR campaign OR training) (drug OR "substance use") (effectiveness OR evaluation) filetype:pdf
 ```
 
-### Stigma Reduction Interventions
+### National Strategy (Mental Health — note the scope)
 
 ```txt
-"stigma reduction" intervention drug use effectiveness filetype:pdf
+site:mentalhealthcommission.gov.au "National Stigma and Discrimination Reduction Strategy"
 ```
+
+> Caveat: this NMHC strategy is mental-health-focused and does **not** treat AOD as a primary domain
+> — read it as adjacent, not as the AOD stigma framework.
 
 ---
 
 ## 📜 History of Harm Reduction in Australia
 
-### Origins & Early History - 1
+The movement's milestones are searchable by name, person, and year.
+
+### Policy Origin — "Harm Minimisation" (1985)
 
 ```txt
-"harm minimisation" Australia history OR origins 1980s OR 1990s
+("National Campaign Against Drug Abuse" OR NCADA) 1985 "harm minimisation" (site:ndarc.med.unsw.edu.au OR site:health.gov.au)
 ```
 
-### Origins & Early History - 2
+**Why this works:**
+
+- Australia's official "harm minimisation" framework dates to the 1985 NCADA — naming it (and the
+  NDARC history "The National Drug Strategy: The First 10 Years and Beyond") beats a vague
+  `"harm reduction" history` search
+
+### First Needle Exchange (1986)
 
 ```txt
-"needle exchange" Australia first OR "pilot program" history
+"Alex Wodak" ("St Vincent's" OR Darlinghurst OR "needle") 1986 (history OR first OR pilot)
 ```
 
-### Methadone History
+### Methadone History (1969)
 
 ```txt
-"methadone program" Australia history OR establishment
+("Stella Dalton" OR "Opioid Agonist Therapy in Australia: A History") methadone (1969 OR Sydney OR history)
 ```
 
-### AIDS Response
+### Supervised Injecting & the 1999 Drug Summit
 
 ```txt
-"AIDS response" Australia "injecting drug use" 1980s
+"Medically Supervised Injecting Centre" ("1999" OR "Drug Summit" OR "Kings Cross") (history OR campaign OR origins)
 ```
 
-### Supervised Injecting History - 1
+### NSP Value (Named Evaluation)
 
 ```txt
-"supervised injecting" OR "medically supervised injecting" Sydney history OR origins
-```
-
-### Supervised Injecting History - 2
-
-```txt
-"Kings Cross" "injecting room" history OR campaign
+"Return on Investment in Needle and Syringe Programs in Australia" filetype:pdf
 ```
 
 ---
 
-## ✊ History of Drug User Organising
+## ✊ History of Drug-User Organising
 
-### Movement History - 1
+The peer movement is its own history — name the orgs and their founding.
 
-```txt
-"drug user organisation" Australia history
-```
-
-### Movement History - 2
+### Drug-User Organisations (Founding)
 
 ```txt
-(NUAA OR AIVL OR VIVAIDS) history OR "early days" OR founding
+("NSW Users and AIDS Association" OR NUAA OR VIVAIDS OR "Harm Reduction Victoria" OR AIVL) (history OR founded OR "early days")
 ```
 
-### Activism - 1
+**Why this works:**
+
+- NUAA (1989), VIVAIDS → HRVic (1987), and AIVL ("formed in the late 1980s") are the named drug-user
+  orgs that built Australia's HIV-era response — far richer than `"drug user" activism`
+
+### Activism & the Peer Movement
 
 ```txt
-"drug user activism" OR "drug user movement" Australia
+("drug user activism" OR "drug user movement" OR "peer movement") Australia (1980s OR 1990s OR history)
 ```
 
-### Activism - 2
+### Organisational Timelines (via Archive)
 
 ```txt
-"civil society" drug users Australia 1980s OR 1990s
+site:web.archive.org/web/*/nuaa.org.au (about OR history OR mission)
 ```
 
-### Peer Movement
-
-```txt
-"peer movement" drug use Australia history
-```
+> Pair with the [Temporal Intelligence pack](temporal-intelligence.md) to trace how orgs described
+> themselves over time.
 
 ---
 
 ## 🔬 Stigma Research
 
-### Australian Stigma Research - 1
+### Healthcare & Service Stigma
 
 ```txt
-"stigma" "people who use drugs" Australia research filetype:pdf
+("stigma" OR "discrimination") ("drug use" OR "people who use drugs") (hospital OR "emergency department" OR healthcare OR "health service") Australia
 ```
 
-### Australian Stigma Research - 2
+### Justice, Housing & Employment Stigma
 
 ```txt
-site:*.edu.au "stigma" "drug use" OR "substance use" Australia
+("stigma" OR "discrimination") "drug use" ("criminal record" OR "justice system" OR housing OR employment) Australia filetype:pdf
 ```
 
-### Healthcare Stigma - 1
+### Australian Academic Stigma Research
 
 ```txt
-"discrimination" drug use "health care" OR healthcare Australia
-```
-
-### Healthcare Stigma - 2
-
-```txt
-"stigma" "drug use" (hospital OR "emergency department" OR "health service") Australia
-```
-
-### Employment & Housing Stigma
-
-```txt
-"discrimination" drug use (housing OR employment) Australia
-```
-
-### Criminal Justice Stigma
-
-```txt
-"stigma" OR "discrimination" "drug use" ("criminal record" OR "justice system") Australia
-```
-
----
-
-## 📊 Language Evolution Studies
-
-### Terminology Shifts
-
-```txt
-"terminology" change OR evolution "drug use" OR "substance use" filetype:pdf
-```
-
-### Style Guides
-
-```txt
-"style guide" OR "language guide" ("drug use" OR "substance use" OR "harm reduction") filetype:pdf
-```
-
-### International Language Standards
-
-```txt
-"people-first language" OR "person-centred language" drug international guidelines
-```
-
----
-
-## 🔄 Before/After Comparisons
-
-### Finding Legacy vs Current Terminology
-
-Use date ranges to compare eras:
-
-**1980s-1990s terminology:**
-
-```txt
-("drug addict" OR "IVDU" OR "substance abuser") Australia 1985..2000 filetype:pdf
-```
-
-**2010s-2020s terminology:**
-
-```txt
-("people who use drugs" OR "PWUD" OR "person with lived experience") 2010..2026 filetype:pdf
+site:*.edu.au "stigma" ("people who use drugs" OR "substance use") Australia filetype:pdf
 ```
 
 ---
 
 ## 💬 Challenging Stigma
 
+Peer-led anti-stigma work leads here — the people most affected reframing the narrative.
+
+### Peer-Led & Lived-Experience Anti-Stigma
+
+```txt
+("peer-led" OR "lived experience" OR "nothing about us without us") stigma (reduction OR challenge OR campaign) (drug OR "alcohol and other drugs") Australia
+```
+
 ### Anti-Stigma Campaigns
 
 ```txt
-"anti-stigma" OR "stigma campaign" drug OR substance Australia
+("anti-stigma" OR "stigma") ("people who use drugs" OR "alcohol and other drugs") campaign Australia site:*.org.au
 ```
 
-### Changing the Narrative
+> Note: `#stigmakills` / "Make Stigma History" are not real AU AOD campaigns — search the broad form
+> above rather than a named hashtag.
+
+### Reframing the Narrative
 
 ```txt
-"changing the narrative" OR "reframing" drug use OR "drug policy"
-```
-
-### Peer-Led Stigma Work
-
-```txt
-("peer-led" OR "lived experience") stigma (reduction OR challenge OR campaign) drug
+("changing the narrative" OR reframing OR "person-first") ("drug policy" OR "drug use") (peer OR "lived experience")
 ```
 
 ---
 
 ## 🔗 Related Resources
 
-- **Synonym Block:** [Spelling Variations](../05-synonym-blocks.md#-spelling-variations-auuk-vs-us)
-- **Related Packs:** [Peer Knowledge](peer-knowledge.md), [Policy & Advocacy](policy-advocacy.md)
+- **Source Intelligence:**
+  [Stigma, Language & Movement History](../resources/source-intelligence.md#-stigma-language--movement-history)
+  — the guides and historical anchors every dork above is built on
+- **Synonym Blocks:**
+  [Peer/Lived Experience Terms](../05-synonym-blocks.md#-peerlived-experience-terms),
+  [Spelling Variations](../05-synonym-blocks.md#-spelling-variations-auuk-vs-us)
+- **Related Packs:** [Peer Knowledge](peer-knowledge.md), [Policy & Advocacy](policy-advocacy.md),
+  [Temporal Intelligence](temporal-intelligence.md)
+- **Key Guides:** [Language Matters (NADA)](https://nada.org.au/resources/language-matters/),
+  [Words Matter (INPUD)](https://inpud.net),
+  [Power of Words (ADF)](https://adf.org.au/resources/power-words/)
 
 ---
 
