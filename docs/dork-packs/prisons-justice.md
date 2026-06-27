@@ -1,74 +1,100 @@
 # Prisons, Justice & Corrections Health
 
-> Harm reduction in closed settings and justice system interactions.
+> Harm reduction in closed settings and across the justice system — named by the actual service,
+> court, data collection, and peer publication, not just by "prison".
 
 [← Back to Dork Packs](README.md) | [← Main Guide](../README.md)
 
 ---
 
-## 📋 Context
+## 👥 About This Pack
 
-People who use drugs are massively over-represented in prisons. Harm reduction in custody is limited
-but evolving. Many people's first contact with treatment is through the justice system.
+People who use drugs are massively over-represented in custody, and "first contact" with treatment
+is often through the courts. The system has named anchors worth knowing. The peer signal leads:
+NUAA's **Insider's News** is a harm-reduction magazine _solely_ distributed inside NSW prisons. Care
+in custody is delivered by named bodies — the **Justice Health and Forensic Mental Health Network**
+(NSW), state **Prison Health Services** (QLD), **SAPHS** (SA) — and WA is the national exception
+where prison health sits inside **Corrective Services**, not the health department. Diversion runs
+on named courts and schemes (**Drug Court of NSW**, **MERIT**, **QDAC**, **DASL**), and the evidence
+lives in named collections (AIHW's **National Prisoner Health Data Collection**, the **MARC**
+post-release mortality study).
+
+> **Entity reference:** every service, court, dataset, and report below is catalogued in
+> [Source Intelligence → Justice, Custody & Diversion](../resources/source-intelligence.md#-justice-custody--diversion).
 
 ---
 
 ## ⚡ Quick Start
 
-Find prison health AOD resources:
+Go to the peer magazine written for and distributed inside NSW prisons:
 
 ```txt
-site:*.gov.au "prison health" OR "correctional health" "alcohol and other drugs" filetype:pdf
+site:nuaa.org.au "Insider's News"
 ```
 
 ---
 
 ## 🟢 Basic Queries
 
-### Prison Health & AOD
+### Peer & Lived-Experience in Custody
 
 ```txt
-site:*.gov.au "prison health" OR "correctional health" "alcohol and other drugs"
+(site:nuaa.org.au OR site:crcnsw.org.au) ("Insider's News" OR "Paper Chained" OR "Jailbreak Radio")
 ```
 
-### Custody Drug/Overdose
+**Why this works:**
+
+- Leads with the lived-experience record — NUAA's in-prison magazine and CRC's prisoner-writing and
+  radio — instead of a generic `"prison" "drug"` query
+
+### Custodial Health Services (Named)
 
 ```txt
-site:*.gov.au "custody" "drug" OR "overdose" OR "withdrawal"
+(site:justicehealth.nsw.gov.au OR site:westmoreton.health.qld.gov.au OR site:sahealth.sa.gov.au) ("prison health" OR "prisoner health" OR "alcohol and other drugs")
 ```
 
-### Corrections Harm Reduction
+### National Prisoner-Health Evidence
 
 ```txt
-"corrections" OR "correctional" "harm reduction" Australia filetype:pdf
+site:aihw.gov.au ("The health of people in Australia's prisons" OR "The health of Australia's prisoners")
 ```
+
+**Why this works:**
+
+- The AIHW report title _changed_ between editions — quoting both forms catches the 2022 and the
+  2018 (and earlier) editions in one search
 
 ---
 
 ## 🟡 Intermediate Queries
 
-### Opioid Treatment in Prisons
+### Justice Health NSW (the named network + survey)
 
 ```txt
-"prison" OR "custody" "opioid treatment" OR "methadone" OR "buprenorphine" Australia
+(site:justicehealth.nsw.gov.au OR site:nsw.gov.au) ("Justice Health and Forensic Mental Health Network" OR "Network Patient Health Survey")
 ```
 
-### Correctional Pharmacotherapy
+**Why this works:**
+
+- The flagship is the **Network Patient Health Survey** (the prison-population health survey) —
+  content is migrating from `justicehealth.nsw.gov.au` to `nsw.gov.au`, so OR both hosts
+
+### Opioid Treatment & Naloxone in Custody
 
 ```txt
-"correctional" "pharmacotherapy" OR "OAT" policy guidelines filetype:pdf
+("opioid treatment" OR "OAT" OR methadone OR buprenorphine OR "take-home naloxone" OR "naloxone on release") (prison OR custody OR "post-release") Australia
 ```
 
-### Prison Naloxone
+### Throughcare & Re-entry (Named Programs)
 
 ```txt
-"prison naloxone" OR "custody naloxone" OR "release naloxone" Australia
+(site:crcnsw.org.au OR site:caraniche.com.au OR site:goodpathways.org.au) ("AOD Transition Program" OR "Extended Reintegration Service" OR "StepOut" OR "Throughcare Program")
 ```
 
-### Throughcare/Continuity
+### Compulsory Drug Treatment (NSW)
 
 ```txt
-"throughcare" OR "continuity of care" "opioid treatment" prison release
+"Compulsory Drug Treatment Correctional Centre" (Parklea OR CDTCC OR "Drug Court")
 ```
 
 ---
@@ -78,226 +104,283 @@ site:*.gov.au "custody" "drug" OR "overdose" OR "withdrawal"
 ### Comprehensive Prison AOD Sweep
 
 ```txt
-("prison" OR "custody" OR "correctional" OR "incarceration") ("alcohol and other drugs" OR AOD OR "harm reduction" OR "drug treatment" OR "opioid treatment") Australia (policy OR guideline OR program OR research) filetype:pdf after:2020
+(prison OR custody OR correctional OR incarceration) ("alcohol and other drugs" OR AOD OR "harm reduction" OR "opioid treatment" OR "take-home naloxone") (policy OR guideline OR program OR evaluation) Australia filetype:pdf after:2020
 ```
 
-### Post-Release Overdose Risk - 1
+### Post-Release Overdose & Mortality
 
 ```txt
-"post-release" "overdose" OR "drug death" risk Australia
+("Mortality After Release from Custody" OR "Prison and Transition Health" OR "post-release") (overdose OR mortality OR "drug-induced death") (Kinner OR Borschmann OR Australia)
 ```
 
-### Post-Release Overdose Risk - 2
+**Why this works:**
+
+- Names the actual cohorts — the **MARC** study (Kinner, QLD) and the Burnet **PATH** cohort (people
+  who inject drugs leaving prison) — rather than hoping a generic mortality search surfaces them
+
+### RACGP Prison Health Standards
 
 ```txt
-"prison release" overdose (prevention OR harm reduction)
+site:racgp.org.au "Standards for health services in Australian prisons"
 ```
 
-### Withdrawal Management
+### Withdrawal Management in Custody
 
 ```txt
-"prison" OR "custody" "withdrawal" (management OR protocol OR guideline) Australia
+(prison OR custody OR reception) (withdrawal OR detox) (management OR protocol OR guideline) Australia filetype:pdf
 ```
 
 ---
 
-## 🏥 Healthcare in Custody
+## 🏥 Custodial Health Services (by Jurisdiction)
 
-### Justice Health Services - 1
+Who actually delivers care inside prison differs by state — and WA is the exception.
+
+### NSW — Justice Health & Forensic Mental Health Network
 
 ```txt
-site:justicehealth.nsw.gov.au filetype:pdf
+(site:justicehealth.nsw.gov.au OR site:nsw.gov.au) ("Network Patient Health Survey" OR "Young People in Custody Health Survey") filetype:pdf
 ```
 
-### Justice Health Services - 2
+### Victoria — Justice Health (DJCS)
 
 ```txt
-"justice health" drug OR alcohol OR AOD
+(site:justice.vic.gov.au OR site:corrections.vic.gov.au) "Justice Health" (prison OR custodial OR "alcohol and other drugs")
 ```
 
-### Prison Health Guidelines
+### Queensland — Prison Health Services (West Moreton)
 
 ```txt
-"prison health" OR "prisoner health" (guideline OR standard) AOD Australia
+(site:westmoreton.health.qld.gov.au OR site:health.qld.gov.au) ("Prison Health Services" OR "Prisoner Health Services")
 ```
 
-### Forensic AOD
+### WA — Corrective Services Health (the exception)
 
 ```txt
-"forensic" AOD OR "alcohol and other drugs" service Australia
+(site:wa.gov.au OR site:correctiveservices.wa.gov.au) "Corrective Services" "health care" prison
+```
+
+### SA — SA Prison Health Service (SAPHS)
+
+```txt
+(site:sahealth.sa.gov.au OR site:calhn.sa.gov.au) ("SA Prison Health Service" OR "South Australian Prison Health Service" OR SAPHS)
+```
+
+### ACT, TAS & NT
+
+```txt
+(site:canberrahealthservices.act.gov.au "Custodial Health") OR (site:health.tas.gov.au "Correctional Primary Health") OR ((site:nt.gov.au OR site:corrections.nt.gov.au) prisoner health)
 ```
 
 ---
 
 ## ⚖️ Drug Courts & Diversion
 
-### Drug Court Programs
+Each jurisdiction names its program — and several have been renamed or replaced, so the exact title
+matters.
+
+### NSW — Drug Court, MERIT & EDDI
 
 ```txt
-"drug court" Australia (evaluation OR outcomes) filetype:pdf
+(site:drugcourt.nsw.gov.au OR site:dcj.nsw.gov.au OR site:bocsar.nsw.gov.au) ("Drug Court of New South Wales" OR "Magistrates Early Referral Into Treatment" OR MERIT OR "Early Drug Diversion Initiative")
 ```
 
-### State Drug Courts
+**Why this works:**
+
+- Pairs the courts/justice hosts with **BOCSAR** (`bocsar.nsw.gov.au`), which actually authors the
+  NSW Drug Court and MERIT evaluations — the evaluator's domain is where the evidence lives
+
+### Victoria — Drug Court (DATO) & CISP
 
 ```txt
-"drug court" (NSW OR VIC OR QLD OR WA OR SA) evaluation
+(site:mcv.vic.gov.au OR site:countycourt.vic.gov.au) ("Drug Court" OR "Drug and Alcohol Treatment Order" OR "Court Integrated Services Program" OR CISP)
 ```
 
-### MERIT (NSW)
+### Queensland — QDAC & Court Link
 
 ```txt
-"MERIT" OR "Magistrates Early Referral Into Treatment" NSW
+(site:courts.qld.gov.au OR site:police.qld.gov.au) ("Queensland Drug and Alcohol Court" OR QDAC OR "Police Drug Diversion Program" OR "Court Link")
 ```
 
-### CISP (Victoria)
+### SA & WA — Treatment Intervention Court, PDDI, Drug Court, CIR
 
 ```txt
-"CISP" OR "Court Integrated Services Program" Victoria
+(site:courts.sa.gov.au "Treatment Intervention Court") OR (site:sahealth.sa.gov.au "Police Drug Diversion Initiative") OR (site:magistratescourt.wa.gov.au "Drug Court") OR (site:mhc.wa.gov.au "Cannabis Intervention Requirement")
 ```
 
-### Diversion Programs - 1
+### ACT — Drug & Alcohol Sentencing List
 
 ```txt
-"diversion" drug OR substance offence Australia evaluation
+(site:courts.act.gov.au OR site:anu.edu.au) ("Drug and Alcohol Sentencing List" OR DASL OR "Drug and Alcohol Treatment Order")
 ```
 
-### Diversion Programs - 2
+### National — Illicit Drug Diversion Initiative
 
 ```txt
-"drug diversion" program Australia effectiveness
-```
-
----
-
-## 🔄 Post-Release & Re-entry
-
-### Re-entry Support - 1
-
-```txt
-"re-entry" OR "reintegration" AOD support Australia
-```
-
-### Re-entry Support - 2
-
-```txt
-"transition" custody community drug OR alcohol support
-```
-
-### Throughcare Programs
-
-```txt
-"throughcare" drug OR alcohol prison release Australia
-```
-
-### Post-Release Services
-
-```txt
-"post-release" (AOD OR "alcohol and other drugs") (service OR support) Australia
-```
-
-### Housing & Re-entry
-
-```txt
-"housing" "prison release" OR "post-release" drug OR alcohol Australia
+(site:aihw.gov.au OR site:aic.gov.au) ("Illicit Drug Diversion Initiative" OR IDDI) (evaluation OR effectiveness)
 ```
 
 ---
 
-## 👥 Youth Justice
+## 🔄 Throughcare & Re-entry
 
-### Youth Justice AOD
+"Throughcare" is the Australian sector term for continuity from custody to community.
+
+### Community Restorative Centre (NSW)
 
 ```txt
-"youth justice" OR "juvenile justice" drug OR alcohol Australia
+site:crcnsw.org.au ("Alcohol and Other Drugs (AOD) Transition Program" OR "Extended Reintegration Service" OR "The Miranda Project")
 ```
 
-### Youth Diversion - 1
+### Post-Release AOD & Naloxone on Release
 
 ```txt
-"young offenders" drug OR alcohol diversion Australia
+("take-home naloxone" OR "naloxone on release" OR "post-release") (AOD OR "alcohol and other drugs" OR overdose) prison (release OR transition) Australia
 ```
 
-### Youth Diversion - 2
+### National Corrections Policy
 
 ```txt
-"youth detention" drug OR alcohol program
-```
-
-### Youth Diversion - 3
-
-```txt
-"children's court" drug OR alcohol diversion
+"Guiding Principles for Corrections in Australia" (throughcare OR "post-release" OR reintegration) filetype:pdf
 ```
 
 ---
 
-## 📊 Data & Research
+## 📊 Data & Post-Release Research
 
-### Prison AOD Data - 1
+### National Prisoner Health Data
 
 ```txt
-"prisoner" "drug use" OR "alcohol" statistics Australia
+site:aihw.gov.au ("National Prisoner Health Data Collection" OR NPHDC OR "The health of people in Australia's prisons")
 ```
 
-### Prison AOD Data - 2
+### Prisoner & Corrections Counts (ABS)
 
 ```txt
-site:aihw.gov.au "prisoner health" drug OR alcohol
+site:abs.gov.au ("Prisoners in Australia" OR "Corrective Services, Australia")
 ```
 
-### Research on Prison AOD
+### Report on Government Services (Justice)
 
 ```txt
-site:*.edu.au "prison" OR "incarceration" (AOD OR "drug treatment") Australia filetype:pdf
+site:pc.gov.au "Report on Government Services" ("corrective services" OR justice)
 ```
 
-### Post-Release Mortality Studies
+### Post-Release Mortality Cohorts
 
 ```txt
-"post-release" OR "release from prison" (mortality OR death OR overdose) research Australia
+("Mortality After Release from Custody" OR "Mortality After Release from Incarceration Consortium" OR "Prison and Transition Health") (Kinner OR Borschmann OR Burnet)
 ```
 
 ---
 
 ## 🖤💛❤️ First Nations & Justice
 
-### Aboriginal Over-Representation - 1
+> **Handle with cultural-safety care.** Aboriginal and Torres Strait Islander people are
+> catastrophically over-represented in custody, and death-in-custody data is culturally sensitive.
+> The institutions below are real and current, but this material should be steered by
+> community-controlled and peer sources and reviewed for Indigenous data sovereignty — see the
+> [First Nations pack](first-nations.md). Restrict RCIADIC searches to the National Report and
+> recommendations; **individual death reports are not appropriate for dorking.**
+
+### Aboriginal Sentencing Courts (Named)
 
 ```txt
-"Aboriginal" "over-representation" prison drug OR alcohol
+("Koori Court" OR "Murri Court" OR "Nunga Court" OR "Circle Sentencing" OR "Galambany Court") (drug OR alcohol OR "alcohol and other drugs")
 ```
 
-### Aboriginal Over-Representation - 2
+### Royal Commission & Deaths in Custody
 
 ```txt
-"Aboriginal" "incarceration" drug OR alcohol Australia
+(site:austlii.edu.au "Royal Commission into Aboriginal Deaths in Custody" "National Report") OR (site:aic.gov.au ("Deaths in custody in Australia" OR "National Deaths in Custody Program"))
 ```
 
-### Aboriginal Courts
+### Closing the Gap — Justice Targets
 
 ```txt
-"Koori Court" OR "Murri Court" OR "circle sentencing" drug OR alcohol
+site:closingthegap.gov.au ("Target 10" OR "Target 11" OR incarceration OR "youth detention")
 ```
 
-### Aboriginal Diversion - 1
+### Aboriginal Legal Services
 
 ```txt
-"Aboriginal" diversion drug OR alcohol Australia
+(site:alsnswact.org.au OR site:naaja.org.au OR site:als.org.au OR site:vals.org.au) (drug OR alcohol OR diversion OR bail)
 ```
 
-### Aboriginal Diversion - 2
+---
+
+## 🌏 International Prison Harm Reduction
+
+The decades of method and evidence on harm reduction in closed settings live overseas — name the
+actual guidance.
+
+### UN Comprehensive Package & Standards
 
 ```txt
-"Aboriginal Legal Service" drug OR alcohol
+site:unodc.org ("a comprehensive package of interventions" OR "Nelson Mandela Rules") prisons
+```
+
+### WHO & Harm Reduction International
+
+```txt
+(site:who.int "Prisons and health") OR (site:hri.global "Global State of Harm Reduction" prison)
+```
+
+### Prison Needle & Syringe Programs
+
+```txt
+("Prison Needle Exchange Program" OR "needle and syringe programmes in prisons" OR "Prison Needle Exchange: Lessons") (site:canada.ca OR site:csc-scc.gc.ca OR site:opensocietyfoundations.org OR filetype:pdf)
+```
+
+**Why this works:**
+
+- Canada's **PNEP** is the live, named federal prison needle exchange; the UNODC handbook and the
+  OSF review are the canonical evidence titles — far stronger than a generic `"prison" "needle"`
+  search
+
+### Global Prison Trends
+
+```txt
+(site:penalreform.org OR site:cdn.penalreform.org) "Global Prison Trends"
+```
+
+---
+
+## 💬 Peer & Lived-Experience
+
+The expertise of people who've been inside is its own evidence base — and is usually missing from
+the official record.
+
+### Peer Publications & Media
+
+```txt
+(site:nuaa.org.au OR site:crcnsw.org.au) ("Insider's News" OR "Paper Chained" OR "Jailbreak Radio")
+```
+
+### Peer & Drug-User-Org Submissions
+
+```txt
+(site:nuaa.org.au OR site:aivl.org.au) (prison OR custody OR "throughcare" OR "post-release") (submission OR "lived experience" OR peer)
+```
+
+### International Peer Networks
+
+```txt
+(site:euronpud.net OR site:inpud.net) prison (naloxone OR "harm reduction" OR peer)
 ```
 
 ---
 
 ## 🔗 Related Resources
 
+- **Source Intelligence:**
+  [Justice, Custody & Diversion](../resources/source-intelligence.md#-justice-custody--diversion) —
+  the services, courts, datasets, and peer publications every dork above is built on
+- **Synonym Block:** [Justice Terms](../05-synonym-blocks.md#-justice-terms)
 - **Related Packs:** [First Nations](first-nations.md), [OAT/OST](oat-ost.md),
-  [Naloxone](naloxone.md)
-- **Key Sources:** [Justice Health NSW](https://justicehealth.nsw.gov.au)
+  [Naloxone](naloxone.md), [Coroners & Deaths](coroners-deaths.md)
+- **Key Sources:** [Justice Health NSW](https://justicehealth.nsw.gov.au),
+  [Community Restorative Centre](https://crcnsw.org.au), [AIC](https://aic.gov.au)
 
 ---
 

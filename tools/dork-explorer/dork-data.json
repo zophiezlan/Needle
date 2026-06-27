@@ -17679,146 +17679,135 @@
     {
       "id": "prisons-justice",
       "title": "Prisons, Justice & Corrections Health",
-      "description": "Harm reduction in closed settings and justice system interactions.",
+      "description": "Harm reduction in closed settings and across the justice system — named by the actual service,",
       "dorks": [
         {
-          "id": "prisons-justice-search-gov-au",
-          "title": "Search gov.au",
+          "id": "prisons-justice-search-nuaa-org-au",
+          "title": "Search nuaa.org.au",
           "category": "Quick Start",
-          "query": "site:*.gov.au \"prison health\" OR \"correctional health\" \"alcohol and other drugs\" filetype:pdf",
+          "query": "site:nuaa.org.au \"Insider's News\"",
           "explanation": "",
           "difficulty": "beginner",
           "sourceFile": "dork-packs/prisons-justice.md",
           "sourceType": "dork-pack",
-          "sourceLine": 21,
-          "operators": [
-            "site",
-            "filetype"
-          ],
-          "targetDomains": [
-            "gov.au"
-          ],
-          "domainCategory": "government",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "australia"
-          ]
-        },
-        {
-          "id": "prisons-justice-prison-health-aod",
-          "title": "Prison Health & AOD",
-          "category": "Basic Queries",
-          "query": "site:*.gov.au \"prison health\" OR \"correctional health\" \"alcohol and other drugs\"",
-          "explanation": "",
-          "difficulty": "beginner",
-          "sourceFile": "dork-packs/prisons-justice.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 28,
+          "sourceLine": 32,
           "operators": [
             "site"
           ],
           "targetDomains": [
-            "gov.au"
+            "nuaa.org.au"
           ],
-          "domainCategory": "government",
+          "domainCategory": "ngo",
           "contentType": "any",
           "tags": [
             "australia"
           ]
         },
         {
-          "id": "prisons-justice-custody-drug-overdose",
-          "title": "Custody Drug/Overdose",
+          "id": "prisons-justice-peer-lived-experience-in-custody",
+          "title": "Peer & Lived-Experience in Custody",
           "category": "Basic Queries",
-          "query": "site:*.gov.au \"custody\" \"drug\" OR \"overdose\" OR \"withdrawal\"",
-          "explanation": "",
+          "query": "(site:nuaa.org.au OR site:crcnsw.org.au) (\"Insider's News\" OR \"Paper Chained\" OR \"Jailbreak Radio\")",
+          "explanation": "**Why this works:**\n\n- Leads with the lived-experience record — NUAA's in-prison magazine and CRC's prisoner-writing and\nradio — instead of a generic `\"prison\" \"drug\"` query",
           "difficulty": "beginner",
           "sourceFile": "dork-packs/prisons-justice.md",
           "sourceType": "dork-pack",
-          "sourceLine": 34,
+          "sourceLine": 39,
           "operators": [
             "site"
           ],
           "targetDomains": [
-            "gov.au"
+            "nuaa.org.au",
+            "crcnsw.org.au"
           ],
-          "domainCategory": "government",
+          "domainCategory": "ngo",
           "contentType": "any",
           "tags": [
+            "peer",
             "australia"
           ]
         },
         {
-          "id": "prisons-justice-corrections-harm-reduction",
-          "title": "Corrections Harm Reduction",
+          "id": "prisons-justice-custodial-health-services-named",
+          "title": "Custodial Health Services (Named)",
           "category": "Basic Queries",
-          "query": "\"corrections\" OR \"correctional\" \"harm reduction\" Australia filetype:pdf",
+          "query": "(site:justicehealth.nsw.gov.au OR site:westmoreton.health.qld.gov.au OR site:sahealth.sa.gov.au) (\"prison health\" OR \"prisoner health\" OR \"alcohol and other drugs\")",
           "explanation": "",
           "difficulty": "beginner",
-          "sourceFile": "dork-packs/prisons-justice.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 40,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "australia"
-          ]
-        },
-        {
-          "id": "prisons-justice-opioid-treatment-in-prisons",
-          "title": "Opioid Treatment in Prisons",
-          "category": "Intermediate Queries",
-          "query": "\"prison\" OR \"custody\" \"opioid treatment\" OR \"methadone\" OR \"buprenorphine\" Australia",
-          "explanation": "",
-          "difficulty": "intermediate",
           "sourceFile": "dork-packs/prisons-justice.md",
           "sourceType": "dork-pack",
           "sourceLine": 50,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "justicehealth.nsw.gov.au",
+            "westmoreton.health.qld.gov.au",
+            "sahealth.sa.gov.au"
+          ],
+          "domainCategory": "government",
           "contentType": "any",
           "tags": [
+            "services",
             "australia"
           ]
         },
         {
-          "id": "prisons-justice-correctional-pharmacotherapy",
-          "title": "Correctional Pharmacotherapy",
-          "category": "Intermediate Queries",
-          "query": "\"correctional\" \"pharmacotherapy\" OR \"OAT\" policy guidelines filetype:pdf",
-          "explanation": "",
-          "difficulty": "intermediate",
+          "id": "prisons-justice-national-prisoner-health-evidence",
+          "title": "National Prisoner-Health Evidence",
+          "category": "Basic Queries",
+          "query": "site:aihw.gov.au (\"The health of people in Australia's prisons\" OR \"The health of Australia's prisoners\")",
+          "explanation": "**Why this works:**\n\n- The AIHW report title _changed_ between editions — quoting both forms catches the 2022 and the\n2018 (and earlier) editions in one search",
+          "difficulty": "beginner",
           "sourceFile": "dork-packs/prisons-justice.md",
           "sourceType": "dork-pack",
           "sourceLine": 56,
           "operators": [
-            "filetype"
+            "site"
           ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "pdf",
+          "targetDomains": [
+            "aihw.gov.au"
+          ],
+          "domainCategory": "government",
+          "contentType": "any",
           "tags": [
-            "documents",
-            "policy"
+            "research",
+            "australia"
           ]
         },
         {
-          "id": "prisons-justice-prison-naloxone",
-          "title": "Prison Naloxone",
+          "id": "prisons-justice-justice-health-nsw-the-named-network-survey",
+          "title": "Justice Health NSW (the named network + survey)",
           "category": "Intermediate Queries",
-          "query": "\"prison naloxone\" OR \"custody naloxone\" OR \"release naloxone\" Australia",
+          "query": "(site:justicehealth.nsw.gov.au OR site:nsw.gov.au) (\"Justice Health and Forensic Mental Health Network\" OR \"Network Patient Health Survey\")",
+          "explanation": "**Why this works:**\n\n- The flagship is the **Network Patient Health Survey** (the prison-population health survey) —\ncontent is migrating from `justicehealth.nsw.gov.au` to `nsw.gov.au`, so OR both hosts",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/prisons-justice.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 71,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "justicehealth.nsw.gov.au",
+            "nsw.gov.au"
+          ],
+          "domainCategory": "government",
+          "contentType": "any",
+          "tags": [
+            "australia"
+          ]
+        },
+        {
+          "id": "prisons-justice-opioid-treatment-naloxone-in-custody",
+          "title": "Opioid Treatment & Naloxone in Custody",
+          "category": "Intermediate Queries",
+          "query": "(\"opioid treatment\" OR \"OAT\" OR methadone OR buprenorphine OR \"take-home naloxone\" OR \"naloxone on release\") (prison OR custody OR \"post-release\") Australia",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/prisons-justice.md",
           "sourceType": "dork-pack",
-          "sourceLine": 62,
+          "sourceLine": 82,
           "operators": [],
           "targetDomains": [],
           "domainCategory": "any",
@@ -17828,15 +17817,40 @@
           ]
         },
         {
-          "id": "prisons-justice-throughcare-continuity",
-          "title": "Throughcare/Continuity",
+          "id": "prisons-justice-throughcare-re-entry-named-programs",
+          "title": "Throughcare & Re-entry (Named Programs)",
           "category": "Intermediate Queries",
-          "query": "\"throughcare\" OR \"continuity of care\" \"opioid treatment\" prison release",
+          "query": "(site:crcnsw.org.au OR site:caraniche.com.au OR site:goodpathways.org.au) (\"AOD Transition Program\" OR \"Extended Reintegration Service\" OR \"StepOut\" OR \"Throughcare Program\")",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/prisons-justice.md",
           "sourceType": "dork-pack",
-          "sourceLine": 68,
+          "sourceLine": 88,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "crcnsw.org.au",
+            "caraniche.com.au",
+            "goodpathways.org.au"
+          ],
+          "domainCategory": "ngo",
+          "contentType": "any",
+          "tags": [
+            "services",
+            "australia"
+          ]
+        },
+        {
+          "id": "prisons-justice-compulsory-drug-treatment-nsw",
+          "title": "Compulsory Drug Treatment (NSW)",
+          "category": "Intermediate Queries",
+          "query": "\"Compulsory Drug Treatment Correctional Centre\" (Parklea OR CDTCC OR \"Drug Court\")",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/prisons-justice.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 94,
           "operators": [],
           "targetDomains": [],
           "domainCategory": "any",
@@ -17847,439 +17861,36 @@
           "id": "prisons-justice-comprehensive-prison-aod-sweep",
           "title": "Comprehensive Prison AOD Sweep",
           "category": "Advanced Queries",
-          "query": "(\"prison\" OR \"custody\" OR \"correctional\" OR \"incarceration\") (\"alcohol and other drugs\" OR AOD OR \"harm reduction\" OR \"drug treatment\" OR \"opioid treatment\") Australia (policy OR guideline OR program OR research) filetype:pdf after:2020",
+          "query": "(prison OR custody OR correctional OR incarceration) (\"alcohol and other drugs\" OR AOD OR \"harm reduction\" OR \"opioid treatment\" OR \"take-home naloxone\") (policy OR guideline OR program OR evaluation) Australia filetype:pdf after:2020",
           "explanation": "",
           "difficulty": "advanced",
           "sourceFile": "dork-packs/prisons-justice.md",
           "sourceType": "dork-pack",
-          "sourceLine": 78,
+          "sourceLine": 104,
           "operators": [
             "filetype",
             "after"
           ],
           "targetDomains": [],
-          "domainCategory": "research",
+          "domainCategory": "any",
           "contentType": "pdf",
           "tags": [
             "documents",
-            "research",
             "policy",
             "services",
             "australia"
           ]
         },
         {
-          "id": "prisons-justice-post-release-overdose-risk-1",
-          "title": "Post-Release Overdose Risk - 1",
+          "id": "prisons-justice-post-release-overdose-mortality",
+          "title": "Post-Release Overdose & Mortality",
           "category": "Advanced Queries",
-          "query": "\"post-release\" \"overdose\" OR \"drug death\" risk Australia",
-          "explanation": "",
+          "query": "(\"Mortality After Release from Custody\" OR \"Prison and Transition Health\" OR \"post-release\") (overdose OR mortality OR \"drug-induced death\") (Kinner OR Borschmann OR Australia)",
+          "explanation": "**Why this works:**\n\n- Names the actual cohorts — the **MARC** study (Kinner, QLD) and the Burnet **PATH** cohort (people\nwho inject drugs leaving prison) — rather than hoping a generic mortality search surfaces them",
           "difficulty": "advanced",
           "sourceFile": "dork-packs/prisons-justice.md",
           "sourceType": "dork-pack",
-          "sourceLine": 84,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "australia"
-          ]
-        },
-        {
-          "id": "prisons-justice-post-release-overdose-risk-2",
-          "title": "Post-Release Overdose Risk - 2",
-          "category": "Advanced Queries",
-          "query": "\"prison release\" overdose (prevention OR harm reduction)",
-          "explanation": "",
-          "difficulty": "advanced",
-          "sourceFile": "dork-packs/prisons-justice.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 90,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "prisons-justice-withdrawal-management",
-          "title": "Withdrawal Management",
-          "category": "Advanced Queries",
-          "query": "\"prison\" OR \"custody\" \"withdrawal\" (management OR protocol OR guideline) Australia",
-          "explanation": "",
-          "difficulty": "advanced",
-          "sourceFile": "dork-packs/prisons-justice.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 96,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "australia"
-          ]
-        },
-        {
-          "id": "prisons-justice-justice-health-services-1",
-          "title": "Justice Health Services - 1",
-          "category": "\udfe5 Healthcare in Custody",
-          "query": "site:justicehealth.nsw.gov.au filetype:pdf",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/prisons-justice.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 106,
-          "operators": [
-            "site",
-            "filetype"
-          ],
-          "targetDomains": [
-            "justicehealth.nsw.gov.au"
-          ],
-          "domainCategory": "government",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "services",
-            "australia"
-          ]
-        },
-        {
-          "id": "prisons-justice-justice-health-services-2",
-          "title": "Justice Health Services - 2",
-          "category": "\udfe5 Healthcare in Custody",
-          "query": "\"justice health\" drug OR alcohol OR AOD",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/prisons-justice.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 112,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "services"
-          ]
-        },
-        {
-          "id": "prisons-justice-prison-health-guidelines",
-          "title": "Prison Health Guidelines",
-          "category": "\udfe5 Healthcare in Custody",
-          "query": "\"prison health\" OR \"prisoner health\" (guideline OR standard) AOD Australia",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/prisons-justice.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 118,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "australia"
-          ]
-        },
-        {
-          "id": "prisons-justice-forensic-aod",
-          "title": "Forensic AOD",
-          "category": "\udfe5 Healthcare in Custody",
-          "query": "\"forensic\" AOD OR \"alcohol and other drugs\" service Australia",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/prisons-justice.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 124,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "services",
-            "australia"
-          ]
-        },
-        {
-          "id": "prisons-justice-drug-court-programs",
-          "title": "Drug Court Programs",
-          "category": "⚖ Drug Courts & Diversion",
-          "query": "\"drug court\" Australia (evaluation OR outcomes) filetype:pdf",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/prisons-justice.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 134,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "services",
-            "australia"
-          ]
-        },
-        {
-          "id": "prisons-justice-state-drug-courts",
-          "title": "State Drug Courts",
-          "category": "⚖ Drug Courts & Diversion",
-          "query": "\"drug court\" (NSW OR VIC OR QLD OR WA OR SA) evaluation",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/prisons-justice.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 140,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "prisons-justice-merit-nsw",
-          "title": "MERIT (NSW)",
-          "category": "⚖ Drug Courts & Diversion",
-          "query": "\"MERIT\" OR \"Magistrates Early Referral Into Treatment\" NSW",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/prisons-justice.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 146,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "prisons-justice-cisp-victoria",
-          "title": "CISP (Victoria)",
-          "category": "⚖ Drug Courts & Diversion",
-          "query": "\"CISP\" OR \"Court Integrated Services Program\" Victoria",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/prisons-justice.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 152,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "services"
-          ]
-        },
-        {
-          "id": "prisons-justice-diversion-programs-1",
-          "title": "Diversion Programs - 1",
-          "category": "⚖ Drug Courts & Diversion",
-          "query": "\"diversion\" drug OR substance offence Australia evaluation",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/prisons-justice.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 158,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "services",
-            "australia"
-          ]
-        },
-        {
-          "id": "prisons-justice-diversion-programs-2",
-          "title": "Diversion Programs - 2",
-          "category": "⚖ Drug Courts & Diversion",
-          "query": "\"drug diversion\" program Australia effectiveness",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/prisons-justice.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 164,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "services",
-            "australia"
-          ]
-        },
-        {
-          "id": "prisons-justice-re-entry-support-1",
-          "title": "Re-entry Support - 1",
-          "category": "\udd04 Post-Release & Re-entry",
-          "query": "\"re-entry\" OR \"reintegration\" AOD support Australia",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/prisons-justice.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 174,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "australia"
-          ]
-        },
-        {
-          "id": "prisons-justice-re-entry-support-2",
-          "title": "Re-entry Support - 2",
-          "category": "\udd04 Post-Release & Re-entry",
-          "query": "\"transition\" custody community drug OR alcohol support",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/prisons-justice.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 180,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "community",
-          "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "prisons-justice-throughcare-programs",
-          "title": "Throughcare Programs",
-          "category": "\udd04 Post-Release & Re-entry",
-          "query": "\"throughcare\" drug OR alcohol prison release Australia",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/prisons-justice.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 186,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "services",
-            "australia"
-          ]
-        },
-        {
-          "id": "prisons-justice-post-release-services",
-          "title": "Post-Release Services",
-          "category": "\udd04 Post-Release & Re-entry",
-          "query": "\"post-release\" (AOD OR \"alcohol and other drugs\") (service OR support) Australia",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/prisons-justice.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 192,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "services",
-            "australia"
-          ]
-        },
-        {
-          "id": "prisons-justice-housing-re-entry",
-          "title": "Housing & Re-entry",
-          "category": "\udd04 Post-Release & Re-entry",
-          "query": "\"housing\" \"prison release\" OR \"post-release\" drug OR alcohol Australia",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/prisons-justice.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 198,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "australia"
-          ]
-        },
-        {
-          "id": "prisons-justice-youth-justice-aod",
-          "title": "Youth Justice AOD",
-          "category": "\udc65 Youth Justice",
-          "query": "\"youth justice\" OR \"juvenile justice\" drug OR alcohol Australia",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/prisons-justice.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 208,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "australia"
-          ]
-        },
-        {
-          "id": "prisons-justice-youth-diversion-1",
-          "title": "Youth Diversion - 1",
-          "category": "\udc65 Youth Justice",
-          "query": "\"young offenders\" drug OR alcohol diversion Australia",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/prisons-justice.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 214,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "australia"
-          ]
-        },
-        {
-          "id": "prisons-justice-youth-diversion-2",
-          "title": "Youth Diversion - 2",
-          "category": "\udc65 Youth Justice",
-          "query": "\"youth detention\" drug OR alcohol program",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/prisons-justice.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 220,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "services"
-          ]
-        },
-        {
-          "id": "prisons-justice-youth-diversion-3",
-          "title": "Youth Diversion - 3",
-          "category": "\udc65 Youth Justice",
-          "query": "\"children's court\" drug OR alcohol diversion",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/prisons-justice.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 226,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "prisons-justice-prison-aod-data-1",
-          "title": "Prison AOD Data - 1",
-          "category": "Data & Research",
-          "query": "\"prisoner\" \"drug use\" OR \"alcohol\" statistics Australia",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/prisons-justice.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 236,
+          "sourceLine": 110,
           "operators": [],
           "targetDomains": [],
           "domainCategory": "any",
@@ -18290,15 +17901,411 @@
           ]
         },
         {
-          "id": "prisons-justice-prison-aod-data-2",
-          "title": "Prison AOD Data - 2",
-          "category": "Data & Research",
-          "query": "site:aihw.gov.au \"prisoner health\" drug OR alcohol",
+          "id": "prisons-justice-racgp-prison-health-standards",
+          "title": "RACGP Prison Health Standards",
+          "category": "Advanced Queries",
+          "query": "site:racgp.org.au \"Standards for health services in Australian prisons\"",
+          "explanation": "",
+          "difficulty": "advanced",
+          "sourceFile": "dork-packs/prisons-justice.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 121,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "racgp.org.au"
+          ],
+          "domainCategory": "ngo",
+          "contentType": "any",
+          "tags": [
+            "services",
+            "australia"
+          ]
+        },
+        {
+          "id": "prisons-justice-withdrawal-management-in-custody",
+          "title": "Withdrawal Management in Custody",
+          "category": "Advanced Queries",
+          "query": "(prison OR custody OR reception) (withdrawal OR detox) (management OR protocol OR guideline) Australia filetype:pdf",
+          "explanation": "",
+          "difficulty": "advanced",
+          "sourceFile": "dork-packs/prisons-justice.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 127,
+          "operators": [
+            "filetype"
+          ],
+          "targetDomains": [],
+          "domainCategory": "any",
+          "contentType": "pdf",
+          "tags": [
+            "documents",
+            "australia"
+          ]
+        },
+        {
+          "id": "prisons-justice-nsw-justice-health-forensic-mental-health-network",
+          "title": "NSW — Justice Health & Forensic Mental Health Network",
+          "category": "\udfe5 Custodial Health Services (by Jurisdiction)",
+          "query": "(site:justicehealth.nsw.gov.au OR site:nsw.gov.au) (\"Network Patient Health Survey\" OR \"Young People in Custody Health Survey\") filetype:pdf",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/prisons-justice.md",
           "sourceType": "dork-pack",
-          "sourceLine": 242,
+          "sourceLine": 139,
+          "operators": [
+            "site",
+            "filetype"
+          ],
+          "targetDomains": [
+            "justicehealth.nsw.gov.au",
+            "nsw.gov.au"
+          ],
+          "domainCategory": "government",
+          "contentType": "pdf",
+          "tags": [
+            "documents",
+            "australia"
+          ]
+        },
+        {
+          "id": "prisons-justice-victoria-justice-health-djcs",
+          "title": "Victoria — Justice Health (DJCS)",
+          "category": "\udfe5 Custodial Health Services (by Jurisdiction)",
+          "query": "(site:justice.vic.gov.au OR site:corrections.vic.gov.au) \"Justice Health\" (prison OR custodial OR \"alcohol and other drugs\")",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/prisons-justice.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 145,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "justice.vic.gov.au",
+            "corrections.vic.gov.au"
+          ],
+          "domainCategory": "government",
+          "contentType": "any",
+          "tags": [
+            "australia"
+          ]
+        },
+        {
+          "id": "prisons-justice-queensland-prison-health-services-west-moreton",
+          "title": "Queensland — Prison Health Services (West Moreton)",
+          "category": "\udfe5 Custodial Health Services (by Jurisdiction)",
+          "query": "(site:westmoreton.health.qld.gov.au OR site:health.qld.gov.au) (\"Prison Health Services\" OR \"Prisoner Health Services\")",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/prisons-justice.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 151,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "westmoreton.health.qld.gov.au",
+            "health.qld.gov.au"
+          ],
+          "domainCategory": "government",
+          "contentType": "any",
+          "tags": [
+            "services",
+            "australia"
+          ]
+        },
+        {
+          "id": "prisons-justice-wa-corrective-services-health-the-exception",
+          "title": "WA — Corrective Services Health (the exception)",
+          "category": "\udfe5 Custodial Health Services (by Jurisdiction)",
+          "query": "(site:wa.gov.au OR site:correctiveservices.wa.gov.au) \"Corrective Services\" \"health care\" prison",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/prisons-justice.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 157,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "wa.gov.au",
+            "correctiveservices.wa.gov.au"
+          ],
+          "domainCategory": "government",
+          "contentType": "any",
+          "tags": [
+            "services",
+            "australia"
+          ]
+        },
+        {
+          "id": "prisons-justice-sa-sa-prison-health-service-saphs",
+          "title": "SA — SA Prison Health Service (SAPHS)",
+          "category": "\udfe5 Custodial Health Services (by Jurisdiction)",
+          "query": "(site:sahealth.sa.gov.au OR site:calhn.sa.gov.au) (\"SA Prison Health Service\" OR \"South Australian Prison Health Service\" OR SAPHS)",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/prisons-justice.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 163,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "sahealth.sa.gov.au",
+            "calhn.sa.gov.au"
+          ],
+          "domainCategory": "government",
+          "contentType": "any",
+          "tags": [
+            "services",
+            "australia"
+          ]
+        },
+        {
+          "id": "prisons-justice-act-tas-nt",
+          "title": "ACT, TAS & NT",
+          "category": "\udfe5 Custodial Health Services (by Jurisdiction)",
+          "query": "(site:canberrahealthservices.act.gov.au \"Custodial Health\") OR (site:health.tas.gov.au \"Correctional Primary Health\") OR ((site:nt.gov.au OR site:corrections.nt.gov.au) prisoner health)",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/prisons-justice.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 169,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "canberrahealthservices.act.gov.au",
+            "health.tas.gov.au",
+            "nt.gov.au",
+            "corrections.nt.gov.au"
+          ],
+          "domainCategory": "government",
+          "contentType": "any",
+          "tags": [
+            "services",
+            "australia"
+          ]
+        },
+        {
+          "id": "prisons-justice-nsw-drug-court-merit-eddi",
+          "title": "NSW — Drug Court, MERIT & EDDI",
+          "category": "⚖ Drug Courts & Diversion",
+          "query": "(site:drugcourt.nsw.gov.au OR site:dcj.nsw.gov.au OR site:bocsar.nsw.gov.au) (\"Drug Court of New South Wales\" OR \"Magistrates Early Referral Into Treatment\" OR MERIT OR \"Early Drug Diversion Initiative\")",
+          "explanation": "**Why this works:**\n\n- Pairs the courts/justice hosts with **BOCSAR** (`bocsar.nsw.gov.au`), which actually authors the\nNSW Drug Court and MERIT evaluations — the evaluator's domain is where the evidence lives",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/prisons-justice.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 182,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "drugcourt.nsw.gov.au",
+            "dcj.nsw.gov.au",
+            "bocsar.nsw.gov.au"
+          ],
+          "domainCategory": "government",
+          "contentType": "any",
+          "tags": [
+            "australia"
+          ]
+        },
+        {
+          "id": "prisons-justice-victoria-drug-court-dato-cisp",
+          "title": "Victoria — Drug Court (DATO) & CISP",
+          "category": "⚖ Drug Courts & Diversion",
+          "query": "(site:mcv.vic.gov.au OR site:countycourt.vic.gov.au) (\"Drug Court\" OR \"Drug and Alcohol Treatment Order\" OR \"Court Integrated Services Program\" OR CISP)",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/prisons-justice.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 193,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "mcv.vic.gov.au",
+            "countycourt.vic.gov.au"
+          ],
+          "domainCategory": "government",
+          "contentType": "any",
+          "tags": [
+            "services",
+            "australia"
+          ]
+        },
+        {
+          "id": "prisons-justice-queensland-qdac-court-link",
+          "title": "Queensland — QDAC & Court Link",
+          "category": "⚖ Drug Courts & Diversion",
+          "query": "(site:courts.qld.gov.au OR site:police.qld.gov.au) (\"Queensland Drug and Alcohol Court\" OR QDAC OR \"Police Drug Diversion Program\" OR \"Court Link\")",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/prisons-justice.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 199,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "courts.qld.gov.au",
+            "police.qld.gov.au"
+          ],
+          "domainCategory": "government",
+          "contentType": "any",
+          "tags": [
+            "services",
+            "australia"
+          ]
+        },
+        {
+          "id": "prisons-justice-sa-wa-treatment-intervention-court-pddi-drug-court-cir",
+          "title": "SA & WA — Treatment Intervention Court, PDDI, Drug Court, CIR",
+          "category": "⚖ Drug Courts & Diversion",
+          "query": "(site:courts.sa.gov.au \"Treatment Intervention Court\") OR (site:sahealth.sa.gov.au \"Police Drug Diversion Initiative\") OR (site:magistratescourt.wa.gov.au \"Drug Court\") OR (site:mhc.wa.gov.au \"Cannabis Intervention Requirement\")",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/prisons-justice.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 205,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "courts.sa.gov.au",
+            "sahealth.sa.gov.au",
+            "magistratescourt.wa.gov.au",
+            "mhc.wa.gov.au"
+          ],
+          "domainCategory": "government",
+          "contentType": "any",
+          "tags": [
+            "australia"
+          ]
+        },
+        {
+          "id": "prisons-justice-act-drug-alcohol-sentencing-list",
+          "title": "ACT — Drug & Alcohol Sentencing List",
+          "category": "⚖ Drug Courts & Diversion",
+          "query": "(site:courts.act.gov.au OR site:anu.edu.au) (\"Drug and Alcohol Sentencing List\" OR DASL OR \"Drug and Alcohol Treatment Order\")",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/prisons-justice.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 211,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "courts.act.gov.au",
+            "anu.edu.au"
+          ],
+          "domainCategory": "government",
+          "contentType": "any",
+          "tags": [
+            "australia"
+          ]
+        },
+        {
+          "id": "prisons-justice-national-illicit-drug-diversion-initiative",
+          "title": "National — Illicit Drug Diversion Initiative",
+          "category": "⚖ Drug Courts & Diversion",
+          "query": "(site:aihw.gov.au OR site:aic.gov.au) (\"Illicit Drug Diversion Initiative\" OR IDDI) (evaluation OR effectiveness)",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/prisons-justice.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 217,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "aihw.gov.au",
+            "aic.gov.au"
+          ],
+          "domainCategory": "government",
+          "contentType": "any",
+          "tags": [
+            "australia"
+          ]
+        },
+        {
+          "id": "prisons-justice-community-restorative-centre-nsw",
+          "title": "Community Restorative Centre (NSW)",
+          "category": "\udd04 Throughcare & Re-entry",
+          "query": "site:crcnsw.org.au (\"Alcohol and Other Drugs (AOD) Transition Program\" OR \"Extended Reintegration Service\" OR \"The Miranda Project\")",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/prisons-justice.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 229,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "crcnsw.org.au"
+          ],
+          "domainCategory": "ngo",
+          "contentType": "any",
+          "tags": [
+            "services",
+            "australia"
+          ]
+        },
+        {
+          "id": "prisons-justice-post-release-aod-naloxone-on-release",
+          "title": "Post-Release AOD & Naloxone on Release",
+          "category": "\udd04 Throughcare & Re-entry",
+          "query": "(\"take-home naloxone\" OR \"naloxone on release\" OR \"post-release\") (AOD OR \"alcohol and other drugs\" OR overdose) prison (release OR transition) Australia",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/prisons-justice.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 235,
+          "operators": [],
+          "targetDomains": [],
+          "domainCategory": "any",
+          "contentType": "any",
+          "tags": [
+            "australia"
+          ]
+        },
+        {
+          "id": "prisons-justice-national-corrections-policy",
+          "title": "National Corrections Policy",
+          "category": "\udd04 Throughcare & Re-entry",
+          "query": "\"Guiding Principles for Corrections in Australia\" (throughcare OR \"post-release\" OR reintegration) filetype:pdf",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/prisons-justice.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 241,
+          "operators": [
+            "filetype"
+          ],
+          "targetDomains": [],
+          "domainCategory": "any",
+          "contentType": "pdf",
+          "tags": [
+            "documents",
+            "policy",
+            "australia"
+          ]
+        },
+        {
+          "id": "prisons-justice-national-prisoner-health-data",
+          "title": "National Prisoner Health Data",
+          "category": "Data & Post-Release Research",
+          "query": "site:aihw.gov.au (\"National Prisoner Health Data Collection\" OR NPHDC OR \"The health of people in Australia's prisons\")",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/prisons-justice.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 251,
           "operators": [
             "site"
           ],
@@ -18313,134 +18320,320 @@
           ]
         },
         {
-          "id": "prisons-justice-research-on-prison-aod",
-          "title": "Research on Prison AOD",
-          "category": "Data & Research",
-          "query": "site:*.edu.au \"prison\" OR \"incarceration\" (AOD OR \"drug treatment\") Australia filetype:pdf",
+          "id": "prisons-justice-prisoner-corrections-counts-abs",
+          "title": "Prisoner & Corrections Counts (ABS)",
+          "category": "Data & Post-Release Research",
+          "query": "site:abs.gov.au (\"Prisoners in Australia\" OR \"Corrective Services, Australia\")",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/prisons-justice.md",
           "sourceType": "dork-pack",
-          "sourceLine": 248,
+          "sourceLine": 257,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "abs.gov.au"
+          ],
+          "domainCategory": "government",
+          "contentType": "any",
+          "tags": [
+            "services",
+            "australia"
+          ]
+        },
+        {
+          "id": "prisons-justice-report-on-government-services-justice",
+          "title": "Report on Government Services (Justice)",
+          "category": "Data & Post-Release Research",
+          "query": "site:pc.gov.au \"Report on Government Services\" (\"corrective services\" OR justice)",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/prisons-justice.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 263,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "pc.gov.au"
+          ],
+          "domainCategory": "government",
+          "contentType": "any",
+          "tags": [
+            "documents",
+            "services",
+            "australia"
+          ]
+        },
+        {
+          "id": "prisons-justice-post-release-mortality-cohorts",
+          "title": "Post-Release Mortality Cohorts",
+          "category": "Data & Post-Release Research",
+          "query": "(\"Mortality After Release from Custody\" OR \"Mortality After Release from Incarceration Consortium\" OR \"Prison and Transition Health\") (Kinner OR Borschmann OR Burnet)",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/prisons-justice.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 269,
+          "operators": [],
+          "targetDomains": [],
+          "domainCategory": "any",
+          "contentType": "any",
+          "tags": [
+            "data"
+          ]
+        },
+        {
+          "id": "prisons-justice-aboriginal-sentencing-courts-named",
+          "title": "Aboriginal Sentencing Courts (Named)",
+          "category": "\udda4\udc9b❤ First Nations & Justice",
+          "query": "(\"Koori Court\" OR \"Murri Court\" OR \"Nunga Court\" OR \"Circle Sentencing\" OR \"Galambany Court\") (drug OR alcohol OR \"alcohol and other drugs\")",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/prisons-justice.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 286,
+          "operators": [],
+          "targetDomains": [],
+          "domainCategory": "any",
+          "contentType": "any",
+          "tags": []
+        },
+        {
+          "id": "prisons-justice-royal-commission-deaths-in-custody",
+          "title": "Royal Commission & Deaths in Custody",
+          "category": "\udda4\udc9b❤ First Nations & Justice",
+          "query": "(site:austlii.edu.au \"Royal Commission into Aboriginal Deaths in Custody\" \"National Report\") OR (site:aic.gov.au (\"Deaths in custody in Australia\" OR \"National Deaths in Custody Program\"))",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/prisons-justice.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 292,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "austlii.edu.au",
+            "aic.gov.au"
+          ],
+          "domainCategory": "government",
+          "contentType": "any",
+          "tags": [
+            "documents",
+            "services",
+            "australia"
+          ]
+        },
+        {
+          "id": "prisons-justice-closing-the-gap-justice-targets",
+          "title": "Closing the Gap — Justice Targets",
+          "category": "\udda4\udc9b❤ First Nations & Justice",
+          "query": "site:closingthegap.gov.au (\"Target 10\" OR \"Target 11\" OR incarceration OR \"youth detention\")",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/prisons-justice.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 298,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "closingthegap.gov.au"
+          ],
+          "domainCategory": "government",
+          "contentType": "any",
+          "tags": [
+            "australia"
+          ]
+        },
+        {
+          "id": "prisons-justice-aboriginal-legal-services",
+          "title": "Aboriginal Legal Services",
+          "category": "\udda4\udc9b❤ First Nations & Justice",
+          "query": "(site:alsnswact.org.au OR site:naaja.org.au OR site:als.org.au OR site:vals.org.au) (drug OR alcohol OR diversion OR bail)",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/prisons-justice.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 304,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "alsnswact.org.au",
+            "naaja.org.au",
+            "als.org.au",
+            "vals.org.au"
+          ],
+          "domainCategory": "ngo",
+          "contentType": "any",
+          "tags": [
+            "services",
+            "australia"
+          ]
+        },
+        {
+          "id": "prisons-justice-un-comprehensive-package-standards",
+          "title": "UN Comprehensive Package & Standards",
+          "category": "International Prison Harm Reduction",
+          "query": "site:unodc.org (\"a comprehensive package of interventions\" OR \"Nelson Mandela Rules\") prisons",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/prisons-justice.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 317,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "unodc.org"
+          ],
+          "domainCategory": "international",
+          "contentType": "any",
+          "tags": []
+        },
+        {
+          "id": "prisons-justice-who-harm-reduction-international",
+          "title": "WHO & Harm Reduction International",
+          "category": "International Prison Harm Reduction",
+          "query": "(site:who.int \"Prisons and health\") OR (site:hri.global \"Global State of Harm Reduction\" prison)",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/prisons-justice.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 323,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "who.int",
+            "hri.global"
+          ],
+          "domainCategory": "international",
+          "contentType": "any",
+          "tags": [
+            "international"
+          ]
+        },
+        {
+          "id": "prisons-justice-prison-needle-syringe-programs",
+          "title": "Prison Needle & Syringe Programs",
+          "category": "International Prison Harm Reduction",
+          "query": "(\"Prison Needle Exchange Program\" OR \"needle and syringe programmes in prisons\" OR \"Prison Needle Exchange: Lessons\") (site:canada.ca OR site:csc-scc.gc.ca OR site:opensocietyfoundations.org OR filetype:pdf)",
+          "explanation": "**Why this works:**\n\n- Canada's **PNEP** is the live, named federal prison needle exchange; the UNODC handbook and the\nOSF review are the canonical evidence titles — far stronger than a generic `\"prison\" \"needle\"`\nsearch",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/prisons-justice.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 329,
           "operators": [
             "site",
             "filetype"
           ],
           "targetDomains": [
-            "edu.au"
+            "canada.ca",
+            "csc-scc.gc.ca",
+            "opensocietyfoundations.org"
           ],
-          "domainCategory": "education",
+          "domainCategory": "any",
           "contentType": "pdf",
           "tags": [
             "documents",
-            "research",
-            "australia"
-          ]
-        },
-        {
-          "id": "prisons-justice-post-release-mortality-studies",
-          "title": "Post-Release Mortality Studies",
-          "category": "Data & Research",
-          "query": "\"post-release\" OR \"release from prison\" (mortality OR death OR overdose) research Australia",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/prisons-justice.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 254,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "research",
-          "contentType": "any",
-          "tags": [
-            "research",
-            "data",
-            "australia"
-          ]
-        },
-        {
-          "id": "prisons-justice-aboriginal-over-representation-1",
-          "title": "Aboriginal Over-Representation - 1",
-          "category": "\udda4\udc9b❤ First Nations & Justice",
-          "query": "\"Aboriginal\" \"over-representation\" prison drug OR alcohol",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/prisons-justice.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 264,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "prisons-justice-aboriginal-over-representation-2",
-          "title": "Aboriginal Over-Representation - 2",
-          "category": "\udda4\udc9b❤ First Nations & Justice",
-          "query": "\"Aboriginal\" \"incarceration\" drug OR alcohol Australia",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/prisons-justice.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 270,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "australia"
-          ]
-        },
-        {
-          "id": "prisons-justice-aboriginal-courts",
-          "title": "Aboriginal Courts",
-          "category": "\udda4\udc9b❤ First Nations & Justice",
-          "query": "\"Koori Court\" OR \"Murri Court\" OR \"circle sentencing\" drug OR alcohol",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/prisons-justice.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 276,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "prisons-justice-aboriginal-diversion-1",
-          "title": "Aboriginal Diversion - 1",
-          "category": "\udda4\udc9b❤ First Nations & Justice",
-          "query": "\"Aboriginal\" diversion drug OR alcohol Australia",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/prisons-justice.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 282,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "australia"
-          ]
-        },
-        {
-          "id": "prisons-justice-aboriginal-diversion-2",
-          "title": "Aboriginal Diversion - 2",
-          "category": "\udda4\udc9b❤ First Nations & Justice",
-          "query": "\"Aboriginal Legal Service\" drug OR alcohol",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/prisons-justice.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 288,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
             "services"
+          ]
+        },
+        {
+          "id": "prisons-justice-global-prison-trends",
+          "title": "Global Prison Trends",
+          "category": "International Prison Harm Reduction",
+          "query": "(site:penalreform.org OR site:cdn.penalreform.org) \"Global Prison Trends\"",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/prisons-justice.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 341,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "penalreform.org",
+            "cdn.penalreform.org"
+          ],
+          "domainCategory": "any",
+          "contentType": "any",
+          "tags": [
+            "international"
+          ]
+        },
+        {
+          "id": "prisons-justice-peer-publications-media",
+          "title": "Peer Publications & Media",
+          "category": "\udcac Peer & Lived-Experience",
+          "query": "(site:nuaa.org.au OR site:crcnsw.org.au) (\"Insider's News\" OR \"Paper Chained\" OR \"Jailbreak Radio\")",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/prisons-justice.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 354,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "nuaa.org.au",
+            "crcnsw.org.au"
+          ],
+          "domainCategory": "ngo",
+          "contentType": "any",
+          "tags": [
+            "peer",
+            "australia"
+          ]
+        },
+        {
+          "id": "prisons-justice-peer-drug-user-org-submissions",
+          "title": "Peer & Drug-User-Org Submissions",
+          "category": "\udcac Peer & Lived-Experience",
+          "query": "(site:nuaa.org.au OR site:aivl.org.au) (prison OR custody OR \"throughcare\" OR \"post-release\") (submission OR \"lived experience\" OR peer)",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/prisons-justice.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 360,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "nuaa.org.au",
+            "aivl.org.au"
+          ],
+          "domainCategory": "ngo",
+          "contentType": "any",
+          "tags": [
+            "peer",
+            "australia"
+          ]
+        },
+        {
+          "id": "prisons-justice-international-peer-networks",
+          "title": "International Peer Networks",
+          "category": "\udcac Peer & Lived-Experience",
+          "query": "(site:euronpud.net OR site:inpud.net) prison (naloxone OR \"harm reduction\" OR peer)",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/prisons-justice.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 366,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "euronpud.net",
+            "inpud.net"
+          ],
+          "domainCategory": "any",
+          "contentType": "any",
+          "tags": [
+            "peer"
           ]
         }
       ],
@@ -19129,183 +19322,68 @@
     {
       "id": "rural-remote",
       "title": "Rural, Regional & Remote Australia",
-      "description": "Harm reduction services and research specific to non-metropolitan areas.",
+      "description": "Harm reduction services, evidence, and the \"tyranny of distance\" outside the metros — named by the",
       "dorks": [
         {
-          "id": "rural-remote-find-pdf-files",
-          "title": "Find PDF files",
+          "id": "rural-remote-search-ruralhealth-org-au",
+          "title": "Search ruralhealth.org.au",
           "category": "Quick Start",
-          "query": "(\"rural\" OR \"regional\" OR \"remote\") \"harm reduction\" Australia filetype:pdf",
+          "query": "site:ruralhealth.org.au \"Alcohol, smoking, vaping and other drug use in rural Australia\"",
           "explanation": "",
           "difficulty": "beginner",
           "sourceFile": "dork-packs/rural-remote.md",
           "sourceType": "dork-pack",
-          "sourceLine": 26,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "australia"
-          ]
-        },
-        {
-          "id": "rural-remote-general-rural-regional-aod",
-          "title": "General Rural/Regional AOD",
-          "category": "Basic Queries",
-          "query": "(\"rural\" OR \"regional\" OR \"remote\") \"alcohol and other drugs\" (service OR access) site:*.gov.au",
-          "explanation": "",
-          "difficulty": "beginner",
-          "sourceFile": "dork-packs/rural-remote.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 33,
+          "sourceLine": 29,
           "operators": [
             "site"
           ],
           "targetDomains": [
-            "gov.au"
+            "ruralhealth.org.au"
           ],
-          "domainCategory": "government",
+          "domainCategory": "health",
           "contentType": "any",
           "tags": [
-            "services",
             "australia"
           ]
         },
         {
-          "id": "rural-remote-rural-harm-reduction",
-          "title": "Rural Harm Reduction",
+          "id": "rural-remote-named-rural-producers-aod-content",
+          "title": "Named Rural Producers (AOD content)",
           "category": "Basic Queries",
-          "query": "(\"rural\" OR \"regional\") \"harm reduction\" Australia filetype:pdf",
-          "explanation": "",
+          "query": "(site:ruralhealth.org.au OR site:flyingdoctor.org.au) (\"alcohol and other drugs\" OR \"Partyline\" OR \"Best for the Bush\")",
+          "explanation": "**Why this works:**\n\n- Goes straight to the two named rural producers that actually carry AOD material — the NRHA\n(magazine **Partyline**, plus the AOD fact sheet) and the RFDS (**Best for the Bush**) — instead\nof a generic `\"rural\" \"drug\"` query",
           "difficulty": "beginner",
           "sourceFile": "dork-packs/rural-remote.md",
           "sourceType": "dork-pack",
-          "sourceLine": 39,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "australia"
-          ]
-        },
-        {
-          "id": "rural-remote-tyranny-of-distance",
-          "title": "Tyranny of Distance",
-          "category": "Basic Queries",
-          "query": "\"tyranny of distance\" drug OR alcohol OR AOD Australia",
-          "explanation": "",
-          "difficulty": "beginner",
-          "sourceFile": "dork-packs/rural-remote.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 45,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "australia"
-          ]
-        },
-        {
-          "id": "rural-remote-non-metropolitan-services",
-          "title": "Non-Metropolitan Services",
-          "category": "Intermediate Queries",
-          "query": "\"non-metropolitan\" (\"harm reduction\" OR AOD OR \"alcohol and other drugs\") Australia filetype:pdf",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/rural-remote.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 55,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "services",
-            "australia"
-          ]
-        },
-        {
-          "id": "rural-remote-country-bush-context",
-          "title": "Country/Bush Context",
-          "category": "Intermediate Queries",
-          "query": "(\"country\" OR \"bush\") (\"drug use\" OR \"alcohol\") Australia -USA -UK",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/rural-remote.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 61,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "australia"
-          ]
-        },
-        {
-          "id": "rural-remote-telehealth-aod",
-          "title": "Telehealth AOD",
-          "category": "Intermediate Queries",
-          "query": "\"telehealth\" OR \"telemedicine\" (AOD OR \"alcohol and other drugs\" OR \"drug and alcohol\") Australia",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/rural-remote.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 67,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "australia"
-          ]
-        },
-        {
-          "id": "rural-remote-remote-health-services-1",
-          "title": "Remote Health Services - 1",
-          "category": "Intermediate Queries",
-          "query": "\"remote health\" \"alcohol and other drugs\" Australia",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/rural-remote.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 73,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "services",
-            "australia"
-          ]
-        },
-        {
-          "id": "rural-remote-remote-health-services-2",
-          "title": "Remote Health Services - 2",
-          "category": "Intermediate Queries",
-          "query": "site:rfds.org.au \"alcohol\" OR \"drug\" OR \"AOD\"",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/rural-remote.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 79,
+          "sourceLine": 36,
           "operators": [
             "site"
           ],
           "targetDomains": [
-            "rfds.org.au"
+            "ruralhealth.org.au",
+            "flyingdoctor.org.au"
+          ],
+          "domainCategory": "health",
+          "contentType": "any",
+          "tags": [
+            "australia"
+          ]
+        },
+        {
+          "id": "rural-remote-rural-clinician-aod-advice-dacas",
+          "title": "Rural Clinician AOD Advice (DACAS)",
+          "category": "Basic Queries",
+          "query": "site:dacas.org.au (\"Drug and Alcohol Clinical Advisory Service\" OR \"secondary consultation\")",
+          "explanation": "",
+          "difficulty": "beginner",
+          "sourceFile": "dork-packs/rural-remote.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 48,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "dacas.org.au"
           ],
           "domainCategory": "ngo",
           "contentType": "any",
@@ -19315,15 +19393,118 @@
           ]
         },
         {
+          "id": "rural-remote-general-rural-regional-aod",
+          "title": "General Rural/Regional AOD",
+          "category": "Basic Queries",
+          "query": "(\"rural\" OR \"regional\" OR \"remote\") (\"harm reduction\" OR \"alcohol and other drugs\") (service OR access) site:*.gov.au filetype:pdf",
+          "explanation": "",
+          "difficulty": "beginner",
+          "sourceFile": "dork-packs/rural-remote.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 54,
+          "operators": [
+            "site",
+            "filetype"
+          ],
+          "targetDomains": [
+            "gov.au"
+          ],
+          "domainCategory": "government",
+          "contentType": "pdf",
+          "tags": [
+            "documents",
+            "services",
+            "australia"
+          ]
+        },
+        {
+          "id": "rural-remote-filter-by-rurality-code-the-insider-move",
+          "title": "Filter by Rurality Code (the insider move)",
+          "category": "Intermediate Queries",
+          "query": "(\"Modified Monash\" OR \"MM 5\" OR \"MM 6\" OR \"MM 7\" OR \"Outer Regional\" OR \"Remote\" OR \"Very Remote\") (\"alcohol and other drugs\" OR AOD OR \"harm reduction\") Australia filetype:pdf",
+          "explanation": "**Why this works:**\n\n- The **Modified Monash Model** and ABS **Remoteness Areas** are how rural health is actually\nclassified — searching the code filters to genuine non-metro evidence, where the bare word \"rural\"\npulls in tourism and real-estate noise",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/rural-remote.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 64,
+          "operators": [
+            "filetype"
+          ],
+          "targetDomains": [],
+          "domainCategory": "any",
+          "contentType": "pdf",
+          "tags": [
+            "documents",
+            "australia"
+          ]
+        },
+        {
+          "id": "rural-remote-telehealth-clinician-advice-by-state",
+          "title": "Telehealth & Clinician Advice (by state)",
+          "category": "Intermediate Queries",
+          "query": "(\"Drug and Alcohol Clinical Advisory Service\" OR DACAS OR \"Drug and Alcohol Specialist Advisory Service\" OR DASAS) (rural OR remote OR telehealth OR \"secondary consultation\")",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/rural-remote.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 76,
+          "operators": [],
+          "targetDomains": [],
+          "domainCategory": "any",
+          "contentType": "any",
+          "tags": [
+            "services"
+          ]
+        },
+        {
+          "id": "rural-remote-rfds-research",
+          "title": "RFDS Research",
+          "category": "Intermediate Queries",
+          "query": "site:flyingdoctor.org.au (\"Best for the Bush\" OR \"Rural and Remote Health Base Line\" OR \"mental health\" OR alcohol OR drug)",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/rural-remote.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 82,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "flyingdoctor.org.au"
+          ],
+          "domainCategory": "ngo",
+          "contentType": "any",
+          "tags": [
+            "research",
+            "australia"
+          ]
+        },
+        {
+          "id": "rural-remote-remote-aboriginal-community-controlled-accho",
+          "title": "Remote Aboriginal Community-Controlled (ACCHO)",
+          "category": "Intermediate Queries",
+          "query": "(\"Aboriginal Community Controlled\" OR ACCHO) (remote OR \"very remote\") (\"alcohol and other drugs\" OR AOD)",
+          "explanation": "> Handle with cultural-safety care and prioritise community-controlled framing — see the\n> [First Nations pack](first-nations.md).",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/rural-remote.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 88,
+          "operators": [],
+          "targetDomains": [],
+          "domainCategory": "community",
+          "contentType": "any",
+          "tags": []
+        },
+        {
           "id": "rural-remote-comprehensive-rural-sweep",
           "title": "Comprehensive Rural Sweep",
           "category": "Advanced Queries",
-          "query": "(\"rural\" OR \"regional\" OR \"remote\" OR \"non-metropolitan\" OR \"country\") (\"harm reduction\" OR \"alcohol and other drugs\" OR AOD OR \"drug and alcohol\") Australia (service OR access OR workforce OR research) filetype:pdf -USA -UK after:2020",
+          "query": "(\"rural\" OR \"regional\" OR \"remote\" OR \"non-metropolitan\" OR \"Modified Monash\" OR \"Remoteness Areas\") (\"harm reduction\" OR \"alcohol and other drugs\" OR AOD) (service OR access OR workforce OR research) Australia filetype:pdf -USA -UK after:2020",
           "explanation": "",
           "difficulty": "advanced",
           "sourceFile": "dork-packs/rural-remote.md",
           "sourceType": "dork-pack",
-          "sourceLine": 89,
+          "sourceLine": 101,
           "operators": [
             "filetype",
             "after"
@@ -19340,356 +19521,135 @@
           ]
         },
         {
-          "id": "rural-remote-fifo-dido-contexts-1",
-          "title": "FIFO/DIDO Contexts - 1",
+          "id": "rural-remote-diversion-in-rural-remote-australia",
+          "title": "Diversion in Rural & Remote Australia",
           "category": "Advanced Queries",
-          "query": "\"fly-in fly-out\" OR \"FIFO\" OR \"drive-in drive-out\" (drug OR alcohol) health",
-          "explanation": "",
-          "difficulty": "advanced",
-          "sourceFile": "dork-packs/rural-remote.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 95,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "rural-remote-fifo-dido-contexts-2",
-          "title": "FIFO/DIDO Contexts - 2",
-          "category": "Advanced Queries",
-          "query": "\"mining\" OR \"resources sector\" (drug OR alcohol) (testing OR policy OR health)",
-          "explanation": "",
-          "difficulty": "advanced",
-          "sourceFile": "dork-packs/rural-remote.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 101,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "policy"
-          ]
-        },
-        {
-          "id": "rural-remote-farming-communities-1",
-          "title": "Farming Communities - 1",
-          "category": "Advanced Queries",
-          "query": "\"farming\" OR \"agriculture\" (\"alcohol\" OR \"drug use\") mental health Australia",
-          "explanation": "",
+          "query": "site:aihw.gov.au \"The effectiveness of the Illicit Drug Diversion Initiative in rural and remote Australia\"",
+          "explanation": "**Why this works:**\n\n- A named AIHW report that sits exactly at the rural × justice intersection — quoting its title is\nfar stronger than guessing at a generic diversion-in-the-bush search",
           "difficulty": "advanced",
           "sourceFile": "dork-packs/rural-remote.md",
           "sourceType": "dork-pack",
           "sourceLine": 107,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "australia"
-          ]
-        },
-        {
-          "id": "rural-remote-farming-communities-2",
-          "title": "Farming Communities - 2",
-          "category": "Advanced Queries",
-          "query": "\"drought\" OR \"natural disaster\" \"alcohol\" OR \"drug\" rural Australia",
-          "explanation": "",
-          "difficulty": "advanced",
-          "sourceFile": "dork-packs/rural-remote.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 113,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "australia"
-          ]
-        },
-        {
-          "id": "rural-remote-nsw-regions-central-west",
-          "title": "NSW Regions - Central West",
-          "category": "Specific Regional Areas",
-          "query": "\"Central West\" OR \"Far West\" NSW AOD OR \"alcohol drug\"",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/rural-remote.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 123,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "rural-remote-nsw-regions-north-coast",
-          "title": "NSW Regions - North Coast",
-          "category": "Specific Regional Areas",
-          "query": "\"North Coast\" OR \"Northern Rivers\" NSW harm reduction OR AOD",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/rural-remote.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 129,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "rural-remote-nsw-regions-hunter",
-          "title": "NSW Regions - Hunter",
-          "category": "Specific Regional Areas",
-          "query": "\"Hunter\" OR \"New England\" AOD services NSW",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/rural-remote.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 135,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "services"
-          ]
-        },
-        {
-          "id": "rural-remote-nsw-regions-riverina",
-          "title": "NSW Regions - Riverina",
-          "category": "Specific Regional Areas",
-          "query": "\"Riverina\" OR \"Murray\" harm reduction OR \"needle syringe\"",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/rural-remote.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 141,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "rural-remote-queensland-regions-1",
-          "title": "Queensland Regions - 1",
-          "category": "Specific Regional Areas",
-          "query": "\"North Queensland\" OR \"Far North Queensland\" harm reduction",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/rural-remote.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 147,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "rural-remote-queensland-regions-2",
-          "title": "Queensland Regions - 2",
-          "category": "Specific Regional Areas",
-          "query": "\"Central Queensland\" OR \"Wide Bay\" AOD services",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/rural-remote.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 153,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "services"
-          ]
-        },
-        {
-          "id": "rural-remote-queensland-regions-3",
-          "title": "Queensland Regions - 3",
-          "category": "Specific Regional Areas",
-          "query": "\"Outback Queensland\" drug OR alcohol health",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/rural-remote.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 159,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "rural-remote-western-australia-regions-1",
-          "title": "Western Australia Regions - 1",
-          "category": "Specific Regional Areas",
-          "query": "\"Kimberley\" OR \"Pilbara\" OR \"Goldfields\" drug OR alcohol health",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/rural-remote.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 165,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "rural-remote-western-australia-regions-2",
-          "title": "Western Australia Regions - 2",
-          "category": "Specific Regional Areas",
-          "query": "\"Wheatbelt\" OR \"Great Southern\" WA AOD",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/rural-remote.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 171,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "rural-remote-victoria-regions-1",
-          "title": "Victoria Regions - 1",
-          "category": "Specific Regional Areas",
-          "query": "\"Gippsland\" OR \"Mallee\" OR \"Wimmera\" AOD services",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/rural-remote.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 177,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "services"
-          ]
-        },
-        {
-          "id": "rural-remote-victoria-regions-2",
-          "title": "Victoria Regions - 2",
-          "category": "Specific Regional Areas",
-          "query": "\"Murray\" OR \"Hume\" VIC harm reduction",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/rural-remote.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 183,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "rural-remote-northern-territory-1",
-          "title": "Northern Territory - 1",
-          "category": "Specific Regional Areas",
-          "query": "\"Top End\" OR \"Katherine\" OR \"Alice Springs\" alcohol drug",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/rural-remote.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 189,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "rural-remote-northern-territory-2",
-          "title": "Northern Territory - 2",
-          "category": "Specific Regional Areas",
-          "query": "\"Central Australia\" AOD OR \"alcohol and other drugs\"",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/rural-remote.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 195,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "australia"
-          ]
-        },
-        {
-          "id": "rural-remote-tasmania",
-          "title": "Tasmania",
-          "category": "Specific Regional Areas",
-          "query": "\"Tasmania\" (\"rural\" OR \"regional\") harm reduction OR AOD",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/rural-remote.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 201,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "rural-remote-south-australia-1",
-          "title": "South Australia - 1",
-          "category": "Specific Regional Areas",
-          "query": "\"Eyre Peninsula\" OR \"Riverland\" SA drug OR alcohol",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/rural-remote.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 207,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "rural-remote-south-australia-2",
-          "title": "South Australia - 2",
-          "category": "Specific Regional Areas",
-          "query": "\"outback\" SA AOD health",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/rural-remote.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 213,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "rural-remote-royal-flying-doctor-service-1",
-          "title": "Royal Flying Doctor Service - 1",
-          "category": "\udfe5 Remote Health Services",
-          "query": "site:rfds.org.au \"alcohol\" OR \"drug\" OR \"AOD\"",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/rural-remote.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 223,
           "operators": [
             "site"
           ],
           "targetDomains": [
-            "rfds.org.au"
+            "aihw.gov.au"
           ],
-          "domainCategory": "ngo",
+          "domainCategory": "government",
+          "contentType": "any",
+          "tags": [
+            "australia"
+          ]
+        },
+        {
+          "id": "rural-remote-rural-workforce-professional-isolation",
+          "title": "Rural Workforce & Professional Isolation",
+          "category": "Advanced Queries",
+          "query": "(\"rural\" OR \"remote\") (AOD OR \"alcohol and other drug\" OR \"drug and alcohol\") (workforce OR \"professional isolation\" OR generalist OR retention) Australia filetype:pdf",
+          "explanation": "",
+          "difficulty": "advanced",
+          "sourceFile": "dork-packs/rural-remote.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 118,
+          "operators": [
+            "filetype"
+          ],
+          "targetDomains": [],
+          "domainCategory": "any",
+          "contentType": "pdf",
+          "tags": [
+            "documents",
+            "training",
+            "australia"
+          ]
+        },
+        {
+          "id": "rural-remote-modified-monash-model",
+          "title": "Modified Monash Model",
+          "category": "Rurality Codes & Classifications",
+          "query": "site:health.gov.au (\"Modified Monash Model\" OR \"Modified Monash Model 2023\")",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/rural-remote.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 130,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "health.gov.au"
+          ],
+          "domainCategory": "government",
+          "contentType": "any",
+          "tags": [
+            "australia"
+          ]
+        },
+        {
+          "id": "rural-remote-abs-remoteness-areas",
+          "title": "ABS Remoteness Areas",
+          "category": "Rurality Codes & Classifications",
+          "query": "(site:abs.gov.au OR site:aihw.gov.au) (\"Remoteness Areas\" OR \"Remoteness Structure\" OR \"Very Remote Australia\")",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/rural-remote.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 136,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "abs.gov.au",
+            "aihw.gov.au"
+          ],
+          "domainCategory": "government",
+          "contentType": "any",
+          "tags": [
+            "australia"
+          ]
+        },
+        {
+          "id": "rural-remote-national-rural-health-commissioner",
+          "title": "National Rural Health Commissioner",
+          "category": "Rurality Codes & Classifications",
+          "query": "site:health.gov.au (\"Office of the National Rural Health Commissioner\" OR \"National Rural Health Commissioner\")",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/rural-remote.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 142,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "health.gov.au"
+          ],
+          "domainCategory": "government",
+          "contentType": "any",
+          "tags": [
+            "australia"
+          ]
+        },
+        {
+          "id": "rural-remote-fifo-mining-mental-health",
+          "title": "FIFO & Mining Mental Health",
+          "category": "\ude9c Special Contexts",
+          "query": "(site:wa.gov.au OR site:mhc.wa.gov.au OR site:transformativeworkdesign.com) (\"Mental Awareness, Respect and Safety\" OR \"MARS Program\" OR \"Impact of FIFO work arrangements\")",
+          "explanation": "**Why this works:**\n\n- Names WA's **MARS** program and the Curtin **\"Impact of FIFO work arrangements on the mental\nhealth and wellbeing of FIFO workers\"** report — the actual titles, hosted on `wa.gov.au` /\n`mhc.wa.gov.au` (the old `dmirs.wa.gov.au` is dead)",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/rural-remote.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 152,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "wa.gov.au",
+            "mhc.wa.gov.au",
+            "transformativeworkdesign.com"
+          ],
+          "domainCategory": "government",
           "contentType": "any",
           "tags": [
             "services",
@@ -19697,224 +19657,63 @@
           ]
         },
         {
-          "id": "rural-remote-royal-flying-doctor-service-2",
-          "title": "Royal Flying Doctor Service - 2",
-          "category": "\udfe5 Remote Health Services",
-          "query": "\"Royal Flying Doctor Service\" harm reduction OR overdose OR AOD",
+          "id": "rural-remote-drought-rural-adversity",
+          "title": "Drought & Rural Adversity",
+          "category": "\ude9c Special Contexts",
+          "query": "(site:ramhp.com.au OR site:health.nsw.gov.au) (\"Rural Adversity Mental Health Program\" OR RAMHP OR drought) (\"alcohol\" OR \"substance use\" OR \"mental health\")",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/rural-remote.md",
           "sourceType": "dork-pack",
-          "sourceLine": 229,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "services"
-          ]
-        },
-        {
-          "id": "rural-remote-remote-area-nurses",
-          "title": "Remote Area Nurses",
-          "category": "\udfe5 Remote Health Services",
-          "query": "\"remote area nurse\" OR \"RAN\" (drug OR alcohol OR AOD) Australia",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/rural-remote.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 235,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "australia"
-          ]
-        },
-        {
-          "id": "rural-remote-aboriginal-health-services-remote-1",
-          "title": "Aboriginal Health Services (Remote) - 1",
-          "category": "\udfe5 Remote Health Services",
-          "query": "\"remote\" \"Aboriginal\" (AOD OR \"alcohol and other drugs\") health",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/rural-remote.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 241,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "services"
-          ]
-        },
-        {
-          "id": "rural-remote-aboriginal-health-services-remote-2",
-          "title": "Aboriginal Health Services (Remote) - 2",
-          "category": "\udfe5 Remote Health Services",
-          "query": "\"Aboriginal Community Controlled\" remote (drug OR alcohol)",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/rural-remote.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 247,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "community",
-          "contentType": "any",
-          "tags": [
-            "services"
-          ]
-        },
-        {
-          "id": "rural-remote-workforce-development-1",
-          "title": "Workforce Development - 1",
-          "category": "\udc65 Rural Workforce",
-          "query": "\"rural workforce\" (AOD OR \"alcohol and other drugs\") filetype:pdf",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/rural-remote.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 257,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "training"
-          ]
-        },
-        {
-          "id": "rural-remote-workforce-development-2",
-          "title": "Workforce Development - 2",
-          "category": "\udc65 Rural Workforce",
-          "query": "\"rural health\" (peer worker OR AOD worker) training",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/rural-remote.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 263,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "peer",
-            "training"
-          ]
-        },
-        {
-          "id": "rural-remote-generalist-practice-1",
-          "title": "Generalist Practice - 1",
-          "category": "\udc65 Rural Workforce",
-          "query": "\"generalist\" (AOD OR \"alcohol drug\") rural practitioner",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/rural-remote.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 269,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "rural-remote-generalist-practice-2",
-          "title": "Generalist Practice - 2",
-          "category": "\udc65 Rural Workforce",
-          "query": "\"upskilling\" OR \"professional development\" rural AOD worker",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/rural-remote.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 275,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "rural-remote-retention-support",
-          "title": "Retention & Support",
-          "category": "\udc65 Rural Workforce",
-          "query": "(retention OR support OR \"professional isolation\") rural (AOD OR \"drug and alcohol\") worker",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/rural-remote.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 281,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "rural-remote-academic-research-1",
-          "title": "Academic Research - 1",
-          "category": "Rural Research",
-          "query": "site:*.edu.au filetype:pdf \"rural\" harm reduction Australia",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/rural-remote.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 291,
-          "operators": [
-            "site",
-            "filetype"
-          ],
-          "targetDomains": [
-            "edu.au"
-          ],
-          "domainCategory": "education",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "research",
-            "australia"
-          ]
-        },
-        {
-          "id": "rural-remote-academic-research-2",
-          "title": "Academic Research - 2",
-          "category": "Rural Research",
-          "query": "site:crrmh.com.au OR site:ruralhealth.org.au \"alcohol\" OR \"drug\"",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/rural-remote.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 297,
+          "sourceLine": 164,
           "operators": [
             "site"
           ],
           "targetDomains": [
-            "crrmh.com.au",
-            "ruralhealth.org.au"
+            "ramhp.com.au",
+            "health.nsw.gov.au"
+          ],
+          "domainCategory": "government",
+          "contentType": "any",
+          "tags": [
+            "services",
+            "australia"
+          ]
+        },
+        {
+          "id": "rural-remote-farming-communities-men-s-help-seeking",
+          "title": "Farming Communities & Men's Help-Seeking",
+          "category": "\ude9c Special Contexts",
+          "query": "(site:farmerhealth.org.au OR site:therippleeffect.com.au OR site:ifarmwell.com.au) (\"National Centre for Farmer Health\" OR \"Sustainable Farm Families\" OR \"The Ripple Effect\" OR ifarmwell)",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/rural-remote.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 170,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "farmerhealth.org.au",
+            "therippleeffect.com.au",
+            "ifarmwell.com.au"
           ],
           "domainCategory": "health",
           "contentType": "any",
           "tags": [
-            "research",
             "australia"
           ]
         },
         {
-          "id": "rural-remote-national-rural-health-alliance",
-          "title": "National Rural Health Alliance",
-          "category": "Rural Research",
-          "query": "\"National Rural Health Alliance\" alcohol OR drug OR AOD",
+          "id": "rural-remote-nsw-regions",
+          "title": "NSW Regions",
+          "category": "Specific Regional Areas",
+          "query": "(\"Far West\" OR \"Northern Rivers\" OR \"New England\" OR \"Riverina\") NSW (\"alcohol and other drugs\" OR AOD OR \"needle syringe\" OR \"harm reduction\")",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/rural-remote.md",
           "sourceType": "dork-pack",
-          "sourceLine": 303,
+          "sourceLine": 182,
           "operators": [],
           "targetDomains": [],
           "domainCategory": "any",
@@ -19922,63 +19721,15 @@
           "tags": []
         },
         {
-          "id": "rural-remote-centre-for-rural-and-remote-mental-health",
-          "title": "Centre for Rural and Remote Mental Health",
-          "category": "Rural Research",
-          "query": "\"Centre for Rural and Remote Mental Health\" AOD OR \"alcohol and other drugs\"",
+          "id": "rural-remote-queensland-northern-territory",
+          "title": "Queensland & Northern Territory",
+          "category": "Specific Regional Areas",
+          "query": "(\"Far North Queensland\" OR \"Outback Queensland\" OR \"Top End\" OR \"Central Australia\" OR \"Alice Springs\") (\"alcohol and other drugs\" OR AOD OR \"harm reduction\")",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/rural-remote.md",
           "sourceType": "dork-pack",
-          "sourceLine": 309,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "rural-remote-farming-families-1",
-          "title": "Farming Families - 1",
-          "category": "\ude9c Agricultural & Farming Contexts",
-          "query": "\"farming families\" substance use OR alcohol",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/rural-remote.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 319,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "rural-remote-farming-families-2",
-          "title": "Farming Families - 2",
-          "category": "\ude9c Agricultural & Farming Contexts",
-          "query": "\"rural men\" alcohol OR drug use help-seeking",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/rural-remote.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 325,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "rural-remote-drought-disasters-1",
-          "title": "Drought & Disasters - 1",
-          "category": "\ude9c Agricultural & Farming Contexts",
-          "query": "\"drought\" OR \"bushfire\" OR \"flood\" (alcohol OR drug) rural Australia",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/rural-remote.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 331,
+          "sourceLine": 188,
           "operators": [],
           "targetDomains": [],
           "domainCategory": "any",
@@ -19988,15 +19739,15 @@
           ]
         },
         {
-          "id": "rural-remote-drought-disasters-2",
-          "title": "Drought & Disasters - 2",
-          "category": "\ude9c Agricultural & Farming Contexts",
-          "query": "\"natural disaster\" substance use OR alcohol rural",
+          "id": "rural-remote-wa-sa-vic-tas",
+          "title": "WA, SA, VIC & TAS",
+          "category": "Specific Regional Areas",
+          "query": "(\"Kimberley\" OR \"Pilbara\" OR \"Eyre Peninsula\" OR \"Riverland\" OR \"Gippsland\" OR \"Mallee\" OR Tasmania) (rural OR remote) (\"alcohol and other drugs\" OR AOD OR \"harm reduction\")",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/rural-remote.md",
           "sourceType": "dork-pack",
-          "sourceLine": 337,
+          "sourceLine": 194,
           "operators": [],
           "targetDomains": [],
           "domainCategory": "any",
@@ -20004,21 +19755,97 @@
           "tags": []
         },
         {
-          "id": "rural-remote-seasonal-workers",
-          "title": "Seasonal Workers",
-          "category": "\ude9c Agricultural & Farming Contexts",
-          "query": "\"seasonal workers\" OR \"harvest workers\" drug OR alcohol health Australia",
+          "id": "rural-remote-us-rural-communities-opioid-response-program",
+          "title": "US — Rural Communities Opioid Response Program",
+          "category": "International Rural Opioid Response",
+          "query": "site:hrsa.gov (\"Rural Communities Opioid Response Program\" OR RCORP) (opioid OR \"substance use disorder\" OR rural)",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/rural-remote.md",
           "sourceType": "dork-pack",
-          "sourceLine": 343,
-          "operators": [],
-          "targetDomains": [],
+          "sourceLine": 204,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "hrsa.gov"
+          ],
           "domainCategory": "any",
           "contentType": "any",
           "tags": [
+            "services"
+          ]
+        },
+        {
+          "id": "rural-remote-canada-scotland-broad-fallbacks",
+          "title": "Canada & Scotland (broad fallbacks)",
+          "category": "International Rural Opioid Response",
+          "query": "(site:canada.ca (\"Substance Use and Addictions Program\" OR SUAP) (northern OR remote)) OR ((site:gov.scot OR site:publichealthscotland.scot) \"National Mission on Drug Deaths\" (rural OR remote OR island))",
+          "explanation": "> No rural-specific quotable titles were confirmed for Canada or Scotland — these use the verified\n> national umbrella programs plus a rural qualifier rather than a fabricated title.",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/rural-remote.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 210,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "canada.ca",
+            "gov.scot",
+            "publichealthscotland.scot"
+          ],
+          "domainCategory": "any",
+          "contentType": "any",
+          "tags": [
+            "services"
+          ]
+        },
+        {
+          "id": "rural-remote-peer-drug-user-org-rural-material",
+          "title": "Peer & Drug-User-Org Rural Material",
+          "category": "\udcac Peer & Community",
+          "query": "(site:nuaa.org.au OR site:aivl.org.au OR site:wasua.com.au) (rural OR regional OR remote OR \"outreach\") (peer OR \"harm reduction\" OR NSP)",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/rural-remote.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 225,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "nuaa.org.au",
+            "aivl.org.au",
+            "wasua.com.au"
+          ],
+          "domainCategory": "ngo",
+          "contentType": "any",
+          "tags": [
+            "peer",
             "australia"
+          ]
+        },
+        {
+          "id": "rural-remote-community-forums-lived-experience",
+          "title": "Community Forums & Lived Experience",
+          "category": "\udcac Peer & Community",
+          "query": "(site:reddit.com/r/AusDrugs OR site:bluelight.org) (rural OR regional OR remote OR \"country town\" OR FIFO) (\"harm reduction\" OR \"drug checking\" OR access)",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/rural-remote.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 231,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "reddit.com/r/AusDrugs",
+            "bluelight.org"
+          ],
+          "domainCategory": "community",
+          "contentType": "any",
+          "tags": [
+            "peer"
           ]
         }
       ],
@@ -30663,9 +30490,9 @@
     }
   ],
   "meta": {
-    "buildDate": "2026-06-27T15:37:37.243Z",
+    "buildDate": "2026-06-27T16:14:21.354Z",
     "version": "2.0.0",
-    "totalDorks": 1433,
+    "totalDorks": 1410,
     "sourceFiles": [
       "01-quick-start.md",
       "02-core-operators.md",

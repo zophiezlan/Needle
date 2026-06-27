@@ -643,6 +643,174 @@ acronym "CREMS" is ambiguous, so don't quote it.
 
 ---
 
+## ⚖️ Justice, Custody & Diversion
+
+People who use drugs are massively over-represented in custody, and the system has its own named
+services, courts, data collections and (limited) harm-reduction footprint. Lead with the peer voice,
+then name the actual bodies — not generic "prison health" / "drug court" strings.
+
+**Peer & lived-experience in custody (lead here):**
+
+| Source                           | `site:` target              | Named signals                                                                                                                                                 |
+| -------------------------------- | --------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **NUAA "Insider's News"**        | `nuaa.org.au`               | `"Insider's News"` — peer harm-reduction magazine **solely distributed through NSW correctional centres** (path `/insiders-news`); sibling to `"User's News"` |
+| **Community Restorative Centre** | `crcnsw.org.au`             | `"Jailbreak Radio"`, `"Paper Chained"` (prisoner-writing zine), `"The Miranda Project"` — lived-experience-led throughcare/media (NSW)                        |
+| **EuroNPUD / INPUD** (intl)      | `euronpud.net`, `inpud.net` | peer-led prison harm reduction, peer naloxone (domains are `.net`, **not** `.org`; roots 403 bots but resolve)                                                |
+
+**Custodial health services (by jurisdiction — who actually delivers care in prison):**
+
+| Jurisdiction | `site:` target                                                                             | Named signals                                                                                                                                                                                            |
+| ------------ | ------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **NSW**      | `justicehealth.nsw.gov.au`, `nsw.gov.au` (`/health-and-wellbeing/justicehealth`)           | `"Justice Health and Forensic Mental Health Network"` / `"Justice Health NSW"`; `"Network Patient Health Survey"`, `"Young People in Custody Health Survey"` (content migrating to nsw.gov.au — OR both) |
+| **VIC**      | `justice.vic.gov.au`, `corrections.vic.gov.au`                                             | `"Justice Health"` (within DJCS); providers `"Correct Care Australasia"` (former) / `"GEO Group"` (current) / `"Forensicare"` (Ravenhall MH)                                                             |
+| **QLD**      | `westmoreton.health.qld.gov.au`, `health.qld.gov.au`                                       | `"Prison Health Services"` / `"Prisoner Health Services"` (West Moreton Health is lead HHS) — **not** "Offender Health Services" (not current)                                                           |
+| **WA**       | `wa.gov.au` (`/department-of-justice/corrective-services`), `correctiveservices.wa.gov.au` | `"Corrective Services"` `"health care"` — WA is the national exception: prison health sits inside **Justice/Corrective Services**, not the Health dept                                                   |
+| **SA**       | `sahealth.sa.gov.au`, `calhn.sa.gov.au`                                                    | `"SA Prison Health Service"` / `"South Australian Prison Health Service"` / `"SAPHS"` (CALHN); `"Model of care for Aboriginal prisoner health and wellbeing"`                                            |
+| **ACT**      | `canberrahealthservices.act.gov.au`, `winnunga.org.au` ⚠                                   | `"Justice Health"`, `"Custodial Health"`, `"Alexander Maconochie Centre"`; `"Winnunga Model of Care"` (ACCHO model at the AMC; verify winnunga.org.au before site-scoping)                               |
+| **TAS**      | `health.tas.gov.au`                                                                        | `"Correctional Primary Health Service"` / `"...Services"` / `"CPHS"`, `"Risdon Prison"` (delivered by Dept of Health, not the Prison Service)                                                            |
+| **NT** ⚠     | `nt.gov.au`, `corrections.nt.gov.au`, `health.nt.gov.au`                                   | no stable branded service name confirmed (model under review) — use the broad multi-host fallback, no quoted program title                                                                               |
+
+**National prisoner-health anchors (use these — there is no "Network for Prisoner Health"):**
+
+| Source                           | `site:` target | Named signals                                                                                                                                                                                                                                 |
+| -------------------------------- | -------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **AIHW prisoner health**         | `aihw.gov.au`  | `"The health of people in Australia's prisons"` (2022) / `"The health of Australia's prisoners"` (2018) — **quote both** titles; `"National Prisoner Health Data Collection"` / `"NPHDC"`; `"National Prisoner Health Information Committee"` |
+| **National Prisons Hep Network** | `nphn.net.au`  | `"National Prisons Hepatitis Network"` — hep C in custody                                                                                                                                                                                     |
+| **RACGP standards**              | `racgp.org.au` | `"Standards for health services in Australian prisons"`                                                                                                                                                                                       |
+
+**Drug courts & diversion programs (by jurisdiction — quote the exact program name):**
+
+| Jurisdiction | `site:` target                                                                     | Named signals                                                                                                                                                                                                                                                                       |
+| ------------ | ---------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **NSW**      | `drugcourt.nsw.gov.au`, `dcj.nsw.gov.au`, `police.nsw.gov.au`, `bocsar.nsw.gov.au` | `"Drug Court of New South Wales"`; `"Magistrates Early Referral Into Treatment"` / `"MERIT"`; `"Early Drug Diversion Initiative"` / `"EDDI"` (Feb 2024); `"Cannabis Cautioning Scheme"`; `"Youth Drug and Alcohol Court"` (closed 2012 — historical)                                |
+| **VIC**      | `mcv.vic.gov.au`, `countycourt.vic.gov.au`                                         | `"Drug Court"` + `"Drug and Alcohol Treatment Order"` / `"DATO"` (Magistrates'); `"Drug and Alcohol Treatment Court"` (County Court); `"Court Integrated Services Program"` / `"CISP"`; `"Court Referral and Evaluation for Drug Intervention and Treatment"` / CREDIT (historical) |
+| **QLD**      | `courts.qld.gov.au`, `police.qld.gov.au`                                           | `"Queensland Drug and Alcohol Court"` / `"QDAC"`; `"Police Drug Diversion Program"`; `"Court Link"` (replaced `"QMERIT"` Dec 2019 — quote QMERIT only for historical)                                                                                                               |
+| **SA**       | `courts.sa.gov.au`, `sahealth.sa.gov.au`                                           | `"Treatment Intervention Court"` (formerly `"Drug Court Program"`); `"Police Drug Diversion Initiative"` / `"PDDI"` (DASSA)                                                                                                                                                         |
+| **WA**       | `magistratescourt.wa.gov.au`, `mhc.wa.gov.au`                                      | `"Drug Court"` + `"Perth Drug Court Guidelines"`; `"Cannabis Intervention Requirement"` / `"CIR"` + `"Cannabis Intervention Session"`                                                                                                                                               |
+| **ACT**      | `courts.act.gov.au`, `anu.edu.au`                                                  | `"Drug and Alcohol Sentencing List"` / `"DASL"` + `"Drug and Alcohol Treatment Order"`; eval: `"ACT Drug and Alcohol Sentencing List: Process and Outcome Evaluation"`                                                                                                              |
+| **National** | `aihw.gov.au`, `aic.gov.au`                                                        | `"Illicit Drug Diversion Initiative"` / `"IDDI"` (COAG, 1999); AIHW `"The effectiveness of the Illicit Drug Diversion Initiative in rural and remote Australia"`                                                                                                                    |
+
+> **Evaluators, not just courts:** NSW Drug Court / MERIT evaluations are authored by **BOCSAR**
+> (`bocsar.nsw.gov.au`); national crime/justice evaluation is the **Australian Institute of
+> Criminology** (`aic.gov.au`). Dork the evaluator's domain, not only the court's.
+
+**Prison AOD data & post-release research (named collections & cohorts):**
+
+| Source                        | `site:` target   | Named signals                                                                                                                                   |
+| ----------------------------- | ---------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| **AIHW** (prisoner health)    | `aihw.gov.au`    | `"The health of people in Australia's prisons"` / `"The health of Australia's prisoners"` (older); `"National Prisoner Health Data Collection"` |
+| **ABS** (corrections counts)  | `abs.gov.au`     | `"Prisoners in Australia"` (annual; legacy cat `"4517.0"`), `"Corrective Services, Australia"` (quarterly — quote the comma)                    |
+| **Productivity Commission**   | `pc.gov.au`      | `"Report on Government Services"` / `"RoGS"` → Part C Justice, `"Corrective services"` chapter                                                  |
+| **MARC study** (Kinner, QLD)  | (journal-hosted) | `"Mortality After Release from Custody"` — pair with `Kinner` / `Queensland` / `"released from prison"` (acronym MARC is ambiguous)             |
+| **MARIC** (Borschmann/Kinner) | `rch.org.au`     | `"Mortality After Release from Incarceration Consortium"` / `"MARIC"` — international post-release mortality consortium                         |
+| **PATH cohort** (Burnet, VIC) | `burnet.edu.au`  | `"Prison and Transition Health"` / `"PATH cohort"` — people who inject drugs leaving prison (anchor PATH with `"Prison and Transition Health"`) |
+
+**Throughcare, re-entry & in-custody AOD programs (named providers):**
+
+| Program / provider               | `site:` target                               | Named signals                                                                                                                                                                          |
+| -------------------------------- | -------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Community Restorative Centre** | `crcnsw.org.au`                              | `"Alcohol and Other Drugs (AOD) Transition Program"`, `"Extended Reintegration Service"`, `"The Miranda Project"` (NSW lead throughcare)                                               |
+| **CDTCC** (NSW)                  | `dcj.nsw.gov.au`, `drugcourt.nsw.gov.au`     | `"Compulsory Drug Treatment Correctional Centre"` (Parklea; `"Compulsory Drug Treatment Correctional Centre Act 2004"`)                                                                |
+| **Caraniche StepOut** (VIC)      | `caraniche.com.au`, `corrections.vic.gov.au` | `"StepOut"` post-release AOD (**not** "Connections"); Corrections Victoria `"transitional"` programs                                                                                   |
+| **Yeddung Mura "Good Pathways"** | `goodpathways.org.au`                        | `"Throughcare Program"` (ACT Corrective Services; Aboriginal-led) — distinct from Winnunga's clinical care                                                                             |
+| **QLD in-custody AOD**           | `qld.gov.au`                                 | `"Reclaim Wellness"` (AOD-offending program); `"Transitions"` (pre-release)                                                                                                            |
+| **National corrections policy**  | `corrections.vic.gov.au`                     | `"Guiding Principles for Corrections in Australia"` (umbrella; throughcare is embedded — there is no single "Throughcare Framework")                                                   |
+| **Naloxone on release**          | `health.gov.au`                              | `"Take Home Naloxone Program"` + `"naloxone on release"` / `"post-release"` overdose (national program from 1 Jul 2022; NSW/WA active, VIC pilot) — no discrete brand, use the phrases |
+
+**First Nations & justice ⚠ (verified institutions — but flag the whole sub-section for
+community/peer and Indigenous-data-sovereignty review before use):**
+
+| Entity                           | `site:` target                                                  | Named signals                                                                                                                                                                                                                                     |
+| -------------------------------- | --------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Aboriginal sentencing courts** | state court domains                                             | `"Koori Court"` (VIC), `"Murri Court"` (QLD), `"Nunga Court"` / `"Aboriginal Court Day"` (SA), `"Circle Sentencing"` (NSW), `"Community Court"` (NT, reintroduced 2023), `"Galambany Court"` (ACT); WA `"Aboriginal Community Court"` closed 2015 |
+| **RCIADIC**                      | `austlii.edu.au`, `niaa.gov.au`                                 | `"Royal Commission into Aboriginal Deaths in Custody"` → `"National Report"`, `"339 recommendations"` (restrict to the National Report — **individual death reports are not appropriate for dorking**)                                            |
+| **AIC deaths in custody**        | `aic.gov.au`                                                    | `"Deaths in custody in Australia"`, `"National Deaths in Custody Program"` / `"NDICP"`                                                                                                                                                            |
+| **Closing the Gap (justice)**    | `closingthegap.gov.au`                                          | `"Target 10"` (adult incarceration, 15% by 2031), `"Target 11"` (youth detention, 30% by 2031)                                                                                                                                                    |
+| **Aboriginal Legal Services**    | `alsnswact.org.au`, `naaja.org.au`, `als.org.au`, `vals.org.au` | ALS (NSW/ACT), NAAJA (NT), ALSWA (WA — bare `als.org.au`), VALS (VIC)                                                                                                                                                                             |
+| **NACCHO** (health, not justice) | `naccho.org.au`                                                 | `"Aboriginal Community Controlled"` / `"ACCHO"` + `"alcohol and other drugs"` (a HEALTH peak — don't imply it runs justice programs)                                                                                                              |
+
+**International prison harm reduction:**
+
+| Body / source                     | `site:` target                           | Named signals                                                                                                                                                                                                                          |
+| --------------------------------- | ---------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **UNODC** (comprehensive package) | `unodc.org`                              | `"HIV prevention, treatment and care in prisons and other closed settings: a comprehensive package of interventions"` (the 15 interventions); `"A handbook for starting and managing needle and syringe programmes in prisons"` (2014) |
+| **UNODC** (standards)             | `unodc.org`                              | `"Nelson Mandela Rules"` / `"United Nations Standard Minimum Rules for the Treatment of Prisoners"`                                                                                                                                    |
+| **WHO Europe**                    | `who.int`, `iris.who.int`                | `"Prisons and health"` (2014; ISBN `9789289050593`) — **not** the deprecated `euro.who.int`                                                                                                                                            |
+| **Harm Reduction International**  | `hri.global`                             | `"The Global State of Harm Reduction"` (2024 added a `"people in prison"` / Prisons chapter)                                                                                                                                           |
+| **Penal Reform International**    | `penalreform.org`, `cdn.penalreform.org` | `"Global Prison Trends"` (annual; PDFs served from the `cdn.` host)                                                                                                                                                                    |
+| **Open Society Foundations**      | `opensocietyfoundations.org`             | `"Prison Needle Exchange: Lessons from a Comprehensive Review of International Evidence and Experience"`                                                                                                                               |
+| **Correctional Service Canada**   | `canada.ca`, `csc-scc.gc.ca`             | `"Prison Needle Exchange Program"` / `"PNEP"` (rolling out since 2018)                                                                                                                                                                 |
+
+**Insider vocabulary:** `"throughcare"` (the AU sector term — not "reentry"),
+`"continuity of care"`, `"post-release"` / `"naloxone on release"`, `"custodial health"` /
+`"correctional health"`, `"closed settings"` (the UN term covering prisons + detention),
+`"diversion"` (police vs court vs pre-plea vs pre-sentence), `"DATO"` (drug & alcohol treatment
+order), `"specialist"` / `"problem-solving court"`, `"post-release mortality"` / `"SMR"`
+(standardised mortality ratio), `"prison NSP"` / `"prison needle exchange"`, `"people in prison"` /
+`"people who are incarcerated"` (not "inmates"/"offenders"). Note: prison health sits under the
+**Health** department everywhere except **WA** (Justice/Corrective Services) — pick the site filter
+accordingly.
+
+---
+
+## 🌏 Rural, Regional & Remote
+
+The "tyranny of distance" has its own named services, datasets, and rurality classifications. The
+specificity move is to name the **AOD-relevant** producer (many rural-health orgs are mental-health-
+only) and to use the formal **rurality codes** that filter to non-metro evidence.
+
+**Rural AOD & health orgs (which actually carry AOD content):**
+
+| Org                                | `site:` target        | Named signals                                                                                                                                                         |
+| ---------------------------------- | --------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **National Rural Health Alliance** | `ruralhealth.org.au`  | `"Partyline"` (flagship magazine); fact sheet `"Alcohol, smoking, vaping and other drug use in rural Australia"` (Apr 2025) — the rare rural-AOD-specific named title |
+| **Royal Flying Doctor Service**    | `flyingdoctor.org.au` | `"Best for the Bush"` / `"Rural and Remote Health Base Line"` (research series with AOD + MH data) — primary domain is `flyingdoctor.org.au`, not `rfds.org.au`       |
+| **CRRMH** (rural MH)               | `crrmh.com.au`        | `"Glove Box Guide to Mental Health"`; runs `"Rural Adversity Mental Health Program"` (mental-health, not AOD-specific; **not** `rrmh.com.au`, a different org)        |
+| **NACCHO / ACCHOs** (remote)       | `naccho.org.au`       | `"Aboriginal Community Controlled"` / `"ACCHO"` + remote AOD (community-controlled framing — see the First Nations pack)                                              |
+| **SARRAH** (allied health)         | `sarrah.org.au`       | `"Services for Australian Rural and Remote Allied Health"` — rural workforce context (not an AOD content producer)                                                    |
+
+**Rurality classifications & datasets (the codes that filter to non-metro evidence):**
+
+| Classification / data                  | `site:` target              | Named signals                                                                                                                         |
+| -------------------------------------- | --------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
+| **Modified Monash Model**              | `health.gov.au`             | `"Modified Monash Model"` / `"Modified Monash Model 2023"`, `"MM 1"`…`"MM 7"` — the rural-health-workforce classification             |
+| **ABS Remoteness Areas**               | `abs.gov.au`, `aihw.gov.au` | `"Remoteness Areas"` / `"Remoteness Structure"` (ASGS); `"Inner Regional"`, `"Outer Regional"`, `"Remote"`, `"Very Remote"` Australia |
+| **National Rural Health Commissioner** | `health.gov.au`             | `"Office of the National Rural Health Commissioner"` / `"ONRHC"`                                                                      |
+
+**Rural telehealth & clinician AOD advice (state-specific names — DACAS is not national):**
+
+| Service                 | `site:` target                          | Named signals                                                                                                                             |
+| ----------------------- | --------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| **DACAS** (VIC/TAS/NT)  | `dacas.org.au`                          | `"Drug and Alcohol Clinical Advisory Service"` / `"DACAS"`, `"secondary consultation"` (Turning Point; phone-delivered specialist advice) |
+| **DASAS** (NSW)         | `health.nsw.gov.au`                     | `"Drug and Alcohol Specialist Advisory Service"` / `"DASAS"` (St Vincent's Sydney)                                                        |
+| **WA clinician advice** | `admhss.mhc.wa.gov.au`, `mhc.wa.gov.au` | `"Alcohol and Drug Support Line"` / clinician advice (via ADMHSS)                                                                         |
+
+**Special rural contexts (FIFO/mining, drought/disaster, farming):**
+
+| Context                  | `site:` target                                                      | Named signals                                                                                                                                                                                                                               |
+| ------------------------ | ------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **FIFO / mining MH**     | `wa.gov.au`, `mhc.wa.gov.au`, `transformativeworkdesign.com`        | `"Mental Awareness, Respect and Safety"` / `"MARS Program"` (WA, via DEMIRS — not `dmirs.wa.gov.au`); `"Impact of FIFO work arrangements on the mental health and wellbeing of FIFO workers"` (Curtin CTWD; full report on `mhc.wa.gov.au`) |
+| **Drought / adversity**  | `ramhp.com.au`, `health.nsw.gov.au`                                 | `"Rural Adversity Mental Health Program"` / `"RAMHP"` (NSW; began 2007 as the Drought Mental Health Assistance Program)                                                                                                                     |
+| **Farming men's health** | `farmerhealth.org.au`, `therippleeffect.com.au`, `ifarmwell.com.au` | `"National Centre for Farmer Health"`, `"Sustainable Farm Families"`, `"AgriSafe"`; `"The Ripple Effect"` (farmer suicide stigma); `"ifarmwell"` (UniSA, Kate Gunn)                                                                         |
+
+**International rural-opioid layer:**
+
+| Source                | `site:` target                          | Named signals                                                                                                                          |
+| --------------------- | --------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
+| **US — RCORP** (HRSA) | `hrsa.gov`                              | `"Rural Communities Opioid Response Program"` / `"RCORP"` (Federal Office of Rural Health Policy)                                      |
+| **Canada** ⚠          | `canada.ca`                             | no rural-specific quotable title confirmed — use `"Substance Use and Addictions Program"` / `"SUAP"` + `(northern OR remote)` fallback |
+| **Scotland** ⚠        | `gov.scot`, `publichealthscotland.scot` | no rural-specific title confirmed — use `"National Mission on Drug Deaths"` + `(rural OR remote OR island)` fallback                   |
+
+**Insider vocabulary:** `"rural, regional and remote"` / `RRR`, `"tyranny of distance"`,
+`"non-metropolitan"`, the formal `"Modified Monash"` / `"MM 1–7"` and `"Remoteness Areas"` / `"RA"`
+codes (use these to filter, not just the word "rural"), `"fly-in fly-out"` / `"FIFO"` /
+`"drive-in drive-out"` / `"DIDO"`, `"secondary consultation"` (clinician phone advice),
+`"professional isolation"` / `"generalist"` (rural workforce), `"drought"` / `"natural disaster"`
+adversity, `"seasonal"` / `"harvest"` workers. Pair generic region names (`"Kimberley"`,
+`"Riverina"`) with an AOD term or you drown in tourism results.
+
+---
+
 ## 🌏 International Reference Bodies (for the "strong international" layer)
 
 For the "strong international layer", name the country's actual agency or service — not "overseas

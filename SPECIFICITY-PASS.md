@@ -58,6 +58,7 @@ These were chosen by the project owner. Keep to them unless told otherwise:
 | 6   | Batch 4 rewritten + reference verified/extended   | `oat-ost`, `international`, `peer-workforce`, `forum-community`              |
 | 7   | Batch 5 rewritten + reference verified/extended   | `policy-advocacy`, `festivals`, `service-directories`, `safer-use-education` |
 | 8   | Batch 6 rewritten + reference verified/extended   | `youth`, `families-carers`, `housing-homelessness`, `mental-health`          |
+| 9   | Batch 7 rewritten + reference verified/extended   | `prisons-justice`, `rural-remote`                                            |
 
 - **`source-intelligence.md`** is the heart of this work: an entity → searchable-signal map. For
   each real org/service/dataset it records the `site:` target, the named publications to put in
@@ -188,17 +189,27 @@ section built from scratch (§4): new source-intelligence section "Populations &
 (youth services + Matilda Centre prevention programs; family/carer orgs; housing-first/homelessness
 peaks & datasets; co-occurring guidelines & services).
 
-**Suggested next batch:** `prisons-justice`, `rural-remote`, `stigma-language`, plus the power-user
-technique packs (`temporal-intelligence`, `organizational-intelligence`, `investigative`,
-`document-discovery`, `multimedia-discovery`, `user-hosted-domains`). Handle the
+**Done (batch 7):** `prisons-justice`, `rural-remote` — two reference sections built from scratch
+(§4): "Justice, Custody & Diversion" (peer-in-custody → custodial health by jurisdiction → drug
+courts/diversion by jurisdiction → prison data & post-release cohorts → throughcare → First Nations
+& justice [flagged] → international prison harm reduction) and "Rural, Regional & Remote" (named
+rural AOD producers → rurality classifications → telehealth/clinician advice → FIFO/drought/farming
+→ international rural-opioid layer). 8-cluster verification fan-out (337k tokens, 115 web lookups).
+
+**Suggested next batch:** `stigma-language`, plus the power-user technique packs
+(`temporal-intelligence`, `organizational-intelligence`, `investigative`, `document-discovery`,
+`multimedia-discovery`, `user-hosted-domains`) — these are _technique_-driven, so they may need a
+lighter touch (named archives/platforms/registers rather than service entities). Handle the
 community-controlled packs (`first-nations`, `sex-worker-health`, `lgbtq-health`) with extra care —
-see note below.
+see note below. Note: batch 7 already catalogued a verified, cultural-safety-flagged **First Nations
+& justice** sub-section in source-intelligence — a useful starting point for the `first-nations`
+pack.
 
 ### Packs needing a reference section built first (§4 before §3)
 
-`first-nations` · `lgbtq-health` · `prisons-justice` · `rural-remote` · `sex-worker-health` ·
-`stigma-language` · `temporal-intelligence` · `organizational-intelligence` · `investigative` ·
-`document-discovery` · `multimedia-discovery` · `user-hosted-domains`
+`first-nations` · `lgbtq-health` · `sex-worker-health` · `stigma-language` · `temporal-intelligence`
+· `organizational-intelligence` · `investigative` · `document-discovery` · `multimedia-discovery` ·
+`user-hosted-domains`
 
 > For `first-nations`, `sex-worker-health`, and `lgbtq-health` especially: prioritise community-
 > controlled and peer sources, and be careful with framing/terminology. When in doubt, flag for
@@ -257,6 +268,43 @@ OurFutures (ex-Climate Schools) / Cracks in the Ice / Strong & Deadly Futures, L
 FDS / SHARC "BreakThrough" / Bouverie "Single Session Family Consultation" / Emerging Minds-COPMI,
 AIHW SHS / AHURI / J2SI / Common Ground, the **Comorbidity Guidelines** / NSW comorbidity guideline
 / Turning Point "Hamilton Centre" / VDDI.
+
+Resolved/corrected in batch 7: NSW custodial health = **Justice Health and Forensic Mental Health
+Network** (`justicehealth.nsw.gov.au`, migrating to `nsw.gov.au`); flagship **"Network Patient
+Health Survey"** (latest cycle unconfirmed — quote the title, not a year). QLD prison health =
+**West Moreton** "Prison Health Services" (**not** "Offender Health Services"). WA is the national
+exception — prison health sits inside **Corrective Services**
+(`wa.gov.au`/`correctiveservices.wa.gov.au`), not the Health dept. SA = **SAPHS** (CALHN).
+**"Network for Prisoner Health" does not exist** — dropped; use AIHW **NPHDC** / **"The health of
+people in Australia's prisons"** (older edition: **"The health of Australia's prisoners"** — quote
+both) / **NPHN** (`nphn.net.au`) / RACGP **"Standards for health services in Australian prisons"**.
+Diversion renames: QLD **QMERIT → "Court Link"** (Dec 2019); SA Drug Court → **"Treatment
+Intervention Court"**; VIC Magistrates' = **"Drug Court"** + **DATO** (County Court has a separate
+"Drug and Alcohol Treatment Court"); NSW **YDAC** closed 2012. Post-release cohorts confirmed:
+**MARC** (Kinner, QLD), **MARIC** (Borschmann/Kinner, `rch.org.au`), **PATH** (Burnet). Throughcare:
+VIC program is Caraniche **"StepOut"** (**not** "Connections"); ACT **"Throughcare Program"** is
+**Yeddung Mura / Good Pathways** (`goodpathways.org.au`), distinct from **Winnunga**'s clinical
+"Model of Care". National umbrella = **"Guiding Principles for Corrections in Australia"** (no
+standalone "Throughcare Framework"). Rural: RFDS primary domain is **`flyingdoctor.org.au`** (not
+`rfds.org.au`); NRHA AOD fact sheet = **"Alcohol, smoking, vaping and other drug use in rural
+Australia"** + magazine **"Partyline"**; **DACAS** (`dacas.org.au`) is VIC/TAS/NT only (NSW =
+**DASAS**); WA FIFO program = **"MARS"** via `wa.gov.au` (DEMIRS; `dmirs.wa.gov.au` dead);
+**ifarmwell** is UniSA (not NCFH). New named entities: Drug Court of NSW/MERIT/EDDI, QDAC, DASL,
+IDDI, BOCSAR/AIC, NUAA **"Insider's News"**, CRC NSW (AOD Transition Program / Miranda Project /
+Jailbreak Radio / Paper Chained), CDTCC; UNODC comprehensive package / Nelson Mandela Rules, WHO
+"Prisons and health", HRI prisons chapter, PRI "Global Prison Trends", CSC **PNEP**; MMM / ABS
+Remoteness Areas, ONRHC, RAMHP, NCFH / "The Ripple Effect", US **RCORP**.
+
+Still flagged (batch 7): the entire **First Nations & justice** sub-section (Koori/Murri/Nunga/
+Galambany courts, Circle Sentencing, RCIADIC, deaths-in-custody data, Closing the Gap targets, ALSs)
+is verified-but-sensitive — keep flagged for community/peer + Indigenous-data-sovereignty review,
+and restrict RCIADIC dorks to the National Report (**not** individual death reports). **NT custodial
+health** has no stable branded service name (model under review) — multi-host keyword fallback only.
+**ACT `winnunga.org.au`** referenced but not directly fetched this pass — verify before site-scoping
+(use AMC / "Model of Care" terms as the safe quoted strings). **Canada** (northern/remote) and
+**Scotland** (rural) have no rural-specific quotable titles — use SUAP / "National Mission on Drug
+Deaths" + a rural qualifier. **Beyond Blue** has no confirmed rural-specific report title — use
+RAMHP instead.
 
 Still flagged: **Strong & Deadly Futures** is an Aboriginal & Torres Strait Islander program — quote
 it but keep cultural-safety framing. The **NHMRC CRE in Mental Health and Substance Use** ("CREMS")
