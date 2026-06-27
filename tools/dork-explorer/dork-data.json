@@ -3,78 +3,13 @@
     {
       "id": "coroners-deaths",
       "title": "Coroners, Inquests & Death Data",
-      "description": "Understanding drug-related deaths through coronial findings.",
+      "description": "Find coronial findings, recommendations, and overdose mortality data — named by court, by document",
       "dorks": [
         {
-          "id": "coroners-deaths-find-pdf-files",
-          "title": "Find PDF files",
+          "id": "coroners-deaths-query-1",
+          "title": "Query 1",
           "category": "Quick Start",
-          "query": "\"coronial recommendation\" drug OR overdose Australia filetype:pdf",
-          "explanation": "",
-          "difficulty": "beginner",
-          "sourceFile": "dork-packs/coroners-deaths.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 23,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "australia"
-          ]
-        },
-        {
-          "id": "coroners-deaths-coronial-courts-general-1",
-          "title": "Coronial Courts (General) - 1",
-          "category": "Basic Queries",
-          "query": "site:coroners.nsw.gov.au \"drug\" OR \"overdose\" OR \"substance\"",
-          "explanation": "",
-          "difficulty": "beginner",
-          "sourceFile": "dork-packs/coroners-deaths.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 30,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "coroners.nsw.gov.au"
-          ],
-          "domainCategory": "government",
-          "contentType": "any",
-          "tags": [
-            "australia"
-          ]
-        },
-        {
-          "id": "coroners-deaths-coronial-courts-general-2",
-          "title": "Coronial Courts (General) - 2",
-          "category": "Basic Queries",
-          "query": "site:coronerscourt.vic.gov.au inquest drug OR overdose",
-          "explanation": "",
-          "difficulty": "beginner",
-          "sourceFile": "dork-packs/coroners-deaths.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 36,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "coronerscourt.vic.gov.au"
-          ],
-          "domainCategory": "government",
-          "contentType": "any",
-          "tags": [
-            "australia"
-          ]
-        },
-        {
-          "id": "coroners-deaths-coronial-recommendations",
-          "title": "Coronial Recommendations",
-          "category": "Basic Queries",
-          "query": "\"coronial recommendation\" OR \"coroner's recommendation\" drug OR overdose Australia",
+          "query": "(\"inquest into the death of\" OR \"coronial findings\") (drug OR overdose) recommendation Australia",
           "explanation": "",
           "difficulty": "beginner",
           "sourceFile": "dork-packs/coroners-deaths.md",
@@ -89,259 +24,57 @@
           ]
         },
         {
-          "id": "coroners-deaths-drug-death-statistics-1",
-          "title": "Drug Death Statistics - 1",
+          "id": "coroners-deaths-the-national-coronial-information-system-ncis",
+          "title": "The National Coronial Information System (NCIS)",
           "category": "Basic Queries",
-          "query": "\"drug-induced death\" OR \"drug-related death\" statistics Australia",
-          "explanation": "",
+          "query": "site:ncis.org.au (\"NCIS Fact Sheet\" OR \"data report\" OR drug OR overdose)",
+          "explanation": "**Why this works:**\n\n- NCIS is the national database of coronial deaths. Its full data is access-controlled, but the\npublished `\"NCIS Fact Sheet\"` and `\"data report\"` series are public — naming them finds the\nfigures",
           "difficulty": "beginner",
           "sourceFile": "dork-packs/coroners-deaths.md",
           "sourceType": "dork-pack",
-          "sourceLine": 48,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "data",
-            "australia"
-          ]
-        },
-        {
-          "id": "coroners-deaths-drug-death-statistics-2",
-          "title": "Drug Death Statistics - 2",
-          "category": "Basic Queries",
-          "query": "site:aihw.gov.au \"drug-induced deaths\"",
-          "explanation": "",
-          "difficulty": "beginner",
-          "sourceFile": "dork-packs/coroners-deaths.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 54,
+          "sourceLine": 49,
           "operators": [
             "site"
           ],
           "targetDomains": [
-            "aihw.gov.au"
+            "ncis.org.au"
           ],
-          "domainCategory": "government",
+          "domainCategory": "ngo",
           "contentType": "any",
-          "tags": [
-            "data",
-            "australia"
-          ]
-        },
-        {
-          "id": "coroners-deaths-finding-coronial-recommendations-1",
-          "title": "Finding Coronial Recommendations - 1",
-          "category": "Intermediate Queries",
-          "query": "\"coroner\" \"recommendation\" (\"harm reduction\" OR naloxone OR prevention)",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/coroners-deaths.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 64,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "coroners-deaths-finding-coronial-recommendations-2",
-          "title": "Finding Coronial Recommendations - 2",
-          "category": "Intermediate Queries",
-          "query": "inquest finding \"drug\" OR \"overdose\" \"recommendation\" Australia",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/coroners-deaths.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 70,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "australia"
-          ]
-        },
-        {
-          "id": "coroners-deaths-systemic-issues-1",
-          "title": "Systemic Issues - 1",
-          "category": "Intermediate Queries",
-          "query": "\"systemic issues\" OR \"systemic failures\" coronial drug death",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/coroners-deaths.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 76,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "coroners-deaths-systemic-issues-2",
-          "title": "Systemic Issues - 2",
-          "category": "Intermediate Queries",
-          "query": "\"coroner\" \"prevention\" drug death Australia",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/coroners-deaths.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 82,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "australia"
-          ]
-        },
-        {
-          "id": "coroners-deaths-cluster-investigations-1",
-          "title": "Cluster Investigations - 1",
-          "category": "Intermediate Queries",
-          "query": "\"cluster\" overdose OR \"drug death\" investigation Australia",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/coroners-deaths.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 88,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "australia"
-          ]
-        },
-        {
-          "id": "coroners-deaths-cluster-investigations-2",
-          "title": "Cluster Investigations - 2",
-          "category": "Intermediate Queries",
-          "query": "\"spike\" OR \"surge\" overdose deaths investigation",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/coroners-deaths.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 94,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "coroners-deaths-comprehensive-coronial-sweep",
-          "title": "Comprehensive Coronial Sweep",
-          "category": "Advanced Queries",
-          "query": "(coroner OR coronial OR inquest) (\"drug\" OR \"overdose\" OR \"substance\" OR \"opioid\") (finding OR recommendation OR inquest) Australia filetype:pdf after:2020",
-          "explanation": "",
-          "difficulty": "advanced",
-          "sourceFile": "dork-packs/coroners-deaths.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 104,
-          "operators": [
-            "filetype",
-            "after"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "pdf",
           "tags": [
             "documents",
+            "data",
             "australia"
           ]
         },
         {
-          "id": "coroners-deaths-enhanced-surveillance",
-          "title": "Enhanced Surveillance",
-          "category": "Advanced Queries",
-          "query": "\"enhanced surveillance\" OR \"public health response\" overdose cluster",
-          "explanation": "",
-          "difficulty": "advanced",
+          "id": "coroners-deaths-coronial-findings-the-document-genre",
+          "title": "Coronial Findings (the Document Genre)",
+          "category": "Basic Queries",
+          "query": "(\"inquest into the death of\" OR \"finding without inquest\" OR \"non-inquest findings\") (drug OR overdose OR substance)",
+          "explanation": "**Why this works:**\n\n- These are the actual coronial document types — far more precise than the generic word \"report\".\nBare \"findings\" is too noisy; these phrases are not",
+          "difficulty": "beginner",
           "sourceFile": "dork-packs/coroners-deaths.md",
           "sourceType": "dork-pack",
-          "sourceLine": 110,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "coroners-deaths-prevention-focused-findings",
-          "title": "Prevention-Focused Findings",
-          "category": "Advanced Queries",
-          "query": "\"coroner\" (prevention OR \"preventable death\" OR recommendation) (\"drug\" OR \"overdose\") Australia",
-          "explanation": "",
-          "difficulty": "advanced",
-          "sourceFile": "dork-packs/coroners-deaths.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 116,
+          "sourceLine": 61,
           "operators": [],
           "targetDomains": [],
           "domainCategory": "any",
           "contentType": "any",
           "tags": [
-            "australia"
+            "documents"
           ]
         },
         {
-          "id": "coroners-deaths-nsw-1",
-          "title": "NSW - 1",
-          "category": "State Coroners Courts",
-          "query": "site:coroners.nsw.gov.au \"drug\" OR \"overdose\" OR \"substance\"",
+          "id": "coroners-deaths-coroners-court-of-victoria",
+          "title": "Coroners Court of Victoria",
+          "category": "Basic Queries",
+          "query": "site:coronerscourt.vic.gov.au (\"Coroners Prevention Unit\" OR \"finding without inquest\" OR overdose)",
           "explanation": "",
-          "difficulty": "intermediate",
+          "difficulty": "beginner",
           "sourceFile": "dork-packs/coroners-deaths.md",
           "sourceType": "dork-pack",
-          "sourceLine": 126,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "coroners.nsw.gov.au"
-          ],
-          "domainCategory": "government",
-          "contentType": "any",
-          "tags": [
-            "australia"
-          ]
-        },
-        {
-          "id": "coroners-deaths-nsw-2",
-          "title": "NSW - 2",
-          "category": "State Coroners Courts",
-          "query": "site:coroners.nsw.gov.au inquest finding",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/coroners-deaths.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 132,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "coroners.nsw.gov.au"
-          ],
-          "domainCategory": "government",
-          "contentType": "any",
-          "tags": [
-            "australia"
-          ]
-        },
-        {
-          "id": "coroners-deaths-victoria-1",
-          "title": "Victoria - 1",
-          "category": "State Coroners Courts",
-          "query": "site:coronerscourt.vic.gov.au drug OR overdose",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/coroners-deaths.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 138,
+          "sourceLine": 72,
           "operators": [
             "site"
           ],
@@ -355,15 +88,147 @@
           ]
         },
         {
-          "id": "coroners-deaths-victoria-2",
-          "title": "Victoria - 2",
-          "category": "State Coroners Courts",
-          "query": "site:coronerscourt.vic.gov.au inquest finding",
+          "id": "coroners-deaths-coroners-prevention-unit-victoria",
+          "title": "Coroners Prevention Unit (Victoria)",
+          "category": "Intermediate Queries",
+          "query": "\"Coroners Prevention Unit\" (overdose OR drug OR \"drug-related\") (finding OR recommendation OR data)",
+          "explanation": "**Why this works:**\n\n- Victoria's CPU is a specialist unit that analyses reportable deaths for prevention — it produces\nsome of the most detailed overdose-death analysis in the country",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/coroners-deaths.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 82,
+          "operators": [],
+          "targetDomains": [],
+          "domainCategory": "any",
+          "contentType": "any",
+          "tags": [
+            "data"
+          ]
+        },
+        {
+          "id": "coroners-deaths-recommendations-government-responses",
+          "title": "Recommendations & Government Responses",
+          "category": "Intermediate Queries",
+          "query": "coroner (recommendation OR \"recommend\") (\"harm reduction\" OR naloxone OR \"drug checking\" OR \"supervised injecting\") (response OR implementation)",
+          "explanation": "**Why this works:**\n\n- Coroners make recommendations and agencies must respond in writing — pairing \"recommendation\" with\n\"response\" finds both the lever and whether it was acted on",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/coroners-deaths.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 93,
+          "operators": [],
+          "targetDomains": [],
+          "domainCategory": "any",
+          "contentType": "any",
+          "tags": []
+        },
+        {
+          "id": "coroners-deaths-cluster-spike-investigations",
+          "title": "Cluster & Spike Investigations",
+          "category": "Intermediate Queries",
+          "query": "(overdose OR \"drug death\") (cluster OR spike OR surge OR \"enhanced surveillance\") (investigation OR \"public health response\") Australia",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/coroners-deaths.md",
           "sourceType": "dork-pack",
-          "sourceLine": 144,
+          "sourceLine": 104,
+          "operators": [],
+          "targetDomains": [],
+          "domainCategory": "any",
+          "contentType": "any",
+          "tags": [
+            "australia"
+          ]
+        },
+        {
+          "id": "coroners-deaths-comprehensive-coronial-sweep",
+          "title": "Comprehensive Coronial Sweep",
+          "category": "Advanced Queries",
+          "query": "(coroner OR coronial OR inquest) (drug OR overdose OR opioid OR substance) (\"finding without inquest\" OR \"non-inquest findings\" OR recommendation) Australia filetype:pdf after:2020",
+          "explanation": "",
+          "difficulty": "advanced",
+          "sourceFile": "dork-packs/coroners-deaths.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 114,
+          "operators": [
+            "filetype",
+            "after"
+          ],
+          "targetDomains": [],
+          "domainCategory": "any",
+          "contentType": "pdf",
+          "tags": [
+            "documents",
+            "australia"
+          ]
+        },
+        {
+          "id": "coroners-deaths-prevention-focused-findings",
+          "title": "Prevention-Focused Findings",
+          "category": "Advanced Queries",
+          "query": "coroner (prevention OR \"preventable death\" OR recommendation) (drug OR overdose) (\"harm reduction\" OR naloxone OR \"drug checking\") Australia",
+          "explanation": "",
+          "difficulty": "advanced",
+          "sourceFile": "dork-packs/coroners-deaths.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 120,
+          "operators": [],
+          "targetDomains": [],
+          "domainCategory": "any",
+          "contentType": "any",
+          "tags": [
+            "australia"
+          ]
+        },
+        {
+          "id": "coroners-deaths-systemic-issues-failures",
+          "title": "Systemic Issues & Failures",
+          "category": "Advanced Queries",
+          "query": "coronial (\"systemic issues\" OR \"systemic failures\" OR \"missed opportunities\") (drug OR overdose) Australia",
+          "explanation": "",
+          "difficulty": "advanced",
+          "sourceFile": "dork-packs/coroners-deaths.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 126,
+          "operators": [],
+          "targetDomains": [],
+          "domainCategory": "any",
+          "contentType": "any",
+          "tags": [
+            "australia"
+          ]
+        },
+        {
+          "id": "coroners-deaths-new-south-wales",
+          "title": "New South Wales",
+          "category": "State & Territory Coroners Courts",
+          "query": "site:coroners.nsw.gov.au (\"Coronial findings and recommendations\" OR inquest) (drug OR overdose)",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/coroners-deaths.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 139,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "coroners.nsw.gov.au"
+          ],
+          "domainCategory": "government",
+          "contentType": "any",
+          "tags": [
+            "australia"
+          ]
+        },
+        {
+          "id": "coroners-deaths-victoria",
+          "title": "Victoria",
+          "category": "State & Territory Coroners Courts",
+          "query": "site:coronerscourt.vic.gov.au (\"finding without inquest\" OR inquest) (drug OR overdose)",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/coroners-deaths.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 145,
           "operators": [
             "site"
           ],
@@ -379,18 +244,18 @@
         {
           "id": "coroners-deaths-queensland",
           "title": "Queensland",
-          "category": "State Coroners Courts",
-          "query": "site:courts.qld.gov.au/courts/coroners-court \"drug\" OR \"overdose\"",
-          "explanation": "",
+          "category": "State & Territory Coroners Courts",
+          "query": "site:coronerscourt.qld.gov.au (\"Non-inquest findings\" OR \"inquest into the death of\") (drug OR overdose)",
+          "explanation": "> Note: use `coronerscourt.qld.gov.au`, not `courts.qld.gov.au` — the canonical findings host\n> changed.",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/coroners-deaths.md",
           "sourceType": "dork-pack",
-          "sourceLine": 150,
+          "sourceLine": 151,
           "operators": [
             "site"
           ],
           "targetDomains": [
-            "courts.qld.gov.au/courts/coroners-court"
+            "coronerscourt.qld.gov.au"
           ],
           "domainCategory": "government",
           "contentType": "any",
@@ -401,13 +266,13 @@
         {
           "id": "coroners-deaths-western-australia",
           "title": "Western Australia",
-          "category": "State Coroners Courts",
-          "query": "site:coronerscourt.wa.gov.au drug OR substance OR overdose",
+          "category": "State & Territory Coroners Courts",
+          "query": "site:coronerscourt.wa.gov.au (\"Inquest Findings\" OR \"inquest into the death of\") (drug OR overdose)",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/coroners-deaths.md",
           "sourceType": "dork-pack",
-          "sourceLine": 156,
+          "sourceLine": 160,
           "operators": [
             "site"
           ],
@@ -423,18 +288,18 @@
         {
           "id": "coroners-deaths-south-australia",
           "title": "South Australia",
-          "category": "State Coroners Courts",
-          "query": "site:courts.sa.gov.au/courts/coroners-court \"drug\" death",
+          "category": "State & Territory Coroners Courts",
+          "query": "site:courts.sa.gov.au/court-decisions/coroners-findings (drug OR overdose OR substance)",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/coroners-deaths.md",
           "sourceType": "dork-pack",
-          "sourceLine": 162,
+          "sourceLine": 166,
           "operators": [
             "site"
           ],
           "targetDomains": [
-            "courts.sa.gov.au/courts/coroners-court"
+            "courts.sa.gov.au/court-decisions/coroners-findings"
           ],
           "domainCategory": "government",
           "contentType": "any",
@@ -443,43 +308,43 @@
           ]
         },
         {
-          "id": "coroners-deaths-act",
-          "title": "ACT",
-          "category": "State Coroners Courts",
-          "query": "site:coronialservices.act.gov.au drug OR overdose",
+          "id": "coroners-deaths-australian-capital-territory",
+          "title": "Australian Capital Territory",
+          "category": "State & Territory Coroners Courts",
+          "query": "site:courts.act.gov.au coroner (drug OR overdose) (findings OR inquest)",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/coroners-deaths.md",
           "sourceType": "dork-pack",
-          "sourceLine": 168,
+          "sourceLine": 172,
           "operators": [
             "site"
           ],
           "targetDomains": [
-            "coronialservices.act.gov.au"
+            "courts.act.gov.au"
           ],
           "domainCategory": "government",
           "contentType": "any",
           "tags": [
-            "services",
             "australia"
           ]
         },
         {
           "id": "coroners-deaths-northern-territory",
           "title": "Northern Territory",
-          "category": "State Coroners Courts",
-          "query": "site:courts.nt.gov.au/coroner drug OR substance death",
-          "explanation": "",
+          "category": "State & Territory Coroners Courts",
+          "query": "(site:nt.gov.au OR site:agd.nt.gov.au) coroner (\"coronial findings\" OR inquest) (drug OR overdose)",
+          "explanation": "> Note: the NT publishes coronial findings across several government hosts — query both `nt.gov.au`\n> and the Attorney-General's Department `agd.nt.gov.au` rather than a single fixed path.",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/coroners-deaths.md",
           "sourceType": "dork-pack",
-          "sourceLine": 174,
+          "sourceLine": 178,
           "operators": [
             "site"
           ],
           "targetDomains": [
-            "courts.nt.gov.au/coroner"
+            "nt.gov.au",
+            "agd.nt.gov.au"
           ],
           "domainCategory": "government",
           "contentType": "any",
@@ -490,18 +355,18 @@
         {
           "id": "coroners-deaths-tasmania",
           "title": "Tasmania",
-          "category": "State Coroners Courts",
-          "query": "site:magistratescourt.tas.gov.au/divisions/coronial drug overdose",
+          "category": "State & Territory Coroners Courts",
+          "query": "site:magistratescourt.tas.gov.au/coronerscourt (\"Coronial Findings\" OR \"findings, comments and recommendations\") (drug OR overdose)",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/coroners-deaths.md",
           "sourceType": "dork-pack",
-          "sourceLine": 180,
+          "sourceLine": 187,
           "operators": [
             "site"
           ],
           "targetDomains": [
-            "magistratescourt.tas.gov.au/divisions/coronial"
+            "magistratescourt.tas.gov.au/coronerscourt"
           ],
           "domainCategory": "government",
           "contentType": "any",
@@ -510,23 +375,67 @@
           ]
         },
         {
-          "id": "coroners-deaths-aihw-data",
-          "title": "AIHW Data",
-          "category": "Drug Death Data & Statistics",
-          "query": "site:aihw.gov.au \"drug-induced deaths\" OR \"opioid deaths\" filetype:pdf",
+          "id": "coroners-deaths-aihw-drug-induced-deaths",
+          "title": "AIHW Drug-Induced Deaths",
+          "category": "Drug-Induced Death Data",
+          "query": "site:aihw.gov.au (\"Alcohol, tobacco & other drugs in Australia\" OR \"drug-induced deaths\")",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/coroners-deaths.md",
           "sourceType": "dork-pack",
-          "sourceLine": 190,
+          "sourceLine": 199,
           "operators": [
-            "site",
-            "filetype"
+            "site"
           ],
           "targetDomains": [
             "aihw.gov.au"
           ],
           "domainCategory": "government",
+          "contentType": "any",
+          "tags": [
+            "australia"
+          ]
+        },
+        {
+          "id": "coroners-deaths-abs-causes-of-death",
+          "title": "ABS Causes of Death",
+          "category": "Drug-Induced Death Data",
+          "query": "site:abs.gov.au \"Causes of Death, Australia\" \"drug-induced deaths\"",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/coroners-deaths.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 205,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "abs.gov.au"
+          ],
+          "domainCategory": "government",
+          "contentType": "any",
+          "tags": [
+            "australia"
+          ]
+        },
+        {
+          "id": "coroners-deaths-penington-institute-annual-overdose-report",
+          "title": "Penington Institute Annual Overdose Report",
+          "category": "Drug-Induced Death Data",
+          "query": "site:penington.org.au \"Australia's Annual Overdose Report\" (opioid OR data OR filetype:pdf)",
+          "explanation": "**Why this works:**\n\n- The ABS is the upstream source; AIHW and Penington both build on it. Penington's report aggregates\nABS/coronial data into the most-cited national overdose picture — quoting the exact titles finds\nthe numbers rather than commentary",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/coroners-deaths.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 211,
+          "operators": [
+            "site",
+            "filetype"
+          ],
+          "targetDomains": [
+            "penington.org.au"
+          ],
+          "domainCategory": "ngo",
           "contentType": "pdf",
           "tags": [
             "documents",
@@ -535,15 +444,33 @@
           ]
         },
         {
-          "id": "coroners-deaths-overdose-mortality",
-          "title": "Overdose Mortality",
-          "category": "Drug Death Data & Statistics",
-          "query": "\"overdose mortality\" OR \"overdose fatality\" data Australia",
+          "id": "coroners-deaths-opioids-pharmaceutical-opioids",
+          "title": "Opioids & Pharmaceutical Opioids",
+          "category": "Specific Substances & Death",
+          "query": "(\"opioid\" OR oxycodone OR fentanyl OR codeine OR heroin) (death OR overdose) Australia (coroner OR \"drug-induced deaths\")",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/coroners-deaths.md",
           "sourceType": "dork-pack",
-          "sourceLine": 196,
+          "sourceLine": 227,
+          "operators": [],
+          "targetDomains": [],
+          "domainCategory": "any",
+          "contentType": "any",
+          "tags": [
+            "australia"
+          ]
+        },
+        {
+          "id": "coroners-deaths-stimulants",
+          "title": "Stimulants",
+          "category": "Specific Substances & Death",
+          "query": "(\"methamphetamine\" OR \"ice\" OR cocaine OR MDMA) (death OR overdose) Australia (coroner OR data)",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/coroners-deaths.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 233,
           "operators": [],
           "targetDomains": [],
           "domainCategory": "any",
@@ -554,95 +481,33 @@
           ]
         },
         {
-          "id": "coroners-deaths-accidental-overdose",
-          "title": "Accidental Overdose",
-          "category": "Drug Death Data & Statistics",
-          "query": "\"accidental drug overdose\" OR \"unintentional overdose\" statistics Australia",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/coroners-deaths.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 202,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "data",
-            "australia"
-          ]
-        },
-        {
-          "id": "coroners-deaths-penington-institute-reports",
-          "title": "Penington Institute Reports",
-          "category": "Drug Death Data & Statistics",
-          "query": "site:penington.org.au \"overdose\" OR \"Australia's Annual Overdose Report\"",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/coroners-deaths.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 208,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "penington.org.au"
-          ],
-          "domainCategory": "ngo",
-          "contentType": "any",
-          "tags": [
-            "documents",
-            "australia"
-          ]
-        },
-        {
-          "id": "coroners-deaths-opioids-general",
-          "title": "Opioids (General)",
+          "id": "coroners-deaths-emerging-substances",
+          "title": "Emerging Substances",
           "category": "Specific Substances & Death",
-          "query": "\"opioid\" death OR overdose Australia (coroner OR statistics)",
+          "query": "(\"nitazene\" OR \"isotonitazene\" OR \"protonitazene\" OR \"synthetic opioid\") (death OR coronial OR toxicity) Australia",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/coroners-deaths.md",
           "sourceType": "dork-pack",
-          "sourceLine": 218,
+          "sourceLine": 239,
           "operators": [],
           "targetDomains": [],
           "domainCategory": "any",
           "contentType": "any",
           "tags": [
-            "data",
             "australia"
           ]
         },
         {
-          "id": "coroners-deaths-heroin",
-          "title": "Heroin",
+          "id": "coroners-deaths-polydrug-toxicity",
+          "title": "Polydrug Toxicity",
           "category": "Specific Substances & Death",
-          "query": "\"heroin\" death OR overdose Australia (coroner OR statistics)",
+          "query": "(\"polydrug\" OR \"polydrug toxicity\" OR \"multiple drug toxicity\" OR \"benzodiazepine\" \"opioid\") (death OR overdose) Australia",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/coroners-deaths.md",
           "sourceType": "dork-pack",
-          "sourceLine": 224,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "data",
-            "australia"
-          ]
-        },
-        {
-          "id": "coroners-deaths-pharmaceutical-opioids-1",
-          "title": "Pharmaceutical Opioids - 1",
-          "category": "Specific Substances & Death",
-          "query": "(\"pharmaceutical opioid\" OR \"prescription opioid\") death Australia",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/coroners-deaths.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 230,
+          "sourceLine": 245,
           "operators": [],
           "targetDomains": [],
           "domainCategory": "any",
@@ -652,15 +517,15 @@
           ]
         },
         {
-          "id": "coroners-deaths-pharmaceutical-opioids-2",
-          "title": "Pharmaceutical Opioids - 2",
-          "category": "Specific Substances & Death",
-          "query": "(oxycodone OR fentanyl OR codeine) overdose death Australia",
+          "id": "coroners-deaths-naloxone-overdose-prevention",
+          "title": "Naloxone & Overdose Prevention",
+          "category": "\udccb Recommendations as Harm-Reduction Levers",
+          "query": "coroner recommendation (naloxone OR \"take-home naloxone\" OR \"overdose prevention\") (drug OR opioid) Australia",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/coroners-deaths.md",
           "sourceType": "dork-pack",
-          "sourceLine": 236,
+          "sourceLine": 258,
           "operators": [],
           "targetDomains": [],
           "domainCategory": "any",
@@ -670,34 +535,15 @@
           ]
         },
         {
-          "id": "coroners-deaths-methamphetamine",
-          "title": "Methamphetamine",
-          "category": "Specific Substances & Death",
-          "query": "\"methamphetamine\" OR \"ice\" death Australia (coroner OR data)",
+          "id": "coroners-deaths-drug-checking-festival-deaths",
+          "title": "Drug Checking & Festival Deaths",
+          "category": "\udccb Recommendations as Harm-Reduction Levers",
+          "query": "coroner (recommendation OR inquest) (\"drug checking\" OR \"pill testing\") (festival OR \"music festival\" OR MDMA) Australia",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/coroners-deaths.md",
           "sourceType": "dork-pack",
-          "sourceLine": 242,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "data",
-            "australia"
-          ]
-        },
-        {
-          "id": "coroners-deaths-emerging-substances-1",
-          "title": "Emerging Substances - 1",
-          "category": "Specific Substances & Death",
-          "query": "\"fentanyl\" death OR overdose Australia (emerging)",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/coroners-deaths.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 248,
+          "sourceLine": 264,
           "operators": [],
           "targetDomains": [],
           "domainCategory": "any",
@@ -707,15 +553,15 @@
           ]
         },
         {
-          "id": "coroners-deaths-emerging-substances-2",
-          "title": "Emerging Substances - 2",
-          "category": "Specific Substances & Death",
-          "query": "\"nitazene\" death Australia",
-          "explanation": "",
+          "id": "coroners-deaths-post-release-custody-deaths",
+          "title": "Post-Release & Custody Deaths",
+          "category": "\udccb Recommendations as Harm-Reduction Levers",
+          "query": "(\"post-release\" OR \"release from custody\" OR \"death in custody\") (overdose OR drug OR withdrawal) (coroner OR recommendation OR prevention) Australia",
+          "explanation": "**Why this works:**\n\n- Post-release overdose is one of the most preventable death patterns and a recurring coronial theme\n— tying it to \"recommendation\" or \"prevention\" finds the documents that argue for\nnaloxone-on-release and continuity of treatment",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/coroners-deaths.md",
           "sourceType": "dork-pack",
-          "sourceLine": 254,
+          "sourceLine": 270,
           "operators": [],
           "targetDomains": [],
           "domainCategory": "any",
@@ -725,47 +571,15 @@
           ]
         },
         {
-          "id": "coroners-deaths-polydrug-combination-1",
-          "title": "Polydrug/Combination - 1",
-          "category": "Specific Substances & Death",
-          "query": "\"benzodiazepine\" \"opioid\" combined overdose death",
+          "id": "coroners-deaths-families-affected-others",
+          "title": "Families & Affected Others",
+          "category": "\udcac Affected Communities & Lived Experience",
+          "query": "(overdose OR \"drug-related death\") (\"family\" OR \"affected family\" OR \"bereaved\" OR \"in memory\") (story OR support OR Australia)",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/coroners-deaths.md",
           "sourceType": "dork-pack",
-          "sourceLine": 260,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "coroners-deaths-polydrug-combination-2",
-          "title": "Polydrug/Combination - 2",
-          "category": "Specific Substances & Death",
-          "query": "\"polydrug\" OR \"multiple substances\" overdose death",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/coroners-deaths.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 266,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "coroners-deaths-custody-deaths",
-          "title": "Custody Deaths",
-          "category": "\udd0d Specific Case Types",
-          "query": "\"death in custody\" drug OR overdose OR withdrawal Australia",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/coroners-deaths.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 276,
+          "sourceLine": 289,
           "operators": [],
           "targetDomains": [],
           "domainCategory": "any",
@@ -775,157 +589,22 @@
           ]
         },
         {
-          "id": "coroners-deaths-prison-deaths",
-          "title": "Prison Deaths",
-          "category": "\udd0d Specific Case Types",
-          "query": "(\"prison death\" OR \"correctional\") drug OR overdose OR withdrawal Australia",
-          "explanation": "",
+          "id": "coroners-deaths-peer-community-grief-and-response",
+          "title": "Peer & Community Grief and Response",
+          "category": "\udcac Affected Communities & Lived Experience",
+          "query": "(overdose OR \"drug death\") (\"peer\" OR \"community response\" OR \"remembrance\" OR \"International Overdose Awareness Day\") Australia",
+          "explanation": "**Why this works:**\n\n- International Overdose Awareness Day and peer-org remembrance material carry the lived-experience\nand family voice that coronial data abstracts away — important context for advocacy, handled with\ncare",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/coroners-deaths.md",
           "sourceType": "dork-pack",
-          "sourceLine": 282,
+          "sourceLine": 295,
           "operators": [],
           "targetDomains": [],
-          "domainCategory": "any",
+          "domainCategory": "community",
           "contentType": "any",
           "tags": [
-            "australia"
-          ]
-        },
-        {
-          "id": "coroners-deaths-hospital-healthcare-deaths",
-          "title": "Hospital/Healthcare Deaths",
-          "category": "\udd0d Specific Case Types",
-          "query": "\"hospital\" OR \"healthcare\" drug OR overdose death coronial",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/coroners-deaths.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 288,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "coroners-deaths-post-release-deaths",
-          "title": "Post-Release Deaths",
-          "category": "\udd0d Specific Case Types",
-          "query": "\"post-release\" OR \"release from custody\" overdose death Australia",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/coroners-deaths.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 294,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "australia"
-          ]
-        },
-        {
-          "id": "coroners-deaths-prevention-recommendations",
-          "title": "Prevention Recommendations",
-          "category": "\udccb Recommendations & Prevention",
-          "query": "coroner recommendation (\"harm reduction\" OR naloxone OR \"overdose prevention\")",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/coroners-deaths.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 304,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "coroners-deaths-implementation-of-recommendations",
-          "title": "Implementation of Recommendations",
-          "category": "\udccb Recommendations & Prevention",
-          "query": "coronial recommendation (implementation OR response OR \"government response\") drug",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/coroners-deaths.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 310,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "government",
-          "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "coroners-deaths-systemic-change",
-          "title": "Systemic Change",
-          "category": "\udccb Recommendations & Prevention",
-          "query": "coroner (\"systemic change\" OR \"systemic recommendation\") drug OR overdose",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/coroners-deaths.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 316,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "coroners-deaths-annual-reports",
-          "title": "Annual Reports",
-          "category": "\udcc8 Trends & Patterns",
-          "query": "\"drug-related deaths\" OR \"overdose deaths\" \"annual report\" Australia",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/coroners-deaths.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 326,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "documents",
-            "australia"
-          ]
-        },
-        {
-          "id": "coroners-deaths-trend-analysis",
-          "title": "Trend Analysis",
-          "category": "\udcc8 Trends & Patterns",
-          "query": "(\"drug death\" OR \"overdose\") trend Australia 2020..2026",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/coroners-deaths.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 332,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "australia"
-          ]
-        },
-        {
-          "id": "coroners-deaths-geographic-patterns",
-          "title": "Geographic Patterns",
-          "category": "\udcc8 Trends & Patterns",
-          "query": "(\"drug death\" OR \"overdose\") (rural OR regional OR metropolitan) Australia comparison",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/coroners-deaths.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 338,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
+            "peer",
+            "international",
             "australia"
           ]
         }
@@ -13781,144 +13460,155 @@
     {
       "id": "naloxone",
       "title": "Take-Home Naloxone (THN)",
-      "description": "Guidance, training frameworks, implementation resources, and access information for naloxone",
+      "description": "Find the programs, training, evaluations, and access pathways behind Australia's take-home",
       "dorks": [
         {
-          "id": "naloxone-search-gov-au",
-          "title": "Search gov.au",
+          "id": "naloxone-search-health-gov-au",
+          "title": "Search health.gov.au",
           "category": "Quick Start",
-          "query": "site:*.gov.au filetype:pdf \"take-home naloxone\" guidelines",
-          "explanation": "",
-          "difficulty": "beginner",
-          "sourceFile": "dork-packs/naloxone.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 15,
-          "operators": [
-            "site",
-            "filetype"
-          ],
-          "targetDomains": [
-            "gov.au"
-          ],
-          "domainCategory": "government",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "australia"
-          ]
-        },
-        {
-          "id": "naloxone-government-programs-guidelines",
-          "title": "Government Programs & Guidelines",
-          "category": "Basic Queries",
-          "query": "site:*.gov.au filetype:pdf (\"take-home naloxone\" OR THN) (guideline OR program)",
-          "explanation": "**Why this works:**\n\n- Catches both full term and abbreviation\n- PDF filter gets actual program documents\n- Guideline OR program catches different document types",
-          "difficulty": "beginner",
-          "sourceFile": "dork-packs/naloxone.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 22,
-          "operators": [
-            "site",
-            "filetype"
-          ],
-          "targetDomains": [
-            "gov.au"
-          ],
-          "domainCategory": "government",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "services",
-            "australia"
-          ]
-        },
-        {
-          "id": "naloxone-state-health-department-resources",
-          "title": "State Health Department Resources",
-          "category": "Basic Queries",
-          "query": "site:*.health.*.gov.au filetype:pdf naloxone (community OR peer OR training)",
+          "query": "site:health.gov.au \"Take Home Naloxone Program\"",
           "explanation": "",
           "difficulty": "beginner",
           "sourceFile": "dork-packs/naloxone.md",
           "sourceType": "dork-pack",
           "sourceLine": 34,
           "operators": [
-            "site",
-            "filetype"
+            "site"
           ],
           "targetDomains": [
-            "health.*.gov.au"
+            "health.gov.au"
           ],
           "domainCategory": "government",
-          "contentType": "pdf",
+          "contentType": "any",
           "tags": [
-            "documents",
+            "services",
+            "australia"
+          ]
+        },
+        {
+          "id": "naloxone-the-national-program",
+          "title": "The National Program",
+          "category": "Basic Queries",
+          "query": "site:health.gov.au (\"Take Home Naloxone Program\" OR THN) (eligibility OR pharmacy OR \"no prescription\")",
+          "explanation": "**Why this works:**\n\n- Goes to the program source rather than guessing at `*.gov.au` wildcards\n- The program made naloxone free and prescription-free nationally from 1 July 2022 — its own pages\ncarry eligibility and supply detail",
+          "difficulty": "beginner",
+          "sourceFile": "dork-packs/naloxone.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 41,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "health.gov.au"
+          ],
+          "domainCategory": "government",
+          "contentType": "any",
+          "tags": [
+            "services",
+            "australia"
+          ]
+        },
+        {
+          "id": "naloxone-peer-led-distribution-training",
+          "title": "Peer-Led Distribution & Training",
+          "category": "Basic Queries",
+          "query": "(site:nuaa.org.au OR site:aivl.org.au OR site:penington.org.au) naloxone (peer OR training OR \"overdose response\")",
+          "explanation": "**Why this works:**\n\n- Peer and drug-user organisations ran naloxone training and distribution before the national\nprogram existed and still reach people pharmacies don't — this is the lived-experience side of THN",
+          "difficulty": "beginner",
+          "sourceFile": "dork-packs/naloxone.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 53,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "nuaa.org.au",
+            "aivl.org.au",
+            "penington.org.au"
+          ],
+          "domainCategory": "ngo",
+          "contentType": "any",
+          "tags": [
             "peer",
             "training",
             "australia"
           ]
         },
         {
-          "id": "naloxone-naloxone-training-materials",
-          "title": "Naloxone Training Materials",
+          "id": "naloxone-state-health-department-programs",
+          "title": "State Health Department Programs",
           "category": "Basic Queries",
-          "query": "\"naloxone training\" filetype:pdf site:*.org.au",
-          "explanation": "",
+          "query": "(site:health.nsw.gov.au OR site:health.vic.gov.au OR site:sahealth.sa.gov.au) (\"take home naloxone\" OR \"take-home naloxone\")",
+          "explanation": "> Note: hyphenation varies — federal and NSW write \"Take Home Naloxone\", Victoria writes \"Take-Home\n> Naloxone\". Search both, and avoid \"community naloxone\" (not the Australian program term).",
           "difficulty": "beginner",
           "sourceFile": "dork-packs/naloxone.md",
           "sourceType": "dork-pack",
-          "sourceLine": 40,
+          "sourceLine": 64,
           "operators": [
-            "site",
-            "filetype"
+            "site"
           ],
           "targetDomains": [
-            "org.au"
+            "health.nsw.gov.au",
+            "health.vic.gov.au",
+            "sahealth.sa.gov.au"
           ],
-          "domainCategory": "ngo",
-          "contentType": "pdf",
+          "domainCategory": "government",
+          "contentType": "any",
           "tags": [
-            "documents",
-            "training",
+            "services",
             "australia"
           ]
         },
         {
-          "id": "naloxone-all-naloxone-formulations",
-          "title": "All Naloxone Formulations",
+          "id": "naloxone-the-independent-pilot-evaluation",
+          "title": "The Independent Pilot Evaluation",
           "category": "Intermediate Queries",
-          "query": "site:*.gov.au (naloxone OR narcan OR nyxoid) (program OR guideline OR training) filetype:pdf",
-          "explanation": "**Why this works:**\n\n- Covers brand names and generic\n- Multiple document types captured",
+          "query": "\"Evaluation of the Pharmaceutical Benefits Scheme subsidised take home naloxone pilot\"",
+          "explanation": "**Why this works:**\n\n- Before the national rollout, a THN pilot ran in NSW, SA and WA (2019–2021). The University of\nQueensland (ISSR) evaluation, published 2022, is the evidence base that justified going national —\nquoting its exact title finds it directly",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/naloxone.md",
           "sourceType": "dork-pack",
-          "sourceLine": 50,
-          "operators": [
-            "site",
-            "filetype"
-          ],
-          "targetDomains": [
-            "gov.au"
-          ],
-          "domainCategory": "government",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "services",
-            "training",
-            "australia"
-          ]
+          "sourceLine": 77,
+          "operators": [],
+          "targetDomains": [],
+          "domainCategory": "any",
+          "contentType": "any",
+          "tags": []
         },
         {
-          "id": "naloxone-pharmacy-supply-access",
-          "title": "Pharmacy Supply & Access",
+          "id": "naloxone-penington-institute-overdose-data",
+          "title": "Penington Institute Overdose Data",
           "category": "Intermediate Queries",
-          "query": "\"naloxone\" (pharmacy OR pharmacist) (supply OR access OR \"S3\" OR \"schedule 3\") Australia",
+          "query": "site:penington.org.au \"Australia's Annual Overdose Report\"",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/naloxone.md",
           "sourceType": "dork-pack",
-          "sourceLine": 61,
+          "sourceLine": 89,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "penington.org.au"
+          ],
+          "domainCategory": "ngo",
+          "contentType": "any",
+          "tags": [
+            "documents",
+            "data",
+            "australia"
+          ]
+        },
+        {
+          "id": "naloxone-naloxone-scheduling-s3-pharmacist-only",
+          "title": "Naloxone Scheduling (S3 / Pharmacist Only)",
+          "category": "Intermediate Queries",
+          "query": "naloxone (\"Schedule 3\" OR \"Pharmacist Only\" OR \"down-scheduling\") (Australia OR TGA OR \"Poisons Standard\")",
+          "explanation": "**Why this works:**\n\n- Naloxone was down-scheduled S4 → S3 (Pharmacist Only) in 2016, which is what made over-the-counter\npharmacy supply possible — the schedule terms find the regulatory paper trail",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/naloxone.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 95,
           "operators": [],
           "targetDomains": [],
           "domainCategory": "any",
@@ -13928,68 +13618,33 @@
           ]
         },
         {
-          "id": "naloxone-peer-distribution-programs",
-          "title": "Peer Distribution Programs",
+          "id": "naloxone-cope-overdose-response-training",
+          "title": "COPE Overdose-Response Training",
           "category": "Intermediate Queries",
-          "query": "site:*.org.au \"naloxone\" (\"peer distribution\" OR \"peer-led\" OR \"community distribution\") filetype:pdf",
-          "explanation": "",
+          "query": "(\"COPE\" \"Community Overdose Prevention\") (Penington OR naloxone OR training)",
+          "explanation": "**Why this works:**\n\n- COPE (Community Overdose Prevention Education) is Penington Institute's overdose-response and\nnaloxone training program — naming it finds the actual curriculum, not generic \"training\" pages",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/naloxone.md",
           "sourceType": "dork-pack",
-          "sourceLine": 67,
-          "operators": [
-            "site",
-            "filetype"
-          ],
-          "targetDomains": [
-            "org.au"
-          ],
-          "domainCategory": "ngo",
-          "contentType": "pdf",
+          "sourceLine": 106,
+          "operators": [],
+          "targetDomains": [],
+          "domainCategory": "community",
+          "contentType": "any",
           "tags": [
-            "documents",
-            "peer",
-            "services",
-            "australia"
+            "training"
           ]
         },
         {
-          "id": "naloxone-training-resources-from-sector",
-          "title": "Training Resources from Sector",
-          "category": "Intermediate Queries",
-          "query": "(site:nuaa.org.au OR site:aivl.org.au OR site:penington.org.au) naloxone training filetype:pdf",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/naloxone.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 73,
-          "operators": [
-            "site",
-            "filetype"
-          ],
-          "targetDomains": [
-            "nuaa.org.au",
-            "aivl.org.au",
-            "penington.org.au"
-          ],
-          "domainCategory": "ngo",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "training",
-            "australia"
-          ]
-        },
-        {
-          "id": "naloxone-comprehensive-naloxone-sweep",
-          "title": "Comprehensive Naloxone Sweep",
+          "id": "naloxone-comprehensive-program-guidance-sweep",
+          "title": "Comprehensive Program & Guidance Sweep",
           "category": "Advanced Queries",
-          "query": "site:*.gov.au filetype:pdf (\"take-home naloxone\" OR \"take home naloxone\" OR THN OR \"naloxone program\") (guideline OR framework OR program OR implementation) after:2023",
+          "query": "site:*.gov.au filetype:pdf (\"Take Home Naloxone\" OR THN) (guideline OR framework OR \"standing order\" OR implementation) after:2022",
           "explanation": "",
           "difficulty": "advanced",
           "sourceFile": "dork-packs/naloxone.md",
           "sourceType": "dork-pack",
-          "sourceLine": 83,
+          "sourceLine": 121,
           "operators": [
             "site",
             "filetype",
@@ -14008,15 +13663,15 @@
           ]
         },
         {
-          "id": "naloxone-intranasal-nasal-spray-resources",
-          "title": "Intranasal/Nasal Spray Resources",
+          "id": "naloxone-standing-orders-supply-authority",
+          "title": "Standing Orders & Supply Authority",
           "category": "Advanced Queries",
-          "query": "(nyxoid OR \"intranasal naloxone\" OR \"nasal spray\" OR \"nasal naloxone\") (training OR \"how to use\" OR administration) Australia filetype:pdf",
+          "query": "naloxone (\"standing order\" OR \"standing authority\") (pharmacy OR nurse OR \"authorised supply\") Australia filetype:pdf",
           "explanation": "",
           "difficulty": "advanced",
           "sourceFile": "dork-packs/naloxone.md",
           "sourceType": "dork-pack",
-          "sourceLine": 89,
+          "sourceLine": 127,
           "operators": [
             "filetype"
           ],
@@ -14025,65 +13680,25 @@
           "contentType": "pdf",
           "tags": [
             "documents",
-            "training",
             "australia"
           ]
         },
         {
-          "id": "naloxone-rescheduling-policy-changes",
-          "title": "Rescheduling & Policy Changes",
+          "id": "naloxone-program-evaluations-effectiveness",
+          "title": "Program Evaluations & Effectiveness",
           "category": "Advanced Queries",
-          "query": "\"naloxone\" (\"S3\" OR \"schedule 3\" OR \"rescheduling\" OR \"down-scheduling\") Australia policy",
+          "query": "(\"take-home naloxone\" OR THN) (evaluation OR effectiveness OR outcomes OR \"lives saved\") Australia filetype:pdf after:2020",
           "explanation": "",
           "difficulty": "advanced",
           "sourceFile": "dork-packs/naloxone.md",
           "sourceType": "dork-pack",
-          "sourceLine": 95,
-          "operators": [],
+          "sourceLine": 133,
+          "operators": [
+            "filetype",
+            "after"
+          ],
           "targetDomains": [],
           "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "policy",
-            "australia"
-          ]
-        },
-        {
-          "id": "naloxone-community-access-models",
-          "title": "Community Access Models",
-          "category": "Advanced Queries",
-          "query": "\"naloxone\" (\"vending\" OR \"free distribution\" OR \"public access\" OR \"community naloxone\") Australia",
-          "explanation": "",
-          "difficulty": "advanced",
-          "sourceFile": "dork-packs/naloxone.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 101,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "community",
-          "contentType": "any",
-          "tags": [
-            "australia"
-          ]
-        },
-        {
-          "id": "naloxone-standing-order-programs",
-          "title": "Standing Order Programs",
-          "category": "Advanced Queries",
-          "query": "site:*.gov.au \"naloxone\" \"standing order\" OR \"standing authority\" filetype:pdf",
-          "explanation": "",
-          "difficulty": "advanced",
-          "sourceFile": "dork-packs/naloxone.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 107,
-          "operators": [
-            "site",
-            "filetype"
-          ],
-          "targetDomains": [
-            "gov.au"
-          ],
-          "domainCategory": "government",
           "contentType": "pdf",
           "tags": [
             "documents",
@@ -14092,170 +13707,185 @@
           ]
         },
         {
-          "id": "naloxone-act",
-          "title": "ACT",
-          "category": "State-by-State Resources",
-          "query": "site:health.act.gov.au naloxone",
-          "explanation": "",
-          "difficulty": "intermediate",
+          "id": "naloxone-coronial-overdose-drivers",
+          "title": "Coronial & Overdose Drivers",
+          "category": "Advanced Queries",
+          "query": "naloxone (coronial OR coroner OR preventable) (recommendation OR access OR \"expanded supply\") Australia",
+          "explanation": "**Why this works:**\n\n- Expanded naloxone access has repeatedly been a coronial recommendation — tying the search to those\ndrivers finds the documents that actually shifted policy (see the Coroners & Deaths pack)",
+          "difficulty": "advanced",
           "sourceFile": "dork-packs/naloxone.md",
           "sourceType": "dork-pack",
-          "sourceLine": 117,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "health.act.gov.au"
-          ],
-          "domainCategory": "government",
+          "sourceLine": 139,
+          "operators": [],
+          "targetDomains": [],
+          "domainCategory": "any",
           "contentType": "any",
           "tags": [
             "australia"
           ]
         },
         {
-          "id": "naloxone-nsw",
-          "title": "NSW",
-          "category": "State-by-State Resources",
-          "query": "site:health.nsw.gov.au \"naloxone\" OR \"take-home naloxone\"",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/naloxone.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 123,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "health.nsw.gov.au"
-          ],
-          "domainCategory": "government",
-          "contentType": "any",
-          "tags": [
-            "australia"
-          ]
-        },
-        {
-          "id": "naloxone-qld",
-          "title": "QLD",
-          "category": "State-by-State Resources",
-          "query": "site:health.qld.gov.au naloxone",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/naloxone.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 129,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "health.qld.gov.au"
-          ],
-          "domainCategory": "government",
-          "contentType": "any",
-          "tags": [
-            "australia"
-          ]
-        },
-        {
-          "id": "naloxone-sa",
-          "title": "SA",
-          "category": "State-by-State Resources",
-          "query": "site:sahealth.sa.gov.au naloxone",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/naloxone.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 135,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "sahealth.sa.gov.au"
-          ],
-          "domainCategory": "government",
-          "contentType": "any",
-          "tags": [
-            "australia"
-          ]
-        },
-        {
-          "id": "naloxone-vic",
-          "title": "VIC",
-          "category": "State-by-State Resources",
-          "query": "site:health.vic.gov.au naloxone program",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/naloxone.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 141,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "health.vic.gov.au"
-          ],
-          "domainCategory": "government",
-          "contentType": "any",
-          "tags": [
-            "services",
-            "australia"
-          ]
-        },
-        {
-          "id": "naloxone-wa",
-          "title": "WA",
-          "category": "State-by-State Resources",
-          "query": "site:health.wa.gov.au \"take-home naloxone\"",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/naloxone.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 147,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "health.wa.gov.au"
-          ],
-          "domainCategory": "government",
-          "contentType": "any",
-          "tags": [
-            "australia"
-          ]
-        },
-        {
-          "id": "naloxone-train-the-trainer",
-          "title": "Train the Trainer",
-          "category": "Training-Specific Searches",
-          "query": "\"naloxone\" \"train the trainer\" OR \"training package\" Australia filetype:pdf",
+          "id": "naloxone-nyxoid-nasal-spray",
+          "title": "Nyxoid (Nasal Spray)",
+          "category": "\udc89 Formulations & Products (Australia)",
+          "query": "(\"Nyxoid\" OR \"naloxone nasal spray\") (\"Take Home Naloxone\" OR THN OR \"how to use\") site:.au",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/naloxone.md",
           "sourceType": "dork-pack",
           "sourceLine": 157,
           "operators": [
-            "filetype"
+            "site"
           ],
-          "targetDomains": [],
+          "targetDomains": [
+            ".au"
+          ],
           "domainCategory": "any",
-          "contentType": "pdf",
+          "contentType": "any",
           "tags": [
-            "documents",
-            "training",
             "australia"
           ]
         },
         {
-          "id": "naloxone-peer-education-resources",
-          "title": "Peer Education Resources",
-          "category": "Training-Specific Searches",
-          "query": "\"naloxone\" (\"peer education\" OR \"peer trainer\" OR \"peer-led training\") filetype:pdf",
+          "id": "naloxone-prenoxad-pre-filled-injectable",
+          "title": "Prenoxad (Pre-Filled Injectable)",
+          "category": "\udc89 Formulations & Products (Australia)",
+          "query": "\"Prenoxad\" (naloxone OR \"pre-filled\" OR \"Take Home Naloxone\") site:.au",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/naloxone.md",
           "sourceType": "dork-pack",
           "sourceLine": 163,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            ".au"
+          ],
+          "domainCategory": "any",
+          "contentType": "any",
+          "tags": [
+            "australia"
+          ]
+        },
+        {
+          "id": "naloxone-narcan-injectable-in-au-not-nasal",
+          "title": "Narcan (Injectable in AU, not Nasal)",
+          "category": "\udc89 Formulations & Products (Australia)",
+          "query": "\"Narcan\" naloxone (injection OR ampoule) site:.au",
+          "explanation": "**Why this works:**\n\n- In Australia \"Narcan\" is the injectable ampoule, not a nasal spray — scoping to `.au` and pairing\nwith \"injection\" avoids pulling in US Narcan-nasal-spray material by mistake",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/naloxone.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 169,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            ".au"
+          ],
+          "domainCategory": "any",
+          "contentType": "any",
+          "tags": [
+            "australia"
+          ]
+        },
+        {
+          "id": "naloxone-euronpud-peer-naloxone-stories",
+          "title": "EuroNPUD Peer Naloxone Stories",
+          "category": "International & Peer Naloxone",
+          "query": "site:euronpud.net (\"European Diaries\" OR \"Peer Power\" OR naloxone)",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/naloxone.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 186,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "euronpud.net"
+          ],
+          "domainCategory": "any",
+          "contentType": "any",
+          "tags": [
+            "peer"
+          ]
+        },
+        {
+          "id": "naloxone-inpud-global-peer-networks",
+          "title": "INPUD & Global Peer Networks",
+          "category": "International & Peer Naloxone",
+          "query": "(site:inpud.net OR site:euronpud.net) naloxone (\"peer distribution\" OR \"take-home\" OR overdose)",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/naloxone.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 192,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "inpud.net",
+            "euronpud.net"
+          ],
+          "domainCategory": "any",
+          "contentType": "any",
+          "tags": [
+            "peer"
+          ]
+        },
+        {
+          "id": "naloxone-international-overdose-awareness-day",
+          "title": "International Overdose Awareness Day",
+          "category": "International & Peer Naloxone",
+          "query": "(site:overdoseday.com OR \"International Overdose Awareness Day\") (naloxone OR \"a world without overdose\" OR campaign)",
+          "explanation": "**Why this works:**\n\n- IOAD (31 August) is the global overdose-awareness campaign coordinated by Penington Institute —\nits materials are a reliable source of naloxone messaging, remembrance, and event resources",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/naloxone.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 198,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "overdoseday.com"
+          ],
+          "domainCategory": "any",
+          "contentType": "any",
+          "tags": [
+            "international"
+          ]
+        },
+        {
+          "id": "naloxone-peer-overdose-response-experience",
+          "title": "Peer Overdose-Response Experience",
+          "category": "\udcac Peer & Lived-Experience Perspectives",
+          "query": "naloxone (\"in their own words\" OR \"I used naloxone\" OR \"reversed an overdose\" OR \"peer\") (story OR experience OR Australia)",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/naloxone.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 216,
+          "operators": [],
+          "targetDomains": [],
+          "domainCategory": "any",
+          "contentType": "any",
+          "tags": [
+            "peer",
+            "australia"
+          ]
+        },
+        {
+          "id": "naloxone-peer-worker-training-reflection",
+          "title": "Peer Worker Training & Reflection",
+          "category": "\udcac Peer & Lived-Experience Perspectives",
+          "query": "(\"take-home naloxone\" OR naloxone) (\"peer worker\" OR \"peer educator\" OR volunteer) (training OR reflection OR experience) filetype:pdf",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/naloxone.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 222,
           "operators": [
             "filetype"
           ],
@@ -14269,85 +13899,86 @@
           ]
         },
         {
-          "id": "naloxone-clinical-training",
-          "title": "Clinical Training",
-          "category": "Training-Specific Searches",
-          "query": "site:*.gov.au \"naloxone\" \"clinical guideline\" OR \"prescribing\" OR \"administration\" filetype:pdf",
+          "id": "naloxone-community-discussion-real-time-knowledge",
+          "title": "Community Discussion & Real-Time Knowledge",
+          "category": "\udcac Peer & Lived-Experience Perspectives",
+          "query": "(site:reddit.com/r/AusDrugs OR site:bluelight.org) (naloxone OR Narcan OR Nyxoid OR overdose)",
+          "explanation": "**Why this works:**\n\n- Forums carry the practical \"how it actually went\" knowledge — what naloxone felt like to use,\nredosing for nitazenes, managing precipitated withdrawal — that rarely reaches a PDF",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/naloxone.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 228,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "reddit.com/r/AusDrugs",
+            "bluelight.org"
+          ],
+          "domainCategory": "community",
+          "contentType": "any",
+          "tags": []
+        },
+        {
+          "id": "naloxone-penington-overdose-report-datasets",
+          "title": "Penington Overdose Report (Datasets)",
+          "category": "Data, Evaluation & Evidence",
+          "query": "site:penington.org.au \"Australia's Annual Overdose Report\" (filetype:pdf OR data OR opioid)",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/naloxone.md",
           "sourceType": "dork-pack",
-          "sourceLine": 169,
+          "sourceLine": 243,
           "operators": [
             "site",
             "filetype"
           ],
           "targetDomains": [
-            "gov.au"
+            "penington.org.au"
           ],
-          "domainCategory": "government",
+          "domainCategory": "ngo",
           "contentType": "pdf",
           "tags": [
             "documents",
-            "services",
-            "training",
+            "data",
             "australia"
           ]
         },
         {
-          "id": "naloxone-video-multimedia-resources",
-          "title": "Video/Multimedia Resources",
-          "category": "Training-Specific Searches",
-          "query": "\"naloxone\" \"how to use\" OR \"administration\" training video Australia",
+          "id": "naloxone-ndarc-academic-evaluation",
+          "title": "NDARC & Academic Evaluation",
+          "category": "Data, Evaluation & Evidence",
+          "query": "(site:unsw.edu.au OR site:ndarc.med.unsw.edu.au) naloxone (evaluation OR \"take-home\" OR distribution) filetype:pdf",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/naloxone.md",
           "sourceType": "dork-pack",
-          "sourceLine": 175,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "training",
-            "australia"
-          ]
-        },
-        {
-          "id": "naloxone-program-evaluations",
-          "title": "Program Evaluations",
-          "category": "Research & Evaluation",
-          "query": "site:*.edu.au \"naloxone\" (evaluation OR effectiveness OR outcomes) Australia filetype:pdf",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/naloxone.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 185,
+          "sourceLine": 249,
           "operators": [
             "site",
             "filetype"
           ],
           "targetDomains": [
-            "edu.au"
+            "unsw.edu.au",
+            "ndarc.med.unsw.edu.au"
           ],
           "domainCategory": "education",
           "contentType": "pdf",
           "tags": [
             "documents",
-            "services",
             "australia"
           ]
         },
         {
-          "id": "naloxone-cochrane-systematic-reviews",
-          "title": "Cochrane/Systematic Reviews",
-          "category": "Research & Evaluation",
-          "query": "intitle:\"systematic review\" OR intitle:\"meta-analysis\" \"take-home naloxone\" OR \"community naloxone\"",
+          "id": "naloxone-systematic-reviews",
+          "title": "Systematic Reviews",
+          "category": "Data, Evaluation & Evidence",
+          "query": "(intitle:\"systematic review\" OR intitle:\"meta-analysis\") (\"take-home naloxone\" OR \"community naloxone\")",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/naloxone.md",
           "sourceType": "dork-pack",
-          "sourceLine": 191,
+          "sourceLine": 255,
           "operators": [
             "intitle"
           ],
@@ -14357,86 +13988,69 @@
           "tags": []
         },
         {
-          "id": "naloxone-ndarc-research",
-          "title": "NDARC Research",
-          "category": "Research & Evaluation",
-          "query": "site:ndarc.med.unsw.edu.au naloxone filetype:pdf",
+          "id": "naloxone-the-rescheduling-record",
+          "title": "The Rescheduling Record",
+          "category": "Policy, Scheduling & Access",
+          "query": "\"Australia reschedules naloxone for opioid overdose\" OR (naloxone \"Schedule 3\" \"Pharmacist Only\")",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/naloxone.md",
           "sourceType": "dork-pack",
-          "sourceLine": 197,
+          "sourceLine": 265,
+          "operators": [],
+          "targetDomains": [],
+          "domainCategory": "any",
+          "contentType": "any",
+          "tags": [
+            "australia"
+          ]
+        },
+        {
+          "id": "naloxone-peak-body-pharmacy-positions",
+          "title": "Peak-Body & Pharmacy Positions",
+          "category": "Policy, Scheduling & Access",
+          "query": "(site:psa.org.au OR site:guild.org.au) (\"take home naloxone\" OR THN) (position OR supply OR guideline)",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/naloxone.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 271,
           "operators": [
-            "site",
-            "filetype"
+            "site"
           ],
           "targetDomains": [
-            "ndarc.med.unsw.edu.au"
+            "psa.org.au",
+            "guild.org.au"
           ],
-          "domainCategory": "education",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "research",
-            "australia"
-          ]
-        },
-        {
-          "id": "naloxone-nyxoid-nasal-spray",
-          "title": "Nyxoid (Nasal Spray)",
-          "category": "Formulation-Specific",
-          "query": "\"nyxoid\" (training OR \"how to use\" OR guide) Australia",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/naloxone.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 207,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
+          "domainCategory": "ngo",
           "contentType": "any",
           "tags": [
-            "training",
             "australia"
           ]
         },
         {
-          "id": "naloxone-injectable",
-          "title": "Injectable",
-          "category": "Formulation-Specific",
-          "query": "\"naloxone\" (injectable OR intramuscular OR IM) (training OR guide) Australia",
+          "id": "naloxone-peer-body-advocacy",
+          "title": "Peer-Body Advocacy",
+          "category": "Policy, Scheduling & Access",
+          "query": "(site:nuaa.org.au OR site:aivl.org.au OR site:penington.org.au) naloxone (submission OR campaign OR \"expanded access\")",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/naloxone.md",
           "sourceType": "dork-pack",
-          "sourceLine": 213,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "training",
-            "australia"
-          ]
-        },
-        {
-          "id": "naloxone-comparison-of-formulations",
-          "title": "Comparison of Formulations",
-          "category": "Formulation-Specific",
-          "query": "\"naloxone\" (intranasal OR intramuscular OR injectable) comparison OR review filetype:pdf",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/naloxone.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 219,
+          "sourceLine": 277,
           "operators": [
-            "filetype"
+            "site"
           ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "pdf",
+          "targetDomains": [
+            "nuaa.org.au",
+            "aivl.org.au",
+            "penington.org.au"
+          ],
+          "domainCategory": "ngo",
+          "contentType": "any",
           "tags": [
-            "documents"
+            "peer",
+            "australia"
           ]
         }
       ],
@@ -14445,113 +14059,112 @@
     {
       "id": "novel-substances",
       "title": "Novel Substances, Pharmacology & Toxicology",
-      "description": "Surveillance of NPS, nitazenes, adulterants, and emerging drug trends.",
+      "description": "Surveillance of the substances actually in Australia's supply — nitazenes, designer benzos,",
       "dorks": [
         {
-          "id": "novel-substances-search-gov-au",
-          "title": "Search gov.au",
+          "id": "novel-substances-search-adf-org-au",
+          "title": "Search adf.org.au",
           "category": "Quick Start",
-          "query": "site:*.gov.au filetype:pdf (\"novel psychoactive\" OR NPS OR \"emerging substance\") after:2023",
-          "explanation": "",
-          "difficulty": "beginner",
-          "sourceFile": "dork-packs/novel-substances.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 14,
-          "operators": [
-            "site",
-            "filetype",
-            "after"
-          ],
-          "targetDomains": [
-            "gov.au"
-          ],
-          "domainCategory": "government",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "australia"
-          ]
-        },
-        {
-          "id": "novel-substances-government-nps-reports",
-          "title": "Government NPS Reports",
-          "category": "Basic Queries",
-          "query": "site:*.gov.au filetype:pdf (\"novel psychoactive\" OR NPS) (trend OR surveillance OR \"drug market\")",
-          "explanation": "",
-          "difficulty": "beginner",
-          "sourceFile": "dork-packs/novel-substances.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 34,
-          "operators": [
-            "site",
-            "filetype"
-          ],
-          "targetDomains": [
-            "gov.au"
-          ],
-          "domainCategory": "government",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "australia"
-          ]
-        },
-        {
-          "id": "novel-substances-university-research",
-          "title": "University Research",
-          "category": "Basic Queries",
-          "query": "site:*.edu.au filetype:pdf (\"nitazene\" OR \"novel benzodiazepine\" OR \"synthetic opioid\") Australia",
-          "explanation": "",
-          "difficulty": "beginner",
-          "sourceFile": "dork-packs/novel-substances.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 40,
-          "operators": [
-            "site",
-            "filetype"
-          ],
-          "targetDomains": [
-            "edu.au"
-          ],
-          "domainCategory": "education",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "research",
-            "australia"
-          ]
-        },
-        {
-          "id": "novel-substances-general-nps-information",
-          "title": "General NPS Information",
-          "category": "Basic Queries",
-          "query": "\"novel psychoactive substance\" OR NPS (Australia OR NSW OR VIC) (report OR surveillance) filetype:pdf",
+          "query": "(site:adf.org.au OR site:unsw.edu.au) (\"nitazene\" OR \"nitazenes\")",
           "explanation": "",
           "difficulty": "beginner",
           "sourceFile": "dork-packs/novel-substances.md",
           "sourceType": "dork-pack",
           "sourceLine": 46,
           "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "adf.org.au",
+            "unsw.edu.au"
+          ],
+          "domainCategory": "education",
+          "contentType": "any",
+          "tags": [
+            "australia"
+          ]
+        },
+        {
+          "id": "novel-substances-national-wastewater-monitoring-acic",
+          "title": "National Wastewater Monitoring (ACIC)",
+          "category": "Basic Queries",
+          "query": "site:acic.gov.au \"National Wastewater Drug Monitoring Program\" filetype:pdf",
+          "explanation": "**Why this works:**\n\n- Goes to the program itself rather than guessing `*.gov.au` — the ACIC's NWDMP (analysed by the\nUniversity of Queensland's QAEHS and the University of South Australia) is the authoritative\nnational consumption signal, reported in numbered editions",
+          "difficulty": "beginner",
+          "sourceFile": "dork-packs/novel-substances.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 53,
+          "operators": [
+            "site",
             "filetype"
           ],
-          "targetDomains": [],
-          "domainCategory": "any",
+          "targetDomains": [
+            "acic.gov.au"
+          ],
+          "domainCategory": "government",
           "contentType": "pdf",
           "tags": [
             "documents",
+            "services",
+            "australia"
+          ]
+        },
+        {
+          "id": "novel-substances-ndarc-drug-trends-idrs-edrs",
+          "title": "NDARC Drug Trends (IDRS / EDRS)",
+          "category": "Basic Queries",
+          "query": "(site:unsw.edu.au OR site:ndarc.med.unsw.edu.au) (\"Illicit Drug Reporting System\" OR \"Ecstasy and Related Drugs Reporting System\" OR \"Drug Trends\")",
+          "explanation": "**Why this works:**\n\n- IDRS and EDRS are NDARC's two sentinel surveillance arms under the Drug Trends program — they're\nhow emerging substances first show up in the data. (NDARC moved onto the main UNSW site, so search\nboth domains.)",
+          "difficulty": "beginner",
+          "sourceFile": "dork-packs/novel-substances.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 65,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "unsw.edu.au",
+            "ndarc.med.unsw.edu.au"
+          ],
+          "domainCategory": "education",
+          "contentType": "any",
+          "tags": [
+            "documents",
+            "australia"
+          ]
+        },
+        {
+          "id": "novel-substances-plain-language-substance-facts-adf",
+          "title": "Plain-Language Substance Facts (ADF)",
+          "category": "Basic Queries",
+          "query": "site:adf.org.au (\"nitazenes\" OR \"Drug Facts\" OR \"novel psychoactive\")",
+          "explanation": "",
+          "difficulty": "beginner",
+          "sourceFile": "dork-packs/novel-substances.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 77,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "adf.org.au"
+          ],
+          "domainCategory": "ngo",
+          "contentType": "any",
+          "tags": [
             "australia"
           ]
         },
         {
           "id": "novel-substances-nitazenes-benzimidazole-opioids",
-          "title": "Nitazenes & Benzimidazole Opioids",
+          "title": "Nitazenes (Benzimidazole Opioids)",
           "category": "Intermediate Queries",
-          "query": "(\"nitazene\" OR \"isotonitazene\" OR \"protonitazene\" OR \"metonitazene\" OR \"benzimidazole opioid\") Australia filetype:pdf",
-          "explanation": "**Why this matters:** Nitazenes are highly potent synthetic opioids emerging in drug supplies\nglobally.",
+          "query": "(\"isotonitazene\" OR \"protonitazene\" OR \"metonitazene\" OR \"etonitazepyne\" OR \"butonitazene\") (Australia OR detection OR toxicology) filetype:pdf",
+          "explanation": "**Why this matters:** nitazenes are high-potency synthetic opioids; isotonitazene, protonitazene and\nmetonitazene are the three most frequently identified in Australian forensic and cryptomarket data.",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/novel-substances.md",
           "sourceType": "dork-pack",
-          "sourceLine": 56,
+          "sourceLine": 87,
           "operators": [
             "filetype"
           ],
@@ -14564,36 +14177,57 @@
           ]
         },
         {
-          "id": "novel-substances-xylazine-adulterants",
-          "title": "Xylazine & Adulterants",
+          "id": "novel-substances-designer-benzodiazepines",
+          "title": "Designer Benzodiazepines",
           "category": "Intermediate Queries",
-          "query": "(\"xylazine\" OR \"medetomidine\" OR \"tranq\" OR \"adulterant\") (Australia OR \"drug supply\") filetype:pdf",
-          "explanation": "",
+          "query": "(\"bromazolam\" OR \"flualprazolam\" OR \"etizolam\" OR \"flubromazolam\") (detection OR Australia OR \"drug checking\")",
+          "explanation": "**Why this matters:** bromazolam is now the dominant designer benzo by positivity — search the\ncompound, not \"novel benzodiazepine\".",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/novel-substances.md",
           "sourceType": "dork-pack",
-          "sourceLine": 65,
+          "sourceLine": 96,
+          "operators": [],
+          "targetDomains": [],
+          "domainCategory": "any",
+          "contentType": "any",
+          "tags": [
+            "australia"
+          ]
+        },
+        {
+          "id": "novel-substances-adulterant-sedatives-xylazine-medetomidine",
+          "title": "Adulterant Sedatives (Xylazine / Medetomidine)",
+          "category": "Intermediate Queries",
+          "query": "(\"xylazine\" OR \"tranq\" OR \"medetomidine\" OR \"dexmedetomidine\") (site:adf.org.au OR site:unsw.edu.au OR site:health.gov.au OR \"drug supply\")",
+          "explanation": "**Why this works:**\n\n- Xylazine and medetomidine are mostly a North-American supply problem so far — pairing them with\nAustralian sites filters to local detections and alerts rather than US-dominated results",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/novel-substances.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 105,
           "operators": [
-            "filetype"
+            "site"
           ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "pdf",
+          "targetDomains": [
+            "adf.org.au",
+            "unsw.edu.au",
+            "health.gov.au"
+          ],
+          "domainCategory": "government",
+          "contentType": "any",
           "tags": [
-            "documents",
             "australia"
           ]
         },
         {
-          "id": "novel-substances-novel-benzodiazepines",
-          "title": "Novel Benzodiazepines",
+          "id": "novel-substances-emerging-stimulants-cathinones",
+          "title": "Emerging Stimulants & Cathinones",
           "category": "Intermediate Queries",
-          "query": "(\"novel benzodiazepine\" OR \"designer benzodiazepine\" OR flualprazolam OR etizolam) detection Australia",
+          "query": "(\"eutylone\" OR \"pentylone\" OR \"N-ethylpentylone\" OR \"ephylone\") (Australia OR detection OR \"mis-sold as MDMA\")",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/novel-substances.md",
           "sourceType": "dork-pack",
-          "sourceLine": 71,
+          "sourceLine": 116,
           "operators": [],
           "targetDomains": [],
           "domainCategory": "any",
@@ -14603,41 +14237,24 @@
           ]
         },
         {
-          "id": "novel-substances-synthetic-cannabinoids",
-          "title": "Synthetic Cannabinoids",
-          "category": "Intermediate Queries",
-          "query": "(\"synthetic cannabinoid\" OR \"synthetic cannabis\" OR \"SCRA\") Australia (detection OR toxicology OR emergency)",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/novel-substances.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 77,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "australia"
-          ]
-        },
-        {
-          "id": "novel-substances-comprehensive-nps-surveillance",
-          "title": "Comprehensive NPS Surveillance",
+          "id": "novel-substances-comprehensive-nps-surveillance-sweep",
+          "title": "Comprehensive NPS Surveillance Sweep",
           "category": "Advanced Queries",
-          "query": "site:*.gov.au OR site:*.edu.au filetype:pdf (\"novel psychoactive\" OR NPS OR \"emerging substance\" OR \"new psychoactive\") (surveillance OR monitoring OR trend OR detection) Australia after:2022",
+          "query": "(site:acic.gov.au OR site:unsw.edu.au OR site:health.gov.au) (\"nitazene\" OR \"novel psychoactive\" OR NPS OR \"emerging drug\") (surveillance OR detection OR monitoring) filetype:pdf after:2022",
           "explanation": "",
           "difficulty": "advanced",
           "sourceFile": "dork-packs/novel-substances.md",
           "sourceType": "dork-pack",
-          "sourceLine": 87,
+          "sourceLine": 126,
           "operators": [
             "site",
             "filetype",
             "after"
           ],
           "targetDomains": [
-            "gov.au",
-            "edu.au"
+            "acic.gov.au",
+            "unsw.edu.au",
+            "health.gov.au"
           ],
           "domainCategory": "government",
           "contentType": "pdf",
@@ -14647,68 +14264,15 @@
           ]
         },
         {
-          "id": "novel-substances-fentanyl-analogues",
-          "title": "Fentanyl & Analogues",
+          "id": "novel-substances-forensic-detection-confirmation-methods",
+          "title": "Forensic Detection & Confirmation Methods",
           "category": "Advanced Queries",
-          "query": "(\"fentanyl\" OR \"fentanyl analogue\" OR \"carfentanil\" OR \"acetylfentanyl\") Australia (detection OR alert OR death OR toxicology)",
+          "query": "(\"nitazene\" OR \"novel psychoactive\" OR NPS) (GC-MS OR LC-MS OR \"mass spectrometry\" OR qTOF OR \"confirmed by\") (method OR detection OR identification) filetype:pdf",
           "explanation": "",
           "difficulty": "advanced",
           "sourceFile": "dork-packs/novel-substances.md",
           "sourceType": "dork-pack",
-          "sourceLine": 93,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "alerts",
-            "australia"
-          ]
-        },
-        {
-          "id": "novel-substances-reagent-testing-limitations-for-nps",
-          "title": "Reagent Testing Limitations for NPS",
-          "category": "Advanced Queries",
-          "query": "\"reagent testing\" (accuracy OR limitations OR \"false positive\" OR \"false negative\") (\"novel psychoactive\" OR NPS)",
-          "explanation": "",
-          "difficulty": "advanced",
-          "sourceFile": "dork-packs/novel-substances.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 99,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "novel-substances-drug-checking-results-for-nps",
-          "title": "Drug Checking Results for NPS",
-          "category": "Advanced Queries",
-          "query": "\"drug checking\" (\"novel substance\" OR \"unexpected\" OR NPS) (results OR detected) Australia",
-          "explanation": "",
-          "difficulty": "advanced",
-          "sourceFile": "dork-packs/novel-substances.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 105,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "australia"
-          ]
-        },
-        {
-          "id": "novel-substances-forensic-detection-methods",
-          "title": "Forensic Detection Methods",
-          "category": "Advanced Queries",
-          "query": "(detection OR identification OR analysis) (\"novel psychoactive\" OR NPS OR nitazene) (method OR technique OR \"mass spectrometry\") filetype:pdf",
-          "explanation": "",
-          "difficulty": "advanced",
-          "sourceFile": "dork-packs/novel-substances.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 111,
+          "sourceLine": 132,
           "operators": [
             "filetype"
           ],
@@ -14720,15 +14284,33 @@
           ]
         },
         {
+          "id": "novel-substances-coronial-toxicology-case-findings",
+          "title": "Coronial & Toxicology Case Findings",
+          "category": "Advanced Queries",
+          "query": "(\"nitazene\" OR \"isotonitazene\" OR \"protonitazene\" OR \"metonitazene\") (death OR coronial OR toxicity OR \"case series\") Australia",
+          "explanation": "**Why this works:**\n\n- Nitazene harms surface first in emergency-department and coronial toxicology — tying named\ncompounds to \"case series\" or \"coronial\" finds the clinical evidence (cross-links Coroners &\nDeaths)",
+          "difficulty": "advanced",
+          "sourceFile": "dork-packs/novel-substances.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 138,
+          "operators": [],
+          "targetDomains": [],
+          "domainCategory": "any",
+          "contentType": "any",
+          "tags": [
+            "australia"
+          ]
+        },
+        {
           "id": "novel-substances-nitazenes-high-priority",
           "title": "Nitazenes (High Priority)",
           "category": "🧪 Substance-Specific Searches",
-          "query": "\"isotonitazene\" OR \"protonitazene\" (detection OR death OR toxicology OR case) Australia",
+          "query": "(\"etonitazepyne\" OR \"N-pyrrolidino etonitazene\" OR \"isotonitazepyne\") (CanTEST OR detection OR oxycodone OR Australia)",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/novel-substances.md",
           "sourceType": "dork-pack",
-          "sourceLine": 121,
+          "sourceLine": 154,
           "operators": [],
           "targetDomains": [],
           "domainCategory": "any",
@@ -14738,15 +14320,15 @@
           ]
         },
         {
-          "id": "novel-substances-xylazine-tranq",
-          "title": "Xylazine (\"Tranq\")",
+          "id": "novel-substances-bromazolam-metabolites",
+          "title": "Bromazolam & Metabolites",
           "category": "🧪 Substance-Specific Searches",
-          "query": "\"xylazine\" (Australia OR \"drug supply\" OR \"opioid\") (contamination OR adulterant OR detection)",
+          "query": "(\"bromazolam\" OR \"alpha-hydroxybromazolam\") (detection OR positivity OR \"drug checking\" OR Australia)",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/novel-substances.md",
           "sourceType": "dork-pack",
-          "sourceLine": 131,
+          "sourceLine": 164,
           "operators": [],
           "targetDomains": [],
           "domainCategory": "any",
@@ -14756,33 +14338,15 @@
           ]
         },
         {
-          "id": "novel-substances-novel-stimulants",
-          "title": "Novel Stimulants",
+          "id": "novel-substances-ketamine-dissociative-analogues",
+          "title": "Ketamine & Dissociative Analogues",
           "category": "🧪 Substance-Specific Searches",
-          "query": "(\"synthetic cathinone\" OR \"bath salts\" OR \"novel stimulant\" OR eutylone OR \"N-ethylpentylone\") Australia",
+          "query": "(\"ketamine analogue\" OR \"deschloroketamine\" OR \"2-FDCK\" OR \"fluorexetamine\") (Australia OR detection OR emergence)",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/novel-substances.md",
           "sourceType": "dork-pack",
-          "sourceLine": 137,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "australia"
-          ]
-        },
-        {
-          "id": "novel-substances-ketamine-analogues",
-          "title": "Ketamine Analogues",
-          "category": "🧪 Substance-Specific Searches",
-          "query": "(\"ketamine analogue\" OR \"deschloroketamine\" OR \"2-FDCK\") Australia (detection OR emergence)",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/novel-substances.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 143,
+          "sourceLine": 170,
           "operators": [],
           "targetDomains": [],
           "domainCategory": "any",
@@ -14793,14 +14357,14 @@
         },
         {
           "id": "novel-substances-ghb-gbl",
-          "title": "GHB/GBL",
+          "title": "GHB / GBL",
           "category": "🧪 Substance-Specific Searches",
-          "query": "(GHB OR GBL OR \"gamma-hydroxybutyrate\" OR \"fantasy\") Australia (harm reduction OR overdose OR detection)",
+          "query": "(GHB OR GBL OR \"gamma-hydroxybutyrate\" OR \"1,4-butanediol\") Australia (\"harm reduction\" OR overdose OR detection)",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/novel-substances.md",
           "sourceType": "dork-pack",
-          "sourceLine": 149,
+          "sourceLine": 176,
           "operators": [],
           "targetDomains": [],
           "domainCategory": "any",
@@ -14810,79 +14374,15 @@
           ]
         },
         {
-          "id": "novel-substances-idrs-illicit-drug-reporting-system",
-          "title": "IDRS (Illicit Drug Reporting System)",
-          "category": "Surveillance & Monitoring",
-          "query": "\"Illicit Drug Reporting System\" OR IDRS (novel OR emerging OR trend) filetype:pdf",
-          "explanation": "",
+          "id": "novel-substances-emerging-drugs-network-of-australia-edna-ednav",
+          "title": "Emerging Drugs Network of Australia (EDNA / EDNAV)",
+          "category": "Detection & Toxico-surveillance",
+          "query": "(\"Emerging Drugs Network of Australia\" OR EDNAV) (toxicosurveillance OR \"emergency department\" OR \"novel psychoactive\")",
+          "explanation": "**Why this works:**\n\n- EDNA is the national ED toxico-surveillance network (led from Royal Perth Hospital with\nChemCentre); EDNAV is its Victorian clinical registry (Austin Health / Victorian Poisons\nInformation Centre). The literature is journal-heavy, so quote the network name rather than\nrelying on a single site",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/novel-substances.md",
           "sourceType": "dork-pack",
-          "sourceLine": 159,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "pdf",
-          "tags": [
-            "documents"
-          ]
-        },
-        {
-          "id": "novel-substances-edrs-ecstasy-related-drugs",
-          "title": "EDRS (Ecstasy & Related Drugs)",
-          "category": "Surveillance & Monitoring",
-          "query": "\"Ecstasy and Related Drugs Reporting System\" OR EDRS filetype:pdf",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/novel-substances.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 165,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "pdf",
-          "tags": [
-            "documents"
-          ]
-        },
-        {
-          "id": "novel-substances-drug-trends-reports",
-          "title": "Drug Trends Reports",
-          "category": "Surveillance & Monitoring",
-          "query": "site:ndarc.med.unsw.edu.au \"drug trends\" OR \"market\" filetype:pdf",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/novel-substances.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 171,
-          "operators": [
-            "site",
-            "filetype"
-          ],
-          "targetDomains": [
-            "ndarc.med.unsw.edu.au"
-          ],
-          "domainCategory": "education",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "australia"
-          ]
-        },
-        {
-          "id": "novel-substances-wastewater-analysis",
-          "title": "Wastewater Analysis",
-          "category": "Surveillance & Monitoring",
-          "query": "\"wastewater analysis\" OR \"wastewater epidemiology\" (drug OR substance) Australia",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/novel-substances.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 177,
+          "sourceLine": 189,
           "operators": [],
           "targetDomains": [],
           "domainCategory": "any",
@@ -14892,60 +14392,20 @@
           ]
         },
         {
-          "id": "novel-substances-emergency-department-presentations",
-          "title": "Emergency Department Presentations",
-          "category": "\udfe5 Clinical & Toxicology",
-          "query": "(\"emergency department\" OR ED) (\"novel psychoactive\" OR NPS OR \"synthetic\") (presentation OR poisoning OR overdose) Australia",
+          "id": "novel-substances-wastewater-epidemiology",
+          "title": "Wastewater Epidemiology",
+          "category": "Detection & Toxico-surveillance",
+          "query": "(\"National Wastewater Drug Monitoring Program\" OR \"wastewater-based epidemiology\") (Australia OR ACIC OR QAEHS) filetype:pdf",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/novel-substances.md",
           "sourceType": "dork-pack",
-          "sourceLine": 187,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "australia"
-          ]
-        },
-        {
-          "id": "novel-substances-toxicology-case-reports",
-          "title": "Toxicology Case Reports",
-          "category": "\udfe5 Clinical & Toxicology",
-          "query": "(case OR case report) (toxicology OR poisoning) (\"novel psychoactive\" OR NPS OR nitazene) Australia",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/novel-substances.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 193,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "documents",
-            "australia"
-          ]
-        },
-        {
-          "id": "novel-substances-treatment-guidelines-for-nps",
-          "title": "Treatment Guidelines for NPS",
-          "category": "\udfe5 Clinical & Toxicology",
-          "query": "site:*.gov.au (\"novel psychoactive\" OR NPS) (treatment OR management OR \"clinical guideline\") filetype:pdf",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/novel-substances.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 199,
+          "sourceLine": 202,
           "operators": [
-            "site",
             "filetype"
           ],
-          "targetDomains": [
-            "gov.au"
-          ],
-          "domainCategory": "government",
+          "targetDomains": [],
+          "domainCategory": "any",
           "contentType": "pdf",
           "tags": [
             "documents",
@@ -14954,59 +14414,40 @@
           ]
         },
         {
-          "id": "novel-substances-emcdda-european",
-          "title": "EMCDDA (European)",
-          "category": "International Surveillance",
-          "query": "site:emcdda.europa.eu (\"novel psychoactive\" OR NPS OR \"early warning\") filetype:pdf",
+          "id": "novel-substances-drug-checking-detections",
+          "title": "Drug-Checking Detections",
+          "category": "Detection & Toxico-surveillance",
+          "query": "(site:cantest.com.au OR site:health.act.gov.au OR site:wedinos.org) (\"nitazene\" OR \"unexpected\" OR \"not as expected\" OR alert)",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/novel-substances.md",
           "sourceType": "dork-pack",
-          "sourceLine": 209,
-          "operators": [
-            "site",
-            "filetype"
-          ],
-          "targetDomains": [
-            "emcdda.europa.eu"
-          ],
-          "domainCategory": "international",
-          "contentType": "pdf",
-          "tags": [
-            "alerts",
-            "documents"
-          ]
-        },
-        {
-          "id": "novel-substances-uk-surveillance",
-          "title": "UK Surveillance",
-          "category": "International Surveillance",
-          "query": "site:*.gov.uk (\"novel psychoactive\" OR NPS) (surveillance OR monitoring OR trend)",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/novel-substances.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 215,
+          "sourceLine": 208,
           "operators": [
             "site"
           ],
           "targetDomains": [
-            "gov.uk"
+            "cantest.com.au",
+            "health.act.gov.au",
+            "wedinos.org"
           ],
           "domainCategory": "government",
           "contentType": "any",
-          "tags": []
+          "tags": [
+            "alerts",
+            "australia"
+          ]
         },
         {
-          "id": "novel-substances-unodc",
-          "title": "UNODC",
+          "id": "novel-substances-unodc-early-warning-advisory",
+          "title": "UNODC Early Warning Advisory",
           "category": "International Surveillance",
-          "query": "site:unodc.org \"novel psychoactive\" OR NPS (report OR surveillance)",
+          "query": "site:unodc.org (\"Early Warning Advisory\" OR \"Current NPS Threats\" OR \"new psychoactive substances\")",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/novel-substances.md",
           "sourceType": "dork-pack",
-          "sourceLine": 221,
+          "sourceLine": 218,
           "operators": [
             "site"
           ],
@@ -15016,67 +14457,124 @@
           "domainCategory": "international",
           "contentType": "any",
           "tags": [
-            "documents"
+            "alerts"
           ]
         },
         {
-          "id": "novel-substances-receptor-pharmacology",
-          "title": "Receptor Pharmacology",
-          "category": "⚗ Pharmacology & Toxicology Research",
-          "query": "(nitazene OR \"synthetic opioid\") (pharmacology OR \"receptor binding\" OR potency) filetype:pdf",
+          "id": "novel-substances-unodc-world-drug-report",
+          "title": "UNODC World Drug Report",
+          "category": "International Surveillance",
+          "query": "site:unodc.org \"World Drug Report\" (synthetic OR opioid OR NPS) filetype:pdf",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/novel-substances.md",
           "sourceType": "dork-pack",
-          "sourceLine": 231,
+          "sourceLine": 224,
           "operators": [
+            "site",
             "filetype"
           ],
-          "targetDomains": [],
-          "domainCategory": "any",
+          "targetDomains": [
+            "unodc.org"
+          ],
+          "domainCategory": "international",
           "contentType": "pdf",
           "tags": [
             "documents"
           ]
         },
         {
-          "id": "novel-substances-metabolism-detection-windows",
-          "title": "Metabolism & Detection Windows",
-          "category": "⚗ Pharmacology & Toxicology Research",
-          "query": "(\"novel psychoactive\" OR NPS) (metabolism OR \"detection window\" OR metabolite) filetype:pdf",
-          "explanation": "",
+          "id": "novel-substances-euda-emcdda-europe",
+          "title": "EUDA / EMCDDA (Europe)",
+          "category": "International Surveillance",
+          "query": "(site:euda.europa.eu OR site:emcdda.europa.eu) (\"European Drug Report\" OR \"EU Early Warning System\" OR \"European Drug Alert System\")",
+          "explanation": "**Why this works:**\n\n- EMCDDA became the European Union Drugs Agency (EUDA) in 2024 but older reports still live under\n`emcdda.europa.eu` — querying both domains catches the full archive of early-warning material",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/novel-substances.md",
           "sourceType": "dork-pack",
-          "sourceLine": 237,
+          "sourceLine": 230,
           "operators": [
-            "filetype"
+            "site"
           ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "pdf",
+          "targetDomains": [
+            "euda.europa.eu",
+            "emcdda.europa.eu"
+          ],
+          "domainCategory": "international",
+          "contentType": "any",
           "tags": [
+            "alerts",
             "documents"
           ]
         },
         {
-          "id": "novel-substances-comparative-potency",
-          "title": "Comparative Potency",
-          "category": "⚗ Pharmacology & Toxicology Research",
-          "query": "(nitazene OR fentanyl) potency comparison OR \"relative potency\" filetype:pdf",
+          "id": "novel-substances-forum-detection-trip-reports",
+          "title": "Forum Detection & Trip Reports",
+          "category": "\udcac Peer & Community Knowledge",
+          "query": "(site:bluelight.org OR site:reddit.com/r/researchchemicals OR site:reddit.com/r/AusDrugs) (\"nitazene\" OR \"bromazolam\" OR \"RC\" OR \"tested positive\")",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/novel-substances.md",
           "sourceType": "dork-pack",
-          "sourceLine": 243,
+          "sourceLine": 248,
           "operators": [
-            "filetype"
+            "site"
           ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "pdf",
+          "targetDomains": [
+            "bluelight.org",
+            "reddit.com/r/researchchemicals",
+            "reddit.com/r/AusDrugs"
+          ],
+          "domainCategory": "research",
+          "contentType": "any",
           "tags": [
-            "documents"
+            "documents",
+            "research"
+          ]
+        },
+        {
+          "id": "novel-substances-pharmacology-interaction-references",
+          "title": "Pharmacology & Interaction References",
+          "category": "\udcac Peer & Community Knowledge",
+          "query": "(site:psychonautwiki.org OR site:tripsit.me) (dose OR duration OR \"combination\" OR interaction) (\"research chemical\" OR NPS)",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/novel-substances.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 254,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "psychonautwiki.org",
+            "tripsit.me"
+          ],
+          "domainCategory": "research",
+          "contentType": "any",
+          "tags": [
+            "research"
+          ]
+        },
+        {
+          "id": "novel-substances-lab-tested-sample-data",
+          "title": "Lab-Tested Sample Data",
+          "category": "\udcac Peer & Community Knowledge",
+          "query": "site:drugsdata.org (results OR \"lab tested\") (\"unexpected\" OR nitazene OR cathinone OR \"no MDMA\")",
+          "explanation": "**Why this works:**\n\n- DrugsData (Erowid's lab database) and forum reports are real-world detection signals — cross-check\nthem against EDNA/wastewater data, but don't ignore them: peers often see the supply shift first",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/novel-substances.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 260,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "drugsdata.org"
+          ],
+          "domainCategory": "any",
+          "contentType": "any",
+          "tags": [
+            "data"
           ]
         }
       ],
@@ -25344,63 +24842,18 @@
     {
       "id": "supervised-consumption",
       "title": "Supervised Consumption & Overdose Prevention Sites",
-      "description": "Finding evidence, evaluations, and policy documents about supervised consumption services and",
+      "description": "Find the evidence, evaluations, and operating models behind Australia's supervised injecting",
       "dorks": [
         {
-          "id": "supervised-consumption-search-gov-au",
-          "title": "Search gov.au",
+          "id": "supervised-consumption-search-health-vic-gov-au",
+          "title": "Search health.vic.gov.au",
           "category": "Quick Start",
-          "query": "site:*.gov.au (\"medically supervised injecting\" OR \"supervised injecting\" OR \"drug consumption room\") after:2020",
+          "query": "\"Review of the Medically Supervised Injecting Room 2023\" site:health.vic.gov.au",
           "explanation": "",
           "difficulty": "beginner",
           "sourceFile": "dork-packs/supervised-consumption.md",
           "sourceType": "dork-pack",
-          "sourceLine": 15,
-          "operators": [
-            "site",
-            "after"
-          ],
-          "targetDomains": [
-            "gov.au"
-          ],
-          "domainCategory": "government",
-          "contentType": "any",
-          "tags": [
-            "australia"
-          ]
-        },
-        {
-          "id": "supervised-consumption-nsw-and-sydney-msic-material",
-          "title": "NSW and Sydney MSIC Material",
-          "category": "Basic Queries",
-          "query": "site:health.nsw.gov.au (\"medically supervised injecting\" OR \"supervised injecting\" OR MSIC)",
-          "explanation": "",
-          "difficulty": "beginner",
-          "sourceFile": "dork-packs/supervised-consumption.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 22,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "health.nsw.gov.au"
-          ],
-          "domainCategory": "government",
-          "contentType": "any",
-          "tags": [
-            "australia"
-          ]
-        },
-        {
-          "id": "supervised-consumption-victoria-supervised-injecting-room",
-          "title": "Victoria Supervised Injecting Room",
-          "category": "Basic Queries",
-          "query": "site:health.vic.gov.au (\"supervised injecting room\" OR \"medically supervised injecting\" OR MSIR)",
-          "explanation": "",
-          "difficulty": "beginner",
-          "sourceFile": "dork-packs/supervised-consumption.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 28,
+          "sourceLine": 33,
           "operators": [
             "site"
           ],
@@ -25414,15 +24867,57 @@
           ]
         },
         {
-          "id": "supervised-consumption-ngo-and-community-evidence",
-          "title": "NGO and Community Evidence",
+          "id": "supervised-consumption-uniting-msic-sydney-kings-cross",
+          "title": "Uniting MSIC (Sydney, Kings Cross)",
           "category": "Basic Queries",
-          "query": "site:*.org.au (\"supervised injecting\" OR \"drug consumption room\" OR \"supervised consumption\") (evaluation OR report OR review)",
+          "query": "site:uniting.org (\"Medically Supervised Injecting Centre\" OR MSIC)",
+          "explanation": "**Why this works:**\n\n- Goes straight to the operator (Uniting) rather than guessing `.gov.au` wildcards\n- The MSIC has run since 2001 and publishes its own data, annual reports, and client material",
+          "difficulty": "beginner",
+          "sourceFile": "dork-packs/supervised-consumption.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 40,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "uniting.org"
+          ],
+          "domainCategory": "any",
+          "contentType": "any",
+          "tags": []
+        },
+        {
+          "id": "supervised-consumption-north-richmond-msir-melbourne",
+          "title": "North Richmond MSIR (Melbourne)",
+          "category": "Basic Queries",
+          "query": "site:nrch.com.au (\"Medically Supervised Injecting Room\" OR MSIR)",
+          "explanation": "**Why this works:**\n\n- The MSIR is operated by North Richmond Community Health (with St Vincent's Hospital Melbourne) —\nits own domain carries the service detail, not a generic department page",
+          "difficulty": "beginner",
+          "sourceFile": "dork-packs/supervised-consumption.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 51,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "nrch.com.au"
+          ],
+          "domainCategory": "any",
+          "contentType": "any",
+          "tags": [
+            "australia"
+          ]
+        },
+        {
+          "id": "supervised-consumption-ngo-peer-evidence",
+          "title": "NGO & Peer Evidence",
+          "category": "Basic Queries",
+          "query": "site:*.org.au (\"supervised injecting\" OR \"drug consumption room\" OR \"supervised consumption\") (evaluation OR submission OR review)",
           "explanation": "",
           "difficulty": "beginner",
           "sourceFile": "dork-packs/supervised-consumption.md",
           "sourceType": "dork-pack",
-          "sourceLine": 34,
+          "sourceLine": 62,
           "operators": [
             "site"
           ],
@@ -25432,21 +24927,87 @@
           "domainCategory": "ngo",
           "contentType": "any",
           "tags": [
+            "peer",
+            "research",
+            "australia"
+          ]
+        },
+        {
+          "id": "supervised-consumption-hamilton-review-2020-first-review",
+          "title": "Hamilton Review (2020, first review)",
+          "category": "\udcd1 The Named Reviews",
+          "query": "\"Review of the Medically Supervised Injecting Room 2020\" (Hamilton OR \"Margaret Hamilton\") site:health.vic.gov.au",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/supervised-consumption.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 75,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "health.vic.gov.au"
+          ],
+          "domainCategory": "government",
+          "contentType": "any",
+          "tags": [
+            "australia"
+          ]
+        },
+        {
+          "id": "supervised-consumption-ryan-review-2023-second-review",
+          "title": "Ryan Review (2023, second review)",
+          "category": "\udcd1 The Named Reviews",
+          "query": "\"Review of the Medically Supervised Injecting Room 2023\" (\"John Ryan\" OR recommendation) site:health.vic.gov.au",
+          "explanation": "**Why this works:**\n\n- The 2020 review was chaired by Professor Margaret Hamilton AO; the 2023 review by John Ryan (10\nrecommendations). Pairing the exact report title with the right chair filters precisely — and\navoids conflating these with Ken Lay's separate Melbourne CBD injecting consultation",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/supervised-consumption.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 81,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "health.vic.gov.au"
+          ],
+          "domainCategory": "government",
+          "contentType": "any",
+          "tags": [
+            "australia"
+          ]
+        },
+        {
+          "id": "supervised-consumption-evidence-outcomes-australia",
+          "title": "Evidence & Outcomes (Australia)",
+          "category": "Intermediate Queries",
+          "query": "(\"Medically Supervised Injecting\" OR \"supervised injecting\") (evaluation OR outcomes OR \"cost-benefit\" OR \"lives saved\") (Sydney OR Melbourne OR Australia) filetype:pdf",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/supervised-consumption.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 97,
+          "operators": [
+            "filetype"
+          ],
+          "targetDomains": [],
+          "domainCategory": "any",
+          "contentType": "pdf",
+          "tags": [
             "documents",
             "research",
             "australia"
           ]
         },
         {
-          "id": "supervised-consumption-business-cases-and-community-consultation",
-          "title": "Business Cases and Community Consultation",
+          "id": "supervised-consumption-business-cases-community-consultation",
+          "title": "Business Cases & Community Consultation",
           "category": "Intermediate Queries",
-          "query": "(\"supervised injecting\" OR \"drug consumption room\") (consultation OR community OR \"community engagement\" OR \"business case\") site:*.gov.au",
+          "query": "(\"supervised injecting\" OR \"drug consumption room\") (consultation OR \"community engagement\" OR \"business case\") site:*.gov.au",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/supervised-consumption.md",
           "sourceType": "dork-pack",
-          "sourceLine": 44,
+          "sourceLine": 103,
           "operators": [
             "site"
           ],
@@ -25460,59 +25021,36 @@
           ]
         },
         {
-          "id": "supervised-consumption-operational-guidance-and-protocols",
-          "title": "Operational Guidance and Protocols",
+          "id": "supervised-consumption-operating-model-clinical-governance",
+          "title": "Operating Model & Clinical Governance",
           "category": "Intermediate Queries",
-          "query": "(\"supervised injecting\" OR \"supervised consumption\") (guideline OR protocol OR \"standard operating\") site:*.gov.au filetype:pdf",
-          "explanation": "",
+          "query": "(\"Medically Supervised Injecting\" OR \"supervised injecting\") (\"model of care\" OR \"clinical governance\" OR \"operating model\" OR staffing) filetype:pdf",
+          "explanation": "**Why this works:**\n\n- \"Model of care\" and \"clinical governance\" are the sector's own terms for how a service runs —\nsearching them surfaces the operational documents, not the opinion pieces",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/supervised-consumption.md",
           "sourceType": "dork-pack",
-          "sourceLine": 50,
+          "sourceLine": 109,
           "operators": [
-            "site",
             "filetype"
           ],
-          "targetDomains": [
-            "gov.au"
-          ],
-          "domainCategory": "government",
+          "targetDomains": [],
+          "domainCategory": "any",
           "contentType": "pdf",
           "tags": [
             "documents",
-            "australia"
+            "services"
           ]
         },
         {
-          "id": "supervised-consumption-overdose-prevention-sites-alternative-terminology",
-          "title": "Overdose Prevention Sites (Alternative Terminology)",
-          "category": "Intermediate Queries",
-          "query": "(\"overdose prevention site\" OR \"safe consumption site\" OR \"supervised consumption service\") Australia (report OR evaluation)",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/supervised-consumption.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 56,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "documents",
-            "services",
-            "australia"
-          ]
-        },
-        {
-          "id": "supervised-consumption-legislation-and-regulatory-frameworks",
-          "title": "Legislation and Regulatory Frameworks",
+          "id": "supervised-consumption-legislation-regulatory-frameworks",
+          "title": "Legislation & Regulatory Frameworks",
           "category": "Advanced Queries",
-          "query": "(\"supervised injecting\" OR \"drug consumption room\") (legislation OR regulation OR \"regulatory framework\" OR \"trial\") site:*.gov.au filetype:pdf",
+          "query": "(\"Medically Supervised Injecting\" OR \"supervised injecting\") (Act OR legislation OR regulation OR trial OR \"regulatory framework\") site:*.gov.au filetype:pdf",
           "explanation": "",
           "difficulty": "advanced",
           "sourceFile": "dork-packs/supervised-consumption.md",
           "sourceType": "dork-pack",
-          "sourceLine": 66,
+          "sourceLine": 124,
           "operators": [
             "site",
             "filetype"
@@ -25529,17 +25067,42 @@
           ]
         },
         {
-          "id": "supervised-consumption-evidence-and-outcomes-australia",
-          "title": "Evidence and Outcomes (Australia)",
+          "id": "supervised-consumption-parliamentary-inquiries-submissions",
+          "title": "Parliamentary Inquiries & Submissions",
           "category": "Advanced Queries",
-          "query": "(\"supervised injecting\" OR \"drug consumption room\" OR \"supervised consumption\") (effectiveness OR outcomes OR evaluation OR \"cost-benefit\") Australia filetype:pdf",
+          "query": "(site:parliament.nsw.gov.au OR site:parliament.vic.gov.au OR site:aph.gov.au) (\"supervised injecting\" OR \"injecting room\" OR MSIC OR MSIR) (inquiry OR submission)",
           "explanation": "",
           "difficulty": "advanced",
           "sourceFile": "dork-packs/supervised-consumption.md",
           "sourceType": "dork-pack",
-          "sourceLine": 72,
+          "sourceLine": 130,
           "operators": [
-            "filetype"
+            "site"
+          ],
+          "targetDomains": [
+            "parliament.nsw.gov.au",
+            "parliament.vic.gov.au",
+            "aph.gov.au"
+          ],
+          "domainCategory": "government",
+          "contentType": "any",
+          "tags": [
+            "australia"
+          ]
+        },
+        {
+          "id": "supervised-consumption-comprehensive-australian-evidence-sweep",
+          "title": "Comprehensive Australian Evidence Sweep",
+          "category": "Advanced Queries",
+          "query": "(MSIC OR MSIR OR \"Medically Supervised Injecting\" OR \"supervised injecting facility\") (evaluation OR review OR outcomes OR findings) Australia filetype:pdf after:2018",
+          "explanation": "",
+          "difficulty": "advanced",
+          "sourceFile": "dork-packs/supervised-consumption.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 136,
+          "operators": [
+            "filetype",
+            "after"
           ],
           "targetDomains": [],
           "domainCategory": "any",
@@ -25551,28 +25114,174 @@
           ]
         },
         {
-          "id": "supervised-consumption-workforce-and-clinical-governance",
-          "title": "Workforce and Clinical Governance",
-          "category": "Advanced Queries",
-          "query": "(\"supervised injecting\" OR \"supervised consumption\") (clinical governance OR \"model of care\" OR staffing OR training) site:*.gov.au filetype:pdf",
-          "explanation": "",
-          "difficulty": "advanced",
+          "id": "supervised-consumption-insite-vancouver-north-america-s-first",
+          "title": "Insite (Vancouver) — North America's First",
+          "category": "International Services & Evidence",
+          "query": "site:phs.ca (\"Insite\" OR \"Onsite\" OR \"supervised injection\")",
+          "explanation": "> Note: Insite is operated by PHS Community Services Society with Vancouver Coastal Health. Prefer\n> `phs.ca` (the operator); `vch.ca` is also valid but blocks automated access. \"Onsite\" (one word)\n> is the detox facility directly above Insite.",
+          "difficulty": "intermediate",
           "sourceFile": "dork-packs/supervised-consumption.md",
           "sourceType": "dork-pack",
-          "sourceLine": 78,
+          "sourceLine": 149,
           "operators": [
-            "site",
-            "filetype"
+            "site"
           ],
           "targetDomains": [
-            "gov.au"
+            "phs.ca"
           ],
-          "domainCategory": "government",
+          "domainCategory": "any",
+          "contentType": "any",
+          "tags": []
+        },
+        {
+          "id": "supervised-consumption-euda-drug-consumption-rooms-european-evidence",
+          "title": "EUDA: Drug Consumption Rooms (European Evidence)",
+          "category": "International Services & Evidence",
+          "query": "site:euda.europa.eu \"drug consumption rooms\"",
+          "explanation": "**Why this works:**\n\n- The European Union Drugs Agency (formerly EMCDDA) maintains the standard international evidence\nreview — its report _\"Drug consumption rooms: an overview of provision and evidence\"_ is the\nreference most submissions cite",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/supervised-consumption.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 159,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "euda.europa.eu"
+          ],
+          "domainCategory": "any",
+          "contentType": "any",
+          "tags": [
+            "research"
+          ]
+        },
+        {
+          "id": "supervised-consumption-international-comparison-sweep",
+          "title": "International Comparison Sweep",
+          "category": "International Services & Evidence",
+          "query": "(\"drug consumption room\" OR \"supervised consumption service\" OR \"overdose prevention site\" OR \"supervised injection facility\") (evaluation OR evidence OR outcomes) filetype:pdf",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/supervised-consumption.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 171,
+          "operators": [
+            "filetype"
+          ],
+          "targetDomains": [],
+          "domainCategory": "any",
           "contentType": "pdf",
           "tags": [
             "documents",
-            "services",
-            "training",
+            "research",
+            "services"
+          ]
+        },
+        {
+          "id": "supervised-consumption-client-peer-experience",
+          "title": "Client & Peer Experience",
+          "category": "\udcac Peer & Lived-Experience Perspectives",
+          "query": "(\"injecting room\" OR \"injecting centre\" OR MSIC OR MSIR) (\"client experience\" OR \"in their own words\" OR \"peer worker\" OR dignity)",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/supervised-consumption.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 184,
+          "operators": [],
+          "targetDomains": [],
+          "domainCategory": "any",
+          "contentType": "any",
+          "tags": [
+            "peer"
+          ]
+        },
+        {
+          "id": "supervised-consumption-peer-drug-user-organisation-positions",
+          "title": "Peer & Drug-User Organisation Positions",
+          "category": "\udcac Peer & Lived-Experience Perspectives",
+          "query": "(site:nuaa.org.au OR site:hrvic.org.au OR site:aivl.org.au) (\"supervised injecting\" OR \"injecting room\" OR \"drug consumption\") (position OR submission OR campaign)",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/supervised-consumption.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 190,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "nuaa.org.au",
+            "hrvic.org.au",
+            "aivl.org.au"
+          ],
+          "domainCategory": "ngo",
+          "contentType": "any",
+          "tags": [
+            "peer",
+            "australia"
+          ]
+        },
+        {
+          "id": "supervised-consumption-community-discussion-real-time-reports",
+          "title": "Community Discussion & Real-Time Reports",
+          "category": "\udcac Peer & Lived-Experience Perspectives",
+          "query": "(site:reddit.com/r/AusDrugs OR site:bluelight.org) (MSIC OR \"injecting room\" OR \"injecting centre\" OR \"supervised injecting\")",
+          "explanation": "**Why this works:**\n\n- Forums and peer-org material carry the access-and-dignity side — why people do or don't use a\nservice — that an evaluation's outcome tables flatten out",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/supervised-consumption.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 196,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "reddit.com/r/AusDrugs",
+            "bluelight.org"
+          ],
+          "domainCategory": "community",
+          "contentType": "any",
+          "tags": [
+            "documents"
+          ]
+        },
+        {
+          "id": "supervised-consumption-peak-body-positions",
+          "title": "Peak-Body Positions",
+          "category": "Policy & Advocacy",
+          "query": "(site:atoda.org.au OR site:vaada.org.au OR site:nada.org.au) (\"supervised injecting\" OR \"drug consumption\" OR \"injecting room\") (position OR statement OR submission)",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/supervised-consumption.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 211,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "atoda.org.au",
+            "vaada.org.au",
+            "nada.org.au"
+          ],
+          "domainCategory": "ngo",
+          "contentType": "any",
+          "tags": [
+            "australia"
+          ]
+        },
+        {
+          "id": "supervised-consumption-coronial-overdose-drivers",
+          "title": "Coronial & Overdose Drivers",
+          "category": "Policy & Advocacy",
+          "query": "(\"supervised injecting\" OR \"injecting room\" OR \"drug consumption room\") (coronial OR coroner OR \"preventable death\" OR recommendation) Australia",
+          "explanation": "**Why this works:**\n\n- Both Australian services were established and defended in response to overdose deaths and coronial\npressure — tying the search to those drivers finds the documents that moved policy",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/supervised-consumption.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 217,
+          "operators": [],
+          "targetDomains": [],
+          "domainCategory": "any",
+          "contentType": "any",
+          "tags": [
             "australia"
           ]
         }
@@ -33693,9 +33402,9 @@
     }
   ],
   "meta": {
-    "buildDate": "2026-06-27T10:45:03.322Z",
+    "buildDate": "2026-06-27T12:33:15.736Z",
     "version": "2.0.0",
-    "totalDorks": 1603,
+    "totalDorks": 1586,
     "sourceFiles": [
       "01-quick-start.md",
       "02-core-operators.md",

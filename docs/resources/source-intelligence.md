@@ -67,13 +67,13 @@ own publications, programs, and submissions.
 
 **International peer / drug-user networks:**
 
-| Org                       | `site:` target                     | Named signals                                                  |
-| ------------------------- | ---------------------------------- | -------------------------------------------------------------- |
-| **INPUD**                 | `inpud.net`                        | `"Words Matter"`, `"drug user peace"`, position papers         |
-| **EuroNPUD**              | `euronpud.net`                     | peer-produced harm reduction guides, `"European Diaries"` blog |
-| **VANDU**                 | `vandu.org`                        | peer overdose response, Vancouver                              |
-| **CAPUD**                 | `capud.ca`                         | Canadian drug-user union submissions                           |
-| **Urban Survivors Union** | `urbansurvivorsunion.org` ⚠ verify | US drug-user union; `"Urban Survivors Union"`                  |
+| Org                       | `site:` target        | Named signals                                                                                                                                                |
+| ------------------------- | --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **INPUD**                 | `inpud.net`           | `"Words Matter"`, `"drug user peace"`, position papers                                                                                                       |
+| **EuroNPUD**              | `euronpud.net`        | peer-produced harm reduction guides, `"European Diaries"` blog                                                                                               |
+| **VANDU**                 | `vandu.org`           | peer overdose response, Vancouver                                                                                                                            |
+| **CAPUD**                 | `capud.ca`            | Canadian drug-user union submissions                                                                                                                         |
+| **Urban Survivors Union** | `urban-survivors.org` | US national drug-user union; `"National Urban Survivors Union"`, `"Urban Survivors Union"` (note hyphenated domain; `urbansurvivorsunion.org` is email-only) |
 
 **Insider vocabulary (cross-cutting):** `"people who use drugs"` / `PWUD` / `PWID` (not "addicts"),
 `"lived and living experience"` / `"LLE"`, `"nothing about us without us"`, `"peer-led"` /
@@ -135,18 +135,24 @@ Experts know alerts come from specific state systems, not generic web pages.
 
 ## 💉 Overdose, Naloxone & Take-Home Naloxone (THN)
 
-| Entity                                    | `site:` target     | Named signals                                                                  |
-| ----------------------------------------- | ------------------ | ------------------------------------------------------------------------------ |
-| **Take Home Naloxone Program** (national) | `health.gov.au`    | `"Take Home Naloxone"`, `"THN program"`, `"pharmacy"` supply                   |
-| **Penington Institute**                   | `penington.org.au` | `"Annual Overdose Report"`, `"COPE"` (Community Overdose Prevention Education) |
-| **Int'l Overdose Awareness Day**          | `overdoseday.com`  | `"International Overdose Awareness Day"`, `"IOAD"`, `"Remember. Take Action."` |
-| **NUAA / state peer orgs**                | `nuaa.org.au`      | peer naloxone training, `"overdose response"`                                  |
-| **Product names**                         | —                  | `Nyxoid` (nasal), `Prenoxad` (injectable), `Narcan` (US/intl)                  |
-| **Prevent. Overdose (US ref)**            | `cdc.gov`          | `"naloxone saturation"`, `"opioid overdose"`                                   |
+| Entity                                    | `site:` target                     | Named signals                                                                                                                                                            |
+| ----------------------------------------- | ---------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Take Home Naloxone Program** (national) | `health.gov.au`                    | `"Take Home Naloxone Program"`, `"THN"` — free, no prescription since 1 Jul 2022 (program path `/our-work/take-home-naloxone-program`)                                   |
+| **THN Pilot evaluation** (NSW/SA/WA)      | `health.gov.au`                    | `"Evaluation of the Pharmaceutical Benefits Scheme subsidised take home naloxone pilot"` — by the Institute for Social Science Research, University of Queensland (2022) |
+| **Naloxone scheduling**                   | `tga.gov.au`, `legislation.gov.au` | `"Schedule 3"` `"Pharmacist Only"` (down-scheduled S4→S3, eff. 1 Feb 2016); history: MJA `"Australia reschedules naloxone for opioid overdose"`                          |
+| **Penington Institute**                   | `penington.org.au`                 | `"Australia's Annual Overdose Report"` (latest 2025), `"COPE"` (Community Overdose Prevention Education) training                                                        |
+| **Int'l Overdose Awareness Day**          | `overdoseday.com`                  | `"International Overdose Awareness Day"`, `"IOAD"`, `"a world without overdose"` — 31 Aug; founded 2001 by Sally J. Finn, **coordinated** by Penington since 2012        |
+| **NUAA / state peer orgs**                | `nuaa.org.au`                      | peer naloxone training, peer THN distribution, `"overdose response"`                                                                                                     |
+| **EuroNPUD peer naloxone** (intl)         | `euronpud.net`                     | `"European Diaries"`, `"Peer Power: Stories of Naloxone in Action"` — peer-distribution stories                                                                          |
+| **Products (AU)**                         | —                                  | `Nyxoid` (nasal spray; Mundipharma; ARTG 309381) · `Prenoxad` (pre-filled injectable; Phebra; Section 19A import) · `Narcan` (in AU = injectable ampoule, **not** nasal) |
 
 **Insider vocabulary:** `THN`, `"opioid agonist"` vs `"antagonist"`, `"overdose reversal"`,
 `"witnessed overdose"`, `"bystander"`, `"recovery position"`, `"call don't run"` / Good Samaritan,
-`"poly-drug"`, `"breakthrough overdose"` (re: nitazenes needing repeat doses).
+`"poly-drug"`, `"breakthrough overdose"` (re: nitazenes needing repeat doses), `"standing order"` /
+`"standing authority"`. **Product caveat:** in Australia the nasal spray is **Nyxoid** (not "Narcan
+nasal spray", which is a US product) — don't pair `Narcan` with `"nasal spray"` in an AU-scoped
+dork. Use `"take-home naloxone"` / `"Take Home Naloxone"` / `THN`, **not** "community naloxone" (not
+the AU program label).
 
 ---
 
@@ -154,35 +160,50 @@ Experts know alerts come from specific state systems, not generic web pages.
 
 Name the two Australian services — there are only two, and an expert knows both.
 
-| Service                                | `site:` target      | Named signals                                                                                                        |
-| -------------------------------------- | ------------------- | -------------------------------------------------------------------------------------------------------------------- |
-| **Uniting MSIC** (Sydney, Kings Cross) | `uniting.org`       | `"Medically Supervised Injecting Centre"`, `"MSIC"`, `"Kings Cross"`                                                 |
-| **North Richmond MSIR** (VIC)          | `nrch.com.au`       | `"Medically Supervised Injecting Room"`, `"MSIR"`, `"North Richmond"`, Ryan review (run with St Vincent's Melbourne) |
-| **NSP surveillance**                   | `kirby.unsw.edu.au` | `"Australian Needle Syringe Program Survey"`, `"ANSPS"`                                                              |
-| **Insite** (Vancouver, intl ref)       | `vch.ca` ⚠ verify   | `"Insite"`, `"supervised injection"`, `"OPS"`                                                                        |
+| Service                                | `site:` target      | Named signals                                                                                                                                                        |
+| -------------------------------------- | ------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Uniting MSIC** (Sydney, Kings Cross) | `uniting.org`       | `"Uniting Medically Supervised Injecting Centre"`, `"Medically Supervised Injecting Centre"`, `"MSIC"`, `"Kings Cross"` — opened 2001, AU's first                    |
+| **North Richmond MSIR** (VIC)          | `nrch.com.au`       | `"Medically Supervised Injecting Room"`, `"MSIR"`, `"North Richmond"` — operated by North Richmond Community Health with St Vincent's Hospital Melbourne             |
+| MSIR first review (2020)               | `health.vic.gov.au` | `"Review of the Medically Supervised Injecting Room 2020"` — the **Hamilton Review** (chaired by Prof. Margaret Hamilton AO)                                         |
+| MSIR second review (2023)              | `health.vic.gov.au` | `"Review of the Medically Supervised Injecting Room 2023"` — the **Ryan Review** (chaired by John Ryan; 10 recommendations)                                          |
+| **NSP surveillance** (Kirby)           | `kirby.unsw.edu.au` | `"Australian Needle and Syringe Program Survey"` (note "and"), `"Australian NSP Survey National Data Report"`, `"ANSPS"`                                             |
+| **Insite** (Vancouver, intl ref)       | `phs.ca`, `vch.ca`  | `"Insite"`, `"Onsite"` (detox above Insite — one word), `"supervised injection facility"`, `"PHS Community Services Society"` (prefer `phs.ca`; `vch.ca` bot-blocks) |
+| **EUDA drug consumption rooms** (intl) | `euda.europa.eu`    | `"Drug consumption rooms: an overview of provision and evidence"`, `"drug consumption rooms"`                                                                        |
 
-**Insider vocabulary:** `DCR` (drug consumption room), `SIF` / `SIS` (supervised injecting
-facility/site), `OPS` (overdose prevention site), `MSIC` / `MSIR`, `"injecting-related injuries"`,
-`"sharps"`, `"safe disposal"`, `"low-threshold"`, `"primary NSP"` vs `"secondary NSP"` vs
-`"vending machine"` / `"dispensing machine"`.
+**Insider vocabulary:** `DCR` (drug consumption room — European/EUDA term), `SCS` (supervised
+consumption service — Canada, federally sanctioned), `OPS` (overdose prevention site — Canada,
+provincial/lower-barrier), `SIF` / `SIS` (supervised injecting facility/site — generic), `MSIC` /
+`MSIR` (the Australian terms — prefer `"medically supervised injecting"` for AU targeting),
+`"injecting-related injuries"`, `"sharps"`, `"safe disposal"`, `"low-threshold"`, `"primary NSP"` vs
+`"secondary NSP"` vs `"vending machine"` / `"dispensing machine"`. **Don't** attribute the North
+Richmond MSIR reviews to Ken Lay — his review was the separate Melbourne CBD injecting consultation.
 
 ---
 
 ## ⚖️ Coroners, Inquests & Death Data
 
-| Source                    | `site:` target                                                   | Named signals                                                   |
-| ------------------------- | ---------------------------------------------------------------- | --------------------------------------------------------------- |
-| **NCIS**                  | `ncis.org.au`                                                    | `"National Coronial Information System"`, `"NCIS"`, fact sheets |
-| **Coroners Court VIC**    | `coronerscourt.vic.gov.au`                                       | `"Coroners Prevention Unit"`, `"finding"`, `"recommendation"`   |
-| **Coroners Court NSW**    | `coroners.nsw.gov.au`                                            | `"findings"`, `"inquest"`, `"recommendation"`                   |
-| **State coroners (each)** | `courts.qld.gov.au`, `courts.sa.gov.au`, etc. ⚠ verify per state | `"coronial findings"`                                           |
-| **Penington Institute**   | `penington.org.au`                                               | `"Annual Overdose Report"` (aggregates coronial/ABS data)       |
+| Source                  | `site:` target                             | Named signals                                                                                                           |
+| ----------------------- | ------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------- |
+| **NCIS**                | `ncis.org.au`                              | `"National Coronial Information System"`, `"NCIS Fact Sheet"`, `"data report"` (full database access is by application) |
+| **Coroners Court VIC**  | `coronerscourt.vic.gov.au`                 | `"Coroners Prevention Unit"`, `"finding without inquest"`, `"recommendation"`                                           |
+| **Coroners Court NSW**  | `coroners.nsw.gov.au`                      | `"Coronial findings and recommendations"`, `"inquest"` (some content mirrored under `dcj.nsw.gov.au`)                   |
+| **Coroners Court QLD**  | `coronerscourt.qld.gov.au`                 | `"Non-inquest findings"`, `"Inquest into the death of"` (**not** `courts.qld.gov.au`)                                   |
+| **Coroners Court WA**   | `coronerscourt.wa.gov.au`                  | `"Inquest Findings"`, `"inquest into the death of"` (year-indexed `.aspx`)                                              |
+| **Coroners Court SA**   | `courts.sa.gov.au`                         | `"Coroners findings"` at `/court-decisions/coroners-findings/` (no dedicated coroners domain)                           |
+| **Coroners Court ACT**  | `courts.act.gov.au`                        | `coroner` (a section of the ACT Magistrates Court — `/magistrates/.../coroners-court`)                                  |
+| **Coroners Court NT**   | `nt.gov.au`, `agd.nt.gov.au` ⚠ verify host | `coroner` `"coronial findings"` (multi-host; `localcourt.nt.gov.au` carries process info only — least stable)           |
+| **Coroners Court TAS**  | `magistratescourt.tas.gov.au`              | `"Coronial Findings"`, `"findings, comments and recommendations"` (Coronial Division of the Magistrates Court)          |
+| **AIHW**                | `aihw.gov.au`                              | `"Alcohol, tobacco & other drugs in Australia"`, `"drug-induced deaths"` (rolling web release — no year in title)       |
+| **ABS**                 | `abs.gov.au`                               | `"Causes of Death, Australia"`, `"drug-induced deaths"` (upstream source; ~97% coroner-certified)                       |
+| **Penington Institute** | `penington.org.au`                         | `"Australia's Annual Overdose Report"` (aggregates ABS/coronial data)                                                   |
 
-**Insider vocabulary:** `"findings"` (the actual document genre — not "report"),
-`"findings without inquest"`, `"prevention"` / `"prevention of future deaths"`, `"recommendation"` +
-`"response"` (agencies must respond), `"manner of death"`, `"toxicology"`, `"polydrug toxicity"`.
-The phrase `"coronial recommendation"` is good; pairing it with a named coroner or `"prevention"` is
-better.
+**Insider vocabulary:** `"findings"` (the actual document genre — not "report"), with the
+jurisdiction-specific variants `"finding without inquest"` (VIC), `"non-inquest findings"` (QLD),
+`"chambers finding"` / `"on the papers"` (generic). `"inquest into the death of [name]"` is a
+high-precision title pattern across every state. `"prevention"` / `"Coroners Prevention Unit"`,
+`"recommendation"` + `"response"` (agencies must respond), `"manner of death"`, `"toxicology"`,
+`"polydrug toxicity"`, `"drug-induced deaths"` (the shared ABS/AIHW term). Avoid bare `"findings"` —
+always pair it with coroner / inquest / a jurisdiction or you drown in noise.
 
 ---
 
@@ -191,20 +212,73 @@ better.
 The named datasets and cohort studies are the highest-value signals in the whole file — they're how
 you find the actual numbers, and almost no non-specialist knows them.
 
-| Producer             | `site:` target          | Named datasets / series (quote these)                                                                                                        |
-| -------------------- | ----------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| **NDARC**            | `ndarc.med.unsw.edu.au` | `"IDRS"` (Illicit Drug Reporting System), `"EDRS"` (Ecstasy & related Drugs Reporting System), `"Drug Trends"`, `"NSW Drug Trends"`          |
-| **AIHW**             | `aihw.gov.au`           | `"NDSHS"` / `"National Drug Strategy Household Survey"`, `"AODTS NMDS"`, `"Alcohol and other drug treatment services in Australia"`          |
-| **Kirby Institute**  | `kirby.unsw.edu.au`     | `"ANSPS"`, `"HIV, viral hepatitis and STIs in Australia"` annual surveillance                                                                |
-| **Burnet Institute** | `burnet.edu.au`         | `"SuperMIX"` (Melbourne injecting cohort), `"EC Australia"`, hep C elimination                                                               |
-| **NDRI** (Curtin)    | `ndri.curtin.edu.au`    | `"National Drug Research Institute"`, trends bulletins                                                                                       |
-| **APO**              | `apo.org.au`            | grey-literature repository — `"harm reduction"` reports, submissions                                                                         |
-| **Named cohorts**    | (cross-site)            | `"SuperMIX"` (Burnet; PWID cohort, called `"MIX"` pre-2008), `"ETHOS Engage"` (Kirby; hep C among PWID), `"HITS"` / `"ATLAS"` ⚠ verify scope |
+| Producer             | `site:` target                                 | Named datasets / series (quote these)                                                                                                                                                                        |
+| -------------------- | ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **NDARC**            | `unsw.edu.au`, `ndarc.med.unsw.edu.au`         | `"Illicit Drug Reporting System"` / `IDRS`, `"Ecstasy and Related Drugs Reporting System"` / `EDRS`, `"Drug Trends"`, `"Australian Drug Trends"` (annual reports)                                            |
+| **AIHW**             | `aihw.gov.au`                                  | `"NDSHS"` / `"National Drug Strategy Household Survey"`, `"AODTS NMDS"`, `"Alcohol and other drug treatment services in Australia"`                                                                          |
+| **Kirby Institute**  | `kirby.unsw.edu.au`                            | `"Australian Needle and Syringe Program Survey"` / `ANSPS`, `"HIV, viral hepatitis and STIs in Australia"` annual surveillance                                                                               |
+| **ACIC wastewater**  | `acic.gov.au`                                  | `"National Wastewater Drug Monitoring Program"` / `NWDMP` (analysis by UQ `QAEHS` + Univ. of South Australia; reports numbered, e.g. "Report 24")                                                            |
+| **Burnet Institute** | `burnet.edu.au`                                | `"SuperMIX"` (Melbourne injecting cohort), `"EC Australia"`, hep C elimination                                                                                                                               |
+| **NDRI** (Curtin)    | `ndri.curtin.edu.au`                           | `"National Drug Research Institute"`, trends bulletins                                                                                                                                                       |
+| **APO**              | `apo.org.au`                                   | grey-literature repository — `"harm reduction"` reports, submissions                                                                                                                                         |
+| **Named cohorts**    | (cross-site; mostly Kirby `kirby.unsw.edu.au`) | `"SuperMIX"` (Burnet; PWID cohort, called `"MIX"` pre-2008), `"ETHOS Engage"` (Kirby; hep C among PWID), `"HITS-c"` / `"HITS-p"` (Kirby; Hepatitis C Incidence and Transmission Study — community / prisons) |
+
+> **⚠ ATLAS — handle separately:** "ATLAS" here is the Aboriginal & Torres Strait Islander STI/BBV
+> surveillance network (drawing on ~65 ACCHS sites), **not** a generic PWID cohort. Keep it flagged
+> for cultural-safety / Indigenous-data-sovereignty review; if used at all, pair with
+> `"Aboriginal Community Controlled"` / `ACCHS` + `BBV`, never the bare word "ATLAS".
 
 **Insider vocabulary:** `"sentinel"` sample, `"point prevalence"`, `"NMDS"` (national minimum
 dataset), `"closed treatment episode"`, `"seroprevalence"`, `"incidence"` vs `"prevalence"`,
-`"cascade"` (of care), `"reach"` / `"coverage"` (NSP), `"wastewater analysis"` (national wastewater
-drug monitoring program ⚠ verify exact program name).
+`"cascade"` (of care), `"reach"` / `"coverage"` (NSP), `"wastewater analysis"` /
+`"wastewater-based epidemiology"`. **Host note:** NDARC migrated into the main UNSW site — current
+pages live under `unsw.edu.au/research/ndarc` (old `ndarc.med.unsw.edu.au` project URLs
+301-redirect; PDFs persist there and at `archive-ndarc.med.unsw.edu.au`) — query **both** domains.
+
+---
+
+## 🧪 Novel Substances, NPS & Toxico-surveillance
+
+The specificity move here is to name the **substance** and the **surveillance program** rather than
+searching generic "novel psychoactive substance". Two things only an insider knows: which compounds
+are actually in the current Australian supply, and which named programs detect them.
+
+**Australian detection & toxico-surveillance:**
+
+| Program / source                       | `site:` target                         | Named signals                                                                                                                           |
+| -------------------------------------- | -------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| **EDNA** (national ED toxicosurveill.) | (journal-heavy; quote the name)        | `"Emerging Drugs Network of Australia"`, `"toxicosurveillance"` — led from Royal Perth Hospital (Prof. Daniel Fatovich) with ChemCentre |
+| **EDNAV** (Victorian arm)              | `austin.org.au`, `ahro.austin.org.au`  | `"Emerging Drugs Network of Australia - Victoria"`, `"EDNAV"`, `"Victorian Poisons Information Centre"` (Austin Health)                 |
+| **ACIC wastewater**                    | `acic.gov.au`                          | `"National Wastewater Drug Monitoring Program"` / `NWDMP` (see Research section)                                                        |
+| **NDARC**                              | `unsw.edu.au`, `ndarc.med.unsw.edu.au` | `"nitazenes fact sheet"`, `"Drug Trends"`, cryptomarket reports                                                                         |
+| **ADF**                                | `adf.org.au`                           | `"Alcohol and Drug Foundation"`, `"Drug Facts"` (plain-language substance pages incl. nitazenes)                                        |
+| **CanTEST** (drug-checking detections) | `cantest.com.au`, `health.act.gov.au`  | `"isotonitazepyne"` / `"N-pyrrolidino isotonitazene"` (flagged in fake oxycodone, Sep 2024) — see Drug Checking section                 |
+
+**Named substances confirmed in current Australian / international supply (quote these exactly):**
+
+| Class                                 | Quote-these names                                                                                                                                          | Note                                                                             |
+| ------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- |
+| **Nitazenes** (benzimidazole opioids) | `"isotonitazene"`, `"protonitazene"`, `"metonitazene"` (top-3 AU), `"etonitazepyne"` / `"N-pyrrolidino etonitazene"`, `"butonitazene"`, `"etodesnitazene"` | `"nitazene"` / `"nitazenes"` as a class; `"etonitazene"` is the low-yield parent |
+| **Designer benzodiazepines**          | `"bromazolam"` (dominant; + `"alpha-hydroxybromazolam"`), `"flualprazolam"`, `"etizolam"`, `"flubromazolam"`                                               | search the compound, not "novel benzodiazepine"                                  |
+| **Adulterant sedatives**              | `"xylazine"` / `"tranq"`, `"medetomidine"` / `"dexmedetomidine"`                                                                                           | predominantly North-American supply — pair with AU sites to avoid US-only noise  |
+| **Synthetic cathinones**              | `"eutylone"` (declining), `"pentylone"` (rising), `"N-ethylpentylone"` / `"ephylone"`                                                                      | mis-sold as MDMA; pair eutylone with pentylone to stay current                   |
+
+**International NPS surveillance bodies:**
+
+| Body                 | `site:` target                       | Named signals                                                                                                                                                                |
+| -------------------- | ------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **UNODC**            | `unodc.org` (NPS content at `/LSS/`) | `"Early Warning Advisory"` / `EWA` on NPS, `"World Drug Report"`, `"Current NPS Threats"`                                                                                    |
+| **EUDA** (ex-EMCDDA) | `euda.europa.eu`, `emcdda.europa.eu` | `"European Drug Report"` (`"Trends and Developments"`), `"EU Early Warning System"`, `"European Drug Alert System"` / `EDAS`, `"European Threat Assessment System"` / `ETAS` |
+
+> **⚠ Dropped signal:** `"EDND"` / `"European Database on New Drugs"` is an access-restricted
+> partner system, not a public web resource — it does not surface in a Google dork. Use the
+> confirmed `"EU Early Warning System"` + EUDA/EMCDDA site filters instead.
+
+**Insider vocabulary:** `NPS` / `"new psychoactive substance"`, `"emerging drug"`, `"adulterant"` /
+`"cutting agent"`, `"benzimidazole opioid"` (the chemical class name for nitazenes),
+`"high-potency synthetic opioid"`, `"sedative adulterant"`, `"designer benzodiazepine"` / `DBZD`,
+`"sentinel"` detection, `"toxicosurveillance"`, `"confirmed by"` GC-MS / LC-MS / `"qToF"`. **Keep
+both EUDA and EMCDDA domains** (older PDFs still live at `emcdda.europa.eu`).
 
 ---
 
@@ -236,15 +310,15 @@ hold the practical, real-time knowledge that doesn't make it into PDFs.
 
 ## 🌏 International Reference Bodies (for the "strong international" layer)
 
-| Body                             | `site:` target                       | Named signals                                                                  |
-| -------------------------------- | ------------------------------------ | ------------------------------------------------------------------------------ |
-| **EUDA** (ex-EMCDDA)             | `euda.europa.eu`, `emcdda.europa.eu` | `"European Drug Report"`, `"Early Warning System"`, `"Trendspotter"`, `"EDND"` |
-| **Harm Reduction International** | `hri.global`                         | `"Global State of Harm Reduction"` (flagship biennial report)                  |
-| **UNODC**                        | `unodc.org`                          | `"World Drug Report"`, `"Early Warning Advisory"` (NPS)                        |
-| **WHO**                          | `who.int`                            | `"consolidated guidelines"`, `"key populations"`, harm reduction               |
-| **Crew / Scotland**              | `crew.scot` ⚠ verify                 | peer drug info, Scottish drug-checking                                         |
-| **Release** (UK)                 | `release.org.uk`                     | `"drugs and the law"`, legal helpline resources                                |
-| **NSWP** (sex work)              | `nswp.org`                           | `"Global Network of Sex Work Projects"`, briefing papers                       |
+| Body                             | `site:` target                       | Named signals                                                                                                                                             |
+| -------------------------------- | ------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **EUDA** (ex-EMCDDA)             | `euda.europa.eu`, `emcdda.europa.eu` | `"European Drug Report"`, `"EU Early Warning System"`, `"Trendspotter"`, `"European Drug Alert System"` (EMCDDA renamed EUDA Jul 2024; keep both domains) |
+| **Harm Reduction International** | `hri.global`                         | `"Global State of Harm Reduction"` (flagship biennial report)                                                                                             |
+| **UNODC**                        | `unodc.org`                          | `"World Drug Report"`, `"Early Warning Advisory"` (NPS)                                                                                                   |
+| **WHO**                          | `who.int`                            | `"consolidated guidelines"`, `"key populations"`, harm reduction                                                                                          |
+| **Crew / Scotland**              | `crew.scot` ⚠ verify                 | peer drug info, Scottish drug-checking                                                                                                                    |
+| **Release** (UK)                 | `release.org.uk`                     | `"drugs and the law"`, legal helpline resources                                                                                                           |
+| **NSWP** (sex work)              | `nswp.org`                           | `"Global Network of Sex Work Projects"`, briefing papers                                                                                                  |
 
 ---
 

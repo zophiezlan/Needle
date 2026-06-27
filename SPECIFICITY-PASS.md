@@ -48,11 +48,12 @@ These were chosen by the project owner. Keep to them unless told otherwise:
 
 ## 2. What's Done So Far
 
-| #   | Commit theme                                      | Artifact                                |
-| --- | ------------------------------------------------- | --------------------------------------- |
-| 1   | Reference layer built                             | `docs/resources/source-intelligence.md` |
-| 2   | Flagged entries verified/corrected via web search | same file                               |
-| 3   | Drug-checking pack rewritten (proof-of-concept)   | `docs/dork-packs/drug-checking.md`      |
+| #   | Commit theme                                      | Artifact                                                                    |
+| --- | ------------------------------------------------- | --------------------------------------------------------------------------- |
+| 1   | Reference layer built                             | `docs/resources/source-intelligence.md`                                     |
+| 2   | Flagged entries verified/corrected via web search | same file                                                                   |
+| 3   | Drug-checking pack rewritten (proof-of-concept)   | `docs/dork-packs/drug-checking.md`                                          |
+| 4   | Batch 2 rewritten + reference verified/extended   | `naloxone`, `supervised-consumption`, `novel-substances`, `coroners-deaths` |
 
 - **`source-intelligence.md`** is the heart of this work: an entity → searchable-signal map. For
   each real org/service/dataset it records the `site:` target, the named publications to put in
@@ -158,14 +159,17 @@ When a pack's domain isn't yet in `source-intelligence.md`:
 
 Next-batch candidates — their `source-intelligence.md` sections exist (verify flags as you go):
 
-- `drug-alerts.md` · `naloxone.md` · `supervised-consumption.md` · `nsp.md` · `coroners-deaths.md` ·
-  `research.md` · `data-statistics.md` · `novel-substances.md` · `forum-community.md` ·
+- `drug-alerts.md` · `nsp.md` · `research.md` · `data-statistics.md` · `forum-community.md` ·
   `peer-workforce.md` · `international.md`
 - `peer-knowledge.md` is already relatively strong (it was the model for the approach) — light
   touch.
 
-**Suggested next batch:** naloxone, supervised-consumption, novel-substances, coroners-deaths — high
-public-health value and their reference sections are verified.
+**Done (batch 2):** `naloxone`, `supervised-consumption`, `novel-substances`, `coroners-deaths` —
+rewritten peer-first against verified entities; reference layer corrected and extended (new § "Novel
+Substances, NPS & Toxico-surveillance").
+
+**Suggested next batch:** `drug-alerts`, `nsp`, `research`, `data-statistics` — adjacent to the work
+just done and their reference sections are largely verified.
 
 ### Packs needing a reference section built first (§4 before §3)
 
@@ -181,9 +185,19 @@ public-health value and their reference sections are verified.
 
 ### Outstanding `⚠ verify` flags (confirm before use)
 
-Currently unconfirmed in `source-intelligence.md`: Urban Survivors Union domain; HITS / ATLAS cohort
-scope; the national wastewater drug-monitoring program's exact name. Resolve via web search and
-de-flag, or leave flagged and use the broader fallback form.
+Resolved in batch 2: Urban Survivors Union domain (→ `urban-survivors.org`); the national wastewater
+program (→ ACIC `"National Wastewater Drug Monitoring Program"` / NWDMP); HITS cohort scope (→
+`HITS-c` / `HITS-p`, Kirby Institute hepatitis C cohorts — safe to name). Also corrected: NDARC host
+migrated to `unsw.edu.au/research/ndarc` (query both domains); EMCDDA → EUDA rename
+(`euda.europa.eu`); MSIR review chairs (Hamilton 2020, Ryan 2023 — not John Ryan/Ken Lay as first
+guessed); QLD/ACT/NT coroner domains; Narcan = injectable (not nasal) in AU; IOAD founded by Sally
+J. Finn (Penington coordinates, did not found).
+
+Still flagged: **ATLAS** is an Aboriginal & Torres Strait Islander STI/BBV surveillance network, not
+a PWID cohort — keep flagged for Indigenous-data-sovereignty / cultural-safety review. **NT coroner
+host** is unstable (spread across `nt.gov.au` and `agd.nt.gov.au`) — use the multi-site form.
+**EDND** ("European Database on New Drugs") is access-restricted, not web-indexed — dropped as a
+quotable signal (use `"EU Early Warning System"` + EUDA/EMCDDA filters).
 
 ---
 

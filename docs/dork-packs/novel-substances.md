@@ -1,118 +1,151 @@
 # Novel Substances, Pharmacology & Toxicology
 
-> Surveillance of NPS, nitazenes, adulterants, and emerging drug trends.
+> Surveillance of the substances actually in Australia's supply — nitazenes, designer benzos,
+> adulterants and emerging stimulants — named by compound and by monitoring program.
 
 [← Back to Dork Packs](README.md) | [← Main Guide](../README.md)
 
 ---
 
-## ⚡ Quick Start
+## 👥 About This Pack
 
-Find Australian government reports on novel substances:
+"Novel psychoactive substance" is what an outsider types. An insider names the **compound** and the
+**program that detects it**. In the current Australian supply that means nitazenes
+(**isotonitazene**, **protonitazene**, **metonitazene**, and the pyrrolidino analogue
+**etonitazepyne** / **isotonitazepyne** that CanTEST flagged in fake oxycodone), the dominant
+designer benzodiazepine **bromazolam**, and the rising sedative adulterant **medetomidine**.
 
-```txt
-site:*.gov.au filetype:pdf ("novel psychoactive" OR NPS OR "emerging substance") after:2023
-```
+The named programs are the other half: the ACIC **National Wastewater Drug Monitoring Program**,
+NDARC's **IDRS / EDRS / Drug Trends**, and the emergency-department **Emerging Drugs Network of
+Australia (EDNA / EDNAV)**. Quote the compound, pair it with a program or an Australian site, and
+you skip the generic noise.
+
+> **Entity reference:** every compound, program, and surveillance body below is catalogued in
+> [Source Intelligence → Novel Substances, NPS & Toxico-surveillance](../resources/source-intelligence.md#-novel-substances-nps--toxico-surveillance).
 
 ---
 
-## 🌐 Essential Substance Information Resources
+## 🌐 Essential Substance Databases
 
-> Before dorking, check these authoritative databases:
+> Before dorking, these named databases carry the pharmacology and lab-tested results:
 
-| Resource              | URL                                               | Focus                                       |
-| --------------------- | ------------------------------------------------- | ------------------------------------------- |
-| **⭐ Erowid**         | [erowid.org](https://www.erowid.org/)             | Gold standard for substance info since 1995 |
-| **⭐ PsychonautWiki** | [psychonautwiki.org](https://psychonautwiki.org/) | Community-driven with dosing & pharmacology |
-| **DanceSafe**         | [dancesafe.org](https://dancesafe.org/)           | Festival/nightlife harm reduction           |
-| **TripSit**           | [tripsit.me](https://tripsit.me/)                 | Quick-reference factsheets & interactions   |
+| Resource              | URL                                               | Focus                                                |
+| --------------------- | ------------------------------------------------- | ---------------------------------------------------- |
+| **⭐ Erowid**         | [erowid.org](https://www.erowid.org/)             | Substance vaults & Experience Vaults since 1995      |
+| **⭐ PsychonautWiki** | [psychonautwiki.org](https://psychonautwiki.org/) | Dose, duration & pharmacology, interaction charts    |
+| **DrugsData**         | [drugsdata.org](https://drugsdata.org/)           | Erowid's lab-tested sample database (ex-EcstasyData) |
+| **TripSit**           | [tripsit.me](https://tripsit.me/)                 | Factsheets & combination charts                      |
+
+---
+
+## ⚡ Quick Start
+
+Find the current Australian nitazene picture from named sources:
+
+```txt
+(site:adf.org.au OR site:unsw.edu.au) ("nitazene" OR "nitazenes")
+```
 
 ---
 
 ## 🟢 Basic Queries
 
-### Government NPS Reports
+### National Wastewater Monitoring (ACIC)
 
 ```txt
-site:*.gov.au filetype:pdf ("novel psychoactive" OR NPS) (trend OR surveillance OR "drug market")
+site:acic.gov.au "National Wastewater Drug Monitoring Program" filetype:pdf
 ```
 
-### University Research
+**Why this works:**
+
+- Goes to the program itself rather than guessing `*.gov.au` — the ACIC's NWDMP (analysed by the
+  University of Queensland's QAEHS and the University of South Australia) is the authoritative
+  national consumption signal, reported in numbered editions
+
+### NDARC Drug Trends (IDRS / EDRS)
 
 ```txt
-site:*.edu.au filetype:pdf ("nitazene" OR "novel benzodiazepine" OR "synthetic opioid") Australia
+(site:unsw.edu.au OR site:ndarc.med.unsw.edu.au) ("Illicit Drug Reporting System" OR "Ecstasy and Related Drugs Reporting System" OR "Drug Trends")
 ```
 
-### General NPS Information
+**Why this works:**
+
+- IDRS and EDRS are NDARC's two sentinel surveillance arms under the Drug Trends program — they're
+  how emerging substances first show up in the data. (NDARC moved onto the main UNSW site, so search
+  both domains.)
+
+### Plain-Language Substance Facts (ADF)
 
 ```txt
-"novel psychoactive substance" OR NPS (Australia OR NSW OR VIC) (report OR surveillance) filetype:pdf
+site:adf.org.au ("nitazenes" OR "Drug Facts" OR "novel psychoactive")
 ```
 
 ---
 
 ## 🟡 Intermediate Queries
 
-### Nitazenes & Benzimidazole Opioids
+### Nitazenes (Benzimidazole Opioids)
 
 ```txt
-("nitazene" OR "isotonitazene" OR "protonitazene" OR "metonitazene" OR "benzimidazole opioid") Australia filetype:pdf
+("isotonitazene" OR "protonitazene" OR "metonitazene" OR "etonitazepyne" OR "butonitazene") (Australia OR detection OR toxicology) filetype:pdf
 ```
 
-**Why this matters:** Nitazenes are highly potent synthetic opioids emerging in drug supplies
-globally.
+**Why this matters:** nitazenes are high-potency synthetic opioids; isotonitazene, protonitazene and
+metonitazene are the three most frequently identified in Australian forensic and cryptomarket data.
 
-### Xylazine & Adulterants
+### Designer Benzodiazepines
 
 ```txt
-("xylazine" OR "medetomidine" OR "tranq" OR "adulterant") (Australia OR "drug supply") filetype:pdf
+("bromazolam" OR "flualprazolam" OR "etizolam" OR "flubromazolam") (detection OR Australia OR "drug checking")
 ```
 
-### Novel Benzodiazepines
+**Why this matters:** bromazolam is now the dominant designer benzo by positivity — search the
+compound, not "novel benzodiazepine".
+
+### Adulterant Sedatives (Xylazine / Medetomidine)
 
 ```txt
-("novel benzodiazepine" OR "designer benzodiazepine" OR flualprazolam OR etizolam) detection Australia
+("xylazine" OR "tranq" OR "medetomidine" OR "dexmedetomidine") (site:adf.org.au OR site:unsw.edu.au OR site:health.gov.au OR "drug supply")
 ```
 
-### Synthetic Cannabinoids
+**Why this works:**
+
+- Xylazine and medetomidine are mostly a North-American supply problem so far — pairing them with
+  Australian sites filters to local detections and alerts rather than US-dominated results
+
+### Emerging Stimulants & Cathinones
 
 ```txt
-("synthetic cannabinoid" OR "synthetic cannabis" OR "SCRA") Australia (detection OR toxicology OR emergency)
+("eutylone" OR "pentylone" OR "N-ethylpentylone" OR "ephylone") (Australia OR detection OR "mis-sold as MDMA")
 ```
 
 ---
 
 ## 🔴 Advanced Queries
 
-### Comprehensive NPS Surveillance
+### Comprehensive NPS Surveillance Sweep
 
 ```txt
-site:*.gov.au OR site:*.edu.au filetype:pdf ("novel psychoactive" OR NPS OR "emerging substance" OR "new psychoactive") (surveillance OR monitoring OR trend OR detection) Australia after:2022
+(site:acic.gov.au OR site:unsw.edu.au OR site:health.gov.au) ("nitazene" OR "novel psychoactive" OR NPS OR "emerging drug") (surveillance OR detection OR monitoring) filetype:pdf after:2022
 ```
 
-### Fentanyl & Analogues
+### Forensic Detection & Confirmation Methods
 
 ```txt
-("fentanyl" OR "fentanyl analogue" OR "carfentanil" OR "acetylfentanyl") Australia (detection OR alert OR death OR toxicology)
+("nitazene" OR "novel psychoactive" OR NPS) (GC-MS OR LC-MS OR "mass spectrometry" OR qTOF OR "confirmed by") (method OR detection OR identification) filetype:pdf
 ```
 
-### Reagent Testing Limitations for NPS
+### Coronial & Toxicology Case Findings
 
 ```txt
-"reagent testing" (accuracy OR limitations OR "false positive" OR "false negative") ("novel psychoactive" OR NPS)
+("nitazene" OR "isotonitazene" OR "protonitazene" OR "metonitazene") (death OR coronial OR toxicity OR "case series") Australia
 ```
 
-### Drug Checking Results for NPS
+**Why this works:**
 
-```txt
-"drug checking" ("novel substance" OR "unexpected" OR NPS) (results OR detected) Australia
-```
-
-### Forensic Detection Methods
-
-```txt
-(detection OR identification OR analysis) ("novel psychoactive" OR NPS OR nitazene) (method OR technique OR "mass spectrometry") filetype:pdf
-```
+- Nitazene harms surface first in emergency-department and coronial toxicology — tying named
+  compounds to "case series" or "coronial" finds the clinical evidence (cross-links Coroners &
+  Deaths)
 
 ---
 
@@ -121,140 +154,132 @@ site:*.gov.au OR site:*.edu.au filetype:pdf ("novel psychoactive" OR NPS OR "eme
 ### Nitazenes (High Priority)
 
 ```txt
-site:*.gov.au "nitazene" OR "benzimidazole opioid" after:2023
+("nitazene" OR "benzimidazole opioid") (Australia OR "drug alert" OR "drug checking") after:2023
 ```
 
 ```txt
-"isotonitazene" OR "protonitazene" (detection OR death OR toxicology OR case) Australia
+("etonitazepyne" OR "N-pyrrolidino etonitazene" OR "isotonitazepyne") (CanTEST OR detection OR oxycodone OR Australia)
 ```
 
-### Xylazine ("Tranq")
+### Bromazolam & Metabolites
 
 ```txt
-"xylazine" (Australia OR "drug supply" OR "opioid") (contamination OR adulterant OR detection)
+("bromazolam" OR "alpha-hydroxybromazolam") (detection OR positivity OR "drug checking" OR Australia)
 ```
 
-### Novel Stimulants
+### Ketamine & Dissociative Analogues
 
 ```txt
-("synthetic cathinone" OR "bath salts" OR "novel stimulant" OR eutylone OR "N-ethylpentylone") Australia
+("ketamine analogue" OR "deschloroketamine" OR "2-FDCK" OR "fluorexetamine") (Australia OR detection OR emergence)
 ```
 
-### Ketamine Analogues
+### GHB / GBL
 
 ```txt
-("ketamine analogue" OR "deschloroketamine" OR "2-FDCK") Australia (detection OR emergence)
-```
-
-### GHB/GBL
-
-```txt
-(GHB OR GBL OR "gamma-hydroxybutyrate" OR "fantasy") Australia (harm reduction OR overdose OR detection)
+(GHB OR GBL OR "gamma-hydroxybutyrate" OR "1,4-butanediol") Australia ("harm reduction" OR overdose OR detection)
 ```
 
 ---
 
-## 📊 Surveillance & Monitoring
+## 🔬 Detection & Toxico-surveillance
 
-### IDRS (Illicit Drug Reporting System)
+The named monitoring networks are how unexpected substances get confirmed analytically before they
+reach a coroner.
+
+### Emerging Drugs Network of Australia (EDNA / EDNAV)
 
 ```txt
-"Illicit Drug Reporting System" OR IDRS (novel OR emerging OR trend) filetype:pdf
+("Emerging Drugs Network of Australia" OR EDNAV) (toxicosurveillance OR "emergency department" OR "novel psychoactive")
 ```
 
-### EDRS (Ecstasy & Related Drugs)
+**Why this works:**
+
+- EDNA is the national ED toxico-surveillance network (led from Royal Perth Hospital with
+  ChemCentre); EDNAV is its Victorian clinical registry (Austin Health / Victorian Poisons
+  Information Centre). The literature is journal-heavy, so quote the network name rather than
+  relying on a single site
+
+### Wastewater Epidemiology
 
 ```txt
-"Ecstasy and Related Drugs Reporting System" OR EDRS filetype:pdf
+("National Wastewater Drug Monitoring Program" OR "wastewater-based epidemiology") (Australia OR ACIC OR QAEHS) filetype:pdf
 ```
 
-### Drug Trends Reports
+### Drug-Checking Detections
 
 ```txt
-site:ndarc.med.unsw.edu.au "drug trends" OR "market" filetype:pdf
-```
-
-### Wastewater Analysis
-
-```txt
-"wastewater analysis" OR "wastewater epidemiology" (drug OR substance) Australia
-```
-
----
-
-## 🏥 Clinical & Toxicology
-
-### Emergency Department Presentations
-
-```txt
-("emergency department" OR ED) ("novel psychoactive" OR NPS OR "synthetic") (presentation OR poisoning OR overdose) Australia
-```
-
-### Toxicology Case Reports
-
-```txt
-(case OR case report) (toxicology OR poisoning) ("novel psychoactive" OR NPS OR nitazene) Australia
-```
-
-### Treatment Guidelines for NPS
-
-```txt
-site:*.gov.au ("novel psychoactive" OR NPS) (treatment OR management OR "clinical guideline") filetype:pdf
+(site:cantest.com.au OR site:health.act.gov.au OR site:wedinos.org) ("nitazene" OR "unexpected" OR "not as expected" OR alert)
 ```
 
 ---
 
 ## 🌏 International Surveillance
 
-### EMCDDA (European)
+### UNODC Early Warning Advisory
 
 ```txt
-site:emcdda.europa.eu ("novel psychoactive" OR NPS OR "early warning") filetype:pdf
+site:unodc.org ("Early Warning Advisory" OR "Current NPS Threats" OR "new psychoactive substances")
 ```
 
-### UK Surveillance
+### UNODC World Drug Report
 
 ```txt
-site:*.gov.uk ("novel psychoactive" OR NPS) (surveillance OR monitoring OR trend)
+site:unodc.org "World Drug Report" (synthetic OR opioid OR NPS) filetype:pdf
 ```
 
-### UNODC
+### EUDA / EMCDDA (Europe)
 
 ```txt
-site:unodc.org "novel psychoactive" OR NPS (report OR surveillance)
+(site:euda.europa.eu OR site:emcdda.europa.eu) ("European Drug Report" OR "EU Early Warning System" OR "European Drug Alert System")
 ```
+
+**Why this works:**
+
+- EMCDDA became the European Union Drugs Agency (EUDA) in 2024 but older reports still live under
+  `emcdda.europa.eu` — querying both domains catches the full archive of early-warning material
 
 ---
 
-## ⚗️ Pharmacology & Toxicology Research
+## 💬 Peer & Community Knowledge
 
-### Receptor Pharmacology
+Drug checking and peer forums often detect a new substance — and describe its effects — before any
+official surveillance report is published.
 
-```txt
-(nitazene OR "synthetic opioid") (pharmacology OR "receptor binding" OR potency) filetype:pdf
-```
-
-### Metabolism & Detection Windows
+### Forum Detection & Trip Reports
 
 ```txt
-("novel psychoactive" OR NPS) (metabolism OR "detection window" OR metabolite) filetype:pdf
+(site:bluelight.org OR site:reddit.com/r/researchchemicals OR site:reddit.com/r/AusDrugs) ("nitazene" OR "bromazolam" OR "RC" OR "tested positive")
 ```
 
-### Comparative Potency
+### Pharmacology & Interaction References
 
 ```txt
-(nitazene OR fentanyl) potency comparison OR "relative potency" filetype:pdf
+(site:psychonautwiki.org OR site:tripsit.me) (dose OR duration OR "combination" OR interaction) ("research chemical" OR NPS)
 ```
+
+### Lab-Tested Sample Data
+
+```txt
+site:drugsdata.org (results OR "lab tested") ("unexpected" OR nitazene OR cathinone OR "no MDMA")
+```
+
+**Why this works:**
+
+- DrugsData (Erowid's lab database) and forum reports are real-world detection signals — cross-check
+  them against EDNA/wastewater data, but don't ignore them: peers often see the supply shift first
 
 ---
 
 ## 🔗 Related Resources
 
-- **Synonym Block:** [Novel Substances Terms](../05-synonym-blocks.md#-novelenterging-substances)
+- **Source Intelligence:**
+  [Novel Substances, NPS & Toxico-surveillance entities](../resources/source-intelligence.md#-novel-substances-nps--toxico-surveillance)
+  — the compounds, programs, and bodies every dork above is built on
+- **Synonym Block:** [Novel/Emerging Substances](../05-synonym-blocks.md#-novelemerging-substances)
 - **Related Packs:** [Drug Alerts](drug-alerts.md), [Drug Checking](drug-checking.md),
   [Coroners & Deaths](coroners-deaths.md)
 - **Databases:** [Erowid](https://erowid.org), [PsychonautWiki](https://psychonautwiki.org),
-  [TripSit](https://tripsit.me)
+  [DrugsData](https://drugsdata.org)
 
 ---
 
