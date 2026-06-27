@@ -1,137 +1,279 @@
 # Drug Alerts & Early Warning
 
-> Real-time monitoring for high-strength, contaminated, or unexpected substances in drug supply.
-> Essential for early warning systems and client safety.
+> Real-time monitoring for high-strength, contaminated, or unexpected substances — named by the
+> system that issues the alert, not just by keyword.
 
 [← Back to Dork Packs](README.md) | [← Main Guide](../README.md)
 
 ---
 
+## 👥 About This Pack
+
+There is now one national place to look first: **The Know** (`theknow.org.au`) — "Australian drug
+alerts, all in one place", the public face of the **Prompt Response Network**. After that, every
+state issues alerts under its _own_ term, and quoting the right one is the whole game: NSW publishes
+**"Public drug warnings"**, Victoria **"Drug alerts"**, the ACT a **"Public Health Alert"**, the NT
+**"Health alerts"**, Tasmania **"Alerts and pop-up notifications"**. Queensland and WA have no clean
+public street-drug alert index — route those through The Know.
+
+Peers are often first: **NUAA** and community forums relay batch warnings before a department page
+updates. Lead with them, then cross-check against the official systems.
+
+> **Entity reference:** every alert system, term, and domain below is catalogued in
+> [Source Intelligence → Drug Alerts & EWS](../resources/source-intelligence.md#-drug-alerts--early-warning-systems-ews).
+
+---
+
 ## ⚡ Quick Start
 
-Get Australian government drug alerts from the last month:
+Check the national aggregator first:
 
 ```txt
-site:*.gov.au "drug alert" after:2025-12-01
+site:theknow.org.au ("drug alert" OR "drug warning")
 ```
 
 ---
 
 ## 🟢 Basic Queries
 
-### All Recent Government Alerts
+### The Know (National Aggregator)
 
 ```txt
-site:*.gov.au intitle:"drug alert" after:2025-01-01
+site:theknow.org.au ("drug alert" OR "Prompt Response Network" OR nitazene)
 ```
 
 **Why this works:**
 
-- `intitle:` ensures "drug alert" is in the page title (official alerts)
-- `after:` filters to recent only
-- `site:*.gov.au` catches all Australian government sources
+- The Know aggregates alerts from every state/territory into one place — it's the single best
+  national starting point, and the "Prompt Response Network" is the institutional name behind it
 
-### NSW Health Alerts Specifically
+### NSW Public Drug Warnings
 
 ```txt
-site:health.nsw.gov.au "drug warning"
+site:health.nsw.gov.au/aod ("Public drug warnings" OR "public drug alert")
 ```
 
-### Victorian Health Alerts
+**Why this works:**
+
+- NSW Health's consumer term is "Public drug warnings" (the `/aod/public-drug-alerts/` path); the
+  clinician-facing equivalent is "Clinical safety alerts" — naming the exact term skips the noise
+
+### Victorian Drug Alerts
 
 ```txt
-site:health.vic.gov.au "drug alert" OR "health alert"
+site:health.vic.gov.au ("drug alert" OR "drug advisory")
+```
+
+### Peer-Relayed Alerts (NUAA)
+
+```txt
+site:nuaa.org.au ("drug alert" OR "drug warning" OR batch)
 ```
 
 ---
 
 ## 🟡 Intermediate Queries
 
-### Multi-Term Alert Search
+### Specific Substance Alerts
 
 ```txt
-site:*.health.*.gov.au (intitle:"drug alert" OR intitle:"drug warning" OR intitle:"health alert") after:2025-01-01
+("drug alert" OR "drug warning" OR "public health alert") ("nitazene" OR "xylazine" OR "high-dose MDMA" OR "fentanyl") (site:theknow.org.au OR site:*.gov.au)
+```
+
+### Alerts as Official PDFs
+
+```txt
+site:*.gov.au filetype:pdf ("drug warning" OR "health alert" OR "drug alert") (nitazene OR "synthetic opioid" OR contamina*)
+```
+
+### NT & TAS (PDF-Heavy Systems)
+
+```txt
+(site:health.nt.gov.au OR site:health.tas.gov.au) ("health alert" OR "drug warning" OR "alerts and pop-up notifications") (drug OR nitazene)
 ```
 
 **Why this works:**
 
-- `site:*.health.*.gov.au` catches all state health departments
-- Parentheses group the OR terms together
-- Multiple title variations catch different naming conventions
+- The NT issues drug warnings as PDFs under "Health alerts"; Tasmania files them under "Alerts and
+  pop-up notifications" — neither uses a tidy "drug alerts" label, so name their actual terms
 
-### Specific Substance Alerts
-
-```txt
-site:*.gov.au ("nitazene" OR "xylazine" OR "fentanyl") (alert OR warning)
-```
-
-### Alerts with PDFs (Official Documents)
+### TGA Safety Alerts & Shortages
 
 ```txt
-site:*.gov.au filetype:pdf ("drug alert" OR "drug warning" OR "drug notification")
+site:tga.gov.au ("safety alert" OR "medicine shortage" OR recall) (opioid OR naloxone OR benzodiazepine)
 ```
 
 ---
 
 ## 🔴 Advanced Queries
 
-### Comprehensive Alert Sweep
+### Comprehensive Multi-System Sweep
 
 ```txt
-site:*.health.*.gov.au (intitle:"drug alert" OR intitle:"drug warning" OR intitle:"drug notification" OR intitle:"clinical safety alert") (opioid OR stimulant OR "novel substance" OR contamina*) after:2025-01-01 filetype:pdf
+(site:theknow.org.au OR site:health.nsw.gov.au OR site:health.vic.gov.au OR site:health.act.gov.au) ("drug warning" OR "drug alert" OR "public health alert") after:2025-01-01
 ```
 
-**Why this works:**
-
-- Multiple title variations cover all alert naming conventions
-- Substance categories catch relevant alerts
-- PDF filter gets the actual alert documents
-- Wildcard `contamina*` catches contamination, contaminated, contaminant
-
-### Directory Mining for Unpublished Alerts
+### Directory Mining for Alert Pages
 
 ```txt
-site:*.gov.au inurl:"/alerts/" OR inurl:"/warnings/" filetype:pdf "drug" after:2025-01-01
+site:*.gov.au (inurl:drug-alerts OR inurl:public-drug-warnings OR inurl:health-alerts) (nitazene OR "synthetic opioid" OR overdose)
 ```
 
 ### High-Priority Emerging Substances
 
 ```txt
-site:*.gov.au filetype:pdf ("nitazene" OR "benzimidazole opioid" OR "xylazine" OR "medetomidine") after:2025-01-01
+(site:*.gov.au OR site:theknow.org.au) ("nitazene" OR "benzimidazole opioid" OR "protonitazene" OR "medetomidine" OR "xylazine") (warning OR alert OR detected)
 ```
 
-### Alerts Mentioning Specific Formulations
+---
+
+## 📍 State & Territory Alert Systems
+
+Each jurisdiction's quotable term — verified, because several are easy to get wrong.
+
+### NSW — "Public drug warnings"
 
 ```txt
-site:*.gov.au "drug alert" ("high strength" OR "unexpected" OR "contaminated" OR "adulterated") after:2025-01-01
+site:health.nsw.gov.au/aod ("Public drug warnings" OR "Clinical safety alerts")
 ```
+
+### Victoria — "Drug alerts"
+
+```txt
+site:health.vic.gov.au/alcohol-and-drugs/drug-alerts (drug OR nitazene OR advisory)
+```
+
+### ACT — "Public Health Alert" + CanTEST
+
+```txt
+(site:health.act.gov.au OR site:act.gov.au) ("Public Health Alert" OR CanTEST) (drug OR warning)
+```
+
+### Queensland — via The Know
+
+```txt
+("drug alert" OR "drug warning") Queensland (site:theknow.org.au OR site:health.qld.gov.au) -inurl:medicines-poisons
+```
+
+> Note: `health.qld.gov.au`'s "Updates and alerts" page is a _regulatory_ (medicines/poisons) page,
+> not a consumer street-drug index — route QLD alerts through The Know. CheQpoint (drug checking)
+> closed April 2025.
+
+### SA — "Medication alerts" / media warnings
+
+```txt
+site:sahealth.sa.gov.au ("Medication alerts" OR "Health alerts" OR "drug warning" OR "synthetic opioid")
+```
+
+### NT — "Health alerts" (PDFs)
+
+```txt
+site:health.nt.gov.au ("health alert" OR "drug warning") filetype:pdf
+```
+
+### Tasmania — "Alerts and pop-up notifications"
+
+```txt
+site:health.tas.gov.au ("alerts and pop-up notifications" OR "health alert") (drug OR nitazene OR "party drugs")
+```
+
+### WA — keyword fallback (no public index)
+
+```txt
+(site:health.wa.gov.au OR site:healthywa.health.wa.gov.au) (nitazene OR "synthetic opioid" OR "drug warning")
+```
+
+---
+
+## 🌏 International Alert & Drug-Checking Data
+
+For comparison and early warning from jurisdictions with mature systems.
+
+### WEDINOS (Wales)
+
+```txt
+site:wedinos.wales ("substance alert" OR "sample results" OR WEDINOS)
+```
+
+> Note: `wedinos.org` 301-redirects to `wedinos.wales`. The "PHILTRE" bulletin is published on
+> Public Health Wales (`publichealthwales.nhs.wales`), not the WEDINOS domain.
+
+### EUDA — EDAS & Early Warning System
+
+```txt
+site:euda.europa.eu ("European Drug Alert System" OR "EU Early Warning System" OR "new psychoactive substances")
+```
+
+### Canada — Toronto's Drug Checking & TRIP
+
+```txt
+(site:drugchecking.community OR site:tripproject.ca) ("drug checking" OR alert OR medetomidine OR fentanyl)
+```
+
+### DanceSafe (US) — #TestIt! Alerts
+
+```txt
+site:dancesafe.org ("TestIt" OR "Test It" OR alert OR adulterated)
+```
+
+---
+
+## 💬 Peer & Community Alerts
+
+Government alerts can lag. Peers and forums often carry the "bad batch" warning first — treat as a
+lead, then cross-check against The Know and official systems.
+
+### Peer-Org Alert Channels
+
+```txt
+(site:nuaa.org.au OR site:hrvic.org.au OR site:cahma.org.au) ("drug alert" OR "drug warning" OR batch)
+```
+
+### Real-Time Community Reports
+
+```txt
+(site:reddit.com/r/AusDrugs OR site:bluelight.org) ("bad batch" OR "drug alert" OR "tested positive" OR nitazene)
+```
+
+**Why this works:**
+
+- Forums carry the in-the-moment "this batch is dodgy" knowledge that never reaches a PDF — useful
+  for early warning, but verify against lab-backed sources before relaying
+
+---
+
+## 🔔 Setting Up Monitoring
+
+Turn any dork above into a [Google Alert](https://www.google.com/alerts) for automatic notifications
+(set frequency to "As-it-happens", email delivery):
+
+```txt
+site:theknow.org.au ("drug alert" OR "drug warning")
+```
+
+```txt
+("nitazene" OR "synthetic opioid") (site:*.gov.au OR site:theknow.org.au)
+```
+
+Victoria also offers a direct Chief Health Officer alert subscription at
+`health.vic.gov.au/subscribe`. See the [Google Alerts Guide](../tools/google-alerts.md) for setup.
 
 ---
 
 ## 🏘️ Local News Monitoring
 
-Government alerts can be slow. Local news often reports "bad batch" incidents or overdoses first.
+Local news often reports "bad batch" incidents or overdose spikes before official alerts.
 
-### The "Location" Operator - 1
-
-Find reports specific to a city or town (Google News only).
+### The Location Operator (Google News)
 
 ```txt
-location:Sydney "drug alert"
+location:Sydney ("drug alert" OR overdose OR "bad batch")
 ```
 
-### The "Location" Operator - 2
+### Local Source Pattern
 
 ```txt
-location:Melbourne "overdose"
-```
-
-### The "Local Source" Pattern
-
-Target local news domains specifically to catch community reports.
-
-```txt
-site:.com.au (news OR times OR herald OR daily) ("bad batch" OR "warning") location:Newcastle
+site:.com.au (news OR herald OR times OR daily) ("bad batch" OR "drug warning" OR "overdose cluster")
 ```
 
 > **💡 Pro Tip:** See [Search Tweaks](../tools/search-tweaks.md#local-alert-monitoring) for more
@@ -139,123 +281,14 @@ site:.com.au (news OR times OR herald OR daily) ("bad batch" OR "warning") locat
 
 ---
 
-## 🌏 International Alert Systems
-
-For comparison and early warning from other jurisdictions:
-
-### UK (WEDINOS)
-
-```txt
-site:wedinos.org [substance name]
-```
-
-### Canada - 1
-
-```txt
-site:drugschecking.ca results
-```
-
-### Canada - 2
-
-```txt
-site:tripproject.ca alerts
-```
-
-### Europe
-
-```txt
-site:saferparty.ch OR site:checkit.wien analysis
-```
-
-### General International
-
-```txt
-"drug alert" (UK OR Canada OR Europe) [substance] 2025
-```
-
----
-
-## 📍 State-by-State Quick Reference
-
-### ACT Drug Alerts
-
-```txt
-site:health.act.gov.au "drug alert" OR "drug notification"
-```
-
-### NSW Drug Alerts
-
-```txt
-site:health.nsw.gov.au "drug warning" OR "drug alert"
-```
-
-### NT Drug Alerts
-
-```txt
-site:health.nt.gov.au "drug alert"
-```
-
-### QLD Drug Alerts
-
-```txt
-site:health.qld.gov.au "drug alert"
-```
-
-### SA Drug Alerts
-
-```txt
-site:sahealth.sa.gov.au "drug alert"
-```
-
-### TAS Drug Alerts
-
-```txt
-site:health.tas.gov.au "drug alert"
-```
-
-### VIC Drug Alerts
-
-```txt
-site:health.vic.gov.au "drug alert" OR "health alert"
-```
-
-### WA Drug Alerts
-
-```txt
-site:health.wa.gov.au "drug warning"
-```
-
----
-
-## 🔔 Setting Up Monitoring
-
-Use these dorks as Google Alerts for automatic notifications:
-
-1. Go to [google.com/alerts](https://www.google.com/alerts)
-2. Enter your dork as the query
-3. Set frequency to "As-it-happens"
-4. Choose email delivery
-
-**Recommended alerts:**
-
-```txt
-site:*.health.*.gov.au ("drug alert" OR "drug warning")
-```
-
-```txt
-("nitazene" OR "benzimidazole opioid") site:*.gov.au
-```
-
-See [Google Alerts Guide](../tools/google-alerts.md) for detailed setup.
-
----
-
 ## 🔗 Related Resources
 
+- **Source Intelligence:**
+  [Drug Alerts & EWS entities](../resources/source-intelligence.md#-drug-alerts--early-warning-systems-ews)
+  — the systems, terms, and domains every dork above is built on
 - **Synonym Block:** [Alert Terms](../05-synonym-blocks.md#-alert-terms)
-- **Related Packs:** [Novel Substances](novel-substances.md),
+- **Related Packs:** [Novel Substances](novel-substances.md), [Drug Checking](drug-checking.md),
   [Coroners & Deaths](coroners-deaths.md)
-- **Workflow:** [Monitoring & Early Warning](../workflows/monitoring.md)
 - **Tool:** [Google Alerts](../tools/google-alerts.md)
 
 ---

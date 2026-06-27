@@ -54,6 +54,7 @@ These were chosen by the project owner. Keep to them unless told otherwise:
 | 2   | Flagged entries verified/corrected via web search | same file                                                                   |
 | 3   | Drug-checking pack rewritten (proof-of-concept)   | `docs/dork-packs/drug-checking.md`                                          |
 | 4   | Batch 2 rewritten + reference verified/extended   | `naloxone`, `supervised-consumption`, `novel-substances`, `coroners-deaths` |
+| 5   | Batch 3 rewritten + reference verified/extended   | `drug-alerts`, `nsp`, `research`, `data-statistics`                         |
 
 - **`source-intelligence.md`** is the heart of this work: an entity → searchable-signal map. For
   each real org/service/dataset it records the `site:` target, the named publications to put in
@@ -159,8 +160,7 @@ When a pack's domain isn't yet in `source-intelligence.md`:
 
 Next-batch candidates — their `source-intelligence.md` sections exist (verify flags as you go):
 
-- `drug-alerts.md` · `nsp.md` · `research.md` · `data-statistics.md` · `forum-community.md` ·
-  `peer-workforce.md` · `international.md`
+- `forum-community.md` · `peer-workforce.md` · `international.md` · `oat-ost.md`
 - `peer-knowledge.md` is already relatively strong (it was the model for the approach) — light
   touch.
 
@@ -168,8 +168,14 @@ Next-batch candidates — their `source-intelligence.md` sections exist (verify 
 rewritten peer-first against verified entities; reference layer corrected and extended (new § "Novel
 Substances, NPS & Toxico-surveillance").
 
-**Suggested next batch:** `drug-alerts`, `nsp`, `research`, `data-statistics` — adjacent to the work
-just done and their reference sections are largely verified.
+**Done (batch 3):** `drug-alerts`, `nsp`, `research`, `data-statistics` — rewritten against verified
+entities; reference layer extended with the EWS rewrite (national **The Know** / Prompt Response
+Network), an NSP sub-table, a research-centres sub-table, and a new § "Datasets, Surveillance Feeds
+& Data Repositories".
+
+**Suggested next batch:** `oat-ost`, `forum-community`, `peer-workforce`, `international` —
+`oat-ost` and `international` need their reference sections built first (§4); `forum-community` and
+`peer-workforce` are largely covered by the peer/forums sections already.
 
 ### Packs needing a reference section built first (§4 before §3)
 
@@ -193,11 +199,23 @@ migrated to `unsw.edu.au/research/ndarc` (query both domains); EMCDDA → EUDA r
 guessed); QLD/ACT/NT coroner domains; Narcan = injectable (not nasal) in AU; IOAD founded by Sally
 J. Finn (Penington coordinates, did not found).
 
+Resolved/corrected in batch 3: national alert aggregator = **The Know** (`theknow.org.au`) /
+**Prompt Response Network** (NCCRED); per-state alert terms differ ("Public drug warnings" NSW,
+"Drug alerts" VIC, "Public Health Alert" ACT, "Health alerts" NT, "Alerts and pop-up notifications"
+TAS); Toronto's drug checking is `drugchecking.community` (**not** the dead `drugschecking.ca`);
+`wedinos.org` → `wedinos.wales`; **Turning Point** has no hyphen (`turningpoint.org.au`); **CSRH**
+is `unsw.edu.au` (`inurl:csrh`), not a subdomain; **Matilda Centre** is
+`sydney.edu.au/matilda-centre`; **APO** reverted to "Australian Policy Online"; **ANDS** → **ARDC**
+(`ardc.edu.au` / `researchdata.edu.au`). New named entities: NASS / AODstats (ambulance), NSP NMDC
+vs ANSPS, Fitpack, "syringe dispensing machine".
+
 Still flagged: **ATLAS** is an Aboriginal & Torres Strait Islander STI/BBV surveillance network, not
 a PWID cohort — keep flagged for Indigenous-data-sovereignty / cultural-safety review. **NT coroner
 host** is unstable (spread across `nt.gov.au` and `agd.nt.gov.au`) — use the multi-site form.
 **EDND** ("European Database on New Drugs") is access-restricted, not web-indexed — dropped as a
-quotable signal (use `"EU Early Warning System"` + EUDA/EMCDDA filters).
+quotable signal (use `"EU Early Warning System"` + EUDA/EMCDDA filters). **WA** has no public
+drug-alert index — use a keyword fallback. **National NSP policy** has no current standalone title
+(the 2010–2014 framework is expired) — target the National Drug Strategy / BBV strategies instead.
 
 ---
 

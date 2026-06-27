@@ -1,73 +1,101 @@
 # Needle & Syringe Programs (NSP)
 
-> Service models, evaluations, policies, directories, and operational guidelines for NSP.
+> Find the data, delivery models, equipment, and evidence behind Australia's NSPs — named by data
+> series and delivery model, not just by keyword.
 
 [← Back to Dork Packs](README.md) | [← Main Guide](../README.md)
 
 ---
 
+## 👥 About This Pack
+
+NSPs are one of the most cost-effective public-health interventions ever run in Australia — and much
+of the reach comes from **peers**: secondary and peer-to-peer distribution gets equipment to people
+the fixed sites never see. Lead there, then layer on the official picture.
+
+The named things to know: the Kirby Institute runs **two distinct annual series** — the **Australian
+NSP Survey (ANSPS)** (a bio-behavioural serosurvey) and the **NSP National Minimum Data Collection
+(NSP NMDC)** (syringes distributed and service counts). The delivery models have precise terms
+(**primary / secondary / pharmacy NSP**, **syringe dispensing machine**), and the iconic disposal
+kit is the **Fitpack**. Quote those and you skip the generic results.
+
+> **Entity reference:** every data series, model, and domain below is catalogued in
+> [Source Intelligence → Supervised Consumption & NSP](../resources/source-intelligence.md#-supervised-consumption--nsp).
+
+---
+
 ## ⚡ Quick Start
 
-Find NSP guidelines from Australian health departments:
+Go straight to the national NSP service/distribution data:
 
 ```txt
-site:*.health.*.gov.au filetype:pdf "needle syringe program" guideline
+site:kirby.unsw.edu.au "Needle Syringe Program National Minimum Data Collection"
 ```
 
 ---
 
 ## 🟢 Basic Queries
 
-### Government NSP Policies
+### Kirby NSP Data Reports
 
 ```txt
-site:*.health.*.gov.au filetype:pdf ("needle syringe program" OR NSP) (guideline OR policy OR protocol)
+site:kirby.unsw.edu.au ("Needle Syringe Program National Minimum Data Collection" OR "Australian NSP Survey National Data Report")
 ```
 
 **Why this works:**
 
-- State health departments host NSP policies
-- PDF filter gets operational documents
-- Multiple document type terms captured
+- These are Kirby's two exact report-series titles — the NMDC for service/distribution counts, the
+  ANSPS for HCV/HIV and risk-behaviour data. Naming them finds the actual data, not commentary
 
-### NSP Service Directories
+### Peer & State NSP Organisations
 
 ```txt
-filetype:xlsx OR filetype:pdf (NSP OR "needle syringe") ("service list" OR directory) site:*.gov.au
+(site:nuaa.org.au OR site:quihn.org OR site:wasua.com.au) ("NSP" OR "needle syringe" OR "NSP equipment")
 ```
 
-### Sector Organisation Resources
+**Why this works:**
+
+- Peer and drug-user organisations deliver a large share of NSP — NUAA's "NSP equipment" mail-out is
+  a named example. This is the by-and-with-peers side, not the policy side
+
+### NSW NSP Outlets Map
 
 ```txt
-site:*.org.au filetype:pdf ("needle syringe program" OR NSP) (evaluation OR outcomes OR access)
+site:health.nsw.gov.au/hepatitis "NSP outlets"
 ```
 
 ---
 
 ## 🟡 Intermediate Queries
 
-### NSP Evaluations & Evidence
+### NSP Delivery Models
 
 ```txt
-site:*.edu.au filetype:pdf "needle syringe program" (evaluation OR effectiveness OR "cost-effectiveness")
+("primary NSP" OR "secondary NSP" OR "pharmacy NSP" OR "syringe dispensing machine") ("needle syringe" OR "injecting equipment") Australia
 ```
 
-### Peer-Based NSP Resources
+**Why this works:**
+
+- These are the sector's formal model terms (the Kirby NMDC counts each). "Syringe dispensing
+  machine" / "automatic dispensing machine" is the expert term — "vending machine" is colloquial and
+  misses the official documents
+
+### Secondary & Peer Distribution
 
 ```txt
-site:*.org.au "peer-based" OR "peer-led" ("needle syringe" OR NSP) filetype:pdf
+("secondary distribution" OR "peer distribution" OR "peer-to-peer") ("needle syringe" OR "injecting equipment" OR NSP) Australia filetype:pdf
 ```
 
-### Equipment & Supply Guidelines
+### Pharmacy NSP
 
 ```txt
-site:*.gov.au "injecting equipment" (guideline OR policy OR "safe disposal") filetype:pdf
+("pharmacy NSP" OR "pharmacy" "needle syringe") (guideline OR policy OR "fitpack" OR supply) Australia
 ```
 
-### Pharmacy-Based NSP
+### State NSP Guidelines
 
 ```txt
-"pharmacy" ("needle syringe" OR NSP OR "injecting equipment") Australia (program OR scheme)
+(site:health.nsw.gov.au OR site:health.vic.gov.au OR site:sahealth.sa.gov.au) ("needle syringe program" OR NSP) (guideline OR policy OR GL2023) filetype:pdf
 ```
 
 ---
@@ -77,169 +105,139 @@ site:*.gov.au "injecting equipment" (guideline OR policy OR "safe disposal") fil
 ### Comprehensive NSP Document Sweep
 
 ```txt
-site:*.gov.au filetype:pdf ("needle syringe program" OR "needle exchange" OR "syringe service" OR NSP) (guideline OR policy OR framework OR manual) after:2020
+site:*.gov.au filetype:pdf ("needle syringe program" OR "needle and syringe program" OR NSP) (guideline OR policy OR framework OR manual) after:2020
 ```
 
-### NSP Location/Access Information
+### Syringe Dispensing Machines
 
 ```txt
-"needle syringe program" location OR address OR "opening hours" [YOUR STATE] -site:facebook.com -site:twitter.com
+("syringe dispensing machine" OR "automatic dispensing machine" OR ADM) ("needle" OR "injecting equipment") Australia (evaluation OR placement OR access)
 ```
 
-### Mobile/Outreach NSP
+### Mobile & Outreach NSP
 
 ```txt
-("mobile NSP" OR "mobile needle" OR "outreach NSP" OR "van" OR "bus") ("needle syringe" OR "injecting equipment") Australia
+("mobile NSP" OR "mobile outreach" OR "outreach NSP") ("needle syringe" OR "injecting equipment") Australia
 ```
 
-### Vending Machine Programs
+### Coverage & Reach Evidence
 
 ```txt
-"vending machine" OR "dispensing machine" ("needle" OR "syringe" OR "injecting equipment") Australia
+("needle syringe program" OR NSP) ("coverage" OR "reach" OR "cost-effectiveness" OR "return on investment") Australia filetype:pdf
 ```
 
-### Secondary Distribution
+**Why this works:**
+
+- "Coverage" and "reach" are the epidemiological terms for whether an NSP is meeting need — pairing
+  them with cost-effectiveness finds the economic case that has repeatedly justified NSP funding
+
+---
+
+## 📊 NSP Data & Coverage
+
+Two Kirby series, two different jobs — don't conflate them.
+
+### NSP NMDC (Service & Distribution Data)
 
 ```txt
-"secondary distribution" OR "peer distribution" ("needle syringe" OR "injecting equipment") Australia filetype:pdf
+site:kirby.unsw.edu.au "Needle Syringe Program National Minimum Data Collection" "National Data Report"
+```
+
+### ANSPS (Serosurvey & Risk Behaviour)
+
+```txt
+site:kirby.unsw.edu.au ("Australian NSP Survey National Data Report" OR ANSPS)
+```
+
+### AIHW & BBV Context
+
+```txt
+(site:aihw.gov.au OR site:kirby.unsw.edu.au) ("needle syringe" OR "injecting drug use") ("hepatitis C" OR HCV OR "blood borne virus") data
 ```
 
 ---
 
-## 📍 State-by-State NSP Resources
+## 🧰 Equipment & Consumables
 
-### NSW
+### Fitpack & Sharps Disposal
 
 ```txt
-site:health.nsw.gov.au "needle syringe program"
+("Fitpack" OR "ASP Healthcare" OR "personal sharps container") ("needle syringe" OR NSP OR disposal) site:.au
 ```
 
-### QLD
+### Safe Disposal Guidance
 
 ```txt
-site:health.qld.gov.au "needle syringe program"
+("safe disposal" OR "sharps disposal") ("needle" OR "syringe" OR "injecting equipment") (guideline OR information) Australia
 ```
 
-### SA
+### Specialised Injecting Equipment
 
 ```txt
-site:sahealth.sa.gov.au "needle syringe"
-```
-
-### VIC
-
-```txt
-site:health.vic.gov.au "needle syringe" OR NSP
-```
-
-### WA
-
-```txt
-site:health.wa.gov.au "needle exchange"
+("low dead space" OR "detachable needle" OR "winged infusion" OR "filter") ("needle syringe" OR NSP) Australia
 ```
 
 ---
 
-## 🎓 NSP Workforce & Training
+## 💬 Peer & Lived-Experience NSP
 
-### Staff Training Resources
+NSP is, at its core, peer health work. This is the knowledge a distribution spreadsheet misses.
+
+### Peer-Based NSP Models
 
 ```txt
-"NSP" OR "needle syringe" (training OR induction OR "capacity building") Australia filetype:pdf
+(site:*.org.au OR site:nuaa.org.au) ("peer-based" OR "peer-led" OR "peer distribution") ("needle syringe" OR NSP) filetype:pdf
 ```
 
-### Peer Worker NSP Training
+### Peer Worker Experience & Training
 
 ```txt
-"peer worker" ("needle syringe" OR NSP) training filetype:pdf -jobs
+("needle syringe" OR NSP) ("peer worker" OR "peer educator") (training OR reflection OR experience) filetype:pdf -jobs
 ```
 
-### Clinical Considerations
+### Community Discussion
 
 ```txt
-"injecting" (vein care OR "safer injecting" OR technique) training filetype:pdf
-```
-
----
-
-## 📊 NSP Data & Statistics
-
-### AIHW Data
-
-```txt
-site:aihw.gov.au "needle syringe program" OR NSP statistics
-```
-
-### Distribution Data
-
-```txt
-"needle syringe" ("distribution data" OR "equipment distribution" OR statistics) Australia
-```
-
-### BBV Data Related to NSP
-
-```txt
-site:aihw.gov.au ("hepatitis C" OR HCV OR "blood borne virus") "injecting drug use"
+(site:reddit.com/r/AusDrugs OR site:bluelight.org) ("NSP" OR "needle exchange" OR "fitpack" OR "safer injecting")
 ```
 
 ---
 
-## 🔬 Research & Evidence
+## 🏛️ Policy & Evidence
 
-### NDARC Research
+### National Policy Context
 
 ```txt
-site:ndarc.med.unsw.edu.au "needle syringe" OR NSP OR "injecting drug use" filetype:pdf
+site:health.gov.au ("needle and syringe program" OR NSP) (policy OR strategy OR "blood borne virus" OR "National Drug Strategy")
 ```
 
-### Kirby Institute (BBV Research)
+> Note: the named "National Needle and Syringe Programs Strategic Framework 2010-2014" is expired;
+> current NSP policy now sits inside the National Drug Strategy and the BBV/HIV/hepatitis
+> strategies.
+
+### Academic & Systematic Evidence
 
 ```txt
-site:kirby.unsw.edu.au "injecting drug use" OR "needle syringe"
+(site:unsw.edu.au OR site:ndri.curtin.edu.au OR site:burnet.edu.au) ("needle syringe program" OR "needle exchange") (effectiveness OR "cost-effectiveness" OR coverage) filetype:pdf
 ```
 
-### Systematic Reviews
+### Cochrane / Systematic Reviews
 
 ```txt
-intitle:"systematic review" "needle syringe program" OR "needle exchange" effectiveness
-```
-
-### Cost-Effectiveness Studies
-
-```txt
-"needle syringe program" ("cost-effectiveness" OR "cost-benefit" OR "economic evaluation") filetype:pdf
-```
-
----
-
-## 🏥 Equipment & Consumables
-
-### Fitpack/Equipment Standards
-
-```txt
-"fitpack" OR "injecting equipment" (contents OR standards OR "what's included") Australia
-```
-
-### Safe Disposal
-
-```txt
-"safe disposal" OR "sharps disposal" ("needle" OR "syringe") (guideline OR information) Australia
-```
-
-### Specialised Equipment
-
-```txt
-"low dead space" OR "detachable needle" OR "butterfly" OR "insulin syringe" NSP Australia
+site:cochranelibrary.com ("needle syringe" OR "needle exchange" OR "harm reduction")
 ```
 
 ---
 
 ## 🔗 Related Resources
 
+- **Source Intelligence:**
+  [Supervised Consumption & NSP entities](../resources/source-intelligence.md#-supervised-consumption--nsp)
+  — the data series, models, and domains every dork above is built on
 - **Synonym Block:** [NSP Terms](../05-synonym-blocks.md#-nsp-terms-needle-syringe-program)
-- **Related Packs:** [Peer Workforce](peer-workforce.md),
-  [Service Directories](service-directories.md)
-- **Related Domains:** [NUAA](https://nuaa.org.au), [QuIHN](https://quihn.org)
+- **Related Packs:** [Supervised Consumption](supervised-consumption.md),
+  [Peer Workforce](peer-workforce.md), [Data & Statistics](data-statistics.md)
+- **Key Sources:** [Kirby Institute](https://kirby.unsw.edu.au), [NUAA](https://nuaa.org.au)
 
 ---
 

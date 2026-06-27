@@ -114,22 +114,38 @@ checking"** — search both.
 
 ## 🚨 Drug Alerts & Early Warning Systems (EWS)
 
-Experts know alerts come from specific state systems, not generic web pages.
+Experts know alerts come from specific state systems plus one national aggregator — not generic web
+pages. Each jurisdiction uses its own term, and quoting the right one is the whole game.
 
-| Source                                       | `site:` target      | Named signals                                                        |
-| -------------------------------------------- | ------------------- | -------------------------------------------------------------------- |
-| **NSW Health alerts**                        | `health.nsw.gov.au` | `"Drug Warning"`, `"NSW Health"` + `inurl:drug-alerts` ⚠ verify path |
-| **VIC EWS / DH**                             | `health.vic.gov.au` | `"drug alert"`, `"drug advisory"`, `"SafeScript"` (separate RTPM)    |
-| **ACT Health**                               | `health.act.gov.au` | `"drug alert"`, `"CanTEST"` alerts                                   |
-| **QLD Health**                               | `health.qld.gov.au` | `"drug alert"`, `"public health alert"`                              |
-| **TGA**                                      | `tga.gov.au`        | `"safety alert"`, `"medicine shortage"`, `"recall"`                  |
-| **WEDINOS** (Wales)                          | `wedinos.org`       | `"Philtre"`, batch sample alerts                                     |
-| **EUDA EWS**                                 | `euda.europa.eu`    | `"Early Warning System"`, `"EU-EWS"`, `"risk communication"`         |
-| **Drug Checking subreddits / harm-red orgs** | `reddit.com`        | `"drug alert"` `"batch"` — community-relayed alerts (cross-check)    |
+| Source                     | `site:` target                                   | Named signals                                                                                                                   |
+| -------------------------- | ------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------- |
+| **The Know** (national)    | `theknow.org.au`                                 | `"Australian drug alerts, all in one place"`, `"Prompt Response Network"` (PRN; co-designed via NCCRED) — national aggregator   |
+| **NUAA alerts** (NSW peer) | `nuaa.org.au`                                    | `"drug alert"` (peer-org channel; path `/drug-alerts`)                                                                          |
+| **NSW Health**             | `health.nsw.gov.au`                              | `"Public drug warnings"`, `"public drug alert"`, `"Clinical safety alerts"` (path `/aod/public-drug-alerts`)                    |
+| **VIC Health**             | `health.vic.gov.au`                              | `"drug alert"`, `"drug advisory"` (path `/alcohol-and-drugs/drug-alerts`; subscribe via `/subscribe`)                           |
+| **ACT**                    | `health.act.gov.au`, `act.gov.au`                | `"Public Health Alert"` (dangerous drug warning), CanTEST community notices                                                     |
+| **QLD**                    | `theknow.org.au`, `health.qld.gov.au`            | consumer alerts via The Know; `health.qld.gov.au` has only a regulatory `"Updates and alerts"` page (CheQpoint closed Apr 2025) |
+| **SA Health**              | `sahealth.sa.gov.au`                             | `"Medication alerts"`, `"Health alerts"`, media-release `"drug warning"` (SADEWS = backend network, not a public page)          |
+| **NT Health**              | `health.nt.gov.au`                               | `"Health alerts"` (drug warnings often PDFs; path `/health-alerts`)                                                             |
+| **TAS Health**             | `health.tas.gov.au`                              | `"Alerts and pop-up notifications"` (path `/publications/alerts-and-pop-notifications`)                                         |
+| **WA** ⚠ no public index   | `health.wa.gov.au`, `healthywa.health.wa.gov.au` | no dedicated public drug-alert index found; `"Drug Aware"` is education — use a keyword fallback                                |
+| **TGA**                    | `tga.gov.au`                                     | `"safety alert"`, `"medicine shortage"`, `"recall"`                                                                             |
+
+**International alert / drug-checking-data sources:**
+
+| Source                 | `site:` target           | Named signals                                                                                                                              |
+| ---------------------- | ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| **WEDINOS** (Wales)    | `wedinos.wales`          | `"WEDINOS"`, `"substance alert"`, sample results (`wedinos.org` 301-redirects here); `"PHILTRE"` bulletin on `publichealthwales.nhs.wales` |
+| **EUDA**               | `euda.europa.eu`         | `"European Drug Alert System"` / `EDAS`, `"EU Early Warning System"` on NPS                                                                |
+| **Toronto DCS** (CA)   | `drugchecking.community` | `"Toronto's Drug Checking Service"`, biweekly results (eval org = CDPE, `cdpe.org`) — **not** `drugschecking.ca` (dead)                    |
+| **TRIP! Project** (CA) | `tripproject.ca`         | `"TRIP! Project"`, youth/nightlife drug checking + supply observations                                                                     |
+| **DanceSafe** (US)     | `dancesafe.org`          | `"#TestIt! Alerts"` / `"Test It! Alerts"`, adulterated-drug alerts                                                                         |
 
 **Insider vocabulary:** `EWS` / `"early warning"`, `"unexpected substance"`, `"high-dose"` /
 `"high-potency"`, `"contaminated supply"`, `"adulterant"`, `"batch"`, `"red alert"`, `nitazene`,
-`"no naloxone-responsive"` framing for non-opioids.
+`"no naloxone-responsive"` framing for non-opioids. Note: `"Prompt"` = the national **Prompt
+Response Network** (its public face is **The Know**), not a state system; `"SafeScript"` is
+Victoria's real-time prescription monitoring (RTPM), a separate thing from drug alerts.
 
 ---
 
@@ -170,13 +186,26 @@ Name the two Australian services — there are only two, and an expert knows bot
 | **Insite** (Vancouver, intl ref)       | `phs.ca`, `vch.ca`  | `"Insite"`, `"Onsite"` (detox above Insite — one word), `"supervised injection facility"`, `"PHS Community Services Society"` (prefer `phs.ca`; `vch.ca` bot-blocks) |
 | **EUDA drug consumption rooms** (intl) | `euda.europa.eu`    | `"Drug consumption rooms: an overview of provision and evidence"`, `"drug consumption rooms"`                                                                        |
 
+**Needle & Syringe Programs (AU):**
+
+| Entity                         | `site:` target                             | Named signals                                                                                                                                                                           |
+| ------------------------------ | ------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **NSP service data** (Kirby)   | `kirby.unsw.edu.au`                        | `"Needle Syringe Program National Minimum Data Collection"` / `"NSP NMDC"` (annual `"National Data Report"`: syringes distributed, service counts) — distinct from the ANSPS serosurvey |
+| **Peer / state NSP orgs**      | `nuaa.org.au`, `quihn.org`, `wasua.com.au` | NUAA `"NSP equipment"` mail-out, `"peer distribution"` / `"secondary distribution"`                                                                                                     |
+| **NSW NSP outlets**            | `health.nsw.gov.au`                        | `"NSP outlets"` interactive map (path `/hepatitis/Pages/nsp-outlets.aspx`)                                                                                                              |
+| **Fitpack** (sharps container) | —                                          | `"Fitpack"` (ASP Healthcare / ASP Plastics; `"FITPACK MK2"`, `"Disposa-Safe"`) — the iconic AU personal sharps container                                                                |
+| **National NSP policy**        | `health.gov.au`                            | `"National Needle and Syringe Programs Strategic Framework 2010-2014"` (expired; current NSP policy now sits inside the National Drug Strategy + BBV strategies)                        |
+
 **Insider vocabulary:** `DCR` (drug consumption room — European/EUDA term), `SCS` (supervised
 consumption service — Canada, federally sanctioned), `OPS` (overdose prevention site — Canada,
 provincial/lower-barrier), `SIF` / `SIS` (supervised injecting facility/site — generic), `MSIC` /
-`MSIR` (the Australian terms — prefer `"medically supervised injecting"` for AU targeting),
-`"injecting-related injuries"`, `"sharps"`, `"safe disposal"`, `"low-threshold"`, `"primary NSP"` vs
-`"secondary NSP"` vs `"vending machine"` / `"dispensing machine"`. **Don't** attribute the North
-Richmond MSIR reviews to Ken Lay — his review was the separate Melbourne CBD injecting consultation.
+`MSIR` (the Australian terms — prefer `"medically supervised injecting"` for AU targeting). NSP
+delivery models: `"primary NSP"`, `"secondary NSP"`, `"pharmacy NSP"`,
+`"syringe dispensing machine"` / `"automatic dispensing machine"` (ADM — the formal term;
+`"vending machine"` is colloquial), `"mobile outreach"`, `"peer distribution"` /
+`"secondary distribution"`. Plus `"injecting-related injuries"`, `"sharps"`, `"safe disposal"`,
+`"low-threshold"`. **Don't** attribute the North Richmond MSIR reviews to Ken Lay — his review was
+the separate Melbourne CBD injecting consultation.
 
 ---
 
@@ -220,7 +249,7 @@ you find the actual numbers, and almost no non-specialist knows them.
 | **ACIC wastewater**  | `acic.gov.au`                                  | `"National Wastewater Drug Monitoring Program"` / `NWDMP` (analysis by UQ `QAEHS` + Univ. of South Australia; reports numbered, e.g. "Report 24")                                                            |
 | **Burnet Institute** | `burnet.edu.au`                                | `"SuperMIX"` (Melbourne injecting cohort), `"EC Australia"`, hep C elimination                                                                                                                               |
 | **NDRI** (Curtin)    | `ndri.curtin.edu.au`                           | `"National Drug Research Institute"`, trends bulletins                                                                                                                                                       |
-| **APO**              | `apo.org.au`                                   | grey-literature repository — `"harm reduction"` reports, submissions                                                                                                                                         |
+| **APO**              | `apo.org.au`                                   | grey-literature repository — `"harm reduction"` reports, submissions (org reverted to `"Australian Policy Online"` in 2025; filter by `site:apo.org.au`, the name string is in flux)                         |
 | **Named cohorts**    | (cross-site; mostly Kirby `kirby.unsw.edu.au`) | `"SuperMIX"` (Burnet; PWID cohort, called `"MIX"` pre-2008), `"ETHOS Engage"` (Kirby; hep C among PWID), `"HITS-c"` / `"HITS-p"` (Kirby; Hepatitis C Incidence and Transmission Study — community / prisons) |
 
 > **⚠ ATLAS — handle separately:** "ATLAS" here is the Aboriginal & Torres Strait Islander STI/BBV
@@ -228,12 +257,50 @@ you find the actual numbers, and almost no non-specialist knows them.
 > for cultural-safety / Indigenous-data-sovereignty review; if used at all, pair with
 > `"Aboriginal Community Controlled"` / `ACCHS` + `BBV`, never the bare word "ATLAS".
 
+**Research centres & evidence sources (quote the exact name; mind the domains):**
+
+| Centre / source        | `site:` target                      | Named signals                                                                                                                                 |
+| ---------------------- | ----------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Turning Point**      | `turningpoint.org.au`               | `"Turning Point"`, `"AODstats"`, `"DirectLine"` — addiction treatment + research (Eastern Health / Monash); **note: no hyphen in the domain** |
+| **NCETA**              | `nceta.flinders.edu.au`             | `"National Centre for Education and Training on Addiction"`, `"workforce development"` (Flinders)                                             |
+| **CSRH** (UNSW)        | `unsw.edu.au` (`inurl:csrh`)        | `"Centre for Social Research in Health"` — qualitative / social research (no `csrh.arts.unsw.edu.au` subdomain)                               |
+| **The Matilda Centre** | `sydney.edu.au` (`/matilda-centre`) | `"The Matilda Centre for Research in Mental Health and Substance Use"`, `"OurFutures"`                                                        |
+| **APSAD**              | `apsad.org.au`                      | `"Australasian Professional Society on Alcohol and other Drugs"`; journal `"Drug and Alcohol Review"` (Wiley, `onlinelibrary.wiley.com`)      |
+| **Cochrane** (global)  | `cochranelibrary.com`               | `"Cochrane Database of Systematic Reviews"` / `CDSR` (`inurl:cdsr` for reviews)                                                               |
+
 **Insider vocabulary:** `"sentinel"` sample, `"point prevalence"`, `"NMDS"` (national minimum
 dataset), `"closed treatment episode"`, `"seroprevalence"`, `"incidence"` vs `"prevalence"`,
 `"cascade"` (of care), `"reach"` / `"coverage"` (NSP), `"wastewater analysis"` /
 `"wastewater-based epidemiology"`. **Host note:** NDARC migrated into the main UNSW site — current
 pages live under `unsw.edu.au/research/ndarc` (old `ndarc.med.unsw.edu.au` project URLs
 301-redirect; PDFs persist there and at `archive-ndarc.med.unsw.edu.au`) — query **both** domains.
+
+---
+
+## 📈 Datasets, Surveillance Feeds & Data Repositories
+
+For finding the **numbers** (as opposed to studies): the exact dataset title is the signal. These
+are the named collections, their codes, and where the raw data lives.
+
+| Dataset / feed                      | `site:` target                                                  | Named signals (exact titles / codes)                                                                                                                                                  |
+| ----------------------------------- | --------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Household survey** (AIHW)         | `aihw.gov.au`                                                   | `"National Drug Strategy Household Survey"` / `NDSHS` (latest `"2022–2023"`, en-dash; 2025 wave not yet released)                                                                     |
+| **AOD treatment data** (AIHW)       | `aihw.gov.au`, `meteor.aihw.gov.au`                             | `"Alcohol and other drug treatment services in Australia"`, `"Alcohol and Other Drug Treatment Services National Minimum Data Set"` / `"AODTS NMDS"` (spaced form; METEOR defines it) |
+| **Drug Trends** (NDARC)             | `unsw.edu.au`, `ndarc.med.unsw.edu.au`                          | `"IDRS"`, `"EDRS"`, `"Australian Drug Trends"`                                                                                                                                        |
+| **NSP service data** (Kirby)        | `kirby.unsw.edu.au`                                             | `"Needle Syringe Program National Minimum Data Collection"` / `"NSP NMDC"`                                                                                                            |
+| **Wastewater** (ACIC)               | `acic.gov.au`                                                   | `"National Wastewater Drug Monitoring Program"` — numbered (e.g. `"Report 25"`); UQ + Univ. of Adelaide                                                                               |
+| **Ambulance harms** (Turning Point) | `aodstats.org.au`, `turningpoint.org.au`, `research.monash.edu` | `"National Ambulance Surveillance System"` / `"NASS"` (no public domain — surfaced via `"AODstats"`, the Victorian portal)                                                            |
+| **Mortality** (ABS)                 | `abs.gov.au`                                                    | `"Causes of Death, Australia"`, `"drug-induced deaths"`, `"National Health Survey"` (`"Alcohol consumption"`)                                                                         |
+| **Overdose aggregate** (Penington)  | `penington.org.au`                                              | `"Australia's Annual Overdose Report"`                                                                                                                                                |
+| **Open data portal**                | `data.gov.au`                                                   | `/data/dataset` — agency CSV/XLSX; pair with `filetype:csv`                                                                                                                           |
+| **Research microdata**              | `ada.edu.au`, `researchdata.edu.au`                             | Australian Data Archive (ANU; NDSHS Dataverse); `"Research Data Australia"` (ARDC, `ardc.edu.au` — replaces the defunct ANDS / `ands.org.au`)                                         |
+
+**Insider vocabulary:** `"NMDS"` / `"NMDC"` (national minimum data set / collection), `"CURF"`
+(con­fidentialised unit record file), `"Dataverse"`, `"point-in-time"` count,
+`"closed treatment episode"`, `"separations"` (hospital), `"age-standardised rate"`, `"ICD-10"`
+drug-induced classification. Use the **exact dataset title**
+(`"National Drug Strategy Household Survey"`, not "drug survey") and prefer the **spaced**
+`"AODTS NMDS"` over the hyphenated form.
 
 ---
 

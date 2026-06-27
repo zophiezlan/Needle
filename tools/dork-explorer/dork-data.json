@@ -614,43 +614,18 @@
     {
       "id": "data-statistics",
       "title": "Data, Statistics & Surveillance",
-      "description": "Datasets, prevalence surveys, overdose statistics, and surveillance reports.",
+      "description": "Find the actual numbers — named by dataset, collection code, and repository, not by generic \"drug",
       "dorks": [
         {
           "id": "data-statistics-search-aihw-gov-au",
           "title": "Search aihw.gov.au",
           "category": "Quick Start",
-          "query": "site:aihw.gov.au \"alcohol and other drugs\" statistics filetype:pdf",
+          "query": "site:aihw.gov.au \"National Drug Strategy Household Survey\"",
           "explanation": "",
           "difficulty": "beginner",
           "sourceFile": "dork-packs/data-statistics.md",
           "sourceType": "dork-pack",
-          "sourceLine": 14,
-          "operators": [
-            "site",
-            "filetype"
-          ],
-          "targetDomains": [
-            "aihw.gov.au"
-          ],
-          "domainCategory": "government",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "data",
-            "australia"
-          ]
-        },
-        {
-          "id": "data-statistics-aihw-drug-statistics",
-          "title": "AIHW Drug Statistics",
-          "category": "Basic Queries",
-          "query": "site:aihw.gov.au \"alcohol and other drugs\" statistics",
-          "explanation": "",
-          "difficulty": "beginner",
-          "sourceFile": "dork-packs/data-statistics.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 21,
+          "sourceLine": 30,
           "operators": [
             "site"
           ],
@@ -660,20 +635,43 @@
           "domainCategory": "government",
           "contentType": "any",
           "tags": [
-            "data",
+            "policy",
             "australia"
           ]
         },
         {
-          "id": "data-statistics-abs-drug-use-data",
-          "title": "ABS Drug Use Data",
+          "id": "data-statistics-aihw-household-survey-ndshs",
+          "title": "AIHW — Household Survey (NDSHS)",
           "category": "Basic Queries",
-          "query": "site:abs.gov.au \"illicit drug use\" OR \"drug use\" survey",
+          "query": "site:aihw.gov.au \"National Drug Strategy Household Survey\" (\"2022–2023\" OR NDSHS)",
+          "explanation": "**Why this works:**\n\n- NDSHS is _the_ national prevalence survey. The latest released edition is 2022–2023 (use the\nen-dash form for exact-title matching; a 2025 wave is collected but not yet released)",
+          "difficulty": "beginner",
+          "sourceFile": "dork-packs/data-statistics.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 37,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "aihw.gov.au"
+          ],
+          "domainCategory": "government",
+          "contentType": "any",
+          "tags": [
+            "policy",
+            "australia"
+          ]
+        },
+        {
+          "id": "data-statistics-abs-causes-of-death",
+          "title": "ABS — Causes of Death",
+          "category": "Basic Queries",
+          "query": "site:abs.gov.au \"Causes of Death, Australia\" \"drug-induced deaths\"",
           "explanation": "",
           "difficulty": "beginner",
           "sourceFile": "dork-packs/data-statistics.md",
           "sourceType": "dork-pack",
-          "sourceLine": 27,
+          "sourceLine": 48,
           "operators": [
             "site"
           ],
@@ -683,309 +681,19 @@
           "domainCategory": "government",
           "contentType": "any",
           "tags": [
-            "data",
             "australia"
           ]
         },
         {
-          "id": "data-statistics-overdose-death-data",
-          "title": "Overdose Death Data",
+          "id": "data-statistics-penington-annual-overdose-report",
+          "title": "Penington — Annual Overdose Report",
           "category": "Basic Queries",
-          "query": "\"overdose deaths\" OR \"drug-induced deaths\" statistics Australia 2023..2026",
+          "query": "site:penington.org.au \"Australia's Annual Overdose Report\"",
           "explanation": "",
           "difficulty": "beginner",
           "sourceFile": "dork-packs/data-statistics.md",
           "sourceType": "dork-pack",
-          "sourceLine": 33,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "data",
-            "australia"
-          ]
-        },
-        {
-          "id": "data-statistics-national-drug-strategy-household-survey",
-          "title": "National Drug Strategy Household Survey",
-          "category": "Intermediate Queries",
-          "query": "\"National Drug Strategy Household Survey\" OR NDSHS (latest OR 2022 OR 2023) filetype:pdf",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/data-statistics.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 43,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "policy"
-          ]
-        },
-        {
-          "id": "data-statistics-idrs-illicit-drug-reporting-system-1",
-          "title": "IDRS (Illicit Drug Reporting System) - 1",
-          "category": "Intermediate Queries",
-          "query": "\"Illicit Drug Reporting System\" OR IDRS filetype:pdf",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/data-statistics.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 49,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "pdf",
-          "tags": [
-            "documents"
-          ]
-        },
-        {
-          "id": "data-statistics-idrs-illicit-drug-reporting-system-2",
-          "title": "IDRS (Illicit Drug Reporting System) - 2",
-          "category": "Intermediate Queries",
-          "query": "site:ndarc.med.unsw.edu.au IDRS",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/data-statistics.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 55,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "ndarc.med.unsw.edu.au"
-          ],
-          "domainCategory": "education",
-          "contentType": "any",
-          "tags": [
-            "documents",
-            "australia"
-          ]
-        },
-        {
-          "id": "data-statistics-edrs-ecstasy-reporting-system",
-          "title": "EDRS (Ecstasy Reporting System)",
-          "category": "Intermediate Queries",
-          "query": "\"Ecstasy and Related Drugs Reporting System\" OR EDRS filetype:pdf",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/data-statistics.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 61,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "pdf",
-          "tags": [
-            "documents"
-          ]
-        },
-        {
-          "id": "data-statistics-ambulance-data",
-          "title": "Ambulance Data",
-          "category": "Intermediate Queries",
-          "query": "\"ambulance attendance\" OR \"ambulance callouts\" drug related (NSW OR VIC OR QLD) data",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/data-statistics.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 67,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "data"
-          ]
-        },
-        {
-          "id": "data-statistics-comprehensive-data-sweep",
-          "title": "Comprehensive Data Sweep",
-          "category": "Advanced Queries",
-          "query": "site:aihw.gov.au OR site:abs.gov.au OR site:ndarc.med.unsw.edu.au (\"alcohol and other drugs\" OR \"drug use\" OR \"substance use\") (statistics OR data OR survey OR report) filetype:pdf after:2022",
-          "explanation": "",
-          "difficulty": "advanced",
-          "sourceFile": "dork-packs/data-statistics.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 77,
-          "operators": [
-            "site",
-            "filetype",
-            "after"
-          ],
-          "targetDomains": [
-            "aihw.gov.au",
-            "abs.gov.au",
-            "ndarc.med.unsw.edu.au"
-          ],
-          "domainCategory": "government",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "data",
-            "australia"
-          ]
-        },
-        {
-          "id": "data-statistics-state-level-data",
-          "title": "State-Level Data",
-          "category": "Advanced Queries",
-          "query": "site:*.gov.au (\"drug-related\" OR \"alcohol-related\") (hospitalisation OR hospitalization OR \"emergency department\" OR ambulance) data [YOUR STATE]",
-          "explanation": "",
-          "difficulty": "advanced",
-          "sourceFile": "dork-packs/data-statistics.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 83,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "gov.au"
-          ],
-          "domainCategory": "government",
-          "contentType": "any",
-          "tags": [
-            "data",
-            "australia"
-          ]
-        },
-        {
-          "id": "data-statistics-treatment-episode-data",
-          "title": "Treatment Episode Data",
-          "category": "Advanced Queries",
-          "query": "site:aihw.gov.au \"Alcohol and other drug treatment services\" OR \"AODTS-NMDS\" filetype:pdf",
-          "explanation": "",
-          "difficulty": "advanced",
-          "sourceFile": "dork-packs/data-statistics.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 89,
-          "operators": [
-            "site",
-            "filetype"
-          ],
-          "targetDomains": [
-            "aihw.gov.au"
-          ],
-          "domainCategory": "government",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "services",
-            "data",
-            "australia"
-          ]
-        },
-        {
-          "id": "data-statistics-wastewater-drug-monitoring",
-          "title": "Wastewater Drug Monitoring",
-          "category": "Advanced Queries",
-          "query": "\"wastewater analysis\" OR \"wastewater epidemiology\" (drug OR substance) Australia (data OR report)",
-          "explanation": "",
-          "difficulty": "advanced",
-          "sourceFile": "dork-packs/data-statistics.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 95,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "documents",
-            "data",
-            "australia"
-          ]
-        },
-        {
-          "id": "data-statistics-aihw-national",
-          "title": "AIHW (National)",
-          "category": "Key Data Sources",
-          "query": "site:aihw.gov.au filetype:pdf (\"alcohol and other drugs\" OR \"drug use\" OR \"substance use\")",
-          "explanation": "**Key AIHW reports:**\n\n- Alcohol and other drug treatment services data\n- National Drug Strategy Household Survey\n- Drug-induced deaths\n- Alcohol-related deaths",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/data-statistics.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 105,
-          "operators": [
-            "site",
-            "filetype"
-          ],
-          "targetDomains": [
-            "aihw.gov.au"
-          ],
-          "domainCategory": "government",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "australia"
-          ]
-        },
-        {
-          "id": "data-statistics-abs-national",
-          "title": "ABS (National)",
-          "category": "Key Data Sources",
-          "query": "site:abs.gov.au (\"drug use\" OR \"substance use\" OR \"alcohol consumption\") survey OR data",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/data-statistics.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 118,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "abs.gov.au"
-          ],
-          "domainCategory": "government",
-          "contentType": "any",
-          "tags": [
-            "data",
-            "australia"
-          ]
-        },
-        {
-          "id": "data-statistics-ndarc-drug-trends",
-          "title": "NDARC Drug Trends",
-          "category": "Key Data Sources",
-          "query": "site:ndarc.med.unsw.edu.au (\"drug trends\" OR IDRS OR EDRS) filetype:pdf",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/data-statistics.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 124,
-          "operators": [
-            "site",
-            "filetype"
-          ],
-          "targetDomains": [
-            "ndarc.med.unsw.edu.au"
-          ],
-          "domainCategory": "education",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "australia"
-          ]
-        },
-        {
-          "id": "data-statistics-penington-institute-overdose",
-          "title": "Penington Institute (Overdose)",
-          "category": "Key Data Sources",
-          "query": "site:penington.org.au \"overdose\" OR \"Australia's Annual Overdose Report\"",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/data-statistics.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 130,
+          "sourceLine": 54,
           "operators": [
             "site"
           ],
@@ -1000,34 +708,15 @@
           ]
         },
         {
-          "id": "data-statistics-nsp-distribution-data-1",
-          "title": "NSP Distribution Data - 1",
-          "category": "\udc89 NSP Data",
-          "query": "\"needle syringe\" (\"distribution data\" OR \"equipment distributed\" OR statistics) Australia",
-          "explanation": "",
+          "id": "data-statistics-aodts-nmds-treatment-data",
+          "title": "AODTS NMDS (Treatment Data)",
+          "category": "Intermediate Queries",
+          "query": "site:aihw.gov.au (\"Alcohol and other drug treatment services in Australia\" OR \"AODTS NMDS\" OR \"Alcohol and Other Drug Treatment Services National Minimum Data Set\")",
+          "explanation": "**Why this works:**\n\n- The report is \"Alcohol and other drug treatment services in Australia\"; its dataset code is the\n_spaced_ \"AODTS NMDS\" (the hyphenated form is rarer). METEOR (`meteor.aihw.gov.au`) defines it",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/data-statistics.md",
           "sourceType": "dork-pack",
-          "sourceLine": 140,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "data",
-            "australia"
-          ]
-        },
-        {
-          "id": "data-statistics-nsp-distribution-data-2",
-          "title": "NSP Distribution Data - 2",
-          "category": "\udc89 NSP Data",
-          "query": "site:aihw.gov.au \"needle syringe program\" data",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/data-statistics.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 146,
+          "sourceLine": 64,
           "operators": [
             "site"
           ],
@@ -1043,346 +732,68 @@
           ]
         },
         {
-          "id": "data-statistics-bbv-nsp-data",
-          "title": "BBV & NSP Data",
-          "category": "\udc89 NSP Data",
-          "query": "site:kirby.unsw.edu.au (\"hepatitis C\" OR HCV) (\"injecting drug use\" OR NSP) data",
+          "id": "data-statistics-ndarc-drug-trends-idrs-edrs",
+          "title": "NDARC Drug Trends (IDRS / EDRS)",
+          "category": "Intermediate Queries",
+          "query": "(site:unsw.edu.au OR site:ndarc.med.unsw.edu.au) (\"Illicit Drug Reporting System\" OR \"Ecstasy and Related Drugs Reporting System\" OR \"Australian Drug Trends\")",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/data-statistics.md",
           "sourceType": "dork-pack",
-          "sourceLine": 152,
+          "sourceLine": 75,
           "operators": [
             "site"
           ],
           "targetDomains": [
-            "kirby.unsw.edu.au"
-          ],
-          "domainCategory": "education",
-          "contentType": "any",
-          "tags": [
-            "data",
-            "australia"
-          ]
-        },
-        {
-          "id": "data-statistics-treatment-episodes",
-          "title": "Treatment Episodes",
-          "category": "Treatment Data",
-          "query": "site:aihw.gov.au \"treatment episode\" AOD OR \"alcohol and other drugs\" filetype:pdf",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/data-statistics.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 162,
-          "operators": [
-            "site",
-            "filetype"
-          ],
-          "targetDomains": [
-            "aihw.gov.au"
-          ],
-          "domainCategory": "government",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "australia"
-          ]
-        },
-        {
-          "id": "data-statistics-oat-pharmacotherapy-data",
-          "title": "OAT/Pharmacotherapy Data",
-          "category": "Treatment Data",
-          "query": "site:aihw.gov.au (methadone OR buprenorphine OR \"opioid pharmacotherapy\") data OR statistics",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/data-statistics.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 168,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "aihw.gov.au"
-          ],
-          "domainCategory": "government",
-          "contentType": "any",
-          "tags": [
-            "data",
-            "australia"
-          ]
-        },
-        {
-          "id": "data-statistics-waiting-lists-access-data",
-          "title": "Waiting Lists/Access Data",
-          "category": "Treatment Data",
-          "query": "\"waiting list\" OR \"wait times\" (treatment OR detox OR rehabilitation) AOD [YOUR STATE]",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/data-statistics.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 174,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "news",
-          "contentType": "any",
-          "tags": [
-            "data"
-          ]
-        },
-        {
-          "id": "data-statistics-drug-induced-deaths-1",
-          "title": "Drug-Induced Deaths - 1",
-          "category": "☠ Mortality & Morbidity",
-          "query": "site:aihw.gov.au \"drug-induced deaths\" filetype:pdf",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/data-statistics.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 184,
-          "operators": [
-            "site",
-            "filetype"
-          ],
-          "targetDomains": [
-            "aihw.gov.au"
-          ],
-          "domainCategory": "government",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "australia"
-          ]
-        },
-        {
-          "id": "data-statistics-drug-induced-deaths-2",
-          "title": "Drug-Induced Deaths - 2",
-          "category": "☠ Mortality & Morbidity",
-          "query": "\"drug-related mortality\" OR \"drug deaths\" statistics Australia",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/data-statistics.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 190,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "data",
-            "australia"
-          ]
-        },
-        {
-          "id": "data-statistics-opioid-deaths-specifically",
-          "title": "Opioid Deaths Specifically",
-          "category": "☠ Mortality & Morbidity",
-          "query": "\"opioid deaths\" OR \"opioid mortality\" OR \"opioid overdose deaths\" Australia statistics",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/data-statistics.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 196,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "data",
-            "australia"
-          ]
-        },
-        {
-          "id": "data-statistics-alcohol-related-deaths",
-          "title": "Alcohol-Related Deaths",
-          "category": "☠ Mortality & Morbidity",
-          "query": "site:aihw.gov.au \"alcohol-related deaths\" OR \"alcohol-attributable deaths\"",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/data-statistics.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 202,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "aihw.gov.au"
-          ],
-          "domainCategory": "government",
-          "contentType": "any",
-          "tags": [
-            "australia"
-          ]
-        },
-        {
-          "id": "data-statistics-hospitalisations",
-          "title": "Hospitalisations",
-          "category": "☠ Mortality & Morbidity",
-          "query": "site:aihw.gov.au (\"drug-related\" OR \"alcohol-related\") (hospitalisation OR hospitalization) data",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/data-statistics.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 208,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "aihw.gov.au"
-          ],
-          "domainCategory": "government",
-          "contentType": "any",
-          "tags": [
-            "data",
-            "australia"
-          ]
-        },
-        {
-          "id": "data-statistics-drug-market-trends-1",
-          "title": "Drug Market Trends - 1",
-          "category": "\udcc8 Trend & Surveillance",
-          "query": "\"drug market\" trend OR surveillance Australia filetype:pdf",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/data-statistics.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 218,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "australia"
-          ]
-        },
-        {
-          "id": "data-statistics-drug-market-trends-2",
-          "title": "Drug Market Trends - 2",
-          "category": "\udcc8 Trend & Surveillance",
-          "query": "site:ndarc.med.unsw.edu.au \"drug trends\" OR \"market\" filetype:pdf",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/data-statistics.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 224,
-          "operators": [
-            "site",
-            "filetype"
-          ],
-          "targetDomains": [
+            "unsw.edu.au",
             "ndarc.med.unsw.edu.au"
           ],
           "domainCategory": "education",
-          "contentType": "pdf",
+          "contentType": "any",
           "tags": [
             "documents",
             "australia"
           ]
         },
         {
-          "id": "data-statistics-novel-substance-monitoring",
-          "title": "Novel Substance Monitoring",
-          "category": "\udcc8 Trend & Surveillance",
-          "query": "(\"novel psychoactive\" OR NPS) (surveillance OR monitoring OR detection) Australia data",
-          "explanation": "",
+          "id": "data-statistics-acic-wastewater-monitoring",
+          "title": "ACIC Wastewater Monitoring",
+          "category": "Intermediate Queries",
+          "query": "site:acic.gov.au \"National Wastewater Drug Monitoring Program\" (\"Report 25\" OR \"Report 24\")",
+          "explanation": "**Why this works:**\n\n- The NWDMP is published as numbered reports — target the highest number for the freshest data, or\nbroaden across recent numbers to catch the latest as new editions drop",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/data-statistics.md",
           "sourceType": "dork-pack",
-          "sourceLine": 230,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "data",
-            "australia"
-          ]
-        },
-        {
-          "id": "data-statistics-drug-checking-results-data",
-          "title": "Drug Checking Results Data",
-          "category": "\udcc8 Trend & Surveillance",
-          "query": "\"drug checking\" (results OR data OR \"substances detected\") Australia",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/data-statistics.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 236,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "data",
-            "australia"
-          ]
-        },
-        {
-          "id": "data-statistics-nsw",
-          "title": "NSW",
-          "category": "State-Specific Data",
-          "query": "site:health.nsw.gov.au OR site:nsw.gov.au (drug OR alcohol) statistics OR data",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/data-statistics.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 246,
+          "sourceLine": 81,
           "operators": [
             "site"
           ],
           "targetDomains": [
-            "health.nsw.gov.au",
-            "nsw.gov.au"
+            "acic.gov.au"
           ],
           "domainCategory": "government",
           "contentType": "any",
           "tags": [
-            "data",
+            "documents",
+            "services",
             "australia"
           ]
         },
         {
-          "id": "data-statistics-victoria-1",
-          "title": "Victoria - 1",
-          "category": "State-Specific Data",
-          "query": "site:health.vic.gov.au OR site:vic.gov.au (\"drug related\" OR \"alcohol related\") data",
+          "id": "data-statistics-ambulance-attendance-data-aodstats",
+          "title": "Ambulance Attendance Data (AODstats)",
+          "category": "Intermediate Queries",
+          "query": "site:aodstats.org.au (\"ambulance attendances\" OR GHB OR heroin OR methamphetamine)",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/data-statistics.md",
           "sourceType": "dork-pack",
-          "sourceLine": 252,
+          "sourceLine": 92,
           "operators": [
             "site"
           ],
           "targetDomains": [
-            "health.vic.gov.au",
-            "vic.gov.au"
-          ],
-          "domainCategory": "government",
-          "contentType": "any",
-          "tags": [
-            "data",
-            "australia"
-          ]
-        },
-        {
-          "id": "data-statistics-victoria-2",
-          "title": "Victoria - 2",
-          "category": "State-Specific Data",
-          "query": "site:turning-point.org.au data OR statistics",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/data-statistics.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 258,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "turning-point.org.au"
+            "aodstats.org.au"
           ],
           "domainCategory": "ngo",
           "contentType": "any",
@@ -1392,67 +803,51 @@
           ]
         },
         {
-          "id": "data-statistics-queensland",
-          "title": "Queensland",
-          "category": "State-Specific Data",
-          "query": "site:health.qld.gov.au (drug OR alcohol) statistics",
+          "id": "data-statistics-comprehensive-data-sweep",
+          "title": "Comprehensive Data Sweep",
+          "category": "Advanced Queries",
+          "query": "(site:aihw.gov.au OR site:abs.gov.au OR site:unsw.edu.au OR site:acic.gov.au) (\"National Drug Strategy Household Survey\" OR \"AODTS NMDS\" OR \"Drug Trends\" OR \"drug-induced deaths\" OR \"National Wastewater Drug Monitoring Program\") (data OR report OR statistics) after:2022",
           "explanation": "",
-          "difficulty": "intermediate",
+          "difficulty": "advanced",
           "sourceFile": "dork-packs/data-statistics.md",
           "sourceType": "dork-pack",
-          "sourceLine": 264,
+          "sourceLine": 102,
           "operators": [
-            "site"
+            "site",
+            "after"
           ],
           "targetDomains": [
-            "health.qld.gov.au"
-          ],
-          "domainCategory": "government",
-          "contentType": "any",
-          "tags": [
-            "data",
-            "australia"
-          ]
-        },
-        {
-          "id": "data-statistics-other-states",
-          "title": "Other States",
-          "category": "State-Specific Data",
-          "query": "site:*.gov.au [STATE] (\"drug-related\" OR \"alcohol-related\") (statistics OR data OR report)",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/data-statistics.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 270,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "gov.au"
+            "aihw.gov.au",
+            "abs.gov.au",
+            "unsw.edu.au",
+            "acic.gov.au"
           ],
           "domainCategory": "government",
           "contentType": "any",
           "tags": [
             "documents",
+            "policy",
+            "services",
             "data",
             "australia"
           ]
         },
         {
-          "id": "data-statistics-finding-raw-data-datasets",
-          "title": "Finding Raw Data/Datasets",
-          "category": "Research Data",
-          "query": "filetype:xlsx OR filetype:csv (drug OR alcohol OR AOD) (data OR dataset) Australia site:*.gov.au",
+          "id": "data-statistics-raw-datasets-csv-xlsx",
+          "title": "Raw Datasets (CSV / XLSX)",
+          "category": "Advanced Queries",
+          "query": "(site:data.gov.au OR site:*.gov.au) (filetype:csv OR filetype:xlsx) (drug OR alcohol OR AOD OR overdose OR \"needle syringe\")",
           "explanation": "",
-          "difficulty": "intermediate",
+          "difficulty": "advanced",
           "sourceFile": "dork-packs/data-statistics.md",
           "sourceType": "dork-pack",
-          "sourceLine": 280,
+          "sourceLine": 108,
           "operators": [
             "site",
             "filetype"
           ],
           "targetDomains": [
+            "data.gov.au",
             "gov.au"
           ],
           "domainCategory": "government",
@@ -1463,63 +858,158 @@
           ]
         },
         {
-          "id": "data-statistics-open-data-portals",
-          "title": "Open Data Portals",
-          "category": "Research Data",
-          "query": "site:data.gov.au (drug OR alcohol OR \"harm reduction\" OR overdose)",
-          "explanation": "",
-          "difficulty": "intermediate",
+          "id": "data-statistics-research-microdata",
+          "title": "Research Microdata",
+          "category": "Advanced Queries",
+          "query": "(site:ada.edu.au OR site:researchdata.edu.au OR site:ardc.edu.au) (\"National Drug Strategy Household Survey\" OR drug OR alcohol OR AOD) (microdata OR dataverse OR CURF)",
+          "explanation": "> Note: the old ANDS (`ands.org.au`) merged into **ARDC** (`ardc.edu.au`) in 2018; dataset metadata\n> is discoverable via **Research Data Australia** (`researchdata.edu.au`).",
+          "difficulty": "advanced",
           "sourceFile": "dork-packs/data-statistics.md",
           "sourceType": "dork-pack",
-          "sourceLine": 286,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "data.gov.au"
-          ],
-          "domainCategory": "government",
-          "contentType": "any",
-          "tags": [
-            "data",
-            "australia"
-          ]
-        },
-        {
-          "id": "data-statistics-research-data-repositories",
-          "title": "Research Data Repositories",
-          "category": "Research Data",
-          "query": "site:ada.edu.au OR site:ands.org.au (drug OR alcohol OR AOD) data",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/data-statistics.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 292,
+          "sourceLine": 114,
           "operators": [
             "site"
           ],
           "targetDomains": [
             "ada.edu.au",
-            "ands.org.au"
+            "researchdata.edu.au",
+            "ardc.edu.au"
           ],
           "domainCategory": "education",
           "contentType": "any",
           "tags": [
             "research",
+            "policy",
             "data",
             "australia"
           ]
         },
         {
-          "id": "data-statistics-first-nations-data-1",
-          "title": "🖤💛❤️ First Nations Data - 1",
-          "category": "\udda4\udc9b❤ First Nations Data",
-          "query": "site:aihw.gov.au (\"Aboriginal\" OR \"Indigenous\") (\"alcohol\" OR \"drug\" OR \"substance\") statistics",
+          "id": "data-statistics-household-survey-prevalence",
+          "title": "Household Survey (Prevalence)",
+          "category": "Named National Datasets",
+          "query": "site:aihw.gov.au \"National Drug Strategy Household Survey\" (illicit OR prevalence OR \"data tables\")",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/data-statistics.md",
           "sourceType": "dork-pack",
-          "sourceLine": 302,
+          "sourceLine": 127,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "aihw.gov.au"
+          ],
+          "domainCategory": "government",
+          "contentType": "any",
+          "tags": [
+            "policy",
+            "data",
+            "australia"
+          ]
+        },
+        {
+          "id": "data-statistics-treatment-services",
+          "title": "Treatment Services",
+          "category": "Named National Datasets",
+          "query": "site:aihw.gov.au \"Alcohol and other drug treatment services in Australia\" (filetype:pdf OR \"data tables\")",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/data-statistics.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 133,
+          "operators": [
+            "site",
+            "filetype"
+          ],
+          "targetDomains": [
+            "aihw.gov.au"
+          ],
+          "domainCategory": "government",
+          "contentType": "pdf",
+          "tags": [
+            "documents",
+            "services",
+            "data",
+            "australia"
+          ]
+        },
+        {
+          "id": "data-statistics-nsp-distribution-kirby",
+          "title": "NSP Distribution (Kirby)",
+          "category": "Named National Datasets",
+          "query": "site:kirby.unsw.edu.au \"Needle Syringe Program National Minimum Data Collection\"",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/data-statistics.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 139,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "kirby.unsw.edu.au"
+          ],
+          "domainCategory": "education",
+          "contentType": "any",
+          "tags": [
+            "services",
+            "data",
+            "australia"
+          ]
+        },
+        {
+          "id": "data-statistics-national-ambulance-surveillance-system-nass",
+          "title": "National Ambulance Surveillance System (NASS)",
+          "category": "\ude91 Non-Fatal Harm Surveillance",
+          "query": "\"National Ambulance Surveillance System\" (alcohol OR drug) (site:turningpoint.org.au OR site:research.monash.edu)",
+          "explanation": "**Why this works:**\n\n- NASS (Turning Point @ Monash) codes drug/alcohol-related ambulance attendances; it has no public\nportal of its own — its Victorian outputs are surfaced through AODstats, so name the program and\npair it with its host",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/data-statistics.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 151,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "turningpoint.org.au",
+            "research.monash.edu"
+          ],
+          "domainCategory": "research",
+          "contentType": "any",
+          "tags": [
+            "research",
+            "australia"
+          ]
+        },
+        {
+          "id": "data-statistics-emergency-department-toxico-surveillance-edna",
+          "title": "Emergency-Department Toxico-surveillance (EDNA)",
+          "category": "\ude91 Non-Fatal Harm Surveillance",
+          "query": "(\"Emerging Drugs Network of Australia\" OR EDNAV) (\"emergency department\" OR toxicosurveillance OR \"novel psychoactive\")",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/data-statistics.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 163,
+          "operators": [],
+          "targetDomains": [],
+          "domainCategory": "any",
+          "contentType": "any",
+          "tags": [
+            "australia"
+          ]
+        },
+        {
+          "id": "data-statistics-hospital-separations",
+          "title": "Hospital Separations",
+          "category": "\ude91 Non-Fatal Harm Surveillance",
+          "query": "site:aihw.gov.au (\"drug-related\" OR \"alcohol-related\") (hospitalisation OR separations OR \"emergency department\") data",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/data-statistics.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 169,
           "operators": [
             "site"
           ],
@@ -1534,15 +1024,183 @@
           ]
         },
         {
-          "id": "data-statistics-first-nations-data-2",
-          "title": "🖤💛❤️ First Nations Data - 2",
-          "category": "\udda4\udc9b❤ First Nations Data",
-          "query": "\"Closing the Gap\" (alcohol OR drug OR substance) data",
+          "id": "data-statistics-drug-induced-deaths-abs-aihw",
+          "title": "Drug-Induced Deaths (ABS / AIHW)",
+          "category": "☠ Mortality Data",
+          "query": "(site:abs.gov.au OR site:aihw.gov.au) \"drug-induced deaths\" (filetype:pdf OR \"data tables\" OR time series)",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/data-statistics.md",
           "sourceType": "dork-pack",
-          "sourceLine": 308,
+          "sourceLine": 179,
+          "operators": [
+            "site",
+            "filetype"
+          ],
+          "targetDomains": [
+            "abs.gov.au",
+            "aihw.gov.au"
+          ],
+          "domainCategory": "government",
+          "contentType": "pdf",
+          "tags": [
+            "documents",
+            "data",
+            "australia"
+          ]
+        },
+        {
+          "id": "data-statistics-opioid-specific-mortality",
+          "title": "Opioid-Specific Mortality",
+          "category": "☠ Mortality Data",
+          "query": "(\"opioid deaths\" OR \"opioid-induced deaths\" OR \"opioid overdose deaths\") Australia (site:aihw.gov.au OR site:penington.org.au)",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/data-statistics.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 185,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "aihw.gov.au",
+            "penington.org.au"
+          ],
+          "domainCategory": "government",
+          "contentType": "any",
+          "tags": [
+            "data",
+            "australia"
+          ]
+        },
+        {
+          "id": "data-statistics-abs-national-health-survey-alcohol",
+          "title": "ABS National Health Survey (Alcohol)",
+          "category": "☠ Mortality Data",
+          "query": "site:abs.gov.au \"National Health Survey\" \"Alcohol consumption\"",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/data-statistics.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 191,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "abs.gov.au"
+          ],
+          "domainCategory": "government",
+          "contentType": "any",
+          "tags": [
+            "australia"
+          ]
+        },
+        {
+          "id": "data-statistics-national-open-data-portal",
+          "title": "National Open Data Portal",
+          "category": "\uddc2 Raw Data & Repositories",
+          "query": "site:data.gov.au (drug OR alcohol OR AOD OR overdose OR \"needle syringe\") filetype:csv",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/data-statistics.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 201,
+          "operators": [
+            "site",
+            "filetype"
+          ],
+          "targetDomains": [
+            "data.gov.au"
+          ],
+          "domainCategory": "government",
+          "contentType": "xls",
+          "tags": [
+            "data",
+            "australia"
+          ]
+        },
+        {
+          "id": "data-statistics-australian-data-archive-microdata",
+          "title": "Australian Data Archive (Microdata)",
+          "category": "\uddc2 Raw Data & Repositories",
+          "query": "site:ada.edu.au (\"National Drug Strategy Household Survey\" OR drug OR alcohol) (dataverse OR microdata OR CURF)",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/data-statistics.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 207,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "ada.edu.au"
+          ],
+          "domainCategory": "education",
+          "contentType": "any",
+          "tags": [
+            "policy",
+            "data",
+            "australia"
+          ]
+        },
+        {
+          "id": "data-statistics-research-data-australia-ardc",
+          "title": "Research Data Australia (ARDC)",
+          "category": "\uddc2 Raw Data & Repositories",
+          "query": "(site:researchdata.edu.au OR site:ardc.edu.au) (drug OR alcohol OR AOD OR \"harm reduction\") dataset",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/data-statistics.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 213,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "researchdata.edu.au",
+            "ardc.edu.au"
+          ],
+          "domainCategory": "education",
+          "contentType": "any",
+          "tags": [
+            "research",
+            "data",
+            "australia"
+          ]
+        },
+        {
+          "id": "data-statistics-aihw-aboriginal-torres-strait-islander-data",
+          "title": "AIHW Aboriginal & Torres Strait Islander Data",
+          "category": "\udda4\udc9b❤ First Nations Data",
+          "query": "site:aihw.gov.au (\"Aboriginal and Torres Strait Islander\" OR Indigenous) (alcohol OR drug OR \"substance use\") statistics",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/data-statistics.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 226,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "aihw.gov.au"
+          ],
+          "domainCategory": "government",
+          "contentType": "any",
+          "tags": [
+            "data",
+            "australia"
+          ]
+        },
+        {
+          "id": "data-statistics-closing-the-gap",
+          "title": "Closing the Gap",
+          "category": "\udda4\udc9b❤ First Nations Data",
+          "query": "\"Closing the Gap\" (alcohol OR drug OR \"substance use\") (target OR data OR dashboard)",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/data-statistics.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 232,
           "operators": [],
           "targetDomains": [],
           "domainCategory": "any",
@@ -3135,72 +2793,69 @@
     {
       "id": "drug-alerts",
       "title": "Drug Alerts & Early Warning",
-      "description": "Real-time monitoring for high-strength, contaminated, or unexpected substances in drug supply.",
+      "description": "Real-time monitoring for high-strength, contaminated, or unexpected substances — named by the",
       "dorks": [
         {
-          "id": "drug-alerts-search-gov-au",
-          "title": "Search gov.au",
+          "id": "drug-alerts-search-theknow-org-au",
+          "title": "Search theknow.org.au",
           "category": "Quick Start",
-          "query": "site:*.gov.au \"drug alert\" after:2025-12-01",
+          "query": "site:theknow.org.au (\"drug alert\" OR \"drug warning\")",
           "explanation": "",
           "difficulty": "beginner",
           "sourceFile": "dork-packs/drug-alerts.md",
           "sourceType": "dork-pack",
-          "sourceLine": 15,
-          "operators": [
-            "site",
-            "after"
-          ],
-          "targetDomains": [
-            "gov.au"
-          ],
-          "domainCategory": "government",
-          "contentType": "any",
-          "tags": [
-            "alerts",
-            "australia"
-          ]
-        },
-        {
-          "id": "drug-alerts-all-recent-government-alerts",
-          "title": "All Recent Government Alerts",
-          "category": "Basic Queries",
-          "query": "site:*.gov.au intitle:\"drug alert\" after:2025-01-01",
-          "explanation": "**Why this works:**\n\n- `intitle:` ensures \"drug alert\" is in the page title (official alerts)\n- `after:` filters to recent only\n- `site:*.gov.au` catches all Australian government sources",
-          "difficulty": "beginner",
-          "sourceFile": "dork-packs/drug-alerts.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 22,
-          "operators": [
-            "site",
-            "intitle",
-            "after"
-          ],
-          "targetDomains": [
-            "gov.au"
-          ],
-          "domainCategory": "government",
-          "contentType": "any",
-          "tags": [
-            "alerts",
-            "australia"
-          ]
-        },
-        {
-          "id": "drug-alerts-nsw-health-alerts-specifically",
-          "title": "NSW Health Alerts Specifically",
-          "category": "Basic Queries",
-          "query": "site:health.nsw.gov.au \"drug warning\"",
-          "explanation": "",
-          "difficulty": "beginner",
-          "sourceFile": "dork-packs/drug-alerts.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 34,
+          "sourceLine": 32,
           "operators": [
             "site"
           ],
           "targetDomains": [
-            "health.nsw.gov.au"
+            "theknow.org.au"
+          ],
+          "domainCategory": "ngo",
+          "contentType": "any",
+          "tags": [
+            "alerts",
+            "australia"
+          ]
+        },
+        {
+          "id": "drug-alerts-the-know-national-aggregator",
+          "title": "The Know (National Aggregator)",
+          "category": "Basic Queries",
+          "query": "site:theknow.org.au (\"drug alert\" OR \"Prompt Response Network\" OR nitazene)",
+          "explanation": "**Why this works:**\n\n- The Know aggregates alerts from every state/territory into one place — it's the single best\nnational starting point, and the \"Prompt Response Network\" is the institutional name behind it",
+          "difficulty": "beginner",
+          "sourceFile": "dork-packs/drug-alerts.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 39,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "theknow.org.au"
+          ],
+          "domainCategory": "ngo",
+          "contentType": "any",
+          "tags": [
+            "alerts",
+            "australia"
+          ]
+        },
+        {
+          "id": "drug-alerts-nsw-public-drug-warnings",
+          "title": "NSW Public Drug Warnings",
+          "category": "Basic Queries",
+          "query": "site:health.nsw.gov.au/aod (\"Public drug warnings\" OR \"public drug alert\")",
+          "explanation": "**Why this works:**\n\n- NSW Health's consumer term is \"Public drug warnings\" (the `/aod/public-drug-alerts/` path); the\nclinician-facing equivalent is \"Clinical safety alerts\" — naming the exact term skips the noise",
+          "difficulty": "beginner",
+          "sourceFile": "dork-packs/drug-alerts.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 50,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "health.nsw.gov.au/aod"
           ],
           "domainCategory": "government",
           "contentType": "any",
@@ -3210,15 +2865,15 @@
           ]
         },
         {
-          "id": "drug-alerts-victorian-health-alerts",
-          "title": "Victorian Health Alerts",
+          "id": "drug-alerts-victorian-drug-alerts",
+          "title": "Victorian Drug Alerts",
           "category": "Basic Queries",
-          "query": "site:health.vic.gov.au \"drug alert\" OR \"health alert\"",
+          "query": "site:health.vic.gov.au (\"drug alert\" OR \"drug advisory\")",
           "explanation": "",
           "difficulty": "beginner",
           "sourceFile": "dork-packs/drug-alerts.md",
           "sourceType": "dork-pack",
-          "sourceLine": 40,
+          "sourceLine": 61,
           "operators": [
             "site"
           ],
@@ -3233,27 +2888,26 @@
           ]
         },
         {
-          "id": "drug-alerts-multi-term-alert-search",
-          "title": "Multi-Term Alert Search",
-          "category": "Intermediate Queries",
-          "query": "site:*.health.*.gov.au (intitle:\"drug alert\" OR intitle:\"drug warning\" OR intitle:\"health alert\") after:2025-01-01",
-          "explanation": "**Why this works:**\n\n- `site:*.health.*.gov.au` catches all state health departments\n- Parentheses group the OR terms together\n- Multiple title variations catch different naming conventions",
-          "difficulty": "intermediate",
+          "id": "drug-alerts-peer-relayed-alerts-nuaa",
+          "title": "Peer-Relayed Alerts (NUAA)",
+          "category": "Basic Queries",
+          "query": "site:nuaa.org.au (\"drug alert\" OR \"drug warning\" OR batch)",
+          "explanation": "",
+          "difficulty": "beginner",
           "sourceFile": "dork-packs/drug-alerts.md",
           "sourceType": "dork-pack",
-          "sourceLine": 50,
+          "sourceLine": 67,
           "operators": [
-            "site",
-            "intitle",
-            "after"
+            "site"
           ],
           "targetDomains": [
-            "health.*.gov.au"
+            "nuaa.org.au"
           ],
-          "domainCategory": "government",
+          "domainCategory": "ngo",
           "contentType": "any",
           "tags": [
             "alerts",
+            "peer",
             "australia"
           ]
         },
@@ -3261,16 +2915,17 @@
           "id": "drug-alerts-specific-substance-alerts",
           "title": "Specific Substance Alerts",
           "category": "Intermediate Queries",
-          "query": "site:*.gov.au (\"nitazene\" OR \"xylazine\" OR \"fentanyl\") (alert OR warning)",
+          "query": "(\"drug alert\" OR \"drug warning\" OR \"public health alert\") (\"nitazene\" OR \"xylazine\" OR \"high-dose MDMA\" OR \"fentanyl\") (site:theknow.org.au OR site:*.gov.au)",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/drug-alerts.md",
           "sourceType": "dork-pack",
-          "sourceLine": 62,
+          "sourceLine": 77,
           "operators": [
             "site"
           ],
           "targetDomains": [
+            "theknow.org.au",
             "gov.au"
           ],
           "domainCategory": "government",
@@ -3281,15 +2936,15 @@
           ]
         },
         {
-          "id": "drug-alerts-alerts-with-pdfs-official-documents",
-          "title": "Alerts with PDFs (Official Documents)",
+          "id": "drug-alerts-alerts-as-official-pdfs",
+          "title": "Alerts as Official PDFs",
           "category": "Intermediate Queries",
-          "query": "site:*.gov.au filetype:pdf (\"drug alert\" OR \"drug warning\" OR \"drug notification\")",
+          "query": "site:*.gov.au filetype:pdf (\"drug warning\" OR \"health alert\" OR \"drug alert\") (nitazene OR \"synthetic opioid\" OR contamina*)",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/drug-alerts.md",
           "sourceType": "dork-pack",
-          "sourceLine": 68,
+          "sourceLine": 83,
           "operators": [
             "site",
             "filetype"
@@ -3306,54 +2961,24 @@
           ]
         },
         {
-          "id": "drug-alerts-comprehensive-alert-sweep",
-          "title": "Comprehensive Alert Sweep",
-          "category": "Advanced Queries",
-          "query": "site:*.health.*.gov.au (intitle:\"drug alert\" OR intitle:\"drug warning\" OR intitle:\"drug notification\" OR intitle:\"clinical safety alert\") (opioid OR stimulant OR \"novel substance\" OR contamina*) after:2025-01-01 filetype:pdf",
-          "explanation": "**Why this works:**\n\n- Multiple title variations cover all alert naming conventions\n- Substance categories catch relevant alerts\n- PDF filter gets the actual alert documents\n- Wildcard `contamina*` catches contamination, contaminated, contaminant",
-          "difficulty": "advanced",
+          "id": "drug-alerts-nt-tas-pdf-heavy-systems",
+          "title": "NT & TAS (PDF-Heavy Systems)",
+          "category": "Intermediate Queries",
+          "query": "(site:health.nt.gov.au OR site:health.tas.gov.au) (\"health alert\" OR \"drug warning\" OR \"alerts and pop-up notifications\") (drug OR nitazene)",
+          "explanation": "**Why this works:**\n\n- The NT issues drug warnings as PDFs under \"Health alerts\"; Tasmania files them under \"Alerts and\npop-up notifications\" — neither uses a tidy \"drug alerts\" label, so name their actual terms",
+          "difficulty": "intermediate",
           "sourceFile": "dork-packs/drug-alerts.md",
           "sourceType": "dork-pack",
-          "sourceLine": 78,
+          "sourceLine": 89,
           "operators": [
-            "site",
-            "filetype",
-            "intitle",
-            "after"
+            "site"
           ],
           "targetDomains": [
-            "health.*.gov.au"
+            "health.nt.gov.au",
+            "health.tas.gov.au"
           ],
           "domainCategory": "government",
-          "contentType": "pdf",
-          "tags": [
-            "alerts",
-            "documents",
-            "services",
-            "australia"
-          ]
-        },
-        {
-          "id": "drug-alerts-directory-mining-for-unpublished-alerts",
-          "title": "Directory Mining for Unpublished Alerts",
-          "category": "Advanced Queries",
-          "query": "site:*.gov.au inurl:\"/alerts/\" OR inurl:\"/warnings/\" filetype:pdf \"drug\" after:2025-01-01",
-          "explanation": "",
-          "difficulty": "advanced",
-          "sourceFile": "dork-packs/drug-alerts.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 91,
-          "operators": [
-            "site",
-            "filetype",
-            "inurl",
-            "after"
-          ],
-          "targetDomains": [
-            "gov.au"
-          ],
-          "domainCategory": "government",
-          "contentType": "pdf",
+          "contentType": "any",
           "tags": [
             "alerts",
             "documents",
@@ -3361,46 +2986,20 @@
           ]
         },
         {
-          "id": "drug-alerts-high-priority-emerging-substances",
-          "title": "High-Priority Emerging Substances",
-          "category": "Advanced Queries",
-          "query": "site:*.gov.au filetype:pdf (\"nitazene\" OR \"benzimidazole opioid\" OR \"xylazine\" OR \"medetomidine\") after:2025-01-01",
+          "id": "drug-alerts-tga-safety-alerts-shortages",
+          "title": "TGA Safety Alerts & Shortages",
+          "category": "Intermediate Queries",
+          "query": "site:tga.gov.au (\"safety alert\" OR \"medicine shortage\" OR recall) (opioid OR naloxone OR benzodiazepine)",
           "explanation": "",
-          "difficulty": "advanced",
+          "difficulty": "intermediate",
           "sourceFile": "dork-packs/drug-alerts.md",
           "sourceType": "dork-pack",
-          "sourceLine": 97,
+          "sourceLine": 100,
           "operators": [
-            "site",
-            "filetype",
-            "after"
+            "site"
           ],
           "targetDomains": [
-            "gov.au"
-          ],
-          "domainCategory": "government",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "australia"
-          ]
-        },
-        {
-          "id": "drug-alerts-alerts-mentioning-specific-formulations",
-          "title": "Alerts Mentioning Specific Formulations",
-          "category": "Advanced Queries",
-          "query": "site:*.gov.au \"drug alert\" (\"high strength\" OR \"unexpected\" OR \"contaminated\" OR \"adulterated\") after:2025-01-01",
-          "explanation": "",
-          "difficulty": "advanced",
-          "sourceFile": "dork-packs/drug-alerts.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 103,
-          "operators": [
-            "site",
-            "after"
-          ],
-          "targetDomains": [
-            "gov.au"
+            "tga.gov.au"
           ],
           "domainCategory": "government",
           "contentType": "any",
@@ -3410,182 +3009,23 @@
           ]
         },
         {
-          "id": "drug-alerts-the-location-operator-1",
-          "title": "The \"Location\" Operator - 1",
-          "category": "Local News Monitoring",
-          "query": "location:Sydney \"drug alert\"",
+          "id": "drug-alerts-comprehensive-multi-system-sweep",
+          "title": "Comprehensive Multi-System Sweep",
+          "category": "Advanced Queries",
+          "query": "(site:theknow.org.au OR site:health.nsw.gov.au OR site:health.vic.gov.au OR site:health.act.gov.au) (\"drug warning\" OR \"drug alert\" OR \"public health alert\") after:2025-01-01",
           "explanation": "",
-          "difficulty": "intermediate",
+          "difficulty": "advanced",
           "sourceFile": "dork-packs/drug-alerts.md",
           "sourceType": "dork-pack",
-          "sourceLine": 115,
-          "operators": [
-            "location"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "news",
-          "tags": [
-            "alerts"
-          ]
-        },
-        {
-          "id": "drug-alerts-the-location-operator-2",
-          "title": "The \"Location\" Operator - 2",
-          "category": "Local News Monitoring",
-          "query": "location:Melbourne \"overdose\"",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/drug-alerts.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 123,
-          "operators": [
-            "location"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "news",
-          "tags": []
-        },
-        {
-          "id": "drug-alerts-the-local-source-pattern",
-          "title": "The \"Local Source\" Pattern",
-          "category": "Local News Monitoring",
-          "query": "site:.com.au (news OR times OR herald OR daily) (\"bad batch\" OR \"warning\") location:Newcastle",
-          "explanation": "> **💡 Pro Tip:** See [Search Tweaks](../tools/search-tweaks.md#local-alert-monitoring) for more\n> local monitoring recipes.",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/drug-alerts.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 129,
+          "sourceLine": 110,
           "operators": [
             "site",
-            "location"
+            "after"
           ],
           "targetDomains": [
-            ".com.au"
-          ],
-          "domainCategory": "news",
-          "contentType": "news",
-          "tags": [
-            "alerts",
-            "australia"
-          ]
-        },
-        {
-          "id": "drug-alerts-uk-wedinos",
-          "title": "UK (WEDINOS)",
-          "category": "International Alert Systems",
-          "query": "site:wedinos.org [substance name]",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/drug-alerts.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 146,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "wedinos.org"
-          ],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "drug-alerts-canada-1",
-          "title": "Canada - 1",
-          "category": "International Alert Systems",
-          "query": "site:drugschecking.ca results",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/drug-alerts.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 152,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "drugschecking.ca"
-          ],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "drug-alerts-canada-2",
-          "title": "Canada - 2",
-          "category": "International Alert Systems",
-          "query": "site:tripproject.ca alerts",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/drug-alerts.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 158,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "tripproject.ca"
-          ],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "alerts"
-          ]
-        },
-        {
-          "id": "drug-alerts-europe",
-          "title": "Europe",
-          "category": "International Alert Systems",
-          "query": "site:saferparty.ch OR site:checkit.wien analysis",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/drug-alerts.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 164,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "saferparty.ch",
-            "checkit.wien"
-          ],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "drug-alerts-general-international",
-          "title": "General International",
-          "category": "International Alert Systems",
-          "query": "\"drug alert\" (UK OR Canada OR Europe) [substance] 2025",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/drug-alerts.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 170,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "alerts"
-          ]
-        },
-        {
-          "id": "drug-alerts-act-drug-alerts",
-          "title": "ACT Drug Alerts",
-          "category": "State-by-State Quick Reference",
-          "query": "site:health.act.gov.au \"drug alert\" OR \"drug notification\"",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/drug-alerts.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 180,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
+            "theknow.org.au",
+            "health.nsw.gov.au",
+            "health.vic.gov.au",
             "health.act.gov.au"
           ],
           "domainCategory": "government",
@@ -3596,20 +3036,21 @@
           ]
         },
         {
-          "id": "drug-alerts-nsw-drug-alerts",
-          "title": "NSW Drug Alerts",
-          "category": "State-by-State Quick Reference",
-          "query": "site:health.nsw.gov.au \"drug warning\" OR \"drug alert\"",
+          "id": "drug-alerts-directory-mining-for-alert-pages",
+          "title": "Directory Mining for Alert Pages",
+          "category": "Advanced Queries",
+          "query": "site:*.gov.au (inurl:drug-alerts OR inurl:public-drug-warnings OR inurl:health-alerts) (nitazene OR \"synthetic opioid\" OR overdose)",
           "explanation": "",
-          "difficulty": "intermediate",
+          "difficulty": "advanced",
           "sourceFile": "dork-packs/drug-alerts.md",
           "sourceType": "dork-pack",
-          "sourceLine": 186,
+          "sourceLine": 116,
           "operators": [
-            "site"
+            "site",
+            "inurl"
           ],
           "targetDomains": [
-            "health.nsw.gov.au"
+            "gov.au"
           ],
           "domainCategory": "government",
           "contentType": "any",
@@ -3619,20 +3060,21 @@
           ]
         },
         {
-          "id": "drug-alerts-nt-drug-alerts",
-          "title": "NT Drug Alerts",
-          "category": "State-by-State Quick Reference",
-          "query": "site:health.nt.gov.au \"drug alert\"",
+          "id": "drug-alerts-high-priority-emerging-substances",
+          "title": "High-Priority Emerging Substances",
+          "category": "Advanced Queries",
+          "query": "(site:*.gov.au OR site:theknow.org.au) (\"nitazene\" OR \"benzimidazole opioid\" OR \"protonitazene\" OR \"medetomidine\" OR \"xylazine\") (warning OR alert OR detected)",
           "explanation": "",
-          "difficulty": "intermediate",
+          "difficulty": "advanced",
           "sourceFile": "dork-packs/drug-alerts.md",
           "sourceType": "dork-pack",
-          "sourceLine": 192,
+          "sourceLine": 122,
           "operators": [
             "site"
           ],
           "targetDomains": [
-            "health.nt.gov.au"
+            "gov.au",
+            "theknow.org.au"
           ],
           "domainCategory": "government",
           "contentType": "any",
@@ -3642,19 +3084,92 @@
           ]
         },
         {
-          "id": "drug-alerts-qld-drug-alerts",
-          "title": "QLD Drug Alerts",
-          "category": "State-by-State Quick Reference",
-          "query": "site:health.qld.gov.au \"drug alert\"",
+          "id": "drug-alerts-nsw-public-drug-warnings",
+          "title": "NSW — \"Public drug warnings\"",
+          "category": "State & Territory Alert Systems",
+          "query": "site:health.nsw.gov.au/aod (\"Public drug warnings\" OR \"Clinical safety alerts\")",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/drug-alerts.md",
           "sourceType": "dork-pack",
-          "sourceLine": 198,
+          "sourceLine": 134,
           "operators": [
             "site"
           ],
           "targetDomains": [
+            "health.nsw.gov.au/aod"
+          ],
+          "domainCategory": "government",
+          "contentType": "any",
+          "tags": [
+            "alerts",
+            "services",
+            "australia"
+          ]
+        },
+        {
+          "id": "drug-alerts-victoria-drug-alerts",
+          "title": "Victoria — \"Drug alerts\"",
+          "category": "State & Territory Alert Systems",
+          "query": "site:health.vic.gov.au/alcohol-and-drugs/drug-alerts (drug OR nitazene OR advisory)",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/drug-alerts.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 140,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "health.vic.gov.au/alcohol-and-drugs/drug-alerts"
+          ],
+          "domainCategory": "government",
+          "contentType": "any",
+          "tags": [
+            "alerts",
+            "australia"
+          ]
+        },
+        {
+          "id": "drug-alerts-act-public-health-alert-cantest",
+          "title": "ACT — \"Public Health Alert\" + CanTEST",
+          "category": "State & Territory Alert Systems",
+          "query": "(site:health.act.gov.au OR site:act.gov.au) (\"Public Health Alert\" OR CanTEST) (drug OR warning)",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/drug-alerts.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 146,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "health.act.gov.au",
+            "act.gov.au"
+          ],
+          "domainCategory": "government",
+          "contentType": "any",
+          "tags": [
+            "alerts",
+            "australia"
+          ]
+        },
+        {
+          "id": "drug-alerts-queensland-via-the-know",
+          "title": "Queensland — via The Know",
+          "category": "State & Territory Alert Systems",
+          "query": "(\"drug alert\" OR \"drug warning\") Queensland (site:theknow.org.au OR site:health.qld.gov.au) -inurl:medicines-poisons",
+          "explanation": "> Note: `health.qld.gov.au`'s \"Updates and alerts\" page is a _regulatory_ (medicines/poisons) page,\n> not a consumer street-drug index — route QLD alerts through The Know. CheQpoint (drug checking)\n> closed April 2025.",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/drug-alerts.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 152,
+          "operators": [
+            "site",
+            "inurl"
+          ],
+          "targetDomains": [
+            "theknow.org.au",
             "health.qld.gov.au"
           ],
           "domainCategory": "government",
@@ -3665,15 +3180,15 @@
           ]
         },
         {
-          "id": "drug-alerts-sa-drug-alerts",
-          "title": "SA Drug Alerts",
-          "category": "State-by-State Quick Reference",
-          "query": "site:sahealth.sa.gov.au \"drug alert\"",
+          "id": "drug-alerts-sa-medication-alerts-media-warnings",
+          "title": "SA — \"Medication alerts\" / media warnings",
+          "category": "State & Territory Alert Systems",
+          "query": "site:sahealth.sa.gov.au (\"Medication alerts\" OR \"Health alerts\" OR \"drug warning\" OR \"synthetic opioid\")",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/drug-alerts.md",
           "sourceType": "dork-pack",
-          "sourceLine": 204,
+          "sourceLine": 162,
           "operators": [
             "site"
           ],
@@ -3688,15 +3203,40 @@
           ]
         },
         {
-          "id": "drug-alerts-tas-drug-alerts",
-          "title": "TAS Drug Alerts",
-          "category": "State-by-State Quick Reference",
-          "query": "site:health.tas.gov.au \"drug alert\"",
+          "id": "drug-alerts-nt-health-alerts-pdfs",
+          "title": "NT — \"Health alerts\" (PDFs)",
+          "category": "State & Territory Alert Systems",
+          "query": "site:health.nt.gov.au (\"health alert\" OR \"drug warning\") filetype:pdf",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/drug-alerts.md",
           "sourceType": "dork-pack",
-          "sourceLine": 210,
+          "sourceLine": 168,
+          "operators": [
+            "site",
+            "filetype"
+          ],
+          "targetDomains": [
+            "health.nt.gov.au"
+          ],
+          "domainCategory": "government",
+          "contentType": "pdf",
+          "tags": [
+            "alerts",
+            "documents",
+            "australia"
+          ]
+        },
+        {
+          "id": "drug-alerts-tasmania-alerts-and-pop-up-notifications",
+          "title": "Tasmania — \"Alerts and pop-up notifications\"",
+          "category": "State & Territory Alert Systems",
+          "query": "site:health.tas.gov.au (\"alerts and pop-up notifications\" OR \"health alert\") (drug OR nitazene OR \"party drugs\")",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/drug-alerts.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 174,
           "operators": [
             "site"
           ],
@@ -3711,20 +3251,21 @@
           ]
         },
         {
-          "id": "drug-alerts-vic-drug-alerts",
-          "title": "VIC Drug Alerts",
-          "category": "State-by-State Quick Reference",
-          "query": "site:health.vic.gov.au \"drug alert\" OR \"health alert\"",
+          "id": "drug-alerts-wa-keyword-fallback-no-public-index",
+          "title": "WA — keyword fallback (no public index)",
+          "category": "State & Territory Alert Systems",
+          "query": "(site:health.wa.gov.au OR site:healthywa.health.wa.gov.au) (nitazene OR \"synthetic opioid\" OR \"drug warning\")",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/drug-alerts.md",
           "sourceType": "dork-pack",
-          "sourceLine": 216,
+          "sourceLine": 180,
           "operators": [
             "site"
           ],
           "targetDomains": [
-            "health.vic.gov.au"
+            "health.wa.gov.au",
+            "healthywa.health.wa.gov.au"
           ],
           "domainCategory": "government",
           "contentType": "any",
@@ -3734,47 +3275,207 @@
           ]
         },
         {
-          "id": "drug-alerts-wa-drug-alerts",
-          "title": "WA Drug Alerts",
-          "category": "State-by-State Quick Reference",
-          "query": "site:health.wa.gov.au \"drug warning\"",
-          "explanation": "",
+          "id": "drug-alerts-wedinos-wales",
+          "title": "WEDINOS (Wales)",
+          "category": "International Alert & Drug-Checking Data",
+          "query": "site:wedinos.wales (\"substance alert\" OR \"sample results\" OR WEDINOS)",
+          "explanation": "> Note: `wedinos.org` 301-redirects to `wedinos.wales`. The \"PHILTRE\" bulletin is published on\n> Public Health Wales (`publichealthwales.nhs.wales`), not the WEDINOS domain.",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/drug-alerts.md",
           "sourceType": "dork-pack",
-          "sourceLine": 222,
+          "sourceLine": 192,
           "operators": [
             "site"
           ],
           "targetDomains": [
-            "health.wa.gov.au"
+            "wedinos.wales"
           ],
-          "domainCategory": "government",
+          "domainCategory": "any",
+          "contentType": "any",
+          "tags": [
+            "alerts"
+          ]
+        },
+        {
+          "id": "drug-alerts-euda-edas-early-warning-system",
+          "title": "EUDA — EDAS & Early Warning System",
+          "category": "International Alert & Drug-Checking Data",
+          "query": "site:euda.europa.eu (\"European Drug Alert System\" OR \"EU Early Warning System\" OR \"new psychoactive substances\")",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/drug-alerts.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 201,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "euda.europa.eu"
+          ],
+          "domainCategory": "any",
+          "contentType": "any",
+          "tags": [
+            "alerts"
+          ]
+        },
+        {
+          "id": "drug-alerts-canada-toronto-s-drug-checking-trip",
+          "title": "Canada — Toronto's Drug Checking & TRIP",
+          "category": "International Alert & Drug-Checking Data",
+          "query": "(site:drugchecking.community OR site:tripproject.ca) (\"drug checking\" OR alert OR medetomidine OR fentanyl)",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/drug-alerts.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 207,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "drugchecking.community",
+            "tripproject.ca"
+          ],
+          "domainCategory": "community",
+          "contentType": "any",
+          "tags": [
+            "alerts"
+          ]
+        },
+        {
+          "id": "drug-alerts-dancesafe-us-testit-alerts",
+          "title": "DanceSafe (US) — #TestIt! Alerts",
+          "category": "International Alert & Drug-Checking Data",
+          "query": "site:dancesafe.org (\"TestIt\" OR \"Test It\" OR alert OR adulterated)",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/drug-alerts.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 213,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "dancesafe.org"
+          ],
+          "domainCategory": "any",
+          "contentType": "any",
+          "tags": [
+            "alerts"
+          ]
+        },
+        {
+          "id": "drug-alerts-peer-org-alert-channels",
+          "title": "Peer-Org Alert Channels",
+          "category": "\udcac Peer & Community Alerts",
+          "query": "(site:nuaa.org.au OR site:hrvic.org.au OR site:cahma.org.au) (\"drug alert\" OR \"drug warning\" OR batch)",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/drug-alerts.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 226,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "nuaa.org.au",
+            "hrvic.org.au",
+            "cahma.org.au"
+          ],
+          "domainCategory": "ngo",
           "contentType": "any",
           "tags": [
             "alerts",
+            "peer",
             "australia"
           ]
         },
         {
-          "id": "drug-alerts-search-health-gov-au",
-          "title": "Search health.*.gov.au",
+          "id": "drug-alerts-real-time-community-reports",
+          "title": "Real-Time Community Reports",
+          "category": "\udcac Peer & Community Alerts",
+          "query": "(site:reddit.com/r/AusDrugs OR site:bluelight.org) (\"bad batch\" OR \"drug alert\" OR \"tested positive\" OR nitazene)",
+          "explanation": "**Why this works:**\n\n- Forums carry the in-the-moment \"this batch is dodgy\" knowledge that never reaches a PDF — useful\nfor early warning, but verify against lab-backed sources before relaying",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/drug-alerts.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 232,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "reddit.com/r/AusDrugs",
+            "bluelight.org"
+          ],
+          "domainCategory": "community",
+          "contentType": "any",
+          "tags": [
+            "alerts",
+            "documents"
+          ]
+        },
+        {
+          "id": "drug-alerts-search-theknow-org-au",
+          "title": "Search theknow.org.au",
           "category": "Setting Up Monitoring",
-          "query": "(\"nitazene\" OR \"benzimidazole opioid\") site:*.gov.au",
-          "explanation": "See [Google Alerts Guide](../tools/google-alerts.md) for detailed setup.",
+          "query": "(\"nitazene\" OR \"synthetic opioid\") (site:*.gov.au OR site:theknow.org.au)",
+          "explanation": "Victoria also offers a direct Chief Health Officer alert subscription at\n`health.vic.gov.au/subscribe`. See the [Google Alerts Guide](../tools/google-alerts.md) for setup.",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/drug-alerts.md",
           "sourceType": "dork-pack",
-          "sourceLine": 242,
+          "sourceLine": 251,
           "operators": [
             "site"
           ],
           "targetDomains": [
-            "gov.au"
+            "gov.au",
+            "theknow.org.au"
           ],
           "domainCategory": "government",
           "contentType": "any",
           "tags": [
+            "australia"
+          ]
+        },
+        {
+          "id": "drug-alerts-the-location-operator-google-news",
+          "title": "The Location Operator (Google News)",
+          "category": "Local News Monitoring",
+          "query": "location:Sydney (\"drug alert\" OR overdose OR \"bad batch\")",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/drug-alerts.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 267,
+          "operators": [
+            "location"
+          ],
+          "targetDomains": [],
+          "domainCategory": "any",
+          "contentType": "news",
+          "tags": [
+            "alerts"
+          ]
+        },
+        {
+          "id": "drug-alerts-local-source-pattern",
+          "title": "Local Source Pattern",
+          "category": "Local News Monitoring",
+          "query": "site:.com.au (news OR herald OR times OR daily) (\"bad batch\" OR \"drug warning\" OR \"overdose cluster\")",
+          "explanation": "> **💡 Pro Tip:** See [Search Tweaks](../tools/search-tweaks.md#local-alert-monitoring) for more\n> local monitoring recipes.",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/drug-alerts.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 273,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            ".com.au"
+          ],
+          "domainCategory": "news",
+          "contentType": "any",
+          "tags": [
+            "alerts",
             "australia"
           ]
         }
@@ -14583,153 +14284,137 @@
     {
       "id": "nsp",
       "title": "Needle & Syringe Programs (NSP)",
-      "description": "Service models, evaluations, policies, directories, and operational guidelines for NSP.",
+      "description": "Find the data, delivery models, equipment, and evidence behind Australia's NSPs — named by data",
       "dorks": [
         {
-          "id": "nsp-search-health-gov-au",
-          "title": "Search health.*.gov.au",
+          "id": "nsp-search-kirby-unsw-edu-au",
+          "title": "Search kirby.unsw.edu.au",
           "category": "Quick Start",
-          "query": "site:*.health.*.gov.au filetype:pdf \"needle syringe program\" guideline",
+          "query": "site:kirby.unsw.edu.au \"Needle Syringe Program National Minimum Data Collection\"",
           "explanation": "",
           "difficulty": "beginner",
           "sourceFile": "dork-packs/nsp.md",
           "sourceType": "dork-pack",
-          "sourceLine": 14,
+          "sourceLine": 32,
           "operators": [
-            "site",
-            "filetype"
+            "site"
           ],
           "targetDomains": [
-            "health.*.gov.au"
+            "kirby.unsw.edu.au"
           ],
-          "domainCategory": "government",
-          "contentType": "pdf",
+          "domainCategory": "education",
+          "contentType": "any",
           "tags": [
-            "documents",
             "services",
+            "data",
             "australia"
           ]
         },
         {
-          "id": "nsp-government-nsp-policies",
-          "title": "Government NSP Policies",
+          "id": "nsp-kirby-nsp-data-reports",
+          "title": "Kirby NSP Data Reports",
           "category": "Basic Queries",
-          "query": "site:*.health.*.gov.au filetype:pdf (\"needle syringe program\" OR NSP) (guideline OR policy OR protocol)",
-          "explanation": "**Why this works:**\n\n- State health departments host NSP policies\n- PDF filter gets operational documents\n- Multiple document type terms captured",
-          "difficulty": "beginner",
-          "sourceFile": "dork-packs/nsp.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 21,
-          "operators": [
-            "site",
-            "filetype"
-          ],
-          "targetDomains": [
-            "health.*.gov.au"
-          ],
-          "domainCategory": "government",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "policy",
-            "services",
-            "australia"
-          ]
-        },
-        {
-          "id": "nsp-nsp-service-directories",
-          "title": "NSP Service Directories",
-          "category": "Basic Queries",
-          "query": "filetype:xlsx OR filetype:pdf (NSP OR \"needle syringe\") (\"service list\" OR directory) site:*.gov.au",
-          "explanation": "",
-          "difficulty": "beginner",
-          "sourceFile": "dork-packs/nsp.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 33,
-          "operators": [
-            "site",
-            "filetype"
-          ],
-          "targetDomains": [
-            "gov.au"
-          ],
-          "domainCategory": "government",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "services",
-            "australia"
-          ]
-        },
-        {
-          "id": "nsp-sector-organisation-resources",
-          "title": "Sector Organisation Resources",
-          "category": "Basic Queries",
-          "query": "site:*.org.au filetype:pdf (\"needle syringe program\" OR NSP) (evaluation OR outcomes OR access)",
-          "explanation": "",
+          "query": "site:kirby.unsw.edu.au (\"Needle Syringe Program National Minimum Data Collection\" OR \"Australian NSP Survey National Data Report\")",
+          "explanation": "**Why this works:**\n\n- These are Kirby's two exact report-series titles — the NMDC for service/distribution counts, the\nANSPS for HCV/HIV and risk-behaviour data. Naming them finds the actual data, not commentary",
           "difficulty": "beginner",
           "sourceFile": "dork-packs/nsp.md",
           "sourceType": "dork-pack",
           "sourceLine": 39,
           "operators": [
-            "site",
-            "filetype"
+            "site"
           ],
           "targetDomains": [
-            "org.au"
-          ],
-          "domainCategory": "ngo",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "services",
-            "australia"
-          ]
-        },
-        {
-          "id": "nsp-nsp-evaluations-evidence",
-          "title": "NSP Evaluations & Evidence",
-          "category": "Intermediate Queries",
-          "query": "site:*.edu.au filetype:pdf \"needle syringe program\" (evaluation OR effectiveness OR \"cost-effectiveness\")",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/nsp.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 49,
-          "operators": [
-            "site",
-            "filetype"
-          ],
-          "targetDomains": [
-            "edu.au"
+            "kirby.unsw.edu.au"
           ],
           "domainCategory": "education",
-          "contentType": "pdf",
+          "contentType": "any",
           "tags": [
             "documents",
-            "research",
             "services",
+            "data",
             "australia"
           ]
         },
         {
-          "id": "nsp-peer-based-nsp-resources",
-          "title": "Peer-Based NSP Resources",
+          "id": "nsp-peer-state-nsp-organisations",
+          "title": "Peer & State NSP Organisations",
+          "category": "Basic Queries",
+          "query": "(site:nuaa.org.au OR site:quihn.org OR site:wasua.com.au) (\"NSP\" OR \"needle syringe\" OR \"NSP equipment\")",
+          "explanation": "**Why this works:**\n\n- Peer and drug-user organisations deliver a large share of NSP — NUAA's \"NSP equipment\" mail-out is\na named example. This is the by-and-with-peers side, not the policy side",
+          "difficulty": "beginner",
+          "sourceFile": "dork-packs/nsp.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 50,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "nuaa.org.au",
+            "quihn.org",
+            "wasua.com.au"
+          ],
+          "domainCategory": "ngo",
+          "contentType": "any",
+          "tags": [
+            "peer",
+            "australia"
+          ]
+        },
+        {
+          "id": "nsp-nsw-nsp-outlets-map",
+          "title": "NSW NSP Outlets Map",
+          "category": "Basic Queries",
+          "query": "site:health.nsw.gov.au/hepatitis \"NSP outlets\"",
+          "explanation": "",
+          "difficulty": "beginner",
+          "sourceFile": "dork-packs/nsp.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 61,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "health.nsw.gov.au/hepatitis"
+          ],
+          "domainCategory": "government",
+          "contentType": "any",
+          "tags": [
+            "australia"
+          ]
+        },
+        {
+          "id": "nsp-nsp-delivery-models",
+          "title": "NSP Delivery Models",
           "category": "Intermediate Queries",
-          "query": "site:*.org.au \"peer-based\" OR \"peer-led\" (\"needle syringe\" OR NSP) filetype:pdf",
+          "query": "(\"primary NSP\" OR \"secondary NSP\" OR \"pharmacy NSP\" OR \"syringe dispensing machine\") (\"needle syringe\" OR \"injecting equipment\") Australia",
+          "explanation": "**Why this works:**\n\n- These are the sector's formal model terms (the Kirby NMDC counts each). \"Syringe dispensing\nmachine\" / \"automatic dispensing machine\" is the expert term — \"vending machine\" is colloquial and\nmisses the official documents",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/nsp.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 71,
+          "operators": [],
+          "targetDomains": [],
+          "domainCategory": "any",
+          "contentType": "any",
+          "tags": [
+            "australia"
+          ]
+        },
+        {
+          "id": "nsp-secondary-peer-distribution",
+          "title": "Secondary & Peer Distribution",
+          "category": "Intermediate Queries",
+          "query": "(\"secondary distribution\" OR \"peer distribution\" OR \"peer-to-peer\") (\"needle syringe\" OR \"injecting equipment\" OR NSP) Australia filetype:pdf",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/nsp.md",
           "sourceType": "dork-pack",
-          "sourceLine": 55,
+          "sourceLine": 83,
           "operators": [
-            "site",
             "filetype"
           ],
-          "targetDomains": [
-            "org.au"
-          ],
-          "domainCategory": "ngo",
+          "targetDomains": [],
+          "domainCategory": "any",
           "contentType": "pdf",
           "tags": [
             "documents",
@@ -14738,45 +14423,48 @@
           ]
         },
         {
-          "id": "nsp-equipment-supply-guidelines",
-          "title": "Equipment & Supply Guidelines",
+          "id": "nsp-pharmacy-nsp",
+          "title": "Pharmacy NSP",
           "category": "Intermediate Queries",
-          "query": "site:*.gov.au \"injecting equipment\" (guideline OR policy OR \"safe disposal\") filetype:pdf",
+          "query": "(\"pharmacy NSP\" OR \"pharmacy\" \"needle syringe\") (guideline OR policy OR \"fitpack\" OR supply) Australia",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/nsp.md",
           "sourceType": "dork-pack",
-          "sourceLine": 61,
+          "sourceLine": 89,
+          "operators": [],
+          "targetDomains": [],
+          "domainCategory": "any",
+          "contentType": "any",
+          "tags": [
+            "policy",
+            "australia"
+          ]
+        },
+        {
+          "id": "nsp-state-nsp-guidelines",
+          "title": "State NSP Guidelines",
+          "category": "Intermediate Queries",
+          "query": "(site:health.nsw.gov.au OR site:health.vic.gov.au OR site:sahealth.sa.gov.au) (\"needle syringe program\" OR NSP) (guideline OR policy OR GL2023) filetype:pdf",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/nsp.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 95,
           "operators": [
             "site",
             "filetype"
           ],
           "targetDomains": [
-            "gov.au"
+            "health.nsw.gov.au",
+            "health.vic.gov.au",
+            "sahealth.sa.gov.au"
           ],
           "domainCategory": "government",
           "contentType": "pdf",
           "tags": [
             "documents",
             "policy",
-            "australia"
-          ]
-        },
-        {
-          "id": "nsp-pharmacy-based-nsp",
-          "title": "Pharmacy-Based NSP",
-          "category": "Intermediate Queries",
-          "query": "\"pharmacy\" (\"needle syringe\" OR NSP OR \"injecting equipment\") Australia (program OR scheme)",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/nsp.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 67,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
             "services",
             "australia"
           ]
@@ -14785,12 +14473,12 @@
           "id": "nsp-comprehensive-nsp-document-sweep",
           "title": "Comprehensive NSP Document Sweep",
           "category": "Advanced Queries",
-          "query": "site:*.gov.au filetype:pdf (\"needle syringe program\" OR \"needle exchange\" OR \"syringe service\" OR NSP) (guideline OR policy OR framework OR manual) after:2020",
+          "query": "site:*.gov.au filetype:pdf (\"needle syringe program\" OR \"needle and syringe program\" OR NSP) (guideline OR policy OR framework OR manual) after:2020",
           "explanation": "",
           "difficulty": "advanced",
           "sourceFile": "dork-packs/nsp.md",
           "sourceType": "dork-pack",
-          "sourceLine": 77,
+          "sourceLine": 105,
           "operators": [
             "site",
             "filetype",
@@ -14809,366 +14497,74 @@
           ]
         },
         {
-          "id": "nsp-nsp-location-access-information",
-          "title": "NSP Location/Access Information",
+          "id": "nsp-syringe-dispensing-machines",
+          "title": "Syringe Dispensing Machines",
           "category": "Advanced Queries",
-          "query": "\"needle syringe program\" location OR address OR \"opening hours\" [YOUR STATE] -site:facebook.com -site:twitter.com",
+          "query": "(\"syringe dispensing machine\" OR \"automatic dispensing machine\" OR ADM) (\"needle\" OR \"injecting equipment\") Australia (evaluation OR placement OR access)",
           "explanation": "",
           "difficulty": "advanced",
           "sourceFile": "dork-packs/nsp.md",
           "sourceType": "dork-pack",
-          "sourceLine": 83,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "facebook.com",
-            "twitter.com"
-          ],
+          "sourceLine": 111,
+          "operators": [],
+          "targetDomains": [],
           "domainCategory": "any",
           "contentType": "any",
           "tags": [
-            "services"
+            "australia"
           ]
         },
         {
           "id": "nsp-mobile-outreach-nsp",
-          "title": "Mobile/Outreach NSP",
+          "title": "Mobile & Outreach NSP",
           "category": "Advanced Queries",
-          "query": "(\"mobile NSP\" OR \"mobile needle\" OR \"outreach NSP\" OR \"van\" OR \"bus\") (\"needle syringe\" OR \"injecting equipment\") Australia",
+          "query": "(\"mobile NSP\" OR \"mobile outreach\" OR \"outreach NSP\") (\"needle syringe\" OR \"injecting equipment\") Australia",
           "explanation": "",
           "difficulty": "advanced",
-          "sourceFile": "dork-packs/nsp.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 89,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "australia"
-          ]
-        },
-        {
-          "id": "nsp-vending-machine-programs",
-          "title": "Vending Machine Programs",
-          "category": "Advanced Queries",
-          "query": "\"vending machine\" OR \"dispensing machine\" (\"needle\" OR \"syringe\" OR \"injecting equipment\") Australia",
-          "explanation": "",
-          "difficulty": "advanced",
-          "sourceFile": "dork-packs/nsp.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 95,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "services",
-            "australia"
-          ]
-        },
-        {
-          "id": "nsp-secondary-distribution",
-          "title": "Secondary Distribution",
-          "category": "Advanced Queries",
-          "query": "\"secondary distribution\" OR \"peer distribution\" (\"needle syringe\" OR \"injecting equipment\") Australia filetype:pdf",
-          "explanation": "",
-          "difficulty": "advanced",
-          "sourceFile": "dork-packs/nsp.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 101,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "peer",
-            "australia"
-          ]
-        },
-        {
-          "id": "nsp-nsw",
-          "title": "NSW",
-          "category": "State-by-State NSP Resources",
-          "query": "site:health.nsw.gov.au \"needle syringe program\"",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/nsp.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 111,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "health.nsw.gov.au"
-          ],
-          "domainCategory": "government",
-          "contentType": "any",
-          "tags": [
-            "services",
-            "australia"
-          ]
-        },
-        {
-          "id": "nsp-qld",
-          "title": "QLD",
-          "category": "State-by-State NSP Resources",
-          "query": "site:health.qld.gov.au \"needle syringe program\"",
-          "explanation": "",
-          "difficulty": "intermediate",
           "sourceFile": "dork-packs/nsp.md",
           "sourceType": "dork-pack",
           "sourceLine": 117,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "health.qld.gov.au"
-          ],
-          "domainCategory": "government",
+          "operators": [],
+          "targetDomains": [],
+          "domainCategory": "any",
           "contentType": "any",
           "tags": [
-            "services",
             "australia"
           ]
         },
         {
-          "id": "nsp-sa",
-          "title": "SA",
-          "category": "State-by-State NSP Resources",
-          "query": "site:sahealth.sa.gov.au \"needle syringe\"",
-          "explanation": "",
-          "difficulty": "intermediate",
+          "id": "nsp-coverage-reach-evidence",
+          "title": "Coverage & Reach Evidence",
+          "category": "Advanced Queries",
+          "query": "(\"needle syringe program\" OR NSP) (\"coverage\" OR \"reach\" OR \"cost-effectiveness\" OR \"return on investment\") Australia filetype:pdf",
+          "explanation": "**Why this works:**\n\n- \"Coverage\" and \"reach\" are the epidemiological terms for whether an NSP is meeting need — pairing\nthem with cost-effectiveness finds the economic case that has repeatedly justified NSP funding",
+          "difficulty": "advanced",
           "sourceFile": "dork-packs/nsp.md",
           "sourceType": "dork-pack",
           "sourceLine": 123,
           "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "sahealth.sa.gov.au"
-          ],
-          "domainCategory": "government",
-          "contentType": "any",
-          "tags": [
-            "australia"
-          ]
-        },
-        {
-          "id": "nsp-vic",
-          "title": "VIC",
-          "category": "State-by-State NSP Resources",
-          "query": "site:health.vic.gov.au \"needle syringe\" OR NSP",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/nsp.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 129,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "health.vic.gov.au"
-          ],
-          "domainCategory": "government",
-          "contentType": "any",
-          "tags": [
-            "australia"
-          ]
-        },
-        {
-          "id": "nsp-wa",
-          "title": "WA",
-          "category": "State-by-State NSP Resources",
-          "query": "site:health.wa.gov.au \"needle exchange\"",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/nsp.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 135,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "health.wa.gov.au"
-          ],
-          "domainCategory": "government",
-          "contentType": "any",
-          "tags": [
-            "australia"
-          ]
-        },
-        {
-          "id": "nsp-staff-training-resources",
-          "title": "Staff Training Resources",
-          "category": "NSP Workforce & Training",
-          "query": "\"NSP\" OR \"needle syringe\" (training OR induction OR \"capacity building\") Australia filetype:pdf",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/nsp.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 145,
-          "operators": [
             "filetype"
           ],
           "targetDomains": [],
           "domainCategory": "any",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "training",
-            "australia"
-          ]
-        },
-        {
-          "id": "nsp-peer-worker-nsp-training",
-          "title": "Peer Worker NSP Training",
-          "category": "NSP Workforce & Training",
-          "query": "\"peer worker\" (\"needle syringe\" OR NSP) training filetype:pdf -jobs",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/nsp.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 151,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "peer",
-            "training"
-          ]
-        },
-        {
-          "id": "nsp-clinical-considerations",
-          "title": "Clinical Considerations",
-          "category": "NSP Workforce & Training",
-          "query": "\"injecting\" (vein care OR \"safer injecting\" OR technique) training filetype:pdf",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/nsp.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 157,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "services",
-            "training"
-          ]
-        },
-        {
-          "id": "nsp-aihw-data",
-          "title": "AIHW Data",
-          "category": "NSP Data & Statistics",
-          "query": "site:aihw.gov.au \"needle syringe program\" OR NSP statistics",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/nsp.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 167,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "aihw.gov.au"
-          ],
-          "domainCategory": "government",
-          "contentType": "any",
-          "tags": [
-            "services",
-            "data",
-            "australia"
-          ]
-        },
-        {
-          "id": "nsp-distribution-data",
-          "title": "Distribution Data",
-          "category": "NSP Data & Statistics",
-          "query": "\"needle syringe\" (\"distribution data\" OR \"equipment distribution\" OR statistics) Australia",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/nsp.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 173,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "data",
-            "australia"
-          ]
-        },
-        {
-          "id": "nsp-bbv-data-related-to-nsp",
-          "title": "BBV Data Related to NSP",
-          "category": "NSP Data & Statistics",
-          "query": "site:aihw.gov.au (\"hepatitis C\" OR HCV OR \"blood borne virus\") \"injecting drug use\"",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/nsp.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 179,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "aihw.gov.au"
-          ],
-          "domainCategory": "government",
-          "contentType": "any",
-          "tags": [
-            "data",
-            "australia"
-          ]
-        },
-        {
-          "id": "nsp-ndarc-research",
-          "title": "NDARC Research",
-          "category": "Research & Evidence",
-          "query": "site:ndarc.med.unsw.edu.au \"needle syringe\" OR NSP OR \"injecting drug use\" filetype:pdf",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/nsp.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 189,
-          "operators": [
-            "site",
-            "filetype"
-          ],
-          "targetDomains": [
-            "ndarc.med.unsw.edu.au"
-          ],
-          "domainCategory": "education",
           "contentType": "pdf",
           "tags": [
             "documents",
             "research",
+            "services",
             "australia"
           ]
         },
         {
-          "id": "nsp-kirby-institute-bbv-research",
-          "title": "Kirby Institute (BBV Research)",
-          "category": "Research & Evidence",
-          "query": "site:kirby.unsw.edu.au \"injecting drug use\" OR \"needle syringe\"",
+          "id": "nsp-nsp-nmdc-service-distribution-data",
+          "title": "NSP NMDC (Service & Distribution Data)",
+          "category": "NSP Data & Coverage",
+          "query": "site:kirby.unsw.edu.au \"Needle Syringe Program National Minimum Data Collection\" \"National Data Report\"",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/nsp.md",
           "sourceType": "dork-pack",
-          "sourceLine": 195,
+          "sourceLine": 140,
           "operators": [
             "site"
           ],
@@ -15178,40 +14574,154 @@
           "domainCategory": "education",
           "contentType": "any",
           "tags": [
-            "research",
+            "documents",
+            "services",
+            "data",
             "australia"
           ]
         },
         {
-          "id": "nsp-systematic-reviews",
-          "title": "Systematic Reviews",
-          "category": "Research & Evidence",
-          "query": "intitle:\"systematic review\" \"needle syringe program\" OR \"needle exchange\" effectiveness",
+          "id": "nsp-ansps-serosurvey-risk-behaviour",
+          "title": "ANSPS (Serosurvey & Risk Behaviour)",
+          "category": "NSP Data & Coverage",
+          "query": "site:kirby.unsw.edu.au (\"Australian NSP Survey National Data Report\" OR ANSPS)",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/nsp.md",
           "sourceType": "dork-pack",
-          "sourceLine": 201,
+          "sourceLine": 146,
           "operators": [
-            "intitle"
+            "site"
           ],
+          "targetDomains": [
+            "kirby.unsw.edu.au"
+          ],
+          "domainCategory": "education",
+          "contentType": "any",
+          "tags": [
+            "documents",
+            "data",
+            "australia"
+          ]
+        },
+        {
+          "id": "nsp-aihw-bbv-context",
+          "title": "AIHW & BBV Context",
+          "category": "NSP Data & Coverage",
+          "query": "(site:aihw.gov.au OR site:kirby.unsw.edu.au) (\"needle syringe\" OR \"injecting drug use\") (\"hepatitis C\" OR HCV OR \"blood borne virus\") data",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/nsp.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 152,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "aihw.gov.au",
+            "kirby.unsw.edu.au"
+          ],
+          "domainCategory": "government",
+          "contentType": "any",
+          "tags": [
+            "data",
+            "australia"
+          ]
+        },
+        {
+          "id": "nsp-fitpack-sharps-disposal",
+          "title": "Fitpack & Sharps Disposal",
+          "category": "🧰 Equipment & Consumables",
+          "query": "(\"Fitpack\" OR \"ASP Healthcare\" OR \"personal sharps container\") (\"needle syringe\" OR NSP OR disposal) site:.au",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/nsp.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 162,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            ".au"
+          ],
+          "domainCategory": "any",
+          "contentType": "any",
+          "tags": [
+            "australia"
+          ]
+        },
+        {
+          "id": "nsp-safe-disposal-guidance",
+          "title": "Safe Disposal Guidance",
+          "category": "🧰 Equipment & Consumables",
+          "query": "(\"safe disposal\" OR \"sharps disposal\") (\"needle\" OR \"syringe\" OR \"injecting equipment\") (guideline OR information) Australia",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/nsp.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 168,
+          "operators": [],
           "targetDomains": [],
           "domainCategory": "any",
           "contentType": "any",
           "tags": [
-            "services"
+            "australia"
           ]
         },
         {
-          "id": "nsp-cost-effectiveness-studies",
-          "title": "Cost-Effectiveness Studies",
-          "category": "Research & Evidence",
-          "query": "\"needle syringe program\" (\"cost-effectiveness\" OR \"cost-benefit\" OR \"economic evaluation\") filetype:pdf",
+          "id": "nsp-specialised-injecting-equipment",
+          "title": "Specialised Injecting Equipment",
+          "category": "🧰 Equipment & Consumables",
+          "query": "(\"low dead space\" OR \"detachable needle\" OR \"winged infusion\" OR \"filter\") (\"needle syringe\" OR NSP) Australia",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/nsp.md",
           "sourceType": "dork-pack",
-          "sourceLine": 207,
+          "sourceLine": 174,
+          "operators": [],
+          "targetDomains": [],
+          "domainCategory": "any",
+          "contentType": "any",
+          "tags": [
+            "australia"
+          ]
+        },
+        {
+          "id": "nsp-peer-based-nsp-models",
+          "title": "Peer-Based NSP Models",
+          "category": "\udcac Peer & Lived-Experience NSP",
+          "query": "(site:*.org.au OR site:nuaa.org.au) (\"peer-based\" OR \"peer-led\" OR \"peer distribution\") (\"needle syringe\" OR NSP) filetype:pdf",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/nsp.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 186,
+          "operators": [
+            "site",
+            "filetype"
+          ],
+          "targetDomains": [
+            "org.au",
+            "nuaa.org.au"
+          ],
+          "domainCategory": "ngo",
+          "contentType": "pdf",
+          "tags": [
+            "documents",
+            "peer",
+            "australia"
+          ]
+        },
+        {
+          "id": "nsp-peer-worker-experience-training",
+          "title": "Peer Worker Experience & Training",
+          "category": "\udcac Peer & Lived-Experience NSP",
+          "query": "(\"needle syringe\" OR NSP) (\"peer worker\" OR \"peer educator\") (training OR reflection OR experience) filetype:pdf -jobs",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/nsp.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 192,
           "operators": [
             "filetype"
           ],
@@ -15220,62 +14730,102 @@
           "contentType": "pdf",
           "tags": [
             "documents",
-            "services"
+            "peer",
+            "training"
           ]
         },
         {
-          "id": "nsp-fitpack-equipment-standards",
-          "title": "Fitpack/Equipment Standards",
-          "category": "\udfe5 Equipment & Consumables",
-          "query": "\"fitpack\" OR \"injecting equipment\" (contents OR standards OR \"what's included\") Australia",
+          "id": "nsp-community-discussion",
+          "title": "Community Discussion",
+          "category": "\udcac Peer & Lived-Experience NSP",
+          "query": "(site:reddit.com/r/AusDrugs OR site:bluelight.org) (\"NSP\" OR \"needle exchange\" OR \"fitpack\" OR \"safer injecting\")",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/nsp.md",
           "sourceType": "dork-pack",
-          "sourceLine": 217,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
+          "sourceLine": 198,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "reddit.com/r/AusDrugs",
+            "bluelight.org"
+          ],
+          "domainCategory": "community",
+          "contentType": "any",
+          "tags": []
+        },
+        {
+          "id": "nsp-national-policy-context",
+          "title": "National Policy Context",
+          "category": "Policy & Evidence",
+          "query": "site:health.gov.au (\"needle and syringe program\" OR NSP) (policy OR strategy OR \"blood borne virus\" OR \"National Drug Strategy\")",
+          "explanation": "> Note: the named \"National Needle and Syringe Programs Strategic Framework 2010-2014\" is expired;\n> current NSP policy now sits inside the National Drug Strategy and the BBV/HIV/hepatitis\n> strategies.",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/nsp.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 208,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "health.gov.au"
+          ],
+          "domainCategory": "government",
           "contentType": "any",
           "tags": [
+            "policy",
+            "services",
             "australia"
           ]
         },
         {
-          "id": "nsp-safe-disposal",
-          "title": "Safe Disposal",
-          "category": "\udfe5 Equipment & Consumables",
-          "query": "\"safe disposal\" OR \"sharps disposal\" (\"needle\" OR \"syringe\") (guideline OR information) Australia",
+          "id": "nsp-academic-systematic-evidence",
+          "title": "Academic & Systematic Evidence",
+          "category": "Policy & Evidence",
+          "query": "(site:unsw.edu.au OR site:ndri.curtin.edu.au OR site:burnet.edu.au) (\"needle syringe program\" OR \"needle exchange\") (effectiveness OR \"cost-effectiveness\" OR coverage) filetype:pdf",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/nsp.md",
           "sourceType": "dork-pack",
-          "sourceLine": 223,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
+          "sourceLine": 218,
+          "operators": [
+            "site",
+            "filetype"
+          ],
+          "targetDomains": [
+            "unsw.edu.au",
+            "ndri.curtin.edu.au",
+            "burnet.edu.au"
+          ],
+          "domainCategory": "education",
+          "contentType": "pdf",
           "tags": [
+            "documents",
+            "research",
+            "services",
             "australia"
           ]
         },
         {
-          "id": "nsp-specialised-equipment",
-          "title": "Specialised Equipment",
-          "category": "\udfe5 Equipment & Consumables",
-          "query": "\"low dead space\" OR \"detachable needle\" OR \"butterfly\" OR \"insulin syringe\" NSP Australia",
+          "id": "nsp-cochrane-systematic-reviews",
+          "title": "Cochrane / Systematic Reviews",
+          "category": "Policy & Evidence",
+          "query": "site:cochranelibrary.com (\"needle syringe\" OR \"needle exchange\" OR \"harm reduction\")",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/nsp.md",
           "sourceType": "dork-pack",
-          "sourceLine": 229,
-          "operators": [],
-          "targetDomains": [],
+          "sourceLine": 224,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "cochranelibrary.com"
+          ],
           "domainCategory": "any",
           "contentType": "any",
-          "tags": [
-            "australia"
-          ]
+          "tags": []
         }
       ],
       "sourceFile": "dork-packs/nsp.md"
@@ -20414,120 +19964,51 @@
     {
       "id": "research",
       "title": "Research & Academic Evidence",
-      "description": "Finding high-quality research, systematic reviews, and grey literature.",
+      "description": "Find high-quality research, systematic reviews, and grey literature — named by research centre,",
       "dorks": [
         {
-          "id": "research-search-edu-au",
-          "title": "Search edu.au",
+          "id": "research-search-unsw-edu-au",
+          "title": "Search unsw.edu.au",
           "category": "Quick Start",
-          "query": "site:*.edu.au filetype:pdf \"harm reduction\" (evaluation OR effectiveness) after:2022",
+          "query": "(site:unsw.edu.au OR site:ndarc.med.unsw.edu.au) \"harm reduction\" (evaluation OR effectiveness) filetype:pdf after:2022",
           "explanation": "",
           "difficulty": "beginner",
           "sourceFile": "dork-packs/research.md",
           "sourceType": "dork-pack",
-          "sourceLine": 14,
+          "sourceLine": 47,
           "operators": [
             "site",
             "filetype",
             "after"
           ],
           "targetDomains": [
-            "edu.au"
-          ],
-          "domainCategory": "education",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "australia"
-          ]
-        },
-        {
-          "id": "research-australian-research-institutions-1",
-          "title": "Australian Research Institutions - 1",
-          "category": "Basic Queries",
-          "query": "site:ndarc.med.unsw.edu.au filetype:pdf (\"harm reduction\" OR \"drug checking\" OR \"overdose\")",
-          "explanation": "",
-          "difficulty": "beginner",
-          "sourceFile": "dork-packs/research.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 37,
-          "operators": [
-            "site",
-            "filetype"
-          ],
-          "targetDomains": [
+            "unsw.edu.au",
             "ndarc.med.unsw.edu.au"
           ],
           "domainCategory": "education",
           "contentType": "pdf",
           "tags": [
             "documents",
-            "research",
             "australia"
           ]
         },
         {
-          "id": "research-australian-research-institutions-2",
-          "title": "Australian Research Institutions - 2",
+          "id": "research-ndarc-drug-trends-harm-reduction",
+          "title": "NDARC (Drug Trends & Harm Reduction)",
           "category": "Basic Queries",
-          "query": "site:burnet.edu.au \"injecting drug use\" OR \"needle syringe\"",
-          "explanation": "",
+          "query": "(site:unsw.edu.au OR site:ndarc.med.unsw.edu.au) (\"harm reduction\" OR \"Drug Trends\" OR \"drug checking\" OR overdose) filetype:pdf",
+          "explanation": "**Why this works:**\n\n- NDARC migrated onto the main UNSW domain, so search both `unsw.edu.au` and the legacy\n`ndarc.med.unsw.edu.au` (old project URLs 301-redirect; PDFs persist on both)",
           "difficulty": "beginner",
           "sourceFile": "dork-packs/research.md",
           "sourceType": "dork-pack",
-          "sourceLine": 43,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "burnet.edu.au"
-          ],
-          "domainCategory": "education",
-          "contentType": "any",
-          "tags": [
-            "research",
-            "australia"
-          ]
-        },
-        {
-          "id": "research-australian-research-institutions-3",
-          "title": "Australian Research Institutions - 3",
-          "category": "Basic Queries",
-          "query": "site:kirby.unsw.edu.au hepatitis drug use",
-          "explanation": "",
-          "difficulty": "beginner",
-          "sourceFile": "dork-packs/research.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 49,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "kirby.unsw.edu.au"
-          ],
-          "domainCategory": "education",
-          "contentType": "any",
-          "tags": [
-            "research",
-            "australia"
-          ]
-        },
-        {
-          "id": "research-generic-australian-academic",
-          "title": "Generic Australian Academic",
-          "category": "Basic Queries",
-          "query": "site:*.edu.au filetype:pdf \"harm reduction\" (evaluation OR effectiveness)",
-          "explanation": "",
-          "difficulty": "beginner",
-          "sourceFile": "dork-packs/research.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 55,
+          "sourceLine": 54,
           "operators": [
             "site",
             "filetype"
           ],
           "targetDomains": [
-            "edu.au"
+            "unsw.edu.au",
+            "ndarc.med.unsw.edu.au"
           ],
           "domainCategory": "education",
           "contentType": "pdf",
@@ -20537,35 +20018,38 @@
           ]
         },
         {
-          "id": "research-quality-filters-systematic-reviews-1",
-          "title": "Quality Filters (Systematic Reviews) - 1",
+          "id": "research-kirby-burnet-bbv-injecting-cohorts",
+          "title": "Kirby & Burnet (BBV / Injecting Cohorts)",
           "category": "Basic Queries",
-          "query": "intitle:\"systematic review\" \"needle syringe program\" OR \"harm reduction\"",
+          "query": "(site:kirby.unsw.edu.au OR site:burnet.edu.au) (\"injecting drug use\" OR \"hepatitis C\" OR \"needle syringe\" OR SuperMIX)",
           "explanation": "",
           "difficulty": "beginner",
           "sourceFile": "dork-packs/research.md",
           "sourceType": "dork-pack",
-          "sourceLine": 61,
+          "sourceLine": 65,
           "operators": [
-            "intitle"
+            "site"
           ],
-          "targetDomains": [],
-          "domainCategory": "any",
+          "targetDomains": [
+            "kirby.unsw.edu.au",
+            "burnet.edu.au"
+          ],
+          "domainCategory": "education",
           "contentType": "any",
           "tags": [
-            "services"
+            "australia"
           ]
         },
         {
-          "id": "research-quality-filters-systematic-reviews-2",
-          "title": "Quality Filters (Systematic Reviews) - 2",
+          "id": "research-quality-filter-systematic-reviews",
+          "title": "Quality Filter (Systematic Reviews)",
           "category": "Basic Queries",
-          "query": "intitle:\"meta-analysis\" \"opioid substitution therapy\" OR \"naloxone\"",
+          "query": "(intitle:\"systematic review\" OR intitle:\"meta-analysis\") (\"harm reduction\" OR \"needle syringe\" OR naloxone OR \"opioid agonist\")",
           "explanation": "",
           "difficulty": "beginner",
           "sourceFile": "dork-packs/research.md",
           "sourceType": "dork-pack",
-          "sourceLine": 67,
+          "sourceLine": 71,
           "operators": [
             "intitle"
           ],
@@ -20575,47 +20059,49 @@
           "tags": []
         },
         {
-          "id": "research-australian-research-comprehensive",
-          "title": "Australian Research (Comprehensive)",
+          "id": "research-all-major-centres-comprehensive",
+          "title": "All Major Centres (Comprehensive)",
           "category": "Intermediate Queries",
-          "query": "site:ndarc.med.unsw.edu.au OR site:burnet.edu.au OR site:turning-point.org.au OR site:nceta.flinders.edu.au filetype:pdf",
-          "explanation": "",
+          "query": "(site:unsw.edu.au OR site:burnet.edu.au OR site:turningpoint.org.au OR site:nceta.flinders.edu.au OR site:ndri.curtin.edu.au) \"harm reduction\" filetype:pdf",
+          "explanation": "**Why this works:**\n\n- One query across the real centre domains (note Turning Point has _no hyphen_:\n`turningpoint.org.au`) beats a generic `*.edu.au` sweep",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/research.md",
           "sourceType": "dork-pack",
-          "sourceLine": 77,
+          "sourceLine": 81,
           "operators": [
             "site",
             "filetype"
           ],
           "targetDomains": [
-            "ndarc.med.unsw.edu.au",
+            "unsw.edu.au",
             "burnet.edu.au",
-            "turning-point.org.au",
-            "nceta.flinders.edu.au"
+            "turningpoint.org.au",
+            "nceta.flinders.edu.au",
+            "ndri.curtin.edu.au"
           ],
           "domainCategory": "education",
           "contentType": "pdf",
           "tags": [
             "documents",
-            "research",
             "australia"
           ]
         },
         {
-          "id": "research-randomised-controlled-trials",
-          "title": "Randomised Controlled Trials",
+          "id": "research-drug-and-alcohol-review-the-journal",
+          "title": "Drug and Alcohol Review (the Journal)",
           "category": "Intermediate Queries",
-          "query": "intitle:\"randomized controlled trial\" OR intitle:\"randomised controlled trial\" \"harm reduction\" substance use",
+          "query": "site:onlinelibrary.wiley.com \"Drug and Alcohol Review\" (\"harm reduction\" OR \"drug checking\" OR naloxone)",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/research.md",
           "sourceType": "dork-pack",
-          "sourceLine": 83,
+          "sourceLine": 92,
           "operators": [
-            "intitle"
+            "site"
           ],
-          "targetDomains": [],
+          "targetDomains": [
+            "onlinelibrary.wiley.com"
+          ],
           "domainCategory": "any",
           "contentType": "any",
           "tags": []
@@ -20624,19 +20110,23 @@
           "id": "research-recent-high-quality-evidence",
           "title": "Recent High-Quality Evidence",
           "category": "Intermediate Queries",
-          "query": "(intitle:\"systematic review\" OR intitle:\"meta-analysis\") \"harm reduction\" after:2020 filetype:pdf",
+          "query": "(intitle:\"systematic review\" OR intitle:\"meta-analysis\") \"harm reduction\" after:2020 filetype:pdf -site:researchgate.net -site:academia.edu",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/research.md",
           "sourceType": "dork-pack",
-          "sourceLine": 89,
+          "sourceLine": 98,
           "operators": [
+            "site",
             "filetype",
             "intitle",
             "after"
           ],
-          "targetDomains": [],
-          "domainCategory": "any",
+          "targetDomains": [
+            "researchgate.net",
+            "academia.edu"
+          ],
+          "domainCategory": "research",
           "contentType": "pdf",
           "tags": [
             "documents",
@@ -20644,170 +20134,114 @@
           ]
         },
         {
-          "id": "research-grey-literature-exclude-aggregators",
-          "title": "Grey Literature (Exclude Aggregators)",
+          "id": "research-grey-literature-apo",
+          "title": "Grey Literature (APO)",
           "category": "Intermediate Queries",
-          "query": "\"harm reduction\" filetype:pdf -site:researchgate.net -site:academia.edu -site:arxiv.org",
+          "query": "site:apo.org.au (\"harm reduction\" OR \"drug policy\" OR \"needle syringe\" OR overdose)",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/research.md",
           "sourceType": "dork-pack",
-          "sourceLine": 95,
+          "sourceLine": 104,
           "operators": [
-            "site",
-            "filetype"
+            "site"
           ],
           "targetDomains": [
-            "researchgate.net",
-            "academia.edu",
-            "arxiv.org"
+            "apo.org.au"
           ],
-          "domainCategory": "research",
-          "contentType": "pdf",
+          "domainCategory": "ngo",
+          "contentType": "any",
           "tags": [
-            "documents",
-            "research"
+            "policy",
+            "australia"
           ]
         },
         {
           "id": "research-comprehensive-evidence-sweep",
           "title": "Comprehensive Evidence Sweep",
           "category": "Advanced Queries",
-          "query": "site:*.edu.au OR site:*.edu filetype:pdf (\"harm reduction\" OR \"drug checking\" OR \"needle syringe\" OR naloxone) (evaluation OR effectiveness OR outcomes OR \"systematic review\" OR \"meta-analysis\") after:2020 -site:researchgate.net -site:academia.edu",
+          "query": "(site:*.edu.au OR site:cochranelibrary.com) (\"harm reduction\" OR \"drug checking\" OR \"needle syringe\" OR naloxone) (evaluation OR effectiveness OR \"systematic review\" OR \"meta-analysis\") after:2020 -site:researchgate.net -site:academia.edu",
           "explanation": "",
           "difficulty": "advanced",
           "sourceFile": "dork-packs/research.md",
           "sourceType": "dork-pack",
-          "sourceLine": 105,
+          "sourceLine": 114,
           "operators": [
             "site",
-            "filetype",
             "after"
           ],
           "targetDomains": [
             "edu.au",
-            "edu",
+            "cochranelibrary.com",
             "researchgate.net",
             "academia.edu"
           ],
           "domainCategory": "education",
-          "contentType": "pdf",
+          "contentType": "any",
           "tags": [
-            "documents",
             "research",
             "australia"
           ]
         },
         {
-          "id": "research-methods-focused-for-research-design",
-          "title": "Methods-Focused (For Research Design)",
+          "id": "research-named-cohort-studies",
+          "title": "Named Cohort Studies",
           "category": "Advanced Queries",
-          "query": "intitle:\"methods\" OR intitle:\"methodology\" \"harm reduction\" filetype:pdf",
+          "query": "(\"SuperMIX\" OR \"ETHOS Engage\" OR \"HITS-c\" OR \"HITS-p\") (\"people who inject drugs\" OR PWID OR \"hepatitis C\") filetype:pdf",
           "explanation": "",
           "difficulty": "advanced",
           "sourceFile": "dork-packs/research.md",
           "sourceType": "dork-pack",
-          "sourceLine": 111,
+          "sourceLine": 120,
           "operators": [
-            "filetype",
-            "intitle"
+            "filetype"
           ],
           "targetDomains": [],
           "domainCategory": "any",
           "contentType": "pdf",
           "tags": [
-            "documents",
-            "research"
+            "documents"
           ]
         },
         {
-          "id": "research-peer-led-research",
-          "title": "Peer-Led Research",
+          "id": "research-conference-evidence-apsad",
+          "title": "Conference Evidence (APSAD)",
           "category": "Advanced Queries",
-          "query": "(\"peer-led research\" OR \"participatory action research\" OR \"community-based participatory research\") drug use Australia filetype:pdf",
+          "query": "(site:apsad.org.au OR \"APSAD\") (conference OR abstract OR proceedings) (\"harm reduction\" OR \"drug checking\")",
           "explanation": "",
           "difficulty": "advanced",
           "sourceFile": "dork-packs/research.md",
           "sourceType": "dork-pack",
-          "sourceLine": 117,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "research",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "peer",
-            "research",
-            "australia"
-          ]
-        },
-        {
-          "id": "research-citation-worthy-evidence",
-          "title": "Citation-Worthy Evidence",
-          "category": "Advanced Queries",
-          "query": "site:*.edu.au (\"harm reduction\" OR \"drug checking\") (evaluation OR effectiveness OR outcomes) filetype:pdf after:2020",
-          "explanation": "",
-          "difficulty": "advanced",
-          "sourceFile": "dork-packs/research.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 123,
-          "operators": [
-            "site",
-            "filetype",
-            "after"
-          ],
-          "targetDomains": [
-            "edu.au"
-          ],
-          "domainCategory": "education",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "research",
-            "australia"
-          ]
-        },
-        {
-          "id": "research-ndarc-national-drug-alcohol-research-centre-1",
-          "title": "NDARC (National Drug & Alcohol Research Centre) - 1",
-          "category": "Key Australian Research Centres",
-          "query": "site:ndarc.med.unsw.edu.au filetype:pdf",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/research.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 133,
-          "operators": [
-            "site",
-            "filetype"
-          ],
-          "targetDomains": [
-            "ndarc.med.unsw.edu.au"
-          ],
-          "domainCategory": "education",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "research",
-            "australia"
-          ]
-        },
-        {
-          "id": "research-ndarc-national-drug-alcohol-research-centre-2",
-          "title": "NDARC (National Drug & Alcohol Research Centre) - 2",
-          "category": "Key Australian Research Centres",
-          "query": "site:ndarc.med.unsw.edu.au [YOUR TOPIC]",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/research.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 139,
+          "sourceLine": 126,
           "operators": [
             "site"
           ],
           "targetDomains": [
+            "apsad.org.au"
+          ],
+          "domainCategory": "ngo",
+          "contentType": "any",
+          "tags": [
+            "research",
+            "australia"
+          ]
+        },
+        {
+          "id": "research-ndarc-national-drug-alcohol-research-centre",
+          "title": "NDARC — National Drug & Alcohol Research Centre",
+          "category": "Key Research Centres",
+          "query": "(site:unsw.edu.au inurl:ndarc OR site:ndarc.med.unsw.edu.au) [YOUR TOPIC]",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/research.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 138,
+          "operators": [
+            "site",
+            "inurl"
+          ],
+          "targetDomains": [
+            "unsw.edu.au",
             "ndarc.med.unsw.edu.au"
           ],
           "domainCategory": "education",
@@ -20818,161 +20252,174 @@
           ]
         },
         {
-          "id": "research-burnet-institute",
-          "title": "Burnet Institute",
-          "category": "Key Australian Research Centres",
-          "query": "site:burnet.edu.au filetype:pdf (harm reduction OR \"injecting drug use\")",
+          "id": "research-ndri-national-drug-research-institute-curtin",
+          "title": "NDRI — National Drug Research Institute (Curtin)",
+          "category": "Key Research Centres",
+          "query": "site:ndri.curtin.edu.au \"National Drug Research Institute\" [YOUR TOPIC]",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/research.md",
           "sourceType": "dork-pack",
-          "sourceLine": 145,
+          "sourceLine": 144,
           "operators": [
-            "site",
-            "filetype"
+            "site"
           ],
           "targetDomains": [
-            "burnet.edu.au"
+            "ndri.curtin.edu.au"
           ],
           "domainCategory": "education",
-          "contentType": "pdf",
+          "contentType": "any",
           "tags": [
-            "documents",
+            "research",
             "australia"
           ]
         },
         {
           "id": "research-turning-point",
           "title": "Turning Point",
-          "category": "Key Australian Research Centres",
-          "query": "site:turning-point.org.au filetype:pdf",
+          "category": "Key Research Centres",
+          "query": "site:turningpoint.org.au (\"harm reduction\" OR research OR AODstats)",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/research.md",
           "sourceType": "dork-pack",
-          "sourceLine": 151,
+          "sourceLine": 150,
           "operators": [
-            "site",
-            "filetype"
+            "site"
           ],
           "targetDomains": [
-            "turning-point.org.au"
+            "turningpoint.org.au"
           ],
-          "domainCategory": "ngo",
-          "contentType": "pdf",
+          "domainCategory": "research",
+          "contentType": "any",
           "tags": [
-            "documents",
+            "research",
             "australia"
           ]
         },
         {
-          "id": "research-kirby-institute",
-          "title": "Kirby Institute",
-          "category": "Key Australian Research Centres",
-          "query": "site:kirby.unsw.edu.au filetype:pdf (hepatitis OR HIV OR BBV)",
+          "id": "research-nceta-workforce-development-flinders",
+          "title": "NCETA — Workforce Development (Flinders)",
+          "category": "Key Research Centres",
+          "query": "site:nceta.flinders.edu.au \"workforce development\"",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/research.md",
           "sourceType": "dork-pack",
-          "sourceLine": 157,
+          "sourceLine": 156,
           "operators": [
-            "site",
-            "filetype"
-          ],
-          "targetDomains": [
-            "kirby.unsw.edu.au"
-          ],
-          "domainCategory": "education",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "australia"
-          ]
-        },
-        {
-          "id": "research-nceta-workforce-development",
-          "title": "NCETA (Workforce Development)",
-          "category": "Key Australian Research Centres",
-          "query": "site:nceta.flinders.edu.au filetype:pdf",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/research.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 163,
-          "operators": [
-            "site",
-            "filetype"
+            "site"
           ],
           "targetDomains": [
             "nceta.flinders.edu.au"
           ],
           "domainCategory": "education",
-          "contentType": "pdf",
+          "contentType": "any",
           "tags": [
-            "documents",
             "training",
             "australia"
           ]
         },
         {
-          "id": "research-csrh-social-research",
-          "title": "CSRH (Social Research)",
-          "category": "Key Australian Research Centres",
-          "query": "site:csrh.arts.unsw.edu.au filetype:pdf",
+          "id": "research-csrh-centre-for-social-research-in-health-unsw",
+          "title": "CSRH — Centre for Social Research in Health (UNSW)",
+          "category": "Key Research Centres",
+          "query": "site:unsw.edu.au inurl:csrh \"Centre for Social Research in Health\"",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/research.md",
           "sourceType": "dork-pack",
-          "sourceLine": 169,
+          "sourceLine": 162,
           "operators": [
             "site",
-            "filetype"
+            "inurl"
           ],
           "targetDomains": [
-            "csrh.arts.unsw.edu.au"
+            "unsw.edu.au"
           ],
           "domainCategory": "education",
-          "contentType": "pdf",
+          "contentType": "any",
           "tags": [
-            "documents",
             "research",
             "australia"
           ]
         },
         {
-          "id": "research-matilda-centre",
-          "title": "Matilda Centre",
-          "category": "Key Australian Research Centres",
-          "query": "site:matildacentre.com.au filetype:pdf",
+          "id": "research-the-matilda-centre-university-of-sydney",
+          "title": "The Matilda Centre (University of Sydney)",
+          "category": "Key Research Centres",
+          "query": "site:sydney.edu.au/matilda-centre (\"substance use\" OR \"mental health\" OR comorbidity)",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/research.md",
           "sourceType": "dork-pack",
-          "sourceLine": 175,
+          "sourceLine": 168,
           "operators": [
-            "site",
-            "filetype"
+            "site"
           ],
           "targetDomains": [
-            "matildacentre.com.au"
+            "sydney.edu.au/matilda-centre"
           ],
-          "domainCategory": "any",
-          "contentType": "pdf",
+          "domainCategory": "education",
+          "contentType": "any",
+          "tags": [
+            "australia"
+          ]
+        },
+        {
+          "id": "research-drug-trends-idrs-edrs",
+          "title": "Drug Trends (IDRS / EDRS)",
+          "category": "\udcc8 Named Cohorts & Data Series",
+          "query": "(site:unsw.edu.au OR site:ndarc.med.unsw.edu.au) (\"Illicit Drug Reporting System\" OR \"Ecstasy and Related Drugs Reporting System\" OR \"Drug Trends\")",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/research.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 180,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "unsw.edu.au",
+            "ndarc.med.unsw.edu.au"
+          ],
+          "domainCategory": "education",
+          "contentType": "any",
           "tags": [
             "documents",
             "australia"
           ]
         },
         {
-          "id": "research-systematic-reviews",
-          "title": "Systematic Reviews",
-          "category": "\udcdd Study Types",
-          "query": "intitle:\"systematic review\" (\"harm reduction\" OR naloxone OR \"needle syringe\") filetype:pdf",
+          "id": "research-injecting-hepatitis-c-cohorts",
+          "title": "Injecting & Hepatitis C Cohorts",
+          "category": "\udcc8 Named Cohorts & Data Series",
+          "query": "(\"SuperMIX\" OR \"ETHOS Engage\" OR \"HITS-c\" OR \"HITS-p\") (cohort OR incidence OR \"hepatitis C\") filetype:pdf",
+          "explanation": "> See [Data & Statistics](data-statistics.md) for the dataset-and-numbers side of these series.",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/research.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 186,
+          "operators": [
+            "filetype"
+          ],
+          "targetDomains": [],
+          "domainCategory": "any",
+          "contentType": "pdf",
+          "tags": [
+            "documents"
+          ]
+        },
+        {
+          "id": "research-systematic-reviews-meta-analyses",
+          "title": "Systematic Reviews & Meta-Analyses",
+          "category": "\udcdd Study Types & Quality Filters",
+          "query": "(intitle:\"systematic review\" OR intitle:\"meta-analysis\") (\"harm reduction\" OR naloxone OR \"needle syringe\" OR \"drug checking\") filetype:pdf",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/research.md",
           "sourceType": "dork-pack",
-          "sourceLine": 185,
+          "sourceLine": 198,
           "operators": [
             "filetype",
             "intitle"
@@ -20985,57 +20432,15 @@
           ]
         },
         {
-          "id": "research-meta-analyses",
-          "title": "Meta-Analyses",
-          "category": "\udcdd Study Types",
-          "query": "intitle:\"meta-analysis\" (\"opioid agonist\" OR \"harm reduction\" OR \"drug checking\") filetype:pdf",
+          "id": "research-randomised-cohort-studies",
+          "title": "Randomised & Cohort Studies",
+          "category": "\udcdd Study Types & Quality Filters",
+          "query": "(intitle:\"randomised controlled trial\" OR intitle:\"cohort study\") (\"harm reduction\" OR \"substance use\") Australia filetype:pdf",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/research.md",
           "sourceType": "dork-pack",
-          "sourceLine": 191,
-          "operators": [
-            "filetype",
-            "intitle"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "pdf",
-          "tags": [
-            "documents"
-          ]
-        },
-        {
-          "id": "research-randomised-trials",
-          "title": "Randomised Trials",
-          "category": "\udcdd Study Types",
-          "query": "(intitle:\"randomized\" OR intitle:\"randomised\") trial (\"harm reduction\" OR AOD) filetype:pdf",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/research.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 197,
-          "operators": [
-            "filetype",
-            "intitle"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "pdf",
-          "tags": [
-            "documents"
-          ]
-        },
-        {
-          "id": "research-cohort-studies",
-          "title": "Cohort Studies",
-          "category": "\udcdd Study Types",
-          "query": "intitle:\"cohort study\" (\"drug use\" OR \"substance use\" OR \"harm reduction\") Australia filetype:pdf",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/research.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 203,
+          "sourceLine": 204,
           "operators": [
             "filetype",
             "intitle"
@@ -21050,15 +20455,15 @@
           ]
         },
         {
-          "id": "research-qualitative-research",
-          "title": "Qualitative Research",
-          "category": "\udcdd Study Types",
+          "id": "research-qualitative-lived-experience-research",
+          "title": "Qualitative & Lived-Experience Research",
+          "category": "\udcdd Study Types & Quality Filters",
           "query": "intitle:\"qualitative\" (\"harm reduction\" OR \"drug use\" OR \"lived experience\") Australia filetype:pdf",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/research.md",
           "sourceType": "dork-pack",
-          "sourceLine": 209,
+          "sourceLine": 210,
           "operators": [
             "filetype",
             "intitle"
@@ -21074,15 +20479,15 @@
           ]
         },
         {
-          "id": "research-mixed-methods",
-          "title": "Mixed Methods",
-          "category": "\udcdd Study Types",
-          "query": "\"mixed methods\" (\"harm reduction\" OR \"drug use\") Australia filetype:pdf",
+          "id": "research-theses-working-papers",
+          "title": "Theses & Working Papers",
+          "category": "\udcdd Study Types & Quality Filters",
+          "query": "(thesis OR dissertation OR \"working paper\") (\"harm reduction\" OR \"drug checking\" OR \"needle syringe\") Australia filetype:pdf",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/research.md",
           "sourceType": "dork-pack",
-          "sourceLine": 215,
+          "sourceLine": 216,
           "operators": [
             "filetype"
           ],
@@ -21095,15 +20500,15 @@
           ]
         },
         {
-          "id": "research-reports-not-peer-reviewed",
-          "title": "Reports (Not Peer-Reviewed)",
-          "category": "\udcc4 Grey Literature",
-          "query": "(\"evaluation report\" OR \"final report\" OR \"project report\") \"harm reduction\" Australia filetype:pdf -journal -doi",
+          "id": "research-peer-led-participatory-research",
+          "title": "Peer-Led & Participatory Research",
+          "category": "\udcac Peer-Led & Lived-Experience Research",
+          "query": "(\"peer-led research\" OR \"peer researcher\" OR \"participatory action research\" OR \"community-based participatory research\") (drug use OR \"harm reduction\") Australia filetype:pdf",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/research.md",
           "sourceType": "dork-pack",
-          "sourceLine": 225,
+          "sourceLine": 229,
           "operators": [
             "filetype"
           ],
@@ -21113,19 +20518,20 @@
           "tags": [
             "documents",
             "peer",
+            "research",
             "australia"
           ]
         },
         {
-          "id": "research-working-papers",
-          "title": "Working Papers",
-          "category": "\udcc4 Grey Literature",
-          "query": "\"working paper\" OR \"discussion paper\" (\"harm reduction\" OR \"drug policy\") Australia filetype:pdf",
+          "id": "research-co-design-co-production",
+          "title": "Co-Design & Co-Production",
+          "category": "\udcac Peer-Led & Lived-Experience Research",
+          "query": "(\"co-design\" OR \"co-production\") (\"people who use drugs\" OR peer OR \"lived experience\") (harm reduction OR service) filetype:pdf",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/research.md",
           "sourceType": "dork-pack",
-          "sourceLine": 231,
+          "sourceLine": 235,
           "operators": [
             "filetype"
           ],
@@ -21134,217 +20540,51 @@
           "contentType": "pdf",
           "tags": [
             "documents",
-            "policy",
-            "australia"
+            "peer",
+            "services"
           ]
         },
         {
-          "id": "research-theses-dissertations",
-          "title": "Theses & Dissertations",
-          "category": "\udcc4 Grey Literature",
-          "query": "(thesis OR dissertation) (\"harm reduction\" OR \"drug checking\" OR \"needle syringe\") Australia filetype:pdf",
+          "id": "research-social-research-csrh",
+          "title": "Social Research (CSRH)",
+          "category": "\udcac Peer-Led & Lived-Experience Research",
+          "query": "site:unsw.edu.au inurl:csrh (\"stigma\" OR \"lived experience\" OR \"people who use drugs\" OR qualitative)",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/research.md",
           "sourceType": "dork-pack",
-          "sourceLine": 237,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "australia"
-          ]
-        },
-        {
-          "id": "research-conference-papers",
-          "title": "Conference Papers",
-          "category": "\udcc4 Grey Literature",
-          "query": "(\"conference paper\" OR \"conference presentation\" OR proceedings) \"harm reduction\" APSAD filetype:pdf",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/research.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 243,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "pdf",
-          "tags": [
-            "documents"
-          ]
-        },
-        {
-          "id": "research-drug-checking-research",
-          "title": "Drug Checking Research",
-          "category": "\udd0d Topic-Specific Research",
-          "query": "site:*.edu.au \"drug checking\" OR \"pill testing\" (evaluation OR outcomes) filetype:pdf",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/research.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 253,
+          "sourceLine": 241,
           "operators": [
             "site",
-            "filetype"
+            "inurl"
           ],
           "targetDomains": [
-            "edu.au"
+            "unsw.edu.au"
           ],
           "domainCategory": "education",
-          "contentType": "pdf",
+          "contentType": "any",
           "tags": [
-            "documents",
-            "research",
-            "australia"
-          ]
-        },
-        {
-          "id": "research-naloxone-research",
-          "title": "Naloxone Research",
-          "category": "\udd0d Topic-Specific Research",
-          "query": "site:*.edu.au \"take-home naloxone\" OR \"community naloxone\" (evaluation OR effectiveness) filetype:pdf",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/research.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 259,
-          "operators": [
-            "site",
-            "filetype"
-          ],
-          "targetDomains": [
-            "edu.au"
-          ],
-          "domainCategory": "education",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "research",
-            "australia"
-          ]
-        },
-        {
-          "id": "research-nsp-research",
-          "title": "NSP Research",
-          "category": "\udd0d Topic-Specific Research",
-          "query": "site:*.edu.au \"needle syringe program\" (evaluation OR \"cost-effectiveness\") filetype:pdf",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/research.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 265,
-          "operators": [
-            "site",
-            "filetype"
-          ],
-          "targetDomains": [
-            "edu.au"
-          ],
-          "domainCategory": "education",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "research",
-            "services",
-            "australia"
-          ]
-        },
-        {
-          "id": "research-oat-research",
-          "title": "OAT Research",
-          "category": "\udd0d Topic-Specific Research",
-          "query": "site:*.edu.au (\"opioid agonist\" OR methadone OR buprenorphine) (outcomes OR retention OR effectiveness) filetype:pdf",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/research.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 271,
-          "operators": [
-            "site",
-            "filetype"
-          ],
-          "targetDomains": [
-            "edu.au"
-          ],
-          "domainCategory": "education",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "research",
-            "australia"
-          ]
-        },
-        {
-          "id": "research-peer-work-research",
-          "title": "Peer Work Research",
-          "category": "\udd0d Topic-Specific Research",
-          "query": "site:*.edu.au \"peer support\" OR \"peer worker\" (effectiveness OR outcomes) \"harm reduction\" filetype:pdf",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/research.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 277,
-          "operators": [
-            "site",
-            "filetype"
-          ],
-          "targetDomains": [
-            "edu.au"
-          ],
-          "domainCategory": "education",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
             "peer",
             "research",
             "australia"
           ]
         },
         {
-          "id": "research-uk-research",
-          "title": "UK Research",
+          "id": "research-uk-canada",
+          "title": "UK & Canada",
           "category": "International Research",
-          "query": "site:*.ac.uk \"harm reduction\" (evaluation OR evidence) filetype:pdf",
+          "query": "(site:*.ac.uk OR site:*.ca) (\"harm reduction\" OR \"supervised consumption\" OR \"safe supply\") (evaluation OR evidence) filetype:pdf",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/research.md",
           "sourceType": "dork-pack",
-          "sourceLine": 287,
+          "sourceLine": 251,
           "operators": [
             "site",
             "filetype"
           ],
           "targetDomains": [
-            "ac.uk"
-          ],
-          "domainCategory": "any",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "research"
-          ]
-        },
-        {
-          "id": "research-canadian-research",
-          "title": "Canadian Research",
-          "category": "International Research",
-          "query": "site:*.ca (\"safe injection\" OR \"supervised consumption\" OR \"safe supply\") (evaluation OR outcomes) filetype:pdf",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/research.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 293,
-          "operators": [
-            "site",
-            "filetype"
-          ],
-          "targetDomains": [
+            "ac.uk",
             "ca"
           ],
           "domainCategory": "any",
@@ -21355,41 +20595,41 @@
           ]
         },
         {
-          "id": "research-european-research-emcdda",
-          "title": "European Research (EMCDDA)",
+          "id": "research-euda-europe",
+          "title": "EUDA (Europe)",
           "category": "International Research",
-          "query": "site:emcdda.europa.eu filetype:pdf (\"harm reduction\" OR \"drug checking\")",
+          "query": "(site:euda.europa.eu OR site:emcdda.europa.eu) (\"harm reduction\" OR \"drug checking\" OR \"European Drug Report\")",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/research.md",
           "sourceType": "dork-pack",
-          "sourceLine": 299,
+          "sourceLine": 257,
           "operators": [
-            "site",
-            "filetype"
+            "site"
           ],
           "targetDomains": [
+            "euda.europa.eu",
             "emcdda.europa.eu"
           ],
           "domainCategory": "international",
-          "contentType": "pdf",
+          "contentType": "any",
           "tags": [
-            "documents",
-            "research"
+            "documents"
           ]
         },
         {
           "id": "research-cochrane-reviews",
           "title": "Cochrane Reviews",
           "category": "International Research",
-          "query": "site:cochranelibrary.com (\"harm reduction\" OR naloxone OR \"needle syringe\")",
+          "query": "site:cochranelibrary.com inurl:cdsr (\"harm reduction\" OR naloxone OR \"needle syringe\" OR \"opioid agonist\")",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/research.md",
           "sourceType": "dork-pack",
-          "sourceLine": 305,
+          "sourceLine": 263,
           "operators": [
-            "site"
+            "site",
+            "inurl"
           ],
           "targetDomains": [
             "cochranelibrary.com"
@@ -21397,24 +20637,6 @@
           "domainCategory": "any",
           "contentType": "any",
           "tags": []
-        },
-        {
-          "id": "research-ai-research-assistants",
-          "title": "AI Research Assistants",
-          "category": "\udee0 Research Tools",
-          "query": "\"harm reduction\" research [Use with: Elicit, SciSpace, Consensus]",
-          "explanation": "See [AI Tools](../tools/ai-tools.md) for research assistants.",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/research.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 315,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "research",
-          "contentType": "any",
-          "tags": [
-            "research"
-          ]
         }
       ],
       "sourceFile": "dork-packs/research.md"
@@ -33402,9 +32624,9 @@
     }
   ],
   "meta": {
-    "buildDate": "2026-06-27T12:33:15.736Z",
+    "buildDate": "2026-06-27T13:21:19.123Z",
     "version": "2.0.0",
-    "totalDorks": 1586,
+    "totalDorks": 1549,
     "sourceFiles": [
       "01-quick-start.md",
       "02-core-operators.md",

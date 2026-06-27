@@ -1,101 +1,110 @@
 # Research & Academic Evidence
 
-> Finding high-quality research, systematic reviews, and grey literature.
+> Find high-quality research, systematic reviews, and grey literature — named by research centre,
+> journal, and cohort, not just by keyword.
 
 [← Back to Dork Packs](README.md) | [← Main Guide](../README.md)
 
 ---
 
-## ⚡ Quick Start
+## 👥 About This Pack
 
-Find Australian harm reduction research:
+Australian AOD research is concentrated in a handful of named centres, and knowing them (and their
+current domains) is most of the skill. **NDARC** runs Drug Trends; the **Kirby** and **Burnet**
+institutes run the BBV cohorts; **NDRI** (Curtin) is a WHO Collaborating Centre; **Turning Point**
+runs AODstats; **NCETA** does workforce; the **Centre for Social Research in Health (CSRH)** and the
+**Matilda Centre** lead the social and mental-health-and-substance-use research. The flagship
+journal is **_Drug and Alcohol Review_** (APSAD); systematic reviews live in **Cochrane**.
 
-```txt
-site:*.edu.au filetype:pdf "harm reduction" (evaluation OR effectiveness) after:2022
-```
+Peer knowledge is expert knowledge here too: weight **peer-led**, **participatory** and
+**co-designed** research, not only the `.edu.au` PDF.
+
+> **Entity reference:** every centre, cohort, and journal below is catalogued in
+> [Source Intelligence → Research, Data & Surveillance](../resources/source-intelligence.md#-research-data--surveillance-au).
 
 ---
 
 ## 📚 Academic Access Tools
 
-> Research should be accessible. These tools help you access scholarly content:
+> Research should be accessible. These tools help you reach scholarly content:
 
 | Tool                 | URL                                                       | Description                                |
 | -------------------- | --------------------------------------------------------- | ------------------------------------------ |
 | **CORE**             | [core.ac.uk](https://core.ac.uk/)                         | 270M+ open access papers                   |
 | **PubMed Central**   | [ncbi.nlm.nih.gov/pmc](https://www.ncbi.nlm.nih.gov/pmc/) | Free biomedical literature                 |
-| **Sci-Hub**          | [sci-hub.se](https://sci-hub.se)                          | Direct access (check legal status)         |
 | **Semantic Scholar** | [semanticscholar.org](https://www.semanticscholar.org/)   | AI-powered academic search                 |
 | **Unpaywall**        | [unpaywall.org](https://unpaywall.org)                    | Browser extension, finds free legal papers |
 
-See [Academic Access](../resources/academic-access.md) for full list.
+See [Academic Access](../resources/academic-access.md) for the full list.
+
+---
+
+## ⚡ Quick Start
+
+Find recent Australian harm-reduction evidence from the main research centre:
+
+```txt
+(site:unsw.edu.au OR site:ndarc.med.unsw.edu.au) "harm reduction" (evaluation OR effectiveness) filetype:pdf after:2022
+```
 
 ---
 
 ## 🟢 Basic Queries
 
-### Australian Research Institutions - 1
+### NDARC (Drug Trends & Harm Reduction)
 
 ```txt
-site:ndarc.med.unsw.edu.au filetype:pdf ("harm reduction" OR "drug checking" OR "overdose")
+(site:unsw.edu.au OR site:ndarc.med.unsw.edu.au) ("harm reduction" OR "Drug Trends" OR "drug checking" OR overdose) filetype:pdf
 ```
 
-### Australian Research Institutions - 2
+**Why this works:**
+
+- NDARC migrated onto the main UNSW domain, so search both `unsw.edu.au` and the legacy
+  `ndarc.med.unsw.edu.au` (old project URLs 301-redirect; PDFs persist on both)
+
+### Kirby & Burnet (BBV / Injecting Cohorts)
 
 ```txt
-site:burnet.edu.au "injecting drug use" OR "needle syringe"
+(site:kirby.unsw.edu.au OR site:burnet.edu.au) ("injecting drug use" OR "hepatitis C" OR "needle syringe" OR SuperMIX)
 ```
 
-### Australian Research Institutions - 3
+### Quality Filter (Systematic Reviews)
 
 ```txt
-site:kirby.unsw.edu.au hepatitis drug use
-```
-
-### Generic Australian Academic
-
-```txt
-site:*.edu.au filetype:pdf "harm reduction" (evaluation OR effectiveness)
-```
-
-### Quality Filters (Systematic Reviews) - 1
-
-```txt
-intitle:"systematic review" "needle syringe program" OR "harm reduction"
-```
-
-### Quality Filters (Systematic Reviews) - 2
-
-```txt
-intitle:"meta-analysis" "opioid substitution therapy" OR "naloxone"
+(intitle:"systematic review" OR intitle:"meta-analysis") ("harm reduction" OR "needle syringe" OR naloxone OR "opioid agonist")
 ```
 
 ---
 
 ## 🟡 Intermediate Queries
 
-### Australian Research (Comprehensive)
+### All Major Centres (Comprehensive)
 
 ```txt
-site:ndarc.med.unsw.edu.au OR site:burnet.edu.au OR site:turning-point.org.au OR site:nceta.flinders.edu.au filetype:pdf
+(site:unsw.edu.au OR site:burnet.edu.au OR site:turningpoint.org.au OR site:nceta.flinders.edu.au OR site:ndri.curtin.edu.au) "harm reduction" filetype:pdf
 ```
 
-### Randomised Controlled Trials
+**Why this works:**
+
+- One query across the real centre domains (note Turning Point has _no hyphen_:
+  `turningpoint.org.au`) beats a generic `*.edu.au` sweep
+
+### Drug and Alcohol Review (the Journal)
 
 ```txt
-intitle:"randomized controlled trial" OR intitle:"randomised controlled trial" "harm reduction" substance use
+site:onlinelibrary.wiley.com "Drug and Alcohol Review" ("harm reduction" OR "drug checking" OR naloxone)
 ```
 
 ### Recent High-Quality Evidence
 
 ```txt
-(intitle:"systematic review" OR intitle:"meta-analysis") "harm reduction" after:2020 filetype:pdf
+(intitle:"systematic review" OR intitle:"meta-analysis") "harm reduction" after:2020 filetype:pdf -site:researchgate.net -site:academia.edu
 ```
 
-### Grey Literature (Exclude Aggregators)
+### Grey Literature (APO)
 
 ```txt
-"harm reduction" filetype:pdf -site:researchgate.net -site:academia.edu -site:arxiv.org
+site:apo.org.au ("harm reduction" OR "drug policy" OR "needle syringe" OR overdose)
 ```
 
 ---
@@ -105,236 +114,169 @@ intitle:"randomized controlled trial" OR intitle:"randomised controlled trial" "
 ### Comprehensive Evidence Sweep
 
 ```txt
-site:*.edu.au OR site:*.edu filetype:pdf ("harm reduction" OR "drug checking" OR "needle syringe" OR naloxone) (evaluation OR effectiveness OR outcomes OR "systematic review" OR "meta-analysis") after:2020 -site:researchgate.net -site:academia.edu
+(site:*.edu.au OR site:cochranelibrary.com) ("harm reduction" OR "drug checking" OR "needle syringe" OR naloxone) (evaluation OR effectiveness OR "systematic review" OR "meta-analysis") after:2020 -site:researchgate.net -site:academia.edu
 ```
 
-### Methods-Focused (For Research Design)
+### Named Cohort Studies
 
 ```txt
-intitle:"methods" OR intitle:"methodology" "harm reduction" filetype:pdf
+("SuperMIX" OR "ETHOS Engage" OR "HITS-c" OR "HITS-p") ("people who inject drugs" OR PWID OR "hepatitis C") filetype:pdf
 ```
 
-### Peer-Led Research
+### Conference Evidence (APSAD)
 
 ```txt
-("peer-led research" OR "participatory action research" OR "community-based participatory research") drug use Australia filetype:pdf
-```
-
-### Citation-Worthy Evidence
-
-```txt
-site:*.edu.au ("harm reduction" OR "drug checking") (evaluation OR effectiveness OR outcomes) filetype:pdf after:2020
+(site:apsad.org.au OR "APSAD") (conference OR abstract OR proceedings) ("harm reduction" OR "drug checking")
 ```
 
 ---
 
-## 🏛️ Key Australian Research Centres
+## 🏛️ Key Research Centres
 
-### NDARC (National Drug & Alcohol Research Centre) - 1
+The named centres and their _current_ domains (several recently changed).
+
+### NDARC — National Drug & Alcohol Research Centre
 
 ```txt
-site:ndarc.med.unsw.edu.au filetype:pdf
+(site:unsw.edu.au inurl:ndarc OR site:ndarc.med.unsw.edu.au) [YOUR TOPIC]
 ```
 
-### NDARC (National Drug & Alcohol Research Centre) - 2
+### NDRI — National Drug Research Institute (Curtin)
 
 ```txt
-site:ndarc.med.unsw.edu.au [YOUR TOPIC]
-```
-
-### Burnet Institute
-
-```txt
-site:burnet.edu.au filetype:pdf (harm reduction OR "injecting drug use")
+site:ndri.curtin.edu.au "National Drug Research Institute" [YOUR TOPIC]
 ```
 
 ### Turning Point
 
 ```txt
-site:turning-point.org.au filetype:pdf
+site:turningpoint.org.au ("harm reduction" OR research OR AODstats)
 ```
 
-### Kirby Institute
+### NCETA — Workforce Development (Flinders)
 
 ```txt
-site:kirby.unsw.edu.au filetype:pdf (hepatitis OR HIV OR BBV)
+site:nceta.flinders.edu.au "workforce development"
 ```
 
-### NCETA (Workforce Development)
+### CSRH — Centre for Social Research in Health (UNSW)
 
 ```txt
-site:nceta.flinders.edu.au filetype:pdf
+site:unsw.edu.au inurl:csrh "Centre for Social Research in Health"
 ```
 
-### CSRH (Social Research)
+### The Matilda Centre (University of Sydney)
 
 ```txt
-site:csrh.arts.unsw.edu.au filetype:pdf
-```
-
-### Matilda Centre
-
-```txt
-site:matildacentre.com.au filetype:pdf
+site:sydney.edu.au/matilda-centre ("substance use" OR "mental health" OR comorbidity)
 ```
 
 ---
 
-## 📝 Study Types
+## 📈 Named Cohorts & Data Series
 
-### Systematic Reviews
+The named series are the highest-value signals — almost no non-specialist knows them.
 
-```txt
-intitle:"systematic review" ("harm reduction" OR naloxone OR "needle syringe") filetype:pdf
-```
-
-### Meta-Analyses
+### Drug Trends (IDRS / EDRS)
 
 ```txt
-intitle:"meta-analysis" ("opioid agonist" OR "harm reduction" OR "drug checking") filetype:pdf
+(site:unsw.edu.au OR site:ndarc.med.unsw.edu.au) ("Illicit Drug Reporting System" OR "Ecstasy and Related Drugs Reporting System" OR "Drug Trends")
 ```
 
-### Randomised Trials
+### Injecting & Hepatitis C Cohorts
 
 ```txt
-(intitle:"randomized" OR intitle:"randomised") trial ("harm reduction" OR AOD) filetype:pdf
+("SuperMIX" OR "ETHOS Engage" OR "HITS-c" OR "HITS-p") (cohort OR incidence OR "hepatitis C") filetype:pdf
 ```
 
-### Cohort Studies
+> See [Data & Statistics](data-statistics.md) for the dataset-and-numbers side of these series.
+
+---
+
+## 📝 Study Types & Quality Filters
+
+### Systematic Reviews & Meta-Analyses
 
 ```txt
-intitle:"cohort study" ("drug use" OR "substance use" OR "harm reduction") Australia filetype:pdf
+(intitle:"systematic review" OR intitle:"meta-analysis") ("harm reduction" OR naloxone OR "needle syringe" OR "drug checking") filetype:pdf
 ```
 
-### Qualitative Research
+### Randomised & Cohort Studies
+
+```txt
+(intitle:"randomised controlled trial" OR intitle:"cohort study") ("harm reduction" OR "substance use") Australia filetype:pdf
+```
+
+### Qualitative & Lived-Experience Research
 
 ```txt
 intitle:"qualitative" ("harm reduction" OR "drug use" OR "lived experience") Australia filetype:pdf
 ```
 
-### Mixed Methods
+### Theses & Working Papers
 
 ```txt
-"mixed methods" ("harm reduction" OR "drug use") Australia filetype:pdf
+(thesis OR dissertation OR "working paper") ("harm reduction" OR "drug checking" OR "needle syringe") Australia filetype:pdf
 ```
 
 ---
 
-## 📄 Grey Literature
+## 💬 Peer-Led & Lived-Experience Research
 
-### Reports (Not Peer-Reviewed)
+Research _with_ people who use drugs, not only about them — often the most useful and most
+overlooked.
+
+### Peer-Led & Participatory Research
 
 ```txt
-("evaluation report" OR "final report" OR "project report") "harm reduction" Australia filetype:pdf -journal -doi
+("peer-led research" OR "peer researcher" OR "participatory action research" OR "community-based participatory research") (drug use OR "harm reduction") Australia filetype:pdf
 ```
 
-### Working Papers
+### Co-Design & Co-Production
 
 ```txt
-"working paper" OR "discussion paper" ("harm reduction" OR "drug policy") Australia filetype:pdf
+("co-design" OR "co-production") ("people who use drugs" OR peer OR "lived experience") (harm reduction OR service) filetype:pdf
 ```
 
-### Theses & Dissertations
+### Social Research (CSRH)
 
 ```txt
-(thesis OR dissertation) ("harm reduction" OR "drug checking" OR "needle syringe") Australia filetype:pdf
-```
-
-### Conference Papers
-
-```txt
-("conference paper" OR "conference presentation" OR proceedings) "harm reduction" APSAD filetype:pdf
-```
-
----
-
-## 🔍 Topic-Specific Research
-
-### Drug Checking Research
-
-```txt
-site:*.edu.au "drug checking" OR "pill testing" (evaluation OR outcomes) filetype:pdf
-```
-
-### Naloxone Research
-
-```txt
-site:*.edu.au "take-home naloxone" OR "community naloxone" (evaluation OR effectiveness) filetype:pdf
-```
-
-### NSP Research
-
-```txt
-site:*.edu.au "needle syringe program" (evaluation OR "cost-effectiveness") filetype:pdf
-```
-
-### OAT Research
-
-```txt
-site:*.edu.au ("opioid agonist" OR methadone OR buprenorphine) (outcomes OR retention OR effectiveness) filetype:pdf
-```
-
-### Peer Work Research
-
-```txt
-site:*.edu.au "peer support" OR "peer worker" (effectiveness OR outcomes) "harm reduction" filetype:pdf
+site:unsw.edu.au inurl:csrh ("stigma" OR "lived experience" OR "people who use drugs" OR qualitative)
 ```
 
 ---
 
 ## 🌏 International Research
 
-### UK Research
+### UK & Canada
 
 ```txt
-site:*.ac.uk "harm reduction" (evaluation OR evidence) filetype:pdf
+(site:*.ac.uk OR site:*.ca) ("harm reduction" OR "supervised consumption" OR "safe supply") (evaluation OR evidence) filetype:pdf
 ```
 
-### Canadian Research
+### EUDA (Europe)
 
 ```txt
-site:*.ca ("safe injection" OR "supervised consumption" OR "safe supply") (evaluation OR outcomes) filetype:pdf
-```
-
-### European Research (EMCDDA)
-
-```txt
-site:emcdda.europa.eu filetype:pdf ("harm reduction" OR "drug checking")
+(site:euda.europa.eu OR site:emcdda.europa.eu) ("harm reduction" OR "drug checking" OR "European Drug Report")
 ```
 
 ### Cochrane Reviews
 
 ```txt
-site:cochranelibrary.com ("harm reduction" OR naloxone OR "needle syringe")
-```
-
----
-
-## 🛠️ Research Tools
-
-### AI Research Assistants
-
-```txt
-"harm reduction" research [Use with: Elicit, SciSpace, Consensus]
-```
-
-See [AI Tools](../tools/ai-tools.md) for research assistants.
-
-### Finding Similar Research
-
-```txt
-related:ndarc.med.unsw.edu.au
+site:cochranelibrary.com inurl:cdsr ("harm reduction" OR naloxone OR "needle syringe" OR "opioid agonist")
 ```
 
 ---
 
 ## 🔗 Related Resources
 
-- **Resource:** [Academic Access](../resources/academic-access.md)
+- **Source Intelligence:**
+  [Research, Data & Surveillance entities](../resources/source-intelligence.md#-research-data--surveillance-au)
+  — the centres, cohorts, and journals every dork above is built on
+- **Synonym Block:** [Research Terms](../05-synonym-blocks.md#-research-terms)
 - **Related Packs:** [Data & Statistics](data-statistics.md),
   [Policy & Advocacy](policy-advocacy.md)
-- **Workflow:** [Research Workflow](../workflows/research-workflow.md)
-- **Tools:** [AI Tools](../tools/ai-tools.md)
+- **Resource:** [Academic Access](../resources/academic-access.md)
 
 ---
 
