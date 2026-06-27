@@ -29,6 +29,11 @@ Find harm reduction discussions on Reddit:
 site:reddit.com "harm reduction" Australia
 ```
 
+> **Entity reference:** the named forums, subreddits, and peer-org accounts below are catalogued in
+> [Source Intelligence → Community Forums](../resources/source-intelligence.md#-community-forums--lived-experience-knowledge).
+> Peer organisations use consistent handles — **NUAA** is `@nuaansw`, **Harm Reduction Victoria** is
+> `@HRV_Aust`.
+
 ---
 
 ## 🔴 Reddit
@@ -109,10 +114,13 @@ site:reddit.com/r/addiction Australia support
 
 ## 🐦 Twitter/X
 
+> Twitter is now **x.com**, but older posts stay indexed under `twitter.com`. For best coverage use
+> `(site:x.com OR site:twitter.com)`; the examples below use `twitter.com` for brevity.
+
 ### Hashtag Research
 
 ```txt
-site:twitter.com "#harmreduction" Australia
+(site:x.com OR site:twitter.com) "#harmreduction" Australia
 ```
 
 ```txt
@@ -130,19 +138,19 @@ site:twitter.com "#peersupport" drug OR AOD
 ### Organisation Accounts - 1
 
 ```txt
-site:twitter.com from:aaborginald harm reduction
+(site:x.com OR site:twitter.com) from:nuaansw (naloxone OR "harm reduction" OR "drug alert")
 ```
 
 ### Organisation Accounts - 2
 
 ```txt
-site:twitter.com from:NUABORGINALTAA naloxone
+(site:x.com OR site:twitter.com) from:HRV_Aust ("harm reduction" OR "drug checking" OR naloxone)
 ```
 
 ### Organisation Accounts - 3
 
 ```txt
-site:twitter.com from:HRVic
+(site:x.com OR site:twitter.com) ("NUAA" OR "Harm Reduction Victoria" OR "NSW Users and AIDS Association")
 ```
 
 ---

@@ -55,6 +55,7 @@ These were chosen by the project owner. Keep to them unless told otherwise:
 | 3   | Drug-checking pack rewritten (proof-of-concept)   | `docs/dork-packs/drug-checking.md`                                          |
 | 4   | Batch 2 rewritten + reference verified/extended   | `naloxone`, `supervised-consumption`, `novel-substances`, `coroners-deaths` |
 | 5   | Batch 3 rewritten + reference verified/extended   | `drug-alerts`, `nsp`, `research`, `data-statistics`                         |
+| 6   | Batch 4 rewritten + reference verified/extended   | `oat-ost`, `international`, `peer-workforce`, `forum-community`             |
 
 - **`source-intelligence.md`** is the heart of this work: an entity → searchable-signal map. For
   each real org/service/dataset it records the `site:` target, the named publications to put in
@@ -158,11 +159,8 @@ When a pack's domain isn't yet in `source-intelligence.md`:
 
 ### Packs with reference coverage already in place (rewrite-ready)
 
-Next-batch candidates — their `source-intelligence.md` sections exist (verify flags as you go):
-
-- `forum-community.md` · `peer-workforce.md` · `international.md` · `oat-ost.md`
-- `peer-knowledge.md` is already relatively strong (it was the model for the approach) — light
-  touch.
+`peer-knowledge.md` is already relatively strong (it was the model for the approach) — light touch
+remaining.
 
 **Done (batch 2):** `naloxone`, `supervised-consumption`, `novel-substances`, `coroners-deaths` —
 rewritten peer-first against verified entities; reference layer corrected and extended (new § "Novel
@@ -173,16 +171,20 @@ entities; reference layer extended with the EWS rewrite (national **The Know** /
 Network), an NSP sub-table, a research-centres sub-table, and a new § "Datasets, Surveillance Feeds
 & Data Repositories".
 
-**Suggested next batch:** `oat-ost`, `forum-community`, `peer-workforce`, `international` —
-`oat-ost` and `international` need their reference sections built first (§4); `forum-community` and
-`peer-workforce` are largely covered by the peer/forums sections already.
+**Done (batch 4):** `oat-ost`, `international`, `peer-workforce`, `forum-community` — rewritten
+against verified entities; reference layer gained a new § "Opioid Agonist Treatment (OAT/OST)", a
+fully country-organised International section (Canada/UK/Europe/NZ), and peer-workforce frameworks +
+verified peer-org social handles. Fixed forum-community's corrupted Twitter handles.
+
+**Suggested next batch:** `policy-advocacy`, `service-directories`, `safer-use-education`,
+`festivals` — all need their reference sections built first (§4).
 
 ### Packs needing a reference section built first (§4 before §3)
 
 `festivals` · `first-nations` · `lgbtq-health` · `prisons-justice` · `rural-remote` ·
 `sex-worker-health` · `youth` · `families-carers` · `housing-homelessness` · `mental-health` ·
-`oat-ost` · `policy-advocacy` · `service-directories` · `stigma-language` · `temporal-intelligence`
-· `organizational-intelligence` · `investigative` · `document-discovery` · `multimedia-discovery` ·
+`policy-advocacy` · `service-directories` · `stigma-language` · `temporal-intelligence` ·
+`organizational-intelligence` · `investigative` · `document-discovery` · `multimedia-discovery` ·
 `safer-use-education` · `user-hosted-domains`
 
 > For `first-nations`, `sex-worker-health`, and `lgbtq-health` especially: prioritise community-
@@ -209,6 +211,17 @@ is `unsw.edu.au` (`inurl:csrh`), not a subdomain; **Matilda Centre** is
 (`ardc.edu.au` / `researchdata.edu.au`). New named entities: NASS / AODstats (ambulance), NSP NMDC
 vs ANSPS, Fitpack, "syringe dispensing machine".
 
+Resolved/corrected in batch 4: VIC OAT =
+`"Policy for maintenance pharmacotherapy for opioid dependence"` (not "Victorian pharmacotherapy");
+QLD guideline = `"Queensland Opioid Dependence Treatment Guidelines"` (program is QOTP); Biodone
+Forte sponsor is Biomed Aust (not Aspen); **Cranstoun** is `cranstoun.org` (not `.org.uk`); Portugal
+**SICAD → ICAD** (`icad.pt`); NZ needle exchange is `nznep.org.nz` (old `nzneedle.org.nz` is dead);
+NUAA handle `@nuaansw`, HRVic `@HRV_Aust` (replacing the corrupted `from:aaborginald` /
+`from:NUABORGINALTAA`). WA's **CPOP** ≠ Penington's **COPE**. New named entities: depot bupe
+(Buvidal/Sublocade), Suboxone Film, MATOD guidelines, BCCSU/Toward the Heart/CATIE/safer supply,
+Release/The Loop/Transform, ICAD/CDT, Saferparty/HeGeBe, Trimbos/DIMS, akzept/JES, NZ Drug
+Foundation/The Level/KnowYourStuffNZ, AIVL/SHARC peer frameworks.
+
 Still flagged: **ATLAS** is an Aboriginal & Torres Strait Islander STI/BBV surveillance network, not
 a PWID cohort — keep flagged for Indigenous-data-sovereignty / cultural-safety review. **NT coroner
 host** is unstable (spread across `nt.gov.au` and `agd.nt.gov.au`) — use the multi-site form.
@@ -216,6 +229,9 @@ host** is unstable (spread across `nt.gov.au` and `agd.nt.gov.au`) — use the m
 quotable signal (use `"EU Early Warning System"` + EUDA/EMCDDA filters). **WA** has no public
 drug-alert index — use a keyword fallback. **National NSP policy** has no current standalone title
 (the 2010–2014 framework is expired) — target the National Drug Strategy / BBV strategies instead.
+**ASHM** has no verifiable named OAT prescriber course — use RACGP MATOD / OTEP / state programs.
+**Crew (Scotland)** `crew.scot` still unverified. **Bluesky** handles for AU peer orgs unconfirmed —
+use org-name + `site:bsky.app`, don't guess a handle.
 
 ---
 

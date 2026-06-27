@@ -1,53 +1,64 @@
 # Peer Workforce, Lived Experience & Training
 
-> Supervision, competencies, frameworks, training, and peer-led practice resources.
+> Supervision, competencies, frameworks, and training for peer work — named by the actual framework,
+> not just by keyword.
 
 [← Back to Dork Packs](README.md) | [← Main Guide](../README.md)
 
 ---
 
-## ⚡ Quick Start
+## 👥 About This Pack
 
-Find peer worker training and framework resources:
+**This pack is written for peer workers and people with lived and living experience.** Your
+experiential knowledge is expert knowledge. The specificity here is the named frameworks: the AOD
+sector has AIVL's **"Practical National Framework"** and **"Peer Workforce Capacity Building
+Training Framework"**, Victoria's SHARC **"AOD Lived Experience Workforce Discipline Framework"**,
+and the broader **"National Lived Experience (Peer) Workforce Development Guidelines"**
+(mental-health sector). Quote those instead of hoping a generic "peer worker framework" search
+lands.
 
-```txt
-("peer worker" OR "lived experience") (training OR framework) filetype:pdf site:*.org.au -jobs
-```
+> **Entity reference:** the named frameworks and peer orgs below are catalogued in
+> [Source Intelligence → Peer & Drug-User Organisations](../resources/source-intelligence.md#-cross-cutting-peer--drug-user-organisations-au).
 
 ---
 
-## 👥 About This Pack
+## ⚡ Quick Start
 
-This pack is written specifically for **peer workers and people with lived experience**. Your
-experiential knowledge is expert knowledge. These searches help you find:
+Find the AOD-specific lived-experience workforce framework:
 
-- Peer workforce development resources
-- Supervision frameworks designed for peer work
-- Training materials created by and for peers
-- "Nothing About Us Without Us" policy resources
-- Peer wellbeing and self-care support
+```txt
+"Alcohol and Other Drug (AOD) Lived Experience Workforce Discipline Framework" OR ("Practical National Framework" "Lived-Living Experience")
+```
 
 ---
 
 ## 🟢 Basic Queries
 
-### Peer Workforce Development
+### Named AOD Peer Workforce Frameworks
 
 ```txt
-("peer worker" OR "peer support" OR "lived experience") (supervision OR framework OR competencies) filetype:pdf site:*.org.au
+(site:aivl.org.au OR site:sharc.org.au) ("Practical National Framework" OR "Peer Workforce Capacity Building Training Framework" OR "Lived Experience Workforce Discipline Framework")
 ```
 
-### Peer Worker Training
+**Why this works:**
+
+- AIVL and SHARC are the AOD sector's framework authors — naming their exact documents finds the
+  real competencies and guidance, not job ads or generic mental-health material
+
+### Peer Organisation Resources
 
 ```txt
-"peer worker" "training manual" OR "training package" filetype:pdf
+(site:nuaa.org.au OR site:aivl.org.au OR site:hrvic.org.au OR site:quihn.org) ("peer worker" OR "peer support" OR "lived experience") filetype:pdf
 ```
 
-### Lived Experience Workforce Frameworks
+### National Lived-Experience Guidelines
 
 ```txt
-("lived experience" AROUND(6) workforce) (guideline OR framework OR standard) filetype:pdf Australia
+"National Lived Experience (Peer) Workforce Development Guidelines" site:mentalhealthcommission.gov.au
 ```
+
+> Note: the NMHC guidelines are mental-health-sector; for AOD-specific guidance lead with the AIVL
+> and SHARC frameworks above.
 
 ---
 
@@ -56,25 +67,25 @@ experiential knowledge is expert knowledge. These searches help you find:
 ### Peer Supervision Models
 
 ```txt
-"peer supervision" (model OR framework OR guidelines) AOD filetype:pdf
+"peer supervision" (model OR framework OR guidelines) (AOD OR "harm reduction" OR "lived experience") filetype:pdf
 ```
 
-### Competency Frameworks
+### Competency & Capability Frameworks
 
 ```txt
-"peer worker" (competencies OR standards OR qualification) Australia filetype:pdf
+("peer worker" OR "lived experience workforce") ("competency framework" OR "capability framework" OR "practice standards" OR "discipline framework") Australia filetype:pdf
 ```
 
 ### Peer-Led Research
 
 ```txt
-"peer-led research" OR "participatory action research" drug use Australia filetype:pdf
+("peer-led research" OR "peer researcher" OR "participatory action research") (drug use OR "harm reduction") Australia filetype:pdf
 ```
 
-### Peer Organisation Resources
+### Workforce Development (NCETA)
 
 ```txt
-(site:nuaa.org.au OR site:aivl.org.au OR site:hrvic.org.au OR site:quihn.org) filetype:pdf
+site:nceta.flinders.edu.au ("peer" OR "lived experience" OR "workforce development")
 ```
 
 ---
@@ -84,100 +95,62 @@ experiential knowledge is expert knowledge. These searches help you find:
 ### Comprehensive Peer Workforce Sweep
 
 ```txt
-("peer worker" OR "peer support worker" OR "lived experience worker" OR "consumer consultant") (supervision OR training OR competencies OR framework OR "professional development") filetype:pdf (Australia OR NSW OR VIC OR QLD) -jobs -careers after:2020
+("peer worker" OR "peer support worker" OR "lived experience workforce" OR "consumer consultant") (supervision OR competencies OR framework OR "professional development") (Australia OR NSW OR VIC OR QLD) -jobs -careers filetype:pdf after:2020
 ```
 
 ### Reflective Practice & Supervision
 
 ```txt
-("reflective practice" AROUND(5) supervision) (AOD OR "alcohol and other drugs") filetype:pdf
-```
-
-### Peer Wellbeing & Self-Care
-
-```txt
-("vicarious trauma" OR "self-care" OR wellbeing) "peer worker" harm reduction filetype:pdf
+("reflective practice" AROUND(5) supervision) (AOD OR "alcohol and other drugs" OR "harm reduction") filetype:pdf
 ```
 
 ### Pay Equity & Conditions
 
 ```txt
-"peer worker" (remuneration OR "pay equity" OR conditions OR "award") filetype:pdf
+("peer worker" OR "lived experience worker") (remuneration OR "pay equity" OR award OR conditions OR "SCHADS") filetype:pdf
 ```
 
 ### Career Pathways
 
 ```txt
-"peer workforce" ("career pathway" OR "professional development" OR progression) filetype:pdf
-```
-
----
-
-## 🎓 Training-Specific Searches
-
-### Training Packages
-
-```txt
-"peer worker" training (package OR curriculum OR module) AOD filetype:pdf
-```
-
-### Train the Trainer
-
-```txt
-"peer" "train the trainer" (harm reduction OR AOD) filetype:pdf
-```
-
-### Induction Resources
-
-```txt
-"peer worker" (induction OR orientation OR onboarding) filetype:pdf
-```
-
-### Supervision Training
-
-```txt
-(supervising OR supervision) "peer worker" training filetype:pdf
+("peer workforce" OR "lived experience workforce") ("career pathway" OR "professional development" OR progression) filetype:pdf
 ```
 
 ---
 
 ## 📋 Frameworks & Standards
 
-### National/State Frameworks
+The named documents — quote distinctive fragments, since some full titles are very long.
+
+### AIVL Frameworks (AOD-Specific)
 
 ```txt
-"lived experience workforce" (strategy OR framework OR policy) Australia filetype:pdf
+site:aivl.org.au ("Practical National Framework" OR "Peer Workforce Capacity Building Training Framework" OR "Lived-Living Experience")
+```
+
+### SHARC Frameworks (Victoria)
+
+```txt
+site:sharc.org.au ("Lived Experience Workforce Discipline Framework" OR "Strategy for the Alcohol and Other Drug (AOD) Peer Workforce")
 ```
 
 ### Competency Standards
 
 ```txt
-"peer worker" ("competency framework" OR "capability framework" OR "practice standards") filetype:pdf
-```
-
-### Role Descriptions
-
-```txt
-"peer worker" OR "peer support worker" ("role description" OR "position description" OR "job description") AOD filetype:pdf
+("peer worker" OR "lived experience") ("competency" OR "capability" OR "practice standards") AOD filetype:pdf
 ```
 
 ---
 
 ## 🧠 Supervision & Support
 
-### Group Supervision
+### Group & External Supervision
 
 ```txt
-"group supervision" "peer worker" harm reduction filetype:pdf
+("group supervision" OR "external supervision") ("peer worker" OR "lived experience") (AOD OR "harm reduction") filetype:pdf
 ```
 
-### External Supervision
-
-```txt
-"external supervision" "peer worker" OR "lived experience" filetype:pdf
-```
-
-### Debriefing
+### Debriefing & Critical Incidents
 
 ```txt
 (debriefing OR "critical incident") "peer worker" support filetype:pdf
@@ -190,53 +163,35 @@ experiential knowledge is expert knowledge. These searches help you find:
 ### Peer Advocacy Resources
 
 ```txt
-"nothing about us without us" drug policy Australia filetype:pdf
-```
-
-### Lived Experience Representation
-
-```txt
-"lived experience" representation (committee OR advisory OR consultation) drug
-```
-
-### Peer Voice in Policy
-
-```txt
-"peer advocate" OR "peer advocacy" drug policy reform filetype:pdf
+"nothing about us without us" (drug OR "harm reduction" OR "peer workforce") Australia filetype:pdf
 ```
 
 ### Meaningful Participation
 
 ```txt
-"meaningful participation" OR "authentic engagement" "people who use drugs" policy filetype:pdf
+("meaningful participation" OR "authentic engagement" OR "co-design") "people who use drugs" (policy OR workforce) filetype:pdf
+```
+
+### Lived-Experience Representation
+
+```txt
+"lived experience" (representation OR "advisory" OR "reference group") (drug OR AOD) -jobs
 ```
 
 ---
 
-## 🏢 Service Models
+## 🏢 Peer-Led Service Models
 
-### Peer-Led Service Models
+### Peer-Led Programs
 
 ```txt
-"peer-led" (service OR program OR initiative) harm reduction filetype:pdf
+"peer-led" (service OR program OR initiative) ("harm reduction" OR AOD) filetype:pdf
 ```
 
-### Peer Navigation
+### Peer Distribution & Navigation
 
 ```txt
-"peer navigation" OR "peer navigator" (drug OR AOD OR "harm reduction") filetype:pdf
-```
-
-### Peer Outreach
-
-```txt
-"peer outreach" (drug OR "harm reduction" OR "needle syringe") filetype:pdf
-```
-
-### Peer Distribution Programs
-
-```txt
-"peer distribution" (naloxone OR "needle syringe" OR NSP) Australia filetype:pdf
+("peer distribution" OR "peer navigation" OR "peer outreach") (naloxone OR "needle syringe" OR NSP OR "harm reduction") Australia filetype:pdf
 ```
 
 ---
@@ -246,53 +201,45 @@ experiential knowledge is expert knowledge. These searches help you find:
 ### Effectiveness of Peer Work
 
 ```txt
-"peer support" OR "peer worker" (effectiveness OR outcomes OR evaluation) "harm reduction" filetype:pdf
+("peer support" OR "peer worker") (effectiveness OR outcomes OR evaluation) "harm reduction" filetype:pdf
 ```
 
-### Peer Work Evidence Base
+### Evidence Base
 
 ```txt
-site:*.edu.au "peer worker" OR "peer support" (evidence OR research OR evaluation) AOD filetype:pdf
-```
-
-### Co-Design & Participatory Research
-
-```txt
-"co-design" OR "co-production" ("people who use drugs" OR peer) filetype:pdf
+(site:unsw.edu.au OR site:*.edu.au) ("peer worker" OR "peer support") (evidence OR evaluation) AOD filetype:pdf
 ```
 
 ---
 
 ## 💚 Wellbeing & Self-Care
 
-### Vicarious Trauma
+The peer workforce carries disproportionate emotional load — this is essential, not optional.
+
+### Vicarious Trauma & Burnout
 
 ```txt
-"vicarious trauma" OR "secondary trauma" "peer worker" (prevention OR support OR management)
+("vicarious trauma" OR "secondary trauma" OR burnout) ("peer worker" OR "lived experience worker") (prevention OR support OR management) filetype:pdf
 ```
 
 ### Self-Care Resources
 
 ```txt
-"self-care" "peer worker" (drug OR AOD OR "harm reduction") (resource OR guide OR toolkit) filetype:pdf
-```
-
-### Burnout Prevention
-
-```txt
-burnout "peer worker" OR "lived experience worker" (prevention OR support) filetype:pdf
+"self-care" ("peer worker" OR "lived experience") (AOD OR "harm reduction") (resource OR guide OR toolkit) filetype:pdf
 ```
 
 ---
 
 ## 🔗 Related Resources
 
+- **Source Intelligence:**
+  [Peer & Drug-User Organisations](../resources/source-intelligence.md#-cross-cutting-peer--drug-user-organisations-au)
+  — the frameworks and peer orgs every dork above is built on
 - **Synonym Block:**
   [Peer/Lived Experience Terms](../05-synonym-blocks.md#-peerlived-experience-terms)
-- **Related Packs:** [Peer Knowledge](peer-knowledge.md)
-- **Workflow:** [Peer-Centered Search](../workflows/peer-centered.md)
+- **Related Packs:** [Peer Knowledge](peer-knowledge.md), [Forum & Community](forum-community.md)
 - **Key Orgs:** [AIVL](https://aivl.org.au), [NUAA](https://nuaa.org.au),
-  [HRVic](https://hrvic.org.au)
+  [SHARC](https://sharc.org.au)
 
 ---
 

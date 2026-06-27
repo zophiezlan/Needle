@@ -75,9 +75,22 @@ own publications, programs, and submissions.
 | **CAPUD**                 | `capud.ca`            | Canadian drug-user union submissions                                                                                                                         |
 | **Urban Survivors Union** | `urban-survivors.org` | US national drug-user union; `"National Urban Survivors Union"`, `"Urban Survivors Union"` (note hyphenated domain; `urbansurvivorsunion.org` is email-only) |
 
+**Peer / lived-experience workforce frameworks (named documents):**
+
+| Framework                    | `site:` target                  | Named signals                                                                                                                                                      |
+| ---------------------------- | ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **National (mental health)** | `mentalhealthcommission.gov.au` | `"National Lived Experience (Peer) Workforce Development Guidelines"` (NMHC; mental-health sector, not AOD-specific)                                               |
+| **AIVL — AOD frameworks**    | `aivl.org.au`                   | `"Practical National Framework"` + `"Lived-Living Experience of Using Drugs"`; `"Peer Workforce Capacity Building Training Framework"`                             |
+| **SHARC (VIC)**              | `sharc.org.au`                  | `"Alcohol and Other Drug (AOD) Lived Experience Workforce Discipline Framework"`; `"The Strategy for the Alcohol and Other Drug (AOD) Peer Workforce in Victoria"` |
+
+**Peer-org social handles (volatile — verify before relying):** NUAA = `@nuaansw`
+(X/Instagram/Facebook); Harm Reduction Victoria = `@HRV_Aust` (X), `@HRVAust` (Facebook). Prefer
+`from:nuaansw` / `from:HRV_Aust` on `x.com`; fall back to the org name + `site:x.com` if a handle is
+stale. No confirmed Bluesky accounts yet — don't guess a `bsky` handle.
+
 **Insider vocabulary (cross-cutting):** `"people who use drugs"` / `PWUD` / `PWID` (not "addicts"),
-`"lived and living experience"` / `"LLE"`, `"nothing about us without us"`, `"peer-led"` /
-`"user-led"`, `"experts by experience"`, `"consumer representative"`.
+`"lived and living experience"` / `"LLE"` / `"LLEW"` (workforce), `"nothing about us without us"`,
+`"peer-led"` / `"user-led"`, `"experts by experience"`, `"consumer representative"`.
 
 ---
 
@@ -206,6 +219,49 @@ delivery models: `"primary NSP"`, `"secondary NSP"`, `"pharmacy NSP"`,
 `"secondary distribution"`. Plus `"injecting-related injuries"`, `"sharps"`, `"safe disposal"`,
 `"low-threshold"`. **Don't** attribute the North Richmond MSIR reviews to Ken Lay — his review was
 the separate Melbourne CBD injecting consultation.
+
+---
+
+## 💊 Opioid Agonist Treatment (OAT/OST)
+
+Every state runs its own program under its own title, and the depot products have exact brand names
+— that specificity is what separates an insider dork from a generic "methadone guideline" search.
+
+**Australian guidelines & programs:**
+
+| Source                  | `site:` target                                      | Named signals                                                                                                                                                                                       |
+| ----------------------- | --------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **National guideline**  | `health.gov.au`                                     | `"National Guidelines for Medication-Assisted Treatment of Opioid Dependence"` (MATOD; 2014 — note the hyphen)                                                                                      |
+| **NSW**                 | `health.nsw.gov.au`                                 | `"NSW Opioid Treatment Program"` / OTP; `"NSW Clinical Guidelines: Treatment of Opioid Dependence"` (2018); depot-buprenorphine guidelines                                                          |
+| **VIC**                 | `health.vic.gov.au`                                 | `"Policy for maintenance pharmacotherapy for opioid dependence"` (**not** the generic "Victorian pharmacotherapy")                                                                                  |
+| **WA**                  | `mhc.wa.gov.au`                                     | `"Community Program for Opioid Pharmacotherapy"` / CPOP; `"Clinical Policies and Procedures for the Use of Methadone and Buprenorphine"`                                                            |
+| **QLD**                 | `health.qld.gov.au`                                 | program `"Queensland Opioid Treatment Program"` / QOTP; guideline `"Queensland Opioid Dependence Treatment Guidelines"` (2023)                                                                      |
+| **SA**                  | `sahealth.sa.gov.au`                                | `"Medication Assisted Treatment for Opioid Dependence"` / MATOD (state program; SA drops the hyphen)                                                                                                |
+| **Prescriber training** | `racgp.org.au`, `otep.org.au`, `insight.qld.edu.au` | RACGP `"Medication Assisted Treatment for Opioid Dependence"` (MATOD Modules 1–2); `"Opioid Dependence Treatment Education Program"` (OTEP, NSW); QOTP Prescriber Course; `"authorised prescriber"` |
+
+**Medications & brands (AU — quote the brand):**
+
+| Class                          | Quote-these                                                                                                | Note                                          |
+| ------------------------------ | ---------------------------------------------------------------------------------------------------------- | --------------------------------------------- |
+| **Methadone**                  | `"Biodone Forte"` (sponsor Biomed Aust), `"Aspen Methadone Syrup"` / `"Aspen Methadone Liquid"` (Aspen)    | both 5 mg/mL oral liquid                      |
+| **Buprenorphine (SL)**         | `"Suboxone Film"` (buprenorphine-naloxone soluble film; Indivior), `"Subutex"` (mono; low AU availability) | dose convention bup/naloxone, e.g. 8/2        |
+| **Depot buprenorphine (LAIB)** | `"Buvidal Weekly"` / `"Buvidal Monthly"` (Camurus), `"Sublocade"` (monthly; Indivior)                      | long-acting injectable; first LAIB in AU 2018 |
+
+**International OAT guidance:**
+
+| Body                 | `site:` target            | Named signals                                                                                              |
+| -------------------- | ------------------------- | ---------------------------------------------------------------------------------------------------------- |
+| **WHO**              | `who.int`, `iris.who.int` | `"Guidelines for the psychosocially assisted pharmacological treatment of opioid dependence"` (2009)       |
+| **UK "Orange Book"** | `gov.uk`                  | `"Drug misuse and dependence: UK guidelines on clinical management"` (2017; "Orange Book" is the nickname) |
+| **Canada BCCSU**     | `bccsu.ca`                | `"A Guideline for the Clinical Management of Opioid Use Disorder"` (2023 Update)                           |
+
+**Insider vocabulary:** `OAT` / `OST` / `ORT` / `MATOD` / `pharmacotherapy` /
+`"opioid replacement therapy"`; `"authorised prescriber"`, `"dosing point"`, `"supervised dosing"`,
+`"takeaway doses"` / `"unsupervised doses"`, `"depot buprenorphine"` / `LAIB` (long-acting
+injectable buprenorphine), `"induction"`, `"transfer"`, `"diversion"`, pharmacy `"dispensing fee"`
+(a key access barrier). Note: WA's **CPOP** (Community Program for Opioid Pharmacotherapy) is
+distinct from Penington's **COPE** overdose-training (see Naloxone) — don't confuse the two
+acronyms.
 
 ---
 
@@ -377,15 +433,62 @@ hold the practical, real-time knowledge that doesn't make it into PDFs.
 
 ## 🌏 International Reference Bodies (for the "strong international" layer)
 
+For the "strong international layer", name the country's actual agency or service — not "overseas
+examples". Each pack should pull the relevant rows.
+
+**Global bodies:**
+
 | Body                             | `site:` target                       | Named signals                                                                                                                                             |
 | -------------------------------- | ------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **EUDA** (ex-EMCDDA)             | `euda.europa.eu`, `emcdda.europa.eu` | `"European Drug Report"`, `"EU Early Warning System"`, `"Trendspotter"`, `"European Drug Alert System"` (EMCDDA renamed EUDA Jul 2024; keep both domains) |
-| **Harm Reduction International** | `hri.global`                         | `"Global State of Harm Reduction"` (flagship biennial report)                                                                                             |
 | **UNODC**                        | `unodc.org`                          | `"World Drug Report"`, `"Early Warning Advisory"` (NPS)                                                                                                   |
-| **WHO**                          | `who.int`                            | `"consolidated guidelines"`, `"key populations"`, harm reduction                                                                                          |
-| **Crew / Scotland**              | `crew.scot` ⚠ verify                 | peer drug info, Scottish drug-checking                                                                                                                    |
-| **Release** (UK)                 | `release.org.uk`                     | `"drugs and the law"`, legal helpline resources                                                                                                           |
+| **WHO**                          | `who.int`, `iris.who.int`            | `"consolidated guidelines"`, `"key populations"`, opioid-dependence + overdose guidelines                                                                 |
+| **Harm Reduction International** | `hri.global`                         | `"Global State of Harm Reduction"` (flagship biennial report)                                                                                             |
+| **INPUD**                        | `inpud.net`                          | `"Words Matter"`, `"International Network of People Who Use Drugs"`                                                                                       |
 | **NSWP** (sex work)              | `nswp.org`                           | `"Global Network of Sex Work Projects"`, briefing papers                                                                                                  |
+
+**Canada:**
+
+| Source                 | `site:` target                             | Named signals                                                                                                                                                                           |
+| ---------------------- | ------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **BCCSU**              | `bccsu.ca`                                 | `"British Columbia Centre on Substance Use"`, clinical guidelines (OUD, iOAT, supervised consumption)                                                                                   |
+| **Toward the Heart**   | `towardtheheart.com`                       | `"Take Home Naloxone"`, `"Facility Overdose Response Box"` (BCCDC harm reduction)                                                                                                       |
+| **Health Canada SCS**  | `canada.ca`, `health-infobase.canada.ca`   | `"supervised consumption sites"`, `"Status of applications"`                                                                                                                            |
+| **CATIE**              | `catie.ca`                                 | `"CATIE"`, `"Prevention in Focus"` — HIV / hep C / harm-reduction knowledge                                                                                                             |
+| **Safer supply**       | `substanceusehealth.ca`                    | `"safer supply"` / `"safe supply"`, `"Safer Opioid Supply"`, `"London InterCommunity Health Centre"`, `"Substance Use and Addictions Program"` (SUAP; federal pilot funding ended 2025) |
+| **Toronto checking**   | `drugchecking.community`, `tripproject.ca` | `"Toronto's Drug Checking Service"`, `"TRIP! Project"`                                                                                                                                  |
+| **Peer (CAPUD/VANDU)** | `capud.ca`, `vandu.org`                    | drug-user union submissions; Vancouver peer overdose response                                                                                                                           |
+
+**United Kingdom:**
+
+| Source                | `site:` target        | Named signals                                                                        |
+| --------------------- | --------------------- | ------------------------------------------------------------------------------------ |
+| **Release**           | `release.org.uk`      | `"Drugs & The Law"`, legal helpline (`ask@release.org.uk`)                           |
+| **Transform**         | `transformdrugs.org`  | `"Transform Drug Policy Foundation"`, `"Anyone's Child"`                             |
+| **The Loop**          | `wearetheloop.org`    | `"The Loop"`, `"TEST & KNOW"` — UK drug checking                                     |
+| **We Are With You**   | `wearewithyou.org.uk` | `"We Are With You"` (formerly Addaction) — service provider                          |
+| **Cranstoun**         | `cranstoun.org`       | service provider (note `.org`, **not** `.org.uk`)                                    |
+| **UK clinical guide** | `gov.uk`              | `"Drug misuse and dependence: UK guidelines on clinical management"` ("Orange Book") |
+| **WEDINOS** (Wales)   | `wedinos.wales`       | `"WEDINOS"`, `"PHILTRE"`, substance alerts                                           |
+
+**Europe:**
+
+| Source              | `site:` target                      | Named signals                                                                                                                                                              |
+| ------------------- | ----------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Portugal (ICAD)** | `icad.pt`, `sicad.pt` (legacy)      | `"Instituto para os Comportamentos Aditivos e as Dependências"` (ICAD — succeeded SICAD in 2024); CDT `"Comissões para a Dissuasão da Toxicodependência"`, `"Lei 30/2000"` |
+| **Switzerland**     | `saferparty.ch`, `bag.admin.ch`     | `"Saferparty"` / `"Drogeninformationszentrum"` (DIZ), `"Substanzwarnung"`; `"heroingestützte Behandlung"` / HeGeBe; `"Vier-Säulen-Politik"`                                |
+| **Netherlands**     | `trimbos.nl`                        | `"Trimbos-instituut"`, `"DIMS"` / `"Drugs Information and Monitoring System"`, `"Red Alert"`                                                                               |
+| **Germany**         | `akzept.eu`, `jes-bundesverband.de` | `"Drogenkonsumraum"`, `"akzept e.V."` + `"Alternativer Drogen- und Suchtbericht"`, `"JES Bundesverband"`                                                                   |
+| **Scotland**        | `crew.scot` ⚠ verify                | Crew — peer drug info, Scottish drug-checking                                                                                                                              |
+
+**New Zealand:**
+
+| Source                   | `site:` target                             | Named signals                                                                                |
+| ------------------------ | ------------------------------------------ | -------------------------------------------------------------------------------------------- |
+| **NZ Drug Foundation**   | `drugfoundation.org.nz`, `thelevel.org.nz` | `"NZ Drug Foundation"`, `"The Level"` (`"Straight up drug info"`)                            |
+| **KnowYourStuffNZ**      | `knowyourstuff.nz`                         | `"KnowYourStuffNZ"`, `"Testing Report"` (e.g. `"2024-25 Testing Report"`) — drug checking    |
+| **NZ Needle Exchange**   | `nznep.org.nz`                             | `"New Zealand Needle Exchange Programme"` / NZNEP (**not** `nzneedle.org.nz`, which is dead) |
+| **NZ drug-checking law** | `legislation.govt.nz`                      | `"Drug and Substance Checking Legislation Act 2021"`                                         |
 
 ---
 

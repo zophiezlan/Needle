@@ -6558,7 +6558,7 @@
           "title": "Search reddit.com",
           "category": "Quick Start",
           "query": "site:reddit.com \"harm reduction\" Australia",
-          "explanation": "",
+          "explanation": "> **Entity reference:** the named forums, subreddits, and peer-org accounts below are catalogued in\n> [Source Intelligence → Community Forums](../resources/source-intelligence.md#-community-forums--lived-experience-knowledge).\n> Peer organisations use consistent handles — **NUAA** is `@nuaansw`, **Harm Reduction Victoria** is\n> `@HRV_Aust`.",
           "difficulty": "beginner",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
@@ -6584,7 +6584,7 @@
           "difficulty": "advanced",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 36,
+          "sourceLine": 41,
           "operators": [
             "site"
           ],
@@ -6607,7 +6607,7 @@
           "difficulty": "advanced",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 54,
+          "sourceLine": 59,
           "operators": [
             "site"
           ],
@@ -6627,7 +6627,7 @@
           "difficulty": "advanced",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 72,
+          "sourceLine": 77,
           "operators": [
             "site"
           ],
@@ -6649,7 +6649,7 @@
           "difficulty": "advanced",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 94,
+          "sourceLine": 99,
           "operators": [
             "site"
           ],
@@ -6671,7 +6671,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 112,
+          "sourceLine": 120,
           "operators": [
             "site"
           ],
@@ -6689,36 +6689,40 @@
           "id": "forum-community-organisation-accounts-1",
           "title": "Organisation Accounts - 1",
           "category": "\udc26 Twitter/X",
-          "query": "site:twitter.com from:aaborginald harm reduction",
+          "query": "(site:x.com OR site:twitter.com) from:nuaansw (naloxone OR \"harm reduction\" OR \"drug alert\")",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 130,
+          "sourceLine": 138,
           "operators": [
             "site"
           ],
           "targetDomains": [
+            "x.com",
             "twitter.com"
           ],
           "domainCategory": "any",
           "contentType": "any",
-          "tags": []
+          "tags": [
+            "alerts"
+          ]
         },
         {
           "id": "forum-community-organisation-accounts-2",
           "title": "Organisation Accounts - 2",
           "category": "\udc26 Twitter/X",
-          "query": "site:twitter.com from:NUABORGINALTAA naloxone",
+          "query": "(site:x.com OR site:twitter.com) from:HRV_Aust (\"harm reduction\" OR \"drug checking\" OR naloxone)",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 136,
+          "sourceLine": 144,
           "operators": [
             "site"
           ],
           "targetDomains": [
+            "x.com",
             "twitter.com"
           ],
           "domainCategory": "any",
@@ -6729,16 +6733,17 @@
           "id": "forum-community-organisation-accounts-3",
           "title": "Organisation Accounts - 3",
           "category": "\udc26 Twitter/X",
-          "query": "site:twitter.com from:HRVic",
+          "query": "(site:x.com OR site:twitter.com) (\"NUAA\" OR \"Harm Reduction Victoria\" OR \"NSW Users and AIDS Association\")",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 142,
+          "sourceLine": 150,
           "operators": [
             "site"
           ],
           "targetDomains": [
+            "x.com",
             "twitter.com"
           ],
           "domainCategory": "any",
@@ -6754,7 +6759,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 152,
+          "sourceLine": 160,
           "operators": [
             "site"
           ],
@@ -6776,7 +6781,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 158,
+          "sourceLine": 166,
           "operators": [
             "site"
           ],
@@ -6798,7 +6803,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 164,
+          "sourceLine": 172,
           "operators": [
             "site"
           ],
@@ -6820,7 +6825,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 170,
+          "sourceLine": 178,
           "operators": [
             "site"
           ],
@@ -6840,7 +6845,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 176,
+          "sourceLine": 184,
           "operators": [
             "site"
           ],
@@ -6863,7 +6868,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 186,
+          "sourceLine": 194,
           "operators": [
             "inurl"
           ],
@@ -6881,7 +6886,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 192,
+          "sourceLine": 200,
           "operators": [
             "inurl"
           ],
@@ -6899,7 +6904,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 198,
+          "sourceLine": 206,
           "operators": [
             "inurl"
           ],
@@ -6919,7 +6924,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 204,
+          "sourceLine": 212,
           "operators": [
             "inurl"
           ],
@@ -6939,7 +6944,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 210,
+          "sourceLine": 218,
           "operators": [],
           "targetDomains": [],
           "domainCategory": "any",
@@ -6955,7 +6960,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 216,
+          "sourceLine": 224,
           "operators": [],
           "targetDomains": [],
           "domainCategory": "any",
@@ -6973,7 +6978,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 222,
+          "sourceLine": 230,
           "operators": [
             "inurl"
           ],
@@ -6991,7 +6996,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 228,
+          "sourceLine": 236,
           "operators": [],
           "targetDomains": [],
           "domainCategory": "any",
@@ -7007,7 +7012,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 234,
+          "sourceLine": 242,
           "operators": [],
           "targetDomains": [],
           "domainCategory": "community",
@@ -7025,7 +7030,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 240,
+          "sourceLine": 248,
           "operators": [
             "inurl"
           ],
@@ -7043,7 +7048,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 246,
+          "sourceLine": 254,
           "operators": [],
           "targetDomains": [],
           "domainCategory": "any",
@@ -7059,7 +7064,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 252,
+          "sourceLine": 260,
           "operators": [
             "inurl"
           ],
@@ -7077,7 +7082,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 258,
+          "sourceLine": 266,
           "operators": [],
           "targetDomains": [],
           "domainCategory": "community",
@@ -7093,7 +7098,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 264,
+          "sourceLine": 272,
           "operators": [
             "site"
           ],
@@ -7113,7 +7118,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 270,
+          "sourceLine": 278,
           "operators": [],
           "targetDomains": [],
           "domainCategory": "any",
@@ -7129,7 +7134,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 276,
+          "sourceLine": 284,
           "operators": [],
           "targetDomains": [],
           "domainCategory": "community",
@@ -7145,7 +7150,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 286,
+          "sourceLine": 294,
           "operators": [
             "site"
           ],
@@ -7167,7 +7172,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 292,
+          "sourceLine": 300,
           "operators": [
             "site"
           ],
@@ -7187,7 +7192,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 298,
+          "sourceLine": 306,
           "operators": [],
           "targetDomains": [],
           "domainCategory": "community",
@@ -7205,7 +7210,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 304,
+          "sourceLine": 312,
           "operators": [],
           "targetDomains": [],
           "domainCategory": "community",
@@ -7223,7 +7228,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 310,
+          "sourceLine": 318,
           "operators": [],
           "targetDomains": [],
           "domainCategory": "community",
@@ -7241,7 +7246,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 316,
+          "sourceLine": 324,
           "operators": [],
           "targetDomains": [],
           "domainCategory": "community",
@@ -7259,7 +7264,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 322,
+          "sourceLine": 330,
           "operators": [],
           "targetDomains": [],
           "domainCategory": "community",
@@ -7277,7 +7282,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 332,
+          "sourceLine": 340,
           "operators": [],
           "targetDomains": [],
           "domainCategory": "community",
@@ -7295,7 +7300,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 338,
+          "sourceLine": 346,
           "operators": [],
           "targetDomains": [],
           "domainCategory": "community",
@@ -7311,7 +7316,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 344,
+          "sourceLine": 352,
           "operators": [],
           "targetDomains": [],
           "domainCategory": "community",
@@ -7329,7 +7334,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 350,
+          "sourceLine": 358,
           "operators": [
             "site"
           ],
@@ -7351,7 +7356,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 356,
+          "sourceLine": 364,
           "operators": [],
           "targetDomains": [],
           "domainCategory": "community",
@@ -7369,7 +7374,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 366,
+          "sourceLine": 374,
           "operators": [
             "site"
           ],
@@ -7389,7 +7394,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 372,
+          "sourceLine": 380,
           "operators": [
             "site"
           ],
@@ -7412,7 +7417,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 378,
+          "sourceLine": 386,
           "operators": [
             "site"
           ],
@@ -7432,7 +7437,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 384,
+          "sourceLine": 392,
           "operators": [
             "site"
           ],
@@ -7452,7 +7457,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 390,
+          "sourceLine": 398,
           "operators": [
             "site"
           ],
@@ -7472,7 +7477,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 400,
+          "sourceLine": 408,
           "operators": [
             "site"
           ],
@@ -7494,7 +7499,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 406,
+          "sourceLine": 414,
           "operators": [
             "site"
           ],
@@ -7516,7 +7521,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 412,
+          "sourceLine": 420,
           "operators": [
             "site"
           ],
@@ -7539,7 +7544,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 418,
+          "sourceLine": 426,
           "operators": [
             "site"
           ],
@@ -7559,7 +7564,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 424,
+          "sourceLine": 432,
           "operators": [
             "site"
           ],
@@ -7579,7 +7584,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 434,
+          "sourceLine": 442,
           "operators": [
             "site"
           ],
@@ -7601,7 +7606,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 440,
+          "sourceLine": 448,
           "operators": [
             "site"
           ],
@@ -7623,7 +7628,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 446,
+          "sourceLine": 454,
           "operators": [
             "site"
           ],
@@ -7645,7 +7650,7 @@
           "difficulty": "advanced",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 456,
+          "sourceLine": 464,
           "operators": [
             "inurl"
           ],
@@ -7666,7 +7671,7 @@
           "difficulty": "advanced",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 462,
+          "sourceLine": 470,
           "operators": [
             "inurl"
           ],
@@ -7687,7 +7692,7 @@
           "difficulty": "advanced",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 468,
+          "sourceLine": 476,
           "operators": [
             "inurl"
           ],
@@ -7707,7 +7712,7 @@
           "difficulty": "advanced",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 474,
+          "sourceLine": 482,
           "operators": [
             "inurl"
           ],
@@ -7727,7 +7732,7 @@
           "difficulty": "advanced",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 480,
+          "sourceLine": 488,
           "operators": [
             "inurl"
           ],
@@ -7745,7 +7750,7 @@
           "difficulty": "advanced",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 486,
+          "sourceLine": 494,
           "operators": [
             "inurl"
           ],
@@ -7763,7 +7768,7 @@
           "difficulty": "advanced",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 492,
+          "sourceLine": 500,
           "operators": [
             "inurl"
           ],
@@ -7781,7 +7786,7 @@
           "difficulty": "advanced",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 498,
+          "sourceLine": 506,
           "operators": [
             "inurl"
           ],
@@ -7799,7 +7804,7 @@
           "difficulty": "advanced",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 504,
+          "sourceLine": 512,
           "operators": [
             "inurl"
           ],
@@ -7817,7 +7822,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 514,
+          "sourceLine": 522,
           "operators": [
             "inurl"
           ],
@@ -7837,7 +7842,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 520,
+          "sourceLine": 528,
           "operators": [
             "inurl"
           ],
@@ -7857,7 +7862,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 526,
+          "sourceLine": 534,
           "operators": [
             "inurl"
           ],
@@ -7877,7 +7882,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 532,
+          "sourceLine": 540,
           "operators": [
             "inurl",
             "after"
@@ -7898,7 +7903,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 545,
+          "sourceLine": 553,
           "operators": [],
           "targetDomains": [],
           "domainCategory": "community",
@@ -7916,7 +7921,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 551,
+          "sourceLine": 559,
           "operators": [],
           "targetDomains": [],
           "domainCategory": "community",
@@ -7932,7 +7937,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 557,
+          "sourceLine": 565,
           "operators": [
             "site"
           ],
@@ -7952,7 +7957,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 567,
+          "sourceLine": 575,
           "operators": [
             "site"
           ],
@@ -7974,7 +7979,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 573,
+          "sourceLine": 581,
           "operators": [],
           "targetDomains": [],
           "domainCategory": "community",
@@ -7992,7 +7997,7 @@
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/forum-community.md",
           "sourceType": "dork-pack",
-          "sourceLine": 579,
+          "sourceLine": 587,
           "operators": [],
           "targetDomains": [],
           "domainCategory": "community",
@@ -8692,76 +8697,13 @@
     {
       "id": "international",
       "title": "International Best Practice",
-      "description": "Comparators from key international jurisdictions for policy and practice.",
+      "description": "Comparators from key jurisdictions — named by the country's actual agency, service, and law, not",
       "dorks": [
         {
-          "id": "international-find-pdf-files",
-          "title": "Find PDF files",
+          "id": "international-search-hri-global",
+          "title": "Search hri.global",
           "category": "Quick Start",
-          "query": "(\"drug consumption room\" OR \"supervised consumption\") evaluation (Canada OR Europe) filetype:pdf",
-          "explanation": "",
-          "difficulty": "beginner",
-          "sourceFile": "dork-packs/international.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 14,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "pdf",
-          "tags": [
-            "documents"
-          ]
-        },
-        {
-          "id": "international-new-zealand-similar-context",
-          "title": "New Zealand (Similar Context)",
-          "category": "Basic Queries",
-          "query": "site:*.govt.nz \"harm reduction\" OR \"needle exchange\"",
-          "explanation": "",
-          "difficulty": "beginner",
-          "sourceFile": "dork-packs/international.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 21,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "govt.nz"
-          ],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "international-uk-policy-research",
-          "title": "UK Policy & Research",
-          "category": "Basic Queries",
-          "query": "site:*.gov.uk \"drug consumption room\" OR \"drug policy\" reform",
-          "explanation": "",
-          "difficulty": "beginner",
-          "sourceFile": "dork-packs/international.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 27,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "gov.uk"
-          ],
-          "domainCategory": "government",
-          "contentType": "any",
-          "tags": [
-            "research",
-            "policy"
-          ]
-        },
-        {
-          "id": "international-canadian-safe-supply",
-          "title": "Canadian Safe Supply",
-          "category": "Basic Queries",
-          "query": "site:*.gc.ca \"supervised consumption\" OR \"safe supply\" evaluation",
+          "query": "site:hri.global \"Global State of Harm Reduction\"",
           "explanation": "",
           "difficulty": "beginner",
           "sourceFile": "dork-packs/international.md",
@@ -8771,52 +8713,118 @@
             "site"
           ],
           "targetDomains": [
-            "gc.ca"
+            "hri.global"
+          ],
+          "domainCategory": "any",
+          "contentType": "any",
+          "tags": [
+            "international"
+          ]
+        },
+        {
+          "id": "international-global-bodies-euda-unodc-who",
+          "title": "Global Bodies (EUDA / UNODC / WHO)",
+          "category": "Basic Queries",
+          "query": "(site:euda.europa.eu OR site:unodc.org OR site:who.int) (\"European Drug Report\" OR \"World Drug Report\" OR \"harm reduction\")",
+          "explanation": "**Why this works:**\n\n- Three authoritative global sources in one query; EUDA (ex-EMCDDA) for Europe, UNODC for the World\nDrug Report, WHO for clinical guidance",
+          "difficulty": "beginner",
+          "sourceFile": "dork-packs/international.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 40,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "euda.europa.eu",
+            "unodc.org",
+            "who.int"
+          ],
+          "domainCategory": "international",
+          "contentType": "any",
+          "tags": [
+            "documents",
+            "international"
+          ]
+        },
+        {
+          "id": "international-canada-safe-safer-supply",
+          "title": "Canada Safe/Safer Supply",
+          "category": "Basic Queries",
+          "query": "(site:canada.ca OR site:bccsu.ca OR site:catie.ca) (\"safer supply\" OR \"safe supply\" OR \"supervised consumption sites\")",
+          "explanation": "",
+          "difficulty": "beginner",
+          "sourceFile": "dork-packs/international.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 51,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "canada.ca",
+            "bccsu.ca",
+            "catie.ca"
           ],
           "domainCategory": "any",
           "contentType": "any",
           "tags": []
         },
         {
-          "id": "international-european-drug-policy-emcdda",
-          "title": "European Drug Policy (EMCDDA)",
+          "id": "international-new-zealand-drug-checking",
+          "title": "New Zealand Drug Checking",
+          "category": "Basic Queries",
+          "query": "(site:drugfoundation.org.nz OR site:knowyourstuff.nz) (\"drug checking\" OR \"The Level\" OR \"Testing Report\")",
+          "explanation": "",
+          "difficulty": "beginner",
+          "sourceFile": "dork-packs/international.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 57,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "drugfoundation.org.nz",
+            "knowyourstuff.nz"
+          ],
+          "domainCategory": "ngo",
+          "contentType": "any",
+          "tags": [
+            "documents"
+          ]
+        },
+        {
+          "id": "international-drug-consumption-rooms-european-evidence",
+          "title": "Drug Consumption Rooms (European Evidence)",
           "category": "Intermediate Queries",
-          "query": "site:emcdda.europa.eu filetype:pdf \"drug checking\" OR \"harm reduction\"",
+          "query": "site:euda.europa.eu \"drug consumption rooms\"",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/international.md",
           "sourceType": "dork-pack",
-          "sourceLine": 43,
+          "sourceLine": 67,
           "operators": [
-            "site",
-            "filetype"
+            "site"
           ],
           "targetDomains": [
-            "emcdda.europa.eu"
+            "euda.europa.eu"
           ],
-          "domainCategory": "international",
-          "contentType": "pdf",
+          "domainCategory": "any",
+          "contentType": "any",
           "tags": [
-            "documents",
-            "policy"
+            "research"
           ]
         },
         {
           "id": "international-portugal-decriminalisation",
           "title": "Portugal Decriminalisation",
           "category": "Intermediate Queries",
-          "query": "site:*.pt OR \"Portugal\" \"decriminalization\" drugs (evaluation OR outcomes) 2001..2025",
-          "explanation": "",
+          "query": "(\"Comissões para a Dissuasão da Toxicodependência\" OR \"Dissuasion Commission\" OR \"Lei 30/2000\") (Portugal OR descriminalização OR decriminalisation)",
+          "explanation": "**Why this works:**\n\n- Portugal's 2001 model routes personal-use cases to the \"Dissuasion Commissions\" (CDT) under Lei\n30/2000 — naming them finds the actual mechanism, not op-eds about \"the Portugal model\"",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/international.md",
           "sourceType": "dork-pack",
-          "sourceLine": 49,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "pt"
-          ],
+          "sourceLine": 73,
+          "operators": [],
+          "targetDomains": [],
           "domainCategory": "any",
           "contentType": "any",
           "tags": []
@@ -8825,94 +8833,57 @@
           "id": "international-swiss-heroin-assisted-treatment",
           "title": "Swiss Heroin-Assisted Treatment",
           "category": "Intermediate Queries",
-          "query": "(Switzerland OR Swiss) \"heroin assisted treatment\" OR \"heroin prescription\" evaluation filetype:pdf",
+          "query": "(\"heroingestützte Behandlung\" OR HeGeBe OR \"diacetylmorphine-assisted treatment\" OR \"Vier-Säulen-Politik\") site:bag.admin.ch",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/international.md",
           "sourceType": "dork-pack",
-          "sourceLine": 55,
+          "sourceLine": 84,
           "operators": [
-            "filetype"
+            "site"
           ],
-          "targetDomains": [],
+          "targetDomains": [
+            "bag.admin.ch"
+          ],
           "domainCategory": "any",
-          "contentType": "pdf",
-          "tags": [
-            "documents"
-          ]
+          "contentType": "any",
+          "tags": []
         },
         {
-          "id": "international-netherlands-drug-policy",
-          "title": "Netherlands Drug Policy",
+          "id": "international-uk-clinical-guidance-orange-book",
+          "title": "UK Clinical Guidance (\"Orange Book\")",
           "category": "Intermediate Queries",
-          "query": "(Netherlands OR Dutch) \"drug policy\" \"harm reduction\" (coffeeshop OR cannabis OR \"tolerance policy\")",
+          "query": "\"Drug misuse and dependence: UK guidelines on clinical management\" site:gov.uk",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/international.md",
           "sourceType": "dork-pack",
-          "sourceLine": 61,
-          "operators": [],
-          "targetDomains": [],
+          "sourceLine": 90,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "gov.uk"
+          ],
           "domainCategory": "any",
           "contentType": "any",
           "tags": [
-            "policy"
+            "services"
           ]
         },
         {
-          "id": "international-comprehensive-international-sweep",
-          "title": "Comprehensive International Sweep",
+          "id": "international-comprehensive-service-model-comparison",
+          "title": "Comprehensive Service-Model Comparison",
           "category": "Advanced Queries",
-          "query": "(\"drug consumption room\" OR \"supervised consumption\" OR \"supervised injection\" OR \"safe injection\") (evaluation OR effectiveness OR outcomes) (Canada OR UK OR Europe OR Switzerland) filetype:pdf after:2018",
+          "query": "(\"drug consumption room\" OR \"supervised consumption\" OR \"heroin-assisted treatment\" OR \"safer supply\" OR \"drug checking\") (evaluation OR effectiveness OR outcomes) (Canada OR UK OR Switzerland OR Portugal OR \"New Zealand\") filetype:pdf after:2018",
           "explanation": "",
           "difficulty": "advanced",
           "sourceFile": "dork-packs/international.md",
           "sourceType": "dork-pack",
-          "sourceLine": 71,
+          "sourceLine": 100,
           "operators": [
             "filetype",
             "after"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "pdf",
-          "tags": [
-            "documents"
-          ]
-        },
-        {
-          "id": "international-international-best-practice-comparison",
-          "title": "International Best Practice Comparison",
-          "category": "Advanced Queries",
-          "query": "\"harm reduction\" (\"best practice\" OR \"gold standard\" OR model) international (comparison OR review) filetype:pdf",
-          "explanation": "",
-          "difficulty": "advanced",
-          "sourceFile": "dork-packs/international.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 77,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "international"
-          ]
-        },
-        {
-          "id": "international-drug-checking-international",
-          "title": "Drug Checking International",
-          "category": "Advanced Queries",
-          "query": "\"drug checking\" (evaluation OR service OR program) (Europe OR UK OR \"New Zealand\" OR Canada) filetype:pdf",
-          "explanation": "",
-          "difficulty": "advanced",
-          "sourceFile": "dork-packs/international.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 83,
-          "operators": [
-            "filetype"
           ],
           "targetDomains": [],
           "domainCategory": "any",
@@ -8923,61 +8894,62 @@
           ]
         },
         {
-          "id": "international-canada-1",
-          "title": "Canada - 1",
-          "category": "\udf0d By Country/Region",
-          "query": "site:*.gc.ca \"supervised consumption\" OR \"safe injection\" evaluation filetype:pdf",
+          "id": "international-decriminalisation-regulation-models",
+          "title": "Decriminalisation & Regulation Models",
+          "category": "Advanced Queries",
+          "query": "(decriminalisation OR \"legal regulation\" OR \"policy reform\") (Portugal OR \"British Columbia\" OR \"drug policy\") (evaluation OR lessons OR outcomes) filetype:pdf",
+          "explanation": "",
+          "difficulty": "advanced",
+          "sourceFile": "dork-packs/international.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 106,
+          "operators": [
+            "filetype"
+          ],
+          "targetDomains": [],
+          "domainCategory": "any",
+          "contentType": "pdf",
+          "tags": [
+            "documents",
+            "policy"
+          ]
+        },
+        {
+          "id": "international-drug-checking-internationally",
+          "title": "Drug Checking Internationally",
+          "category": "Advanced Queries",
+          "query": "(\"drug checking\" OR \"drug-checking service\") (site:wearetheloop.org OR site:knowyourstuff.nz OR site:saferparty.ch OR site:trimbos.nl OR site:drugchecking.community)",
+          "explanation": "",
+          "difficulty": "advanced",
+          "sourceFile": "dork-packs/international.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 112,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "wearetheloop.org",
+            "knowyourstuff.nz",
+            "saferparty.ch",
+            "trimbos.nl",
+            "drugchecking.community"
+          ],
+          "domainCategory": "community",
+          "contentType": "any",
+          "tags": [
+            "services"
+          ]
+        },
+        {
+          "id": "international-bc-centre-on-substance-use-bccsu",
+          "title": "BC Centre on Substance Use (BCCSU)",
+          "category": "\udf41 Canada",
+          "query": "site:bccsu.ca (\"clinical guidance\" OR \"provincial guideline\" OR \"Opioid Use Disorder\" OR \"supervised consumption\") filetype:pdf",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/international.md",
           "sourceType": "dork-pack",
-          "sourceLine": 93,
-          "operators": [
-            "site",
-            "filetype"
-          ],
-          "targetDomains": [
-            "gc.ca"
-          ],
-          "domainCategory": "any",
-          "contentType": "pdf",
-          "tags": [
-            "documents"
-          ]
-        },
-        {
-          "id": "international-canada-2",
-          "title": "Canada - 2",
-          "category": "\udf0d By Country/Region",
-          "query": "site:*.gc.ca \"safe supply\" OR \"safer supply\" (opioid OR prescription) filetype:pdf",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/international.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 99,
-          "operators": [
-            "site",
-            "filetype"
-          ],
-          "targetDomains": [
-            "gc.ca"
-          ],
-          "domainCategory": "any",
-          "contentType": "pdf",
-          "tags": [
-            "documents"
-          ]
-        },
-        {
-          "id": "international-canada-3",
-          "title": "Canada - 3",
-          "category": "\udf0d By Country/Region",
-          "query": "site:bccsu.ca filetype:pdf (guidelines OR protocol)",
-          "explanation": "**Key Canadian Resources:**\n\n- BC Centre on Substance Use (BCCSU)\n- Health Canada supervised consumption\n- Safe supply programs",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/international.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 105,
+          "sourceLine": 124,
           "operators": [
             "site",
             "filetype"
@@ -8988,586 +8960,380 @@
           "domainCategory": "any",
           "contentType": "pdf",
           "tags": [
-            "documents"
-          ]
-        },
-        {
-          "id": "international-united-kingdom-1",
-          "title": "United Kingdom - 1",
-          "category": "\udf0d By Country/Region",
-          "query": "site:*.gov.uk \"drug consumption room\" OR \"drug policy\" filetype:pdf",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/international.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 117,
-          "operators": [
-            "site",
-            "filetype"
-          ],
-          "targetDomains": [
-            "gov.uk"
-          ],
-          "domainCategory": "government",
-          "contentType": "pdf",
-          "tags": [
             "documents",
-            "policy"
+            "services"
           ]
         },
         {
-          "id": "international-united-kingdom-2",
-          "title": "United Kingdom - 2",
-          "category": "\udf0d By Country/Region",
-          "query": "site:*.gov.uk \"naloxone\" OR \"take-home naloxone\" program",
+          "id": "international-toward-the-heart-bc-naloxone",
+          "title": "Toward the Heart (BC Naloxone)",
+          "category": "\udf41 Canada",
+          "query": "site:towardtheheart.com (\"Take Home Naloxone\" OR \"Facility Overdose Response Box\" OR \"overdose prevention\")",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/international.md",
           "sourceType": "dork-pack",
-          "sourceLine": 123,
+          "sourceLine": 130,
           "operators": [
             "site"
           ],
           "targetDomains": [
-            "gov.uk"
+            "towardtheheart.com"
           ],
-          "domainCategory": "government",
+          "domainCategory": "any",
+          "contentType": "any",
+          "tags": []
+        },
+        {
+          "id": "international-safer-opioid-supply",
+          "title": "Safer Opioid Supply",
+          "category": "\udf41 Canada",
+          "query": "(\"safer supply\" OR \"Safer Opioid Supply\") (\"London InterCommunity Health Centre\" OR \"Substance Use and Addictions Program\" OR SUAP OR \"prescribed alternatives\")",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/international.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 136,
+          "operators": [],
+          "targetDomains": [],
+          "domainCategory": "community",
           "contentType": "any",
           "tags": [
             "services"
           ]
         },
         {
-          "id": "international-united-kingdom-3",
-          "title": "United Kingdom - 3",
-          "category": "\udf0d By Country/Region",
-          "query": "site:release.org.uk filetype:pdf",
+          "id": "international-health-canada-supervised-consumption-sites",
+          "title": "Health Canada Supervised Consumption Sites",
+          "category": "\udf41 Canada",
+          "query": "site:canada.ca \"supervised consumption sites\" (\"status of applications\" OR \"list of\")",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/international.md",
           "sourceType": "dork-pack",
-          "sourceLine": 129,
+          "sourceLine": 142,
           "operators": [
-            "site",
-            "filetype"
+            "site"
+          ],
+          "targetDomains": [
+            "canada.ca"
+          ],
+          "domainCategory": "any",
+          "contentType": "any",
+          "tags": []
+        },
+        {
+          "id": "international-catie-toronto-drug-checking",
+          "title": "CATIE & Toronto Drug Checking",
+          "category": "\udf41 Canada",
+          "query": "(site:catie.ca OR site:drugchecking.community OR site:tripproject.ca) (\"harm reduction\" OR \"drug checking\" OR \"Prevention in Focus\")",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/international.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 148,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "catie.ca",
+            "drugchecking.community",
+            "tripproject.ca"
+          ],
+          "domainCategory": "community",
+          "contentType": "any",
+          "tags": []
+        },
+        {
+          "id": "international-release-drugs-the-law",
+          "title": "Release (Drugs & The Law)",
+          "category": "\uddec\udde7 United Kingdom",
+          "query": "site:release.org.uk (\"Drugs & The Law\" OR helpline OR \"legal advice\")",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/international.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 158,
+          "operators": [
+            "site"
           ],
           "targetDomains": [
             "release.org.uk"
           ],
           "domainCategory": "ngo",
-          "contentType": "pdf",
-          "tags": [
-            "documents"
-          ]
+          "contentType": "any",
+          "tags": []
         },
         {
-          "id": "international-europe-emcdda-1",
-          "title": "Europe (EMCDDA) - 1",
-          "category": "\udf0d By Country/Region",
-          "query": "site:emcdda.europa.eu filetype:pdf",
+          "id": "international-the-loop-drug-checking",
+          "title": "The Loop (Drug Checking)",
+          "category": "\uddec\udde7 United Kingdom",
+          "query": "site:wearetheloop.org (\"TEST & KNOW\" OR \"drug checking\" OR alert)",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/international.md",
           "sourceType": "dork-pack",
-          "sourceLine": 135,
-          "operators": [
-            "site",
-            "filetype"
-          ],
-          "targetDomains": [
-            "emcdda.europa.eu"
-          ],
-          "domainCategory": "international",
-          "contentType": "pdf",
-          "tags": [
-            "documents"
-          ]
-        },
-        {
-          "id": "international-europe-emcdda-2",
-          "title": "Europe (EMCDDA) - 2",
-          "category": "\udf0d By Country/Region",
-          "query": "site:emcdda.europa.eu \"drug checking\" OR \"harm reduction\" OR \"treatment\"",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/international.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 141,
+          "sourceLine": 164,
           "operators": [
             "site"
           ],
           "targetDomains": [
-            "emcdda.europa.eu"
+            "wearetheloop.org"
           ],
-          "domainCategory": "international",
+          "domainCategory": "any",
           "contentType": "any",
-          "tags": []
+          "tags": [
+            "alerts"
+          ]
         },
         {
-          "id": "international-portugal-1",
-          "title": "Portugal - 1",
-          "category": "\udf0d By Country/Region",
-          "query": "\"Portugal\" \"decriminalization\" OR \"decriminalisation\" (drugs OR drug policy) (evaluation OR model OR lessons) filetype:pdf",
+          "id": "international-transform-drug-policy-foundation",
+          "title": "Transform Drug Policy Foundation",
+          "category": "\uddec\udde7 United Kingdom",
+          "query": "site:transformdrugs.org (\"Anyone's Child\" OR \"legal regulation\" OR publications)",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/international.md",
           "sourceType": "dork-pack",
-          "sourceLine": 147,
+          "sourceLine": 170,
           "operators": [
-            "filetype"
+            "site"
           ],
-          "targetDomains": [],
+          "targetDomains": [
+            "transformdrugs.org"
+          ],
           "domainCategory": "any",
-          "contentType": "pdf",
+          "contentType": "any",
           "tags": [
-            "documents",
             "policy"
           ]
         },
         {
-          "id": "international-portugal-2",
-          "title": "Portugal - 2",
-          "category": "\udf0d By Country/Region",
-          "query": "\"Dissuasion Commission\" Portugal drug",
+          "id": "international-service-providers-with-you-cranstoun",
+          "title": "Service Providers (With You / Cranstoun)",
+          "category": "\uddec\udde7 United Kingdom",
+          "query": "(site:wearewithyou.org.uk OR site:cranstoun.org) (\"harm reduction\" OR \"needle\" OR \"naloxone\" OR services)",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/international.md",
           "sourceType": "dork-pack",
-          "sourceLine": 153,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "international-switzerland-1",
-          "title": "Switzerland - 1",
-          "category": "\udf0d By Country/Region",
-          "query": "(Switzerland OR Swiss) (\"heroin assisted treatment\" OR HAT OR \"heroin prescription\") (evaluation OR outcomes) filetype:pdf",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/international.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 159,
+          "sourceLine": 176,
           "operators": [
-            "filetype"
+            "site"
           ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "pdf",
-          "tags": [
-            "documents"
-          ]
-        },
-        {
-          "id": "international-switzerland-2",
-          "title": "Switzerland - 2",
-          "category": "\udf0d By Country/Region",
-          "query": "(Switzerland OR Swiss) \"drug consumption room\" OR \"injection room\"",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/international.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 165,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "international-netherlands-1",
-          "title": "Netherlands - 1",
-          "category": "\udf0d By Country/Region",
-          "query": "(Netherlands OR Dutch) \"drug policy\" (coffeeshop OR cannabis OR \"harm reduction\") filetype:pdf",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/international.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 171,
-          "operators": [
-            "filetype"
+          "targetDomains": [
+            "wearewithyou.org.uk",
+            "cranstoun.org"
           ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "policy"
-          ]
-        },
-        {
-          "id": "international-netherlands-2",
-          "title": "Netherlands - 2",
-          "category": "\udf0d By Country/Region",
-          "query": "(Netherlands OR Dutch) \"drug checking\" OR \"pill testing\" (evaluation OR service)",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/international.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 177,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
+          "domainCategory": "ngo",
           "contentType": "any",
           "tags": [
             "services"
           ]
         },
         {
-          "id": "international-germany",
-          "title": "Germany",
-          "category": "\udf0d By Country/Region",
-          "query": "(Germany OR German) \"drug consumption room\" OR \"harm reduction\" policy filetype:pdf",
-          "explanation": "",
+          "id": "international-portugal-icad",
+          "title": "Portugal (ICAD)",
+          "category": "\uddea\uddfa Europe",
+          "query": "(site:icad.pt OR site:sicad.pt OR \"Instituto para os Comportamentos Aditivos e as Dependências\") (\"redução de riscos\" OR dissuasão OR \"harm reduction\")",
+          "explanation": "> Note: Portugal's agency became **ICAD** in 2024 (was SICAD). Use `icad.pt` first; `sicad.pt` is\n> the legacy host where older material and the Dissuasion-Commission pages still live.",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/international.md",
           "sourceType": "dork-pack",
-          "sourceLine": 183,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "policy"
-          ]
-        },
-        {
-          "id": "international-new-zealand-1",
-          "title": "New Zealand - 1",
-          "category": "\udf0d By Country/Region",
-          "query": "site:*.govt.nz \"needle exchange\" OR \"drug checking\" OR \"harm reduction\"",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/international.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 189,
+          "sourceLine": 186,
           "operators": [
             "site"
           ],
           "targetDomains": [
-            "govt.nz"
+            "icad.pt",
+            "sicad.pt"
           ],
           "domainCategory": "any",
           "contentType": "any",
           "tags": []
         },
         {
-          "id": "international-new-zealand-2",
-          "title": "New Zealand - 2",
-          "category": "\udf0d By Country/Region",
-          "query": "\"New Zealand\" \"drug checking\" OR \"pill testing\" (legislation OR implementation)",
+          "id": "international-switzerland-saferparty-zurich-diz",
+          "title": "Switzerland (Saferparty / Zurich DIZ)",
+          "category": "\uddea\uddfa Europe",
+          "query": "site:saferparty.ch (\"Substanzwarnung\" OR \"Drogeninformationszentrum\" OR \"drug checking\")",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/international.md",
           "sourceType": "dork-pack",
           "sourceLine": 195,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "government",
-          "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "international-who-world-health-organization",
-          "title": "WHO (World Health Organization)",
-          "category": "International Bodies",
-          "query": "site:who.int \"harm reduction\" OR \"needle syringe\" OR \"opioid agonist\" guidelines filetype:pdf",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/international.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 205,
           "operators": [
-            "site",
-            "filetype"
+            "site"
           ],
           "targetDomains": [
-            "who.int"
+            "saferparty.ch"
           ],
-          "domainCategory": "international",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "international"
-          ]
-        },
-        {
-          "id": "international-unodc",
-          "title": "UNODC",
-          "category": "International Bodies",
-          "query": "site:unodc.org \"harm reduction\" guidelines OR standards filetype:pdf",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/international.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 211,
-          "operators": [
-            "site",
-            "filetype"
-          ],
-          "targetDomains": [
-            "unodc.org"
-          ],
-          "domainCategory": "international",
-          "contentType": "pdf",
-          "tags": [
-            "documents"
-          ]
-        },
-        {
-          "id": "international-emcdda-european-monitoring",
-          "title": "EMCDDA (European Monitoring)",
-          "category": "International Bodies",
-          "query": "site:emcdda.europa.eu (\"best practice\" OR guidelines OR standards) filetype:pdf",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/international.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 217,
-          "operators": [
-            "site",
-            "filetype"
-          ],
-          "targetDomains": [
-            "emcdda.europa.eu"
-          ],
-          "domainCategory": "international",
-          "contentType": "pdf",
-          "tags": [
-            "documents"
-          ]
-        },
-        {
-          "id": "international-harm-reduction-international",
-          "title": "Harm Reduction International",
-          "category": "International Bodies",
-          "query": "site:hri.global \"global state of harm reduction\" OR report filetype:pdf",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/international.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 223,
-          "operators": [
-            "site",
-            "filetype"
-          ],
-          "targetDomains": [
-            "hri.global"
-          ],
-          "domainCategory": "any",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "international"
-          ]
-        },
-        {
-          "id": "international-inpud-1",
-          "title": "INPUD - 1",
-          "category": "\udc65 International Peer Networks",
-          "query": "site:inpud.net filetype:pdf",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/international.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 233,
-          "operators": [
-            "site",
-            "filetype"
-          ],
-          "targetDomains": [
-            "inpud.net"
-          ],
-          "domainCategory": "any",
-          "contentType": "pdf",
-          "tags": [
-            "documents"
-          ]
-        },
-        {
-          "id": "international-inpud-2",
-          "title": "INPUD - 2",
-          "category": "\udc65 International Peer Networks",
-          "query": "\"International Network of People Who Use Drugs\" (statement OR resources)",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/international.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 239,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "international"
-          ]
-        },
-        {
-          "id": "international-regional-networks-1",
-          "title": "Regional Networks - 1",
-          "category": "\udc65 International Peer Networks",
-          "query": "\"European Network of People Who Use Drugs\" (EuroNPUD OR ENPUD)",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/international.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 245,
-          "operators": [],
-          "targetDomains": [],
           "domainCategory": "any",
           "contentType": "any",
           "tags": []
         },
         {
-          "id": "international-regional-networks-2",
-          "title": "Regional Networks - 2",
-          "category": "\udc65 International Peer Networks",
-          "query": "\"Canadian Association of People Who Use Drugs\" (CAPUD)",
+          "id": "international-netherlands-trimbos-dims",
+          "title": "Netherlands (Trimbos / DIMS)",
+          "category": "\uddea\uddfa Europe",
+          "query": "site:trimbos.nl (DIMS OR \"Drugs Information and Monitoring System\" OR \"Red Alert\" OR \"drug checking\")",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/international.md",
           "sourceType": "dork-pack",
-          "sourceLine": 251,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "international-regional-networks-3",
-          "title": "Regional Networks - 3",
-          "category": "\udc65 International Peer Networks",
-          "query": "\"Asian Network of People Who Use Drugs\" (ANPUD)",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/international.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 257,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "international-drug-consumption-rooms",
-          "title": "Drug Consumption Rooms",
-          "category": "\udfe5 Service Model Comparisons",
-          "query": "(\"drug consumption room\" OR \"supervised injection\" OR \"supervised consumption\" OR \"safe injection facility\") (evaluation OR review OR comparison) international filetype:pdf",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/international.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 267,
+          "sourceLine": 201,
           "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "international"
-          ]
-        },
-        {
-          "id": "international-heroin-assisted-treatment",
-          "title": "Heroin-Assisted Treatment",
-          "category": "\udfe5 Service Model Comparisons",
-          "query": "\"heroin assisted treatment\" OR \"heroin prescription\" (evaluation OR outcomes OR comparison) (Switzerland OR UK OR Canada OR Germany)",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/international.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 273,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "international-safe-supply-programs",
-          "title": "Safe Supply Programs",
-          "category": "\udfe5 Service Model Comparisons",
-          "query": "\"safe supply\" OR \"safer supply\" (opioid OR prescription) (Canada OR \"British Columbia\") evaluation filetype:pdf",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/international.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 279,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "services"
-          ]
-        },
-        {
-          "id": "international-drug-checking-services",
-          "title": "Drug Checking Services",
-          "category": "\udfe5 Service Model Comparisons",
-          "query": "\"drug checking\" service (Europe OR UK OR \"New Zealand\") (evaluation OR model OR implementation) filetype:pdf",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/international.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 285,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "services"
-          ]
-        },
-        {
-          "id": "international-emcdda-data",
-          "title": "EMCDDA Data",
-          "category": "International Data & Statistics",
-          "query": "site:emcdda.europa.eu (statistics OR data OR \"statistical bulletin\") filetype:pdf",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/international.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 295,
-          "operators": [
-            "site",
-            "filetype"
+            "site"
           ],
           "targetDomains": [
-            "emcdda.europa.eu"
+            "trimbos.nl"
           ],
-          "domainCategory": "international",
-          "contentType": "pdf",
+          "domainCategory": "any",
+          "contentType": "any",
+          "tags": [
+            "alerts"
+          ]
+        },
+        {
+          "id": "international-germany-akzept-jes-dcrs",
+          "title": "Germany (akzept / JES / DCRs)",
+          "category": "\uddea\uddfa Europe",
+          "query": "(\"Drogenkonsumraum\" OR \"Alternativer Drogen- und Suchtbericht\") (site:akzept.eu OR site:jes-bundesverband.de)",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/international.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 207,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "akzept.eu",
+            "jes-bundesverband.de"
+          ],
+          "domainCategory": "any",
+          "contentType": "any",
+          "tags": []
+        },
+        {
+          "id": "international-nz-drug-foundation-the-level",
+          "title": "NZ Drug Foundation & The Level",
+          "category": "\uddf3\uddff Aotearoa New Zealand",
+          "query": "(site:drugfoundation.org.nz OR site:thelevel.org.nz) (\"harm reduction\" OR \"drug checking\" OR \"The Level\")",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/international.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 219,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "drugfoundation.org.nz",
+            "thelevel.org.nz"
+          ],
+          "domainCategory": "ngo",
+          "contentType": "any",
+          "tags": []
+        },
+        {
+          "id": "international-knowyourstuffnz-drug-checking-data",
+          "title": "KnowYourStuffNZ (Drug Checking Data)",
+          "category": "\uddf3\uddff Aotearoa New Zealand",
+          "query": "site:knowyourstuff.nz (\"Testing Report\" OR \"drug checking\" OR results)",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/international.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 225,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "knowyourstuff.nz"
+          ],
+          "domainCategory": "any",
+          "contentType": "any",
           "tags": [
             "documents",
             "data"
           ]
         },
         {
+          "id": "international-nz-needle-exchange-drug-checking-law",
+          "title": "NZ Needle Exchange & Drug-Checking Law",
+          "category": "\uddf3\uddff Aotearoa New Zealand",
+          "query": "(site:nznep.org.nz OR \"New Zealand Needle Exchange Programme\" OR \"Drug and Substance Checking Legislation Act 2021\")",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/international.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 231,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "nznep.org.nz"
+          ],
+          "domainCategory": "government",
+          "contentType": "any",
+          "tags": [
+            "services"
+          ]
+        },
+        {
+          "id": "international-inpud-euronpud",
+          "title": "INPUD & EuroNPUD",
+          "category": "\udc65 International Peer Networks",
+          "query": "(site:inpud.net OR site:euronpud.net) (\"Words Matter\" OR \"European Diaries\" OR \"people who use drugs\")",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/international.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 243,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "inpud.net",
+            "euronpud.net"
+          ],
+          "domainCategory": "any",
+          "contentType": "any",
+          "tags": []
+        },
+        {
+          "id": "international-regional-drug-user-unions",
+          "title": "Regional Drug-User Unions",
+          "category": "\udc65 International Peer Networks",
+          "query": "(site:capud.ca OR site:vandu.org OR site:urban-survivors.org) (\"harm reduction\" OR naloxone OR \"drug user union\")",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/international.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 249,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "capud.ca",
+            "vandu.org",
+            "urban-survivors.org"
+          ],
+          "domainCategory": "any",
+          "contentType": "any",
+          "tags": []
+        },
+        {
           "id": "international-un-world-drug-report",
           "title": "UN World Drug Report",
-          "category": "International Data & Statistics",
+          "category": "Global Bodies & Data",
           "query": "site:unodc.org \"World Drug Report\" filetype:pdf",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/international.md",
           "sourceType": "dork-pack",
-          "sourceLine": 301,
+          "sourceLine": 259,
           "operators": [
             "site",
             "filetype"
@@ -9582,15 +9348,61 @@
           ]
         },
         {
-          "id": "international-global-state-of-harm-reduction",
-          "title": "Global State of Harm Reduction",
-          "category": "International Data & Statistics",
-          "query": "site:hri.global \"global state\" filetype:pdf",
+          "id": "international-euda-european-drug-report",
+          "title": "EUDA European Drug Report",
+          "category": "Global Bodies & Data",
+          "query": "(site:euda.europa.eu OR site:emcdda.europa.eu) \"European Drug Report\"",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/international.md",
           "sourceType": "dork-pack",
-          "sourceLine": 307,
+          "sourceLine": 265,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "euda.europa.eu",
+            "emcdda.europa.eu"
+          ],
+          "domainCategory": "international",
+          "contentType": "any",
+          "tags": [
+            "documents"
+          ]
+        },
+        {
+          "id": "international-who-guidelines",
+          "title": "WHO Guidelines",
+          "category": "Global Bodies & Data",
+          "query": "(site:who.int OR site:iris.who.int) (\"harm reduction\" OR \"opioid dependence\" OR \"key populations\") guidelines",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/international.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 271,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "who.int",
+            "iris.who.int"
+          ],
+          "domainCategory": "international",
+          "contentType": "any",
+          "tags": [
+            "international"
+          ]
+        },
+        {
+          "id": "international-harm-reduction-international",
+          "title": "Harm Reduction International",
+          "category": "Global Bodies & Data",
+          "query": "site:hri.global \"Global State of Harm Reduction\" filetype:pdf",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/international.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 277,
           "operators": [
             "site",
             "filetype"
@@ -9606,34 +9418,15 @@
           ]
         },
         {
-          "id": "international-policy-transfer",
-          "title": "Policy Transfer",
+          "id": "international-policy-transfer-learning",
+          "title": "Policy Transfer & Learning",
           "category": "Lessons for Australia",
-          "query": "(\"policy transfer\" OR \"policy learning\" OR \"lessons from\") (Portugal OR Canada OR Switzerland) \"drug policy\" Australia",
+          "query": "(\"policy transfer\" OR \"lessons from\" OR \"what works\") (Portugal OR Canada OR Switzerland OR \"New Zealand\") (\"drug policy\" OR \"harm reduction\") Australia filetype:pdf",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/international.md",
           "sourceType": "dork-pack",
-          "sourceLine": 317,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "policy",
-            "australia"
-          ]
-        },
-        {
-          "id": "international-international-comparisons-australian-context",
-          "title": "International Comparisons (Australian Context)",
-          "category": "Lessons for Australia",
-          "query": "Australia (\"international comparison\" OR \"compared to\" OR \"lessons from\") \"drug policy\" OR \"harm reduction\" filetype:pdf",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/international.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 323,
+          "sourceLine": 287,
           "operators": [
             "filetype"
           ],
@@ -9643,30 +9436,29 @@
           "tags": [
             "documents",
             "policy",
+            "australia"
+          ]
+        },
+        {
+          "id": "international-international-comparison-australian-context",
+          "title": "International Comparison (Australian Context)",
+          "category": "Lessons for Australia",
+          "query": "Australia (\"international comparison\" OR \"compared to\" OR \"lessons from\") (\"harm reduction\" OR \"drug checking\" OR \"supervised injecting\") filetype:pdf",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/international.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 293,
+          "operators": [
+            "filetype"
+          ],
+          "targetDomains": [],
+          "domainCategory": "any",
+          "contentType": "pdf",
+          "tags": [
+            "documents",
             "international",
             "australia"
-          ]
-        },
-        {
-          "id": "international-what-works-elsewhere",
-          "title": "What Works Elsewhere",
-          "category": "Lessons for Australia",
-          "query": "(\"what works\" OR \"best practice\" OR \"evidence-based\") \"harm reduction\" international review filetype:pdf",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/international.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 329,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "research",
-            "international"
           ]
         }
       ],
@@ -14833,201 +14625,179 @@
     {
       "id": "oat-ost",
       "title": "Opioid Agonist Treatment (OAT/OST)",
-      "description": "Guidelines, clinical tools, access policies, and research for opioid pharmacotherapy.",
+      "description": "Find the guidelines, clinical tools, access policies, and products behind opioid pharmacotherapy —",
       "dorks": [
         {
           "id": "oat-ost-search-health-gov-au",
-          "title": "Search health.*.gov.au",
+          "title": "Search health.gov.au",
           "category": "Quick Start",
-          "query": "site:*.health.*.gov.au filetype:pdf (\"opioid agonist\" OR methadone OR buprenorphine) guideline",
+          "query": "\"National Guidelines for Medication-Assisted Treatment of Opioid Dependence\" site:health.gov.au",
           "explanation": "",
           "difficulty": "beginner",
           "sourceFile": "dork-packs/oat-ost.md",
           "sourceType": "dork-pack",
-          "sourceLine": 14,
+          "sourceLine": 32,
           "operators": [
-            "site",
-            "filetype"
+            "site"
           ],
           "targetDomains": [
-            "health.*.gov.au"
+            "health.gov.au"
           ],
           "domainCategory": "government",
-          "contentType": "pdf",
+          "contentType": "any",
           "tags": [
-            "documents",
             "australia"
           ]
         },
         {
-          "id": "oat-ost-government-treatment-guidelines",
-          "title": "Government Treatment Guidelines",
+          "id": "oat-ost-national-matod-guidelines",
+          "title": "National MATOD Guidelines",
           "category": "Basic Queries",
-          "query": "site:*.health.*.gov.au filetype:pdf (\"opioid agonist\" OR \"opioid treatment program\") (guideline OR policy OR protocol)",
+          "query": "(\"National Guidelines for Medication-Assisted Treatment of Opioid Dependence\" OR MATOD) site:health.gov.au",
+          "explanation": "**Why this works:**\n\n- Goes to the exact national framework rather than guessing `*.gov.au` — note the hyphen in\n\"Medication-Assisted\" and that the document dates from 2014 (states issue the operational detail)",
+          "difficulty": "beginner",
+          "sourceFile": "dork-packs/oat-ost.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 39,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "health.gov.au"
+          ],
+          "domainCategory": "government",
+          "contentType": "any",
+          "tags": [
+            "australia"
+          ]
+        },
+        {
+          "id": "oat-ost-peer-consumer-perspectives-on-oat",
+          "title": "Peer & Consumer Perspectives on OAT",
+          "category": "Basic Queries",
+          "query": "(site:nuaa.org.au OR site:aivl.org.au OR site:hrvic.org.au) (methadone OR buprenorphine OR \"opioid treatment\" OR pharmacotherapy)",
+          "explanation": "**Why this works:**\n\n- Peer orgs document the access and dignity issues — supervised dosing, takeaways, dispensing fees —\nthat clinical guidelines gloss over; this is the by-and-with-consumers side",
+          "difficulty": "beginner",
+          "sourceFile": "dork-packs/oat-ost.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 50,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "nuaa.org.au",
+            "aivl.org.au",
+            "hrvic.org.au"
+          ],
+          "domainCategory": "ngo",
+          "contentType": "any",
+          "tags": [
+            "peer",
+            "australia"
+          ]
+        },
+        {
+          "id": "oat-ost-state-treatment-guidelines",
+          "title": "State Treatment Guidelines",
+          "category": "Basic Queries",
+          "query": "(site:health.nsw.gov.au OR site:health.vic.gov.au OR site:mhc.wa.gov.au) (\"opioid treatment\" OR pharmacotherapy OR methadone OR buprenorphine) (guideline OR policy)",
           "explanation": "",
           "difficulty": "beginner",
           "sourceFile": "dork-packs/oat-ost.md",
           "sourceType": "dork-pack",
-          "sourceLine": 21,
+          "sourceLine": 61,
           "operators": [
-            "site",
-            "filetype"
+            "site"
           ],
           "targetDomains": [
-            "health.*.gov.au"
+            "health.nsw.gov.au",
+            "health.vic.gov.au",
+            "mhc.wa.gov.au"
           ],
           "domainCategory": "government",
-          "contentType": "pdf",
+          "contentType": "any",
           "tags": [
-            "documents",
             "policy",
-            "services",
             "australia"
           ]
         },
         {
-          "id": "oat-ost-methadone-specific",
-          "title": "Methadone-Specific",
-          "category": "Basic Queries",
-          "query": "site:*.gov.au filetype:pdf methadone (guideline OR program OR prescribing)",
-          "explanation": "",
-          "difficulty": "beginner",
-          "sourceFile": "dork-packs/oat-ost.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 27,
-          "operators": [
-            "site",
-            "filetype"
-          ],
-          "targetDomains": [
-            "gov.au"
-          ],
-          "domainCategory": "government",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "services",
-            "australia"
-          ]
-        },
-        {
-          "id": "oat-ost-buprenorphine-specific",
-          "title": "Buprenorphine-Specific",
-          "category": "Basic Queries",
-          "query": "site:*.gov.au filetype:pdf (buprenorphine OR suboxone) (guideline OR program OR prescribing)",
-          "explanation": "",
-          "difficulty": "beginner",
-          "sourceFile": "dork-packs/oat-ost.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 33,
-          "operators": [
-            "site",
-            "filetype"
-          ],
-          "targetDomains": [
-            "gov.au"
-          ],
-          "domainCategory": "government",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "services",
-            "australia"
-          ]
-        },
-        {
-          "id": "oat-ost-state-specific-oat-policies",
-          "title": "State-Specific OAT Policies",
+          "id": "oat-ost-depot-long-acting-injectable-buprenorphine",
+          "title": "Depot (Long-Acting Injectable) Buprenorphine",
           "category": "Intermediate Queries",
-          "query": "site:*.gov.au filetype:pdf (\"opioid treatment\" OR \"pharmacotherapy\") (NSW OR VIC OR QLD OR WA OR SA OR TAS OR ACT OR NT)",
+          "query": "(\"Buvidal Weekly\" OR \"Buvidal Monthly\" OR \"Sublocade\" OR \"depot buprenorphine\" OR LAIB) (Australia OR PBS OR guideline)",
+          "explanation": "**Why this works:**\n\n- Naming the actual depot brands (Buvidal from Camurus; Sublocade from Indivior) finds the\nproduct-specific guidance and PBS detail, not generic \"buprenorphine\" pages",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/oat-ost.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 71,
+          "operators": [],
+          "targetDomains": [],
+          "domainCategory": "any",
+          "contentType": "any",
+          "tags": [
+            "australia"
+          ]
+        },
+        {
+          "id": "oat-ost-takeaway-doses-supervised-dosing",
+          "title": "Takeaway Doses & Supervised Dosing",
+          "category": "Intermediate Queries",
+          "query": "(\"takeaway doses\" OR \"take-away doses\" OR \"unsupervised doses\" OR \"supervised dosing\") (methadone OR buprenorphine OR OTP) Australia",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/oat-ost.md",
           "sourceType": "dork-pack",
-          "sourceLine": 43,
-          "operators": [
-            "site",
-            "filetype"
-          ],
-          "targetDomains": [
-            "gov.au"
-          ],
-          "domainCategory": "government",
-          "contentType": "pdf",
+          "sourceLine": 82,
+          "operators": [],
+          "targetDomains": [],
+          "domainCategory": "any",
+          "contentType": "any",
           "tags": [
-            "documents",
             "australia"
           ]
         },
         {
-          "id": "oat-ost-prescriber-resources",
-          "title": "Prescriber Resources",
+          "id": "oat-ost-prescriber-training-authorisation",
+          "title": "Prescriber Training & Authorisation",
           "category": "Intermediate Queries",
-          "query": "site:*.gov.au \"authorised prescriber\" OR \"prescriber training\" (methadone OR buprenorphine OR opioid) filetype:pdf",
-          "explanation": "",
+          "query": "(site:racgp.org.au OR site:otep.org.au OR site:insight.qld.edu.au) (\"Medication Assisted Treatment for Opioid Dependence\" OR \"Opioid Dependence Treatment Education Program\" OR \"authorised prescriber\" OR prescriber)",
+          "explanation": "**Why this works:**\n\n- RACGP's MATOD training and NSW's OTEP are the named prescriber pathways; \"authorised prescriber\"\nis the exact regulatory status — these surface the real training, not job ads",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/oat-ost.md",
           "sourceType": "dork-pack",
-          "sourceLine": 49,
+          "sourceLine": 88,
           "operators": [
-            "site",
-            "filetype"
+            "site"
           ],
           "targetDomains": [
-            "gov.au"
+            "racgp.org.au",
+            "otep.org.au",
+            "insight.qld.edu.au"
           ],
-          "domainCategory": "government",
-          "contentType": "pdf",
+          "domainCategory": "education",
+          "contentType": "any",
           "tags": [
-            "documents",
+            "services",
             "training",
             "australia"
           ]
         },
         {
-          "id": "oat-ost-clinic-directories",
-          "title": "Clinic Directories",
+          "id": "oat-ost-dispensing-fees-access-barriers",
+          "title": "Dispensing Fees & Access Barriers",
           "category": "Intermediate Queries",
-          "query": "\"opioid treatment\" clinic OR service directory [YOUR STATE] site:*.gov.au",
+          "query": "(methadone OR buprenorphine OR pharmacotherapy) (\"dispensing fee\" OR \"daily dosing fee\" OR \"cost\" OR \"access barrier\") Australia",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/oat-ost.md",
           "sourceType": "dork-pack",
-          "sourceLine": 55,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "gov.au"
-          ],
-          "domainCategory": "government",
+          "sourceLine": 99,
+          "operators": [],
+          "targetDomains": [],
+          "domainCategory": "any",
           "contentType": "any",
           "tags": [
-            "services",
-            "australia"
-          ]
-        },
-        {
-          "id": "oat-ost-dosing-guidelines",
-          "title": "Dosing Guidelines",
-          "category": "Intermediate Queries",
-          "query": "site:*.gov.au filetype:pdf (methadone OR buprenorphine) (dosing OR induction OR \"dose adjustment\")",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/oat-ost.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 61,
-          "operators": [
-            "site",
-            "filetype"
-          ],
-          "targetDomains": [
-            "gov.au"
-          ],
-          "domainCategory": "government",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
             "australia"
           ]
         },
@@ -15035,12 +14805,12 @@
           "id": "oat-ost-comprehensive-oat-document-sweep",
           "title": "Comprehensive OAT Document Sweep",
           "category": "Advanced Queries",
-          "query": "site:*.gov.au filetype:pdf (OAT OR OST OR \"opioid agonist\" OR \"opioid substitution\" OR methadone OR buprenorphine OR \"pharmacotherapy\") (guideline OR policy OR framework OR protocol) after:2020",
+          "query": "site:*.gov.au filetype:pdf (OAT OR OST OR \"opioid agonist\" OR \"opioid dependence\" OR methadone OR buprenorphine OR pharmacotherapy) (guideline OR policy OR framework OR \"clinical policies\") after:2018",
           "explanation": "",
           "difficulty": "advanced",
           "sourceFile": "dork-packs/oat-ost.md",
           "sourceType": "dork-pack",
-          "sourceLine": 71,
+          "sourceLine": 109,
           "operators": [
             "site",
             "filetype",
@@ -15054,69 +14824,25 @@
           "tags": [
             "documents",
             "policy",
+            "services",
             "australia"
           ]
         },
         {
-          "id": "oat-ost-long-acting-injectable-buprenorphine",
-          "title": "Long-Acting Injectable Buprenorphine",
+          "id": "oat-ost-pregnancy-perinatal-oat",
+          "title": "Pregnancy & Perinatal OAT",
           "category": "Advanced Queries",
-          "query": "(\"long-acting\" OR \"extended-release\" OR \"depot\" OR \"monthly\") buprenorphine (sublocade OR buvidal) Australia",
+          "query": "(pregnancy OR perinatal OR antenatal) (methadone OR buprenorphine OR \"opioid dependence\") (guideline OR management) Australia filetype:pdf",
           "explanation": "",
           "difficulty": "advanced",
           "sourceFile": "dork-packs/oat-ost.md",
           "sourceType": "dork-pack",
-          "sourceLine": 77,
-          "operators": [],
+          "sourceLine": 115,
+          "operators": [
+            "filetype"
+          ],
           "targetDomains": [],
           "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "australia"
-          ]
-        },
-        {
-          "id": "oat-ost-take-away-takeaway-doses",
-          "title": "Take-Away/Takeaway Doses",
-          "category": "Advanced Queries",
-          "query": "site:*.gov.au (\"take-away\" OR \"takeaway\" OR \"unsupervised\") (dose OR dosing) (methadone OR buprenorphine) filetype:pdf",
-          "explanation": "",
-          "difficulty": "advanced",
-          "sourceFile": "dork-packs/oat-ost.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 83,
-          "operators": [
-            "site",
-            "filetype"
-          ],
-          "targetDomains": [
-            "gov.au"
-          ],
-          "domainCategory": "government",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "australia"
-          ]
-        },
-        {
-          "id": "oat-ost-pregnancy-oat",
-          "title": "Pregnancy & OAT",
-          "category": "Advanced Queries",
-          "query": "site:*.gov.au (pregnancy OR pregnant OR antenatal OR perinatal) (methadone OR buprenorphine OR \"opioid treatment\") guideline filetype:pdf",
-          "explanation": "",
-          "difficulty": "advanced",
-          "sourceFile": "dork-packs/oat-ost.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 89,
-          "operators": [
-            "site",
-            "filetype"
-          ],
-          "targetDomains": [
-            "gov.au"
-          ],
-          "domainCategory": "government",
           "contentType": "pdf",
           "tags": [
             "documents",
@@ -15127,12 +14853,33 @@
           "id": "oat-ost-pain-management-oat",
           "title": "Pain Management & OAT",
           "category": "Advanced Queries",
-          "query": "site:*.gov.au (\"chronic pain\" OR \"pain management\") (methadone OR buprenorphine OR OAT) guideline filetype:pdf",
+          "query": "(\"chronic pain\" OR \"pain management\") (methadone OR buprenorphine OR \"depot buprenorphine\") (guideline OR interaction) Australia filetype:pdf",
           "explanation": "",
           "difficulty": "advanced",
           "sourceFile": "dork-packs/oat-ost.md",
           "sourceType": "dork-pack",
-          "sourceLine": 95,
+          "sourceLine": 121,
+          "operators": [
+            "filetype"
+          ],
+          "targetDomains": [],
+          "domainCategory": "any",
+          "contentType": "pdf",
+          "tags": [
+            "documents",
+            "australia"
+          ]
+        },
+        {
+          "id": "oat-ost-diversion-safety-governance",
+          "title": "Diversion, Safety & Governance",
+          "category": "Advanced Queries",
+          "query": "(methadone OR buprenorphine) (diversion OR \"safe storage\" OR supervision OR \"clinical governance\") (policy OR guideline) site:*.gov.au filetype:pdf",
+          "explanation": "",
+          "difficulty": "advanced",
+          "sourceFile": "dork-packs/oat-ost.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 127,
           "operators": [
             "site",
             "filetype"
@@ -15144,19 +14891,21 @@
           "contentType": "pdf",
           "tags": [
             "documents",
+            "policy",
+            "services",
             "australia"
           ]
         },
         {
-          "id": "oat-ost-nsw",
-          "title": "NSW",
-          "category": "State-by-State OAT Resources",
-          "query": "site:health.nsw.gov.au \"opioid treatment\" OR methadone",
+          "id": "oat-ost-nsw-opioid-treatment-program-otp",
+          "title": "NSW — Opioid Treatment Program (OTP)",
+          "category": "State Programs & Guidelines",
+          "query": "site:health.nsw.gov.au (\"NSW Clinical Guidelines\" \"Treatment of Opioid Dependence\" OR \"Opioid Treatment Program\" OR \"depot buprenorphine\")",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/oat-ost.md",
           "sourceType": "dork-pack",
-          "sourceLine": 105,
+          "sourceLine": 139,
           "operators": [
             "site"
           ],
@@ -15166,19 +14915,66 @@
           "domainCategory": "government",
           "contentType": "any",
           "tags": [
+            "services",
             "australia"
           ]
         },
         {
-          "id": "oat-ost-qld",
-          "title": "QLD",
-          "category": "State-by-State OAT Resources",
-          "query": "site:health.qld.gov.au \"opioid treatment program\"",
+          "id": "oat-ost-victoria-maintenance-pharmacotherapy-policy",
+          "title": "Victoria — Maintenance Pharmacotherapy Policy",
+          "category": "State Programs & Guidelines",
+          "query": "site:health.vic.gov.au \"Policy for maintenance pharmacotherapy for opioid dependence\"",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/oat-ost.md",
           "sourceType": "dork-pack",
-          "sourceLine": 111,
+          "sourceLine": 145,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "health.vic.gov.au"
+          ],
+          "domainCategory": "government",
+          "contentType": "any",
+          "tags": [
+            "policy",
+            "australia"
+          ]
+        },
+        {
+          "id": "oat-ost-wa-community-program-for-opioid-pharmacotherapy-cpop",
+          "title": "WA — Community Program for Opioid Pharmacotherapy (CPOP)",
+          "category": "State Programs & Guidelines",
+          "query": "site:mhc.wa.gov.au (\"Community Program for Opioid Pharmacotherapy\" OR CPOP OR \"Clinical Policies and Procedures for the Use of Methadone and Buprenorphine\")",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/oat-ost.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 151,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "mhc.wa.gov.au"
+          ],
+          "domainCategory": "government",
+          "contentType": "any",
+          "tags": [
+            "services",
+            "australia"
+          ]
+        },
+        {
+          "id": "oat-ost-qld-queensland-opioid-treatment-program-qotp",
+          "title": "QLD — Queensland Opioid Treatment Program (QOTP)",
+          "category": "State Programs & Guidelines",
+          "query": "site:health.qld.gov.au (\"Queensland Opioid Dependence Treatment Guidelines\" OR \"Queensland Opioid Treatment Program\" OR QOTP)",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/oat-ost.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 157,
           "operators": [
             "site"
           ],
@@ -15193,15 +14989,15 @@
           ]
         },
         {
-          "id": "oat-ost-sa",
-          "title": "SA",
-          "category": "State-by-State OAT Resources",
-          "query": "site:sahealth.sa.gov.au \"opioid treatment\"",
+          "id": "oat-ost-sa-medication-assisted-treatment-for-opioid-dependence-matod",
+          "title": "SA — Medication Assisted Treatment for Opioid Dependence (MATOD)",
+          "category": "State Programs & Guidelines",
+          "query": "site:sahealth.sa.gov.au \"Medication Assisted Treatment for Opioid Dependence\" OR MATOD",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/oat-ost.md",
           "sourceType": "dork-pack",
-          "sourceLine": 117,
+          "sourceLine": 163,
           "operators": [
             "site"
           ],
@@ -15215,126 +15011,222 @@
           ]
         },
         {
-          "id": "oat-ost-vic",
-          "title": "VIC",
-          "category": "State-by-State OAT Resources",
-          "query": "site:health.vic.gov.au \"pharmacotherapy\" OR methadone OR buprenorphine",
+          "id": "oat-ost-methadone-biodone-aspen",
+          "title": "Methadone (Biodone / Aspen)",
+          "category": "Medications & Brands",
+          "query": "(\"Biodone Forte\" OR \"Aspen Methadone Syrup\" OR \"Aspen Methadone Liquid\") (methadone OR PBS) site:.au",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/oat-ost.md",
           "sourceType": "dork-pack",
-          "sourceLine": 123,
+          "sourceLine": 175,
           "operators": [
             "site"
           ],
           "targetDomains": [
-            "health.vic.gov.au"
+            ".au"
           ],
-          "domainCategory": "government",
+          "domainCategory": "any",
           "contentType": "any",
           "tags": [
             "australia"
           ]
         },
         {
-          "id": "oat-ost-wa",
-          "title": "WA",
-          "category": "State-by-State OAT Resources",
-          "query": "site:health.wa.gov.au \"community program for opioid pharmacotherapy\"",
+          "id": "oat-ost-buprenorphine-naloxone-suboxone",
+          "title": "Buprenorphine-Naloxone (Suboxone)",
+          "category": "Medications & Brands",
+          "query": "(\"Suboxone Film\" OR \"buprenorphine-naloxone\" OR Subutex) (PBS OR guideline OR \"soluble film\") site:.au",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/oat-ost.md",
           "sourceType": "dork-pack",
-          "sourceLine": 129,
+          "sourceLine": 181,
           "operators": [
             "site"
           ],
           "targetDomains": [
-            "health.wa.gov.au"
+            ".au"
           ],
-          "domainCategory": "government",
+          "domainCategory": "any",
           "contentType": "any",
           "tags": [
-            "services",
             "australia"
           ]
         },
         {
-          "id": "oat-ost-prescriber-training",
-          "title": "Prescriber Training",
-          "category": "Training & Workforce",
-          "query": "\"opioid treatment\" OR \"pharmacotherapy\" (prescriber OR \"medical practitioner\") training Australia",
+          "id": "oat-ost-depot-buprenorphine-buvidal-sublocade",
+          "title": "Depot Buprenorphine (Buvidal / Sublocade)",
+          "category": "Medications & Brands",
+          "query": "(\"Buvidal\" OR \"Sublocade\") (Camurus OR Indivior OR PBS OR \"modified release\") site:.au",
+          "explanation": "**Why this works:**\n\n- Buvidal (weekly/monthly, Camurus) and Sublocade (monthly, Indivior) are the only depot\nbuprenorphines registered in Australia — quoting them finds the real product and access info",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/oat-ost.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 187,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            ".au"
+          ],
+          "domainCategory": "any",
+          "contentType": "any",
+          "tags": [
+            "australia"
+          ]
+        },
+        {
+          "id": "oat-ost-consumer-experience-critique",
+          "title": "Consumer Experience & Critique",
+          "category": "\udcac Peer & Lived-Experience Perspectives",
+          "query": "(methadone OR buprenorphine OR \"opioid treatment\") (\"in their own words\" OR \"client experience\" OR \"consumer\" OR dignity OR \"supervised dosing\") Australia",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/oat-ost.md",
           "sourceType": "dork-pack",
-          "sourceLine": 139,
+          "sourceLine": 204,
           "operators": [],
           "targetDomains": [],
           "domainCategory": "any",
           "contentType": "any",
           "tags": [
-            "training",
+            "peer",
             "australia"
           ]
         },
         {
-          "id": "oat-ost-nursing-in-oat",
-          "title": "Nursing in OAT",
-          "category": "Training & Workforce",
-          "query": "(nurse OR nursing) \"opioid treatment\" OR \"pharmacotherapy\" (role OR training OR guideline) Australia filetype:pdf",
+          "id": "oat-ost-peer-advocacy-on-access",
+          "title": "Peer Advocacy on Access",
+          "category": "\udcac Peer & Lived-Experience Perspectives",
+          "query": "(site:nuaa.org.au OR site:aivl.org.au) (methadone OR pharmacotherapy OR OTP) (submission OR campaign OR \"dispensing fee\" OR takeaway)",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/oat-ost.md",
           "sourceType": "dork-pack",
-          "sourceLine": 145,
+          "sourceLine": 210,
           "operators": [
-            "filetype"
+            "site"
           ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "pdf",
+          "targetDomains": [
+            "nuaa.org.au",
+            "aivl.org.au"
+          ],
+          "domainCategory": "ngo",
+          "contentType": "any",
           "tags": [
-            "documents",
-            "training",
+            "peer",
             "australia"
           ]
         },
         {
-          "id": "oat-ost-pharmacy-dispensing",
-          "title": "Pharmacy Dispensing",
-          "category": "Training & Workforce",
-          "query": "(pharmacy OR pharmacist) (methadone OR buprenorphine) (dispensing OR protocol OR guideline) Australia",
+          "id": "oat-ost-community-discussion-real-time-reports",
+          "title": "Community Discussion & Real-Time Reports",
+          "category": "\udcac Peer & Lived-Experience Perspectives",
+          "query": "(site:reddit.com/r/AusDrugs OR site:bluelight.org) (\"methadone\" OR \"subbies\" OR \"suboxone\" OR \"buvidal\" OR \"depot\")",
+          "explanation": "**Why this works:**\n\n- Forums carry the practical, unfiltered experience — transferring between programs, depot side\neffects, takeaway negotiations — that an effectiveness study never captures",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/oat-ost.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 216,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "reddit.com/r/AusDrugs",
+            "bluelight.org"
+          ],
+          "domainCategory": "community",
+          "contentType": "any",
+          "tags": [
+            "documents"
+          ]
+        },
+        {
+          "id": "oat-ost-who-opioid-dependence-guidelines",
+          "title": "WHO Opioid Dependence Guidelines",
+          "category": "International OAT Guidance",
+          "query": "\"Guidelines for the psychosocially assisted pharmacological treatment of opioid dependence\" (site:who.int OR site:iris.who.int)",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/oat-ost.md",
           "sourceType": "dork-pack",
-          "sourceLine": 151,
-          "operators": [],
-          "targetDomains": [],
+          "sourceLine": 233,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "who.int",
+            "iris.who.int"
+          ],
+          "domainCategory": "international",
+          "contentType": "any",
+          "tags": [
+            "international"
+          ]
+        },
+        {
+          "id": "oat-ost-uk-orange-book",
+          "title": "UK \"Orange Book\"",
+          "category": "International OAT Guidance",
+          "query": "\"Drug misuse and dependence: UK guidelines on clinical management\" site:gov.uk",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/oat-ost.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 239,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "gov.uk"
+          ],
           "domainCategory": "any",
           "contentType": "any",
           "tags": [
-            "australia"
+            "services"
+          ]
+        },
+        {
+          "id": "oat-ost-canada-bccsu",
+          "title": "Canada BCCSU",
+          "category": "International OAT Guidance",
+          "query": "\"A Guideline for the Clinical Management of Opioid Use Disorder\" site:bccsu.ca",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/oat-ost.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 245,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "bccsu.ca"
+          ],
+          "domainCategory": "any",
+          "contentType": "any",
+          "tags": [
+            "services"
           ]
         },
         {
           "id": "oat-ost-australian-research",
           "title": "Australian Research",
           "category": "Research & Evidence",
-          "query": "site:ndarc.med.unsw.edu.au OR site:turning-point.org.au (methadone OR buprenorphine OR OAT) filetype:pdf",
+          "query": "(site:unsw.edu.au OR site:ndarc.med.unsw.edu.au OR site:turningpoint.org.au) (\"opioid agonist\" OR methadone OR buprenorphine OR \"depot buprenorphine\") (outcomes OR retention OR evaluation) filetype:pdf",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/oat-ost.md",
           "sourceType": "dork-pack",
-          "sourceLine": 161,
+          "sourceLine": 255,
           "operators": [
             "site",
             "filetype"
           ],
           "targetDomains": [
+            "unsw.edu.au",
             "ndarc.med.unsw.edu.au",
-            "turning-point.org.au"
+            "turningpoint.org.au"
           ],
           "domainCategory": "education",
           "contentType": "pdf",
@@ -15345,27 +15237,24 @@
           ]
         },
         {
-          "id": "oat-ost-effectiveness-research",
-          "title": "Effectiveness Research",
+          "id": "oat-ost-effectiveness-retention",
+          "title": "Effectiveness & Retention",
           "category": "Research & Evidence",
-          "query": "site:*.edu.au (\"opioid agonist therapy\" OR methadone OR buprenorphine) (effectiveness OR outcomes OR retention) filetype:pdf",
+          "query": "(\"opioid agonist treatment\" OR OAT OR methadone OR buprenorphine) (retention OR mortality OR effectiveness) Australia filetype:pdf",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/oat-ost.md",
           "sourceType": "dork-pack",
-          "sourceLine": 167,
+          "sourceLine": 261,
           "operators": [
-            "site",
             "filetype"
           ],
-          "targetDomains": [
-            "edu.au"
-          ],
-          "domainCategory": "education",
+          "targetDomains": [],
+          "domainCategory": "any",
           "contentType": "pdf",
           "tags": [
             "documents",
-            "research",
+            "data",
             "australia"
           ]
         },
@@ -15373,89 +15262,21 @@
           "id": "oat-ost-systematic-reviews",
           "title": "Systematic Reviews",
           "category": "Research & Evidence",
-          "query": "intitle:\"systematic review\" (\"opioid agonist\" OR methadone OR buprenorphine) effectiveness",
+          "query": "site:cochranelibrary.com (\"opioid agonist\" OR methadone OR buprenorphine OR \"opioid dependence\")",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/oat-ost.md",
           "sourceType": "dork-pack",
-          "sourceLine": 173,
+          "sourceLine": 267,
           "operators": [
-            "intitle"
+            "site"
           ],
-          "targetDomains": [],
+          "targetDomains": [
+            "cochranelibrary.com"
+          ],
           "domainCategory": "any",
           "contentType": "any",
           "tags": []
-        },
-        {
-          "id": "oat-ost-drug-interactions",
-          "title": "Drug Interactions",
-          "category": "\udfe5 Clinical Considerations",
-          "query": "(methadone OR buprenorphine) \"drug interaction\" OR interaction (guideline OR warning) filetype:pdf",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/oat-ost.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 183,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "pdf",
-          "tags": [
-            "alerts",
-            "documents"
-          ]
-        },
-        {
-          "id": "oat-ost-withdrawal-management",
-          "title": "Withdrawal Management",
-          "category": "\udfe5 Clinical Considerations",
-          "query": "site:*.gov.au \"opioid withdrawal\" (methadone OR buprenorphine) (induction OR management) filetype:pdf",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/oat-ost.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 189,
-          "operators": [
-            "site",
-            "filetype"
-          ],
-          "targetDomains": [
-            "gov.au"
-          ],
-          "domainCategory": "government",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "australia"
-          ]
-        },
-        {
-          "id": "oat-ost-diversion-safety",
-          "title": "Diversion & Safety",
-          "category": "\udfe5 Clinical Considerations",
-          "query": "site:*.gov.au (methadone OR buprenorphine) (diversion OR \"safe storage\" OR supervision) policy filetype:pdf",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/oat-ost.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 195,
-          "operators": [
-            "site",
-            "filetype"
-          ],
-          "targetDomains": [
-            "gov.au"
-          ],
-          "domainCategory": "government",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "policy",
-            "australia"
-          ]
         }
       ],
       "sourceFile": "dork-packs/oat-ost.md"
@@ -17470,187 +17291,64 @@
     {
       "id": "peer-workforce",
       "title": "Peer Workforce, Lived Experience & Training",
-      "description": "Supervision, competencies, frameworks, training, and peer-led practice resources.",
+      "description": "Supervision, competencies, frameworks, and training for peer work — named by the actual framework,",
       "dorks": [
         {
-          "id": "peer-workforce-search-org-au",
-          "title": "Search org.au",
+          "id": "peer-workforce-query-1",
+          "title": "Query 1",
           "category": "Quick Start",
-          "query": "(\"peer worker\" OR \"lived experience\") (training OR framework) filetype:pdf site:*.org.au -jobs",
+          "query": "\"Alcohol and Other Drug (AOD) Lived Experience Workforce Discipline Framework\" OR (\"Practical National Framework\" \"Lived-Living Experience\")",
           "explanation": "",
           "difficulty": "beginner",
           "sourceFile": "dork-packs/peer-workforce.md",
           "sourceType": "dork-pack",
-          "sourceLine": 14,
-          "operators": [
-            "site",
-            "filetype"
-          ],
-          "targetDomains": [
-            "org.au"
-          ],
-          "domainCategory": "ngo",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "peer",
-            "policy",
-            "training",
-            "australia"
-          ]
-        },
-        {
-          "id": "peer-workforce-peer-workforce-development",
-          "title": "Peer Workforce Development",
-          "category": "Basic Queries",
-          "query": "(\"peer worker\" OR \"peer support\" OR \"lived experience\") (supervision OR framework OR competencies) filetype:pdf site:*.org.au",
-          "explanation": "",
-          "difficulty": "beginner",
-          "sourceFile": "dork-packs/peer-workforce.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 34,
-          "operators": [
-            "site",
-            "filetype"
-          ],
-          "targetDomains": [
-            "org.au"
-          ],
-          "domainCategory": "ngo",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "peer",
-            "policy",
-            "training",
-            "australia"
-          ]
-        },
-        {
-          "id": "peer-workforce-peer-worker-training",
-          "title": "Peer Worker Training",
-          "category": "Basic Queries",
-          "query": "\"peer worker\" \"training manual\" OR \"training package\" filetype:pdf",
-          "explanation": "",
-          "difficulty": "beginner",
-          "sourceFile": "dork-packs/peer-workforce.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 40,
-          "operators": [
-            "filetype"
-          ],
+          "sourceLine": 30,
+          "operators": [],
           "targetDomains": [],
           "domainCategory": "any",
-          "contentType": "pdf",
+          "contentType": "any",
           "tags": [
-            "documents",
             "peer",
+            "policy",
             "training"
           ]
         },
         {
-          "id": "peer-workforce-lived-experience-workforce-frameworks",
-          "title": "Lived Experience Workforce Frameworks",
+          "id": "peer-workforce-named-aod-peer-workforce-frameworks",
+          "title": "Named AOD Peer Workforce Frameworks",
           "category": "Basic Queries",
-          "query": "(\"lived experience\" AROUND(6) workforce) (guideline OR framework OR standard) filetype:pdf Australia",
-          "explanation": "",
+          "query": "(site:aivl.org.au OR site:sharc.org.au) (\"Practical National Framework\" OR \"Peer Workforce Capacity Building Training Framework\" OR \"Lived Experience Workforce Discipline Framework\")",
+          "explanation": "**Why this works:**\n\n- AIVL and SHARC are the AOD sector's framework authors — naming their exact documents finds the\nreal competencies and guidance, not job ads or generic mental-health material",
           "difficulty": "beginner",
           "sourceFile": "dork-packs/peer-workforce.md",
           "sourceType": "dork-pack",
-          "sourceLine": 46,
+          "sourceLine": 37,
           "operators": [
-            "filetype",
-            "AROUND"
+            "site"
           ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "pdf",
+          "targetDomains": [
+            "aivl.org.au",
+            "sharc.org.au"
+          ],
+          "domainCategory": "ngo",
+          "contentType": "any",
           "tags": [
-            "documents",
             "peer",
             "policy",
             "training",
-            "australia"
-          ]
-        },
-        {
-          "id": "peer-workforce-peer-supervision-models",
-          "title": "Peer Supervision Models",
-          "category": "Intermediate Queries",
-          "query": "\"peer supervision\" (model OR framework OR guidelines) AOD filetype:pdf",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/peer-workforce.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 56,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "peer",
-            "policy"
-          ]
-        },
-        {
-          "id": "peer-workforce-competency-frameworks",
-          "title": "Competency Frameworks",
-          "category": "Intermediate Queries",
-          "query": "\"peer worker\" (competencies OR standards OR qualification) Australia filetype:pdf",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/peer-workforce.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 62,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "peer",
-            "policy",
-            "australia"
-          ]
-        },
-        {
-          "id": "peer-workforce-peer-led-research",
-          "title": "Peer-Led Research",
-          "category": "Intermediate Queries",
-          "query": "\"peer-led research\" OR \"participatory action research\" drug use Australia filetype:pdf",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/peer-workforce.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 68,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "research",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "peer",
-            "research",
             "australia"
           ]
         },
         {
           "id": "peer-workforce-peer-organisation-resources",
           "title": "Peer Organisation Resources",
-          "category": "Intermediate Queries",
-          "query": "(site:nuaa.org.au OR site:aivl.org.au OR site:hrvic.org.au OR site:quihn.org) filetype:pdf",
+          "category": "Basic Queries",
+          "query": "(site:nuaa.org.au OR site:aivl.org.au OR site:hrvic.org.au OR site:quihn.org) (\"peer worker\" OR \"peer support\" OR \"lived experience\") filetype:pdf",
           "explanation": "",
-          "difficulty": "intermediate",
+          "difficulty": "beginner",
           "sourceFile": "dork-packs/peer-workforce.md",
           "sourceType": "dork-pack",
-          "sourceLine": 74,
+          "sourceLine": 48,
           "operators": [
             "site",
             "filetype"
@@ -17670,15 +17368,132 @@
           ]
         },
         {
+          "id": "peer-workforce-national-lived-experience-guidelines",
+          "title": "National Lived-Experience Guidelines",
+          "category": "Basic Queries",
+          "query": "\"National Lived Experience (Peer) Workforce Development Guidelines\" site:mentalhealthcommission.gov.au",
+          "explanation": "> Note: the NMHC guidelines are mental-health-sector; for AOD-specific guidance lead with the AIVL\n> and SHARC frameworks above.",
+          "difficulty": "beginner",
+          "sourceFile": "dork-packs/peer-workforce.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 54,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "mentalhealthcommission.gov.au"
+          ],
+          "domainCategory": "government",
+          "contentType": "any",
+          "tags": [
+            "peer",
+            "training",
+            "australia"
+          ]
+        },
+        {
+          "id": "peer-workforce-peer-supervision-models",
+          "title": "Peer Supervision Models",
+          "category": "Intermediate Queries",
+          "query": "\"peer supervision\" (model OR framework OR guidelines) (AOD OR \"harm reduction\" OR \"lived experience\") filetype:pdf",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/peer-workforce.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 67,
+          "operators": [
+            "filetype"
+          ],
+          "targetDomains": [],
+          "domainCategory": "any",
+          "contentType": "pdf",
+          "tags": [
+            "documents",
+            "peer",
+            "policy"
+          ]
+        },
+        {
+          "id": "peer-workforce-competency-capability-frameworks",
+          "title": "Competency & Capability Frameworks",
+          "category": "Intermediate Queries",
+          "query": "(\"peer worker\" OR \"lived experience workforce\") (\"competency framework\" OR \"capability framework\" OR \"practice standards\" OR \"discipline framework\") Australia filetype:pdf",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/peer-workforce.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 73,
+          "operators": [
+            "filetype"
+          ],
+          "targetDomains": [],
+          "domainCategory": "any",
+          "contentType": "pdf",
+          "tags": [
+            "documents",
+            "peer",
+            "policy",
+            "training",
+            "australia"
+          ]
+        },
+        {
+          "id": "peer-workforce-peer-led-research",
+          "title": "Peer-Led Research",
+          "category": "Intermediate Queries",
+          "query": "(\"peer-led research\" OR \"peer researcher\" OR \"participatory action research\") (drug use OR \"harm reduction\") Australia filetype:pdf",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/peer-workforce.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 79,
+          "operators": [
+            "filetype"
+          ],
+          "targetDomains": [],
+          "domainCategory": "research",
+          "contentType": "pdf",
+          "tags": [
+            "documents",
+            "peer",
+            "research",
+            "australia"
+          ]
+        },
+        {
+          "id": "peer-workforce-workforce-development-nceta",
+          "title": "Workforce Development (NCETA)",
+          "category": "Intermediate Queries",
+          "query": "site:nceta.flinders.edu.au (\"peer\" OR \"lived experience\" OR \"workforce development\")",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/peer-workforce.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 85,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "nceta.flinders.edu.au"
+          ],
+          "domainCategory": "education",
+          "contentType": "any",
+          "tags": [
+            "peer",
+            "training",
+            "australia"
+          ]
+        },
+        {
           "id": "peer-workforce-comprehensive-peer-workforce-sweep",
           "title": "Comprehensive Peer Workforce Sweep",
           "category": "Advanced Queries",
-          "query": "(\"peer worker\" OR \"peer support worker\" OR \"lived experience worker\" OR \"consumer consultant\") (supervision OR training OR competencies OR framework OR \"professional development\") filetype:pdf (Australia OR NSW OR VIC OR QLD) -jobs -careers after:2020",
+          "query": "(\"peer worker\" OR \"peer support worker\" OR \"lived experience workforce\" OR \"consumer consultant\") (supervision OR competencies OR framework OR \"professional development\") (Australia OR NSW OR VIC OR QLD) -jobs -careers filetype:pdf after:2020",
           "explanation": "",
           "difficulty": "advanced",
           "sourceFile": "dork-packs/peer-workforce.md",
           "sourceType": "dork-pack",
-          "sourceLine": 84,
+          "sourceLine": 95,
           "operators": [
             "filetype",
             "after"
@@ -17698,12 +17513,12 @@
           "id": "peer-workforce-reflective-practice-supervision",
           "title": "Reflective Practice & Supervision",
           "category": "Advanced Queries",
-          "query": "(\"reflective practice\" AROUND(5) supervision) (AOD OR \"alcohol and other drugs\") filetype:pdf",
+          "query": "(\"reflective practice\" AROUND(5) supervision) (AOD OR \"alcohol and other drugs\" OR \"harm reduction\") filetype:pdf",
           "explanation": "",
           "difficulty": "advanced",
           "sourceFile": "dork-packs/peer-workforce.md",
           "sourceType": "dork-pack",
-          "sourceLine": 90,
+          "sourceLine": 101,
           "operators": [
             "filetype",
             "AROUND"
@@ -17716,36 +17531,15 @@
           ]
         },
         {
-          "id": "peer-workforce-peer-wellbeing-self-care",
-          "title": "Peer Wellbeing & Self-Care",
-          "category": "Advanced Queries",
-          "query": "(\"vicarious trauma\" OR \"self-care\" OR wellbeing) \"peer worker\" harm reduction filetype:pdf",
-          "explanation": "",
-          "difficulty": "advanced",
-          "sourceFile": "dork-packs/peer-workforce.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 96,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "peer"
-          ]
-        },
-        {
           "id": "peer-workforce-pay-equity-conditions",
           "title": "Pay Equity & Conditions",
           "category": "Advanced Queries",
-          "query": "\"peer worker\" (remuneration OR \"pay equity\" OR conditions OR \"award\") filetype:pdf",
+          "query": "(\"peer worker\" OR \"lived experience worker\") (remuneration OR \"pay equity\" OR award OR conditions OR \"SCHADS\") filetype:pdf",
           "explanation": "",
           "difficulty": "advanced",
           "sourceFile": "dork-packs/peer-workforce.md",
           "sourceType": "dork-pack",
-          "sourceLine": 102,
+          "sourceLine": 107,
           "operators": [
             "filetype"
           ],
@@ -17761,12 +17555,12 @@
           "id": "peer-workforce-career-pathways",
           "title": "Career Pathways",
           "category": "Advanced Queries",
-          "query": "\"peer workforce\" (\"career pathway\" OR \"professional development\" OR progression) filetype:pdf",
+          "query": "(\"peer workforce\" OR \"lived experience workforce\") (\"career pathway\" OR \"professional development\" OR progression) filetype:pdf",
           "explanation": "",
           "difficulty": "advanced",
           "sourceFile": "dork-packs/peer-workforce.md",
           "sourceType": "dork-pack",
-          "sourceLine": 108,
+          "sourceLine": 113,
           "operators": [
             "filetype"
           ],
@@ -17780,109 +17574,49 @@
           ]
         },
         {
-          "id": "peer-workforce-training-packages",
-          "title": "Training Packages",
-          "category": "Training-Specific Searches",
-          "query": "\"peer worker\" training (package OR curriculum OR module) AOD filetype:pdf",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/peer-workforce.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 118,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "peer",
-            "training"
-          ]
-        },
-        {
-          "id": "peer-workforce-train-the-trainer",
-          "title": "Train the Trainer",
-          "category": "Training-Specific Searches",
-          "query": "\"peer\" \"train the trainer\" (harm reduction OR AOD) filetype:pdf",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/peer-workforce.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 124,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "peer"
-          ]
-        },
-        {
-          "id": "peer-workforce-induction-resources",
-          "title": "Induction Resources",
-          "category": "Training-Specific Searches",
-          "query": "\"peer worker\" (induction OR orientation OR onboarding) filetype:pdf",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/peer-workforce.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 130,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "peer"
-          ]
-        },
-        {
-          "id": "peer-workforce-supervision-training",
-          "title": "Supervision Training",
-          "category": "Training-Specific Searches",
-          "query": "(supervising OR supervision) \"peer worker\" training filetype:pdf",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/peer-workforce.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 136,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "peer",
-            "training"
-          ]
-        },
-        {
-          "id": "peer-workforce-national-state-frameworks",
-          "title": "National/State Frameworks",
+          "id": "peer-workforce-aivl-frameworks-aod-specific",
+          "title": "AIVL Frameworks (AOD-Specific)",
           "category": "\udccb Frameworks & Standards",
-          "query": "\"lived experience workforce\" (strategy OR framework OR policy) Australia filetype:pdf",
+          "query": "site:aivl.org.au (\"Practical National Framework\" OR \"Peer Workforce Capacity Building Training Framework\" OR \"Lived-Living Experience\")",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/peer-workforce.md",
           "sourceType": "dork-pack",
-          "sourceLine": 146,
+          "sourceLine": 125,
           "operators": [
-            "filetype"
+            "site"
           ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "pdf",
+          "targetDomains": [
+            "aivl.org.au"
+          ],
+          "domainCategory": "ngo",
+          "contentType": "any",
           "tags": [
-            "documents",
+            "peer",
+            "policy",
+            "training",
+            "australia"
+          ]
+        },
+        {
+          "id": "peer-workforce-sharc-frameworks-victoria",
+          "title": "SHARC Frameworks (Victoria)",
+          "category": "\udccb Frameworks & Standards",
+          "query": "site:sharc.org.au (\"Lived Experience Workforce Discipline Framework\" OR \"Strategy for the Alcohol and Other Drug (AOD) Peer Workforce\")",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/peer-workforce.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 131,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "sharc.org.au"
+          ],
+          "domainCategory": "ngo",
+          "contentType": "any",
+          "tags": [
             "peer",
             "policy",
             "training",
@@ -17893,34 +17627,12 @@
           "id": "peer-workforce-competency-standards",
           "title": "Competency Standards",
           "category": "\udccb Frameworks & Standards",
-          "query": "\"peer worker\" (\"competency framework\" OR \"capability framework\" OR \"practice standards\") filetype:pdf",
+          "query": "(\"peer worker\" OR \"lived experience\") (\"competency\" OR \"capability\" OR \"practice standards\") AOD filetype:pdf",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/peer-workforce.md",
           "sourceType": "dork-pack",
-          "sourceLine": 152,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "peer",
-            "policy"
-          ]
-        },
-        {
-          "id": "peer-workforce-role-descriptions",
-          "title": "Role Descriptions",
-          "category": "\udccb Frameworks & Standards",
-          "query": "\"peer worker\" OR \"peer support worker\" (\"role description\" OR \"position description\" OR \"job description\") AOD filetype:pdf",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/peer-workforce.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 158,
+          "sourceLine": 137,
           "operators": [
             "filetype"
           ],
@@ -17933,15 +17645,15 @@
           ]
         },
         {
-          "id": "peer-workforce-group-supervision",
-          "title": "Group Supervision",
+          "id": "peer-workforce-group-external-supervision",
+          "title": "Group & External Supervision",
           "category": "🧠 Supervision & Support",
-          "query": "\"group supervision\" \"peer worker\" harm reduction filetype:pdf",
+          "query": "(\"group supervision\" OR \"external supervision\") (\"peer worker\" OR \"lived experience\") (AOD OR \"harm reduction\") filetype:pdf",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/peer-workforce.md",
           "sourceType": "dork-pack",
-          "sourceLine": 168,
+          "sourceLine": 147,
           "operators": [
             "filetype"
           ],
@@ -17954,36 +17666,15 @@
           ]
         },
         {
-          "id": "peer-workforce-external-supervision",
-          "title": "External Supervision",
-          "category": "🧠 Supervision & Support",
-          "query": "\"external supervision\" \"peer worker\" OR \"lived experience\" filetype:pdf",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/peer-workforce.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 174,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "peer"
-          ]
-        },
-        {
-          "id": "peer-workforce-debriefing",
-          "title": "Debriefing",
+          "id": "peer-workforce-debriefing-critical-incidents",
+          "title": "Debriefing & Critical Incidents",
           "category": "🧠 Supervision & Support",
           "query": "(debriefing OR \"critical incident\") \"peer worker\" support filetype:pdf",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/peer-workforce.md",
           "sourceType": "dork-pack",
-          "sourceLine": 180,
+          "sourceLine": 153,
           "operators": [
             "filetype"
           ],
@@ -17999,12 +17690,12 @@
           "id": "peer-workforce-peer-advocacy-resources",
           "title": "Peer Advocacy Resources",
           "category": "✊ Advocacy & \"Nothing About Us Without Us\"",
-          "query": "\"nothing about us without us\" drug policy Australia filetype:pdf",
+          "query": "\"nothing about us without us\" (drug OR \"harm reduction\" OR \"peer workforce\") Australia filetype:pdf",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/peer-workforce.md",
           "sourceType": "dork-pack",
-          "sourceLine": 190,
+          "sourceLine": 163,
           "operators": [
             "filetype"
           ],
@@ -18014,20 +17705,42 @@
           "tags": [
             "documents",
             "peer",
-            "policy",
+            "training",
             "australia"
           ]
         },
         {
-          "id": "peer-workforce-lived-experience-representation",
-          "title": "Lived Experience Representation",
+          "id": "peer-workforce-meaningful-participation",
+          "title": "Meaningful Participation",
           "category": "✊ Advocacy & \"Nothing About Us Without Us\"",
-          "query": "\"lived experience\" representation (committee OR advisory OR consultation) drug",
+          "query": "(\"meaningful participation\" OR \"authentic engagement\" OR \"co-design\") \"people who use drugs\" (policy OR workforce) filetype:pdf",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/peer-workforce.md",
           "sourceType": "dork-pack",
-          "sourceLine": 196,
+          "sourceLine": 169,
+          "operators": [
+            "filetype"
+          ],
+          "targetDomains": [],
+          "domainCategory": "any",
+          "contentType": "pdf",
+          "tags": [
+            "documents",
+            "policy",
+            "training"
+          ]
+        },
+        {
+          "id": "peer-workforce-lived-experience-representation",
+          "title": "Lived-Experience Representation",
+          "category": "✊ Advocacy & \"Nothing About Us Without Us\"",
+          "query": "\"lived experience\" (representation OR \"advisory\" OR \"reference group\") (drug OR AOD) -jobs",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/peer-workforce.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 175,
           "operators": [],
           "targetDomains": [],
           "domainCategory": "any",
@@ -18037,58 +17750,15 @@
           ]
         },
         {
-          "id": "peer-workforce-peer-voice-in-policy",
-          "title": "Peer Voice in Policy",
-          "category": "✊ Advocacy & \"Nothing About Us Without Us\"",
-          "query": "\"peer advocate\" OR \"peer advocacy\" drug policy reform filetype:pdf",
+          "id": "peer-workforce-peer-led-programs",
+          "title": "Peer-Led Programs",
+          "category": "Peer-Led Service Models",
+          "query": "\"peer-led\" (service OR program OR initiative) (\"harm reduction\" OR AOD) filetype:pdf",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/peer-workforce.md",
           "sourceType": "dork-pack",
-          "sourceLine": 202,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "peer",
-            "policy"
-          ]
-        },
-        {
-          "id": "peer-workforce-meaningful-participation",
-          "title": "Meaningful Participation",
-          "category": "✊ Advocacy & \"Nothing About Us Without Us\"",
-          "query": "\"meaningful participation\" OR \"authentic engagement\" \"people who use drugs\" policy filetype:pdf",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/peer-workforce.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 208,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "policy"
-          ]
-        },
-        {
-          "id": "peer-workforce-peer-led-service-models",
-          "title": "Peer-Led Service Models",
-          "category": "Service Models",
-          "query": "\"peer-led\" (service OR program OR initiative) harm reduction filetype:pdf",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/peer-workforce.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 218,
+          "sourceLine": 185,
           "operators": [
             "filetype"
           ],
@@ -18102,57 +17772,15 @@
           ]
         },
         {
-          "id": "peer-workforce-peer-navigation",
-          "title": "Peer Navigation",
-          "category": "Service Models",
-          "query": "\"peer navigation\" OR \"peer navigator\" (drug OR AOD OR \"harm reduction\") filetype:pdf",
+          "id": "peer-workforce-peer-distribution-navigation",
+          "title": "Peer Distribution & Navigation",
+          "category": "Peer-Led Service Models",
+          "query": "(\"peer distribution\" OR \"peer navigation\" OR \"peer outreach\") (naloxone OR \"needle syringe\" OR NSP OR \"harm reduction\") Australia filetype:pdf",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/peer-workforce.md",
           "sourceType": "dork-pack",
-          "sourceLine": 224,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "peer"
-          ]
-        },
-        {
-          "id": "peer-workforce-peer-outreach",
-          "title": "Peer Outreach",
-          "category": "Service Models",
-          "query": "\"peer outreach\" (drug OR \"harm reduction\" OR \"needle syringe\") filetype:pdf",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/peer-workforce.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 230,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "peer"
-          ]
-        },
-        {
-          "id": "peer-workforce-peer-distribution-programs",
-          "title": "Peer Distribution Programs",
-          "category": "Service Models",
-          "query": "\"peer distribution\" (naloxone OR \"needle syringe\" OR NSP) Australia filetype:pdf",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/peer-workforce.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 236,
+          "sourceLine": 191,
           "operators": [
             "filetype"
           ],
@@ -18162,7 +17790,6 @@
           "tags": [
             "documents",
             "peer",
-            "services",
             "australia"
           ]
         },
@@ -18170,12 +17797,12 @@
           "id": "peer-workforce-effectiveness-of-peer-work",
           "title": "Effectiveness of Peer Work",
           "category": "Research on Peer Work",
-          "query": "\"peer support\" OR \"peer worker\" (effectiveness OR outcomes OR evaluation) \"harm reduction\" filetype:pdf",
+          "query": "(\"peer support\" OR \"peer worker\") (effectiveness OR outcomes OR evaluation) \"harm reduction\" filetype:pdf",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/peer-workforce.md",
           "sourceType": "dork-pack",
-          "sourceLine": 246,
+          "sourceLine": 201,
           "operators": [
             "filetype"
           ],
@@ -18188,20 +17815,21 @@
           ]
         },
         {
-          "id": "peer-workforce-peer-work-evidence-base",
-          "title": "Peer Work Evidence Base",
+          "id": "peer-workforce-evidence-base",
+          "title": "Evidence Base",
           "category": "Research on Peer Work",
-          "query": "site:*.edu.au \"peer worker\" OR \"peer support\" (evidence OR research OR evaluation) AOD filetype:pdf",
+          "query": "(site:unsw.edu.au OR site:*.edu.au) (\"peer worker\" OR \"peer support\") (evidence OR evaluation) AOD filetype:pdf",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/peer-workforce.md",
           "sourceType": "dork-pack",
-          "sourceLine": 252,
+          "sourceLine": 207,
           "operators": [
             "site",
             "filetype"
           ],
           "targetDomains": [
+            "unsw.edu.au",
             "edu.au"
           ],
           "domainCategory": "education",
@@ -18214,15 +17842,15 @@
           ]
         },
         {
-          "id": "peer-workforce-co-design-participatory-research",
-          "title": "Co-Design & Participatory Research",
-          "category": "Research on Peer Work",
-          "query": "\"co-design\" OR \"co-production\" (\"people who use drugs\" OR peer) filetype:pdf",
+          "id": "peer-workforce-vicarious-trauma-burnout",
+          "title": "Vicarious Trauma & Burnout",
+          "category": "\udc9a Wellbeing & Self-Care",
+          "query": "(\"vicarious trauma\" OR \"secondary trauma\" OR burnout) (\"peer worker\" OR \"lived experience worker\") (prevention OR support OR management) filetype:pdf",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/peer-workforce.md",
           "sourceType": "dork-pack",
-          "sourceLine": 258,
+          "sourceLine": 219,
           "operators": [
             "filetype"
           ],
@@ -18231,25 +17859,6 @@
           "contentType": "pdf",
           "tags": [
             "documents",
-            "peer",
-            "research"
-          ]
-        },
-        {
-          "id": "peer-workforce-vicarious-trauma",
-          "title": "Vicarious Trauma",
-          "category": "\udc9a Wellbeing & Self-Care",
-          "query": "\"vicarious trauma\" OR \"secondary trauma\" \"peer worker\" (prevention OR support OR management)",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/peer-workforce.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 268,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
             "peer"
           ]
         },
@@ -18257,33 +17866,12 @@
           "id": "peer-workforce-self-care-resources",
           "title": "Self-Care Resources",
           "category": "\udc9a Wellbeing & Self-Care",
-          "query": "\"self-care\" \"peer worker\" (drug OR AOD OR \"harm reduction\") (resource OR guide OR toolkit) filetype:pdf",
+          "query": "\"self-care\" (\"peer worker\" OR \"lived experience\") (AOD OR \"harm reduction\") (resource OR guide OR toolkit) filetype:pdf",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/peer-workforce.md",
           "sourceType": "dork-pack",
-          "sourceLine": 274,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "peer"
-          ]
-        },
-        {
-          "id": "peer-workforce-burnout-prevention",
-          "title": "Burnout Prevention",
-          "category": "\udc9a Wellbeing & Self-Care",
-          "query": "burnout \"peer worker\" OR \"lived experience worker\" (prevention OR support) filetype:pdf",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/peer-workforce.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 280,
+          "sourceLine": 225,
           "operators": [
             "filetype"
           ],
@@ -32624,9 +32212,9 @@
     }
   ],
   "meta": {
-    "buildDate": "2026-06-27T13:21:19.123Z",
+    "buildDate": "2026-06-27T14:30:14.548Z",
     "version": "2.0.0",
-    "totalDorks": 1549,
+    "totalDorks": 1528,
     "sourceFiles": [
       "01-quick-start.md",
       "02-core-operators.md",
