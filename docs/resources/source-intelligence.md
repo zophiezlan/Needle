@@ -53,26 +53,27 @@ _against the entries in this file_, not from generic synonym templates.
 These are the spine of a peer-first resource. Each is a peer-led / drug-user organisation with its
 own publications, programs, and submissions.
 
-| Org                     | `site:` target                  | Named signals (search in quotes)                                                        | Notes                                                    |
-| ----------------------- | ------------------------------- | --------------------------------------------------------------------------------------- | -------------------------------------------------------- |
-| **NUAA**                | `nuaa.org.au`                   | `"User's News"`, `"DanceWize NSW"`, `"NSP"`, `"peer line"`                              | NSW peak; magazine is the flagship named series          |
-| **AIVL**                | `aivl.org.au`                   | `"submission"`, `"position statement"`, newsletter ⚠ verify name                        | National peak body for drug-user orgs                    |
-| **HRVic**               | `hrvic.org.au`                  | `"DanceWize"`, `"peer education"`                                                       | Runs DanceWize (VIC festival peer program)               |
-| **CAHMA**               | `cahma.org.au`                  | `"CanTEST"`, `"peer"`                                                                   | Canberra; partner in the CanTEST service                 |
-| **QuIHN**               | `quihn.org`                     | `"QuIVAA"` ⚠ verify, `"NSP"`, `"peer"`                                                  | Queensland Injectors Health Network                      |
-| **WASUA**               | `wasua.com.au`                  | `"peer"`, `"NSP"`                                                                       | WA Substance Users Association                           |
-| **CAHMA / Directions**  | `directionshealth.com` ⚠ verify | `"CanTEST"`                                                                             | Co-operates the ACT fixed-site checking service          |
-| **Penington Institute** | `penington.org.au`              | `"Annual Overdose Report"`, `"International Overdose Awareness Day"`, `"CPOP"` ⚠ verify | Overdose data + advocacy; not peer-led but peer-adjacent |
+| Org                     | `site:` target         | Named signals (search in quotes)                                                        | Notes                                                                                    |
+| ----------------------- | ---------------------- | --------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
+| **NUAA**                | `nuaa.org.au`          | `"User's News"`, `"DanceWize NSW"`, `"NSP"`, `"peer line"`                              | NSW peak; magazine is the flagship named series                                          |
+| **AIVL**                | `aivl.org.au`          | `"AIVL News"` (newsletter), `"submission"`, `"position statement"`, `"NSP Directory"`   | National peak body for drug-user orgs                                                    |
+| **HRVic**               | `hrvic.org.au`         | `"DanceWize"`, `"peer education"`                                                       | Runs DanceWize (VIC festival peer program)                                               |
+| **CAHMA**               | `cahma.org.au`         | `"CanTEST"`, `"peer"`                                                                   | Canberra; co-delivers the CanTEST service                                                |
+| **QuIHN**               | `quihn.org`            | `"CheQpoint"`, `"NSP"`, `"peer"`                                                        | Queensland Injectors Health Network; hosts the CheQpoint service                         |
+| **QuIVAA**              | `quivaa.org.au`        | `"QuIVAA"`, `"advocacy"`, `"peer"`                                                      | Queensland's drug-user peer advocacy body (distinct from QuIHN)                          |
+| **WASUA**               | `wasua.com.au`         | `"peer"`, `"NSP"`                                                                       | WA Substance Users Association                                                           |
+| **Directions Health**   | `directionshealth.com` | `"CanTEST"`                                                                             | Operates CanTEST (with Pill Testing Australia + CAHMA)                                   |
+| **Penington Institute** | `penington.org.au`     | `"Annual Overdose Report"`, `"International Overdose Awareness Day"`, `"COPE"` training | Overdose data + advocacy (COPE = Community Overdose Prevention Education); peer-adjacent |
 
 **International peer / drug-user networks:**
 
-| Org                       | `site:` target                     | Named signals                                          |
-| ------------------------- | ---------------------------------- | ------------------------------------------------------ |
-| **INPUD**                 | `inpud.net`                        | `"Words Matter"`, `"drug user peace"`, position papers |
-| **EuroNPUD**              | `euronpud.net` ⚠ verify            | peer-produced harm reduction guides                    |
-| **VANDU**                 | `vandu.org`                        | peer overdose response, Vancouver                      |
-| **CAPUD**                 | `capud.ca`                         | Canadian drug-user union submissions                   |
-| **Urban Survivors Union** | `urbansurvivorsunion.org` ⚠ verify | US drug-user union; `"Urban Survivors Union"`          |
+| Org                       | `site:` target                     | Named signals                                                  |
+| ------------------------- | ---------------------------------- | -------------------------------------------------------------- |
+| **INPUD**                 | `inpud.net`                        | `"Words Matter"`, `"drug user peace"`, position papers         |
+| **EuroNPUD**              | `euronpud.net`                     | peer-produced harm reduction guides, `"European Diaries"` blog |
+| **VANDU**                 | `vandu.org`                        | peer overdose response, Vancouver                              |
+| **CAPUD**                 | `capud.ca`                         | Canadian drug-user union submissions                           |
+| **Urban Survivors Union** | `urbansurvivorsunion.org` ⚠ verify | US drug-user union; `"Urban Survivors Union"`                  |
 
 **Insider vocabulary (cross-cutting):** `"people who use drugs"` / `PWUD` / `PWID` (not "addicts"),
 `"lived and living experience"` / `"LLE"`, `"nothing about us without us"`, `"peer-led"` /
@@ -85,15 +86,16 @@ own publications, programs, and submissions.
 The single biggest specificity gap in the current pack: it never names the actual Australian
 services. Fix that first.
 
-| Entity                         | `site:` target                         | Named signals                                                                |
-| ------------------------------ | -------------------------------------- | ---------------------------------------------------------------------------- |
-| **CanTEST**                    | `cantest.org.au` ⚠ verify              | `"CanTEST"`, `"Health and Drug Checking Service"`, `"six-month report"`      |
-| **Pill Testing Australia**     | `pilltestingaustralia.com.au` ⚠ verify | `"Pill Testing Australia"`, `"Groovin the Moo"`                              |
-| **CheQpoint / QuIHN** ⚠ verify | `quihn.org`                            | QLD fixed-site checking — confirm current service name                       |
-| **The Loop** (UK)              | `wearetheloop.org`                     | `"The Loop"`, `"back of house"`, `"front of house"` testing model            |
-| **WEDINOS** (Wales)            | `wedinos.org`                          | `"WEDINOS"`, `"Philtre"` (newsletter), `"sample results"`, downloadable data |
-| **DanceSafe** (US)             | `dancesafe.org`                        | `"DanceSafe"`, reagent kits, `"lab testing"`                                 |
-| **EUDA / EMCDDA**              | `euda.europa.eu`, `emcdda.europa.eu`   | `"drug checking"`, `"Trendspotter"`                                          |
+| Entity                          | `site:` target                       | Named signals                                                                                              |
+| ------------------------------- | ------------------------------------ | ---------------------------------------------------------------------------------------------------------- |
+| **CanTEST** (ACT, fixed-site)   | `cantest.com.au`                     | `"CanTEST"`, `"Health and Drug Checking Service"`, `"Results"`, `"six-month report"`                       |
+| **Pill Testing Australia**      | `pilltestingaustralia.com.au`        | `"Pill Testing Australia"`, `"Festival Drug Checking Services"`, `"Groovin the Moo"`                       |
+| **CheQpoint** (QLD, fixed-site) | `quihn.org`                          | `"CheQpoint"`, `"drug checking service"`, Bowen Hills (paused under policy change — content still indexed) |
+| **The Loop Australia**          | `theloop.org.au`                     | `"The Loop Australia"` — AU drug-checking org (partner in CheQpoint)                                       |
+| **The Loop** (UK)               | `wearetheloop.org`                   | `"The Loop"`, `"back of house"`, `"front of house"` testing model                                          |
+| **WEDINOS** (Wales)             | `wedinos.org`, `wedinos.wales`       | `"WEDINOS"`, `"Philtre"` (quarterly bulletin), `"sample results"`, downloadable data                       |
+| **DanceSafe** (US)              | `dancesafe.org`                      | `"DanceSafe"`, reagent kits, `"lab testing"`                                                               |
+| **EUDA / EMCDDA**               | `euda.europa.eu`, `emcdda.europa.eu` | `"drug checking"`, `"Trendspotter"`                                                                        |
 
 **Insider vocabulary:** `FTIR` (Fourier-transform infrared), `"reagent testing"`, `"mass spec"` /
 `GC-MS`, `"fixed-site"` vs `"festival"` / `"event-based"`, `"front of house"` / `"back of house"`,
@@ -129,7 +131,7 @@ Experts know alerts come from specific state systems, not generic web pages.
 | Entity                                    | `site:` target     | Named signals                                                                  |
 | ----------------------------------------- | ------------------ | ------------------------------------------------------------------------------ |
 | **Take Home Naloxone Program** (national) | `health.gov.au`    | `"Take Home Naloxone"`, `"THN program"`, `"pharmacy"` supply                   |
-| **Penington Institute**                   | `penington.org.au` | `"Annual Overdose Report"`, `"CPOP"` ⚠ verify                                  |
+| **Penington Institute**                   | `penington.org.au` | `"Annual Overdose Report"`, `"COPE"` (Community Overdose Prevention Education) |
 | **Int'l Overdose Awareness Day**          | `overdoseday.com`  | `"International Overdose Awareness Day"`, `"IOAD"`, `"Remember. Take Action."` |
 | **NUAA / state peer orgs**                | `nuaa.org.au`      | peer naloxone training, `"overdose response"`                                  |
 | **Product names**                         | —                  | `Nyxoid` (nasal), `Prenoxad` (injectable), `Narcan` (US/intl)                  |
@@ -145,12 +147,12 @@ Experts know alerts come from specific state systems, not generic web pages.
 
 Name the two Australian services — there are only two, and an expert knows both.
 
-| Service                                | `site:` target         | Named signals                                                                      |
-| -------------------------------------- | ---------------------- | ---------------------------------------------------------------------------------- |
-| **Uniting MSIC** (Sydney, Kings Cross) | `uniting.org`          | `"Medically Supervised Injecting Centre"`, `"MSIC"`, `"Kings Cross"`               |
-| **North Richmond MSIR** (VIC)          | `nrch.com.au` ⚠ verify | `"Medically Supervised Injecting Room"`, `"MSIR"`, `"North Richmond"`, Ryan review |
-| **NSP surveillance**                   | `kirby.unsw.edu.au`    | `"Australian Needle Syringe Program Survey"`, `"ANSPS"`                            |
-| **Insite** (Vancouver, intl ref)       | `vch.ca` ⚠ verify      | `"Insite"`, `"supervised injection"`, `"OPS"`                                      |
+| Service                                | `site:` target      | Named signals                                                                                                        |
+| -------------------------------------- | ------------------- | -------------------------------------------------------------------------------------------------------------------- |
+| **Uniting MSIC** (Sydney, Kings Cross) | `uniting.org`       | `"Medically Supervised Injecting Centre"`, `"MSIC"`, `"Kings Cross"`                                                 |
+| **North Richmond MSIR** (VIC)          | `nrch.com.au`       | `"Medically Supervised Injecting Room"`, `"MSIR"`, `"North Richmond"`, Ryan review (run with St Vincent's Melbourne) |
+| **NSP surveillance**                   | `kirby.unsw.edu.au` | `"Australian Needle Syringe Program Survey"`, `"ANSPS"`                                                              |
+| **Insite** (Vancouver, intl ref)       | `vch.ca` ⚠ verify   | `"Insite"`, `"supervised injection"`, `"OPS"`                                                                        |
 
 **Insider vocabulary:** `DCR` (drug consumption room), `SIF` / `SIS` (supervised injecting
 facility/site), `OPS` (overdose prevention site), `MSIC` / `MSIR`, `"injecting-related injuries"`,
@@ -182,20 +184,20 @@ better.
 The named datasets and cohort studies are the highest-value signals in the whole file — they're how
 you find the actual numbers, and almost no non-specialist knows them.
 
-| Producer             | `site:` target          | Named datasets / series (quote these)                                                                                               |
-| -------------------- | ----------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
-| **NDARC**            | `ndarc.med.unsw.edu.au` | `"IDRS"` (Illicit Drug Reporting System), `"EDRS"` (Ecstasy & related Drugs Reporting System), `"Drug Trends"`, `"NSW Drug Trends"` |
-| **AIHW**             | `aihw.gov.au`           | `"NDSHS"` / `"National Drug Strategy Household Survey"`, `"AODTS NMDS"`, `"Alcohol and other drug treatment services in Australia"` |
-| **Kirby Institute**  | `kirby.unsw.edu.au`     | `"ANSPS"`, `"HIV, viral hepatitis and STIs in Australia"` annual surveillance                                                       |
-| **Burnet Institute** | `burnet.edu.au`         | `"SuperMIX"` (Melbourne injecting cohort), `"EC Australia"`, hep C elimination                                                      |
-| **NDRI** (Curtin)    | `ndri.curtin.edu.au`    | `"National Drug Research Institute"`, trends bulletins                                                                              |
-| **APO**              | `apo.org.au`            | grey-literature repository — `"harm reduction"` reports, submissions                                                                |
-| **Named cohorts**    | (cross-site)            | `"SuperMIX"`, `"MIX"`, `"HITS"`, `"ETHOS"`, `"ATLAS"` ⚠ verify each scope                                                           |
+| Producer             | `site:` target          | Named datasets / series (quote these)                                                                                                        |
+| -------------------- | ----------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| **NDARC**            | `ndarc.med.unsw.edu.au` | `"IDRS"` (Illicit Drug Reporting System), `"EDRS"` (Ecstasy & related Drugs Reporting System), `"Drug Trends"`, `"NSW Drug Trends"`          |
+| **AIHW**             | `aihw.gov.au`           | `"NDSHS"` / `"National Drug Strategy Household Survey"`, `"AODTS NMDS"`, `"Alcohol and other drug treatment services in Australia"`          |
+| **Kirby Institute**  | `kirby.unsw.edu.au`     | `"ANSPS"`, `"HIV, viral hepatitis and STIs in Australia"` annual surveillance                                                                |
+| **Burnet Institute** | `burnet.edu.au`         | `"SuperMIX"` (Melbourne injecting cohort), `"EC Australia"`, hep C elimination                                                               |
+| **NDRI** (Curtin)    | `ndri.curtin.edu.au`    | `"National Drug Research Institute"`, trends bulletins                                                                                       |
+| **APO**              | `apo.org.au`            | grey-literature repository — `"harm reduction"` reports, submissions                                                                         |
+| **Named cohorts**    | (cross-site)            | `"SuperMIX"` (Burnet; PWID cohort, called `"MIX"` pre-2008), `"ETHOS Engage"` (Kirby; hep C among PWID), `"HITS"` / `"ATLAS"` ⚠ verify scope |
 
 **Insider vocabulary:** `"sentinel"` sample, `"point prevalence"`, `"NMDS"` (national minimum
 dataset), `"closed treatment episode"`, `"seroprevalence"`, `"incidence"` vs `"prevalence"`,
-`"cascade"` (of care), `"reach"` / `"coverage"` (NSP), `"wastewater analysis"` (ACWA program ⚠
-verify name).
+`"cascade"` (of care), `"reach"` / `"coverage"` (NSP), `"wastewater analysis"` (national wastewater
+drug monitoring program ⚠ verify exact program name).
 
 ---
 
