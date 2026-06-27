@@ -970,6 +970,82 @@ award genres), `"funding agreement"` / `"deliverables"` / `"KPI"`, `"commissioni
 
 ---
 
+## 📡 Discovery Platforms & File Types
+
+The technique packs depend on _which platforms and operators actually work_. Lead with what's
+**dead** so you stop wasting dorks on it, then the live platforms, the named media, and the named
+datasets.
+
+**⚠ Dead or changed — stop dorking these:**
+
+| Thing                                       | Status                                                      | Use instead                                                                          |
+| ------------------------------------------- | ----------------------------------------------------------- | ------------------------------------------------------------------------------------ |
+| Google `cache:` operator                    | retired 2024                                                | Wayback `web/*/` + `archive.org/wayback/available` + `archive.ph` (see Web Archives) |
+| Google Podcasts (`podcasts.google.com`)     | shut 2024                                                   | `music.youtube.com` / `podcasts.apple.com` / `open.spotify.com`                      |
+| Stitcher (`stitcher.com`)                   | shut Aug 2023                                               | `podcasts.apple.com` / `open.spotify.com`                                            |
+| Glitch (`*.glitch.me`)                      | hosting ended Jul 2025                                      | `*.vercel.app` / `*.netlify.app` / `*.pages.dev` / `*.github.io`                     |
+| `site:docs.google.com` / `drive.google.com` | only _Publish-to-web_ docs indexed (link-shared excluded)   | low-yield niche dork — prefer the org's own `site:`                                  |
+| `site:canva.com`                            | design share-links not indexed (only published Canva Sites) | image search / the hosting org's site                                                |
+
+**Multimedia platforms + named harm-reduction podcasts:**
+
+| Platform / show                 | `site:` target                      | Note                                                                               |
+| ------------------------------- | ----------------------------------- | ---------------------------------------------------------------------------------- |
+| **YouTube**                     | `youtube.com`                       | video; `music.youtube.com` for podcast audio; `youtube.com/@handle` for a channel  |
+| **Vimeo**                       | `vimeo.com`                         | org training / documentary content                                                 |
+| **Apple Podcasts**              | `podcasts.apple.com`                | not legacy `itunes.apple.com`; country code in the path (`/au/`, `/ca/`)           |
+| **Spotify**                     | `open.spotify.com/show`, `/episode` | not the `spotify.com` root                                                         |
+| **SoundCloud / Pocket Casts**   | `soundcloud.com`, `pca.st`          | peer/grassroots audio; `pca.st` share links index better than `pocketcasts.com`    |
+| **TED / TEDx**                  | `ted.com/talks`                     | + `site:youtube.com "TEDx"` for talks not on ted.com                               |
+| **Crackdown** (CA) ✓            | `crackdownpod.com`                  | drug-user-led (Garth Mullins / VANDU) — the strongest named harm-reduction podcast |
+| **Narcotica** (US) ✓            | `narcocast.com`                     | drug-policy/HR podcast (Moraff/Siegel/Farah) — **not** `narcotica.com`             |
+| **Drug Science Podcast** (UK) ✓ | `drugscience.org.uk/podcast`        | Prof. David Nutt; evidence-based                                                   |
+
+> **No confirmed AU drug-user-org podcast.** NUAA, HRVic, Penington and NDARC publish magazines/
+> reports/webinars, not podcasts — don't quote a "NUAA podcast". For AU broadcast audio on drugs,
+> triple j **Hack** (not _The Hook Up_, which is sex/relationships) is the better target; **Filter**
+> (`filtermag.org`) is a magazine, not a podcast.
+
+**Document & data platforms + Australian open-data:**
+
+| Platform / portal           | `site:` target                          | Note                                                                                 |
+| --------------------------- | --------------------------------------- | ------------------------------------------------------------------------------------ |
+| **data.gov.au**             | `data.gov.au`                           | CKAN portal — `filetype:csv` / `filetype:xlsx` (bot-blocks scrapers, but dorks work) |
+| **AIHW data**               | `aihw.gov.au`                           | report `"Data tables"` as `filetype:xlsx` (AODTS NMDS, NDSHS)                        |
+| **ABS**                     | `abs.gov.au`                            | Data Explorer exports `filetype:xlsx` / `filetype:csv`                               |
+| **Scribd / SlideShare**     | `scribd.com`, `slideshare.net`          | conference decks / shared docs (SlideShare now a Scribd property; often gated)       |
+| **ISSUU / Calameo / Yumpu** | `issuu.com`, `calameo.com`, `yumpu.com` | flipbook republishing — zines, newsletters, org reports                              |
+| **DocumentCloud**           | `documentcloud.org`                     | FOI / primary-source documents (MuckRock) — high value for accountability work       |
+| **Speaker Deck / Prezi**    | `speakerdeck.com`, `prezi.com`          | slide decks                                                                          |
+
+**Named datasets for `filetype:` dorks:** `"AODTS NMDS"` /
+`"Alcohol and Other Drug Treatment Services National Minimum Data Set"` and `"NDSHS"` /
+`"National Drug Strategy Household Survey"` (AIHW data tables, `filetype:xlsx`);
+`"Australian Needle and Syringe Program Survey"` / `ANSPS` (Kirby Institute, `kirby.unsw.edu.au`).
+`filetype:` (and `ext:`) work for `xlsx`/`csv`/`pptx`/`docx` /`pdf` — always pair with `site:` for
+precision.
+
+**User-hosted / community / Jamstack platforms (currency-checked 2026):**
+
+| Type                  | `site:` targets                                                                                                                                             |
+| --------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Blogs / newsletters   | `medium.com`, `*.substack.com`, `*.wordpress.com`, `*.tumblr.com`, `*.ghost.io`, `bearblog.dev`, `telegra.ph` (flat path, not a subdomain)                  |
+| Docs / knowledge      | `*.notion.site`, `*.gitbook.io`, `*.readthedocs.io` (+ `*.readthedocs-hosted.com` for the Business tier)                                                    |
+| Bio-link / support    | `linktr.ee`, `carrd.co`, `ko-fi.com`, `patreon.com`, `beacons.ai`                                                                                           |
+| Resource boards       | `padlet.com`, `wakelet.com`                                                                                                                                 |
+| Jamstack / app hosts  | `*.vercel.app`, `*.netlify.app`, `*.pages.dev`, `*.web.app` (+ `*.firebaseapp.com`), `*.replit.app` (deployments — **not** `replit.dev`), `*.streamlit.app` |
+| Dev / data / research | `github.com`, `*.github.io`, `kaggle.com`, `huggingface.co` (+ `*.hf.space`), `zenodo.org`, `osf.io`, `figshare.com`                                        |
+| Forums                | `reddit.com` (`r/HarmReduction`, `r/Drugs` confirmed live), `quora.com`, Discourse footprint (`"Powered by Discourse"` + `inurl:/t/`)                       |
+
+**Insider vocabulary:** `filetype:` / `ext:` (file-type filter), `inurl:` directory mining
+(`/publications/`, `/uploads/`, `/assets/`, `/documents/`), `intitle:"index of"` (open directories),
+`site:` subdomain sweep (catches all `*.substack.com` etc.), `"link rot"`, generator footprints
+(`"Powered by Discourse"`, `inurl:/wp-content/`). For Reddit, prefer the confirmed subs + a
+platform-level `site:reddit.com` + named-AU-service terms (CanTEST, DanceWize) over asserting an
+unverified subreddit name.
+
+---
+
 ## 🛠️ Maintaining This File
 
 - Add an entity here **before** writing a dork that depends on it.

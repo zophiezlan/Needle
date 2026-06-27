@@ -1215,38 +1215,15 @@
     {
       "id": "document-discovery",
       "title": "Document Discovery",
-      "description": "Finding spreadsheets, databases, presentations, and other document types beyond PDFs.",
+      "description": "Find spreadsheets, datasets, presentations, and document types beyond PDFs — anchored to the named",
       "dorks": [
         {
-          "id": "document-discovery-search-gov-au",
-          "title": "Search gov.au",
+          "id": "document-discovery-search-data-gov-au",
+          "title": "Search data.gov.au",
           "category": "Quick Start",
-          "query": "filetype:xlsx \"harm reduction\" OR \"AOD\" site:*.gov.au",
+          "query": "site:data.gov.au filetype:csv (\"drug\" OR \"alcohol\" OR \"needle syringe\")",
           "explanation": "",
           "difficulty": "beginner",
-          "sourceFile": "dork-packs/document-discovery.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 25,
-          "operators": [
-            "site",
-            "filetype"
-          ],
-          "targetDomains": [
-            "gov.au"
-          ],
-          "domainCategory": "government",
-          "contentType": "xls",
-          "tags": [
-            "australia"
-          ]
-        },
-        {
-          "id": "document-discovery-excel-files-modern-harm-reduction",
-          "title": "Excel Files (Modern) - Harm reduction",
-          "category": "Spreadsheets & Data Files",
-          "query": "filetype:xlsx \"harm reduction\" site:*.gov.au",
-          "explanation": "",
-          "difficulty": "intermediate",
           "sourceFile": "dork-packs/document-discovery.md",
           "sourceType": "dork-pack",
           "sourceLine": 32,
@@ -1255,49 +1232,9 @@
             "filetype"
           ],
           "targetDomains": [
-            "gov.au"
+            "data.gov.au"
           ],
           "domainCategory": "government",
-          "contentType": "xls",
-          "tags": [
-            "australia"
-          ]
-        },
-        {
-          "id": "document-discovery-excel-files-modern-needle-syringe",
-          "title": "Excel Files (Modern) - Needle syringe",
-          "category": "Spreadsheets & Data Files",
-          "query": "filetype:xlsx \"needle syringe\" OR \"NSP\" statistics",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/document-discovery.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 38,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "xls",
-          "tags": [
-            "data"
-          ]
-        },
-        {
-          "id": "document-discovery-excel-files-modern-overdose",
-          "title": "Excel Files (Modern) - Overdose",
-          "category": "Spreadsheets & Data Files",
-          "query": "filetype:xlsx \"overdose\" data OR statistics Australia",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/document-discovery.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 44,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
           "contentType": "xls",
           "tags": [
             "data",
@@ -1305,133 +1242,140 @@
           ]
         },
         {
-          "id": "document-discovery-excel-files-modern-opioid",
-          "title": "Excel Files (Modern) - Opioid",
-          "category": "Spreadsheets & Data Files",
-          "query": "filetype:xlsx \"opioid\" OR \"methadone\" treatment",
+          "id": "document-discovery-data-gov-au-open-data",
+          "title": "data.gov.au (Open Data)",
+          "category": "\udcc2 Named Data Portals & Datasets",
+          "query": "site:data.gov.au (filetype:csv OR filetype:xlsx) (\"alcohol and other drug\" OR \"needle syringe\" OR overdose)",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/document-discovery.md",
           "sourceType": "dork-pack",
-          "sourceLine": 50,
+          "sourceLine": 41,
           "operators": [
+            "site",
             "filetype"
           ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "xls",
-          "tags": []
-        },
-        {
-          "id": "document-discovery-excel-files-modern-service-directory",
-          "title": "Excel Files (Modern) - Service directory",
-          "category": "Spreadsheets & Data Files",
-          "query": "filetype:xlsx \"service directory\" drug alcohol",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/document-discovery.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 56,
-          "operators": [
-            "filetype"
+          "targetDomains": [
+            "data.gov.au"
           ],
-          "targetDomains": [],
-          "domainCategory": "any",
+          "domainCategory": "government",
           "contentType": "xls",
           "tags": [
-            "services"
+            "data",
+            "australia"
           ]
         },
         {
-          "id": "document-discovery-excel-files-legacy-1",
-          "title": "Excel Files (Legacy) - 1",
-          "category": "Spreadsheets & Data Files",
-          "query": "filetype:xls \"opioid treatment\" OR \"methadone\" clinic",
+          "id": "document-discovery-aihw-data-tables-aodts-nmds-ndshs",
+          "title": "AIHW Data Tables (AODTS NMDS / NDSHS)",
+          "category": "\udcc2 Named Data Portals & Datasets",
+          "query": "site:aihw.gov.au filetype:xlsx (\"AODTS NMDS\" OR \"Alcohol and Other Drug Treatment Services\" OR \"National Drug Strategy Household Survey\")",
+          "explanation": "**Why this works:**\n\n- AIHW attaches `\"Data tables\"` as `.xlsx` to its reports — naming the **AODTS NMDS** (treatment\ndata) and **NDSHS** (household survey) lands on the spreadsheets behind the headline figures",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/document-discovery.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 47,
+          "operators": [
+            "site",
+            "filetype"
+          ],
+          "targetDomains": [
+            "aihw.gov.au"
+          ],
+          "domainCategory": "government",
+          "contentType": "xls",
+          "tags": [
+            "policy",
+            "services",
+            "data",
+            "australia"
+          ]
+        },
+        {
+          "id": "document-discovery-abs-nsp-survey",
+          "title": "ABS & NSP Survey",
+          "category": "\udcc2 Named Data Portals & Datasets",
+          "query": "(site:abs.gov.au filetype:xlsx \"drug-induced\") OR (site:kirby.unsw.edu.au (\"Australian Needle and Syringe Program Survey\" OR ANSPS) (filetype:pdf OR filetype:xlsx))",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/document-discovery.md",
           "sourceType": "dork-pack",
-          "sourceLine": 62,
+          "sourceLine": 58,
           "operators": [
+            "site",
             "filetype"
           ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "xls",
+          "targetDomains": [
+            "abs.gov.au",
+            "kirby.unsw.edu.au"
+          ],
+          "domainCategory": "government",
+          "contentType": "pdf",
           "tags": [
-            "services"
+            "documents",
+            "services",
+            "australia"
           ]
         },
         {
-          "id": "document-discovery-excel-files-legacy-2",
-          "title": "Excel Files (Legacy) - 2",
+          "id": "document-discovery-excel-modern-legacy",
+          "title": "Excel (Modern & Legacy)",
           "category": "Spreadsheets & Data Files",
-          "query": "filetype:xls \"drug\" OR \"alcohol\" statistics Australia",
+          "query": "(filetype:xlsx OR filetype:xls) (\"needle syringe\" OR \"opioid treatment\" OR overdose OR \"harm reduction\") site:*.gov.au",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/document-discovery.md",
           "sourceType": "dork-pack",
           "sourceLine": 68,
           "operators": [
+            "site",
             "filetype"
           ],
-          "targetDomains": [],
-          "domainCategory": "any",
+          "targetDomains": [
+            "gov.au"
+          ],
+          "domainCategory": "government",
           "contentType": "xls",
           "tags": [
-            "data",
             "australia"
           ]
         },
         {
-          "id": "document-discovery-excel-files-legacy-3",
-          "title": "Excel Files (Legacy) - 3",
+          "id": "document-discovery-csv-data-files",
+          "title": "CSV Data Files",
           "category": "Spreadsheets & Data Files",
-          "query": "filetype:xls \"hepatitis\" OR \"HIV\" surveillance",
+          "query": "filetype:csv (\"needle syringe\" OR \"NSP\" OR overdose OR \"treatment episodes\") (site:*.gov.au OR site:data.gov.au)",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/document-discovery.md",
           "sourceType": "dork-pack",
           "sourceLine": 74,
           "operators": [
+            "site",
             "filetype"
           ],
-          "targetDomains": [],
-          "domainCategory": "any",
+          "targetDomains": [
+            "gov.au",
+            "data.gov.au"
+          ],
+          "domainCategory": "government",
           "contentType": "xls",
-          "tags": []
+          "tags": [
+            "data",
+            "australia"
+          ]
         },
         {
-          "id": "document-discovery-csv-data-files-needle-syringe",
-          "title": "CSV Data Files - Needle syringe",
+          "id": "document-discovery-structured-data-json-xml",
+          "title": "Structured Data (JSON / XML)",
           "category": "Spreadsheets & Data Files",
-          "query": "filetype:csv \"needle syringe\" OR \"NSP\" OR \"overdose\"",
+          "query": "(filetype:json OR filetype:xml) (\"harm reduction\" OR drug OR health) (data OR API) site:*.gov.au",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/document-discovery.md",
           "sourceType": "dork-pack",
           "sourceLine": 80,
           "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "xls",
-          "tags": [
-            "data"
-          ]
-        },
-        {
-          "id": "document-discovery-csv-data-files-drug",
-          "title": "CSV Data Files - Drug",
-          "category": "Spreadsheets & Data Files",
-          "query": "filetype:csv \"drug\" OR \"alcohol\" site:*.gov.au",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/document-discovery.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 86,
-          "operators": [
             "site",
             "filetype"
           ],
@@ -1439,237 +1383,113 @@
             "gov.au"
           ],
           "domainCategory": "government",
-          "contentType": "xls",
+          "contentType": "any",
           "tags": [
             "data",
             "australia"
           ]
         },
         {
-          "id": "document-discovery-csv-data-files-treatment",
-          "title": "CSV Data Files - Treatment",
-          "category": "Spreadsheets & Data Files",
-          "query": "filetype:csv \"treatment\" episodes Australia",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/document-discovery.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 92,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "xls",
-          "tags": [
-            "data",
-            "australia"
-          ]
-        },
-        {
-          "id": "document-discovery-csv-data-files-hospitalisation",
-          "title": "CSV Data Files - Hospitalisation",
-          "category": "Spreadsheets & Data Files",
-          "query": "filetype:csv \"hospitalisation\" drug OR alcohol",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/document-discovery.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 98,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "xls",
-          "tags": [
-            "data"
-          ]
-        },
-        {
-          "id": "document-discovery-powerpoint-modern-harm-reduction",
-          "title": "PowerPoint (Modern) - Harm reduction",
+          "id": "document-discovery-powerpoint-modern-legacy",
+          "title": "PowerPoint (Modern & Legacy)",
           "category": "\udfac Presentations",
-          "query": "filetype:pptx \"harm reduction\" Australia",
+          "query": "(filetype:pptx OR filetype:ppt) (\"harm reduction\" OR \"drug checking\" OR naloxone OR \"needle exchange\") Australia",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/document-discovery.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 90,
+          "operators": [
+            "filetype"
+          ],
+          "targetDomains": [],
+          "domainCategory": "any",
+          "contentType": "ppt",
+          "tags": [
+            "australia"
+          ]
+        },
+        {
+          "id": "document-discovery-slide-platforms",
+          "title": "Slide Platforms",
+          "category": "\udfac Presentations",
+          "query": "(site:slideshare.net OR site:speakerdeck.com) \"harm reduction\" (conference OR training OR APSAD)",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/document-discovery.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 96,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "slideshare.net",
+            "speakerdeck.com"
+          ],
+          "domainCategory": "any",
+          "contentType": "any",
+          "tags": [
+            "training"
+          ]
+        },
+        {
+          "id": "document-discovery-flipbook-sharing-platforms",
+          "title": "Flipbook & Sharing Platforms",
+          "category": "\udcc4 Document-Sharing Platforms",
+          "query": "(site:issuu.com OR site:scribd.com OR site:calameo.com OR site:yumpu.com) (\"harm reduction\" OR \"drug checking\" OR \"peer\")",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/document-discovery.md",
           "sourceType": "dork-pack",
           "sourceLine": 108,
           "operators": [
-            "filetype"
+            "site"
           ],
-          "targetDomains": [],
+          "targetDomains": [
+            "issuu.com",
+            "scribd.com",
+            "calameo.com",
+            "yumpu.com"
+          ],
           "domainCategory": "any",
-          "contentType": "ppt",
+          "contentType": "any",
           "tags": [
-            "australia"
+            "peer"
           ]
         },
         {
-          "id": "document-discovery-powerpoint-modern-drug-checking",
-          "title": "PowerPoint (Modern) - Drug checking",
-          "category": "\udfac Presentations",
-          "query": "filetype:pptx \"drug checking\" OR \"pill testing\"",
-          "explanation": "",
+          "id": "document-discovery-documentcloud-foi-primary-sources",
+          "title": "DocumentCloud (FOI & Primary Sources)",
+          "category": "\udcc4 Document-Sharing Platforms",
+          "query": "site:documentcloud.org (\"harm reduction\" OR \"drug policy\" OR \"coronial\" OR FOI)",
+          "explanation": "**Why this works:**\n\n- DocumentCloud (run by MuckRock) is where journalists upload FOI releases and primary-source\nrecords — high value for accountability work that never reaches a polished PDF",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/document-discovery.md",
           "sourceType": "dork-pack",
           "sourceLine": 114,
           "operators": [
-            "filetype"
+            "site"
           ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "ppt",
-          "tags": []
-        },
-        {
-          "id": "document-discovery-powerpoint-modern-naloxone",
-          "title": "PowerPoint (Modern) - Naloxone",
-          "category": "\udfac Presentations",
-          "query": "filetype:pptx \"naloxone\" training OR program",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/document-discovery.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 120,
-          "operators": [
-            "filetype"
+          "targetDomains": [
+            "documentcloud.org"
           ],
-          "targetDomains": [],
           "domainCategory": "any",
-          "contentType": "ppt",
-          "tags": [
-            "services",
-            "training"
-          ]
-        },
-        {
-          "id": "document-discovery-powerpoint-modern-overdose",
-          "title": "PowerPoint (Modern) - Overdose",
-          "category": "\udfac Presentations",
-          "query": "filetype:pptx \"overdose\" prevention OR response",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/document-discovery.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 126,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "ppt",
-          "tags": []
-        },
-        {
-          "id": "document-discovery-powerpoint-modern-alcohol-and-other-drugs",
-          "title": "PowerPoint (Modern) - Alcohol and other drugs",
-          "category": "\udfac Presentations",
-          "query": "filetype:pptx conference \"alcohol and other drugs\"",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/document-discovery.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 132,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "ppt",
-          "tags": []
-        },
-        {
-          "id": "document-discovery-powerpoint-legacy-1",
-          "title": "PowerPoint (Legacy) - 1",
-          "category": "\udfac Presentations",
-          "query": "filetype:ppt \"needle exchange\" OR \"NSP\" presentation",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/document-discovery.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 138,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "ppt",
-          "tags": []
-        },
-        {
-          "id": "document-discovery-powerpoint-legacy-2",
-          "title": "PowerPoint (Legacy) - 2",
-          "category": "\udfac Presentations",
-          "query": "filetype:ppt \"methadone\" OR \"buprenorphine\" treatment",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/document-discovery.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 144,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "ppt",
-          "tags": []
-        },
-        {
-          "id": "document-discovery-pdf-presentations-slide-decks-1",
-          "title": "PDF Presentations (Slide Decks) - 1",
-          "category": "\udfac Presentations",
-          "query": "filetype:pdf \"slide\" OR \"presentation\" \"harm reduction\" Australia",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/document-discovery.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 150,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "australia"
-          ]
-        },
-        {
-          "id": "document-discovery-pdf-presentations-slide-decks-2",
-          "title": "PDF Presentations (Slide Decks) - 2",
-          "category": "\udfac Presentations",
-          "query": "inurl:presentation filetype:pdf \"drug policy\"",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/document-discovery.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 156,
-          "operators": [
-            "filetype",
-            "inurl"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "pdf",
+          "contentType": "any",
           "tags": [
             "documents",
             "policy"
           ]
         },
         {
-          "id": "document-discovery-modern-word-files-harm-reduction",
-          "title": "Modern Word Files - Harm reduction",
-          "category": "\udcdd Word Documents",
-          "query": "filetype:docx \"harm reduction\" policy OR procedure",
+          "id": "document-discovery-find-docx-files",
+          "title": "Find DOCX files",
+          "category": "\udcdd Word & Alternative Formats",
+          "query": "(filetype:docx OR filetype:doc OR filetype:rtf OR filetype:odt) (\"harm reduction\" OR \"harm minimisation\" OR \"drug checking\") (policy OR guideline OR procedure)",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/document-discovery.md",
           "sourceType": "dork-pack",
-          "sourceLine": 166,
+          "sourceLine": 130,
           "operators": [
             "filetype"
           ],
@@ -1681,585 +1501,38 @@
           ]
         },
         {
-          "id": "document-discovery-modern-word-files-needle-syringe",
-          "title": "Modern Word Files - Needle syringe",
-          "category": "\udcdd Word Documents",
-          "query": "filetype:docx \"needle syringe\" guidelines",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/document-discovery.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 172,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "doc",
-          "tags": []
-        },
-        {
-          "id": "document-discovery-modern-word-files-overdose",
-          "title": "Modern Word Files - Overdose",
-          "category": "\udcdd Word Documents",
-          "query": "filetype:docx \"overdose\" protocol OR response",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/document-discovery.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 178,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "doc",
-          "tags": []
-        },
-        {
-          "id": "document-discovery-modern-word-files-drug-checking",
-          "title": "Modern Word Files - Drug checking",
-          "category": "\udcdd Word Documents",
-          "query": "filetype:docx \"drug checking\" service design",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/document-discovery.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 184,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "doc",
-          "tags": [
-            "services"
-          ]
-        },
-        {
-          "id": "document-discovery-legacy-word-files-1",
-          "title": "Legacy Word Files - 1",
-          "category": "\udcdd Word Documents",
-          "query": "filetype:doc \"harm minimisation\" Australia",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/document-discovery.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 190,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "doc",
-          "tags": [
-            "australia"
-          ]
-        },
-        {
-          "id": "document-discovery-legacy-word-files-2",
-          "title": "Legacy Word Files - 2",
-          "category": "\udcdd Word Documents",
-          "query": "filetype:doc \"injecting drug use\" guidelines",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/document-discovery.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 196,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "doc",
-          "tags": []
-        },
-        {
-          "id": "document-discovery-rtf-odt-alternative-formats-1",
-          "title": "RTF & ODT (Alternative Formats) - 1",
-          "category": "\udcdd Word Documents",
-          "query": "filetype:rtf \"harm reduction\" Australia",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/document-discovery.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 202,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "australia"
-          ]
-        },
-        {
-          "id": "document-discovery-rtf-odt-alternative-formats-2",
-          "title": "RTF & ODT (Alternative Formats) - 2",
-          "category": "\udcdd Word Documents",
-          "query": "filetype:odt \"drug checking\" OR \"pill testing\"",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/document-discovery.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 208,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "document-discovery-sql-dumps-public-datasets-1",
-          "title": "SQL Dumps (Public Datasets) - 1",
-          "category": "\uddc3 Database Files",
-          "query": "filetype:sql \"drug\" OR \"health\" site:*.edu.au",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/document-discovery.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 221,
-          "operators": [
-            "site",
-            "filetype"
-          ],
-          "targetDomains": [
-            "edu.au"
-          ],
-          "domainCategory": "education",
-          "contentType": "any",
-          "tags": [
-            "data",
-            "australia"
-          ]
-        },
-        {
-          "id": "document-discovery-sql-dumps-public-datasets-2",
-          "title": "SQL Dumps (Public Datasets) - 2",
-          "category": "\uddc3 Database Files",
-          "query": "filetype:sql \"research\" data export",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/document-discovery.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 227,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "research",
-          "contentType": "any",
-          "tags": [
-            "research",
-            "data"
-          ]
-        },
-        {
-          "id": "document-discovery-access-databases-1",
-          "title": "Access Databases - 1",
-          "category": "\uddc3 Database Files",
-          "query": "filetype:mdb \"health\" OR \"drug\" research",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/document-discovery.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 233,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "research",
-          "contentType": "any",
-          "tags": [
-            "research",
-            "data"
-          ]
-        },
-        {
-          "id": "document-discovery-access-databases-2",
-          "title": "Access Databases - 2",
-          "category": "\uddc3 Database Files",
-          "query": "filetype:accdb \"service\" directory",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/document-discovery.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 239,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "services",
-            "data"
-          ]
-        },
-        {
-          "id": "document-discovery-structured-data-1",
-          "title": "Structured Data - 1",
-          "category": "\uddc3 Database Files",
-          "query": "filetype:json \"harm reduction\" OR \"drug\" API",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/document-discovery.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 245,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "data"
-          ]
-        },
-        {
-          "id": "document-discovery-structured-data-2",
-          "title": "Structured Data - 2",
-          "category": "\uddc3 Database Files",
-          "query": "filetype:xml \"health\" data Australia",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/document-discovery.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 251,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "data",
-            "australia"
-          ]
-        },
-        {
-          "id": "document-discovery-zip-archives-1",
-          "title": "ZIP Archives - 1",
-          "category": "\udcc1 Archive Files",
-          "query": "filetype:zip \"harm reduction\" resources",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/document-discovery.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 261,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "document-discovery-zip-archives-2",
-          "title": "ZIP Archives - 2",
-          "category": "\udcc1 Archive Files",
-          "query": "filetype:zip \"training\" materials drug alcohol",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/document-discovery.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 267,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "training"
-          ]
-        },
-        {
-          "id": "document-discovery-zip-archives-3",
-          "title": "ZIP Archives - 3",
-          "category": "\udcc1 Archive Files",
-          "query": "filetype:zip \"toolkit\" AOD OR \"alcohol and other drugs\"",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/document-discovery.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 273,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "document-discovery-epub-files-1",
-          "title": "EPUB Files - 1",
-          "category": "\udcd6 E-books & Publications",
-          "query": "filetype:epub \"harm reduction\" guide",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/document-discovery.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 283,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "document-discovery-epub-files-2",
-          "title": "EPUB Files - 2",
-          "category": "\udcd6 E-books & Publications",
-          "query": "filetype:epub \"drug policy\" reform",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/document-discovery.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 289,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "policy"
-          ]
-        },
-        {
-          "id": "document-discovery-epub-files-3",
-          "title": "EPUB Files - 3",
-          "category": "\udcd6 E-books & Publications",
-          "query": "filetype:epub \"addiction\" OR \"recovery\"",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/document-discovery.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 295,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "document-discovery-sitemaps-discover-hidden-pages-1",
-          "title": "Sitemaps (Discover Hidden Pages) - 1",
-          "category": "\udd27 Configuration & Technical Files",
-          "query": "filetype:xml sitemap \"health\" site:*.gov.au",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/document-discovery.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 305,
-          "operators": [
-            "site",
-            "filetype"
-          ],
-          "targetDomains": [
-            "gov.au"
-          ],
-          "domainCategory": "government",
-          "contentType": "any",
-          "tags": [
-            "australia"
-          ]
-        },
-        {
-          "id": "document-discovery-sitemaps-discover-hidden-pages-2",
-          "title": "Sitemaps (Discover Hidden Pages) - 2",
-          "category": "\udd27 Configuration & Technical Files",
-          "query": "filetype:xml sitemap \"drug\" site:*.org.au",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/document-discovery.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 311,
-          "operators": [
-            "site",
-            "filetype"
-          ],
-          "targetDomains": [
-            "org.au"
-          ],
-          "domainCategory": "ngo",
-          "contentType": "any",
-          "tags": [
-            "australia"
-          ]
-        },
-        {
-          "id": "document-discovery-log-files-public-health-data",
-          "title": "Log Files (Public Health Data)",
-          "category": "\udd27 Configuration & Technical Files",
-          "query": "filetype:log \"drug\" OR \"health\" site:*.gov.au",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/document-discovery.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 317,
-          "operators": [
-            "site",
-            "filetype"
-          ],
-          "targetDomains": [
-            "gov.au"
-          ],
-          "domainCategory": "government",
-          "contentType": "any",
-          "tags": [
-            "data",
-            "australia"
-          ]
-        },
-        {
-          "id": "document-discovery-google-docs-public-1",
-          "title": "Google Docs (Public) - 1",
+          "id": "document-discovery-published-google-docs-niche",
+          "title": "Published Google Docs (Niche)",
           "category": "☁ Cloud Storage & Collaboration",
-          "query": "site:docs.google.com/document \"harm reduction\"",
+          "query": "(site:docs.google.com OR site:drive.google.com) \"harm reduction\" (training OR resources OR directory)",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/document-discovery.md",
           "sourceType": "dork-pack",
-          "sourceLine": 327,
+          "sourceLine": 141,
           "operators": [
             "site"
           ],
           "targetDomains": [
-            "docs.google.com/document"
-          ],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "documents"
-          ]
-        },
-        {
-          "id": "document-discovery-google-docs-public-2",
-          "title": "Google Docs (Public) - 2",
-          "category": "☁ Cloud Storage & Collaboration",
-          "query": "site:docs.google.com/spreadsheets \"drug\" OR \"alcohol\" data",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/document-discovery.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 333,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "docs.google.com/spreadsheets"
-          ],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "data"
-          ]
-        },
-        {
-          "id": "document-discovery-google-docs-public-3",
-          "title": "Google Docs (Public) - 3",
-          "category": "☁ Cloud Storage & Collaboration",
-          "query": "site:docs.google.com/presentation \"AOD\" OR \"harm reduction\"",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/document-discovery.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 339,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "docs.google.com/presentation"
-          ],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "document-discovery-cloud-storage-public-files-1",
-          "title": "Cloud Storage (Public Files) - 1",
-          "category": "☁ Cloud Storage & Collaboration",
-          "query": "site:drive.google.com \"harm reduction\" resources",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/document-discovery.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 345,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
+            "docs.google.com",
             "drive.google.com"
           ],
           "domainCategory": "any",
           "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "document-discovery-cloud-storage-public-files-2",
-          "title": "Cloud Storage (Public Files) - 2",
-          "category": "☁ Cloud Storage & Collaboration",
-          "query": "site:dropbox.com \"drug policy\" OR \"harm reduction\"",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/document-discovery.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 351,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "dropbox.com"
-          ],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "policy"
-          ]
-        },
-        {
-          "id": "document-discovery-cloud-storage-public-files-3",
-          "title": "Cloud Storage (Public Files) - 3",
-          "category": "☁ Cloud Storage & Collaboration",
-          "query": "site:onedrive.live.com \"AOD\" training",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/document-discovery.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 357,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "onedrive.live.com"
-          ],
-          "domainCategory": "any",
-          "contentType": "any",
           "tags": [
             "training"
           ]
         },
         {
-          "id": "document-discovery-theses-dissertations-1",
-          "title": "Theses & Dissertations - 1",
+          "id": "document-discovery-theses-working-papers",
+          "title": "Theses & Working Papers",
           "category": "Academic & Research Documents",
-          "query": "filetype:pdf \"thesis\" OR \"dissertation\" \"harm reduction\" Australia",
+          "query": "filetype:pdf (\"thesis\" OR \"dissertation\" OR \"working paper\" OR \"discussion paper\") (\"harm reduction\" OR \"drug policy\") Australia",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/document-discovery.md",
           "sourceType": "dork-pack",
-          "sourceLine": 367,
+          "sourceLine": 151,
           "operators": [
             "filetype"
           ],
@@ -2268,19 +1541,46 @@
           "contentType": "pdf",
           "tags": [
             "documents",
+            "policy",
             "australia"
           ]
         },
         {
-          "id": "document-discovery-theses-dissertations-2",
-          "title": "Theses & Dissertations - 2",
+          "id": "document-discovery-research-repositories",
+          "title": "Research Repositories",
           "category": "Academic & Research Documents",
-          "query": "filetype:pdf \"PhD\" \"drug policy\" OR \"drug use\"",
+          "query": "(site:osf.io OR site:zenodo.org OR site:figshare.com) (\"harm reduction\" OR \"drug checking\") (dataset OR data OR report)",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/document-discovery.md",
           "sourceType": "dork-pack",
-          "sourceLine": 373,
+          "sourceLine": 157,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "osf.io",
+            "zenodo.org",
+            "figshare.com"
+          ],
+          "domainCategory": "any",
+          "contentType": "any",
+          "tags": [
+            "documents",
+            "research",
+            "data"
+          ]
+        },
+        {
+          "id": "document-discovery-service-directories",
+          "title": "Service Directories",
+          "category": "\udfe5 Service & Government Documents",
+          "query": "(filetype:xlsx OR filetype:csv OR filetype:pdf) \"service directory\" (drug OR alcohol OR AOD) Australia",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/document-discovery.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 167,
           "operators": [
             "filetype"
           ],
@@ -2289,347 +1589,46 @@
           "contentType": "pdf",
           "tags": [
             "documents",
-            "policy"
-          ]
-        },
-        {
-          "id": "document-discovery-working-papers-1",
-          "title": "Working Papers - 1",
-          "category": "Academic & Research Documents",
-          "query": "filetype:pdf \"working paper\" \"harm reduction\" OR \"drug policy\"",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/document-discovery.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 379,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "policy"
-          ]
-        },
-        {
-          "id": "document-discovery-working-papers-2",
-          "title": "Working Papers - 2",
-          "category": "Academic & Research Documents",
-          "query": "filetype:pdf \"discussion paper\" \"alcohol and other drugs\"",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/document-discovery.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 385,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "pdf",
-          "tags": [
-            "documents"
-          ]
-        },
-        {
-          "id": "document-discovery-service-directories-1",
-          "title": "Service Directories - 1",
-          "category": "\udfe5 Health Service Documents",
-          "query": "filetype:xlsx \"service directory\" drug OR alcohol Australia",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/document-discovery.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 395,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "xls",
-          "tags": [
             "services",
             "australia"
           ]
         },
         {
-          "id": "document-discovery-service-directories-2",
-          "title": "Service Directories - 2",
-          "category": "\udfe5 Health Service Documents",
-          "query": "filetype:pdf \"service directory\" AOD OR \"alcohol and other drugs\"",
-          "explanation": "",
+          "id": "document-discovery-budget-funding-with-named-registers",
+          "title": "Budget & Funding (with Named Registers)",
+          "category": "\udfe5 Service & Government Documents",
+          "query": "(filetype:xlsx OR filetype:pdf) (budget OR funding OR \"Grant Award\" OR \"Contract Notice\") (\"harm reduction\" OR AOD) (site:*.gov.au OR site:grants.gov.au OR site:tenders.gov.au)",
+          "explanation": "> See the [Organizational Intelligence pack](organizational-intelligence.md) for the named registers\n> (ACNC AIS, GrantConnect, AusTender) behind these.",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/document-discovery.md",
           "sourceType": "dork-pack",
-          "sourceLine": 401,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "services"
-          ]
-        },
-        {
-          "id": "document-discovery-service-directories-3",
-          "title": "Service Directories - 3",
-          "category": "\udfe5 Health Service Documents",
-          "query": "filetype:csv \"treatment services\" drug alcohol",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/document-discovery.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 407,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "xls",
-          "tags": [
-            "services"
-          ]
-        },
-        {
-          "id": "document-discovery-clinical-guidelines-1",
-          "title": "Clinical Guidelines - 1",
-          "category": "\udfe5 Health Service Documents",
-          "query": "filetype:pdf \"clinical guideline\" OR \"practice guideline\" opioid",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/document-discovery.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 413,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "services"
-          ]
-        },
-        {
-          "id": "document-discovery-clinical-guidelines-2",
-          "title": "Clinical Guidelines - 2",
-          "category": "\udfe5 Health Service Documents",
-          "query": "filetype:pdf \"protocol\" \"overdose\" OR \"withdrawal\"",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/document-discovery.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 419,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "services"
-          ]
-        },
-        {
-          "id": "document-discovery-clinical-guidelines-3",
-          "title": "Clinical Guidelines - 3",
-          "category": "\udfe5 Health Service Documents",
-          "query": "filetype:docx \"procedure\" naloxone OR \"take-home\"",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/document-discovery.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 425,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "doc",
-          "tags": [
-            "services"
-          ]
-        },
-        {
-          "id": "document-discovery-meeting-minutes-agendas-1",
-          "title": "Meeting Minutes & Agendas - 1",
-          "category": "\udccb Government Documents",
-          "query": "filetype:pdf \"meeting minutes\" \"harm reduction\" OR \"drug policy\"",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/document-discovery.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 435,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "policy"
-          ]
-        },
-        {
-          "id": "document-discovery-meeting-minutes-agendas-2",
-          "title": "Meeting Minutes & Agendas - 2",
-          "category": "\udccb Government Documents",
-          "query": "filetype:docx \"agenda\" \"alcohol and other drugs\" committee",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/document-discovery.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 441,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "doc",
-          "tags": []
-        },
-        {
-          "id": "document-discovery-meeting-minutes-agendas-3",
-          "title": "Meeting Minutes & Agendas - 3",
-          "category": "\udccb Government Documents",
-          "query": "filetype:pdf \"steering committee\" AOD minutes",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/document-discovery.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 447,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "pdf",
-          "tags": [
-            "documents"
-          ]
-        },
-        {
-          "id": "document-discovery-budget-funding-1",
-          "title": "Budget & Funding - 1",
-          "category": "\udccb Government Documents",
-          "query": "filetype:xlsx \"budget\" \"harm reduction\" OR \"AOD\" site:*.gov.au",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/document-discovery.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 453,
+          "sourceLine": 173,
           "operators": [
             "site",
             "filetype"
           ],
           "targetDomains": [
-            "gov.au"
+            "gov.au",
+            "grants.gov.au",
+            "tenders.gov.au"
           ],
           "domainCategory": "government",
-          "contentType": "xls",
+          "contentType": "pdf",
           "tags": [
+            "documents",
             "australia"
           ]
         },
         {
-          "id": "document-discovery-budget-funding-2",
-          "title": "Budget & Funding - 2",
-          "category": "\udccb Government Documents",
-          "query": "filetype:pdf \"funding\" allocation drug OR alcohol",
+          "id": "document-discovery-combine-file-types",
+          "title": "Combine File Types",
+          "category": "\udd0d Multi-Format & Pro Tips",
+          "query": "(filetype:xlsx OR filetype:csv OR filetype:pdf) (overdose OR \"needle syringe\") data Australia",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/document-discovery.md",
           "sourceType": "dork-pack",
-          "sourceLine": 459,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "pdf",
-          "tags": [
-            "documents"
-          ]
-        },
-        {
-          "id": "document-discovery-budget-funding-3",
-          "title": "Budget & Funding - 3",
-          "category": "\udccb Government Documents",
-          "query": "filetype:xls \"expenditure\" health drug services",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/document-discovery.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 465,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "xls",
-          "tags": [
-            "services"
-          ]
-        },
-        {
-          "id": "document-discovery-combine-multiple-file-types-1",
-          "title": "Combine Multiple File Types - 1",
-          "category": "\udd0d Multi-Format Searches",
-          "query": "(filetype:xlsx OR filetype:csv) \"overdose\" data Australia",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/document-discovery.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 475,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "xls",
-          "tags": [
-            "data",
-            "australia"
-          ]
-        },
-        {
-          "id": "document-discovery-combine-multiple-file-types-2",
-          "title": "Combine Multiple File Types - 2",
-          "category": "\udd0d Multi-Format Searches",
-          "query": "(filetype:pptx OR filetype:pdf) \"harm reduction\" conference presentation",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/document-discovery.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 481,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "pdf",
-          "tags": [
-            "documents"
-          ]
-        },
-        {
-          "id": "document-discovery-combine-multiple-file-types-3",
-          "title": "Combine Multiple File Types - 3",
-          "category": "\udd0d Multi-Format Searches",
-          "query": "(filetype:docx OR filetype:pdf) \"policy\" \"drug checking\"",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/document-discovery.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 487,
+          "sourceLine": 186,
           "operators": [
             "filetype"
           ],
@@ -2638,60 +1637,20 @@
           "contentType": "pdf",
           "tags": [
             "documents",
-            "policy"
-          ]
-        },
-        {
-          "id": "document-discovery-all-data-files",
-          "title": "All Data Files",
-          "category": "\udd0d Multi-Format Searches",
-          "query": "(filetype:xlsx OR filetype:xls OR filetype:csv) \"drug\" statistics Australia",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/document-discovery.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 493,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "xls",
-          "tags": [
             "data",
             "australia"
           ]
         },
         {
-          "id": "document-discovery-all-presentation-types",
-          "title": "All Presentation Types",
-          "category": "\udd0d Multi-Format Searches",
-          "query": "(filetype:pptx OR filetype:ppt OR filetype:pdf) \"harm reduction\" slides conference",
+          "id": "document-discovery-open-directories",
+          "title": "Open Directories",
+          "category": "\udd0d Multi-Format & Pro Tips",
+          "query": "intitle:\"index of\" (filetype:xlsx OR filetype:pptx) site:*.gov.au \"drug\"",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/document-discovery.md",
           "sourceType": "dork-pack",
-          "sourceLine": 499,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "pdf",
-          "tags": [
-            "documents"
-          ]
-        },
-        {
-          "id": "document-discovery-finding-hidden-directories-1",
-          "title": "Finding Hidden Directories - 1",
-          "category": "\udca1 Pro Tips",
-          "query": "intitle:\"index of\" filetype:xlsx site:*.gov.au",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/document-discovery.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 509,
+          "sourceLine": 192,
           "operators": [
             "site",
             "filetype",
@@ -2707,64 +1666,21 @@
           ]
         },
         {
-          "id": "document-discovery-finding-hidden-directories-2",
-          "title": "Finding Hidden Directories - 2",
-          "category": "\udca1 Pro Tips",
-          "query": "intitle:\"index of\" filetype:pptx site:*.health.*.gov.au",
+          "id": "document-discovery-by-year-range",
+          "title": "By Year Range",
+          "category": "\udd0d Multi-Format & Pro Tips",
+          "query": "(filetype:xlsx OR filetype:pptx) (\"harm reduction\" OR \"drug policy\") 2020..2026",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/document-discovery.md",
           "sourceType": "dork-pack",
-          "sourceLine": 515,
-          "operators": [
-            "site",
-            "filetype",
-            "intitle"
-          ],
-          "targetDomains": [
-            "health.*.gov.au"
-          ],
-          "domainCategory": "government",
-          "contentType": "ppt",
-          "tags": [
-            "australia"
-          ]
-        },
-        {
-          "id": "document-discovery-by-year-range-1",
-          "title": "By Year Range - 1",
-          "category": "\udca1 Pro Tips",
-          "query": "filetype:xlsx \"harm reduction\" 2020..2026",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/document-discovery.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 521,
+          "sourceLine": 198,
           "operators": [
             "filetype"
           ],
           "targetDomains": [],
           "domainCategory": "any",
           "contentType": "xls",
-          "tags": []
-        },
-        {
-          "id": "document-discovery-by-year-range-2",
-          "title": "By Year Range - 2",
-          "category": "\udca1 Pro Tips",
-          "query": "filetype:pptx \"drug policy\" after:2023",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/document-discovery.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 527,
-          "operators": [
-            "filetype",
-            "after"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "ppt",
           "tags": [
             "policy"
           ]
@@ -2772,13 +1688,13 @@
         {
           "id": "document-discovery-exclude-duplicates",
           "title": "Exclude Duplicates",
-          "category": "\udca1 Pro Tips",
+          "category": "\udd0d Multi-Format & Pro Tips",
           "query": "filetype:xlsx \"harm reduction\" -\"copy\" -\"backup\" -\"old\"",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/document-discovery.md",
           "sourceType": "dork-pack",
-          "sourceLine": 533,
+          "sourceLine": 204,
           "operators": [
             "filetype"
           ],
@@ -8888,7 +7804,7 @@
     {
       "id": "investigative",
       "title": "Creative & Investigative Searching",
-      "description": "Finding buried, niche, obscure, and unusual content through creative dorking. Use responsibly.",
+      "description": "Surface buried, unlinked, and historical documents through directory mining, FOI logs, and named",
       "dorks": [
         {
           "id": "investigative-search-gov-au",
@@ -8899,7 +7815,7 @@
           "difficulty": "beginner",
           "sourceFile": "dork-packs/investigative.md",
           "sourceType": "dork-pack",
-          "sourceLine": 29,
+          "sourceLine": 45,
           "operators": [
             "site",
             "filetype",
@@ -8916,15 +7832,15 @@
           ]
         },
         {
-          "id": "investigative-directory-index-mining-1",
-          "title": "Directory & Index Mining - 1",
+          "id": "investigative-directory-index-mining",
+          "title": "Directory & Index Mining",
           "category": "Basic Queries",
-          "query": "site:*.gov.au inurl:\"/publications/\" filetype:pdf \"harm reduction\"",
-          "explanation": "",
+          "query": "site:*.gov.au (inurl:\"/publications/\" OR inurl:\"/uploads/\" OR inurl:\"/documents/\") filetype:pdf (\"harm reduction\" OR drug OR overdose)",
+          "explanation": "**Why this works:**\n\n- Documents are often uploaded to asset directories but never linked from a navigable page — mining\nthe directory path surfaces them",
           "difficulty": "beginner",
           "sourceFile": "dork-packs/investigative.md",
           "sourceType": "dork-pack",
-          "sourceLine": 36,
+          "sourceLine": 52,
           "operators": [
             "site",
             "filetype",
@@ -8941,65 +7857,15 @@
           ]
         },
         {
-          "id": "investigative-directory-index-mining-2",
-          "title": "Directory & Index Mining - 2",
+          "id": "investigative-draft-working-documents",
+          "title": "Draft & Working Documents",
           "category": "Basic Queries",
-          "query": "site:*.gov.au inurl:\"/uploads/\" filetype:pdf \"drug\"",
+          "query": "site:*.gov.au filetype:pdf (draft OR \"working paper\" OR \"discussion paper\") \"harm reduction\" -\"final\"",
           "explanation": "",
           "difficulty": "beginner",
           "sourceFile": "dork-packs/investigative.md",
           "sourceType": "dork-pack",
-          "sourceLine": 42,
-          "operators": [
-            "site",
-            "filetype",
-            "inurl"
-          ],
-          "targetDomains": [
-            "gov.au"
-          ],
-          "domainCategory": "government",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "australia"
-          ]
-        },
-        {
-          "id": "investigative-directory-index-mining-3",
-          "title": "Directory & Index Mining - 3",
-          "category": "Basic Queries",
-          "query": "site:*.gov.au inurl:\"/documents/\" filetype:pdf \"overdose\"",
-          "explanation": "",
-          "difficulty": "beginner",
-          "sourceFile": "dork-packs/investigative.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 48,
-          "operators": [
-            "site",
-            "filetype",
-            "inurl"
-          ],
-          "targetDomains": [
-            "gov.au"
-          ],
-          "domainCategory": "government",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "australia"
-          ]
-        },
-        {
-          "id": "investigative-finding-draft-documents",
-          "title": "Finding Draft Documents",
-          "category": "Basic Queries",
-          "query": "site:*.gov.au filetype:pdf \"draft\" \"harm reduction\" -\"final\"",
-          "explanation": "",
-          "difficulty": "beginner",
-          "sourceFile": "dork-packs/investigative.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 54,
+          "sourceLine": 63,
           "operators": [
             "site",
             "filetype"
@@ -9018,12 +7884,12 @@
           "id": "investigative-conference-presentations",
           "title": "Conference Presentations",
           "category": "Basic Queries",
-          "query": "filetype:pptx OR filetype:ppt \"harm reduction\" Australia",
+          "query": "(filetype:pptx OR filetype:ppt) \"harm reduction\" Australia",
           "explanation": "",
           "difficulty": "beginner",
           "sourceFile": "dork-packs/investigative.md",
           "sourceType": "dork-pack",
-          "sourceLine": 60,
+          "sourceLine": 69,
           "operators": [
             "filetype"
           ],
@@ -9035,15 +7901,15 @@
           ]
         },
         {
-          "id": "investigative-index-pages-1",
-          "title": "Index Pages - 1",
+          "id": "investigative-open-directories",
+          "title": "Open Directories",
           "category": "Intermediate Queries",
-          "query": "site:*.gov.au intitle:\"index of\" \"harm reduction\" OR \"drug\"",
+          "query": "site:*.gov.au intitle:\"index of\" (\"harm reduction\" OR drug OR AOD)",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/investigative.md",
           "sourceType": "dork-pack",
-          "sourceLine": 70,
+          "sourceLine": 79,
           "operators": [
             "site",
             "intitle"
@@ -9058,40 +7924,15 @@
           ]
         },
         {
-          "id": "investigative-index-pages-2",
-          "title": "Index Pages - 2",
+          "id": "investigative-internal-unpublished",
+          "title": "Internal / Unpublished",
           "category": "Intermediate Queries",
-          "query": "site:*.health.*.gov.au inurl:\"/assets/\" filetype:pdf",
+          "query": "site:*.gov.au filetype:pdf (\"internal use only\" OR \"not for distribution\" OR \"for official use\") (\"drug\" OR \"alcohol and other drugs\") -\"de-identified\"",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/investigative.md",
           "sourceType": "dork-pack",
-          "sourceLine": 76,
-          "operators": [
-            "site",
-            "filetype",
-            "inurl"
-          ],
-          "targetDomains": [
-            "health.*.gov.au"
-          ],
-          "domainCategory": "government",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "australia"
-          ]
-        },
-        {
-          "id": "investigative-internal-unpublished-documents-1",
-          "title": "Internal/Unpublished Documents - 1",
-          "category": "Intermediate Queries",
-          "query": "site:*.gov.au filetype:pdf \"internal use only\" OR \"not for distribution\" \"drug\"",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/investigative.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 82,
+          "sourceLine": 85,
           "operators": [
             "site",
             "filetype"
@@ -9107,39 +7948,15 @@
           ]
         },
         {
-          "id": "investigative-internal-unpublished-documents-2",
-          "title": "Internal/Unpublished Documents - 2",
+          "id": "investigative-embargoed-pre-release",
+          "title": "Embargoed / Pre-Release",
           "category": "Intermediate Queries",
-          "query": "site:*.gov.au filetype:pdf \"confidential\" \"alcohol and other drugs\" -\"de-identified\"",
+          "query": "site:*.gov.au filetype:pdf (embargoed OR \"pre-release\" OR \"under embargo\") (\"drug policy\" OR \"harm reduction\")",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/investigative.md",
           "sourceType": "dork-pack",
-          "sourceLine": 88,
-          "operators": [
-            "site",
-            "filetype"
-          ],
-          "targetDomains": [
-            "gov.au"
-          ],
-          "domainCategory": "government",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "australia"
-          ]
-        },
-        {
-          "id": "investigative-embargoed-pre-release-1",
-          "title": "Embargoed/Pre-Release - 1",
-          "category": "Intermediate Queries",
-          "query": "site:*.gov.au filetype:pdf \"embargoed\" OR \"pre-release\" drug policy",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/investigative.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 94,
+          "sourceLine": 91,
           "operators": [
             "site",
             "filetype"
@@ -9152,28 +7969,6 @@
           "tags": [
             "documents",
             "policy",
-            "australia"
-          ]
-        },
-        {
-          "id": "investigative-embargoed-pre-release-2",
-          "title": "Embargoed/Pre-Release - 2",
-          "category": "Intermediate Queries",
-          "query": "\"working paper\" OR \"discussion paper\" harm reduction site:*.gov.au",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/investigative.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 100,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "gov.au"
-          ],
-          "domainCategory": "government",
-          "contentType": "any",
-          "tags": [
             "australia"
           ]
         },
@@ -9186,7 +7981,7 @@
           "difficulty": "advanced",
           "sourceFile": "dork-packs/investigative.md",
           "sourceType": "dork-pack",
-          "sourceLine": 110,
+          "sourceLine": 101,
           "operators": [
             "site",
             "filetype",
@@ -9204,15 +7999,41 @@
           ]
         },
         {
-          "id": "investigative-meeting-minutes-agendas-1",
-          "title": "Meeting Minutes & Agendas - 1",
+          "id": "investigative-tenders-funding-named-registers",
+          "title": "Tenders & Funding (Named Registers)",
           "category": "Advanced Queries",
-          "query": "site:*.gov.au filetype:pdf \"meeting minutes\" (\"harm reduction\" OR \"drug policy\")",
+          "query": "(site:tenders.gov.au \"Contract Notice\") OR (site:grants.gov.au \"Grant Award\") OR (site:*.gov.au filetype:pdf (\"funding agreement\" OR \"request for tender\") AOD)",
+          "explanation": "**Why this works:**\n\n- Instead of a vague `tender \"harm reduction\"`, this hits the actual award genres — **AusTender**\nContract Notices and **GrantConnect** Grant Awards (see the Organizational Intelligence pack)",
+          "difficulty": "advanced",
+          "sourceFile": "dork-packs/investigative.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 107,
+          "operators": [
+            "site",
+            "filetype"
+          ],
+          "targetDomains": [
+            "tenders.gov.au",
+            "grants.gov.au",
+            "gov.au"
+          ],
+          "domainCategory": "government",
+          "contentType": "pdf",
+          "tags": [
+            "documents",
+            "australia"
+          ]
+        },
+        {
+          "id": "investigative-meeting-minutes-committees",
+          "title": "Meeting Minutes & Committees",
+          "category": "Advanced Queries",
+          "query": "site:*.gov.au filetype:pdf (\"meeting minutes\" OR agenda OR \"steering committee\" OR \"working group\") (\"harm reduction\" OR \"alcohol and other drugs\")",
           "explanation": "",
           "difficulty": "advanced",
           "sourceFile": "dork-packs/investigative.md",
           "sourceType": "dork-pack",
-          "sourceLine": 116,
+          "sourceLine": 118,
           "operators": [
             "site",
             "filetype"
@@ -9224,65 +8045,20 @@
           "contentType": "pdf",
           "tags": [
             "documents",
-            "policy",
             "australia"
           ]
         },
         {
-          "id": "investigative-meeting-minutes-agendas-2",
-          "title": "Meeting Minutes & Agendas - 2",
-          "category": "Advanced Queries",
-          "query": "site:*.gov.au filetype:pdf \"agenda\" \"alcohol and other drugs\" committee",
-          "explanation": "",
-          "difficulty": "advanced",
-          "sourceFile": "dork-packs/investigative.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 122,
-          "operators": [
-            "site",
-            "filetype"
-          ],
-          "targetDomains": [
-            "gov.au"
-          ],
-          "domainCategory": "government",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "australia"
-          ]
-        },
-        {
-          "id": "investigative-meeting-minutes-agendas-3",
-          "title": "Meeting Minutes & Agendas - 3",
-          "category": "Advanced Queries",
-          "query": "\"steering committee\" OR \"working group\" minutes harm reduction filetype:pdf",
-          "explanation": "",
-          "difficulty": "advanced",
+          "id": "investigative-disclosure-logs",
+          "title": "Disclosure Logs",
+          "category": "\udccb FOI (Freedom of Information)",
+          "query": "(\"disclosure log\" OR \"FOI disclosure log\") site:*.gov.au (\"drug\" OR \"harm reduction\" OR \"alcohol and other drugs\")",
+          "explanation": "**Why this works:**\n\n- Agencies publish a **disclosure log** of released FOI documents — searching it by name finds\nmaterial already cleared for release but never publicised",
+          "difficulty": "intermediate",
           "sourceFile": "dork-packs/investigative.md",
           "sourceType": "dork-pack",
           "sourceLine": 128,
           "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "pdf",
-          "tags": [
-            "documents"
-          ]
-        },
-        {
-          "id": "investigative-tender-documents-funding-tender",
-          "title": "Tender Documents & Funding - Tender",
-          "category": "Advanced Queries",
-          "query": "site:*.gov.au \"tender\" OR \"expression of interest\" \"harm reduction\"",
-          "explanation": "",
-          "difficulty": "advanced",
-          "sourceFile": "dork-packs/investigative.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 134,
-          "operators": [
             "site"
           ],
           "targetDomains": [
@@ -9291,281 +8067,68 @@
           "domainCategory": "government",
           "contentType": "any",
           "tags": [
-            "documents",
             "australia"
           ]
         },
         {
-          "id": "investigative-tender-documents-funding-funding-agreement",
-          "title": "Tender Documents & Funding - Funding agreement",
-          "category": "Advanced Queries",
-          "query": "site:*.gov.au filetype:pdf \"funding agreement\" OR \"service agreement\" AOD",
-          "explanation": "",
-          "difficulty": "advanced",
-          "sourceFile": "dork-packs/investigative.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 140,
-          "operators": [
-            "site",
-            "filetype"
-          ],
-          "targetDomains": [
-            "gov.au"
-          ],
-          "domainCategory": "government",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "services",
-            "australia"
-          ]
-        },
-        {
-          "id": "investigative-tender-documents-funding-request-for-tender",
-          "title": "Tender Documents & Funding - Request for tender",
-          "category": "Advanced Queries",
-          "query": "\"request for tender\" \"alcohol and other drugs\" site:*.gov.au",
-          "explanation": "",
-          "difficulty": "advanced",
-          "sourceFile": "dork-packs/investigative.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 146,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "gov.au"
-          ],
-          "domainCategory": "government",
-          "contentType": "any",
-          "tags": [
-            "documents",
-            "australia"
-          ]
-        },
-        {
-          "id": "investigative-tender-documents-funding-grant-guidelines",
-          "title": "Tender Documents & Funding - Grant guidelines",
-          "category": "Advanced Queries",
-          "query": "\"grant guidelines\" harm reduction site:*.gov.au",
-          "explanation": "",
-          "difficulty": "advanced",
-          "sourceFile": "dork-packs/investigative.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 152,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "gov.au"
-          ],
-          "domainCategory": "government",
-          "contentType": "any",
-          "tags": [
-            "documents",
-            "australia"
-          ]
-        },
-        {
-          "id": "investigative-excel-files-1",
-          "title": "Excel Files - 1",
-          "category": "Spreadsheets & Data Files",
-          "query": "filetype:xlsx \"harm reduction\" OR \"AOD\" site:*.gov.au",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/investigative.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 162,
-          "operators": [
-            "site",
-            "filetype"
-          ],
-          "targetDomains": [
-            "gov.au"
-          ],
-          "domainCategory": "government",
-          "contentType": "xls",
-          "tags": [
-            "australia"
-          ]
-        },
-        {
-          "id": "investigative-excel-files-2",
-          "title": "Excel Files - 2",
-          "category": "Spreadsheets & Data Files",
-          "query": "filetype:xlsx \"service directory\" OR \"contact list\" drug alcohol",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/investigative.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 168,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "xls",
-          "tags": [
-            "services"
-          ]
-        },
-        {
-          "id": "investigative-csv-files-1",
-          "title": "CSV Files - 1",
-          "category": "Spreadsheets & Data Files",
-          "query": "filetype:csv \"needle syringe\" OR \"NSP\" OR \"overdose\"",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/investigative.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 174,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "xls",
-          "tags": []
-        },
-        {
-          "id": "investigative-csv-files-2",
-          "title": "CSV Files - 2",
-          "category": "Spreadsheets & Data Files",
-          "query": "filetype:csv \"drug\" OR \"alcohol\" site:*.gov.au",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/investigative.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 180,
-          "operators": [
-            "site",
-            "filetype"
-          ],
-          "targetDomains": [
-            "gov.au"
-          ],
-          "domainCategory": "government",
-          "contentType": "xls",
-          "tags": [
-            "australia"
-          ]
-        },
-        {
-          "id": "investigative-old-excel-formats",
-          "title": "Old Excel Formats",
-          "category": "Spreadsheets & Data Files",
-          "query": "filetype:xls \"opioid treatment\" OR \"methadone\" clinic",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/investigative.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 186,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "xls",
-          "tags": [
-            "services"
-          ]
-        },
-        {
-          "id": "investigative-foi-releases-1",
-          "title": "FOI Releases - 1",
+          "id": "investigative-foi-releases",
+          "title": "FOI Releases",
           "category": "\udccb FOI (Freedom of Information)",
-          "query": "site:*.gov.au \"freedom of information\" OR \"FOI\" \"drug\" OR \"harm reduction\" filetype:pdf",
+          "query": "site:*.gov.au (inurl:foi OR \"released under FOI\" OR \"freedom of information\") (\"overdose\" OR \"drug checking\" OR \"harm reduction\") filetype:pdf",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/investigative.md",
           "sourceType": "dork-pack",
-          "sourceLine": 196,
+          "sourceLine": 139,
           "operators": [
             "site",
-            "filetype"
-          ],
-          "targetDomains": [
-            "gov.au"
-          ],
-          "domainCategory": "government",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "australia"
-          ]
-        },
-        {
-          "id": "investigative-foi-releases-2",
-          "title": "FOI Releases - 2",
-          "category": "\udccb FOI (Freedom of Information)",
-          "query": "site:*.gov.au inurl:foi OR inurl:freedom-of-information \"alcohol\" OR \"overdose\"",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/investigative.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 202,
-          "operators": [
-            "site",
+            "filetype",
             "inurl"
           ],
           "targetDomains": [
             "gov.au"
           ],
           "domainCategory": "government",
-          "contentType": "any",
+          "contentType": "pdf",
           "tags": [
+            "documents",
             "australia"
           ]
         },
         {
-          "id": "investigative-disclosure-logs-1",
-          "title": "Disclosure Logs - 1",
-          "category": "\udccb FOI (Freedom of Information)",
-          "query": "\"disclosure log\" site:*.gov.au \"drug policy\" OR \"harm reduction\"",
-          "explanation": "",
+          "id": "investigative-australian-web-archive-wayback",
+          "title": "Australian Web Archive & Wayback",
+          "category": "\udcdc Legacy & Archived Content",
+          "query": "(site:webarchive.nla.gov.au OR site:trove.nla.gov.au OR site:web.archive.org) (\"harm reduction\" OR \"needle exchange\") (Australia OR *.gov.au)",
+          "explanation": "> See the [Temporal Intelligence pack](temporal-intelligence.md) for the full recovery workflow\n> (Google's `cache:` operator is dead — use Wayback / archive.today instead).",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/investigative.md",
           "sourceType": "dork-pack",
-          "sourceLine": 208,
+          "sourceLine": 151,
           "operators": [
             "site"
           ],
           "targetDomains": [
-            "gov.au"
+            "webarchive.nla.gov.au",
+            "trove.nla.gov.au",
+            "web.archive.org"
           ],
           "domainCategory": "government",
           "contentType": "any",
           "tags": [
-            "policy",
             "australia"
           ]
         },
         {
-          "id": "investigative-disclosure-logs-2",
-          "title": "Disclosure Logs - 2",
-          "category": "\udccb FOI (Freedom of Information)",
-          "query": "\"FOI release\" \"harm reduction\" OR \"drug checking\"",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/investigative.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 214,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "investigative-historical-documents-1",
-          "title": "Historical Documents - 1",
+          "id": "investigative-historical-policy-documents",
+          "title": "Historical Policy Documents",
           "category": "\udcdc Legacy & Archived Content",
           "query": "site:*.gov.au \"harm reduction\" 1990..2005 filetype:pdf",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/investigative.md",
           "sourceType": "dork-pack",
-          "sourceLine": 224,
+          "sourceLine": 160,
           "operators": [
             "site",
             "filetype"
@@ -9574,27 +8137,6 @@
             "gov.au"
           ],
           "domainCategory": "government",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "australia"
-          ]
-        },
-        {
-          "id": "investigative-historical-documents-2",
-          "title": "Historical Documents - 2",
-          "category": "\udcdc Legacy & Archived Content",
-          "query": "\"national drug strategy\" Australia 1985..2000 filetype:pdf",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/investigative.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 230,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
           "contentType": "pdf",
           "tags": [
             "documents",
@@ -9603,124 +8145,15 @@
           ]
         },
         {
-          "id": "investigative-historical-documents-3",
-          "title": "Historical Documents - 3",
-          "category": "\udcdc Legacy & Archived Content",
-          "query": "\"needle exchange\" Australia history OR origins 1980s",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/investigative.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 236,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "documents",
-            "australia"
-          ]
-        },
-        {
-          "id": "investigative-web-archive-nla-1",
-          "title": "Web Archive (NLA) - 1",
-          "category": "\udcdc Legacy & Archived Content",
-          "query": "site:webarchive.nla.gov.au \"harm reduction\"",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/investigative.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 242,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "webarchive.nla.gov.au"
-          ],
-          "domainCategory": "government",
-          "contentType": "any",
-          "tags": [
-            "australia"
-          ]
-        },
-        {
-          "id": "investigative-web-archive-nla-2",
-          "title": "Web Archive (NLA) - 2",
-          "category": "\udcdc Legacy & Archived Content",
-          "query": "site:web.archive.org \"aivl.org.au\" OR \"nuaa.org.au\"",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/investigative.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 248,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "web.archive.org"
-          ],
-          "domainCategory": "ngo",
-          "contentType": "any",
-          "tags": [
-            "australia"
-          ]
-        },
-        {
-          "id": "investigative-aids-era-documents",
-          "title": "AIDS Era Documents",
-          "category": "\udcdc Legacy & Archived Content",
-          "query": "\"AIDS\" \"injecting drug use\" Australia 1980s OR 1990s filetype:pdf",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/investigative.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 254,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "australia"
-          ]
-        },
-        {
-          "id": "investigative-hidden-evaluations-1",
-          "title": "Hidden Evaluations - 1",
+          "id": "investigative-hidden-evaluations-reviews",
+          "title": "Hidden Evaluations & Reviews",
           "category": "\udd0d Buried Evaluations",
-          "query": "site:*.gov.au filetype:pdf \"evaluation\" \"harm reduction\" inurl:publications",
+          "query": "site:*.gov.au filetype:pdf (evaluation OR review OR \"process evaluation\" OR \"outcome evaluation\") (\"harm reduction\" OR \"needle syringe program\") -news",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/investigative.md",
           "sourceType": "dork-pack",
-          "sourceLine": 264,
-          "operators": [
-            "site",
-            "filetype",
-            "inurl"
-          ],
-          "targetDomains": [
-            "gov.au"
-          ],
-          "domainCategory": "government",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "australia"
-          ]
-        },
-        {
-          "id": "investigative-hidden-evaluations-2",
-          "title": "Hidden Evaluations - 2",
-          "category": "\udd0d Buried Evaluations",
-          "query": "site:*.gov.au filetype:pdf \"review\" \"needle syringe program\" -news",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/investigative.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 270,
+          "sourceLine": 170,
           "operators": [
             "site",
             "filetype"
@@ -9737,15 +8170,15 @@
           ]
         },
         {
-          "id": "investigative-process-outcome-evaluations",
-          "title": "Process & Outcome Evaluations",
+          "id": "investigative-cost-effectiveness-often-buried",
+          "title": "Cost-Effectiveness (Often Buried)",
           "category": "\udd0d Buried Evaluations",
-          "query": "\"process evaluation\" OR \"outcome evaluation\" harm reduction Australia filetype:pdf",
+          "query": "(\"cost-effectiveness\" OR \"cost-benefit\" OR \"economic evaluation\" OR \"return on investment\") (\"harm reduction\" OR \"needle syringe\" OR naloxone) Australia filetype:pdf",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/investigative.md",
           "sourceType": "dork-pack",
-          "sourceLine": 276,
+          "sourceLine": 176,
           "operators": [
             "filetype"
           ],
@@ -9758,137 +8191,15 @@
           ]
         },
         {
-          "id": "investigative-cost-effectiveness-often-buried-1",
-          "title": "Cost-Effectiveness (Often Buried) - 1",
-          "category": "\udd0d Buried Evaluations",
-          "query": "\"cost-effectiveness\" OR \"cost-benefit\" harm reduction Australia filetype:pdf",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/investigative.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 282,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "australia"
-          ]
-        },
-        {
-          "id": "investigative-cost-effectiveness-often-buried-2",
-          "title": "Cost-Effectiveness (Often Buried) - 2",
-          "category": "\udd0d Buried Evaluations",
-          "query": "site:*.gov.au \"economic evaluation\" (\"harm reduction\" OR \"needle syringe\" OR naloxone)",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/investigative.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 288,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "gov.au"
-          ],
-          "domainCategory": "government",
-          "contentType": "any",
-          "tags": [
-            "australia"
-          ]
-        },
-        {
-          "id": "investigative-rtf-odt-1",
-          "title": "RTF & ODT - 1",
-          "category": "\udcc4 Unusual File Types",
-          "query": "filetype:rtf \"harm reduction\" Australia",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/investigative.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 298,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "australia"
-          ]
-        },
-        {
-          "id": "investigative-rtf-odt-2",
-          "title": "RTF & ODT - 2",
-          "category": "\udcc4 Unusual File Types",
-          "query": "filetype:odt \"drug checking\" OR \"pill testing\"",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/investigative.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 304,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "investigative-ebooks",
-          "title": "Ebooks",
-          "category": "\udcc4 Unusual File Types",
-          "query": "filetype:epub \"harm reduction\" guide",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/investigative.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 310,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "investigative-sitemaps-reveal-hidden-pages",
-          "title": "Sitemaps (Reveal Hidden Pages)",
-          "category": "\udcc4 Unusual File Types",
-          "query": "filetype:xml \"drug\" site:*.gov.au sitemap",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/investigative.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 316,
-          "operators": [
-            "site",
-            "filetype"
-          ],
-          "targetDomains": [
-            "gov.au"
-          ],
-          "domainCategory": "government",
-          "contentType": "any",
-          "tags": [
-            "australia"
-          ]
-        },
-        {
-          "id": "investigative-dissenting-views-1",
-          "title": "Dissenting Views - 1",
+          "id": "investigative-dissenting-views",
+          "title": "Dissenting Views",
           "category": "\udde3 Minority Reports & Dissent",
-          "query": "\"minority report\" OR \"dissenting opinion\" drug policy Australia",
+          "query": "(\"minority report\" OR \"dissenting opinion\" OR \"additional comments\" OR \"supplementary submission\") (\"drug policy\" OR \"drug law reform\") Australia",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/investigative.md",
           "sourceType": "dork-pack",
-          "sourceLine": 326,
+          "sourceLine": 186,
           "operators": [],
           "targetDomains": [],
           "domainCategory": "any",
@@ -9900,49 +8211,15 @@
           ]
         },
         {
-          "id": "investigative-dissenting-views-2",
-          "title": "Dissenting Views - 2",
-          "category": "\udde3 Minority Reports & Dissent",
-          "query": "\"addendum\" OR \"additional comments\" harm reduction inquiry",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/investigative.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 332,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "investigative-dissenting-views-3",
-          "title": "Dissenting Views - 3",
-          "category": "\udde3 Minority Reports & Dissent",
-          "query": "\"supplementary submission\" drug policy parliament",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/investigative.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 338,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "policy"
-          ]
-        },
-        {
           "id": "investigative-alternative-perspectives",
           "title": "Alternative Perspectives",
           "category": "\udde3 Minority Reports & Dissent",
-          "query": "\"alternative view\" OR \"contrary evidence\" drug law reform",
+          "query": "(\"alternative view\" OR \"contrary evidence\" OR \"additional comments\") (\"drug law reform\" OR \"harm reduction\") (inquiry OR submission)",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/investigative.md",
           "sourceType": "dork-pack",
-          "sourceLine": 344,
+          "sourceLine": 192,
           "operators": [],
           "targetDomains": [],
           "domainCategory": "any",
@@ -9952,99 +8229,25 @@
           ]
         },
         {
-          "id": "investigative-common-directory-patterns-query-1",
-          "title": "Common Directory Patterns - Query 1",
+          "id": "investigative-common-directory-patterns",
+          "title": "Common Directory Patterns",
           "category": "\udd27 URL Pattern Tricks",
-          "query": "inurl:publications site:*.gov.au filetype:pdf",
+          "query": "(inurl:publications OR inurl:submissions OR inurl:reports OR inurl:resources) (site:*.gov.au OR site:*.org.au) filetype:pdf (\"harm reduction\" OR AOD)",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/investigative.md",
           "sourceType": "dork-pack",
-          "sourceLine": 354,
+          "sourceLine": 202,
           "operators": [
             "site",
             "filetype",
             "inurl"
           ],
           "targetDomains": [
-            "gov.au"
-          ],
-          "domainCategory": "government",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "australia"
-          ]
-        },
-        {
-          "id": "investigative-common-directory-patterns-query-2",
-          "title": "Common Directory Patterns - Query 2",
-          "category": "\udd27 URL Pattern Tricks",
-          "query": "inurl:submissions site:*.gov.au filetype:pdf",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/investigative.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 360,
-          "operators": [
-            "site",
-            "filetype",
-            "inurl"
-          ],
-          "targetDomains": [
-            "gov.au"
-          ],
-          "domainCategory": "government",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "australia"
-          ]
-        },
-        {
-          "id": "investigative-common-directory-patterns-query-3",
-          "title": "Common Directory Patterns - Query 3",
-          "category": "\udd27 URL Pattern Tricks",
-          "query": "inurl:reports site:*.gov.au filetype:pdf",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/investigative.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 366,
-          "operators": [
-            "site",
-            "filetype",
-            "inurl"
-          ],
-          "targetDomains": [
-            "gov.au"
-          ],
-          "domainCategory": "government",
-          "contentType": "pdf",
-          "tags": [
-            "documents",
-            "australia"
-          ]
-        },
-        {
-          "id": "investigative-common-directory-patterns-query-4",
-          "title": "Common Directory Patterns - Query 4",
-          "category": "\udd27 URL Pattern Tricks",
-          "query": "inurl:resources site:*.org.au filetype:pdf",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/investigative.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 372,
-          "operators": [
-            "site",
-            "filetype",
-            "inurl"
-          ],
-          "targetDomains": [
+            "gov.au",
             "org.au"
           ],
-          "domainCategory": "ngo",
+          "domainCategory": "government",
           "contentType": "pdf",
           "tags": [
             "documents",
@@ -10055,12 +8258,12 @@
           "id": "investigative-asset-directories",
           "title": "Asset Directories",
           "category": "\udd27 URL Pattern Tricks",
-          "query": "inurl:/assets/ OR inurl:/uploads/ OR inurl:/files/ site:*.gov.au filetype:pdf \"drug\"",
+          "query": "(inurl:/assets/ OR inurl:/uploads/ OR inurl:/files/) site:*.gov.au filetype:pdf (\"drug\" OR \"harm reduction\")",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/investigative.md",
           "sourceType": "dork-pack",
-          "sourceLine": 378,
+          "sourceLine": 208,
           "operators": [
             "site",
             "filetype",
@@ -11126,40 +9329,57 @@
     {
       "id": "multimedia-discovery",
       "title": "Multimedia & Audiovisual Discovery",
-      "description": "Unlock video, audio, and visual resources — a whole content type that's underutilized in harm",
+      "description": "Find video, audio, and visual harm-reduction content — named by the actual podcast and platform",
       "dorks": [
         {
-          "id": "multimedia-discovery-search-youtube-com",
-          "title": "Search youtube.com",
+          "id": "multimedia-discovery-search-crackdownpod-com",
+          "title": "Search crackdownpod.com",
           "category": "Quick Start",
-          "query": "site:youtube.com \"harm reduction\" (training OR education OR \"how to\")",
+          "query": "(site:crackdownpod.com OR site:podcasts.apple.com) \"Crackdown\" \"harm reduction\"",
           "explanation": "",
           "difficulty": "beginner",
           "sourceFile": "dork-packs/multimedia-discovery.md",
           "sourceType": "dork-pack",
-          "sourceLine": 16,
+          "sourceLine": 28,
           "operators": [
             "site"
           ],
           "targetDomains": [
-            "youtube.com"
+            "crackdownpod.com",
+            "podcasts.apple.com"
           ],
           "domainCategory": "any",
           "contentType": "any",
+          "tags": []
+        },
+        {
+          "id": "multimedia-discovery-named-harm-reduction-podcasts",
+          "title": "Named Harm-Reduction Podcasts",
+          "category": "Basic Queries",
+          "query": "(\"Crackdown\" OR \"Narcotica\" OR \"Drug Science Podcast\") (\"harm reduction\" OR \"drug policy\" OR overdose)",
+          "explanation": "**Why this works:**\n\n- Names the real shows — **Crackdown** (`crackdownpod.com`, drug-user-led), **Narcotica**\n(`narcocast.com`), **Drug Science Podcast** (`drugscience.org.uk`, David Nutt) — instead of hoping\na generic podcast search surfaces something on-topic",
+          "difficulty": "beginner",
+          "sourceFile": "dork-packs/multimedia-discovery.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 35,
+          "operators": [],
+          "targetDomains": [],
+          "domainCategory": "any",
+          "contentType": "any",
           "tags": [
-            "training"
+            "policy"
           ]
         },
         {
           "id": "multimedia-discovery-youtube-training-education",
           "title": "YouTube Training & Education",
           "category": "Basic Queries",
-          "query": "site:youtube.com \"harm reduction\" (training OR workshop OR tutorial)",
-          "explanation": "**Why this works:**\n\n- YouTube hosts massive amounts of training content\n- Training/workshop terms filter to educational content\n- Catches organizational uploads and community content",
+          "query": "site:youtube.com \"harm reduction\" (training OR workshop OR tutorial OR \"how to\")",
+          "explanation": "",
           "difficulty": "beginner",
           "sourceFile": "dork-packs/multimedia-discovery.md",
           "sourceType": "dork-pack",
-          "sourceLine": 23,
+          "sourceLine": 47,
           "operators": [
             "site"
           ],
@@ -11173,15 +9393,15 @@
           ]
         },
         {
-          "id": "multimedia-discovery-vimeo-professional-content",
-          "title": "Vimeo Professional Content",
+          "id": "multimedia-discovery-vimeo-organisational-content",
+          "title": "Vimeo Organisational Content",
           "category": "Basic Queries",
-          "query": "site:vimeo.com (\"harm reduction\" OR \"drug checking\" OR \"naloxone\")",
-          "explanation": "**Why this works:**\n\n- Vimeo often hosts higher-quality organizational content\n- Many conferences and orgs prefer Vimeo\n- Less noise than YouTube",
+          "query": "site:vimeo.com (\"harm reduction\" OR \"drug checking\" OR naloxone)",
+          "explanation": "",
           "difficulty": "beginner",
           "sourceFile": "dork-packs/multimedia-discovery.md",
           "sourceType": "dork-pack",
-          "sourceLine": 37,
+          "sourceLine": 53,
           "operators": [
             "site"
           ],
@@ -11191,106 +9411,17 @@
           "domainCategory": "any",
           "contentType": "any",
           "tags": []
-        },
-        {
-          "id": "multimedia-discovery-slideshare-presentations",
-          "title": "SlideShare Presentations",
-          "category": "Basic Queries",
-          "query": "site:slideshare.net \"harm reduction\" (conference OR presentation OR training)",
-          "explanation": "**Why this works:**\n\n- SlideShare is a major repository for presentations\n- Conference talks often shared here\n- Visual summaries of research and programs",
-          "difficulty": "beginner",
-          "sourceFile": "dork-packs/multimedia-discovery.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 51,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "slideshare.net"
-          ],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "training"
-          ]
-        },
-        {
-          "id": "multimedia-discovery-conference-recordings",
-          "title": "Conference Recordings",
-          "category": "Intermediate Queries",
-          "query": "(site:youtube.com OR site:vimeo.com) \"harm reduction\" (conference OR symposium OR \"keynote\" OR summit)",
-          "explanation": "**Why this works:**\n\n- Many conferences post recordings publicly\n- Keynotes and panels often on video platforms\n- High-quality expert content",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/multimedia-discovery.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 69,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "youtube.com",
-            "vimeo.com"
-          ],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "multimedia-discovery-podcast-episodes",
-          "title": "Podcast Episodes",
-          "category": "Intermediate Queries",
-          "query": "(site:podcasts.apple.com OR site:open.spotify.com OR site:soundcloud.com) \"harm reduction\"",
-          "explanation": "**Why this works:**\n\n- Major podcast platforms are searchable\n- Finds both dedicated podcasts and individual episodes\n- Audio content often contains unique perspectives",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/multimedia-discovery.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 83,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "podcasts.apple.com",
-            "open.spotify.com",
-            "soundcloud.com"
-          ],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "multimedia-discovery-webinar-recordings",
-          "title": "Webinar Recordings",
-          "category": "Intermediate Queries",
-          "query": "(site:youtube.com OR site:vimeo.com OR site:zoom.us) \"harm reduction\" (webinar OR \"online training\" OR \"virtual workshop\")",
-          "explanation": "**Why this works:**\n\n- Webinars became dominant during COVID and continue\n- Often posted to YouTube/Vimeo after live events\n- High-quality training content",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/multimedia-discovery.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 97,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "youtube.com",
-            "vimeo.com",
-            "zoom.us"
-          ],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "training"
-          ]
         },
         {
           "id": "multimedia-discovery-naloxone-training-videos",
           "title": "Naloxone Training Videos",
           "category": "Intermediate Queries",
-          "query": "site:youtube.com (naloxone OR narcan OR nyxoid) (training OR \"how to\" OR administration OR \"step by step\")",
-          "explanation": "**Why this works:**\n\n- Visual training for overdose response is common\n- Multiple brands and versions of naloxone\n- Critical life-saving content",
+          "query": "site:youtube.com (naloxone OR Nyxoid OR Narcan) (training OR \"how to\" OR administration OR \"step by step\")",
+          "explanation": "**Why this works:**\n\n- Visual overdose-response training is high-value and abundant — naming the AU product **Nyxoid**\nalongside naloxone catches Australian-specific clips",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/multimedia-discovery.md",
           "sourceType": "dork-pack",
-          "sourceLine": 111,
+          "sourceLine": 63,
           "operators": [
             "site"
           ],
@@ -11305,14 +9436,14 @@
         },
         {
           "id": "multimedia-discovery-drug-checking-explainers",
-          "title": "Drug Checking Explainers",
+          "title": "Drug-Checking Explainers",
           "category": "Intermediate Queries",
           "query": "(site:youtube.com OR site:vimeo.com) (\"drug checking\" OR \"pill testing\" OR \"reagent testing\") (guide OR explained OR \"how it works\")",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/multimedia-discovery.md",
           "sourceType": "dork-pack",
-          "sourceLine": 125,
+          "sourceLine": 74,
           "operators": [
             "site"
           ],
@@ -11325,132 +9456,15 @@
           "tags": []
         },
         {
-          "id": "multimedia-discovery-comprehensive-video-platform-sweep",
-          "title": "Comprehensive Video Platform Sweep",
-          "category": "Advanced Queries",
-          "query": "(site:youtube.com OR site:vimeo.com OR site:dailymotion.com OR site:rumble.com) \"harm reduction\" (Australia OR Australian)",
-          "explanation": "**Why this works:**\n\n- Covers all major video hosting platforms\n- Australian context filter\n- Catches content wherever it's hosted",
-          "difficulty": "advanced",
-          "sourceFile": "dork-packs/multimedia-discovery.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 135,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "youtube.com",
-            "vimeo.com",
-            "dailymotion.com",
-            "rumble.com"
-          ],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "australia"
-          ]
-        },
-        {
-          "id": "multimedia-discovery-ted-tedx-talks",
-          "title": "TED/TEDx Talks",
-          "category": "Advanced Queries",
-          "query": "(site:ted.com OR site:youtube.com) (TED OR TEDx) (\"harm reduction\" OR \"drug policy\" OR \"decriminalisation\" OR \"addiction\")",
-          "explanation": "**Why this works:**\n\n- TED talks are high-impact public communication\n- Often feature researchers and advocates\n- Good for understanding public discourse",
-          "difficulty": "advanced",
-          "sourceFile": "dork-packs/multimedia-discovery.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 149,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "ted.com",
-            "youtube.com"
-          ],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "policy"
-          ]
-        },
-        {
-          "id": "multimedia-discovery-infographics-visual-guides",
-          "title": "Infographics & Visual Guides",
-          "category": "Advanced Queries",
-          "query": "(infographic OR \"visual guide\" OR poster OR chart) \"harm reduction\" (filetype:png OR filetype:jpg OR filetype:pdf)",
-          "explanation": "**Why this works:**\n\n- Image files often contain infographics\n- PDFs may be visual guides or posters\n- Good for health promotion materials",
-          "difficulty": "advanced",
-          "sourceFile": "dork-packs/multimedia-discovery.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 163,
-          "operators": [
-            "filetype"
-          ],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "pdf",
-          "tags": [
-            "documents"
-          ]
-        },
-        {
-          "id": "multimedia-discovery-peer-produced-video-content",
-          "title": "Peer-Produced Video Content",
-          "category": "Advanced Queries",
-          "query": "site:youtube.com (\"lived experience\" OR \"peer worker\" OR \"person who uses drugs\" OR PWUD) \"harm reduction\"",
-          "explanation": "**Why this works:**\n\n- Peer-produced content has unique authenticity\n- Often shares practical knowledge\n- Community perspectives on services",
-          "difficulty": "advanced",
-          "sourceFile": "dork-packs/multimedia-discovery.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 177,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "youtube.com"
-          ],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "peer"
-          ]
-        },
-        {
-          "id": "multimedia-discovery-documentary-content",
-          "title": "Documentary Content",
-          "category": "Advanced Queries",
-          "query": "(site:youtube.com OR site:vimeo.com OR site:abc.net.au OR site:sbs.com.au) (documentary OR \"in-depth\" OR investigation) (\"harm reduction\" OR \"drug policy\" OR \"ice epidemic\" OR \"opioid crisis\")",
-          "explanation": "**Why this works:**\n\n- Documentaries provide deep context\n- Australian broadcasters (ABC, SBS) produce quality content\n- Long-form journalism on drug issues",
-          "difficulty": "advanced",
-          "sourceFile": "dork-packs/multimedia-discovery.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 191,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "youtube.com",
-            "vimeo.com",
-            "abc.net.au",
-            "sbs.com.au"
-          ],
-          "domainCategory": "news",
-          "contentType": "any",
-          "tags": [
-            "documents",
-            "policy",
-            "australia"
-          ]
-        },
-        {
-          "id": "multimedia-discovery-recorded-panel-discussions",
-          "title": "Recorded Panel Discussions",
-          "category": "Advanced Queries",
-          "query": "(site:youtube.com OR site:vimeo.com) (\"panel discussion\" OR \"expert panel\" OR roundtable) \"harm reduction\"",
+          "id": "multimedia-discovery-conference-webinar-recordings",
+          "title": "Conference & Webinar Recordings",
+          "category": "Intermediate Queries",
+          "query": "(site:youtube.com OR site:vimeo.com) \"harm reduction\" (conference OR symposium OR keynote OR webinar OR APSAD)",
           "explanation": "",
-          "difficulty": "advanced",
+          "difficulty": "intermediate",
           "sourceFile": "dork-packs/multimedia-discovery.md",
           "sourceType": "dork-pack",
-          "sourceLine": 205,
+          "sourceLine": 80,
           "operators": [
             "site"
           ],
@@ -11463,60 +9477,15 @@
           "tags": []
         },
         {
-          "id": "multimedia-discovery-training-course-previews",
-          "title": "Training Course Previews",
-          "category": "Advanced Queries",
-          "query": "(site:youtube.com OR site:vimeo.com OR site:udemy.com OR site:coursera.org) \"harm reduction\" (course OR module OR \"learning\" OR certification)",
-          "explanation": "",
-          "difficulty": "advanced",
-          "sourceFile": "dork-packs/multimedia-discovery.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 211,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "youtube.com",
-            "vimeo.com",
-            "udemy.com",
-            "coursera.org"
-          ],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "training"
-          ]
-        },
-        {
-          "id": "multimedia-discovery-major-podcast-platforms",
-          "title": "Major Podcast Platforms",
-          "category": "\udfa7 Audio & Podcast Platforms",
-          "query": "site:stitcher.com \"harm reduction\"",
-          "explanation": "",
+          "id": "multimedia-discovery-podcast-platforms-live-ones",
+          "title": "Podcast Platforms (Live Ones)",
+          "category": "Intermediate Queries",
+          "query": "(site:podcasts.apple.com OR site:open.spotify.com OR site:soundcloud.com) (\"harm reduction\" OR \"drug policy\" OR naloxone)",
+          "explanation": "> Note: drop `site:podcasts.google.com` (Google Podcasts shut 2024) and `site:stitcher.com`\n> (shut 2023) — neither resolves. Use the three above.",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/multimedia-discovery.md",
           "sourceType": "dork-pack",
-          "sourceLine": 223,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "stitcher.com"
-          ],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "multimedia-discovery-combined-podcast-search",
-          "title": "Combined Podcast Search",
-          "category": "\udfa7 Audio & Podcast Platforms",
-          "query": "(site:podcasts.apple.com OR site:open.spotify.com OR site:soundcloud.com) (\"harm reduction\" OR \"drug policy\" OR \"addiction\")",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/multimedia-discovery.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 261,
+          "sourceLine": 86,
           "operators": [
             "site"
           ],
@@ -11532,20 +9501,139 @@
           ]
         },
         {
-          "id": "multimedia-discovery-finding-podcast-episodes",
-          "title": "Finding Podcast Episodes",
-          "category": "\udfa7 Audio & Podcast Platforms",
-          "query": "site:podcasts.apple.com (naloxone OR fentanyl OR \"safe supply\")",
+          "id": "multimedia-discovery-comprehensive-video-sweep",
+          "title": "Comprehensive Video Sweep",
+          "category": "Advanced Queries",
+          "query": "(site:youtube.com OR site:vimeo.com OR site:dailymotion.com) \"harm reduction\" (Australia OR Australian)",
           "explanation": "",
-          "difficulty": "intermediate",
+          "difficulty": "advanced",
           "sourceFile": "dork-packs/multimedia-discovery.md",
           "sourceType": "dork-pack",
-          "sourceLine": 267,
+          "sourceLine": 99,
           "operators": [
             "site"
           ],
           "targetDomains": [
-            "podcasts.apple.com"
+            "youtube.com",
+            "vimeo.com",
+            "dailymotion.com"
+          ],
+          "domainCategory": "any",
+          "contentType": "any",
+          "tags": [
+            "australia"
+          ]
+        },
+        {
+          "id": "multimedia-discovery-ted-tedx-talks",
+          "title": "TED / TEDx Talks",
+          "category": "Advanced Queries",
+          "query": "(site:ted.com/talks OR site:youtube.com) (TED OR TEDx) (\"harm reduction\" OR \"drug policy\" OR decriminalisation OR addiction)",
+          "explanation": "",
+          "difficulty": "advanced",
+          "sourceFile": "dork-packs/multimedia-discovery.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 105,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "ted.com/talks",
+            "youtube.com"
+          ],
+          "domainCategory": "any",
+          "contentType": "any",
+          "tags": [
+            "policy"
+          ]
+        },
+        {
+          "id": "multimedia-discovery-peer-produced-lived-experience-video",
+          "title": "Peer-Produced & Lived-Experience Video",
+          "category": "Advanced Queries",
+          "query": "site:youtube.com (\"lived experience\" OR \"peer worker\" OR \"person who uses drugs\" OR PWUD) (\"harm reduction\" OR naloxone OR \"drug checking\")",
+          "explanation": "**Why this works:**\n\n- Peer-produced content carries practical, in-their-own-words knowledge an official training video\nmisses — leading with it keeps the corpus peer-first",
+          "difficulty": "advanced",
+          "sourceFile": "dork-packs/multimedia-discovery.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 111,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "youtube.com"
+          ],
+          "domainCategory": "any",
+          "contentType": "any",
+          "tags": [
+            "peer"
+          ]
+        },
+        {
+          "id": "multimedia-discovery-documentary-current-affairs",
+          "title": "Documentary & Current Affairs",
+          "category": "Advanced Queries",
+          "query": "(site:abc.net.au OR site:sbs.com.au OR site:youtube.com) (documentary OR \"Four Corners\" OR investigation) (\"harm reduction\" OR \"pill testing\" OR \"ice\" OR \"opioid\")",
+          "explanation": "",
+          "difficulty": "advanced",
+          "sourceFile": "dork-packs/multimedia-discovery.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 122,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "abc.net.au",
+            "sbs.com.au",
+            "youtube.com"
+          ],
+          "domainCategory": "news",
+          "contentType": "any",
+          "tags": [
+            "documents",
+            "australia"
+          ]
+        },
+        {
+          "id": "multimedia-discovery-the-named-shows",
+          "title": "The Named Shows",
+          "category": "\udfa7 Podcasts (Named + Platforms)",
+          "query": "(site:crackdownpod.com OR site:narcocast.com OR site:drugscience.org.uk) (episode OR \"harm reduction\" OR \"drug policy\")",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/multimedia-discovery.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 132,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "crackdownpod.com",
+            "narcocast.com",
+            "drugscience.org.uk"
+          ],
+          "domainCategory": "ngo",
+          "contentType": "any",
+          "tags": [
+            "policy"
+          ]
+        },
+        {
+          "id": "multimedia-discovery-finding-episodes-by-topic",
+          "title": "Finding Episodes by Topic",
+          "category": "\udfa7 Podcasts (Named + Platforms)",
+          "query": "(site:podcasts.apple.com OR site:open.spotify.com) (naloxone OR nitazene OR \"safe supply\" OR \"drug checking\")",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/multimedia-discovery.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 138,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "podcasts.apple.com",
+            "open.spotify.com"
           ],
           "domainCategory": "any",
           "contentType": "any",
@@ -11554,13 +9642,13 @@
         {
           "id": "multimedia-discovery-audio-interviews-oral-histories",
           "title": "Audio Interviews & Oral Histories",
-          "category": "\udfa7 Audio & Podcast Platforms",
-          "query": "(site:soundcloud.com OR site:archive.org) (interview OR \"oral history\") \"harm reduction\" OR \"drug use\"",
+          "category": "\udfa7 Podcasts (Named + Platforms)",
+          "query": "(site:soundcloud.com OR site:archive.org) (interview OR \"oral history\") (\"harm reduction\" OR \"drug use\")",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/multimedia-discovery.md",
           "sourceType": "dork-pack",
-          "sourceLine": 275,
+          "sourceLine": 144,
           "operators": [
             "site"
           ],
@@ -11573,62 +9661,22 @@
           "tags": []
         },
         {
-          "id": "multimedia-discovery-major-presentation-platforms",
-          "title": "Major Presentation Platforms",
-          "category": "Presentation Platforms",
-          "query": "site:speakerdeck.com \"harm reduction\"",
-          "explanation": "",
+          "id": "multimedia-discovery-search-slideshare-net",
+          "title": "Search slideshare.net",
+          "category": "Presentation & Slide Platforms",
+          "query": "(site:slideshare.net OR site:speakerdeck.com OR site:prezi.com) \"harm reduction\" (conference OR training OR APSAD OR AIVL)",
+          "explanation": "> SlideShare is now a Scribd property; both still index. Canva design links are **not**\n> Google-indexed (only published Canva Sites are), so skip `site:canva.com` for flyers.",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/multimedia-discovery.md",
           "sourceType": "dork-pack",
-          "sourceLine": 285,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "speakerdeck.com"
-          ],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "multimedia-discovery-conference-presentations",
-          "title": "Conference Presentations",
-          "category": "Presentation Platforms",
-          "query": "(site:slideshare.net OR site:speakerdeck.com) \"harm reduction\" (conference OR symposium OR APSAD OR AIVL)",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/multimedia-discovery.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 317,
+          "sourceLine": 155,
           "operators": [
             "site"
           ],
           "targetDomains": [
             "slideshare.net",
-            "speakerdeck.com"
-          ],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "multimedia-discovery-training-slide-decks",
-          "title": "Training Slide Decks",
-          "category": "Presentation Platforms",
-          "query": "(site:slideshare.net OR site:speakerdeck.com) \"harm reduction\" (training OR workshop OR \"capacity building\")",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/multimedia-discovery.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 323,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "slideshare.net",
-            "speakerdeck.com"
+            "speakerdeck.com",
+            "prezi.com"
           ],
           "domainCategory": "any",
           "contentType": "any",
@@ -11637,15 +9685,15 @@
           ]
         },
         {
-          "id": "multimedia-discovery-image-search-operators",
-          "title": "Image Search Operators",
+          "id": "multimedia-discovery-infographics-posters",
+          "title": "Infographics & Posters",
           "category": "\uddbc Visual & Infographic Content",
-          "query": "\"harm reduction\" (infographic OR poster OR \"visual guide\") filetype:pdf",
+          "query": "(\"harm reduction\" OR naloxone OR \"drug checking\") (infographic OR poster OR \"visual guide\") (filetype:pdf OR filetype:png)",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/multimedia-discovery.md",
           "sourceType": "dork-pack",
-          "sourceLine": 333,
+          "sourceLine": 165,
           "operators": [
             "filetype"
           ],
@@ -11658,14 +9706,14 @@
         },
         {
           "id": "multimedia-discovery-health-promotion-materials",
-          "title": "Health Promotion Materials",
+          "title": "Health-Promotion Materials",
           "category": "\uddbc Visual & Infographic Content",
           "query": "(site:*.health.*.gov.au OR site:*.org.au) \"harm reduction\" (poster OR flyer OR brochure OR \"fact sheet\") filetype:pdf",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/multimedia-discovery.md",
           "sourceType": "dork-pack",
-          "sourceLine": 343,
+          "sourceLine": 171,
           "operators": [
             "site",
             "filetype"
@@ -11682,222 +9730,15 @@
           ]
         },
         {
-          "id": "multimedia-discovery-canva-design-platforms",
-          "title": "Canva & Design Platforms",
-          "category": "\uddbc Visual & Infographic Content",
-          "query": "(site:canva.com OR site:piktochart.com) \"harm reduction\"",
+          "id": "multimedia-discovery-australian-orgs-video",
+          "title": "Australian Orgs (Video)",
+          "category": "Australian Content",
+          "query": "site:youtube.com (AIVL OR NUAA OR \"Harm Reduction Victoria\" OR QuIHN OR \"Penington Institute\" OR DanceWize)",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/multimedia-discovery.md",
           "sourceType": "dork-pack",
-          "sourceLine": 349,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "canva.com",
-            "piktochart.com"
-          ],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "multimedia-discovery-pinterest-resource-collections",
-          "title": "Pinterest (Resource Collections)",
-          "category": "\uddbc Visual & Infographic Content",
-          "query": "site:pinterest.com \"harm reduction\" (infographic OR resources OR education)",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/multimedia-discovery.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 355,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "pinterest.com"
-          ],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "training"
-          ]
-        },
-        {
-          "id": "multimedia-discovery-how-to-videos",
-          "title": "How-To Videos",
-          "category": "\udfac Video Content by Type",
-          "query": "site:youtube.com \"harm reduction\" (\"how to\" OR tutorial OR \"step by step\" OR demonstration)",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/multimedia-discovery.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 365,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "youtube.com"
-          ],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "multimedia-discovery-explainer-videos",
-          "title": "Explainer Videos",
-          "category": "\udfac Video Content by Type",
-          "query": "site:youtube.com \"harm reduction\" (explained OR \"what is\" OR introduction OR basics)",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/multimedia-discovery.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 371,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "youtube.com"
-          ],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "multimedia-discovery-testimonials-stories",
-          "title": "Testimonials & Stories",
-          "category": "\udfac Video Content by Type",
-          "query": "site:youtube.com \"harm reduction\" (story OR testimonial OR journey OR \"my experience\")",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/multimedia-discovery.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 377,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "youtube.com"
-          ],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "multimedia-discovery-advocacy-campaigns",
-          "title": "Advocacy & Campaigns",
-          "category": "\udfac Video Content by Type",
-          "query": "(site:youtube.com OR site:vimeo.com) \"harm reduction\" (campaign OR advocacy OR \"public awareness\" OR PSA)",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/multimedia-discovery.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 383,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "youtube.com",
-            "vimeo.com"
-          ],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "multimedia-discovery-news-current-affairs",
-          "title": "News & Current Affairs",
-          "category": "\udfac Video Content by Type",
-          "query": "(site:youtube.com) (ABC OR \"7 News\" OR \"9 News\" OR SBS) \"harm reduction\" OR \"pill testing\" OR \"safe injecting\"",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/multimedia-discovery.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 389,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "youtube.com"
-          ],
-          "domainCategory": "news",
-          "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "multimedia-discovery-university-lectures",
-          "title": "University Lectures",
-          "category": "Educational Content",
-          "query": "site:youtube.com (lecture OR \"university\" OR professor OR academic) \"harm reduction\"",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/multimedia-discovery.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 399,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "youtube.com"
-          ],
-          "domainCategory": "education",
-          "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "multimedia-discovery-online-course-content",
-          "title": "Online Course Content",
-          "category": "Educational Content",
-          "query": "(site:youtube.com OR site:vimeo.com) \"harm reduction\" (module OR lesson OR \"online course\" OR e-learning)",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/multimedia-discovery.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 405,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "youtube.com",
-            "vimeo.com"
-          ],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "multimedia-discovery-grand-rounds-medical-education",
-          "title": "Grand Rounds & Medical Education",
-          "category": "Educational Content",
-          "query": "site:youtube.com (\"grand rounds\" OR \"medical education\" OR CME) (\"harm reduction\" OR \"addiction medicine\" OR \"opioid use disorder\")",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/multimedia-discovery.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 411,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "youtube.com"
-          ],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "training"
-          ]
-        },
-        {
-          "id": "multimedia-discovery-australian-organizations",
-          "title": "Australian Organizations",
-          "category": "Australian-Specific Content",
-          "query": "site:youtube.com (\"AIVL\" OR \"NUAA\" OR \"Harm Reduction Victoria\" OR \"QuIHN\" OR \"Penington Institute\")",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/multimedia-discovery.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 421,
+          "sourceLine": 181,
           "operators": [
             "site"
           ],
@@ -11911,13 +9752,13 @@
         {
           "id": "multimedia-discovery-australian-broadcasters",
           "title": "Australian Broadcasters",
-          "category": "Australian-Specific Content",
-          "query": "(site:abc.net.au OR site:sbs.com.au) (video OR watch) \"harm reduction\" OR \"drug policy\"",
-          "explanation": "",
+          "category": "Australian Content",
+          "query": "(site:abc.net.au OR site:sbs.com.au) (video OR watch OR Hack) (\"harm reduction\" OR \"pill testing\" OR \"drug checking\")",
+          "explanation": "**Why this works:**\n\n- triple j **Hack** (not _The Hook Up_, which is a sex/relationships show) is the AU broadcast\nstrand that actually covers pill testing and drug policy — pairing the broadcasters with it finds\nreal coverage",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/multimedia-discovery.md",
           "sourceType": "dork-pack",
-          "sourceLine": 427,
+          "sourceLine": 187,
           "operators": [
             "site"
           ],
@@ -11928,20 +9769,19 @@
           "domainCategory": "news",
           "contentType": "any",
           "tags": [
-            "policy",
             "australia"
           ]
         },
         {
           "id": "multimedia-discovery-australian-conferences",
           "title": "Australian Conferences",
-          "category": "Australian-Specific Content",
-          "query": "(site:youtube.com OR site:vimeo.com) (APSAD OR \"Australasian\" OR \"Australian Drug\") conference OR symposium",
+          "category": "Australian Content",
+          "query": "(site:youtube.com OR site:vimeo.com) (APSAD OR \"Australasian\" OR \"Drug and Alcohol\") (conference OR symposium OR keynote)",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/multimedia-discovery.md",
           "sourceType": "dork-pack",
-          "sourceLine": 433,
+          "sourceLine": 199,
           "operators": [
             "site"
           ],
@@ -11951,110 +9791,18 @@
           ],
           "domainCategory": "any",
           "contentType": "any",
-          "tags": [
-            "australia"
-          ]
-        },
-        {
-          "id": "multimedia-discovery-video-platforms",
-          "title": "Video Platforms",
-          "category": "\udccb Quick Copy Platform Buckets",
-          "query": "site:youtube.com OR site:vimeo.com OR site:dailymotion.com",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/multimedia-discovery.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 443,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "youtube.com",
-            "vimeo.com",
-            "dailymotion.com"
-          ],
-          "domainCategory": "any",
-          "contentType": "any",
           "tags": []
         },
         {
-          "id": "multimedia-discovery-podcast-platforms",
-          "title": "Podcast Platforms",
-          "category": "\udccb Quick Copy Platform Buckets",
-          "query": "site:podcasts.apple.com OR site:open.spotify.com OR site:soundcloud.com",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/multimedia-discovery.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 449,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "podcasts.apple.com",
-            "open.spotify.com",
-            "soundcloud.com"
-          ],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "multimedia-discovery-presentation-platforms",
-          "title": "Presentation Platforms",
-          "category": "\udccb Quick Copy Platform Buckets",
-          "query": "site:slideshare.net OR site:speakerdeck.com OR site:prezi.com",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/multimedia-discovery.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 455,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "slideshare.net",
-            "speakerdeck.com",
-            "prezi.com"
-          ],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "multimedia-discovery-all-multimedia",
-          "title": "All Multimedia",
-          "category": "\udccb Quick Copy Platform Buckets",
-          "query": "(site:youtube.com OR site:vimeo.com OR site:slideshare.net OR site:speakerdeck.com OR site:soundcloud.com)",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/multimedia-discovery.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 461,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "youtube.com",
-            "vimeo.com",
-            "slideshare.net",
-            "speakerdeck.com",
-            "soundcloud.com"
-          ],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "multimedia-discovery-finding-channel-specific-content",
-          "title": "Finding Channel-Specific Content",
+          "id": "multimedia-discovery-search-within-a-channel",
+          "title": "Search Within a Channel",
           "category": "\udca1 Advanced Techniques",
-          "query": "site:youtube.com/@[handle] naloxone",
+          "query": "site:youtube.com/@[handle] (\"harm reduction\" OR naloxone)",
           "explanation": "",
           "difficulty": "advanced",
           "sourceFile": "dork-packs/multimedia-discovery.md",
           "sourceType": "dork-pack",
-          "sourceLine": 471,
+          "sourceLine": 209,
           "operators": [
             "site"
           ],
@@ -12066,58 +9814,17 @@
           "tags": []
         },
         {
-          "id": "multimedia-discovery-video-length-filtering",
-          "title": "Video Length Filtering",
+          "id": "multimedia-discovery-videos-embedded-on-org-sites",
+          "title": "Videos Embedded on Org Sites",
           "category": "\udca1 Advanced Techniques",
-          "query": "site:youtube.com \"harm reduction\" (short OR \"quick guide\" OR \"2 minutes\")",
+          "query": "site:*.org.au (\"youtube.com/watch\" OR \"youtube.com/embed\" OR \"player.vimeo.com\") \"harm reduction\"",
           "explanation": "",
           "difficulty": "advanced",
           "sourceFile": "dork-packs/multimedia-discovery.md",
           "sourceType": "dork-pack",
-          "sourceLine": 483,
+          "sourceLine": 215,
           "operators": [
             "site"
-          ],
-          "targetDomains": [
-            "youtube.com"
-          ],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "multimedia-discovery-finding-playlists",
-          "title": "Finding Playlists",
-          "category": "\udca1 Advanced Techniques",
-          "query": "site:youtube.com/playlist \"harm reduction\"",
-          "explanation": "",
-          "difficulty": "advanced",
-          "sourceFile": "dork-packs/multimedia-discovery.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 495,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "youtube.com/playlist"
-          ],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "multimedia-discovery-embedded-videos-on-org-sites",
-          "title": "Embedded Videos on Org Sites",
-          "category": "\udca1 Advanced Techniques",
-          "query": "site:*.org.au inurl:youtube.com/embed \"harm reduction\"",
-          "explanation": "",
-          "difficulty": "advanced",
-          "sourceFile": "dork-packs/multimedia-discovery.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 501,
-          "operators": [
-            "site",
-            "inurl"
           ],
           "targetDomains": [
             "org.au"
@@ -12132,17 +9839,22 @@
           "id": "multimedia-discovery-finding-transcripts",
           "title": "Finding Transcripts",
           "category": "\udca1 Advanced Techniques",
-          "query": "(transcript OR subtitles OR captions) \"harm reduction\" (video OR webinar OR podcast)",
+          "query": "(transcript OR subtitles OR captions) (\"harm reduction\" OR \"drug policy\") (video OR webinar OR podcast) filetype:pdf",
           "explanation": "",
           "difficulty": "advanced",
           "sourceFile": "dork-packs/multimedia-discovery.md",
           "sourceType": "dork-pack",
-          "sourceLine": 513,
-          "operators": [],
+          "sourceLine": 221,
+          "operators": [
+            "filetype"
+          ],
           "targetDomains": [],
           "domainCategory": "any",
-          "contentType": "any",
-          "tags": []
+          "contentType": "pdf",
+          "tags": [
+            "documents",
+            "policy"
+          ]
         }
       ],
       "sourceFile": "dork-packs/multimedia-discovery.md"
@@ -22406,25 +20118,25 @@
     {
       "id": "user-hosted-domains",
       "title": "User-Hosted Domains & Community Platforms",
-      "description": "Find grassroots harm reduction content on user-published platforms. These are where individuals,",
+      "description": "Find grassroots harm-reduction content on user-published platforms — with the platform list",
       "dorks": [
         {
-          "id": "user-hosted-domains-search-notion-site",
-          "title": "Search notion.site",
+          "id": "user-hosted-domains-search-medium-com",
+          "title": "Search medium.com",
           "category": "Quick Start",
-          "query": "(site:*.notion.site OR site:medium.com OR site:*.substack.com OR site:reddit.com) \"harm reduction\"",
+          "query": "(site:medium.com OR site:substack.com OR site:notion.site OR site:reddit.com) \"harm reduction\"",
           "explanation": "",
           "difficulty": "beginner",
           "sourceFile": "dork-packs/user-hosted-domains.md",
           "sourceType": "dork-pack",
-          "sourceLine": 16,
+          "sourceLine": 28,
           "operators": [
             "site"
           ],
           "targetDomains": [
-            "notion.site",
             "medium.com",
             "substack.com",
+            "notion.site",
             "reddit.com"
           ],
           "domainCategory": "community",
@@ -22435,35 +20147,38 @@
           "id": "user-hosted-domains-blogs-newsletters",
           "title": "Blogs & Newsletters",
           "category": "Basic Queries",
-          "query": "(site:*.wordpress.com OR site:*.blogspot.com OR site:medium.com OR site:*.substack.com) \"harm reduction\"",
-          "explanation": "**Why this works:**\n\n- Catches major blogging platforms where advocates publish\n- Substack increasingly popular for harm reduction newsletters\n- Medium hosts many drug policy and public health essays",
+          "query": "(site:medium.com OR site:substack.com OR site:wordpress.com OR site:ghost.io OR site:bearblog.dev) (\"harm reduction\" OR \"drug policy\")",
+          "explanation": "**Why this works:**\n\n- Catches the major writing platforms where advocates publish — Substack for harm-reduction\nnewsletters, Medium for drug-policy essays, Bear Blog for indie writers",
           "difficulty": "beginner",
           "sourceFile": "dork-packs/user-hosted-domains.md",
           "sourceType": "dork-pack",
-          "sourceLine": 23,
+          "sourceLine": 35,
           "operators": [
             "site"
           ],
           "targetDomains": [
-            "wordpress.com",
-            "blogspot.com",
             "medium.com",
-            "substack.com"
+            "substack.com",
+            "wordpress.com",
+            "ghost.io",
+            "bearblog.dev"
           ],
           "domainCategory": "user-hosted",
           "contentType": "any",
-          "tags": []
+          "tags": [
+            "policy"
+          ]
         },
         {
           "id": "user-hosted-domains-community-documentation",
           "title": "Community Documentation",
           "category": "Basic Queries",
-          "query": "(site:*.notion.site OR site:*.gitbook.io) (\"harm reduction\" OR \"drug checking\" OR \"safer use\")",
-          "explanation": "**Why this works:**\n\n- Notion widely used for community resource directories\n- GitBook common for project documentation and guides\n- High signal for structured, curated content",
+          "query": "(site:notion.site OR site:gitbook.io) (\"harm reduction\" OR \"drug checking\" OR \"safer use\") (guide OR directory OR resources)",
+          "explanation": "",
           "difficulty": "beginner",
           "sourceFile": "dork-packs/user-hosted-domains.md",
           "sourceType": "dork-pack",
-          "sourceLine": 37,
+          "sourceLine": 46,
           "operators": [
             "site"
           ],
@@ -22478,68 +20193,88 @@
           ]
         },
         {
-          "id": "user-hosted-domains-reddit-discussions",
-          "title": "Reddit Discussions",
+          "id": "user-hosted-domains-reddit-discussions-confirmed-communities",
+          "title": "Reddit Discussions (Confirmed Communities)",
           "category": "Basic Queries",
-          "query": "site:reddit.com (\"harm reduction\" OR \"drug checking\" OR \"naloxone\") -r/politics",
-          "explanation": "**Why this works:**\n\n- Reddit hosts active harm reduction communities\n- Excludes political subreddits for cleaner results\n- Good for understanding community perspectives",
+          "query": "(site:reddit.com/r/HarmReduction OR site:reddit.com/r/Drugs) (\"naloxone\" OR \"drug checking\" OR \"test kit\")",
+          "explanation": "**Why this works:**\n\n- Leads with the two confirmed-live communities (r/HarmReduction, r/Drugs); for narrower topics, the\nplatform-level `site:reddit.com` + a named term is safer than guessing a niche subreddit",
           "difficulty": "beginner",
           "sourceFile": "dork-packs/user-hosted-domains.md",
           "sourceType": "dork-pack",
-          "sourceLine": 51,
+          "sourceLine": 52,
           "operators": [
             "site"
           ],
           "targetDomains": [
-            "reddit.com"
+            "reddit.com/r/HarmReduction",
+            "reddit.com/r/Drugs"
           ],
           "domainCategory": "community",
           "contentType": "any",
           "tags": []
         },
         {
-          "id": "user-hosted-domains-multi-platform-documentation-search",
-          "title": "Multi-Platform Documentation Search",
+          "id": "user-hosted-domains-link-in-bio-support-pages",
+          "title": "Link-in-Bio & Support Pages",
           "category": "Intermediate Queries",
-          "query": "(site:*.notion.site OR site:*.gitbook.io OR site:*.readthedocs.io OR site:*.readme.io) (\"harm reduction\" OR \"drug policy\" OR \"safer use\") (guide OR resources)",
-          "explanation": "**Why this works:**\n\n- Covers all major documentation platforms\n- `guide OR resources` focuses on practical content\n- Finds community-maintained knowledge bases",
+          "query": "(site:linktr.ee OR site:carrd.co OR site:ko-fi.com OR site:beacons.ai) (\"harm reduction\" OR \"drug checking\" OR \"peer worker\")",
+          "explanation": "**Why this works:**\n\n- Bio-link and support pages lead to advocates' resource collections, newsletters, and projects —\ngood for discovering active community members",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/user-hosted-domains.md",
           "sourceType": "dork-pack",
-          "sourceLine": 69,
+          "sourceLine": 67,
           "operators": [
             "site"
           ],
           "targetDomains": [
-            "notion.site",
-            "gitbook.io",
-            "readthedocs.io",
-            "readme.io"
+            "linktr.ee",
+            "carrd.co",
+            "ko-fi.com",
+            "beacons.ai"
           ],
-          "domainCategory": "user-hosted",
+          "domainCategory": "any",
           "contentType": "any",
           "tags": [
-            "documents",
-            "policy"
+            "peer"
           ]
         },
         {
-          "id": "user-hosted-domains-harm-reduction-newsletters-independent-writers",
-          "title": "Harm Reduction Newsletters & Independent Writers",
+          "id": "user-hosted-domains-resource-boards",
+          "title": "Resource Boards",
           "category": "Intermediate Queries",
-          "query": "(site:*.substack.com OR site:*.ghost.io OR site:bearblog.dev) (\"harm reduction\" OR \"drug policy\" OR \"decriminalisation\")",
-          "explanation": "**Why this works:**\n\n- Substack newsletters from advocates and researchers\n- Ghost used by independent publications\n- Catches emerging voices in drug policy",
+          "query": "(site:padlet.com OR site:wakelet.com) (\"harm reduction\" OR AOD OR naloxone) (resources OR directory)",
+          "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/user-hosted-domains.md",
           "sourceType": "dork-pack",
-          "sourceLine": 81,
+          "sourceLine": 78,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "padlet.com",
+            "wakelet.com"
+          ],
+          "domainCategory": "any",
+          "contentType": "any",
+          "tags": []
+        },
+        {
+          "id": "user-hosted-domains-independent-newsletters",
+          "title": "Independent Newsletters",
+          "category": "Intermediate Queries",
+          "query": "(site:substack.com OR site:ghost.io) (\"harm reduction\" OR \"drug policy\" OR decriminalisation OR \"safe supply\")",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/user-hosted-domains.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 84,
           "operators": [
             "site"
           ],
           "targetDomains": [
             "substack.com",
-            "ghost.io",
-            "bearblog.dev"
+            "ghost.io"
           ],
           "domainCategory": "user-hosted",
           "contentType": "any",
@@ -22548,81 +20283,15 @@
           ]
         },
         {
-          "id": "user-hosted-domains-community-forums-q-a",
-          "title": "Community Forums & Q&A",
-          "category": "Intermediate Queries",
-          "query": "(site:reddit.com OR site:quora.com) (\"harm reduction\" OR \"naloxone\" OR \"fentanyl test strips\") -advertisement",
-          "explanation": "**Why this works:**\n\n- Reddit and Quora for lived experience perspectives\n- Excludes advertisements for cleaner results\n- Good for understanding what people are actually asking",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/user-hosted-domains.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 93,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "reddit.com",
-            "quora.com"
-          ],
-          "domainCategory": "community",
-          "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "user-hosted-domains-shared-files-training-materials",
-          "title": "Shared Files & Training Materials",
-          "category": "Intermediate Queries",
-          "query": "(site:drive.google.com OR site:dropbox.com OR site:docs.google.com) \"harm reduction\" (training OR guide OR resources)",
-          "explanation": "**Why this works:**\n\n- Community groups often share resources via cloud storage\n- Training materials frequently hosted on Google Drive\n- Catches PDFs, slide decks, and documents",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/user-hosted-domains.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 105,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "drive.google.com",
-            "dropbox.com",
-            "docs.google.com"
-          ],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "training"
-          ]
-        },
-        {
-          "id": "user-hosted-domains-conference-presentations",
-          "title": "Conference Presentations",
-          "category": "Intermediate Queries",
-          "query": "(site:slideshare.net OR site:speakerdeck.com) (\"harm reduction\" OR \"drug checking\" OR \"naloxone\")",
-          "explanation": "**Why this works:**\n\n- Conference presentations often shared publicly\n- Good for finding recent research and program updates\n- Visual summaries of harm reduction initiatives",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/user-hosted-domains.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 117,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "slideshare.net",
-            "speakerdeck.com"
-          ],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": []
-        },
-        {
           "id": "user-hosted-domains-comprehensive-user-platform-sweep",
-          "title": "Comprehensive User Platform Sweep",
+          "title": "Comprehensive User-Platform Sweep",
           "category": "Advanced Queries",
-          "query": "(site:*.notion.site OR site:*.gitbook.io OR site:*.wordpress.com OR site:medium.com OR site:*.substack.com OR site:*.tumblr.com OR site:reddit.com) (\"harm reduction\" OR \"drug checking\" OR \"naloxone\" OR \"NSP\") (guide OR resources OR directory OR community)",
-          "explanation": "**Why this works:**\n\n- Covers all major user-hosted content platforms\n- Multiple harm reduction terms for comprehensive coverage\n- Content-type terms filter to actionable resources",
+          "query": "(site:notion.site OR site:gitbook.io OR site:wordpress.com OR site:medium.com OR site:substack.com OR site:tumblr.com OR site:reddit.com) (\"harm reduction\" OR \"drug checking\" OR naloxone OR NSP) (guide OR resources OR directory OR community)",
+          "explanation": "",
           "difficulty": "advanced",
           "sourceFile": "dork-packs/user-hosted-domains.md",
           "sourceType": "dork-pack",
-          "sourceLine": 133,
+          "sourceLine": 94,
           "operators": [
             "site"
           ],
@@ -22640,15 +20309,15 @@
           "tags": []
         },
         {
-          "id": "user-hosted-domains-developer-technical-resources",
-          "title": "Developer & Technical Resources",
+          "id": "user-hosted-domains-developer-data-projects",
+          "title": "Developer & Data Projects",
           "category": "Advanced Queries",
-          "query": "(site:github.com OR site:*.github.io OR site:kaggle.com OR site:huggingface.co) (\"harm reduction\" OR \"drug checking\" OR \"overdose\") (data OR dataset OR tool OR model)",
-          "explanation": "**Why this works:**\n\n- GitHub for open source harm reduction tools\n- GitHub Pages for project documentation\n- Kaggle and Hugging Face for datasets and models",
+          "query": "(site:github.com OR site:github.io OR site:kaggle.com OR site:huggingface.co) (\"harm reduction\" OR \"drug checking\" OR overdose) (data OR dataset OR tool)",
+          "explanation": "",
           "difficulty": "advanced",
           "sourceFile": "dork-packs/user-hosted-domains.md",
           "sourceType": "dork-pack",
-          "sourceLine": 145,
+          "sourceLine": 100,
           "operators": [
             "site"
           ],
@@ -22665,15 +20334,15 @@
           ]
         },
         {
-          "id": "user-hosted-domains-research-data-repositories",
-          "title": "Research Data Repositories",
+          "id": "user-hosted-domains-research-repositories",
+          "title": "Research Repositories",
           "category": "Advanced Queries",
-          "query": "(site:zenodo.org OR site:osf.io OR site:figshare.com) (\"harm reduction\" OR \"drug policy\") (dataset OR data OR report)",
-          "explanation": "**Why this works:**\n\n- Academic data repositories often contain research outputs\n- OSF popular for harm reduction research projects\n- Zenodo for EU-funded research data",
+          "query": "(site:zenodo.org OR site:osf.io OR site:figshare.com) (\"harm reduction\" OR \"drug policy\") (dataset OR data OR report OR preprint)",
+          "explanation": "",
           "difficulty": "advanced",
           "sourceFile": "dork-packs/user-hosted-domains.md",
           "sourceType": "dork-pack",
-          "sourceLine": 159,
+          "sourceLine": 106,
           "operators": [
             "site"
           ],
@@ -22692,31 +20361,15 @@
           ]
         },
         {
-          "id": "user-hosted-domains-self-hosted-community-platforms",
-          "title": "Self-Hosted Community Platforms",
+          "id": "user-hosted-domains-modern-app-hosts-community-tools",
+          "title": "Modern App Hosts (Community Tools)",
           "category": "Advanced Queries",
-          "query": "\"BookStack\" \"harm reduction\"",
-          "explanation": "**MediaWiki Sites:**\n\n\n**BookStack Documentation:**\n\n\n**Why this works:**\n\n- Discourse forums host many advocacy communities\n- MediaWiki used by community documentation projects\n- Finds content on self-hosted platforms",
+          "query": "(site:vercel.app OR site:netlify.app OR site:pages.dev OR site:replit.app OR site:streamlit.app) (\"harm reduction\" OR \"drug checking\" OR naloxone)",
+          "explanation": "> Dropped: `*.glitch.me` (Glitch ended hosting July 2025 — mostly dead links). Use the hosts above.",
           "difficulty": "advanced",
           "sourceFile": "dork-packs/user-hosted-domains.md",
           "sourceType": "dork-pack",
-          "sourceLine": 171,
-          "operators": [],
-          "targetDomains": [],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "user-hosted-domains-jamstack-modern-app-hosts",
-          "title": "Jamstack/Modern App Hosts",
-          "category": "Advanced Queries",
-          "query": "(site:*.vercel.app OR site:*.netlify.app OR site:*.pages.dev OR site:*.glitch.me) (\"harm reduction\" OR \"drug checking\" OR \"naloxone\" OR \"overdose\")",
-          "explanation": "**Why this works:**\n\n- Modern hosting platforms for web apps\n- Glitch popular for educational and prototype tools\n- May find harm reduction calculators, tools, or resources",
-          "difficulty": "advanced",
-          "sourceFile": "dork-packs/user-hosted-domains.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 199,
+          "sourceLine": 112,
           "operators": [
             "site"
           ],
@@ -22724,137 +20377,43 @@
             "vercel.app",
             "netlify.app",
             "pages.dev",
-            "glitch.me"
+            "replit.app",
+            "streamlit.app"
           ],
           "domainCategory": "any",
           "contentType": "any",
           "tags": []
         },
         {
-          "id": "user-hosted-domains-video-presentation-platforms",
-          "title": "Video & Presentation Platforms",
+          "id": "user-hosted-domains-self-hosted-community-platforms",
+          "title": "Self-Hosted Community Platforms",
           "category": "Advanced Queries",
-          "query": "(site:slideshare.net OR site:speakerdeck.com OR site:prezi.com) (\"harm reduction\" OR \"drug checking\" OR \"peer worker\" OR \"AOD\") (conference OR training OR presentation)",
+          "query": "(\"Powered by Discourse\" OR inurl:/t/) (\"harm reduction\" OR \"drug user\" OR \"drug policy\")",
           "explanation": "",
           "difficulty": "advanced",
           "sourceFile": "dork-packs/user-hosted-domains.md",
           "sourceType": "dork-pack",
-          "sourceLine": 213,
+          "sourceLine": 120,
           "operators": [
-            "site"
+            "inurl"
           ],
-          "targetDomains": [
-            "slideshare.net",
-            "speakerdeck.com",
-            "prezi.com"
-          ],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "peer",
-            "training"
-          ]
-        },
-        {
-          "id": "user-hosted-domains-community-resource-boards",
-          "title": "Community Resource Boards",
-          "category": "Advanced Queries",
-          "query": "(site:padlet.com OR site:wakelet.com) \"harm reduction\" OR \"drug\" OR \"AOD\" resources",
-          "explanation": "**Why this works:**\n\n- Padlet widely used for community resource collections\n- Wakelet for curated content collections\n- Often maintained by peer workers and community groups",
-          "difficulty": "advanced",
-          "sourceFile": "dork-packs/user-hosted-domains.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 219,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "padlet.com",
-            "wakelet.com"
-          ],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "user-hosted-domains-bio-link-discovery",
-          "title": "Bio Link Discovery",
-          "category": "Advanced Queries",
-          "query": "(site:linktr.ee OR site:ko-fi.com OR site:patreon.com) \"harm reduction\" OR \"drug policy\" OR \"peer worker\"",
-          "explanation": "**Why this works:**\n\n- Bio links often lead to resources, newsletters, and projects\n- Ko-fi and Patreon pages may describe ongoing work\n- Good for discovering active community members",
-          "difficulty": "advanced",
-          "sourceFile": "dork-packs/user-hosted-domains.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 231,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "linktr.ee",
-            "ko-fi.com",
-            "patreon.com"
-          ],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "peer",
-            "policy"
-          ]
-        },
-        {
-          "id": "user-hosted-domains-global-harm-reduction-blogs",
-          "title": "Global Harm Reduction Blogs",
-          "category": "\udf0d International User Content",
-          "query": "(site:*.wordpress.com OR site:medium.com) \"harm reduction\" (Canada OR UK OR Europe OR \"New Zealand\")",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/user-hosted-domains.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 249,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "wordpress.com",
-            "medium.com"
-          ],
-          "domainCategory": "user-hosted",
-          "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "user-hosted-domains-international-community-forums",
-          "title": "International Community Forums",
-          "category": "\udf0d International User Content",
-          "query": "site:reddit.com/r/ (harmreduction OR drugsover30 OR opiatesrecovery OR REDDITORSINRECOVERY) international OR Canada OR UK OR Australia",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/user-hosted-domains.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 255,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "reddit.com/r/"
-          ],
+          "targetDomains": [],
           "domainCategory": "community",
           "contentType": "any",
           "tags": [
-            "international",
-            "australia"
+            "policy"
           ]
         },
         {
           "id": "user-hosted-domains-notion-directories-guides",
           "title": "Notion Directories & Guides",
           "category": "\udccb Platform-Specific Searches",
-          "query": "site:*.notion.site (\"harm reduction\" OR \"drug checking\" OR \"safer use\") (directory OR guide OR resources)",
+          "query": "site:notion.site (\"harm reduction\" OR \"drug checking\" OR \"safer use\") (directory OR guide OR resources)",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/user-hosted-domains.md",
           "sourceType": "dork-pack",
-          "sourceLine": 265,
+          "sourceLine": 130,
           "operators": [
             "site"
           ],
@@ -22866,35 +20425,15 @@
           "tags": []
         },
         {
-          "id": "user-hosted-domains-medium-essays",
-          "title": "Medium Essays",
-          "category": "\udccb Platform-Specific Searches",
-          "query": "site:medium.com \"harm reduction\" (essay OR opinion OR \"personal story\")",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/user-hosted-domains.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 271,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "medium.com"
-          ],
-          "domainCategory": "user-hosted",
-          "contentType": "any",
-          "tags": []
-        },
-        {
           "id": "user-hosted-domains-substack-newsletters",
           "title": "Substack Newsletters",
           "category": "\udccb Platform-Specific Searches",
-          "query": "site:*.substack.com (\"drug policy\" OR \"harm reduction\" OR \"decriminalisation\")",
+          "query": "site:substack.com (\"drug policy\" OR \"harm reduction\" OR decriminalisation)",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/user-hosted-domains.md",
           "sourceType": "dork-pack",
-          "sourceLine": 277,
+          "sourceLine": 136,
           "operators": [
             "site"
           ],
@@ -22908,57 +20447,15 @@
           ]
         },
         {
-          "id": "user-hosted-domains-tumblr-community-content",
-          "title": "Tumblr Community Content",
-          "category": "\udccb Platform-Specific Searches",
-          "query": "site:*.tumblr.com \"harm reduction\" OR \"safer use\" OR \"drug education\"",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/user-hosted-domains.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 283,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "tumblr.com"
-          ],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": [
-            "training"
-          ]
-        },
-        {
-          "id": "user-hosted-domains-reddit-specific-subreddits",
-          "title": "Reddit Specific Subreddits",
-          "category": "\udccb Platform-Specific Searches",
-          "query": "site:reddit.com/r/reagenttesting",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/user-hosted-domains.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 289,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "reddit.com/r/reagenttesting"
-          ],
-          "domainCategory": "community",
-          "contentType": "any",
-          "tags": []
-        },
-        {
           "id": "user-hosted-domains-github-projects",
           "title": "GitHub Projects",
           "category": "\udccb Platform-Specific Searches",
-          "query": "site:github.com \"drug checking\" OR \"fentanyl\" (tool OR data)",
-          "explanation": "**Tools & Data:**",
+          "query": "site:github.com (\"harm reduction\" OR \"drug checking\" OR fentanyl) (README OR tool OR data)",
+          "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/user-hosted-domains.md",
           "sourceType": "dork-pack",
-          "sourceLine": 307,
+          "sourceLine": 142,
           "operators": [
             "site"
           ],
@@ -22972,15 +20469,39 @@
           ]
         },
         {
-          "id": "user-hosted-domains-archive-org-historical-content",
-          "title": "Archive.org Historical Content",
+          "id": "user-hosted-domains-documentation-hosts",
+          "title": "Documentation Hosts",
           "category": "\udccb Platform-Specific Searches",
-          "query": "site:archive.org \"harm reduction\" OR \"needle exchange\" OR \"syringe program\"",
+          "query": "(site:gitbook.io OR site:readthedocs.io OR site:readthedocs-hosted.com) (\"harm reduction\" OR \"drug checking\" OR \"safer use\")",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/user-hosted-domains.md",
           "sourceType": "dork-pack",
-          "sourceLine": 321,
+          "sourceLine": 148,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "gitbook.io",
+            "readthedocs.io",
+            "readthedocs-hosted.com"
+          ],
+          "domainCategory": "user-hosted",
+          "contentType": "any",
+          "tags": [
+            "documents"
+          ]
+        },
+        {
+          "id": "user-hosted-domains-archive-org-historical-content",
+          "title": "Archive.org Historical Content",
+          "category": "\udccb Platform-Specific Searches",
+          "query": "site:archive.org (\"harm reduction\" OR \"needle exchange\" OR \"syringe program\")",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/user-hosted-domains.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 154,
           "operators": [
             "site"
           ],
@@ -22994,72 +20515,25 @@
           ]
         },
         {
-          "id": "user-hosted-domains-docs-bucket",
-          "title": "Docs Bucket",
-          "category": "\udccb Quick Copy Domain Buckets",
-          "query": "site:*.notion.site OR site:*.gitbook.io OR site:*.readme.io OR site:*.readthedocs.io",
+          "id": "user-hosted-domains-blogs-writing",
+          "title": "Blogs / Writing",
+          "category": "\udccb Quick-Copy Domain Buckets",
+          "query": "site:medium.com OR site:substack.com OR site:wordpress.com OR site:tumblr.com OR site:ghost.io OR site:bearblog.dev OR site:telegra.ph",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/user-hosted-domains.md",
           "sourceType": "dork-pack",
-          "sourceLine": 331,
+          "sourceLine": 164,
           "operators": [
             "site"
           ],
           "targetDomains": [
-            "notion.site",
-            "gitbook.io",
-            "readme.io",
-            "readthedocs.io"
-          ],
-          "domainCategory": "user-hosted",
-          "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "user-hosted-domains-jamstack-apps-bucket",
-          "title": "Jamstack/Apps Bucket",
-          "category": "\udccb Quick Copy Domain Buckets",
-          "query": "site:*.pages.dev OR site:*.vercel.app OR site:*.netlify.app OR site:*.web.app OR site:*.glitch.me OR site:*.replit.app",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/user-hosted-domains.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 337,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "pages.dev",
-            "vercel.app",
-            "netlify.app",
-            "web.app",
-            "glitch.me",
-            "replit.app"
-          ],
-          "domainCategory": "any",
-          "contentType": "any",
-          "tags": []
-        },
-        {
-          "id": "user-hosted-domains-blogs-writing-bucket",
-          "title": "Blogs/Writing Bucket",
-          "category": "\udccb Quick Copy Domain Buckets",
-          "query": "site:*.wordpress.com OR site:*.blogspot.com OR site:medium.com OR site:*.substack.com OR site:*.tumblr.com OR site:telegra.ph",
-          "explanation": "",
-          "difficulty": "intermediate",
-          "sourceFile": "dork-packs/user-hosted-domains.md",
-          "sourceType": "dork-pack",
-          "sourceLine": 343,
-          "operators": [
-            "site"
-          ],
-          "targetDomains": [
-            "wordpress.com",
-            "blogspot.com",
             "medium.com",
             "substack.com",
+            "wordpress.com",
             "tumblr.com",
+            "ghost.io",
+            "bearblog.dev",
             "telegra.ph"
           ],
           "domainCategory": "user-hosted",
@@ -23067,61 +20541,87 @@
           "tags": []
         },
         {
-          "id": "user-hosted-domains-files-bucket",
-          "title": "Files Bucket",
-          "category": "\udccb Quick Copy Domain Buckets",
-          "query": "site:drive.google.com OR site:dropbox.com OR site:onedrive.live.com OR site:archive.org OR site:speakerdeck.com",
+          "id": "user-hosted-domains-docs-knowledge",
+          "title": "Docs / Knowledge",
+          "category": "\udccb Quick-Copy Domain Buckets",
+          "query": "site:notion.site OR site:gitbook.io OR site:readthedocs.io OR site:readme.io",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/user-hosted-domains.md",
           "sourceType": "dork-pack",
-          "sourceLine": 349,
+          "sourceLine": 170,
           "operators": [
             "site"
           ],
           "targetDomains": [
-            "drive.google.com",
-            "dropbox.com",
-            "onedrive.live.com",
-            "archive.org",
-            "speakerdeck.com"
+            "notion.site",
+            "gitbook.io",
+            "readthedocs.io",
+            "readme.io"
+          ],
+          "domainCategory": "user-hosted",
+          "contentType": "any",
+          "tags": []
+        },
+        {
+          "id": "user-hosted-domains-bio-link-support",
+          "title": "Bio-Link / Support",
+          "category": "\udccb Quick-Copy Domain Buckets",
+          "query": "site:linktr.ee OR site:carrd.co OR site:ko-fi.com OR site:patreon.com OR site:beacons.ai",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/user-hosted-domains.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 176,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "linktr.ee",
+            "carrd.co",
+            "ko-fi.com",
+            "patreon.com",
+            "beacons.ai"
           ],
           "domainCategory": "any",
           "contentType": "any",
           "tags": []
         },
         {
-          "id": "user-hosted-domains-community-bucket",
-          "title": "Community Bucket",
-          "category": "\udccb Quick Copy Domain Buckets",
-          "query": "site:reddit.com OR site:quora.com OR site:groups.google.com",
+          "id": "user-hosted-domains-jamstack-app-hosts",
+          "title": "Jamstack / App Hosts",
+          "category": "\udccb Quick-Copy Domain Buckets",
+          "query": "site:vercel.app OR site:netlify.app OR site:pages.dev OR site:web.app OR site:replit.app OR site:streamlit.app",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/user-hosted-domains.md",
           "sourceType": "dork-pack",
-          "sourceLine": 355,
+          "sourceLine": 182,
           "operators": [
             "site"
           ],
           "targetDomains": [
-            "reddit.com",
-            "quora.com",
-            "groups.google.com"
+            "vercel.app",
+            "netlify.app",
+            "pages.dev",
+            "web.app",
+            "replit.app",
+            "streamlit.app"
           ],
-          "domainCategory": "community",
+          "domainCategory": "any",
           "contentType": "any",
           "tags": []
         },
         {
-          "id": "user-hosted-domains-research-bucket",
-          "title": "Research Bucket",
-          "category": "\udccb Quick Copy Domain Buckets",
-          "query": "site:zenodo.org OR site:osf.io OR site:figshare.com OR site:kaggle.com",
+          "id": "user-hosted-domains-research-data",
+          "title": "Research / Data",
+          "category": "\udccb Quick-Copy Domain Buckets",
+          "query": "site:zenodo.org OR site:osf.io OR site:figshare.com OR site:kaggle.com OR site:huggingface.co",
           "explanation": "",
           "difficulty": "intermediate",
           "sourceFile": "dork-packs/user-hosted-domains.md",
           "sourceType": "dork-pack",
-          "sourceLine": 361,
+          "sourceLine": 188,
           "operators": [
             "site"
           ],
@@ -23129,13 +20629,59 @@
             "zenodo.org",
             "osf.io",
             "figshare.com",
-            "kaggle.com"
+            "kaggle.com",
+            "huggingface.co"
           ],
           "domainCategory": "any",
           "contentType": "any",
           "tags": [
-            "research"
+            "research",
+            "data"
           ]
+        },
+        {
+          "id": "user-hosted-domains-community",
+          "title": "Community",
+          "category": "\udccb Quick-Copy Domain Buckets",
+          "query": "site:reddit.com OR site:quora.com OR site:padlet.com OR site:wakelet.com",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/user-hosted-domains.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 194,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "reddit.com",
+            "quora.com",
+            "padlet.com",
+            "wakelet.com"
+          ],
+          "domainCategory": "community",
+          "contentType": "any",
+          "tags": []
+        },
+        {
+          "id": "user-hosted-domains-search-medium-com",
+          "title": "Search medium.com",
+          "category": "\udf0d International User Content",
+          "query": "(site:medium.com OR site:substack.com) \"harm reduction\" (Canada OR UK OR Europe OR \"New Zealand\")",
+          "explanation": "",
+          "difficulty": "intermediate",
+          "sourceFile": "dork-packs/user-hosted-domains.md",
+          "sourceType": "dork-pack",
+          "sourceLine": 205,
+          "operators": [
+            "site"
+          ],
+          "targetDomains": [
+            "medium.com",
+            "substack.com"
+          ],
+          "domainCategory": "user-hosted",
+          "contentType": "any",
+          "tags": []
         }
       ],
       "sourceFile": "dork-packs/user-hosted-domains.md"
@@ -29599,9 +27145,9 @@
     }
   ],
   "meta": {
-    "buildDate": "2026-06-27T16:48:20.348Z",
+    "buildDate": "2026-06-27T17:12:51.493Z",
     "version": "2.0.0",
-    "totalDorks": 1364,
+    "totalDorks": 1244,
     "sourceFiles": [
       "01-quick-start.md",
       "02-core-operators.md",

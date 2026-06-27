@@ -48,18 +48,19 @@ These were chosen by the project owner. Keep to them unless told otherwise:
 
 ## 2. What's Done So Far
 
-| #   | Commit theme                                      | Artifact                                                                     |
-| --- | ------------------------------------------------- | ---------------------------------------------------------------------------- |
-| 1   | Reference layer built                             | `docs/resources/source-intelligence.md`                                      |
-| 2   | Flagged entries verified/corrected via web search | same file                                                                    |
-| 3   | Drug-checking pack rewritten (proof-of-concept)   | `docs/dork-packs/drug-checking.md`                                           |
-| 4   | Batch 2 rewritten + reference verified/extended   | `naloxone`, `supervised-consumption`, `novel-substances`, `coroners-deaths`  |
-| 5   | Batch 3 rewritten + reference verified/extended   | `drug-alerts`, `nsp`, `research`, `data-statistics`                          |
-| 6   | Batch 4 rewritten + reference verified/extended   | `oat-ost`, `international`, `peer-workforce`, `forum-community`              |
-| 7   | Batch 5 rewritten + reference verified/extended   | `policy-advocacy`, `festivals`, `service-directories`, `safer-use-education` |
-| 8   | Batch 6 rewritten + reference verified/extended   | `youth`, `families-carers`, `housing-homelessness`, `mental-health`          |
-| 9   | Batch 7 rewritten + reference verified/extended   | `prisons-justice`, `rural-remote`                                            |
-| 10  | Batch 8 rewritten + reference verified/extended   | `stigma-language`, `temporal-intelligence`, `organizational-intelligence`    |
+| #   | Commit theme                                      | Artifact                                                                             |
+| --- | ------------------------------------------------- | ------------------------------------------------------------------------------------ |
+| 1   | Reference layer built                             | `docs/resources/source-intelligence.md`                                              |
+| 2   | Flagged entries verified/corrected via web search | same file                                                                            |
+| 3   | Drug-checking pack rewritten (proof-of-concept)   | `docs/dork-packs/drug-checking.md`                                                   |
+| 4   | Batch 2 rewritten + reference verified/extended   | `naloxone`, `supervised-consumption`, `novel-substances`, `coroners-deaths`          |
+| 5   | Batch 3 rewritten + reference verified/extended   | `drug-alerts`, `nsp`, `research`, `data-statistics`                                  |
+| 6   | Batch 4 rewritten + reference verified/extended   | `oat-ost`, `international`, `peer-workforce`, `forum-community`                      |
+| 7   | Batch 5 rewritten + reference verified/extended   | `policy-advocacy`, `festivals`, `service-directories`, `safer-use-education`         |
+| 8   | Batch 6 rewritten + reference verified/extended   | `youth`, `families-carers`, `housing-homelessness`, `mental-health`                  |
+| 9   | Batch 7 rewritten + reference verified/extended   | `prisons-justice`, `rural-remote`                                                    |
+| 10  | Batch 8 rewritten + reference verified/extended   | `stigma-language`, `temporal-intelligence`, `organizational-intelligence`            |
+| 11  | Batch 9 rewritten + reference verified/extended   | `investigative`, `document-discovery`, `multimedia-discovery`, `user-hosted-domains` |
 
 - **`source-intelligence.md`** is the heart of this work: an entity → searchable-signal map. For
   each real org/service/dataset it records the `site:` target, the named publications to put in
@@ -204,22 +205,26 @@ Movement History" (named language guides + AU HR-history anchors), "Web Archives
 (ACNC/GrantConnect/ AusTender/PHN etc.). 4-cluster verification fan-out (153k tokens, 50 web
 lookups).
 
-**Suggested next batch (technique packs 2/2):** `investigative`, `document-discovery`,
-`multimedia-discovery`, `user-hosted-domains` — platform/format-driven, lighter touch (named
-platforms, file-type operators, the existing "User-Hosted Platform Patterns" synonym block). Then
-the community-controlled packs (`first-nations`, `sex-worker-health`, `lgbtq-health`) with extra
-care — see note below. Note: batch 7 already catalogued a verified, cultural-safety-flagged **First
-Nations & justice** sub-section in source-intelligence — a useful starting point for the
-`first-nations` pack.
+**Done (batch 9):** `investigative`, `document-discovery`, `multimedia-discovery`,
+`user-hosted-domains` — the "technique packs (2/2)" set. One consolidated reference section built
+from scratch (§4): "Discovery Platforms & File Types" (dead-platform graveyard; live multimedia +
+named HR podcasts; document/data platforms + AU open-data portals + named datasets; user-hosted/
+Jamstack platform currency). 3-cluster verification fan-out (134k tokens, 53 web lookups).
+
+**Only the community-controlled packs remain:** `first-nations`, `sex-worker-health`, `lgbtq-health`
+— handle with extra care (see note below). All technique and topical packs are now done. Note: batch
+7 already catalogued a verified, cultural-safety-flagged **First Nations & justice** sub-section in
+source-intelligence — a useful starting point for the `first-nations` pack.
 
 ### Packs needing a reference section built first (§4 before §3)
 
-`first-nations` · `lgbtq-health` · `sex-worker-health` · `investigative` · `document-discovery` ·
-`multimedia-discovery` · `user-hosted-domains`
+`first-nations` · `lgbtq-health` · `sex-worker-health` (the community-controlled set — all that
+remains)
 
 > For `first-nations`, `sex-worker-health`, and `lgbtq-health` especially: prioritise community-
 > controlled and peer sources, and be careful with framing/terminology. When in doubt, flag for
-> human/peer review rather than guessing.
+> human/peer review rather than guessing. These are good candidates to co-author with the project
+> owner (at NUAA) rather than draft solo.
 
 ### Outstanding `⚠ verify` flags (confirm before use)
 
@@ -334,6 +339,26 @@ to Language Matters / Power of Words. The NMHC **"National Stigma and Discrimina
 Strategy"** is mental-health-focused — do **not** claim it covers AOD. **AIVL founding year**
 unconfirmed — cite "formed in the late 1980s", don't assert a year. **archive.today** has governance
 caveats (Wikipedia blacklisted it Feb 2026) — keep it secondary to Wayback.
+
+Resolved/corrected in batch 9: dead platforms removed — **Google Podcasts** (`podcasts.google.com`,
+shut 2024), **Stitcher** (`stitcher.com`, shut 2023), **Glitch** (`*.glitch.me`, hosting ended Jul
+2025). **`site:docs.google.com`/`drive.google.com`** index only _publish-to-web_ docs (link-shared
+excluded) — low-yield; **`site:canva.com`** design links aren't indexed (only published Canva
+Sites). Named podcasts confirmed: **Crackdown** (`crackdownpod.com`, drug-user-led), **Narcotica**
+(`narcocast.com` — **not** narcotica.com), **Drug Science Podcast** (`drugscience.org.uk`). Apple
+Podcasts = `podcasts.apple.com` (not itunes); Spotify = `open.spotify.com/show|episode`; Replit
+deployments = `*.replit.app` (not `replit.dev`); add `*.readthedocs-hosted.com` (Business tier);
+`telegra.ph` is flat-path (not a subdomain). Named data targets: **data.gov.au** (`filetype:csv`),
+AIHW **"Data tables"** `filetype:xlsx` (**AODTS NMDS**, **NDSHS**), **DocumentCloud** for
+FOI/primary sources, **ANSPS** (Kirby) for NSP data.
+
+Still flagged (batch 9): **Filter** (`filtermag.org`) is a magazine, **not** a podcast — don't quote
+a "Filter podcast". No confirmed AU drug-user-org podcast (NUAA "Rabble", Penington, HRVic, NDARC
+all unconfirmed/non-existent) — use their websites/magazines and triple j **Hack** (not _The Hook
+Up_) for AU audio. Reddit subs **r/HarmReduction** and **r/Drugs** confirmed live;
+**r/ReagentTesting**, **r/opiates**, **r/AusDrugs** could not be verified (Reddit blocks the
+fetcher) — prefer the confirmed subs + platform-level `site:reddit.com` + named-AU-service terms
+over asserting a niche subreddit.
 
 Still flagged: **Strong & Deadly Futures** is an Aboriginal & Torres Strait Islander program — quote
 it but keep cultural-safety framing. The **NHMRC CRE in Mental Health and Substance Use** ("CREMS")

@@ -1,539 +1,249 @@
 # Multimedia & Audiovisual Discovery
 
-> Unlock video, audio, and visual resources — a whole content type that's underutilized in harm
-> reduction research. Find training videos, conference talks, podcasts, webinars, infographics, and
-> community-produced media.
+> Find video, audio, and visual harm-reduction content — named by the actual podcast and platform
+> that still works, not a generic `site:youtube.com` guess (Google Podcasts and Stitcher are dead).
 
 [← Back to Dork Packs](README.md) | [← Main Guide](../README.md)
 
 ---
 
+## 👥 About This Pack
+
+Audiovisual content is underused in harm-reduction research — and the specificity move is to name
+the shows that actually exist. The strongest is **Crackdown** (Canada), made _by_ drug-user
+activists; **Narcotica** and the **Drug Science Podcast** (UK) round out the named international
+audio. Platform currency matters here as much as in temporal search: **Google Podcasts** (shut 2024)
+and **Stitcher** (shut 2023) are dead — use Apple Podcasts and Spotify's `open.spotify.com`.
+
+> **Entity reference:** every platform and named show below is catalogued in
+> [Source Intelligence → Discovery Platforms & File Types](../resources/source-intelligence.md#-discovery-platforms--file-types).
+
+---
+
 ## ⚡ Quick Start
 
-Find harm reduction training videos on YouTube:
+Go to the drug-user-led harm-reduction podcast:
 
 ```txt
-site:youtube.com "harm reduction" (training OR education OR "how to")
+(site:crackdownpod.com OR site:podcasts.apple.com) "Crackdown" "harm reduction"
 ```
 
 ---
 
 ## 🟢 Basic Queries
 
+### Named Harm-Reduction Podcasts
+
+```txt
+("Crackdown" OR "Narcotica" OR "Drug Science Podcast") ("harm reduction" OR "drug policy" OR overdose)
+```
+
+**Why this works:**
+
+- Names the real shows — **Crackdown** (`crackdownpod.com`, drug-user-led), **Narcotica**
+  (`narcocast.com`), **Drug Science Podcast** (`drugscience.org.uk`, David Nutt) — instead of hoping
+  a generic podcast search surfaces something on-topic
+
 ### YouTube Training & Education
 
-Find educational harm reduction videos.
-
 ```txt
-site:youtube.com "harm reduction" (training OR workshop OR tutorial)
+site:youtube.com "harm reduction" (training OR workshop OR tutorial OR "how to")
 ```
 
-**Why this works:**
-
-- YouTube hosts massive amounts of training content
-- Training/workshop terms filter to educational content
-- Catches organizational uploads and community content
-
-### Vimeo Professional Content
-
-Find professional and organizational videos.
+### Vimeo Organisational Content
 
 ```txt
-site:vimeo.com ("harm reduction" OR "drug checking" OR "naloxone")
+site:vimeo.com ("harm reduction" OR "drug checking" OR naloxone)
 ```
-
-**Why this works:**
-
-- Vimeo often hosts higher-quality organizational content
-- Many conferences and orgs prefer Vimeo
-- Less noise than YouTube
-
-### SlideShare Presentations
-
-Find conference and training slide decks.
-
-```txt
-site:slideshare.net "harm reduction" (conference OR presentation OR training)
-```
-
-**Why this works:**
-
-- SlideShare is a major repository for presentations
-- Conference talks often shared here
-- Visual summaries of research and programs
 
 ---
 
 ## 🟡 Intermediate Queries
 
-### Conference Recordings
-
-Find recorded conference sessions.
-
-```txt
-(site:youtube.com OR site:vimeo.com) "harm reduction" (conference OR symposium OR "keynote" OR summit)
-```
-
-**Why this works:**
-
-- Many conferences post recordings publicly
-- Keynotes and panels often on video platforms
-- High-quality expert content
-
-### Podcast Episodes
-
-Find podcast content on harm reduction.
-
-```txt
-(site:podcasts.apple.com OR site:open.spotify.com OR site:soundcloud.com) "harm reduction"
-```
-
-**Why this works:**
-
-- Major podcast platforms are searchable
-- Finds both dedicated podcasts and individual episodes
-- Audio content often contains unique perspectives
-
-### Webinar Recordings
-
-Find recorded webinars and online presentations.
-
-```txt
-(site:youtube.com OR site:vimeo.com OR site:zoom.us) "harm reduction" (webinar OR "online training" OR "virtual workshop")
-```
-
-**Why this works:**
-
-- Webinars became dominant during COVID and continue
-- Often posted to YouTube/Vimeo after live events
-- High-quality training content
-
 ### Naloxone Training Videos
 
-Find narcan/naloxone administration training.
-
 ```txt
-site:youtube.com (naloxone OR narcan OR nyxoid) (training OR "how to" OR administration OR "step by step")
+site:youtube.com (naloxone OR Nyxoid OR Narcan) (training OR "how to" OR administration OR "step by step")
 ```
 
 **Why this works:**
 
-- Visual training for overdose response is common
-- Multiple brands and versions of naloxone
-- Critical life-saving content
+- Visual overdose-response training is high-value and abundant — naming the AU product **Nyxoid**
+  alongside naloxone catches Australian-specific clips
 
-### Drug Checking Explainers
+### Drug-Checking Explainers
 
 ```txt
 (site:youtube.com OR site:vimeo.com) ("drug checking" OR "pill testing" OR "reagent testing") (guide OR explained OR "how it works")
 ```
 
+### Conference & Webinar Recordings
+
+```txt
+(site:youtube.com OR site:vimeo.com) "harm reduction" (conference OR symposium OR keynote OR webinar OR APSAD)
+```
+
+### Podcast Platforms (Live Ones)
+
+```txt
+(site:podcasts.apple.com OR site:open.spotify.com OR site:soundcloud.com) ("harm reduction" OR "drug policy" OR naloxone)
+```
+
+> Note: drop `site:podcasts.google.com` (Google Podcasts shut 2024) and `site:stitcher.com`
+> (shut 2023) — neither resolves. Use the three above.
+
 ---
 
 ## 🔴 Advanced Queries
 
-### Comprehensive Video Platform Sweep
-
-Search across all major video platforms.
+### Comprehensive Video Sweep
 
 ```txt
-(site:youtube.com OR site:vimeo.com OR site:dailymotion.com OR site:rumble.com) "harm reduction" (Australia OR Australian)
+(site:youtube.com OR site:vimeo.com OR site:dailymotion.com) "harm reduction" (Australia OR Australian)
+```
+
+### TED / TEDx Talks
+
+```txt
+(site:ted.com/talks OR site:youtube.com) (TED OR TEDx) ("harm reduction" OR "drug policy" OR decriminalisation OR addiction)
+```
+
+### Peer-Produced & Lived-Experience Video
+
+```txt
+site:youtube.com ("lived experience" OR "peer worker" OR "person who uses drugs" OR PWUD) ("harm reduction" OR naloxone OR "drug checking")
 ```
 
 **Why this works:**
 
-- Covers all major video hosting platforms
-- Australian context filter
-- Catches content wherever it's hosted
+- Peer-produced content carries practical, in-their-own-words knowledge an official training video
+  misses — leading with it keeps the corpus peer-first
 
-### TED/TEDx Talks
-
-Find TED talks on harm reduction and drug policy.
+### Documentary & Current Affairs
 
 ```txt
-(site:ted.com OR site:youtube.com) (TED OR TEDx) ("harm reduction" OR "drug policy" OR "decriminalisation" OR "addiction")
-```
-
-**Why this works:**
-
-- TED talks are high-impact public communication
-- Often feature researchers and advocates
-- Good for understanding public discourse
-
-### Infographics & Visual Guides
-
-Find visual educational resources.
-
-```txt
-(infographic OR "visual guide" OR poster OR chart) "harm reduction" (filetype:png OR filetype:jpg OR filetype:pdf)
-```
-
-**Why this works:**
-
-- Image files often contain infographics
-- PDFs may be visual guides or posters
-- Good for health promotion materials
-
-### Peer-Produced Video Content
-
-Find videos made by people with lived experience.
-
-```txt
-site:youtube.com ("lived experience" OR "peer worker" OR "person who uses drugs" OR PWUD) "harm reduction"
-```
-
-**Why this works:**
-
-- Peer-produced content has unique authenticity
-- Often shares practical knowledge
-- Community perspectives on services
-
-### Documentary Content
-
-Find documentaries and longer-form video.
-
-```txt
-(site:youtube.com OR site:vimeo.com OR site:abc.net.au OR site:sbs.com.au) (documentary OR "in-depth" OR investigation) ("harm reduction" OR "drug policy" OR "ice epidemic" OR "opioid crisis")
-```
-
-**Why this works:**
-
-- Documentaries provide deep context
-- Australian broadcasters (ABC, SBS) produce quality content
-- Long-form journalism on drug issues
-
-### Recorded Panel Discussions
-
-```txt
-(site:youtube.com OR site:vimeo.com) ("panel discussion" OR "expert panel" OR roundtable) "harm reduction"
-```
-
-### Training Course Previews
-
-Find online course previews and educational content.
-
-```txt
-(site:youtube.com OR site:vimeo.com OR site:udemy.com OR site:coursera.org) "harm reduction" (course OR module OR "learning" OR certification)
+(site:abc.net.au OR site:sbs.com.au OR site:youtube.com) (documentary OR "Four Corners" OR investigation) ("harm reduction" OR "pill testing" OR "ice" OR "opioid")
 ```
 
 ---
 
-## 🎧 Audio & Podcast Platforms
+## 🎧 Podcasts (Named + Platforms)
 
-### Major Podcast Platforms
-
-#### Apple Podcasts
+### The Named Shows
 
 ```txt
-site:podcasts.apple.com "harm reduction"
+(site:crackdownpod.com OR site:narcocast.com OR site:drugscience.org.uk) (episode OR "harm reduction" OR "drug policy")
 ```
 
-#### Google Podcasts
+### Finding Episodes by Topic
 
 ```txt
-site:podcasts.google.com "harm reduction"
-```
-
-#### Pocket Casts
-
-```txt
-site:pocketcasts.com "harm reduction"
-```
-
-#### SoundCloud
-
-```txt
-site:soundcloud.com "harm reduction"
-```
-
-#### Spotify
-
-```txt
-site:open.spotify.com "harm reduction"
-```
-
-#### Stitcher
-
-```txt
-site:stitcher.com "harm reduction"
-```
-
-### Combined Podcast Search
-
-```txt
-(site:podcasts.apple.com OR site:open.spotify.com OR site:soundcloud.com) ("harm reduction" OR "drug policy" OR "addiction")
-```
-
-### Finding Podcast Episodes
-
-Search for specific topics within podcasts:
-
-```txt
-site:podcasts.apple.com (naloxone OR fentanyl OR "safe supply")
+(site:podcasts.apple.com OR site:open.spotify.com) (naloxone OR nitazene OR "safe supply" OR "drug checking")
 ```
 
 ### Audio Interviews & Oral Histories
 
 ```txt
-(site:soundcloud.com OR site:archive.org) (interview OR "oral history") "harm reduction" OR "drug use"
+(site:soundcloud.com OR site:archive.org) (interview OR "oral history") ("harm reduction" OR "drug use")
 ```
 
 ---
 
-## 📊 Presentation Platforms
-
-### Major Presentation Platforms
-
-#### Canva
+## 📊 Presentation & Slide Platforms
 
 ```txt
-site:canva.com "harm reduction"
+(site:slideshare.net OR site:speakerdeck.com OR site:prezi.com) "harm reduction" (conference OR training OR APSAD OR AIVL)
 ```
 
-#### Google Slides
-
-```txt
-site:docs.google.com/presentation "harm reduction"
-```
-
-#### Prezi
-
-```txt
-site:prezi.com "harm reduction"
-```
-
-#### SlideShare
-
-```txt
-site:slideshare.net "harm reduction"
-```
-
-#### Speaker Deck
-
-```txt
-site:speakerdeck.com "harm reduction"
-```
-
-### Conference Presentations
-
-```txt
-(site:slideshare.net OR site:speakerdeck.com) "harm reduction" (conference OR symposium OR APSAD OR AIVL)
-```
-
-### Training Slide Decks
-
-```txt
-(site:slideshare.net OR site:speakerdeck.com) "harm reduction" (training OR workshop OR "capacity building")
-```
+> SlideShare is now a Scribd property; both still index. Canva design links are **not**
+> Google-indexed (only published Canva Sites are), so skip `site:canva.com` for flyers.
 
 ---
 
 ## 🖼️ Visual & Infographic Content
 
-### Image Search Operators
+### Infographics & Posters
 
 ```txt
-"harm reduction" (infographic OR diagram OR chart) site:*.org.au
+("harm reduction" OR naloxone OR "drug checking") (infographic OR poster OR "visual guide") (filetype:pdf OR filetype:png)
 ```
 
-```txt
-"harm reduction" (infographic OR poster OR "visual guide") filetype:pdf
-```
-
-### Health Promotion Materials
+### Health-Promotion Materials
 
 ```txt
 (site:*.health.*.gov.au OR site:*.org.au) "harm reduction" (poster OR flyer OR brochure OR "fact sheet") filetype:pdf
 ```
 
-### Canva & Design Platforms
-
-```txt
-(site:canva.com OR site:piktochart.com) "harm reduction"
-```
-
-### Pinterest (Resource Collections)
-
-```txt
-site:pinterest.com "harm reduction" (infographic OR resources OR education)
-```
-
 ---
 
-## 🎬 Video Content by Type
+## 🌏 Australian Content
 
-### How-To Videos
-
-```txt
-site:youtube.com "harm reduction" ("how to" OR tutorial OR "step by step" OR demonstration)
-```
-
-### Explainer Videos
+### Australian Orgs (Video)
 
 ```txt
-site:youtube.com "harm reduction" (explained OR "what is" OR introduction OR basics)
-```
-
-### Testimonials & Stories
-
-```txt
-site:youtube.com "harm reduction" (story OR testimonial OR journey OR "my experience")
-```
-
-### Advocacy & Campaigns
-
-```txt
-(site:youtube.com OR site:vimeo.com) "harm reduction" (campaign OR advocacy OR "public awareness" OR PSA)
-```
-
-### News & Current Affairs
-
-```txt
-(site:youtube.com) (ABC OR "7 News" OR "9 News" OR SBS) "harm reduction" OR "pill testing" OR "safe injecting"
-```
-
----
-
-## 🎓 Educational Content
-
-### University Lectures
-
-```txt
-site:youtube.com (lecture OR "university" OR professor OR academic) "harm reduction"
-```
-
-### Online Course Content
-
-```txt
-(site:youtube.com OR site:vimeo.com) "harm reduction" (module OR lesson OR "online course" OR e-learning)
-```
-
-### Grand Rounds & Medical Education
-
-```txt
-site:youtube.com ("grand rounds" OR "medical education" OR CME) ("harm reduction" OR "addiction medicine" OR "opioid use disorder")
-```
-
----
-
-## 🌏 Australian-Specific Content
-
-### Australian Organizations
-
-```txt
-site:youtube.com ("AIVL" OR "NUAA" OR "Harm Reduction Victoria" OR "QuIHN" OR "Penington Institute")
+site:youtube.com (AIVL OR NUAA OR "Harm Reduction Victoria" OR QuIHN OR "Penington Institute" OR DanceWize)
 ```
 
 ### Australian Broadcasters
 
 ```txt
-(site:abc.net.au OR site:sbs.com.au) (video OR watch) "harm reduction" OR "drug policy"
+(site:abc.net.au OR site:sbs.com.au) (video OR watch OR Hack) ("harm reduction" OR "pill testing" OR "drug checking")
 ```
+
+**Why this works:**
+
+- triple j **Hack** (not _The Hook Up_, which is a sex/relationships show) is the AU broadcast
+  strand that actually covers pill testing and drug policy — pairing the broadcasters with it finds
+  real coverage
 
 ### Australian Conferences
 
 ```txt
-(site:youtube.com OR site:vimeo.com) (APSAD OR "Australasian" OR "Australian Drug") conference OR symposium
-```
-
----
-
-## 📋 Quick Copy Platform Buckets
-
-### Video Platforms
-
-```txt
-site:youtube.com OR site:vimeo.com OR site:dailymotion.com
-```
-
-### Podcast Platforms
-
-```txt
-site:podcasts.apple.com OR site:open.spotify.com OR site:soundcloud.com
-```
-
-### Presentation Platforms
-
-```txt
-site:slideshare.net OR site:speakerdeck.com OR site:prezi.com
-```
-
-### All Multimedia
-
-```txt
-(site:youtube.com OR site:vimeo.com OR site:slideshare.net OR site:speakerdeck.com OR site:soundcloud.com)
+(site:youtube.com OR site:vimeo.com) (APSAD OR "Australasian" OR "Drug and Alcohol") (conference OR symposium OR keynote)
 ```
 
 ---
 
 ## 💡 Advanced Techniques
 
-### Finding Channel-Specific Content
-
-If you find a good channel, search within it:
+### Search Within a Channel
 
 ```txt
-site:youtube.com/c/[channel-name] "harm reduction"
+site:youtube.com/@[handle] ("harm reduction" OR naloxone)
 ```
 
-```txt
-site:youtube.com/@[handle] naloxone
-```
-
-### Video Length Filtering
-
-YouTube doesn't support length filters in Google, but you can use terms:
+### Videos Embedded on Org Sites
 
 ```txt
-site:youtube.com "harm reduction" ("full session" OR "complete" OR hour)
-```
-
-```txt
-site:youtube.com "harm reduction" (short OR "quick guide" OR "2 minutes")
-```
-
-### Finding Playlists
-
-```txt
-site:youtube.com/playlist "harm reduction"
-```
-
-### Embedded Videos on Org Sites
-
-Find videos embedded on organization websites:
-
-```txt
-site:*.org.au "youtube.com/watch" "harm reduction"
-```
-
-```txt
-site:*.org.au inurl:youtube.com/embed "harm reduction"
+site:*.org.au ("youtube.com/watch" OR "youtube.com/embed" OR "player.vimeo.com") "harm reduction"
 ```
 
 ### Finding Transcripts
 
 ```txt
-(transcript OR subtitles OR captions) "harm reduction" (video OR webinar OR podcast)
+(transcript OR subtitles OR captions) ("harm reduction" OR "drug policy") (video OR webinar OR podcast) filetype:pdf
 ```
 
 ---
 
 ## ⚠️ Considerations
 
-- **Quality Varies:** Video content ranges from professional to amateur
-- **Currency:** Check upload dates; information may be outdated
-- **Verification:** Cross-reference video claims with official sources
-- **Accessibility:** Not all videos have captions; consider accessibility needs
-- **Platform Bias:** Each platform has different content cultures and audiences
+- **Dead platforms:** Google Podcasts (2024) and Stitcher (2023) are gone — don't dork them.
+- **Platform skew:** Rumble skews toward anti-harm-reduction content — treat results critically.
+- **Quality & currency:** video ranges from professional to amateur; check upload dates and
+  cross-reference claims with official sources.
 
 ---
 
 ## 🔗 Related Resources
 
-- **Domain Map:** [User-Hosted Platforms](../04-domain-map.md#-user-hosted--community-platforms)
+- **Source Intelligence:**
+  [Discovery Platforms & File Types](../resources/source-intelligence.md#-discovery-platforms--file-types)
+  — the live platforms and named shows every dork above is built on
 - **Related Packs:** [Peer Knowledge](peer-knowledge.md),
-  [Safer Use Education](safer-use-education.md)
-- **Synonym Blocks:** [Training Terms](../05-synonym-blocks.md)
+  [Safer Use Education](safer-use-education.md), [User-Hosted Domains](user-hosted-domains.md)
+- **Key Shows:** [Crackdown](https://crackdownpod.com), [Narcotica](https://narcocast.com),
+  [Drug Science Podcast](https://drugscience.org.uk/podcast)
 
 ---
 
