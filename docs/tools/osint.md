@@ -295,6 +295,13 @@ Look up geographic location of IP addresses.
 
 Extract location and camera metadata from images.
 
+### Metadata Viewer
+
+**URL:** [metadataremover.ai/metadata-viewer](https://metadataremover.ai/metadata-viewer)
+
+Inspect EXIF, IPTC, and XMP metadata locally in the browser. Preserve the
+original file and corroborate important findings with a second parser.
+
 ### Building Locator
 
 **URL:** [emporis.com/buildings/map](https://www.emporis.com/buildings/map)
